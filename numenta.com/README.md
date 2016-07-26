@@ -92,6 +92,14 @@ Example:
 | Lint | `npm run lint` | Check code for meeting conventions (see `.eslintrc.json`) |
 | Serve | `npm run serve` | Builds, then Serves static output |
 
+### Setup
+
+```shell
+git clone git@github.com:numenta/numenta-web.git
+cd numenta-web/numenta.com
+npm install
+```
+
 ### Builds
 
 @TODO better define remotes and branches below (upstream/origin,
@@ -114,7 +122,7 @@ npm run dev
 
 #### Integration
 
-Update Gatsby config for GitHub Pages integration targets. Modify
+Update Gatsby config for GitHub Pages (gh-pages) integration targets. Modify
 `config.toml` and set: (not for commit, would break dev/prod.)
 
 ```shell
@@ -130,26 +138,26 @@ npm run build
 
 ##### Personal
 
-Push build to personal gh-pages integration server:
-
-To deploy your current build to your `origin:gh-pages` branch, try
-using the `npm run deploy:gh-pages` script.
+Push build to personal fork `origin:gh-pages` integration hosting branch:
 
 (Note: This will remove any other gh-pages site staged on that branch).
 
 ```shell
-# Deploy your branch public/ to origin:gh-pages branch
-# Visit http://you.github.io/numenta-web/
+npm run deploy:gh-pages
+npm run deploy:gh-pages -- --remote origin  # same thing
+# Visit http://fork.github.io/numenta-web/
 ```
 
 ##### Shared
 
-Push build to shared gh-pages integration server:
+Push build to shared `upstream:gh-pages` integration hosting branch:
 
 (Note: This will remove any other gh-pages site staged on that branch).
 
 ```shell
-# Deploy master branch public/ to master:gh-pages branch
+# Deploy master branch public/ to upstream:gh-pages branch
+npm run deploy:gh-pages -- --remote upstream
+
 # Visit http://numenta.github.io/numenta-web/
 ```
 
@@ -172,10 +180,9 @@ npm run build
 
 ## @TODO
 
-* `package.json`
-  * final repo in repo, issues
 * explain react `contexts` available: **config**, etc.
 * watch out for jsx spaces {' '}
 * partners / links / fix numenta.com hard-coded PR, etc.
 * current openings links
 * add links to this Document
+* style template: legal, terms, etc. (too wide)

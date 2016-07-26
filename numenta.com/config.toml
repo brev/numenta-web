@@ -1,5 +1,5 @@
 linkPrefix = ""
-#linkPrefix = "/numenta-web"  # integration/staging (gh-pages)
+# linkPrefix = "/numenta-web"  # integration/staging (gh-pages)
 
 siteHost = "Numenta.com"
 siteTitle = "Numenta"
@@ -17,23 +17,30 @@ description = "Leading the New Era of Machine Intelligence"
 
 [links]
   [links.out]  # external links
-    cortical = "http://cortical.io"
-    facebook = "https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf"
+    # apps
+    grokGet = "http://grokstream.com/#pricing"
     geo = "https://github.com/numenta/nupic.geospatial"
     geoPaper = "http://numenta.com/assets/pdf/whitepapers/Geospatial+Tracking+White+Paper.pdf"
-    grok = "http://grokstream.com/"
-    grokGet = "http://grokstream.com/#pricing"
     htmstocksApp = "https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8"
     htmstocksPlay = "https://play.google.com/store/apps/details?id=com.numenta.taurus"
-    license = "http://numenta.org/licenses/"
-    linkedin = "https://www.linkedin.com/company/numenta"
-    map = "http://maps.google.com/maps?q=791+Middlefield+Road,+Redwood+City,+CA+94063"
     nabBiz = "http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf"
     nabPaper = "http://arxiv.org/abs/1510.03336"
-    org = "http://numenta.org"
     rogue = "https://github.com/numenta/nupic.rogue"
     roguePaper = "http://numenta.com/assets/pdf/whitepapers/Rogue+Behavior+Detection+White+Paper.pdf"
+
+    # legal
+    license = "http://numenta.org/licenses/"
     trial = "http://numenta.org/licenses/trial/"
+
+    # partners
+    cortical = "http://cortical.io"
+    grok = "http://grokstream.com/"
+    org = "http://numenta.org"
+
+    # social
+    facebook = "https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf"
+    linkedin = "https://www.linkedin.com/company/numenta"
+    map = "http://maps.google.com/maps?q=791+Middlefield+Road,+Redwood+City,+CA+94063"
     twitter = "https://twitter.com/numenta"
     youtube = "https://www.youtube.com/user/numenta"
 
