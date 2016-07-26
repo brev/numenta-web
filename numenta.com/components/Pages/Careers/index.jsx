@@ -77,12 +77,12 @@ const PageCompany = (state, {config}) => {
           <SubTitle level={3}>Current Openings</SubTitle>
           <List marker="disc">
             <ListItem>
-              <TextLink to="">
+              <TextLink to={`${links.in.careers}careers/research-internship/`}>
                 Research Internship
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to="">
+              <TextLink to={`${links.in.careers}careers/internship-program/`}>
                 Internship Program
               </TextLink>
             </ListItem>

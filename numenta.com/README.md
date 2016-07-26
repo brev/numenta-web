@@ -186,3 +186,4 @@ npm run build
 * current openings links
 * add links to this Document
 * style template: legal, terms, etc. (too wide)
+* careers: dynamic list instead of static
