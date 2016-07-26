@@ -1,0 +1,3 @@
+.page {
+  composes: mt2 from 'tachyons';
+}

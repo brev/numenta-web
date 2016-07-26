@@ -1,0 +1,39 @@
+.columns {
+  composes: layout-columns from '../../../static/assets/css/theme.css';
+}
+
+.content {
+  composes: layout-content from '../../../static/assets/css/theme.css';
+}
+
+.aside {
+  composes: layout-aside from '../../../static/assets/css/theme.css';
+}
+.asideCenter {
+  composes: mt2 from 'tachyons';
+  composes: tc from 'tachyons';
+  composes: aside;
+}
+
+
+.emails {
+  composes: bg-near-white from 'tachyons';
+  composes: center from 'tachyons';
+  composes: f6 from 'tachyons';
+  composes: mt4 from 'tachyons';
+  composes: pb3 from 'tachyons';
+  composes: ph4 from 'tachyons';
+  composes: pt4 from 'tachyons';
+  composes: tl from 'tachyons';
+  composes: w5 from 'tachyons';
+}
+
+.office {
+  composes: f5 from 'tachyons';
+  composes: mb4 from 'tachyons';
+  composes: mt2 from 'tachyons';
+}
+
+.address {
+  composes: fs-normal from 'tachyons';
+}

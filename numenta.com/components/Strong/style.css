@@ -1,0 +1,3 @@
+.strong {
+  composes: fw7 from 'tachyons';
+}

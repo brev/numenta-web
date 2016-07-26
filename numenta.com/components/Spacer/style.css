@@ -1,0 +1,4 @@
+.spacer {
+  composes: mh1 from 'tachyons';
+  composes: silver from 'tachyons';
+}

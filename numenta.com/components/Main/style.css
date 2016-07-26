@@ -1,0 +1,12 @@
+.main {
+  composes: bg-white from 'tachyons';
+  composes: center from 'tachyons';
+  composes: mt5 from 'tachyons';
+  composes: mw-100 from 'tachyons';
+  composes: mw7-m from 'tachyons';
+  composes: mw8-l from 'tachyons';
+  composes: ph3 from 'tachyons';
+  composes: ph4-l from 'tachyons';
+  composes: pb4 from 'tachyons';
+  composes: pt3 from 'tachyons';
+}

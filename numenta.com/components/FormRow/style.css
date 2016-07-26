@@ -1,0 +1,8 @@
+.formRow {
+  composes: cb from 'tachyons';
+  composes: cf from 'tachyons';
+  composes: flex from 'tachyons';
+  composes: mb2 from 'tachyons';
+  composes: mr4 from 'tachyons';
+  flex-direction: row;
+}

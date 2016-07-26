@@ -1,0 +1,103 @@
+{
+  "name": "Numenta.com",
+  "description": "Numenta.com company website content, source code, and static generator tooling.",
+  "license": "SEE LICENSE IN LICENSE.TXT",
+  "main": false,
+  "private": false,
+  "version": "0.2.24",
+  "author": {
+    "name": "Numenta",
+    "email": "info@numenta.com",
+    "url": "https://numenta.com"
+  },
+  "bugs": {
+    "url": "https://github.com/numenta/numenta-web/issues",
+    "email": "info@numenta.com"
+  },
+  "cpu": [
+    "x64"
+  ],
+  "engines": {
+    "node": ">=6.3.1",
+    "npm": ">=3.10.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numenta/numenta-web"
+  },
+  "keywords": [
+    "Numenta",
+    "Company",
+    "Website",
+    "Biological",
+    "Neuroscience",
+    "Machine",
+    "Intelligence"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "dependencies": {
+    "babel-core": "6.11.4",
+    "babel-loader": "6.2.4",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-class-properties": "6.11.5",
+    "babel-preset-es2015-node6": "0.2.0",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-0": "6.5.0",
+    "browser-size": "0.1.0",
+    "classnames": "2.2.5",
+    "extract-text-webpack-plugin": "github:michelebertoli/extract-text-webpack-plugin#614c3bb1ed72587218aa644df12bbf514fb77a06",
+    "front-matter": "2.1.0",
+    "gatsby": "0.11.7",
+    "history": "2.1.1",
+    "js-yaml": "3.6.1",
+    "ncp": "2.0.0",
+    "react": "15.2.1",
+    "react-addons-pure-render-mixin": "15.2.1",
+    "react-dom": "15.2.1",
+    "react-headroom": "2.1.2",
+    "react-helmet": "3.1.0",
+    "react-icons": "2.2.1",
+    "react-modal": "1.4.0",
+    "react-router": "2.6.0",
+    "react-tap-event-plugin": "1.0.0",
+    "react-youtube": "7.0.1",
+    "sitemap": "1.8.0",
+    "tachyons": "github:numenta/tachyons#d8e73dec47cb1c868bde3e4e4d5fd60fa5483fe2",
+    "tachyons-base": "1.2.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "6.1.2",
+    "babel-preset-react-hmre": "1.1.1",
+    "eslint": "3.1.1",
+    "eslint-config-airbnb": "9.0.1",
+    "eslint-plugin-import": "1.11.1",
+    "eslint-plugin-jsx-a11y": "2.0.1",
+    "eslint-plugin-react": "5.2.2",
+    "gh-pages": "0.11.0",
+    "html5-lint": "0.2.5",
+    "htmllint-cli": "0.0.5",
+    "stylelint": "7.0.3",
+    "stylelint-config-standard": "11.0.0"
+  },
+  "scripts": {
+    "prebuild": "npm run clean && npm run lint && npm run test",
+    "build": "gatsby build --prefix-links",
+    "clean": "npm run clean:build",
+    "clean:build": "rm -Rf public/",
+    "clean:npm": "rm -Rf node_modules/ && npm cache clean",
+    "deploy:gh-pages": "gh-pages --dist public/",
+    "predev": "npm run lint",
+    "dev": "gatsby develop",
+    "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "echo",
+    "lint:js": "eslint --ext=js --ext=jsx --ignore-pattern public .",
+    "preserve": "npm run build",
+    "serve": "gatsby serve-build",
+    "test": "echo \"@TODO add tests!\"",
+    "validate": "npm run validate:html",
+    "validate:html": "echo"
+  }
+}

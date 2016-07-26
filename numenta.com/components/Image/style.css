@@ -1,0 +1,19 @@
+.mw {
+  composes: mw-100 from 'tachyons';
+}
+.w {
+  composes: w-100 from 'tachyons';
+}
+
+.border {
+  composes: b--black-10 from 'tachyons';
+  composes: ba from 'tachyons';
+}
+
+.shadow {
+  composes: shadow-4 from 'tachyons';
+}
+
+.image {
+  composes: br2 from 'tachyons';
+}
