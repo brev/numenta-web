@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>http://numenta.com/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/404/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/anomaly-detection-benchmark/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/applications/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/business-strategy-and-ip/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/careers-team-and-contact/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/legal/privacy/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/legal/terms/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/mission-and-history/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/old/html/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/old/json/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/old/markdown/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/old/react/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/open-source-project/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/papers-videos-and-more/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/partners/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/sitemap/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/technology-overview/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+</urlset>
