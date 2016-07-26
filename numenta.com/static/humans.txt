@@ -1,6 +1,0 @@
-
-        ○
-       / \
-      ●   ●     NUMENTA
-     / \ / \    Leading the New Era of Machine Intelligence
-    ●   ●   ●

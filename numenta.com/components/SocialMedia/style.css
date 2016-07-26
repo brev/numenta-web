@@ -1,9 +1,0 @@
-.spread {
-  composes: ph3 from 'tachyons';
-}
-
-.social {
-  composes: f2 from 'tachyons';
-  composes: mb4 from 'tachyons';
-  composes: mt3 from 'tachyons';
-}

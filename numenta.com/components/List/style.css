@@ -1,5 +1,0 @@
-.ul {
-  composes: list from 'tachyons';
-  composes: mb4 from 'tachyons';
-  composes: pl0 from 'tachyons';
-}
