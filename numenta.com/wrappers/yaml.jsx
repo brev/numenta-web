@@ -19,7 +19,7 @@ const YamlWrapper = ({route}) => {
 }
 
 YamlWrapper.propTypes = {
-  route: React.PropTypes.object.isRequired,
+  route: React.PropTypes.object,
 }
 
 export default YamlWrapper

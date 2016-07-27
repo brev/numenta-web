@@ -20,14 +20,17 @@ class Template extends React.Component {
   static propTypes = {
     children: React.PropTypes.any.isRequired,
     location: React.PropTypes.object.isRequired,
+    route: React.PropTypes.object.isRequired,
   }
 
   static childContextTypes = {
     config: React.PropTypes.object,
+    route: React.PropTypes.object,
   }
 
   getChildContext() {
-    return {config}
+    const {route} = this.props
+    return {config, route}
   }
 
   componentDidMount() {

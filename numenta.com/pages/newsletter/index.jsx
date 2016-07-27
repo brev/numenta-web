@@ -13,7 +13,7 @@ import TextLink from '../../components/TextLink'
 /**
  *
  */
-const NewsletterPage = ({route}) => {
+const NewsletterPage = (state, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (
     (file.path.match(/^newsletter\/.*\.md/))
@@ -51,7 +51,7 @@ const NewsletterPage = ({route}) => {
   )
 }
 
-NewsletterPage.propTypes = {
+NewsletterPage.contextTypes = {
   route: React.PropTypes.object,
 }
 

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {sortPostsDescend} from '../../../utils/universal'
+
 import Anchor from '../../../components/Anchor'
 import Button from '../../../components/Button'
 import DefineItem from '../../../components/DefineItem'
@@ -50,8 +52,19 @@ const fields = {  // wufoo ids
 /**
  *
  */
-const PageCompany = (state, {config}) => {
+const PageCareers = (state, {config, route}) => {
+  const {pages} = route
   const {contact, links} = config
+  const posts = pages.filter(({file}) => (
+    (file.path.match(/^.*\/careers\/.*\.md/))
+  ))
+  const careers = posts.sort(sortPostsDescend).map(({data, file, path}) => (
+    <ListItem key={file.stem}>
+      <TextLink to={path}>
+        {data.title}
+      </TextLink>
+    </ListItem>
+  ))
 
   return (
     <div>
@@ -76,16 +89,7 @@ const PageCompany = (state, {config}) => {
 
           <SubTitle level={3}>Current Openings</SubTitle>
           <List marker="disc">
-            <ListItem>
-              <TextLink to={`${links.in.careers}careers/research-internship/`}>
-                Research Internship
-              </TextLink>
-            </ListItem>
-            <ListItem>
-              <TextLink to={`${links.in.careers}careers/internship-program/`}>
-                Internship Program
-              </TextLink>
-            </ListItem>
+            {careers}
           </List>
         </div>
         <div className={styles.asideCenter}>
@@ -586,8 +590,9 @@ const PageCompany = (state, {config}) => {
   )
 }
 
-PageCompany.contextTypes = {
+PageCareers.contextTypes = {
   config: React.PropTypes.object,
+  route: React.PropTypes.object,
 }
 
-export default PageCompany
+export default PageCareers

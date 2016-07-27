@@ -18,7 +18,7 @@ const MarkdownWrapper = ({route}) => {
 }
 
 MarkdownWrapper.propTypes = {
-  route: React.PropTypes.object.isRequired,
+  route: React.PropTypes.object,
 }
 
 export default MarkdownWrapper

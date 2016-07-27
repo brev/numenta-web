@@ -13,7 +13,7 @@ import TextLink from '../../components/TextLink'
 /**
  *
  */
-const PressPage = ({route}) => {
+const PressPage = (state, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (file.path.match(/^press\/.*\.md/)))
   const items = posts.sort(sortPostsDescend).map(({data, file, path}) => (
@@ -49,7 +49,7 @@ const PressPage = ({route}) => {
   )
 }
 
-PressPage.propTypes = {
+PressPage.contextTypes = {
   route: React.PropTypes.object,
 }
 

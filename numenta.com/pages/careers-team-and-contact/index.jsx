@@ -4,29 +4,34 @@ import {getMainSectionComponents} from '../../utils/client/sections'
 import PageCareers from '../../components/Pages/Careers'
 import Section from '../../components/Section'
 
-const Default = (<PageCareers />)
-
 
 /**
  *
  */
-class CompanyPage extends React.Component {
+class CareersPage extends React.Component {
 
-  state = {
-    sections: (
-      <Section headline={true} open={true} title="Careers, Team & Contact">
-        {Default}
-      </Section>
-    ),
+  constructor(props) {
+    super(props)
+
+    this._Default = (<PageCareers />)
+
+    this.state = {
+      sections: (
+        <Section headline={true} open={true} title="Careers, Team & Contact">
+          {this._Default}
+        </Section>
+      ),
+    }
   }
 
   componentDidMount() {
     this.setState({  // eslint-disable-line react/no-did-mount-set-state
-      sections: getMainSectionComponents(Default),
+      sections: getMainSectionComponents(this._Default),
     })
   }
 
   componentWillUnmount() {
+    this._Default = null
     this.setState({sections: []})
   }
 
@@ -42,4 +47,4 @@ class CompanyPage extends React.Component {
 
 }
 
-export default CompanyPage
+export default CareersPage

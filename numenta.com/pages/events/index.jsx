@@ -13,7 +13,7 @@ import TextLink from '../../components/TextLink'
 /**
  *
  */
-const EventsPage = ({route}) => {
+const EventsPage = (state, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (file.path.match(/^events\/.*\.md/)))
   const items = posts.sort(sortPostsDescend).map(({data, file, path}) => (
@@ -49,7 +49,7 @@ const EventsPage = ({route}) => {
   )
 }
 
-EventsPage.propTypes = {
+EventsPage.contextTypes = {
   route: React.PropTypes.object,
 }
 
