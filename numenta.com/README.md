@@ -187,3 +187,10 @@ npm run build
 * add links to this Document
 * style template: legal, terms, etc. (too wide)
 * careers: dynamic list instead of static
+* Migrate away old links /grok/ to grokstream.com
+* RSS feeds
+* Remove blog links/etc to `/legal/rules/` and `/legal/results/`
+* Disqus comments on items
+* WuFoo contact result from `/contact/thanks.html` to
+    `/careers-team-and-contact/thanks/`
+* Migrate: `healthchecks/` `conf/` ... `out/`
