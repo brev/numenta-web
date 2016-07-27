@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang="en"><head><title data-react-helmet="true">Grok for Managing AWS Cost Anomalies | Numenta.com</title><meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge"/><meta data-react-helmet="true" name="author" content="Numenta"/><meta data-react-helmet="true" name="description" content="Numenta — Leading the New Era of Machine Intelligence"/><meta data-react-helmet="true" name="generator" content="© Numenta.com v0.2.24 Tue Jul 26 2016 18:02:33 GMT-0700 (PDT) Gatsby.js"/><meta data-react-helmet="true" name="keywords" content="@TODO,TODO,TODO"/><link data-react-helmet="true" rel="shortcut icon" href="/numenta-web/assets/icons/favicon.ico?v=0.2.24"/><link data-react-helmet="true" rel="stylesheet" href="/numenta-web/styles.css?v=0.2.24"/></head><body class="body"><div id="react-mount"><div class="style_layout_29A tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_fw4_3tj" data-reactroot="" data-reactid="1" data-react-checksum="1293220928"><div class="style_appbar_3gV tachyons_bg-white_WF0 tachyons_fixed_I-c tachyons_h3_bmk tachyons_ph3_Qxl tachyons_shadow-1_8y5 tachyons_top-0_2pS tachyons_w-100_1xC" data-reactid="2"><header class="style_header_21a tachyons_center_iwf tachyons_cf_g7R tachyons_mw-100_ge3 tachyons_mw7-m_FjT tachyons_mw8-l_KcP" data-reactid="3"><div class="style_logo_t1Q tachyons_fl_wJK tachyons_relative_1fO tachyons_top-1_UVW" data-reactid="4"><a class="style_imagelink_kuG tachyons_dim_1n1 tachyons_link_2zV theme_color-blue_2lo style__visited_3qZ" href="/numenta-web/" data-reactid="5"><img alt="Numenta Logo" class="style_image_Kv4 tachyons_br2_rOa" src="/numenta-web/78d7c43a01aa37f432db4cb375ee2b7f.svg" title="Numenta" data-reactid="6"/></a></div><div class="style_search_Gt9 tachyons_fr_2Nn tachyons_mt3_11A" data-reactid="7"><form accept-charset="UTF-8" autocomplete="off" class="style_form_BAR tachyons_pa0_RbR tachyons_mb3_1mV tachyons_mh0_2XV tachyons_mt0_12u" enctype="multipart/form-data" method="post" data-reactid="8"><span class="style_label_2rM tachyons_clip_2YG" data-reactid="9"><label class="style_formLabel_13N tachyons_f5_2mB tachyons_fl_wJK tachyons_fw6_1NV tachyons_mr3_1Ez tachyons_relative_1fO tachyons_v-top_1JD tachyons_w4_3jJ" for="q" data-reactid="10">Search</label></span><span class="style_query_1Mw tachyons_fl_wJK tachyons_flex_22H tachyons_mb2_1U4 tachyons_relative_1fO tachyons_w4_3jJ tachyons_w5-ns_1tF" data-reactid="11"><input type="search" class="style_formInput_oLS tachyons_ba_1NL tachyons_b--black-20_1zc tachyons_br2_rOa tachyons_f5_2mB tachyons_flex-auto_1Fv tachyons_fw3_3xI tachyons_input-reset_3Az tachyons_pb1_2R8 tachyons_ph2_2up tachyons_pt2_3ym tachyons_silver_3lN style__focus_12t style_large_5KY" id="q" name="q" placeholder="Search..." data-reactid="12"/></span><button class="style_button_23U tachyons_br2_rOa tachyons_dim_1n1 tachyons_flex-auto_1Fv tachyons_ma0_2xh tachyons_pointer_25K style_light_3PJ tachyons_bg-white_WF0 tachyons_bn_3W7 tachyons_f4_1Zt tachyons_pa1_3f3 theme_color-blue_2lo" type="submit" data-reactid="13"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;color:inherit;" data-reactid="14"><g data-reactid="15"><path d="m27.2 18.6q0-4.2-2.9-7.1t-7.1-2.9-7 2.9-3 7.1 2.9 7 7.1 3 7.1-3 2.9-7z m11.4 18.5q0 1.2-0.8 2.1t-2 0.8q-1.2 0-2-0.8l-7.7-7.7q-4 2.8-8.9 2.8-3.2 0-6.1-1.3t-5-3.3-3.4-5-1.2-6.1 1.2-6.1 3.4-5.1 5-3.3 6.1-1.2 6.1 1.2 5 3.3 3.4 5.1 1.2 6.1q0 4.9-2.7 8.9l7.6 7.6q0.8 0.9 0.8 2z" data-reactid="16"></path></g></svg></button></form></div></header></div><main class="style_main_GV3 tachyons_bg-white_WF0 tachyons_center_iwf tachyons_mt5_2gs tachyons_mw-100_ge3 tachyons_mw7-m_FjT tachyons_mw8-l_KcP tachyons_ph3_Qxl tachyons_ph4-l_pNz tachyons_pb4_38s tachyons_pt3_1QC" data-reactid="17"><!-- react-empty: 18 --><div class="markdown" data-reactid="19"><!-- react-empty: 20 --><h1 data-reactid="21">Grok for Managing AWS Cost Anomalies</h1><div data-reactid="22"><p><strong>NOTE:</strong> Numenta has <a href="/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html">announced a strategic partnership with Avik Partners</a>,
+please read more about the future of
+<a href="http://grokstream.com">Grok for IT Analytics</a>.</p>
+<p>While the forefront issue in an engineer’s mind might be that builds are
+consistently running and production servers aren’t experiencing unexpected
+downtime, a business executive might have completely different concerns.  As an
+experiment, I decided to address what I believed might be a primary concern of
+IT managers: ensuring that AWS costs are managed to budget and costs are
+minimized.  My approach was to feed cost data to Grok to identify any anomalies
+in spending relative to the normal pattern of spend.</p>
+<p>Using Grok’s custom metrics, I sampled and fed AWS burnrate statistics into Grok
+for regional burnrates as well as instance counts. Since AWS instances vary in
+pricing, spinning up one EC2 I2-8xlarge instance could be just as much of a
+problem as spinning up several T2-micro instances. Therefore, even though most
+anomalies would likely be caught by both metrics, I wanted to be sure that
+unexpected corner-case anomalies would be caught too.</p>
+<p>In fact, at the beginning of my experiment, the burnrate monitor was able to
+detect an anomaly in AWS’s us-east-1 region. For ease-of-use, most of the
+servers we use reside in the us-west-2 region, however all of our testing for
+marketplace AMIs happens on us-east-1 servers. For that reason, early on August
+4th, Grok detected an anomaly when our QA team began testing one of our
+marketplace candidates. Since Grok had learned the regular pattern of nightly
+AMI tests, when all of a sudden an instance was manually created, Grok quickly
+notified me.</p>
+<h5>Grok Web UI showing Normal Pattern</h5>
+<p><img src="/assets/img/pages/blog/2014-08-29/1.png" alt="Grok Screenshot"></p>
+<h5>Grok Web UI showing anomaly due to launch of AMI tests</h5>
+<p><img src="/assets/img/pages/blog/2014-08-29/2.png" alt="Grok Screenshot"></p>
+<p>In this case because I knew the QA team was starting a new cycle of testing, I
+was able to easily identify the cause of the anomaly.  Nevertheless, it was
+useful that Grok identified the increased in instances and impact on costs. Had
+I not expected the anomaly, I would have been able to quickly find the source of
+the problem, whether it be a faulty testing script that forgets to delete
+automatically created instances on failure, or an accidentally changed limit on
+an auto-scaling group. In today’s dynamic and virtualized IT environments, it’s
+great to have this peace of mind that jumps in costs outside of normal patterns
+can be identified quickly. Not only can Grok tell an engineer that a server is
+operating normally, but it can also report to a senior manager that their
+company isn’t incurring unexpected costs.</p>
+<p>In use cases with noisier data (such as burnrate for our us-west-2 region where
+most of our instances are located), the burnrate monitor still excels at
+detecting anomalous spending. Large, anomalous jumps in spending that could be
+attributed to a larger than usual instance being spun up or accidentally setting
+the minimum instance count of an auto-scaling group to 500 instead of 50 are
+quickly recognized, enabling the proper team member to rapidly address the
+issue. Rather than receiving an enormous (and unexpected) bill at the end of the
+month, the cost and likelihood of a serious AWS mistake is substantially
+mitigated.   During my experiment Grok was able to identify an anomaly due to an
+error in the configuration of our auto-scaling group, causing it to grow
+unnecessarily large.  Despite a more noisy usage pattern for this AWS region,
+Grok was able to identify it.</p>
+<h5>Grok Web UI showing anomaly due to error in auto-scaling group configuration</h5>
+<p><img src="/assets/img/pages/blog/2014-08-29/3.png" alt="Grok Screenshot"></p>
+<p>Grok can also learn new behaviors. When we began to spin up several more costly
+instances for testing, Grok first detected this behavior as anomalous, but as we
+continued testing on the larger instances, Grok taught itself the new pattern
+and stopped flagging the increased burnrates as anomalous. Especially with
+Amazon continually announcing new instance sizes and costs, unexpected changes
+to server burnrate are inevitable, and it’s necessarily important to be able to
+learn the new burnrate patterns.</p>
+<h5>Grok Web UI showing learning of new pattern</h5>
+<p><img src="/assets/img/pages/blog/2014-08-29/4.png" alt="Grok Screenshot"></p>
+</div></div></main><div class="style_footbar_D75 tachyons_w-100_1xC" data-reactid="23"><footer class="style_footer_XFN tachyons_br--bottom_1e0 tachyons_bg-white_WF0 tachyons_br2_rOa tachyons_center_iwf tachyons_f6_14U tachyons_mw-100_ge3 tachyons_mw7-m_FjT tachyons_mw8-l_KcP tachyons_pv3_1Zi tachyons_silver_3lN tachyons_tc_3ab" data-reactid="24"><span data-reactid="25"><!-- react-text: 26 -->© <!-- /react-text --><!-- react-text: 27 -->2016<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><a class="style_textlink_206 tachyons_dim_1n1 tachyons_link_2zV tachyons_underline-hover_1xv theme_color-blue-dark_2u0 style__visited_BRb" href="/numenta-web/" data-reactid="30">Numenta</a></span><span class="style_mark_2c_ tachyons_dib_1gH tachyons_h1_Kza tachyons_mh3_2gH tachyons_relative_1fO tachyons_w1_1jO" data-reactid="31"><img alt="Numenta Logo Mark" class="style_image_Kv4 tachyons_br2_rOa" src="/numenta-web/87b23beb8a4b7dea7d88099bfb28d182.svg" title="Numenta" data-reactid="32"/></span><span data-reactid="33"><a class="style_textlink_206 tachyons_dim_1n1 tachyons_link_2zV tachyons_underline-hover_1xv theme_color-blue-dark_2u0 style__visited_BRb" href="/numenta-web/legal/privacy/" data-reactid="34">Privacy</a><span class="style_spacer_1h0 tachyons_mh1_-Z3 tachyons_silver_3lN" data-reactid="35">•</span><a class="style_textlink_206 tachyons_dim_1n1 tachyons_link_2zV tachyons_underline-hover_1xv theme_color-blue-dark_2u0 style__visited_BRb" href="/numenta-web/legal/terms/" data-reactid="36">Terms</a><span class="style_spacer_1h0 tachyons_mh1_-Z3 tachyons_silver_3lN" data-reactid="37">•</span><a class="style_textlink_206 tachyons_dim_1n1 tachyons_link_2zV tachyons_underline-hover_1xv theme_color-blue-dark_2u0 style__visited_BRb" href="https://github.com/numenta/numenta-web" data-reactid="38">Source</a><span class="style_spacer_1h0 tachyons_mh1_-Z3 tachyons_silver_3lN" data-reactid="39">•</span><a class="style_textlink_206 tachyons_dim_1n1 tachyons_link_2zV tachyons_underline-hover_1xv theme_color-blue-dark_2u0 style__visited_BRb" href="/numenta-web/sitemap/" data-reactid="40">Sitemap</a></span></footer></div></div></div><script src="/numenta-web/bundle.js?v=0.2.24"></script></body></html>
