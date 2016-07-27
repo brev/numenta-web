@@ -46,6 +46,7 @@
 <url> <loc>http://numenta.com/blog/2016/02/18/real-time-insights-from-a-random-walk-htm-for-stocks-hits-the-iphone/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/blog/2016/03/30/numenta-at-computational-and-systems-neuroscience-conference/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/blog/2016/06/16/can-neuroscientists-understand-the-brain/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/blog/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/brains-and-machine-intelligence/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/business-strategy-and-ip/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/careers-team-and-contact/careers/internship-program/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
@@ -103,6 +104,7 @@
 <url> <loc>http://numenta.com/events/2016/08/02/sf-data-science-meetup/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/2016/09/25/ai-with-the-best/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/2016/11/11/mlconf-machine-learning-conference-san-francisco-2016/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/events/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/htm-for-stocks/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/htm-studio/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
@@ -133,6 +135,7 @@
 <url> <loc>http://numenta.com/newsletter/2016/03/28/neuron-paper-published-in-peer-reviewed-neuroscience-journal/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/newsletter/2016/05/11/announcing-bami-biological-and-machine-intelligence/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/newsletter/2016/06/28/numenta-releases-htm-studio-desktop-application/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/newsletter/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/numenta-anomaly-benchmark/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/open-source-project/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/papers-videos-and-more/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
@@ -212,6 +215,7 @@
 <url> <loc>http://numenta.com/press/2016/06/25/from-not-working-to-neural-networking/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/press/2016/06/26/numenta-releases-htm-studio/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/press/2016/06/27/this-is-why-your-fears-about-artificial-intelligence-are-wrong/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/press/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/sitemap/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/technology-overview/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 </urlset>
