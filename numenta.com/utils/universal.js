@@ -56,6 +56,18 @@ export function getVersion() {
 /**
  *
  */
+export function sortPostsDescend(a, b) {
+  const aDate = new Date(a.data.date)
+  const bDate = new Date(b.data.date)
+
+  if (aDate > bDate) return -1
+  if (aDate < bDate) return 1
+  return 0
+}
+
+/**
+ *
+ */
 export function stamp(text) {
   return `${text}?v=${getVersion()}`
 }
