@@ -37243,7 +37243,8 @@
 	class Template extends _react2.default.Component {
 	
 	  getChildContext() {
-	    return { config };
+	    const { route } = this.props;
+	    return { config, route };
 	  }
 	
 	  componentDidMount() {
@@ -37288,10 +37289,12 @@
 	
 	Template.propTypes = {
 	  children: _react2.default.PropTypes.any.isRequired,
-	  location: _react2.default.PropTypes.object.isRequired
+	  location: _react2.default.PropTypes.object.isRequired,
+	  route: _react2.default.PropTypes.object.isRequired
 	};
 	Template.childContextTypes = {
-	  config: _react2.default.PropTypes.object
+	  config: _react2.default.PropTypes.object,
+	  route: _react2.default.PropTypes.object
 	};
 	exports.default = Template;
 	module.exports = exports['default'];
@@ -38598,11 +38601,11 @@
 
 	module.exports = {
 		"name": "Numenta.com",
+		"version": "0.2.25",
 		"description": "Numenta.com company website content, source code, and static generator tooling.",
 		"license": "SEE LICENSE IN LICENSE.TXT",
 		"main": false,
 		"private": false,
-		"version": "0.2.24",
 		"author": {
 			"name": "Numenta",
 			"email": "info@numenta.com",
@@ -39711,13 +39714,13 @@
 
 	var map = {
 		"./html": 461,
-		"./html.js": 461,
+		"./html.jsx": 461,
 		"./json": 462,
-		"./json.js": 462,
+		"./json.jsx": 462,
 		"./md": 463,
-		"./md.js": 463,
+		"./md.jsx": 463,
 		"./yaml": 464,
-		"./yaml.js": 464
+		"./yaml.jsx": 464
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -39848,7 +39851,7 @@
 	};
 	
 	MarkdownWrapper.propTypes = {
-	  route: _react2.default.PropTypes.object.isRequired
+	  route: _react2.default.PropTypes.object
 	};
 	
 	exports.default = MarkdownWrapper;
@@ -39895,7 +39898,7 @@
 	};
 	
 	YamlWrapper.propTypes = {
-	  route: _react2.default.PropTypes.object.isRequired
+	  route: _react2.default.PropTypes.object
 	};
 	
 	exports.default = YamlWrapper;
@@ -65554,6 +65557,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _universal = __webpack_require__(376);
+	
 	var _Anchor = __webpack_require__(537);
 	
 	var _Anchor2 = _interopRequireDefault(_Anchor);
@@ -65702,8 +65707,19 @@
 	/**
 	 *
 	 */
-	const PageCompany = (state, { config }) => {
+	const PageCareers = (state, { config, route }) => {
+	  const { pages } = route;
 	  const { contact, links } = config;
+	  const posts = pages.filter(({ file }) => file.path.match(/^.*\/careers\/.*\.md/));
+	  const careers = posts.sort(_universal.sortPostsDescend).map(({ data, file, path }) => _react2.default.createElement(
+	    _ListItem2.default,
+	    { key: file.stem },
+	    _react2.default.createElement(
+	      _TextLink2.default,
+	      { to: path },
+	      data.title
+	    )
+	  ));
 	
 	  return _react2.default.createElement(
 	    'div',
@@ -65738,24 +65754,7 @@
 	        _react2.default.createElement(
 	          _List2.default,
 	          { marker: 'disc' },
-	          _react2.default.createElement(
-	            _ListItem2.default,
-	            null,
-	            _react2.default.createElement(
-	              _TextLink2.default,
-	              { to: `${ links.in.careers }careers/research-internship/` },
-	              'Research Internship'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _ListItem2.default,
-	            null,
-	            _react2.default.createElement(
-	              _TextLink2.default,
-	              { to: `${ links.in.careers }careers/internship-program/` },
-	              'Internship Program'
-	            )
-	          )
+	          careers
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -66474,11 +66473,12 @@
 	  );
 	};
 	
-	PageCompany.contextTypes = {
-	  config: _react2.default.PropTypes.object
+	PageCareers.contextTypes = {
+	  config: _react2.default.PropTypes.object,
+	  route: _react2.default.PropTypes.object
 	};
 	
-	exports.default = PageCompany;
+	exports.default = PageCareers;
 	module.exports = exports['default'];
 
 /***/ },
@@ -68427,7 +68427,7 @@
 	/**
 	 *
 	 */
-	const BlogPage = ({ route }) => {
+	const BlogPage = (state, { route }) => {
 	  const { pages } = route;
 	  const posts = pages.filter(({ file }) => file.path.match(/^blog\/.*\.md/));
 	  const items = posts.sort(_universal.sortPostsDescend).map(({ data, file, path }) => _react2.default.createElement(
@@ -68479,7 +68479,7 @@
 	  );
 	};
 	
-	BlogPage.propTypes = {
+	BlogPage.contextTypes = {
 	  route: _react2.default.PropTypes.object
 	};
 	
@@ -68598,31 +68598,33 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	const Default = _react2.default.createElement(_Careers2.default, null);
-	
 	/**
 	 *
 	 */
-	class CompanyPage extends _react2.default.Component {
-	  constructor(...args) {
-	    var _temp;
+	class CareersPage extends _react2.default.Component {
 	
-	    return _temp = super(...args), this.state = {
+	  constructor(props) {
+	    super(props);
+	
+	    this._Default = _react2.default.createElement(_Careers2.default, null);
+	
+	    this.state = {
 	      sections: _react2.default.createElement(
 	        _Section2.default,
 	        { headline: true, open: true, title: 'Careers, Team & Contact' },
-	        Default
+	        this._Default
 	      )
-	    }, _temp;
+	    };
 	  }
 	
 	  componentDidMount() {
 	    this.setState({ // eslint-disable-line react/no-did-mount-set-state
-	      sections: (0, _sections.getMainSectionComponents)(Default)
+	      sections: (0, _sections.getMainSectionComponents)(this._Default)
 	    });
 	  }
 	
 	  componentWillUnmount() {
+	    this._Default = null;
 	    this.setState({ sections: [] });
 	  }
 	
@@ -68638,7 +68640,7 @@
 	
 	}
 	
-	exports.default = CompanyPage;
+	exports.default = CareersPage;
 	module.exports = exports['default'];
 
 /***/ },
@@ -69002,7 +69004,7 @@
 	/**
 	 *
 	 */
-	const EventsPage = ({ route }) => {
+	const EventsPage = (state, { route }) => {
 	  const { pages } = route;
 	  const posts = pages.filter(({ file }) => file.path.match(/^events\/.*\.md/));
 	  const items = posts.sort(_universal.sortPostsDescend).map(({ data, file, path }) => _react2.default.createElement(
@@ -69054,7 +69056,7 @@
 	  );
 	};
 	
-	EventsPage.propTypes = {
+	EventsPage.contextTypes = {
 	  route: _react2.default.PropTypes.object
 	};
 	
@@ -69424,7 +69426,7 @@
 	/**
 	 *
 	 */
-	const NewsletterPage = ({ route }) => {
+	const NewsletterPage = (state, { route }) => {
 	  const { pages } = route;
 	  const posts = pages.filter(({ file }) => file.path.match(/^newsletter\/.*\.md/));
 	  const items = posts.sort(_universal.sortPostsDescend).map(({ data, file, path }) => _react2.default.createElement(
@@ -69476,7 +69478,7 @@
 	  );
 	};
 	
-	NewsletterPage.propTypes = {
+	NewsletterPage.contextTypes = {
 	  route: _react2.default.PropTypes.object
 	};
 	
@@ -70190,7 +70192,7 @@
 	/**
 	 *
 	 */
-	const PressPage = ({ route }) => {
+	const PressPage = (state, { route }) => {
 	  const { pages } = route;
 	  const posts = pages.filter(({ file }) => file.path.match(/^press\/.*\.md/));
 	  const items = posts.sort(_universal.sortPostsDescend).map(({ data, file, path }) => _react2.default.createElement(
@@ -70242,7 +70244,7 @@
 	  );
 	};
 	
-	PressPage.propTypes = {
+	PressPage.contextTypes = {
 	  route: _react2.default.PropTypes.object
 	};
 	
