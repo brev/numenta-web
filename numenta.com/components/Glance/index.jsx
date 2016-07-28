@@ -9,10 +9,10 @@ import Tag from '../Tag'
 import TextLink from '../TextLink'
 import {trims} from '../../utils/universal'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
-const Glance = (state, context) => {
+const Glance = (props, context) => {
   const {config} = context
   const {links} = config
   const data = {

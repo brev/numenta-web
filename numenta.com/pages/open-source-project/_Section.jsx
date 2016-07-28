@@ -1,16 +1,16 @@
 import IconGithub from 'react-icons/lib/fa/github'
 import React from 'react'
 
-import Paragraph from '../../../components/Paragraph'
-import TextLink from '../../../components/TextLink'
+import Paragraph from '../../components/Paragraph'
+import TextLink from '../../components/TextLink'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
 /**
  *
  */
-const PageOpensource = (state, {config}) => {
+const SectionOpensource = (props, {config}) => {
   const {links} = config
 
   return (
@@ -60,8 +60,8 @@ const PageOpensource = (state, {config}) => {
   )
 }
 
-PageOpensource.contextTypes = {
+SectionOpensource.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default PageOpensource
+export default SectionOpensource

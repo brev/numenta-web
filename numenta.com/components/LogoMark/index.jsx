@@ -4,7 +4,7 @@ import Image from '../Image'
 import LogoMarkDark from './images/numenta-mark-dark.svg'
 import LogoMarkLite from './images/numenta-mark-lite.svg'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
 /**

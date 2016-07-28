@@ -1,11 +1,11 @@
 import React from 'react'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
-const List = ({children, marker}) => {
+const List = ({children, copy, marker}) => {
   const childrenWithProps = React.Children.map(children, (child) =>
-    React.cloneElement(child, {marker})
+    React.cloneElement(child, {copy, marker})
   )
 
   return (
@@ -17,7 +17,12 @@ const List = ({children, marker}) => {
 
 List.propTypes = {
   children: React.PropTypes.any.isRequired,
+  copy: React.PropTypes.bool,
   marker: React.PropTypes.oneOf(['circle', 'disc', 'icon', 'square']),
+}
+
+List.defaultProps = {
+  copy: true,
 }
 
 export default List

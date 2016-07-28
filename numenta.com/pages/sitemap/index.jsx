@@ -11,7 +11,7 @@ import Section from '../../components/Section'
 /**
  *
  */
-const SitemapPage = (state, {config}) => {
+const SitemapPage = (props, {config}) => {
   const {links} = config
 
   return (

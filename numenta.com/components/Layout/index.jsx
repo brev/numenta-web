@@ -4,7 +4,7 @@ import Footer from '../Footer'
 import Header from '../Header'
 import Main from '../Main'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
 const Layout = ({children}) => (

@@ -1,18 +1,18 @@
 import React from 'react'
 
-import List from '../../../components/List'
-import ListItem from '../../../components/ListItem'
-import Paragraph from '../../../components/Paragraph'
-import Video from '../../../components/Video'
+import List from '../../components/List'
+import ListItem from '../../components/ListItem'
+import Paragraph from '../../components/Paragraph'
+import Video from '../../components/Video'
 
 import ImageVideoTech from './images/video-tech.png'
-import styles from './style.css'
+import styles from './index.css'
 
 
 /**
  *
  */
-const PageTechnology = () => (
+const SectionTechnology = () => (
   <div className={styles.columns}>
     <div className={styles.content}>
       <Paragraph lead={true}>
@@ -74,4 +74,4 @@ const PageTechnology = () => (
   </div>
 )
 
-export default PageTechnology
+export default SectionTechnology

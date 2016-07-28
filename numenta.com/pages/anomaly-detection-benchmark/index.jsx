@@ -1,10 +1,10 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PageAnomaly from '../../components/Pages/Anomaly'
+import SectionAnomaly from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PageAnomaly />)
+const Default = (<SectionAnomaly />)
 
 
 /**

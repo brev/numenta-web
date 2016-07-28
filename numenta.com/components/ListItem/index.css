@@ -25,8 +25,12 @@
   list-style-type: square;
 }
 
-.li {
+.copy {
   composes: lh-copy from 'tachyons';
   composes: measure from 'tachyons';
   composes: measure-wide-l from 'tachyons';
+}
+
+.li {
+  /* */
 }

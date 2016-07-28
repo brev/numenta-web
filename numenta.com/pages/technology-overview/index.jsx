@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PageTechnology from '../../components/Pages/Technology'
+
+import SectionTechnology from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PageTechnology />)
+const Default = (<SectionTechnology />)
 
 
 /**

@@ -13,7 +13,7 @@ import TextLink from '../../components/TextLink'
 /**
  *
  */
-const NewsletterPage = (state, {route}) => {
+const NewsletterPage = (props, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (
     (file.path.match(/^newsletter\/.*\.md/))

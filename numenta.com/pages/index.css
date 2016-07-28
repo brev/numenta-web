@@ -1,3 +1,17 @@
 .page {
   composes: mt2 from 'tachyons';
 }
+
+
+.columns {
+  composes: layout-columns from '../static/assets/css/theme.css';
+}
+
+.aside {
+  composes: tc from 'tachyons';
+  composes: layout-aside from '../static/assets/css/theme.css';
+}
+
+.content {
+  composes: layout-content from '../static/assets/css/theme.css';
+}

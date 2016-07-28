@@ -13,7 +13,7 @@ import TextLink from '../../components/TextLink'
 /**
  *
  */
-const PressPage = (state, {route}) => {
+const PressPage = (props, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (file.path.match(/^press\/.*\.md/)))
   const items = posts.sort(sortPostsDescend).map(({data, file, path}) => (

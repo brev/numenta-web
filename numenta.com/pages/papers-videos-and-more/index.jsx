@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PagePapers from '../../components/Pages/Papers'
+
+import SectionPapers from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PagePapers />)
+const Default = (<SectionPapers />)
 
 
 /**

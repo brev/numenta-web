@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PageMission from '../../components/Pages/Mission'
+
+import SectionMission from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PageMission />)
+const Default = (<SectionMission />)
 
 
 /**

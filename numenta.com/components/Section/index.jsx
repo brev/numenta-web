@@ -4,7 +4,7 @@ import React from 'react'
 
 import SectionTitle from '../SectionTitle'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
 class Section extends React.Component {

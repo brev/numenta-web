@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PagePartners from '../../components/Pages/Partners'
+
+import SectionPartners from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PagePartners />)
+const Default = (<SectionPartners />)
 
 
 /**

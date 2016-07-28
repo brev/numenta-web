@@ -1,66 +1,66 @@
 import React from 'react'
 
-import Section from '../../components/Section'
+import SectionAnomaly from '../../pages/anomaly-detection-benchmark/_Section'
+import SectionApplications from '../../pages/applications/_Section'
+import SectionBusiness from '../../pages/business-strategy-and-ip/_Section'
+import SectionCareers from '../../pages/careers-team-and-contact/_Section'
+import SectionIndex from '../../pages/_Section'
+import SectionMission from '../../pages/mission-and-history/_Section'
+import SectionOpensource from '../../pages/open-source-project/_Section'
+import SectionPapers from '../../pages/papers-videos-and-more/_Section'
+import SectionPartners from '../../pages/partners/_Section'
+import SectionTechnology from '../../pages/technology-overview/_Section'
 
-import Anomaly from '../../components/Pages/Anomaly'
-import Applications from '../../components/Pages/Applications'
-import Business from '../../components/Pages/Business'
-import Careers from '../../components/Pages/Careers'
-import Index from '../../components/Pages/Index'
-import Mission from '../../components/Pages/Mission'
-import Opensource from '../../components/Pages/Opensource'
-import Papers from '../../components/Pages/Papers'
-import Partners from '../../components/Pages/Partners'
-import Technology from '../../components/Pages/Technology'
+import Section from '../../components/Section'
 
 const mainSections = [
   {
-    component: <Index />,
+    component: <SectionIndex />,
     title: 'Leading the New Era of Machine Intelligence',
     url: '/',
   },
   {
-    component: <Mission />,
+    component: <SectionMission />,
     title: 'Mission & History',
     url: '/mission-and-history/',
   },
   {
-    component: <Technology />,
+    component: <SectionTechnology />,
     title: 'Technology Overview',
     url: '/technology-overview/',
   },
   {
-    component: <Opensource />,
+    component: <SectionOpensource />,
     title: 'Open Source Project',
     url: '/open-source-project/',
   },
   {
-    component: <Applications />,
+    component: <SectionApplications />,
     title: 'Applications',
     url: '/applications/',
   },
   {
-    component: <Anomaly />,
+    component: <SectionAnomaly />,
     title: 'Anomaly Detection Benchmark',
     url: '/anomaly-detection-benchmark/',
   },
   {
-    component: <Partners />,
+    component: <SectionPartners />,
     title: 'Partners',
     url: '/partners/',
   },
   {
-    component: <Business />,
+    component: <SectionBusiness />,
     title: 'Business Strategy & IP',
     url: '/business-strategy-and-ip/',
   },
   {
-    component: <Papers />,
+    component: <SectionPapers />,
     title: 'Papers, Videos & More',
     url: '/papers-videos-and-more/',
   },
   {
-    component: <Careers />,
+    component: <SectionCareers />,
     title: 'Careers, Team & Contact',
     url: '/careers-team-and-contact/',
   },

@@ -193,3 +193,4 @@ npm run build
 * WuFoo contact result from `/contact/thanks.html` to
     `/careers-team-and-contact/thanks/`
 * Migrate: `healthchecks/` `conf/` ... `out/`
+* Team/Board needs List/copy=false marked-up

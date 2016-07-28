@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PageOpensource from '../../components/Pages/Opensource'
+
+import SectionOpensource from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PageOpensource />)
+const Default = (<SectionOpensource />)
 
 
 /**

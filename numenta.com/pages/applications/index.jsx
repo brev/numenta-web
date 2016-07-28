@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../../utils/client/sections'
-import PageApplications from '../../components/Pages/Applications'
+
+import SectionApplications from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<PageApplications />)
+const Default = (<SectionApplications />)
 
 
 /**

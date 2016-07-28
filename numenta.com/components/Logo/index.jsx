@@ -3,7 +3,7 @@ import React from 'react'
 import Image from '../Image'
 
 import logoFile from './images/numenta.svg'
-import styles from './style.css'
+import styles from './index.css'
 
 
 const Logo = () => (

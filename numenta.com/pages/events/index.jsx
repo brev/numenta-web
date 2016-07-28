@@ -13,7 +13,7 @@ import TextLink from '../../components/TextLink'
 /**
  *
  */
-const EventsPage = (state, {route}) => {
+const EventsPage = (props, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (file.path.match(/^events\/.*\.md/)))
   const items = posts.sort(sortPostsDescend).map(({data, file, path}) => (

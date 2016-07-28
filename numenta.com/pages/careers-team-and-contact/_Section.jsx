@@ -1,30 +1,30 @@
 import React from 'react'
 
-import {sortPostsDescend} from '../../../utils/universal'
+import {sortPostsDescend} from '../../utils/universal'
 
-import Anchor from '../../../components/Anchor'
-import Button from '../../../components/Button'
-import DefineItem from '../../../components/DefineItem'
-import DefineList from '../../../components/DefineList'
-import DefineTitle from '../../../components/DefineTitle'
-import Form from '../../../components/Form'
-import FormInput from '../../../components/FormInput'
-import FormLabel from '../../../components/FormLabel'
-import FormRow from '../../../components/FormRow'
-import FormTextArea from '../../../components/FormTextArea'
-import Image from '../../../components/Image'
-import ImageLink from '../../../components/ImageLink'
-import List from '../../../components/List'
-import ListItem from '../../../components/ListItem'
-import Paragraph from '../../../components/Paragraph'
-import SocialMedia from '../../../components/SocialMedia'
-import Strong from '../../../components/Strong'
-import SubTitle from '../../../components/SubTitle'
-import Table from '../../../components/Table'
-import TableBody from '../../../components/TableBody'
-import TableCell from '../../../components/TableCell'
-import TableRow from '../../../components/TableRow'
-import TextLink from '../../../components/TextLink'
+import Anchor from '../../components/Anchor'
+import Button from '../../components/Button'
+import DefineItem from '../../components/DefineItem'
+import DefineList from '../../components/DefineList'
+import DefineTitle from '../../components/DefineTitle'
+import Form from '../../components/Form'
+import FormInput from '../../components/FormInput'
+import FormLabel from '../../components/FormLabel'
+import FormRow from '../../components/FormRow'
+import FormTextArea from '../../components/FormTextArea'
+import Image from '../../components/Image'
+import ImageLink from '../../components/ImageLink'
+import List from '../../components/List'
+import ListItem from '../../components/ListItem'
+import Paragraph from '../../components/Paragraph'
+import SocialMedia from '../../components/SocialMedia'
+import Strong from '../../components/Strong'
+import SubTitle from '../../components/SubTitle'
+import Table from '../../components/Table'
+import TableBody from '../../components/TableBody'
+import TableCell from '../../components/TableCell'
+import TableRow from '../../components/TableRow'
+import TextLink from '../../components/TextLink'
 
 import ImageCareers from './images/careers.png'
 import ImageCeleste from './images/team/celeste-baranski.jpg'
@@ -35,7 +35,7 @@ import ImageJeff from './images/team/jeff-hawkins.jpg'
 import ImageMap from './images/map.png'
 import ImageMike from './images/team/mike-farmwald.jpg'
 import ImageSubutai from './images/team/subutai-ahmad.jpg'
-import styles from './style.css'
+import styles from './index.css'
 
 const fields = {  // wufoo ids
   first: 'Field861',
@@ -52,7 +52,7 @@ const fields = {  // wufoo ids
 /**
  *
  */
-const PageCareers = (state, {config, route}) => {
+const SectionCareers = (props, {config, route}) => {
   const {pages} = route
   const {contact, links} = config
   const posts = pages.filter(({file}) => (
@@ -590,9 +590,9 @@ const PageCareers = (state, {config, route}) => {
   )
 }
 
-PageCareers.contextTypes = {
+SectionCareers.contextTypes = {
   config: React.PropTypes.object,
   route: React.PropTypes.object,
 }
 
-export default PageCareers
+export default SectionCareers

@@ -1,19 +1,22 @@
 import React from 'react'
 
-import Image from '../../../components/Image'
-import ImageLink from '../../../components/ImageLink'
-import List from '../../../components/List'
-import ListItem from '../../../components/ListItem'
-import Paragraph from '../../../components/Paragraph'
-import Strong from '../../../components/Strong'
-import SubTitle from '../../../components/SubTitle'
-import TextLink from '../../../components/TextLink'
+import Image from '../../components/Image'
+import ImageLink from '../../components/ImageLink'
+import List from '../../components/List'
+import ListItem from '../../components/ListItem'
+import Paragraph from '../../components/Paragraph'
+import Strong from '../../components/Strong'
+import SubTitle from '../../components/SubTitle'
+import TextLink from '../../components/TextLink'
 
 import ImageBenchmark from './images/benchmark.png'
-import styles from './style.css'
+import styles from './index.css'
 
 
-const PageAnomaly = (state, {config}) => {
+/**
+ *
+ */
+const SectionAnomaly = (props, {config}) => {
   const {links} = config
 
   return (
@@ -80,8 +83,8 @@ const PageAnomaly = (state, {config}) => {
   )
 }
 
-PageAnomaly.contextTypes = {
+SectionAnomaly.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default PageAnomaly
+export default SectionAnomaly

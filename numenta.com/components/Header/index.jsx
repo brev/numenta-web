@@ -4,13 +4,13 @@ import ImageLink from '../ImageLink'
 import Logo from '../Logo'
 import Search from '../Search'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
 /**
  *
  */
-const Header = (state, {config}) => {
+const Header = (props, {config}) => {
   const {links} = config
 
   return (

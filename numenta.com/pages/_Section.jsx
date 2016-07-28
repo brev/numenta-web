@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Glance from '../../Glance'
-import Paragraph from '../../Paragraph'
-import Strong from '../../Strong'
-import TextLink from '../../TextLink'
+import Glance from '../components/Glance'
+import Paragraph from '../components/Paragraph'
+import Strong from '../components/Strong'
+import TextLink from '../components/TextLink'
 
 import styles from './index.css'
 
@@ -11,7 +11,7 @@ import styles from './index.css'
 /**
  *
  */
-const PageIndex = (state, {config}) => {
+const SectionIndex = (props, {config}) => {
   const {links} = config
 
   return (
@@ -50,8 +50,8 @@ const PageIndex = (state, {config}) => {
   )
 }
 
-PageIndex.contextTypes = {
+SectionIndex.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default PageIndex
+export default SectionIndex

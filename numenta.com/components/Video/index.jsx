@@ -6,7 +6,7 @@ import YouTube from 'react-youtube'
 import {getModalAspect} from '../../utils/universal'
 import Image from '../Image'
 
-import styles from './style.css'
+import styles from './index.css'
 import modalStyles from './style-modal'
 
 const DefaultWidth = 640

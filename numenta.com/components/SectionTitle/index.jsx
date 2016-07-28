@@ -5,7 +5,7 @@ import React from 'react'
 
 import Title from '../Title'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
 const SectionTitle = ({children, clickHandle, headline, open}) => {

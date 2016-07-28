@@ -6,10 +6,10 @@ import React from 'react'
 
 import ImageLink from '../ImageLink'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
-const SocialMedia = (state, {config}) => {
+const SocialMedia = (props, {config}) => {
   const {links} = config
   const sites = {
     [links.out.facebook]: IconFacebook,

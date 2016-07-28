@@ -1,12 +1,12 @@
 import React from 'react'
 
 import {getMainSectionComponents} from '../utils/client/sections'
-import PageIndex from '../components/Pages/Index'
+import SectionIndex from './_Section'
 import Section from '../components/Section'
 
 import styles from './index.css'
 
-const Default = (<PageIndex />)
+const Default = (<SectionIndex />)
 
 
 /**

@@ -1,11 +1,14 @@
 import React from 'react'
 
-import Paragraph from '../../../components/Paragraph'
+import Paragraph from '../../components/Paragraph'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
-const PagePapers = () => (
+/**
+ *
+ */
+const SectionPapers = () => (
   <div className={styles.columns}>
     <div className={styles.content}>
       <Paragraph lead={true}>
@@ -17,4 +20,4 @@ const PagePapers = () => (
   </div>
 )
 
-export default PagePapers
+export default SectionPapers

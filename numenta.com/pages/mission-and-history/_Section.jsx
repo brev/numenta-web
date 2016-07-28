@@ -1,23 +1,23 @@
 import React from 'react'
 
-import Anchor from '../../Anchor'
-import Image from '../../Image'
-import ListItem from '../../ListItem'
-import ListOrder from '../../ListOrder'
-import Paragraph from '../../Paragraph'
-import Strong from '../../Strong'
-import SubTitle from '../../SubTitle'
-import TextLink from '../../TextLink'
+import Anchor from '../../components/Anchor'
+import Image from '../../components/Image'
+import ListItem from '../../components/ListItem'
+import ListOrder from '../../components/ListOrder'
+import Paragraph from '../../components/Paragraph'
+import Strong from '../../components/Strong'
+import SubTitle from '../../components/SubTitle'
+import TextLink from '../../components/TextLink'
 
 import ImageBrain from './images/brain.svg'
 import ImageTimeline from './images/timeline.png'
-import styles from './style.css'
+import styles from './index.css'
 
 
 /**
  *
  */
-const PageMission = (state, {config}) => {
+const SectionMission = (props, {config}) => {
   const {links} = config
 
   return (
@@ -109,8 +109,8 @@ const PageMission = (state, {config}) => {
   )
 }
 
-PageMission.contextTypes = {
+SectionMission.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default PageMission
+export default SectionMission

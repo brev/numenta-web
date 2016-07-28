@@ -5,10 +5,10 @@ import LogoMark from '../LogoMark'
 import Spacer from '../Spacer'
 import TextLink from '../TextLink'
 
-import styles from './style.css'
+import styles from './index.css'
 
 
-const Footer = (state, {config}) => {
+const Footer = (props, {config}) => {
   const {links} = config
   const repo = getRepo()
   const year = getDateYear()
