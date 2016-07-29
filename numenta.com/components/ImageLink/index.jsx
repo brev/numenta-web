@@ -17,7 +17,7 @@ const ImageLink = ({children, title, to}) => {
   }
   let Node = Link
 
-  if (to.match(/^.+:/)) {
+  if (to && to.match(/^.+:/)) {
     // external link (browser location)
     Node = 'a'
     attrs.href = to

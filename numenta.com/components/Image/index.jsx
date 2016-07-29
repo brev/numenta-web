@@ -7,10 +7,10 @@ import styles from './index.css'
 
 const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
   const classes = [styles.image]
-  const prefix = prefixLink()
+  const prefix = prefixLink('')
   let source = src
 
-  if (prefix && source && !source.match(prefix)) {
+  if (prefix && source && !source.includes(prefix)) {
     source = prefixLink(source)
   }
 
