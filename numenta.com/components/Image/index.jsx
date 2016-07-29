@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
 import styles from './index.css'
@@ -16,7 +17,7 @@ const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
       alt={alt}
       className={classNames(...classes)}
       onClick={onClick}
-      src={src}
+      src={prefixLink(src)}
       title={title}
     />
   )
