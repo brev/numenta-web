@@ -4,7 +4,7 @@ brief: REDWOOD CITY, CA –April 12, 2016— How do our brains learn and underst
 date: 2016/04/12
 featured: false
 hideImage: true
-image: /assets/img/pages/press/2016-04-12/image.jpg
+image: ../images/image.jpg
 link:
 org: Press Release
 tags: numenta neuron research paper published discover brain learns sequences key machine intelligence systems pattern theory

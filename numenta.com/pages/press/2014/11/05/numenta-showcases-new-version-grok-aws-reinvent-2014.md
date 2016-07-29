@@ -3,7 +3,7 @@ author: Numenta
 brief: Grok enables IT professionals to easily spot unusual activity and to gain immediate insights into the health of their critical IT systems. Now, with annotations, they can more easily share
 date: 2014/11/05
 featured: false
-image: /assets/img/pages/press/logos/numenta.png
+image: ../images/numenta.png
 link:
 org: Press Release
 tags: numenta grok it analytics aws reinvent amazon web services

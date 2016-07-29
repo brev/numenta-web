@@ -34,13 +34,13 @@ const EventsPage = (props, {route}) => {
     <div>
       <Section headline={true} open={true} title="Events">
         <Anchor name="upcoming" />
-        <SubTitle>Upcoming</SubTitle>
+        <SubTitle>Upcoming Events</SubTitle>
         <List copy={false}>
           {itemsUp}
         </List>
 
         <Anchor name="past" />
-        <SubTitle>Past</SubTitle>
+        <SubTitle>Past Events</SubTitle>
         <List copy={false}>
           {itemsPast}
         </List>

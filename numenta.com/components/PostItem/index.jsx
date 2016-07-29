@@ -28,7 +28,7 @@ const PostItem = ({post}) => {
             {data.org}
           </div>
           <Paragraph>
-            {data.brief}
+            {data.brief || ''}
           </Paragraph>
         </div>
         <div className={styles.aside}>

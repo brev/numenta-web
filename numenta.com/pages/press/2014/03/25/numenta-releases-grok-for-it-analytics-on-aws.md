@@ -3,7 +3,7 @@ author: Numenta
 brief: Grok anomaly detection leverages sophisticated machine intelligence algorithms to enable new insights into critical IT systems. Grok automatically learns complex patterns and then
 date: 2014/03/25
 featured: false
-image: /assets/img/pages/press/logos/numenta.png
+image: ../images/numenta.png
 link:
 org: Press Release
 tags: grok it analytics numenta aws

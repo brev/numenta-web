@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: We are pleased to report that Numenta has released version 1.6 of Grok for IT Analytics, which is available for no license charge on the AWS Marketplace. This version offers several new important features
 date: 2014/11/11
 featured: false
-image: /assets/img/pages/newsletters/logos/numenta.png
+image: ../images/numenta.png
 org: CEO
 tags: grok 1.6 release aws amazon web services reinvent las vegas nov 2014 numenta it analytics
 title: Grok 1.6 Released - Showcasing at AWS ReInvent in Las Vegas, Nov 11-14
