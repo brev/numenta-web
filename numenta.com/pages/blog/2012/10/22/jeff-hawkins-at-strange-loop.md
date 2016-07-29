@@ -5,7 +5,6 @@ date: 2012/10/22
 featured: false
 image: /assets/img/pages/blog/2012-10-22/image.png
 org: Marketing
-styles: [ 'css/blog.css' ]
 tags: Neuroscience, Machine Learning
 title: Jeff Hawkins at Strange Loop
 ---
