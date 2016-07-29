@@ -52,7 +52,7 @@ simulations, the authors show the new sequence memory exhibits a number of
 important properties such as the ability to learn complex sequences, continuous
 unsupervised learning, and extremely high fault tolerance.
 
-<img src="/assets/img/pages/press/2016-04-12/image.jpg" class="center-block img-responsive media-border" alt="Neuron image" />
+<img src="../images/image.jpg" class="center-block img-responsive media-border" alt="Neuron image" />
 <div class="caption">
   **Comparison of Biological and Artificial Neuron Models:**
   The Hawkins-Ahmad paper on the theory of sequence memory in the neocortex

@@ -54,7 +54,7 @@ companies are ranked from the most anomalous to the least anomalous over the
 previous hour. HTM for Stocks lets you see the text of the Tweets as well,
 often explaining why the company is showing an anomaly.
 
-![HTM for Stocks Screenshot](/assets/img/pages/press/2015-07-08/screen.png)
+![HTM for Stocks Screenshot](../images/screen.png)
 
 ### About Numenta
 

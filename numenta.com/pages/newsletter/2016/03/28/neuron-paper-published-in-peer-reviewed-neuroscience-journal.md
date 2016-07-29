@@ -3,7 +3,7 @@ author: Christy Maver
 brief: "Numenta has an ambitious mission: reverse-engineer the neocortex to understand how it works and apply those principles to software to create intelligent machines.  Because neuroscience is the foundation of everything we do"
 date: 2016/03/28
 featured: false
-image: ../images/numenta.png
+image: ../../../../images/numenta.png
 org: Director of Marketing
 tags: numenta neuron paper published peer reviewed neuroscience journal frontiers neural circuits neurons have thousands synapses theory sequence memory
 title: Neuron Paper Published in Peer-reviewed Neuroscience Journal
