@@ -27,7 +27,7 @@ import TableRow from '../../components/TableRow'
 import TextLink from '../../components/TextLink'
 
 import ImageCareers from './images/careers.png'
-import ImageCeleste from './images/team/celeste-baranski.jpg'
+import ImageCeleste from './images/team/celeste-baranski.png'
 import ImageDonna from './images/team/donna-dubinsky.jpg'
 import ImageEd from './images/team/ed-colligan.jpg'
 import ImageHarry from './images/team/harry-saal.jpg'
