@@ -15,7 +15,7 @@ event:
   who: Subutai Ahmad
   why: Invited Participant
 featured: false
-image: /assets/img/pages/events/2015-11-01/image.png
+image: ../images/image.png
 org: VP Research
 tags: subutai ahmad numenta htm machine intelligence janelia research emerging tools whole brain functional data
 title: HHMI Janelia Emerging Tools for Acquisition and Interpretation of Whole-Brain Functional Data

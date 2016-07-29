@@ -3,7 +3,7 @@ author: Christy Maver
 brief: We receive many requests for better documentation of our work, and as our research has progressed, we know that some of our most popular papers are now outdated. As a result, we have been working for some time on creating a living
 date: 2016/05/11
 featured: false
-image: /assets/img/pages/newsletters/logos/numenta.png
+image: ../../../../images/numenta.png
 org: Director of Marketing
 tags: numenta newsletter may 2016 bami biological and machine intelligence living online book machine intelligence htm hierarchical temporal memory
 title: "Announcing BAMI: Biological and Machine Intelligence, a Living Online Book"

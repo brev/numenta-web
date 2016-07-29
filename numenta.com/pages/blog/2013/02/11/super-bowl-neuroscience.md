@@ -3,7 +3,7 @@ author: Subutai Ahmad
 brief: We promised to explain how the Sparse Football Pool relates to the brain, the CLA (Numenta's Cortical Learning Algorithm) and Intelligence.  The CLA relies on
 date: 2013/02/11
 featured: false
-image: /assets/img/pages/blog/2013-02-11/image.png
+image: ../images/image.png
 org: VP Research
 tags:  Neuroscience, Machine Learning
 title: Super Bowl Neuroscience

@@ -16,7 +16,7 @@ event:
   who: Subutai Ahmad
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2014-08-20/image.png
+image: ../images/image.png
 org: VP Research
 tags: numenta grok cognitive computing forum san jose 2014
 title: Cognitive Computing Forum

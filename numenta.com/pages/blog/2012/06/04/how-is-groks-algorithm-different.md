@@ -3,7 +3,7 @@ author: Subutai Ahmad
 brief: There is a well known truism in machine learning, the "No Free Lunch Theorem," which states that no algorithm is inherently better than any other algorithm.
 date: 2012/06/04
 featured: false
-image: /assets/img/pages/blog/2012-06-04/image.png
+image: ../images/image.png
 org: VP Research
 tags: Machine Learning
 title: How is Grok's algorithm different?

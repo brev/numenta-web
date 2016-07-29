@@ -15,7 +15,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2014-10-30/image.png
+image: ../images/image.png
 org: Co-Founder
 tags: ibm research cognitive systems colloquium jeff hawkins numenta machine intelligence cognitive computing
 title: IBM Research Cognitive Systems Colloquium

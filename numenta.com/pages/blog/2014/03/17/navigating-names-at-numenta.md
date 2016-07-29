@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: For a company that is launching its first product, we have an unusual number of terms and names, including Numenta, Grok, HTM, and NuPIC. This abundance of names reflects our unusual mission.
 date: 2014/03/17
 featured: false
-image: /assets/img/pages/blog/2014-03-17/image.png
+image: ../images/image.png
 org: CEO
 tags: numenta, name, change, grok
 title: Navigating Names at Numenta

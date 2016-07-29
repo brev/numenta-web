@@ -13,7 +13,7 @@ event:
     country: USA
     web: http://www.meetup.com/numenta/events/220422020/
 featured: false
-image: /assets/img/pages/events/2015-05-30/image.png
+image: ../images/image.png
 org: Open Source Manager
 tags: nupic spring 2015 hackathon numenta machine intelligence htm hierarchical temporal memory
 title: NuPIC Spring 2015 Hackathon NYC

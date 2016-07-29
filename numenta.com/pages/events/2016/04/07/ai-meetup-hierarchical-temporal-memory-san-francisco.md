@@ -16,7 +16,7 @@ event:
   who: Yuwei Cui
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-04-07/image.png
+image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory ai meetup san francisco
 title: AI Meetup - Hierarchical Temporal Memory

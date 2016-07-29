@@ -3,7 +3,7 @@ author: Numenta
 brief: Numenta, Inc., a leader in machine intelligence, and Cortical.io, an innovator in natural language processing (NLP), are pleased to announce a strategic partnership to create a new computing approach to understanding text. As part of the strategic relationship,
 date: 2015/05/14
 featured: false
-image: /assets/img/pages/press/logos/numenta.png
+image: ../images/numenta.png
 link:
 org: Press Release
 tags: numenta cortical.io form strategic partnership htm hierarchical temporal memory sdr sparse distributed memory retina wikipedia natural lanuage learning

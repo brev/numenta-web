@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: Over the past year, we have tested our Grok technology on a variety of enterprise applications. Customers show substantial interest in our technology, with proposed
 date: 2013/10/11
 featured: false
-image: /assets/img/pages/newsletters/logos/numenta.png
+image: ../../../../images/numenta.png
 org: CEO
 tags: grok it
 title: Announcing Grok for IT

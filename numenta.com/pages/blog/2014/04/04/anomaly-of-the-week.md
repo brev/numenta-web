@@ -3,7 +3,7 @@ author: Subutai Ahmad
 brief: "My smartphone buzzed: Grok had sent an alert. I know that with Grok it just takes a few seconds to check things out, so I clicked on the notification graph"
 date: 2014/04/04
 featured: false
-image: /assets/img/pages/blog/2014-04-04/image.png
+image: ../images/image.png
 org: VP Research
 tags: science, anomaly, detection, grok, aws
 title: Anomaly of the Week
@@ -23,9 +23,9 @@ those servers relying on the AWS API were unusable.
 Below are two screen shots from the Grok mobile application showing the Hourly
 view and the Day view for that time period.
 
-![Grok Screenshot](/assets/img/pages/blog/2014-04-04/1.png "Grok Screenshot")
+![Grok Screenshot](../images/1.png "Grok Screenshot")
 
-![Grok Screenshot](/assets/img/pages/blog/2014-04-04/2.png "Grok Screenshot")
+![Grok Screenshot](../images/2.png "Grok Screenshot")
 
 Notice that Grok flagged unusual behavior at 8pm, 35 minutes before Amazon’s API
 became completely unresponsive on the East Coast.
@@ -68,7 +68,7 @@ page. Amazon states that no instances were affected and this is true – we can
 attest that our machines kept running fine. On the other hand, any code that
 relied on the AWS API was drastically affected by this incident.
 
-![AWS Screenshot](/assets/img/pages/blog/2014-04-04/3.png "AWS Screenshot")
+![AWS Screenshot](../images/3.png "AWS Screenshot")
 
 In general AWS does an amazing job of keeping their infrastructure up and
 running but occasional incidents do happen. These incidents are unpredictable

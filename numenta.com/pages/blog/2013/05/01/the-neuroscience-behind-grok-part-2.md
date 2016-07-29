@@ -3,7 +3,7 @@ author: Rob Haitani
 brief: Representations are patterns in a computer or a brain that represent something in the real world. They are building blocks to understanding our world, that
 date: 2013/05/01
 featured: false
-image: /assets/img/pages/blog/2013-05-01/image.png
+image: ../images/image.png
 org: Marketing
 tags: Neuroscience
 title: The Neuroscience Behind Grok, Part 2
@@ -28,7 +28,7 @@ Representations are patterns in a computer or a brain that represent something
 in the real world. They are building blocks to understanding our world, that
 allow us to answer questions such as, "what is this?" and “what does this do?”
 
-![Grok Logo](/assets/img/pages/blog/2013-05-01/main.jpg)
+![Grok Logo](../images/main.jpg)
 
 That doesn't sound so complicated. Computer programs use bytes and words to
 represent everything from your age, to the color of a car, to the features of a

@@ -3,7 +3,7 @@ author: Rob Haitani
 brief: Will the future of machine intelligence lead to evil robots and a dystopian apocalypse?  Or robotic butlers and immortal carriers of our memories?  Berkeley
 date: 2012/12/13
 featured: false
-image: /assets/img/pages/blog/2012-12-13/image.png
+image: ../images/image.png
 org: Marketing
 tags: Machine Learning, Neuroscience
 title: Jeff Hawkins on Skynet vs. C3PO

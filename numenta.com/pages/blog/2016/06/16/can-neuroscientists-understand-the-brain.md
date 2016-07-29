@@ -4,7 +4,7 @@ brief: Eric Jonas and Konrad Kording just released a provocative paper, "Could a
 date: 2016/06/16
 featured: false
 hideImage: false
-image: /assets/img/pages/blog/2016-06-16/image.png
+image: ../images/image.png
 org: VP of Research
 tags: neuroscientist understand microprocessor
 title: Can Neuroscientists Understand the Brain?

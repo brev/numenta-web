@@ -16,7 +16,7 @@ event:
   who: Numenta Engineering
   why: Speaking
 featured: true
-image: /assets/img/pages/events/2016-03-17/image.png
+image: ../images/image.png
 org: Event
 tags: numenta htm workshop hierarchical temporal memory berkeley institute data science bids
 title: Numenta HTM Workshop at Berkeley Institute for Data Science

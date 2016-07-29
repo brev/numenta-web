@@ -16,7 +16,7 @@ event:
   who: Yuwei Cui
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-07-26/image.png
+image: ../images/image.png
 org: Research Engineer
 tags: numenta ieee wcci world congress computational intelligence 2016
 title: IEEE WCCI 2016

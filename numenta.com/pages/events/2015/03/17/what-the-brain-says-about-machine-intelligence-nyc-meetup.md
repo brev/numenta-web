@@ -16,7 +16,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2015-03-17/image.png
+image: ../images/image.png
 org: Co-Founder
 tags: meetup nyc new york city cornell tech what the brain says about machine intelligence jeff hawkins numenta
 title: What the Brain Says About Machine Intelligence NYC Meetup

@@ -3,13 +3,13 @@ author: Jeff Hawkins
 brief: I am often asked, "Is Numenta’s Cortical Learning Algorithm a neural network?" The short answer to this question is "Yes," but the problem with this short
 date: 2013/02/19
 featured: false
-image: /assets/img/pages/blog/2013-02-19/main.jpg
+image: ../images/main.jpg
 org: Founder
 tags: Machine Learning, Neuroscience
 title: Not Your Father's Neural Network
 ---
 
-![Image](/assets/img/pages/blog/2013-02-19/main.jpg "CLA Neuron")
+![Image](../images/main.jpg "CLA Neuron")
 
 I am often asked, "Is Numenta’s
 [Cortical Learning Algorithm](http://numenta.org/cla.html) a

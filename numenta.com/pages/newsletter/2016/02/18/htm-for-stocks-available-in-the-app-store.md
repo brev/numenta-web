@@ -3,7 +3,7 @@ author: Christy Maver
 brief: I'm pleased to announce that we have released an iOS version of HTM for Stocks, a demonstration application that enables anybody to experience HTM technology firsthand. Previously available for Android only, HTM for Stocks now can be
 date: 2016/02/18
 featured: false
-image: /assets/img/pages/newsletters/2016-02-18/image.png
+image: ../images/image.png
 org: Director of Marketing
 tags: htm for stocks apple app store hierarchical temporal memory numenta
 title: HTM for Stocks available in the App Store

@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: I am pleased to share with our newsletter subscribers the availability of Grok Amazon Web Services (AWS) Marketplace. Grok monitors complex networks running
 date: 2014/02/04
 featured: false
-image: /assets/img/pages/newsletters/logos/numenta.png
+image: ../../../../images/numenta.png
 org: CEO
 tags: grok soft launch
 title: Announcing Grok 1.0 Soft Launch

@@ -3,7 +3,7 @@ author: Numenta
 brief: Around this time of year the US goes crazy over the Super Bowl. So be it, but did you ever think the Super Bowl could help you understand how your brain works? Well, it can!
 date: 2015/01/22
 featured: false
-image: /assets/img/pages/blog/2015-01-22/image.jpg
+image: ../images/image.jpg
 org: Subutai Ahmad & Ryan McCall
 tags: sparse football pool ii 2015 super bowl xlix sdr sparse distributed representation htm
 title: Introducing Sparse Football Pool II

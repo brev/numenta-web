@@ -15,7 +15,7 @@ event:
   who: Donna Dubinsky
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2015-06-01/image.png
+image: ../images/image.png
 org: CEO, Co-Founder
 tags: orange institute 14 silicon valley redefine business donna dubinsky numenta machine intelligence
 title: Orange Institute 14 How Silicon Valley is Redefining Business Again

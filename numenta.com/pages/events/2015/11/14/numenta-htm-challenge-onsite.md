@@ -16,7 +16,7 @@ event:
   who:
   why:
 featured: false
-image: /assets/img/pages/events/2015-11-14/image.png
+image: ../images/image.png
 org: Open Source Flag-Bearer
 tags: numenta htm challenge onsite 2015 nupic hierarchical temporal memory brain neocortex machine learning intelligence
 title: Numenta HTM Challenge Onsite

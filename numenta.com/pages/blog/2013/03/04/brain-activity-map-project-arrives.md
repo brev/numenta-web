@@ -3,7 +3,7 @@ author: Jeff Hawkins
 brief: Last month the Obama administration announced a new ten year $3B science initiative called the "Brain Activity Map Project" (BAM). The ultimate goal is
 date: 2013/03/04
 featured: false
-image: /assets/img/pages/blog/2013-03-04/image.png
+image: ../images/image.png
 org: Founder
 tags: Neuroscience
 title: BAM! The Brain Activity Map Project arrives
@@ -24,7 +24,7 @@ humanity in two epochs, before and after understanding how brains work, or
 before and after machine intelligence.  National focus and money on this
 important problem makes sense and will accelerate progress.
 
-![Brain Image](/assets/img/pages/blog/2013-03-04/main.jpg)
+![Brain Image](../images/main.jpg)
 
 BAM is modeled after the
 [Human Genome Project](http://www.ornl.gov/sci/techresources/Human_Genome/home.shtml).

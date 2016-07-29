@@ -16,7 +16,7 @@ event:
   who: Alexander Lavin
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2015-12-09/image.png
+image: ../images/image.png
 org: Engineer
 tags: ieee machine learning conference numenta alexander lavin reserach numenta anomaly detection algorithm benchmark
 title: 14th IEEE International Conference on Machine Learning and Applications (ICMLA)

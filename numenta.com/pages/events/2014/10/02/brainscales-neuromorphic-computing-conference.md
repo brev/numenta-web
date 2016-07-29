@@ -16,7 +16,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2014-10-02/image.png
+image: ../images/image.png
 org: Co-founder
 tags: brainscales neuromorphic computing conference jeff hawkins model cortical layers
 title: Frontiers in Neuromorphic Computing Conference

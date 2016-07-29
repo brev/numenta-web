@@ -16,7 +16,7 @@ event:
   who: Christy Maver & Scott Purdy
   why: Webinar
 featured: false
-image: /assets/img/pages/events/2016-04-26/image.png
+image: ../images/image.png
 org: Christy Maver & Scott Purdy
 tags: numenta webinar machine intelligence with streaming data
 title: "Webinar: Machine Intelligence with Streaming Data"

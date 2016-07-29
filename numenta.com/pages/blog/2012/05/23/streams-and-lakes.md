@@ -3,7 +3,7 @@ author: Jeff Hawkins
 brief: Today we hear so much about "big data" and the database tools you can use to sort through large amounts of data. However at Numenta we see a different future.
 date: 2012/05/23
 featured: false
-image: /assets/img/pages/blog/2012-05-23/image.png
+image: ../images/image.png
 org: Founder
 title: Streams and Lakes
 tags: Machine Learning, Data, Neuroscience

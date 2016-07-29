@@ -4,7 +4,7 @@ brief: We are excited to announce the Numenta Anomaly Benchmark (NAB) Competitio
 date: 2016/02/11
 featured: false
 hideImage: true
-image: /assets/img/pages/blog/2016-02-11/image.png
+image: ../images/image.png
 org: Marketing
 tags: numenta anomaly benchmark nab competition ieee wcci world congress computational intelligence 2016
 title: The NAB Competition 2016

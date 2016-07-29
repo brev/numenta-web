@@ -3,7 +3,7 @@ author: Jared Weiss
 brief: Using Grok's custom metrics, I sampled and fed AWS burnrate statistics into Grok for regional burnrates as well as instance counts. Since AWS instances vary in pricing, spinning up one EC2 I2-8xlarge instance could be just as much of a
 date: 2014/08/29
 featured: false
-image: /assets/img/pages/blog/2014-08-29/image.png
+image: ../images/image.png
 org: Engineering Intern
 tags: grok numenta managing aws amazon web services cost anomalies burn rate
 title: Grok for Managing AWS Cost Anomalies
@@ -38,10 +38,10 @@ AMI tests, when all of a sudden an instance was manually created, Grok quickly
 notified me.
 
 ##### Grok Web UI showing Normal Pattern
-![Grok Screenshot](/assets/img/pages/blog/2014-08-29/1.png)
+![Grok Screenshot](../images/1.png)
 
 ##### Grok Web UI showing anomaly due to launch of AMI tests
-![Grok Screenshot](/assets/img/pages/blog/2014-08-29/2.png)
+![Grok Screenshot](../images/2.png)
 
 In this case because I knew the QA team was starting a new cycle of testing, I
 was able to easily identify the cause of the anomaly.  Nevertheless, it was
@@ -69,7 +69,7 @@ unnecessarily large.  Despite a more noisy usage pattern for this AWS region,
 Grok was able to identify it.
 
 ##### Grok Web UI showing anomaly due to error in auto-scaling group configuration
-![Grok Screenshot](/assets/img/pages/blog/2014-08-29/3.png)
+![Grok Screenshot](../images/3.png)
 
 Grok can also learn new behaviors. When we began to spin up several more costly
 instances for testing, Grok first detected this behavior as anomalous, but as we
@@ -80,4 +80,4 @@ to server burnrate are inevitable, and it’s necessarily important to be able t
 learn the new burnrate patterns.
 
 ##### Grok Web UI showing learning of new pattern
-![Grok Screenshot](/assets/img/pages/blog/2014-08-29/4.png)
+![Grok Screenshot](../images/4.png)

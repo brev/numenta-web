@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: I’m writing today to give you a progress report from Numenta.  We have continued to make strides towards our mission of being a catalyst for machine intelligence.
 date: 2014/06/10
 featured: false
-image: /assets/img/pages/newsletters/logos/numenta.png
+image: ../../../../images/numenta.png
 org: CEO
 tags: june 2014 numenta nupic grok aws
 title: Progress Report June 2014 Newsletter

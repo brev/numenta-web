@@ -3,7 +3,7 @@ author: Joe Hayashi
 brief: A question we get from time to time is, “How is Grok different from complex event processing systems?”  Like Grok, CEP systems are all about streaming data
 date: 2013/04/02
 featured: false
-image: /assets/img/pages/blog/2013-04-02/image.jpg
+image: ../images/image.jpg
 org: Marketing
 tags: Company, Data
 title: Numenta and Complex Event Processing
@@ -43,7 +43,7 @@ In a nutshell, Grok makes it easy to get predictions from and find anomalies in
 data streams. It's certainly helpful to know what is happening now, but the next
 logical question to ask is, “what will happen next?”
 
-![Image](/assets/img/pages/blog/2013-04-02/cep-arrow.jpg "Numenta and CEP Systems")
+![Image](../images/cep-arrow.jpg "Numenta and CEP Systems")
 
 The simple view is that business intelligence systems are focused on historical
 data, CEP systems focus on what is happening right now, and Grok is focused on

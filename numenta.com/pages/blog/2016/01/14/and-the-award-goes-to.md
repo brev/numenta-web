@@ -3,7 +3,7 @@ author: Christy Maver
 brief: This morning, as Hollywood anxiously awaited to hear the nominees for this year’s Academy Awards, another set of winners was recognized – not for motion pictures, but for artificial intelligence.
 date: 2016/01/14
 featured: false
-image: /assets/img/pages/blog/2016-01-14/image.png
+image: ../images/image.png
 org: Director of Marketing
 tags: numenta AI awards artificial machine intelligence learning deep htm brain neurons nupic
 title: And the award goes to...

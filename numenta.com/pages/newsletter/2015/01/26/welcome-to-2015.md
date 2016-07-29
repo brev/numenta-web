@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: As a fun and educational kick-off to the year, we are offering our second Super Bowl sparse football pool. Entering the pool is free, and prizes are offered for the top five winners (note that because of legal constraints, those
 date: 2015/01/26
 featured: false
-image: /assets/img/pages/newsletters/logos/numenta.png
+image: ../../../../images/numenta.png
 org: CEO
 tags:
 title: Welcome to 2015!

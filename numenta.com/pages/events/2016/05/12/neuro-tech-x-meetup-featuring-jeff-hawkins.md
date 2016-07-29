@@ -16,7 +16,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-05-12/image.png
+image: ../images/image.png
 org: Co-Founder
 tags: jeff hawkins numenta founder speaking machine intelligence artificial neocortex
 title: NeuroTechX meetup featuring Jeff Hawkins

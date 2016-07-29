@@ -16,7 +16,7 @@ event:
   who:
   why:
 featured: false
-image: /assets/img/pages/events/2016-03-29/image.png
+image: ../images/image.png
 org: Event
 tags: strata hadoop world big data conference 2016 oreilly numenta machine intelligence
 title: "Strata + Hadoop World 2016: O’Reilly Big Data Conference"

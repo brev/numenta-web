@@ -16,7 +16,7 @@ event:
   who: Yuwei Cui
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-06-22/image.png
+image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory areadne 2016 research encoding decoding neural ensembles
 title: Areadne 2016 - Research in Encoding And Decoding of Neural Ensembles
