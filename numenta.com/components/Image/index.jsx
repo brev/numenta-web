@@ -10,7 +10,7 @@ const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
   const prefix = prefixLink()
   let source = src
 
-  if (prefix && !source.match(prefix)) {
+  if (prefix && source && !source.match(prefix)) {
     source = prefixLink(source)
   }
 
