@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: In this post, I’d like to tell you about some changes and updates to our open source and commercial licensing strategy. First, effective today, we will be using the AGPL open source license instead of
 date: 2015/08/15
 featured: false
-image: /assets/img/pages/blog/2015-08-15/image.png
+image: ../images/image.png
 org: CEO
 tags: numenta licensing update switch agpl agplv3 open source free software machine intelligence htm hierarchical temporal memory streaming temporal data patterns anomaly outlier detection
 title: Numenta Licensing Update and AGPLv3

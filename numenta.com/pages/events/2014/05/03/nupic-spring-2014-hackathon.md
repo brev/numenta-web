@@ -13,7 +13,7 @@ event:
     country: USA
     web: http://numenta.org/events.html#nupic_spring_2014_hackathon
 featured: false
-image: /assets/img/pages/events/2014-05-03/image.png
+image: ../images/image.png
 org: Open Source Manager
 tags: nupic spring 2014 hackathon numenta platform for intelligent computing open source
 title: NuPIC Spring 2014 Hackathon

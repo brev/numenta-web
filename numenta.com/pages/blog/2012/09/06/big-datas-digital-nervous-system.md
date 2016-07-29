@@ -3,7 +3,7 @@ author: Rob Haitani
 brief: But a major shift is underway. "The arrival of the Internet and web has added a new dimension, bringing in an era of entirely digital business. Customer
 date: 2012/09/06
 featured: false
-image: /assets/img/pages/blog/2012-09-06/image.png
+image: ../images/image.png
 org: Marketing
 tags: Data
 title: Big Data's Digital Nervous System

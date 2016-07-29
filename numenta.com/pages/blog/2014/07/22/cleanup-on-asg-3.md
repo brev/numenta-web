@@ -3,7 +3,7 @@ author: Joe Block
 brief: I saw a notification from Grok that our web server auto scaling group (ASG) was acting anomalously. At first I thought it was only because we were heavier
 date: 2014/07/22
 featured: false
-image: /assets/img/pages/blog/2014-07-22/image.png
+image: ../images/image.png
 org: Site Reliability Engineer
 tags: science, anomaly, detection, grok, aws
 title: Cleanup on ASG 3
@@ -44,7 +44,7 @@ lagging behind the spikes in network, and I immediately got an idea of what was
 going on, and a quick look at the ASG’s scaling history and the logs on a
 freshly started web server instance confirmed my suspicions.
 
-![Grok Screenshot](/assets/img/pages/blog/2014-07-22/ASG-failing.png "Grok Screenshot")
+![Grok Screenshot](../images/ASG-failing.png "Grok Screenshot")
 
 Here’s a little background about our web server back end auto scaling group. The
 Numenta web site itself is stored in a git repository and uses a combination of
@@ -86,7 +86,7 @@ don’t have to do anything else when we update the web site content.
 Here's an example of the new, normal curves after all the fixes were put in
 place:
 
-![Grok Screenshot](/assets/img/pages/blog/2014-07-22/ASG-healthy.png "Grok Screenshot")
+![Grok Screenshot](../images/ASG-healthy.png "Grok Screenshot")
 
 I could have figured this out without Grok, but I would have had to look at
 every metric for the ASG, then scrubbed through them to find where the anomalous

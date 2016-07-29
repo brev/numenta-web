@@ -13,7 +13,7 @@ event:
     country: USA
     web: http://monitorama.com/
 featured: false
-image: /assets/img/pages/events/2014-05-05/image.png
+image: ../images/image.png
 org: Event
 tags: grok it analytics monitorama 2014
 title: Monitorama

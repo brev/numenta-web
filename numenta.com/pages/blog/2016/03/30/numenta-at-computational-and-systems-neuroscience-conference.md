@@ -4,7 +4,7 @@ brief: Earlier this month, I attended the annual Computational and Systems Neuro
 date: 2016/03/30
 featured: false
 hideImage: true
-image: /assets/img/pages/blog/2016-03-30/image.png
+image: ../images/image.png
 org: Research Engineer
 tags: numenta computational systems neuroscience conference
 title: Numenta at the Computational and Systems Neuroscience Conference (COSYNE)
@@ -46,7 +46,7 @@ the biophysical mechanism underlying dendritic spikes. Nevertheless, the
 function of dendritic spikes remains unclear and it is not incorporated in most
 neural network models.
 
-<img src="/assets/img/pages/blog/2016-03-30/2.png" class="center-block img-responsive media-border" alt="Image of Active Dendrite Firing Timing" />
+<img src="../images/2.png" class="center-block img-responsive media-border" alt="Image of Active Dendrite Firing Timing" />
 
 <div class="caption">
   **Left:** A pyramidal neuron in the cortex (Spruston 2008, Nat Rev Neurosci).
@@ -67,7 +67,7 @@ only achieves comparable performance to state-of-the-art machine learning
 algorithms, but also exhibits many desirable attributes for real-world sequence
 learning with streaming data.
 
-<img src="/assets/img/pages/blog/2016-03-30/3.png" class="center-block img-responsive media-border" alt="Prediction graph image" />
+<img src="../images/3.png" class="center-block img-responsive media-border" alt="Prediction graph image" />
 <div class="caption">
   HTM sequence memory model makes accurate 2.5 hour ahead-predictions of taxi
   demand in the New York City.
@@ -104,10 +104,10 @@ to learn about the HTM theory.  Let me know what you think of it by contacting
 [ycui@numenta.com](mailto:ycui@numenta.com) and join the discussion of HTM in
 the [NuPIC community](http://numenta.org).
 
-<a href="/assets/pdf/pages/blog/2016-03-30/cosyne-poster.pdf">
-  <img src="/assets/img/pages/blog/2016-03-30/image.png" class="center-block img-responsive media-border" alt="Numenta conference poster image" />
+<a href="../images/cosyne-poster.pdf">
+  <img src="../images/image.png" class="center-block img-responsive media-border" alt="Numenta conference poster image" />
 </a>
 <div class="caption">
   Numenta Cosyne Poster.
-  [Click to enlarge](/assets/pdf/pages/blog/2016-03-30/cosyne-poster.pdf).
+  [Click to enlarge](../images/cosyne-poster.pdf).
 </div>

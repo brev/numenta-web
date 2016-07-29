@@ -3,7 +3,7 @@ author: Numenta
 brief: We are frequently asked how we distinguish our technology from others. This task is made difficult by the fact that there is not an agreed vocabulary; everybody uses the above terms (and other associated terms) differently
 date: 2016/01/11
 featured: false
-image: /assets/img/pages/blog/2016-01-11/image.png
+image: ../images/image.png
 org: Jeff Hawkins & Donna Dubinsky
 tags: numenta machine intelligence learning deep artificial ai htm brain neurons
 title: What is Machine Intelligence vs. Machine Learning vs. Deep Learning vs. Artificial Intelligence (AI)?

@@ -16,7 +16,7 @@ event:
   who: Alexander Lavin
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-08-02/image.png
+image: ../images/image.png
 org: Research Engineer
 tags: sf san francisco data science meetup predictive analytics numenta machine intelligence
 title: SF Data Science Meetup

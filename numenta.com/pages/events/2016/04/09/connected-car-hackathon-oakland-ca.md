@@ -16,7 +16,7 @@ event:
   who: Matthew Taylor
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-04-09/image.png
+image: ../images/image.png
 org: Open Source Manager
 tags: mtc connected car hackathon oakland numenta nupic
 title: Connected Car Hackathon

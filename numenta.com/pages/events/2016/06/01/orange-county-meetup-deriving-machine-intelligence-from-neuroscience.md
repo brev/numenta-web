@@ -16,7 +16,7 @@ event:
   who: Alexander Lavin
   why: Speaking
 featured: false
-image: /assets/img/pages/events/default.png
+image: ../images/image.png
 org: Research Engineer
 tags: numenta machine intelligence neuroscience orange county oc meetup
 title: OC Meetup - Deriving Machine Intelligence from Neuroscience

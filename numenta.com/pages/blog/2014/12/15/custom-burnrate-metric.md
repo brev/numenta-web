@@ -3,7 +3,7 @@ author: Joe Block
 brief: Using the burnrate custom metrics script with your Grok server
 date: 2014/12/15
 featured: false
-image: /assets/img/pages/blog/2014-12-15/image.png
+image: ../images/image.png
 org: Site Reliability Engineer
 tags: grok aws ec2 custom metrics burn rate numenta machine intelligence
 title: Monitoring AWS EC2 Burnrate with Grok

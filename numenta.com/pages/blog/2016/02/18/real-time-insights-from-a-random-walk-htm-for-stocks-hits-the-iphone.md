@@ -4,7 +4,7 @@ brief: While Numenta may not be in the business of selling traditional products,
 date: 2016/02/18
 featured: false
 hideImage: true
-image: /assets/img/pages/blog/2016-02-18/image.png
+image: ../images/image.png
 org: Director of Marketing
 tags: htm for stocks iphone apple app store real time insights random walk hierarchical temporal memory
 title: "Real-time Insights from a Random Walk: HTM for Stocks Hits the iPhone"
@@ -22,7 +22,7 @@ Android users can still access the app <t render="hbs">
 experience HTM is your cell phone.
 
 <div>
-  <img src="/assets/img/pages/blog/2016-02-18/1.png" class="center-block img-responsive media-border" alt="HTM for Stocks in App Store" />
+  <img src="../images/1.png" class="center-block img-responsive media-border" alt="HTM for Stocks in App Store" />
 </div>
 
 HTM can be applied in a variety of use cases, but we chose to focus this
@@ -56,14 +56,14 @@ frame.  HTM for Stocks catches this anomaly, where other detection methods like
 thresholding would not.
 
 <div>
-  <img src="/assets/img/pages/blog/2016-02-18/2.png" class="center-block img-responsive media-border" alt="HTM for Stocks screenshot" />
+  <img src="../images/2.png" class="center-block img-responsive media-border" alt="HTM for Stocks screenshot" />
 </div>
 
 Interestingly, HTM for Stocks identifies temporal anomalies in the Twitter
 volume just before the stock volume anomaly.   
 
 <div>
-  <img src="/assets/img/pages/blog/2016-02-18/3.png" class="center-block img-responsive media-border" alt="HTM for Stocks screenshot" />
+  <img src="../images/3.png" class="center-block img-responsive media-border" alt="HTM for Stocks screenshot" />
 </div>
 
 The Twitter volume data not only indicates that something unusual is happening
@@ -82,7 +82,7 @@ movement where again we see a double spike at the beginning of market hours.
 We also see multiple Twitter volume anomalies throughout the day.
 
 <div>
-  <img src="/assets/img/pages/blog/2016-02-18/4.png" class="center-block img-responsive media-border" alt="HTM for Stocks screenshot" />
+  <img src="../images/4.png" class="center-block img-responsive media-border" alt="HTM for Stocks screenshot" />
 </div>
 
 Much like the previous example, these anomalies are temporal in nature, and

@@ -13,7 +13,7 @@ event:
     country: USA
     web: https://aws.amazon.com/aws-summit-2014/
 featured: false
-image: /assets/img/pages/events/2014-07-09/image.png
+image: ../images/image.png
 org: Event
 tags: grok it analytics aws amazon web services summit ny 2014
 title: AWS Summit New York

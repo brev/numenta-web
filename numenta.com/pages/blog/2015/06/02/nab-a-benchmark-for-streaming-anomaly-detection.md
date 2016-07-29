@@ -3,7 +3,7 @@ author: Alexander Lavin
 brief: Data is in ever-increasing supply as sensors inhabit more and more of our world. Examples abound from health data tracked by pacemakers and fitness wearables, to temperature sensors
 date: 2015/06/02
 featured: false
-image: /assets/img/pages/blog/2015-06-02/graph2.png
+image: ../images/graph2.png
 org: Software Engineer
 tags: nab numenta anomaly benchmark streaming data detection realtime
 title: NAB - A Benchmark for Streaming Anomaly Detection
@@ -27,7 +27,7 @@ metric is blood glucose level for a diabetes patient, stock volume for a Fortune
 plot shows data anomalies, or deviations from the normal pattern.
 
 
-![NAB Screenshot 1](/assets/img/pages/blog/2015-06-02/graph1.png)
+![NAB Screenshot 1](../images/graph1.png)
 
 > **Figure 1** – An example data file from the NAB corpus; data from monitoring
 > the temperature of an internal component of a large, expensive, industrial
@@ -72,7 +72,7 @@ Numenta detector on the sample data file of Figure 1, where the algorithm
 accurately detected all three anomalies with no false positives.
 
 
-![NAB Screenshot 2](/assets/img/pages/blog/2015-06-02/graph2.png)
+![NAB Screenshot 2](../images/graph2.png)
 
 > **Figure 2** – NAB results for the Numenta detector on a data file
 > representing machine component temperature readings. The detections resulted

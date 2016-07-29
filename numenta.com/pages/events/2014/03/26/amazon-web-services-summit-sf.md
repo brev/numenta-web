@@ -13,7 +13,7 @@ event:
     country: USA
     web: https://aws.amazon.com/aws-summit-2014/san-francisco/
 featured: false
-image: /assets/img/pages/events/2014-03-26/image.png
+image: ../images/image.png
 org: Event
 tags: grok it analytics aws amazon web services summit sf san francisco 2014
 title: AWS Summit San Francisco

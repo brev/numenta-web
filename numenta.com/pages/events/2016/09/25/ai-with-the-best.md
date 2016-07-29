@@ -16,7 +16,7 @@ event:
   who: Matthew Taylor
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-09-25/image.png
+image: ../images/image.png
 org: HTM Community Leader
 tags: ai with the best artificial intelligence htm hierarchical temporal memory computing like the brain
 title: AI with the Best

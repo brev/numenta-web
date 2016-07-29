@@ -16,7 +16,7 @@ event:
   who: Alexander Lavin
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-04-23/image.png
+image: ../images/image.png
 org: Research Engineer
 tags: ted tedx cornell tech alexander lavin numenta research engineer
 title: TEDx Cornell Tech

@@ -16,7 +16,7 @@ event:
   who: Scott Purdy
   why: Speaking
 featured: false
-image: /assets/img/pages/events/default.png
+image: ../images/image.png
 org: Engineering Manager
 tags: numenta grok event advanced aws meetup lightning talk anomlay service
 title: Advanced AWS Meetup Lightning Talk

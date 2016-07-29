@@ -3,7 +3,7 @@ author: Rob Haitani
 brief: Jeff Hawkins recently gave a keynote address at Strange Loop 2012, a conference on diverse topics like emerging languages, alternative databases, concurrency and distributed systems.
 date: 2012/10/22
 featured: false
-image: /assets/img/pages/blog/2012-10-22/image.png
+image: ../images/image.png
 org: Marketing
 tags: Neuroscience, Machine Learning
 title: Jeff Hawkins at Strange Loop

@@ -16,7 +16,7 @@ event:
   who: Subutai Ahmad
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2015-02-17/image.png
+image: ../images/image.png
 org: VP Research
 tags: strata hadoop world big data subutai ahmad numenta machine intelligence streaming analytics
 title: Strata + Hadoop World 2015

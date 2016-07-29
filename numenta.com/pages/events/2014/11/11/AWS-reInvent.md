@@ -13,7 +13,7 @@ event:
     country: USA
     web: https://reinvent.awsevents.com/
 featured: false
-image: /assets/img/pages/events/2014-11-11/image.png
+image: ../images/image.png
 org: Event
 tags: grok it analytics aws reinvent 2014
 title: "AWS re:Invent"

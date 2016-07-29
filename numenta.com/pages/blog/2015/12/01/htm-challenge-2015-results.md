@@ -3,7 +3,7 @@ author: Donna Dubinsky
 brief: Earlier this month, we ran a contest for our developer community to use our algorithms on real world problems.  The contest, called the HTM Challenge, was conceived by Matt Taylor, our community flag-bearer, as a way to enable the
 date: 2015/12/01
 featured: false
-image: /assets/img/pages/blog/2015-12-01/image.png
+image: ../images/image.png
 org: CEO
 tags: numenta htm challenge 2015 results hierarchical temporal memory hackathon nupic open source project intelligent applications
 title: Numenta HTM Challenge 2015 Results

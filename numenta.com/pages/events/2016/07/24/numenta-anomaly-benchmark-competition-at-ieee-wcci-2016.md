@@ -16,7 +16,7 @@ event:
   who:
   why:
 featured: false
-image: /assets/img/pages/events/2016-07-24/image.png
+image: ../images/image.png
 org: Event
 tags: numenta anomaly benchmark competition nab ieee wcci world congress computational intelligence 2016
 title: IEEE WCCI 2016 - Numenta Anomaly Benchmark Competition

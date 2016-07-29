@@ -16,7 +16,7 @@ event:
   who: Subutai Ahmad
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-07-13/image.png
+image: ../images/image.png
 org: Numenta Event
 tags: data science summit 2016 numenta sponsor machine intelligence ai
 title: Data Science Summit US 2016

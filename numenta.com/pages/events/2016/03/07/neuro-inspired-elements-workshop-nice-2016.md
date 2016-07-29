@@ -16,7 +16,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-03-07/nice.png
+image: ../images/nice.png
 org: Co-Founder
 tags: numenta jeff hawkins speaking neuro inspired computational elements workshop nice 2016
 title: Neuro-Inspired Computational Elements (NICE) Workshop 2016

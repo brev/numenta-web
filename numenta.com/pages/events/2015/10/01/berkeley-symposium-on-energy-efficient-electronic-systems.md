@@ -16,7 +16,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2015-10-01/image.png
+image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins berkeley symposium energy efficient electronic systems htm hierarchical temporal memory
 title: Fourth Berkeley Symposium on Energy Efficient Electronic Systems

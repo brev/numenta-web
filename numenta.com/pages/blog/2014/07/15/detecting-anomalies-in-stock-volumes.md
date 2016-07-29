@@ -3,7 +3,7 @@ author: Viraj Sinha
 brief: "I decided to apply Grok and the Cortical Learning Algorithm to stock data: have the CLA learn patterns and alert me to anomalies. I decided to monitor volume"
 date: 2014/07/15
 featured: false
-image: /assets/img/pages/blog/2014-07-15/image.png
+image: ../images/image.png
 org: Summer Intern, Engineering
 tags: anomaly, detection, stock, finance, volume
 title: Detecting Anomalies in Stock Volumes
@@ -32,7 +32,7 @@ the evening. Since Grok actually learns the patterns rather than being a simple
 threshold-based system, it does very well learning patterns and filtering the
 signal from the noise.
 
-![Google Finance Graph](/assets/img/pages/blog/2014-07-15/1.png "Google Finance Graph")
+![Google Finance Graph](../images/1.png "Google Finance Graph")
 
 Here’s a real life example from the ticker for 3D Systems Corporation (DDD). 3D
 Systems Corporation builds and sells 3D printers and scanners, as well as sells
@@ -48,7 +48,7 @@ known that the price spiked, and would’ve seen it drop back down by the end of
 the day. It’s very convenient to be told when a share is doing something like
 this, rather than having to watch multiple prices during the day.
 
-![Grok Anomaly Chart](/assets/img/pages/blog/2014-07-15/2.png "Grok Anomaly Chart")
+![Grok Anomaly Chart](../images/2.png "Grok Anomaly Chart")
 
 Interestingly, we don’t see any anomalies after the first red peak on the
 anomaly chart. This is because Grok, by default, suppresses additional anomalies

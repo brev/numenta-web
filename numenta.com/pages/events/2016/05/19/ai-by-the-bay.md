@@ -16,7 +16,7 @@ event:
   who: Subutai Ahmad
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-05-19/aibythebay.png
+image: ../images/aibythebay.png
 org: VP Research
 tags: ai by the bay numenta detecting anomalies streaming data real time algorithms real world applications machine intelligence
 title: AI by the Bay

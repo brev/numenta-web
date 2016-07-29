@@ -16,7 +16,7 @@ event:
   who: Alexander Lavin
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2016-03-07/bigdata.png
+image: ../images/bigdata.png
 org: Research Engineer
 tags: global big data conference 2016 numenta htm hierarchical temporal memory
 title: Global Big Data Conference 2016

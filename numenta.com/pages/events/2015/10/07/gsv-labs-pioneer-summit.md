@@ -15,7 +15,7 @@ event:
   who: Jeff Hawkins
   why: Speaking
 featured: false
-image: /assets/img/pages/events/2015-10-07/image.png
+image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins nupic htm machine intelligence gsv labs gsvlabs pioneer summit
 title: GSVlabs Pioneer Summit 2015

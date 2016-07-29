@@ -3,7 +3,7 @@ author: Jared Casner
 brief: Like most engineering managers, I like to know when someone is manually touching one of our servers. That’s especially true for production systems, but also
 date: 2014/04/22
 featured: false
-image: /assets/img/pages/blog/2014-04-22/image.png
+image: ../images/image.png
 org: Director, Product Development
 tags: science, anomaly, detection, grok, aws
 title: Caught Red Handed
@@ -14,9 +14,9 @@ one of our servers.  That’s especially true for production systems, but also
 applies to QA servers.  So, imagine my chagrin when Grok caught me red handed,
 not just once, but twice this week!
 
-![Grok Screenshot](/assets/img/pages/blog/2014-04-22/1.png "Grok Screenshot")
+![Grok Screenshot](../images/1.png "Grok Screenshot")
 
-![Grok Screenshot](/assets/img/pages/blog/2014-04-22/2.png "Grok Screenshot")
+![Grok Screenshot](../images/2.png "Grok Screenshot")
 
 This first example was when I upgraded one of our QA servers to Grok 1.3
 (shameless plug – that’s available now in the [AWS marketplace](/grok/#get) !)
@@ -44,8 +44,8 @@ right around 10PM.  I drilled into that one and noticed that, sure enough, the
 pattern is just slightly different at 10PM than it is at 9PM.  It’s a visibly
 subtle difference, but important nonetheless.
 
-![Grok Screenshot](/assets/img/pages/blog/2014-04-22/3.png "Grok Screenshot")
+![Grok Screenshot](../images/3.png "Grok Screenshot")
 
-![Grok Screenshot](/assets/img/pages/blog/2014-04-22/4.png "Grok Screenshot")
+![Grok Screenshot](../images/4.png "Grok Screenshot")
 
 Stay tuned for our next “Anomaly of the Week”!
