@@ -38862,7 +38862,7 @@
 
 	module.exports = {
 		"name": "Numenta.com",
-		"version": "0.2.27",
+		"version": "0.2.28",
 		"description": "Numenta.com company website content, source code, and static generator tooling.",
 		"license": "SEE LICENSE IN LICENSE.TXT",
 		"main": false,
@@ -39040,6 +39040,8 @@
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
+	var _gatsbyHelpers = __webpack_require__(363);
+	
 	var _react = __webpack_require__(2);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -39050,6 +39052,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// eslint-disable-line import/no-unresolved, max-len
 	const Image = ({ alt, border, onClick, respond, shadow, src, title }) => {
 	  const classes = [_index2.default.image];
 	
@@ -39061,7 +39064,7 @@
 	    alt: alt,
 	    className: (0, _classnames2.default)(...classes),
 	    onClick: onClick,
-	    src: src,
+	    src: (0, _gatsbyHelpers.prefixLink)(src),
 	    title: title
 	  });
 	};
