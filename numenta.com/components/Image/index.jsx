@@ -7,6 +7,12 @@ import styles from './index.css'
 
 const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
   const classes = [styles.image]
+  const prefix = prefixLink()
+  let source = src
+
+  if (prefix && !source.match(prefix)) {
+    source = prefixLink(source)
+  }
 
   if (border) classes.push(styles.border)
   if (respond) classes.push(styles[respond])
@@ -17,7 +23,7 @@ const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
       alt={alt}
       className={classNames(...classes)}
       onClick={onClick}
-      src={prefixLink(src)}
+      src={source}
       title={title}
     />
   )
