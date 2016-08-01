@@ -1,0 +1,46 @@
+.columns {
+  composes: layout-columns from '../../static/assets/css/theme.css';
+}
+
+.content {
+  composes: layout-content from '../../static/assets/css/theme.css';
+}
+
+.aside {
+  composes: mt1 from 'tachyons';
+  composes: tc from 'tachyons';
+  composes: layout-aside from '../../static/assets/css/theme.css';
+}
+
+
+.postListItem {
+  composes: b--light-gray from 'tachyons';
+  composes: bt from 'tachyons';
+  composes: pb1 from 'tachyons';
+  composes: pt3 from 'tachyons';
+}
+
+.date {
+  composes: fw5 from 'tachyons';
+  composes: lh-copy from 'tachyons';
+  composes: mb2 from 'tachyons';
+}
+
+.title {
+  composes: db from 'tachyons';
+  composes: f4 from 'tachyons';
+  composes: lh-title from 'tachyons';
+  composes: mb1 from 'tachyons';
+}
+
+.author {
+  composes: lh-copy from 'tachyons';
+  composes: relative from 'tachyons';
+  top: -0.6rem;
+}
+
+.image {
+  composes: center from 'tachyons';
+  composes: w-80 from 'tachyons';
+  composes: w-auto-m from 'tachyons';
+}

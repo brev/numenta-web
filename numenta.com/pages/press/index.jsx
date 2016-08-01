@@ -4,7 +4,7 @@ import {sortDateDescend} from '../../utils/universal'
 
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
-import PostItem from '../../components/PostItem'
+import PostListItem from '../../components/PostListItem'
 import Section from '../../components/Section'
 
 
@@ -16,7 +16,7 @@ const PressPage = (props, {route}) => {
   const posts = pages.filter(({file}) => (file.path.match(/^press\/.*\.md/)))
   const items = posts.sort(sortDateDescend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostItem post={post} />
+      <PostListItem post={post} />
     </ListItem>
   ))
 

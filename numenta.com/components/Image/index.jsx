@@ -5,7 +5,7 @@ import React from 'react'
 import styles from './index.css'
 
 
-const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
+const Image = ({alt, border, onClick, respond, round, shadow, src, title}) => {
   const classes = [styles.image]
   const prefix = prefixLink('')
   let source = src
@@ -16,6 +16,7 @@ const Image = ({alt, border, onClick, respond, shadow, src, title}) => {
 
   if (border) classes.push(styles.border)
   if (respond) classes.push(styles[respond])
+  if (round) classes.push(styles.round)
   if (shadow) classes.push(styles.shadow)
 
   return (
@@ -34,6 +35,7 @@ Image.propTypes = {
   border: React.PropTypes.bool,
   onClick: React.PropTypes.func,
   respond: React.PropTypes.oneOf(['mw', 'w']),
+  round: React.PropTypes.bool,
   shadow: React.PropTypes.bool,
   src: React.PropTypes.string.isRequired,
   title: React.PropTypes.string,
@@ -41,6 +43,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
   border: false,
+  round: false,
   shadow: true,
 }
 

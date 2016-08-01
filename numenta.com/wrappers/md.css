@@ -1,0 +1,40 @@
+.markdown {
+  composes: center from 'tachyons';
+  composes: lh-copy from 'tachyons';
+  composes: measure from 'tachyons';
+  composes: measure-wide-l from 'tachyons';
+}
+
+.date {
+  composes: fw5 from 'tachyons';
+  composes: lh-copy from 'tachyons';
+  composes: mb2 from 'tachyons';
+  composes: ttc from 'tachyons';
+}
+
+.author {
+  composes: lh-copy from 'tachyons';
+  composes: relative from 'tachyons';
+  top: -0.6rem;
+}
+
+.content {
+  composes: layout-dropcap from '../static/assets/css/theme.css';
+  composes: mb4 from 'tachyons';
+}
+.content a {
+  color: #0277bd;  /* color-blue-dark from '...theme' */
+}
+.content img {
+  border: 1px solid #eee;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+.back {
+  composes: mt4 from 'tachyons';
+  composes: ttc from 'tachyons';
+}

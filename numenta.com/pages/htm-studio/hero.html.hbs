@@ -1,0 +1,73 @@
+---
+htmlmin: true
+isPage: false
+---
+
+<section class="hero">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 text-center">
+
+        <h1>{{document.title}}</h1>
+        <h3>Find real-time anomalies in your streaming data</h3>
+
+        <div class="video">
+          <!-- video start -->
+          <span class="text-left">
+            <a class="youtube play-button" href="http://youtu.be/Nqoruj4eCb8">
+              <img alt="Video screen capture" class="media-border" src="/assets/img/pages/htm-studio/video-intro.png" />
+            </a>
+            <br/>
+            <a class="youtube" href="http://youtu.be/Nqoruj4eCb8">
+              VIDEO: HTM Studio Introduction
+            </a>
+            <br/>
+            <span class="text-muted">(01:37)</span>
+          </span>
+          <!-- video end -->
+        </div>
+
+        <p class="text-left">
+          HTM Studio allows you to test whether our Hierarchical Temporal Memory
+          (HTM) algorithms will find anomalies in your data. With just one
+          click, you can uncover anomalies other techniques cannot find in your
+          numeric, time-series data, in minutes.
+        </p>
+
+        <form>
+          <div class="checkbox">
+            <label>
+              <input id="terms-accepted" type="checkbox" />
+              I agree to the
+              <a data-target="#modal-terms" data-toggle="modal" href="{{site.paths.pages.htmstudioterms}}">
+                Terms and Conditions
+              </a>
+            </label>
+          </div>
+          <p class="text-danger hidden">
+            Please agree to the
+            <a data-target="#modal-terms" data-toggle="modal" href="{{site.paths.pages.htmstudioterms}}">
+              Terms and Conditions
+            </a>
+            before downloading.
+          </p>
+          <a id="download-button" class="btn btn-primary btn-lg" role="button" href="{{site.paths.ext.htmstudio.macos}}">
+            Download {{document.title}}
+          </a>
+          <em>
+            Available on Desktop only, for Mac OS/X and Windows (64 bit versions).
+            <br />
+            Installation on Windows will take several minutes.
+            <br />
+            Windows 10 users,
+            <a href="{{site.paths.pages.htmstudiowin}}">click here</a>
+            for further information.
+          </em>
+        </form>
+
+      </div>
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+</section><!-- .hero -->

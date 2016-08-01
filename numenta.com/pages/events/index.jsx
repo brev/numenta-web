@@ -1,3 +1,4 @@
+import moment from 'moment'
 import React from 'react'
 
 import {sortDateAscend, sortDateDescend} from '../../utils/universal'
@@ -5,7 +6,7 @@ import {sortDateAscend, sortDateDescend} from '../../utils/universal'
 import Anchor from '../../components/Anchor'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
-import PostItem from '../../components/PostItem'
+import PostListItem from '../../components/PostListItem'
 import Section from '../../components/Section'
 import SubTitle from '../../components/SubTitle'
 
@@ -15,18 +16,18 @@ import SubTitle from '../../components/SubTitle'
  */
 const EventsPage = (props, {route}) => {
   const {pages} = route
-  const now = new Date()
+  const now = moment()
   const posts = pages.filter(({file}) => (file.path.match(/^events\/.*\.md/)))
-  const past = posts.filter(({data}) => (new Date(data.date) < now))
-  const upcoming = posts.filter(({data}) => (new Date(data.date) >= now))
+  const past = posts.filter(({data}) => (moment(data.date) < now))
+  const upcoming = posts.filter(({data}) => (moment(data.date) >= now))
   const itemsPast = past.sort(sortDateDescend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostItem post={post} />
+      <PostListItem post={post} />
     </ListItem>
   ))
   const itemsUp = upcoming.sort(sortDateAscend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostItem post={post} />
+      <PostListItem post={post} />
     </ListItem>
   ))
 

@@ -1,0 +1,5 @@
+.avatar {
+  composes: dib from 'tachyons';
+  composes: mr2 from 'tachyons';
+  composes: v-mid from 'tachyons';
+}

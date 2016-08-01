@@ -1,0 +1,54 @@
+---
+htmlmin: true
+isPage: false
+---
+
+<span id="get" class="anchor"></span>
+<section class="get">
+  <div class="container">
+
+    <div class="text-center">
+      <h2>Get App and Register</h2>
+      <p>
+        We value your participation and encourage you to register and
+        provide feedback.
+      </p>
+    </div>
+
+    <div class="row reqs">
+
+      <div class="col-md-4 text-center">
+        {{partial 'htm-for-stocks/form'}}
+        <div>
+          Optional Registration
+          <br/>
+          so we can contact you for feedback
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <a href="{{site.paths.ext.htmstocks.ios}}">
+          <img src="/assets/img/icon/mobile/app-store-button.png" class="img-responsive center-block" alt="Download HTM for Stocks from the App Store" />
+        </a>
+        <div>
+          <a href="{{site.paths.ext.htmstocks.ios}}">Download</a> HTM for Stocks
+          <br/>
+          iOS (version 8.0 or higher)
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <a href="{{site.paths.ext.htmstocks.android}}">
+          <img src="/assets/img/icon/mobile/play-store-button.png" class="img-responsive" alt="Download HTM for Stocks for Android from Play Store" />
+        </a>
+        <div>
+          <a href="{{site.paths.ext.htmstocks.android}}">Download</a>
+          HTM for Stocks
+          <br/>
+          Android phone (version 4.1 or higher)
+        </div>
+      </div>
+
+    </div><!-- .row .reqs -->
+  </div><!-- .container -->
+</section><!-- .get -->
