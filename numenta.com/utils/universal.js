@@ -1,4 +1,5 @@
 import {config} from 'config'  // eslint-disable-line import/no-unresolved
+import moment from 'moment'
 
 import {repository, version} from '../package.json'
 
@@ -8,20 +9,6 @@ import {repository, version} from '../package.json'
  */
 export function getConfig() {
   return config
-}
-
-/**
- *
- */
-export function getDateNow() {
-  return new Date()
-}
-
-/**
- *
- */
-export function getDateYear() {
-  return getDateNow().getFullYear()
 }
 
 /**
@@ -57,8 +44,8 @@ export function getVersion() {
  *
  */
 export function sortDateAscend(a, b) {
-  const aDate = new Date(a.data.date)
-  const bDate = new Date(b.data.date)
+  const aDate = moment(a.data.date, config.moments.post)
+  const bDate = moment(b.data.date, config.moments.post)
 
   if (aDate > bDate) return 1
   if (aDate < bDate) return -1
@@ -69,8 +56,8 @@ export function sortDateAscend(a, b) {
  *
  */
 export function sortDateDescend(a, b) {
-  const aDate = new Date(a.data.date)
-  const bDate = new Date(b.data.date)
+  const aDate = moment(a.data.date, config.moments.post)
+  const bDate = moment(b.data.date, config.moments.post)
 
   if (aDate > bDate) return -1
   if (aDate < bDate) return 1

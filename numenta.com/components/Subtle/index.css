@@ -1,0 +1,3 @@
+.subtle {
+  composes: silver from 'tachyons';
+}

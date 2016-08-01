@@ -1,6 +1,7 @@
+import moment from 'moment'
 import React from 'react'
 
-import {getDateYear, getRepo} from '../../utils/universal'
+import {getRepo} from '../../utils/universal'
 import LogoMark from '../LogoMark'
 import Spacer from '../Spacer'
 import TextLink from '../TextLink'
@@ -11,7 +12,7 @@ import styles from './index.css'
 const Footer = (props, {config}) => {
   const {links} = config
   const repo = getRepo()
-  const year = getDateYear()
+  const year = moment().year()
 
   return (
     <div className={styles.footbar}>

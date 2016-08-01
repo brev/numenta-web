@@ -1,10 +1,11 @@
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
+import moment from 'moment'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
 import Layout from '../components/Layout'
-import {getConfig, getDateNow, getVersion, stamp} from '../utils/universal'
+import {getConfig, getVersion, stamp} from '../utils/universal'
 
 import '../static/assets/css/fonts.css'
 import 'tachyons-base/css/tachyons-base.css'
@@ -41,7 +42,7 @@ class Template extends React.Component {
     const {children} = this.props
     const {description, siteHost, siteTitle} = config
     const lang = 'en'  // @TODO i18n l10n
-    const now = getDateNow().toString()
+    const now = moment().toString()
     const title = `${siteTitle} — ${description}`
     const titleForm = `%s | ${siteHost}`
     const ver = getVersion()
