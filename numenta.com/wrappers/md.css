@@ -1,3 +1,25 @@
+._layout-dropcap p:first-of-type::first-letter {
+  background-color: #fff;
+  color: #1aa0db;
+  float: left;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  /* -s (<= mobile) */
+  font-size: 6.8rem;
+  line-height: 4rem;
+  margin: 1.35rem 0.333rem 0 -0.1rem;
+}
+@media screen and (min-width: 48em) {
+  ._layout-dropcap p:first-of-type::first-letter {
+    /* -ns (> mobile) */
+    font-size: 5.38rem;
+    line-height: 2.666rem;
+    margin: 1.375rem 0.333rem 0 -0.1rem;
+  }
+}
+
+
 .markdown {
   composes: center from 'tachyons';
   composes: lh-copy from 'tachyons';
@@ -18,9 +40,14 @@
   top: -0.6rem;
 }
 
+.back {
+  composes: mt4 from 'tachyons';
+  composes: ttc from 'tachyons';
+}
+
 .content {
-  composes: layout-dropcap from '../static/assets/css/theme.css';
   composes: mb4 from 'tachyons';
+  composes: _layout-dropcap;
 }
 .content a {
   color: #0277bd;  /* color-blue-dark from '...theme' */
@@ -32,9 +59,4 @@
   display: block;
   margin: 1.5rem auto;
   max-width: 100%;
-}
-
-.back {
-  composes: mt4 from 'tachyons';
-  composes: ttc from 'tachyons';
 }
