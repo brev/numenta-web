@@ -22,6 +22,18 @@
   composes: bg-color-blue from '../../static/assets/css/theme.css';
 }
 
+.short {
+  composes: bn from 'tachyons';
+  composes: f5 from 'tachyons';
+  composes: h2 from 'tachyons';
+  composes: ph3 from 'tachyons';
+  composes: pv0 from 'tachyons';
+  composes: relative from 'tachyons';
+  composes: white from 'tachyons';
+  composes: bg-color-blue from '../../static/assets/css/theme.css';
+  top: -0.1rem;
+}
+
 
 .button {
   composes: br2 from 'tachyons';

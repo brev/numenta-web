@@ -39,14 +39,16 @@ const NewsletterPage = (props, {route}) => {
           name="mc-embedded-subscribe-form"
         >
           <FormRow>
-            <FormLabel htmlFor="EMAIL">Newsletter Signup</FormLabel>
-            <FormInput
-              name="EMAIL"
-              placeholder="example@company.com"
-              stretch="medium"
-              type="email"
-            />
-            <Button theme="primary" type="submit">Send</Button>
+            <div className={styles.field}>
+              <FormLabel htmlFor="EMAIL">Newsletter Signup</FormLabel>
+              <FormInput
+                name="EMAIL"
+                placeholder="name@company.com"
+                stretch="large"
+                type="email"
+              />
+              <Button theme="short" type="submit">Send</Button>
+            </div>
           </FormRow>
           <FormInput
             name="b_b838879da2baa539870afd320_23e65d3407"

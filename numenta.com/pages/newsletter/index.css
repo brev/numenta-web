@@ -1,3 +1,7 @@
 .signup {
   composes: fr from 'tachyons';
 }
+
+.field {
+  composes: h2 from 'tachyons';
+}

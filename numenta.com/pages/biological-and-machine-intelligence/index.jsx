@@ -1,5 +1,4 @@
 import IconQuote from 'react-icons/lib/fa/quote-left'
-import moment from 'moment'
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
@@ -139,6 +138,7 @@ const BamiPage = (props, {config}) => {
               using one of these formats:
             </Paragraph>
             <SubTitle level={3}>End Reference</SubTitle>
+            {/* eslint-disable max-len, react/jsx-indent */}
             <Code>
               Hawkins, J. et al. 2016. Biological and Machine Intelligence.
               <br />
@@ -166,6 +166,7 @@ const BamiPage = (props, {config}) => {
                 <br />
               &#125;
             </Code>
+            {/* eslint-enable max-len, react/jsx-indent */}
             <Paragraph>
               Note that some of the material in BAMI has been formally
               published; you can look at these {' '}

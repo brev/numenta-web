@@ -7,7 +7,7 @@
 
 
 .border {
-  composes: b--black-20 from 'tachyons';
+  composes: b--black-10 from 'tachyons';
   composes: ba from 'tachyons';
 }
 

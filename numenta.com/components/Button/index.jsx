@@ -16,7 +16,7 @@ const Button = ({children, theme, type}) => {
 
 Button.propTypes = {
   children: React.PropTypes.any.isRequired,
-  theme: React.PropTypes.oneOf(['default', 'light', 'primary']),
+  theme: React.PropTypes.oneOf(['default', 'light', 'primary', 'short']),
   type: React.PropTypes.oneOf(['button', 'menu', 'reset', 'submit']),
 }
 
