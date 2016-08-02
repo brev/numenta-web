@@ -58,7 +58,7 @@ class Section extends React.Component {
 
     if (isOpen) articleClasses.pop()
 
-    if (! isHeadline) {
+    if (!isHeadline) {
       close = (
         <div
           className={styles.closeButton}
