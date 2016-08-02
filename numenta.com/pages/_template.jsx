@@ -7,8 +7,8 @@ import React from 'react'
 import Layout from '../components/Layout'
 import {getConfig, getVersion, stamp} from '../utils/universal'
 
+import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/imports-first, max-len
 import '../static/assets/css/fonts.css'
-import 'tachyons-base/css/tachyons-base.css'
 
 const config = getConfig()
 
@@ -35,7 +35,8 @@ class Template extends React.Component {
   }
 
   componentDidMount() {
-    if (window) injectTapEventPlugin()  // remove @ React 1.0
+    // remove @ React 1.0
+    if (window) injectTapEventPlugin()  // eslint-disable-line no-undef
   }
 
   render() {

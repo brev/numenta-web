@@ -58,7 +58,7 @@ const MarkdownWrapper = ({route}, {config}) => {
       back = (
         <div className={styles.back}>
           <TextLink to={`/${key}/`}>
-            ◄ Back to {key}
+            ◄ All {key} Posts
           </TextLink>
         </div>
       )

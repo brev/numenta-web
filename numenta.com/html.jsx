@@ -22,7 +22,7 @@ const HtmlDocument = ({body}) => {
       </head>
       <body className="body">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: body}} />
-        <script src={prefixLink(stamp('/bundle.js'))}></script>
+        <script src={prefixLink(stamp('/bundle.js'))} />
       </body>
     </html>
   )

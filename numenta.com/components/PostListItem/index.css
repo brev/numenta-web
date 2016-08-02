@@ -36,7 +36,7 @@
 .author {
   composes: lh-copy from 'tachyons';
   composes: relative from 'tachyons';
-  top: -0.6rem;
+  top: -0.5rem;
 }
 
 .image {

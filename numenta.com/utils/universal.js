@@ -1,7 +1,7 @@
 import {config} from 'config'  // eslint-disable-line import/no-unresolved
 import moment from 'moment'
 
-import {repository, version} from '../package.json'
+import {repository, version} from '../package'
 
 
 /**

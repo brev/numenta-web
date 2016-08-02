@@ -20,7 +20,7 @@ const SocialMedia = (props, {config}) => {
   const socials = []
 
   for (let site in sites) {
-    if (sites.hasOwnProperty(site)) {
+    if ({}.hasOwnProperty.call(sites, site)) {
       const Component = sites[site]
       const title = Component.name.replace(/^Fa/, '')
       socials.push(

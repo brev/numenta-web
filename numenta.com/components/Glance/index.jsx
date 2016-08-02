@@ -43,7 +43,7 @@ const Glance = (props, context) => {
   let defs = []
 
   for (let key in data) {
-    if (data.hasOwnProperty(key)) {
+    if ({}.hasOwnProperty.call(data, key)) {
       defs.push(
         <DefineTitle key={`DefineTitle-${key}`}>
           {key}

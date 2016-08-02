@@ -8,6 +8,5 @@
 
 .aside {
   composes: mt2 from 'tachyons';
-  composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
