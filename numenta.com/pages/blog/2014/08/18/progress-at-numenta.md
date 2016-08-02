@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: progress numenta grok htm aws it analytics anomaly detection streaming data
 title: Progress at Numenta
+type: post
 ---
 
 You will notice some substantial changes in our web site this week.  I’d like to

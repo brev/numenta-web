@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Subutai Ahmad & Ryan McCall
 tags: super bowl xlix neuroscience 2015 machine learning numenta sparse football pool results
 title: "Super Bowl Neuroscience: Sparse Football Pool 2015 Results"
+type: post
 ---
 
 ### SUPER BOWL NEUROSCIENCE: SPARSE FOOTBALL POOL 2015 RESULTS

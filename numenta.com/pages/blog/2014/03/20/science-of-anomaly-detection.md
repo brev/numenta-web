@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Founder
 tags: science, anomaly, detection, grok
 title: The Science of Anomaly Detection
+type: post
 ---
 
 I just finished writing a new

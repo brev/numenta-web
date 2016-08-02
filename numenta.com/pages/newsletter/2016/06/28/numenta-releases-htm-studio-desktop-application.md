@@ -7,6 +7,7 @@ image: ../images/htm-studio.png
 org: Director of Marketing
 tags: numenta releases htm studio desktop application anomaly detection htm school nupic
 title: Numenta Releases HTM Studio Desktop Application
+type: post
 ---
 
 ### Numenta Newsletter &mdash; June 28, 2016

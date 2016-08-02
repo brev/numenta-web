@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: grok it analytics numenta aws
 title: Numenta Releases Grok for IT Analytics on AWS
-type: release
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

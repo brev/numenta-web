@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Research Intern
 tags: learning through active exploration numenta nupic sensorimotor learning prediciton
 title: Learning Through Active Exploration
+type: post
 ---
 
 When I first arrived at Silicon Valley for my internship, the entire environment

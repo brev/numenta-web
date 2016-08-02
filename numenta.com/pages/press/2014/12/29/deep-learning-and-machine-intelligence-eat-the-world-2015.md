@@ -8,5 +8,5 @@ link: http://www.forbes.com/sites/anthonykosner/2014/12/29/tech-2015-deep-learni
 org: Forbes
 tags: 2015 deep learning machine intelligence numenta grok forbes
 title: Tech 2015 Deep Learning And Machine Intelligence Will Eat The World
-type: item
+type: link
 ---

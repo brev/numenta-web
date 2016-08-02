@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP Research
 tags: dataversity smart data conference san jose 2015 subutai ahmad numenta htm hierarchical temporal memory cognitive computing
 title: Dataversity Smart Data Conference San Jose 2015
+type: post
 ---
 
 A conference about Cognitive Computing, Internet of Things, and other current

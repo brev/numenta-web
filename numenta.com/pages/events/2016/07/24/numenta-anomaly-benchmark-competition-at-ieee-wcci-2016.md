@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Event
 tags: numenta anomaly benchmark competition nab ieee wcci world congress computational intelligence 2016
 title: IEEE WCCI 2016 - Numenta Anomaly Benchmark Competition
+type: post
 ---
 
 [Numenta Anomaly Benchmark Competition](http://numenta.org/nab/) for Real-Time

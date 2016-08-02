@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Team
 tags: theory sequence memory neocortex cosyne 2016 computational and systems neuroscience numenta jeff hawkins
 title: COSYNE 2016 Computational and Systems Neuroscience Meeting
+type: post
 ---
 
 #### Abstract

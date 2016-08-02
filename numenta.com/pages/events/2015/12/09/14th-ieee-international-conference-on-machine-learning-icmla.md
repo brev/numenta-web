@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Engineer
 tags: ieee machine learning conference numenta alexander lavin reserach numenta anomaly detection algorithm benchmark
 title: 14th IEEE International Conference on Machine Learning and Applications (ICMLA)
+type: post
 ---
 
 ### IEEE ICMLA'15

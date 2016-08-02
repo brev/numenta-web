@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Using HTM Studio
 sort: f
 title: What data formats does HTM Studio accept?

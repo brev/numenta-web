@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP Research
 tags: subutai ahmad numenta htm real time streaming data anomaly detection mlconf machine learning conference san francisco sf 2015
 title: MLConf Machine Learning Conference San Francisco 2015
+type: post
 ---
 
 ### THE MACHINE LEARNING CONFERENCE

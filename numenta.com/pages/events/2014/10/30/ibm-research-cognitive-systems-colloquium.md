@@ -19,6 +19,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: ibm research cognitive systems colloquium jeff hawkins numenta machine intelligence cognitive computing
 title: IBM Research Cognitive Systems Colloquium
+type: post
 ---
 
 #### Event Video

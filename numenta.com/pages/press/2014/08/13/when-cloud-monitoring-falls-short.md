@@ -8,5 +8,5 @@ link: http://searchcloudcomputing.techtarget.com/tip/Network-monitoring-tools-fo
 org: Search Cloud Computing
 tags: network monitoring tools cloud monitoring numenta grok
 title: Network Monitoring Tools For When Cloud Monitoring Falls Short
-type: item
+type: link
 ---

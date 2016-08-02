@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: june 2014 numenta nupic grok aws
 title: Progress Report June 2014 Newsletter
+type: post
 ---
 
 I’m writing today to give you a progress report from Numenta.  We have continued

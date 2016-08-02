@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta new htm example application htm for stocks monitor stock price volume twitter activity public companies anomaly detection unusual notifications
 title: "Numenta Ships New HTM Example App: HTM for Stocks"
-type: release
+type: post
 ---
 
 ### An Easy Way to Experience HTM Machine Learning Technology

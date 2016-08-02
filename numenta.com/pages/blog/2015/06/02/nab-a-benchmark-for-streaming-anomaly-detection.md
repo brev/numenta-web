@@ -7,6 +7,7 @@ image: ../images/graph2.png
 org: Software Engineer
 tags: nab numenta anomaly benchmark streaming data detection realtime
 title: NAB - A Benchmark for Streaming Anomaly Detection
+type: post
 ---
 
 ### Numenta Anomaly Benchmark

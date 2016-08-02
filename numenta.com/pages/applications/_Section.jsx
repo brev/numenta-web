@@ -230,9 +230,10 @@ const SectionApplications = (props, {config}) => {
             can experiment with this application using your own data by
             downloading our sample application code below.
           </Paragraph>
+          {/* eslint-disable max-len */}
           <List marker="disc">
             <ListItem>
-              <TextLink to={links.out.roguePaper}>
+              <TextLink to="http://numenta.com/assets/pdf/whitepapers/Rogue%20Behavior%20Detection%20White%20Paper.pdf">
                 Whitepaper: HTM for Rogue Behavior
               </TextLink>
             </ListItem>
@@ -242,6 +243,7 @@ const SectionApplications = (props, {config}) => {
               </TextLink>
             </ListItem>
           </List>
+          {/* eslint-disable max-len */}
         </div>
         <div className={styles.aside}>
           <ImageLink to={links.out.rogue}>
@@ -265,9 +267,10 @@ const SectionApplications = (props, {config}) => {
             optimization. You can experiment with this application using your
             own data by downloading our sample application code below.
           </Paragraph>
+          {/* eslint-disable max-len */}
           <List marker="disc">
             <ListItem>
-              <TextLink to={links.out.geoPaper}>
+              <TextLink to="http://numenta.com/assets/pdf/whitepapers/Geospatial%20Tracking%20White%20Paper.pdf">
                 Whitepaper: HTM for Geospatial Tracking
               </TextLink>
             </ListItem>
@@ -277,6 +280,7 @@ const SectionApplications = (props, {config}) => {
               </TextLink>
             </ListItem>
           </List>
+          {/* eslint-enable max-len */}
         </div>
         <div className={styles.aside}>
           <ImageLink to={links.out.geo}>

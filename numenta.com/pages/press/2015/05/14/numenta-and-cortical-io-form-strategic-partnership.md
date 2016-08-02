@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta cortical.io form strategic partnership htm hierarchical temporal memory sdr sparse distributed memory retina wikipedia natural lanuage learning
 title: Numenta and Cortical.io Form Strategic Partnership
-type: release
+type: post
 ---
 
 Numenta and Cortical.io Form Strategic Partnership

@@ -1,14 +1,5 @@
 ---
-htmlmin: true
-isPage: true
-layout: simple
 title: HTM Studio - Supported Date/Time Formats
----
-
-# Supported Date/Time Formats
-
-## HTM Studio
-
 ---
 
 ### UNIX

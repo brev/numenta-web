@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Open Source Manager
 tags: mtc connected car hackathon oakland numenta nupic
 title: Connected Car Hackathon
+type: post
 ---
 
 ### Event Details

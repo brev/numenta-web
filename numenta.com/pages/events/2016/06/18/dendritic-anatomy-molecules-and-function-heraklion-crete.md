@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory dendritic anatomy molecules function herkalion crete 2016 event
 title: Dendritic Anatomy, Molecules and Function
+type: post
 ---
 
 ### Event Details

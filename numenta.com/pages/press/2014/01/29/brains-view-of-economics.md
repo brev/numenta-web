@@ -8,5 +8,5 @@ link: http://www.project-syndicate.org/commentary/ricardo-hausmann-proposes-an-a
 org: Project Syndicate
 tags: brain view economics alternative
 title: A Brain's View of Economics
-type: item
+type: link
 ---

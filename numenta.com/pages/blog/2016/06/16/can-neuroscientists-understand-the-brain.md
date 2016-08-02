@@ -8,6 +8,7 @@ image: ../images/image.png
 org: VP of Research
 tags: neuroscientist understand microprocessor
 title: Can Neuroscientists Understand the Brain?
+type: post
 ---
 
 Eric Jonas and Konrad Kording just released a provocative paper, "Could a

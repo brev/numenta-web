@@ -8,5 +8,5 @@ link: http://www.forbes.com/sites/anthonykosner/2015/03/26/artificial-intelligen
 org: Forbes
 tags: artificial machine general intelligence ai could have prevented germanwings crash jeff hawkins numenta nupic
 title: Artificial Intelligence Could Have Prevented The Germanwings Crash
-type: item
+type: link
 ---

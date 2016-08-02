@@ -7,6 +7,7 @@ image: ../images/main.jpg
 org: Founder
 tags: Machine Learning, Neuroscience
 title: Not Your Father's Neural Network
+type: post
 ---
 
 ![Image](../images/main.jpg "CLA Neuron")

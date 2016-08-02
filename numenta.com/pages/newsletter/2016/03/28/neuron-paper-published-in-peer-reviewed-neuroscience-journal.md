@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: Director of Marketing
 tags: numenta neuron paper published peer reviewed neuroscience journal frontiers neural circuits neurons have thousands synapses theory sequence memory
 title: Neuron Paper Published in Peer-reviewed Neuroscience Journal
+type: post
 ---
 
 ### Numenta Newsletter &mdash; March 28, 2016

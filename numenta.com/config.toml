@@ -11,6 +11,8 @@ description = 'Leading the New Era of Machine Intelligence'
 
 [contact]
   [contact.email]
+    feedback = 'feedback@numenta.com'
+    info = 'info@numenta.com'
     press = 'press@numenta.com'
     sales = 'sales@numenta.com'
     support = 'support@numenta.com'
@@ -23,13 +25,9 @@ description = 'Leading the New Era of Machine Intelligence'
     # apps
     grokGet = 'http://grokstream.com/#pricing'
     geo = 'https://github.com/numenta/nupic.geospatial'
-    geoPaper = 'http://numenta.com/assets/pdf/whitepapers/Geospatial+Tracking+White+Paper.pdf'
+    rogue = 'https://github.com/numenta/nupic.rogue'
     htmstocksApp = 'https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8'
     htmstocksPlay = 'https://play.google.com/store/apps/details?id=com.numenta.taurus'
-    nabBiz = 'http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf'
-    nabPaper = 'http://arxiv.org/abs/1510.03336'
-    rogue = 'https://github.com/numenta/nupic.rogue'
-    roguePaper = 'http://numenta.com/assets/pdf/whitepapers/Rogue+Behavior+Detection+White+Paper.pdf'
 
     # legal
     license = 'http://numenta.org/licenses/'
@@ -61,6 +59,7 @@ description = 'Leading the New Era of Machine Intelligence'
     careers = '/careers-team-and-contact/'
 
     # other site pages
+    bami = '/biological-and-machine-intelligence/'
     blog = '/blog/'
     events = '/events/'
     htmstocks = '/htm-for-stocks/'

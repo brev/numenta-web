@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: compute midwest 2015 jeff hawkins numenta future of machine intelligence imagine the future
 title: Compute Midwest 2015 - Imagine the Future
+type: post
 ---
 
 ### Imagine The Future

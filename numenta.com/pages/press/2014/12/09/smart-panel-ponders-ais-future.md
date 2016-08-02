@@ -8,5 +8,5 @@ link: http://www.eetimes.com/document.asp?doc_id=1324910&_mc=sm_eet_editor_rickm
 org: EE Times
 tags: artificial intelligence future smart panel silicon valley forum jeff hawkins numenta
 title: Smart Panel Ponders AI's Future
-type: item
+type: link
 ---

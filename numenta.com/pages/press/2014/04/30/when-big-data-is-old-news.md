@@ -8,5 +8,5 @@ link: http://mag.nordea.dk/invest/2014/04/naar-big-data-bliver-old-news
 org: Nordea Invest
 tags: big data old news
 title: As Big Data Becomes Old News
-type: item
+type: link
 ---

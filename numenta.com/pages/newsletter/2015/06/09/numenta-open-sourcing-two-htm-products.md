@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: numenta open source htm products apps applications nupic june 2015 newsletter donna dubinsky
 title: "June 2015 Newsletter: Numenta Releasing Two Complete HTM Products into Open Source"
+type: post
 ---
 
 ### Numenta Newsletter

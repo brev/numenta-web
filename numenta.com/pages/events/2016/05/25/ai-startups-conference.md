@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP Engineering
 tags: ai startups conference 2016 san francisco reverse engineering neocortex machine intelligence
 title: AI Startups Conference
+type: post
 ---
 
 ### Event Details

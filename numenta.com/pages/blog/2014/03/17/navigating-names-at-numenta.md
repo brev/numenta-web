@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: numenta, name, change, grok
 title: Navigating Names at Numenta
+type: post
 ---
 
 For a company that is launching its first product, we have an unusual number of

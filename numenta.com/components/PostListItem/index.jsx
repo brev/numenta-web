@@ -6,7 +6,11 @@ import Image from '../Image'
 import ImageLink from '../ImageLink'
 import Paragraph from '../Paragraph'
 import Spacer from '../Spacer'
+import Strong from '../Strong'
 import Subtle from '../Subtle'
+import Table from '../Table'
+import TableCell from '../TableCell'
+import TableRow from '../TableRow'
 import TextLink from '../TextLink'
 import Time from '../Time'
 
@@ -17,9 +21,41 @@ import styles from './index.css'
  *
  */
 const PostListItem = ({post}, {config}) => {
-  const {data, path} = post
+  const {data, file, path} = post
   const datetime = moment(data.date, config.moments.post)
   const when = datetime.format(config.moments.human)
+  const target = (data.type === 'link') ? data.link : path
+  const key = file.dir.split('/')[0]
+  let brief = (<Paragraph>{data.brief}</Paragraph>)
+
+  if (key === 'events') {
+    const {where} = data.event
+    const {desc, city, state, country} = where
+
+    brief = (
+      <Table direction="horizontal">
+        <TableRow>
+          <TableCell>
+            <Strong>When</Strong>
+          </TableCell>
+          <TableCell>
+            {when}
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>
+            <Strong>Where</Strong>
+          </TableCell>
+          <TableCell>
+            <div>{desc}</div>
+            <div>
+              {city}, {state} {country}
+            </div>
+          </TableCell>
+        </TableRow>
+      </Table>
+    )
+  }
 
   return (
     <article className={styles.postListItem}>
@@ -28,14 +64,12 @@ const PostListItem = ({post}, {config}) => {
           <div className={styles.date}>
             <Time moment={datetime}>{when}</Time>
           </div>
-          <TextLink to={path}>
+          <TextLink to={target}>
             <span className={styles.title}>
               {data.title}
             </span>
           </TextLink>
-          <Paragraph>
-            {data.brief || ''}
-          </Paragraph>
+          {brief}
           <div className={styles.author}>
             <Subtle>
               <Avatar name={data.author} />
@@ -47,7 +81,7 @@ const PostListItem = ({post}, {config}) => {
         </div>
         <div className={styles.aside}>
           <div className={styles.image}>
-            <ImageLink to={path}>
+            <ImageLink to={target}>
               <Image
                 alt={data.title}
                 respond="mw"

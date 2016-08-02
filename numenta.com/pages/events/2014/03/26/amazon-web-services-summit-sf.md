@@ -17,4 +17,5 @@ image: ../images/image.png
 org: Event
 tags: grok it analytics aws amazon web services summit sf san francisco 2014
 title: AWS Summit San Francisco
+type: post
 ---

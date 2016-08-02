@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: numenta machine intelligence neuroscience orange county oc meetup
 title: OC Meetup - Deriving Machine Intelligence from Neuroscience
+type: post
 ---
 
 **Hosted by: OC Deep Learning, HTM, ANN, NLP & AI Meetup.**

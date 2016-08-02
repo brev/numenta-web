@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: numenta partnership avik partners grok stream for it analytics
 title: "September 2015 Newsletter: Partnership between Numenta and Avik Partners on Grok for IT Analytics"
+type: post
 ---
 
 ### Numenta Newsletter

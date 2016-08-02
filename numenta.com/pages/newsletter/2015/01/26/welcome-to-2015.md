@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags:
 title: Welcome to 2015!
+type: post
 ---
 
 ### Newsletter - January 26, 2015

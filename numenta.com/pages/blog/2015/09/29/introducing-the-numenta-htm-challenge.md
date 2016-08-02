@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Open Source Manager
 tags: introducing numenta htm challenge hackathon nov 2015 onsite contest judging prizes jeff hawkins
 title: Introducing the Numenta HTM Challenge
+type: post
 ---
 
 Numenta has held

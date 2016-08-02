@@ -8,5 +8,5 @@ link: http://yow.eventer.com/yow-2013-1080/computing-like-the-brain-the-path-to-
 org: YOW
 tags: computing brain machine intelligence jeff hawkins yow 2013
 title: "Computing Like the Brain: The Path to Machine Intelligence"
-type: item
+type: link
 ---

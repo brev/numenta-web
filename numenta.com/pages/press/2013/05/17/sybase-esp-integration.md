@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: grok sap sybase esp cep complex event processing
 title: Grok’s Action Intelligence Solution Achieves Certified Integration with SAP® Sybase ESP Complex Event Processing Platform
-type: release
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

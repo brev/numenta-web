@@ -8,5 +8,5 @@ link: http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-
 org: Re/Code
 tags: general ai artificial intelligence machine recode terminator
 title: The Terminator Is Not Coming. The Future Will Thank Us.
-type: item
+type: link
 ---

@@ -20,6 +20,7 @@ image: ../images/nice.png
 org: Co-Founder
 tags: numenta jeff hawkins speaking neuro inspired computational elements workshop nice 2016
 title: Neuro-Inspired Computational Elements (NICE) Workshop 2016
+type: post
 ---
 
 ### Workshop focus

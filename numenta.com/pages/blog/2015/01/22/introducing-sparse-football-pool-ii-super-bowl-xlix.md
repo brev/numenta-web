@@ -7,6 +7,7 @@ image: ../images/image.jpg
 org: Subutai Ahmad & Ryan McCall
 tags: sparse football pool ii 2015 super bowl xlix sdr sparse distributed representation htm
 title: Introducing Sparse Football Pool II
+type: post
 ---
 
 Around this time of year the US goes crazy over the Super Bowl. So be it, but

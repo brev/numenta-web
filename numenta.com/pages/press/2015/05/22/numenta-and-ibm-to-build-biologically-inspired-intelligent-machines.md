@@ -8,5 +8,5 @@ link: http://www.science20.com/physics_foundations/blog/numenta_and_ibm_to_build
 org: Science 2.0
 tags: numenta ibm build biologically inspired intelligent machines neocortex
 title: Numenta And IBM To Build Biologically Inspired Intelligent Machines
-type: item
+type: link
 ---

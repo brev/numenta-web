@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta grok gigaom structure data
 title: "Numenta to Present Grok, a Solution for Fast Data, as one of the Big Ideas at the GigaOM Structure:Data Conference on March 20, 2013"
-type: release
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

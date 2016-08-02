@@ -17,6 +17,7 @@ image: ../images/image.png
 org: Event
 tags: numenta training workshop htm hierarchical temporal memory october 2014
 title: Numenta Training Workshop
+type: post
 ---
 
 Numenta is offering a half-day technical workshop to provide training for

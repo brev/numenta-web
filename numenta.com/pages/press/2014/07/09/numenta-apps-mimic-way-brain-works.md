@@ -8,5 +8,5 @@ link: http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long
 org: Venture Beat
 tags: numenta apps mimic brain
 title: After Nine Years of Research Numenta Finally Has Apps That Mimic the Way the Brain Works
-type: item
+type: link
 ---

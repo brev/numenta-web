@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta releases htm studio business wire machine intelligence find anomalies streaming data
 title: Numenta Releases HTM Studio
-type: release
+type: post
 ---
 
 ### HTM Studio - Uncover anomalies in your streaming data

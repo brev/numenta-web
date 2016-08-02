@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: htm for stocks monitor stock price volume twitter anomaly outlier detection numenta open source htm app application nupic
 title: "July 2015 Newsletter: Announcing HTM for Stocks - Open Source Example HTM App"
+type: post
 ---
 
 ### Numenta Newsletter

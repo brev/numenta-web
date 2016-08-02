@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta anomaly benchmark nab evaluate anomaly detection techniques on real-time streaming data
 title: Numenta Anomaly Benchmark Evaluates Anomaly Detection Techniques for Real-time, Streaming Data
-type: release
+type: post
 ---
 
 ### Open Source Tool Tests Effectiveness of Algorithms on IoT Data

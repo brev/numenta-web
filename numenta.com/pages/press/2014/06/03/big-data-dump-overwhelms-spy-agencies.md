@@ -8,5 +8,5 @@ link: http://www.bloomberg.com/news/2014-06-03/big-data-s-dumping-grounds-how-ho
 org: Bloomberg
 tags: big data overwhelm spy agencies
 title: "The Big Data Dump: How Info-Hoarding Can Overwhelm Startups and Spy Agencies"
-type: item
+type: link
 ---

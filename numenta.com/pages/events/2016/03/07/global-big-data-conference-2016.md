@@ -20,6 +20,7 @@ image: ../images/bigdata.png
 org: Research Engineer
 tags: global big data conference 2016 numenta htm hierarchical temporal memory
 title: Global Big Data Conference 2016
+type: post
 ---
 
 Global Big Data Conference's vendor agnostic Global Data Science Conference is

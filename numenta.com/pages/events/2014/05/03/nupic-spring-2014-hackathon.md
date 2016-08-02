@@ -17,4 +17,5 @@ image: ../images/image.png
 org: Open Source Manager
 tags: nupic spring 2014 hackathon numenta platform for intelligent computing open source
 title: NuPIC Spring 2014 Hackathon
+type: post
 ---

@@ -50,16 +50,17 @@ const SectionAnomaly = (props, {config}) => {
         </List>
 
         <SubTitle level={3}>Resources</SubTitle>
+        {/* eslint-disable max-len */}
         <List marker="disc">
           <ListItem>
             Business Paper: {' '}
-            <TextLink to={links.out.nabBiz}>
+            <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
               The Numenta Anomaly Benchmark
             </TextLink>
           </ListItem>
           <ListItem>
             Technical Peer-Reviewed Paper: {' '}
-            <TextLink to={links.out.nabPaper}>
+            <TextLink to="http://arxiv.org/abs/1510.03336">
               Evaluating Real-time Anomaly Detection Algorithms – the
               Numenta Anomaly Benchmark
             </TextLink>
@@ -68,6 +69,7 @@ const SectionAnomaly = (props, {config}) => {
             <TextLink to={links.in.nab}>More Information</TextLink>
           </ListItem>
         </List>
+        {/* eslint-disable max-len */}
       </div>
       <div className={styles.aside}>
         <ImageLink to={links.in.nab}>

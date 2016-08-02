@@ -8,5 +8,5 @@ link: http://dataconomy.com/how-an-austrian-startup-is-mimicking-brain-function-
 org: Dataconomy
 tags: mimicking brain function revolutionising nlp natural language processing numenta nupic cortical.io
 title: How Mimicking Brain Function is Revolutionising NLP
-type: item
+type: link
 ---

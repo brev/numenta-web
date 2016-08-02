@@ -7,6 +7,7 @@ image: ../images/image.png
 org: VP Research
 tags:  Neuroscience, Machine Learning
 title: Super Bowl Neuroscience
+type: post
 ---
 
 I'm slowly recovering from the disappointing 49er loss to the Ravens in the

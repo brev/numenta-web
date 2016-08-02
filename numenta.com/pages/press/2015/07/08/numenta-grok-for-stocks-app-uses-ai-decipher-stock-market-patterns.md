@@ -8,5 +8,5 @@ link: http://venturebeat.com/2015/07/08/numentas-grok-for-stocks-app-uses-a-i-to
 org: VentureBeat
 tags: numenta htm for stocks app ai htm stock market patterns venturebeat
 title: Numenta’s HTM for Stocks app uses A.I. to decipher stock market patterns
-type: item
+type: link
 ---

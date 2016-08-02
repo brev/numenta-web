@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: numenta newsletter may 2015 announcing relatioship cortical.io
 title: "May 2015 Newsletter: Cortical.io Relationship"
+type: post
 ---
 
 ### Numenta Newsletter

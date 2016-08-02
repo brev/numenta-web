@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory areadne 2016 research encoding decoding neural ensembles
 title: Areadne 2016 - Research in Encoding And Decoding of Neural Ensembles
+type: post
 ---
 
 ### Event Details

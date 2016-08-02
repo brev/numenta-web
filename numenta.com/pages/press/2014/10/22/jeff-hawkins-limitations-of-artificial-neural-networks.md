@@ -8,5 +8,5 @@ link: http://thinkingmachineblog.net/jeff-hawkins-on-the-limitations-of-artifici
 org: Thinking Machine
 tags: jeff hawkins numenta limitations of artificial nerual networks
 title: Jeff Hawkins on the Limitations of Artificial Neural Networks
-type: item
+type: link
 ---

@@ -20,6 +20,7 @@ image: ../images/aibythebay.png
 org: VP Research
 tags: ai by the bay numenta detecting anomalies streaming data real time algorithms real world applications machine intelligence
 title: AI by the Bay
+type: post
 ---
 
 > "Detecting Anomalies in Streaming Data - Real-time Algorithms for Real-world

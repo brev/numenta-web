@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Site Reliability Engineer
 tags: science, anomaly, detection, grok, aws
 title: Cleanup on ASG 3
+type: post
 ---
 
 I was at the AWS summit in NYC, and when I got back to California, I saw a

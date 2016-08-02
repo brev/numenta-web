@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: thingworx numenta partner predictive maintenance connected world
 title: ThingWorx and Numenta Partner to offer Next Generation Predictive Maintenance and Operations for the Connected World
-type: release
+type: post
 ---
 
 Partnership to fully integrate Numenta’s Grok action intelligence platform with

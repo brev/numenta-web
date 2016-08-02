@@ -8,5 +8,5 @@ link: http://www.science20.com/physics_foundations/blog/life_happens_ai_will_hap
 org: Science2.0
 tags: general ai artificial intelligence ibm numenta hierarchical temporal memory science 2.0
 title: Life happens, AI will happen, probably at IBM/Numenta
-type: item
+type: link
 ---

@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: numenta anomaly benchmark nab numenta htm challenge nupic onsite november 2015
 title: Numenta Anomaly Benchmark (NAB), and Numenta HTM Challenge
+type: post
 ---
 
 ### Numenta Newsletter October 2015

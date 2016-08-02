@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Site Reliability Engineer
 tags: grok aws ec2 custom metrics burn rate numenta machine intelligence
 title: Monitoring AWS EC2 Burnrate with Grok
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

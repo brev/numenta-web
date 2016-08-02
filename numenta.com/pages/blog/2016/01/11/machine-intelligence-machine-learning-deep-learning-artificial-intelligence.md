@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Jeff Hawkins & Donna Dubinsky
 tags: numenta machine intelligence learning deep artificial ai htm brain neurons
 title: What is Machine Intelligence vs. Machine Learning vs. Deep Learning vs. Artificial Intelligence (AI)?
+type: post
 ---
 
 We are frequently asked how we distinguish our technology from others. This

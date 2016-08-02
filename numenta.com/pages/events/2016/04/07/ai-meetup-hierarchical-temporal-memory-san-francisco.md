@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory ai meetup san francisco
 title: AI Meetup - Hierarchical Temporal Memory
+type: post
 ---
 
 ### Event Details

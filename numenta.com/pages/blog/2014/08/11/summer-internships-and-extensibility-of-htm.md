@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing Intern
 tags: summer internships hierarchical temporal memory htm extensible
 title: Summer Internships and the Extensibility of HTM
+type: post
 ---
 
 I recently had a conversation with a friend where the subject of our summer

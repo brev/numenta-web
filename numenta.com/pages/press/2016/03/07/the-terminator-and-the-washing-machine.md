@@ -8,5 +8,5 @@ link: http://www.nytimes.com/video/us/100000004255656/the-terminator-and-the-was
 org: The New York Times
 tags: numenta jeff hawkins terminator and the washing machine the new york times us politics retro report video supercomputer
 title: The Terminator and the Washing Machine
-type: item
+type: link
 ---

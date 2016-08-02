@@ -17,7 +17,7 @@ const ListOrder = ({children, marker}) => {
 
 ListOrder.propTypes = {
   children: React.PropTypes.any.isRequired,
-  marker: React.PropTypes.oneOf(['decimal']),
+  marker: React.PropTypes.oneOf(['decimal', 'disc']),
 }
 
 export default ListOrder

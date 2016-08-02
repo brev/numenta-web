@@ -8,5 +8,5 @@ link: http://www.itbusinessedge.com/blogs/it-unmasked/avik-partners-unfurls-mach
 org: IT Business Edge
 tags: numenta avik partners grok stream machine learning service optimize it operations htm hierarchical temporal memory
 title: Avik Partners Unfurls Machine Learning Service to Optimize IT Operations
-type: item
+type: link
 ---

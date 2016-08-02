@@ -8,6 +8,7 @@ image: ../images/image.png
 org: Marketing
 tags: numenta anomaly benchmark nab competition ieee wcci world congress computational intelligence 2016
 title: The NAB Competition 2016
+type: post
 ---
 
 ### Numenta Anomaly Benchmark (NAB) Competition

@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP Research
 tags: strata hadoop world big data subutai ahmad numenta machine intelligence streaming analytics
 title: Strata + Hadoop World 2015
+type: post
 ---
 
 **Streaming Analytics: It’s Not The Same Game**

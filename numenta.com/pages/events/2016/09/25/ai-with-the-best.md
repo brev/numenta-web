@@ -20,6 +20,7 @@ image: ../images/image.png
 org: HTM Community Leader
 tags: ai with the best artificial intelligence htm hierarchical temporal memory computing like the brain
 title: AI with the Best
+type: post
 ---
 
 ### Talk Abstract

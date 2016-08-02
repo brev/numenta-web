@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Director of Marketing
 tags: htm for stocks apple app store hierarchical temporal memory numenta
 title: HTM for Stocks available in the App Store
+type: post
 ---
 
 ### Numenta Newsletter &mdash; February 18, 2016

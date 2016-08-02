@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Event
 tags: strata hadoop world big data conference 2016 oreilly numenta machine intelligence
 title: "Strata + Hadoop World 2016: O’Reilly Big Data Conference"
+type: post
 ---
 
 > Sponsored by Numenta. See us at Booth #540.

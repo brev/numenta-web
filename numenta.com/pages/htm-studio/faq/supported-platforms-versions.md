@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Using HTM Studio
 sort: d
 title: What are the supported platforms and versions?

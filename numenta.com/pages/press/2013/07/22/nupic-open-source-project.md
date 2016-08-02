@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: nupic open source numenta
 title: NuPIC Open Source Project and Community Established at Numenta.org
-type: release
+type: post
 ---
 
 Numenta.org has been created as the home for the NuPIC (Numenta Platform for

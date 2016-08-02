@@ -8,5 +8,5 @@ link: https://jaxenter.de/machine-learning-experten-check-43830
 org: Jaxenter
 tags: machine learning expore check six tips getting started machine learning numenta htm hierarchical temporal memory cortical
 title: "Machine Learning Expert Check: 6 Tips for Getting Started in the Machine Learning"
-type: item
+type: link
 ---

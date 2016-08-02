@@ -1,9 +1,6 @@
 ---
-htmlmin: true
-isPage: false
+title: HTM Studio Terms and Conditions
 ---
-
-## HTM Studio Terms and Conditions
 
 **Numenta is happy to license HTM Studio to you if you accept all of the terms
 and conditions contained in this Agreement. By accepting this agreement and

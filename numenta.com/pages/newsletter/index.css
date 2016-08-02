@@ -1,0 +1,3 @@
+.signup {
+  composes: fr from 'tachyons';
+}

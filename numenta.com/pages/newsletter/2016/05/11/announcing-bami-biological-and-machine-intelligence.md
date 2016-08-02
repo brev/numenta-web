@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: Director of Marketing
 tags: numenta newsletter may 2016 bami biological and machine intelligence living online book machine intelligence htm hierarchical temporal memory
 title: "Announcing BAMI: Biological and Machine Intelligence, a Living Online Book"
+type: post
 ---
 
 ### Numenta Newsletter &mdash; May 11, 2016

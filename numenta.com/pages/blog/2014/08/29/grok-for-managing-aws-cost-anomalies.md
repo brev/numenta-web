@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Engineering Intern
 tags: grok numenta managing aws amazon web services cost anomalies burn rate
 title: Grok for Managing AWS Cost Anomalies
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

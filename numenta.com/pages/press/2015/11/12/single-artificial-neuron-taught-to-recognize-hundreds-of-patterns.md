@@ -8,5 +8,5 @@ link: http://www.technologyreview.com/view/543486/single-artificial-neuron-taugh
 org: MIT Technology Review
 tags: numenta artificial neuron taught to recognize patterns htm neuron synapse dendrite axon proximal distal
 title: Single Artificial Neuron Taught to Recognize Hundreds of Patterns
-type: item
+type: link
 ---

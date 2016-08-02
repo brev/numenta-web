@@ -17,6 +17,7 @@ image: ../images/image.png
 org: Open Source Manager
 tags: nupic numenta platform intelligent computing fall 2014 hackathon san jose california
 title: NuPIC Fall 2014 Hackathon
+type: post
 ---
 
 Please RSVP!

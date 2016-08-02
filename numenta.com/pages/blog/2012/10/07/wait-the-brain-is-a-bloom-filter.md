@@ -7,6 +7,7 @@ image: ../images/bloom-thumb.jpg
 org: Engineering
 tags: Neuroscience
 title: Wait, the brain is a Bloom filter? - @petrillic
+type: post
 ---
 
 This insightful tweet came from the Strangeloop keynote after Jeff Hawkins

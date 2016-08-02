@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: Director of Marketing
 tags: numenta anomaly benchmark competition research papers strata hadoop world
 title: Announcing the Numenta Anomaly Benchmark Competition
+type: post
 ---
 
 ### Numenta Newsletter &mdash; February 10, 2016

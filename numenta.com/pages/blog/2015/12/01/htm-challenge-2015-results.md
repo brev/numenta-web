@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: numenta htm challenge 2015 results hierarchical temporal memory hackathon nupic open source project intelligent applications
 title: Numenta HTM Challenge 2015 Results
+type: post
 ---
 
 Earlier this month, we ran a contest for our developer community to use our

@@ -1,9 +1,12 @@
 ---
+author: Numenta
 anchor: careers-research-intern
 date: 2016/01/22
 email: interns@numenta.com
+org: Careers
 sort: 1
 title: Research Internship
+type: post
 ---
 
 ***IMPORTANT NOTE:*** *Numenta is unable to consider internship applications

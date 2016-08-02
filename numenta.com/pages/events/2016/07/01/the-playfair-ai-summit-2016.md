@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP of Research
 tags: playfair ai summit 2016 subutai ahmad numenta htm hierarchical temporal memory theoretical biological machine intelligence
 title: Playfair AI Summit 2016
+type: post
 ---
 
 ### About the Event

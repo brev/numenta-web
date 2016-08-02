@@ -8,5 +8,5 @@ link: https://www.youtube.com/watch?v=cz-3WDdqbj0&list=PLX9JDz3uBpNCjNfq20KOCvsP
 org: Fujitsu
 tags: fujitsu natf video jeff hawkins
 title: Brains, Data, and Machine Intelligence
-type: item
+type: link
 ---

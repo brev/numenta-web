@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Christy Maver & Scott Purdy
 tags: numenta webinar machine intelligence with streaming data
 title: "Webinar: Machine Intelligence with Streaming Data"
+type: post
 ---
 
 > **Machine Intelligence with Streaming Data.**

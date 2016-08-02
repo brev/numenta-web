@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing
 tags: Neuroscience
 title: The Neuroscience Behind Grok, Part 2
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

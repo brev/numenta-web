@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing
 tags: Data
 title: Big Data's Digital Nervous System
+type: post
 ---
 
 In a

@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: numenta ieee wcci world congress computational intelligence 2016
 title: IEEE WCCI 2016
+type: post
 ---
 
 ### About Talk

@@ -8,5 +8,5 @@ link: http://www.newsweek.com/innovation-lite-modern-day-technology-stuck-283338
 org: Newsweek
 tags: modern day technology stuck newsweek numenta hierarchical temporal memory htm jeff hawkins
 title: Innovation Lite - Modern-Day Technology is Stuck
-type: item
+type: link
 ---

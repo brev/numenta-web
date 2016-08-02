@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: numenta anomaly benchmark nab released open source streaming data
 title: Numenta Anomaly Benchmark (NAB) is Released, Open Source with White Paper
+type: post
 ---
 
 ### Numenta Newsletter November 2015

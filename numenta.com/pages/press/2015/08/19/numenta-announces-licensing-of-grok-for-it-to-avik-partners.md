@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta license grok for it analytics to avik partners smart data conference 2015 dataversity
 title: Numenta Announces Licensing of Grok for IT Analytics to Avik Partners
-type: release
+type: post
 ---
 
 REDWOOD CITY, CA –August 19, 2015— [Numenta, Inc.](/), a leader in machine

@@ -8,5 +8,5 @@ link: http://www.wsj.com/articles/new-chips-propel-machine-learning-1463957238
 org: Wall Street Journal
 tags: nvidia microchip ct scan numenta machine learning
 title: New Chips Propel Machine Learning
-type: item
+type: link
 ---

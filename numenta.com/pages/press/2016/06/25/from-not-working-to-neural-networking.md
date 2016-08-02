@@ -8,5 +8,5 @@ link: http://www.economist.com/news/special-report/21700756-artificial-intellige
 org: Economist
 tags: from not working neural networking economist numenta artificial machine intelligence
 title: From Not Working to Neural Networking
-type: item
+type: link
 ---

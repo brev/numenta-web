@@ -7,6 +7,7 @@ image: ../images/image.png
 org: VP Research
 tags: increasing research transparency numenta nupic machine intelligence
 title: Increasing Research Transparency
+type: post
 ---
 
 I am pleased to tell you about a change we recently made to our research

@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: numenta 2015 review partners cortical.io avik grok nlp semantic folding nab numenta anomaly benchmark
 title: Year in Review for Numenta 2015
+type: post
 ---
 
 ### Numenta Newsletter &mdash; January 07, 2016

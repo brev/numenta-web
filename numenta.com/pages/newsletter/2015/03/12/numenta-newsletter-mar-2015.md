@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: numenta newsletter march 2015
 title: Numenta Newsletter March 2015
+type: post
 ---
 
 ### Numenta Newsletter

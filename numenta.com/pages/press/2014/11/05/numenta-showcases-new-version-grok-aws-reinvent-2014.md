@@ -8,7 +8,7 @@ link:
 org: Press Release
 tags: numenta grok it analytics aws reinvent amazon web services
 title: Numenta to Showcase New Version of Grok at AWS reInvent 2014
-type: release
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

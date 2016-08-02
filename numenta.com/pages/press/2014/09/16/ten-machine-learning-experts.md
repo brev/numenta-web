@@ -8,5 +8,5 @@ link: http://dataconomy.com/10-machine-learning-experts-you-need-to-know/
 org: Dataconomy
 tags: machine learning experts jeff hawkins numenta grok
 title: Ten Machine Learning Experts You Need to Know
-type: item
+type: link
 ---

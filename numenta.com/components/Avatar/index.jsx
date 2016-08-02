@@ -34,7 +34,6 @@ const avatars = {
   ImageChetanSurpur,
   ImageChristyMaver,
   ImageCraigVaughan,
-  ImageDefault,
   ImageDonnaDubinsky,
   ImageIanDanforth,
   ImageJaredCasner,
@@ -59,8 +58,14 @@ const avatars = {
  *
  */
 const Avatar = ({name}) => {
-  const person = name.replace(/\s+/g, '')
-  const photo = avatars[`Image${person}`] || avatars.ImageDefault
+  let person = name
+  let photo
+
+  if (name && name.length > 0) {
+    person = name.replace(/\s/g, '')
+  }
+
+  photo = avatars[`Image${person}`] || ImageDefault
 
   return (
     <span className={styles.avatar}>

@@ -7,6 +7,7 @@ image: ../images/image.jpg
 org: Marketing
 tags: Company, Data
 title: Numenta and Complex Event Processing
+type: post
 ---
 
 A question we get from time to time is, “How is Grok different from complex

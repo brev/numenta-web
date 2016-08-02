@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Troubleshooting
 sort: k
 title: Why am I not seeing any anomalies?

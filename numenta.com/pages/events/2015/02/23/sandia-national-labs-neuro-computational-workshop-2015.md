@@ -19,6 +19,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins speaking sandia national laboratories neuro inspired computational elements workshop 2015
 title: Sandia National Laboratories Neuro-Inspired Computational Elements Workshop 2015
+type: post
 ---
 
 ### Sandia National Laboratories

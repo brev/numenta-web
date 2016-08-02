@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: sf san francisco data science meetup predictive analytics numenta machine intelligence
 title: SF Data Science Meetup
+type: post
 ---
 
 ### Talk Abstract

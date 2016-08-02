@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Numenta Event
 tags: data science summit 2016 numenta sponsor machine intelligence ai
 title: Data Science Summit US 2016
+type: post
 ---
 
 ### Topic

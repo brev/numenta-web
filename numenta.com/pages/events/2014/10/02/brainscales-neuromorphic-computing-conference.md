@@ -20,4 +20,5 @@ image: ../images/image.png
 org: Co-founder
 tags: brainscales neuromorphic computing conference jeff hawkins model cortical layers
 title: Frontiers in Neuromorphic Computing Conference
+type: post
 ---

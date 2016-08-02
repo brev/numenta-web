@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Event
 tags: numenta htm workshop hierarchical temporal memory berkeley institute data science bids
 title: Numenta HTM Workshop at Berkeley Institute for Data Science
+type: post
 ---
 
 ### Description

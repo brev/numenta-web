@@ -19,6 +19,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: sv silicon valley forum ihuman future of minds and machines jeff hawkins numenta machine intelligence
 title: SV Forum iHuman - The Future of Minds and Machines
+type: post
 ---
 
 ### Video

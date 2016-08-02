@@ -1,4 +1,4 @@
-._layout-dropcap p:first-of-type::first-letter {
+._layout-dropcap > p:first-of-type::first-letter {
   background-color: #fff;
   color: #1aa0db;
   float: left;
@@ -11,7 +11,7 @@
   margin: 1.35rem 0.333rem 0 -0.1rem;
 }
 @media screen and (min-width: 48em) {
-  ._layout-dropcap p:first-of-type::first-letter {
+  ._layout-dropcap > p:first-of-type::first-letter {
     /* -ns (> mobile) */
     font-size: 5.38rem;
     line-height: 2.666rem;

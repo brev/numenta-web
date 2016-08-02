@@ -8,5 +8,5 @@ link: http://www.prweb.com/releases/corticalio/3rdcapitalround/prweb13038027.htm
 org: PRWeb
 tags: cortical.io numenta nupic htm hierarchical temporal memory nlp natural language processing machine intelligence
 title: USD 1.8 Million for Cortical.io Brain-Inspired Algorithm Made in Austria
-type: item
+type: link
 ---

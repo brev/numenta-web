@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: numenta licensing update switch agpl agplv3 open source free software machine intelligence htm hierarchical temporal memory streaming temporal data patterns anomaly outlier detection
 title: Numenta Licensing Update and AGPLv3
+type: post
 ---
 
 ### Numenta Licensing Update

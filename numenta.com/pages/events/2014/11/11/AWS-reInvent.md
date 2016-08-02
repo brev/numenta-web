@@ -17,4 +17,5 @@ image: ../images/image.png
 org: Event
 tags: grok it analytics aws reinvent 2014
 title: "AWS re:Invent"
+type: post
 ---

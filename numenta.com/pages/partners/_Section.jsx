@@ -78,12 +78,12 @@ const SectionPartners = (props, {config}) => {
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to="http://numenta.com/press/numenta-and-cortical-io-form-strategic-partnership.html">
+              <TextLink to="/press/2015/05/14/numenta-and-cortical-io-form-strategic-partnership/">
                 Press Release
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to="http://numenta.com/newsletters/announcing-relationship-with-cortical-io.html">
+              <TextLink to="/newsletter/2015/05/14/announcing-relationship-with-cortical-io/">
                 Newsletter
               </TextLink>
             </ListItem>
@@ -121,12 +121,12 @@ const SectionPartners = (props, {config}) => {
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to="http://numenta.com/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html">
+              <TextLink to="/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/">
                 Press Release
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to="http://numenta.com/newsletters/partnership-between-numenta-and-avik-partners-on-grok-for-it-analytics.html">
+              <TextLink to="/newsletter/2015/09/01/partnership-between-numenta-and-avik-partners-on-grok-for-it-analytics/">
                 Newsletter
               </TextLink>
             </ListItem>

@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Using HTM Studio
 sort: c
 title: I am interested in integrating HTM technology into my application, what can I do next?

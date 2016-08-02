@@ -8,5 +8,5 @@ link: http://www.wired.com/2015/04/learn-stop-worrying-love-bots/
 org: Wired
 tags: artificial general machine intelligence ai stop worrying love the bots numenta nupic jeff hawkins
 title: How We Learn to Stop Worrying and Love the Bots
-type: item
+type: link
 ---

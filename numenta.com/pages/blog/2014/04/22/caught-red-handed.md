@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Director, Product Development
 tags: science, anomaly, detection, grok, aws
 title: Caught Red Handed
+type: post
 ---
 
 Like most engineering managers, I like to know when someone is manually touching

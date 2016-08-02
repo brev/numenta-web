@@ -7,6 +7,7 @@ image: ../images/image.png
 org: CEO
 tags: numenta htm hierarchical temporal memory app entrepreneur contest yale university
 title: Winner of HTM Contest at Yale
+type: post
 ---
 
 ### Winner of HTM Contest at Yale

@@ -8,5 +8,5 @@ link: http://www.theregister.co.uk/2014/03/29/hawkins_ai_feature/
 org: The Register
 tags: building ai mimic neocortex
 title: Meet the Man Building an AI that Mimics Our Neocortex
-type: item
+type: link
 ---

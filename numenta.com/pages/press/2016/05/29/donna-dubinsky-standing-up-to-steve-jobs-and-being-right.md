@@ -8,5 +8,5 @@ link: http://learningleader.com/episode-128-donna-dubinsky-standing-up-to-steve-
 org: Learning Leader
 tags: learning leader donna dubinsky standing up to steve jobs being right ryan hawk numenta
 title: Donna Dubinsky – Standing Up To Steve Jobs And Being Right
-type: item
+type: link
 ---

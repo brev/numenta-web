@@ -1,8 +1,7 @@
 ---
+date: 2016/07/22
 title: Privacy Policy
 ---
-
-**Updated:** 22 July 2016
 
 These terms of service apply to the use of Numenta’s streaming analytics product
 as distributed through cloud service providers (the Grok Product) and for the

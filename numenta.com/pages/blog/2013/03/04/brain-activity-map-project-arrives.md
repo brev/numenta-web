@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Founder
 tags: Neuroscience
 title: BAM! The Brain Activity Map Project arrives
+type: post
 ---
 
 Last month the Obama administration announced a new ten year $3B science

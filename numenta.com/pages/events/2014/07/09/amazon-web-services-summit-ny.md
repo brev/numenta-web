@@ -17,4 +17,5 @@ image: ../images/image.png
 org: Event
 tags: grok it analytics aws amazon web services summit ny 2014
 title: AWS Summit New York
+type: post
 ---

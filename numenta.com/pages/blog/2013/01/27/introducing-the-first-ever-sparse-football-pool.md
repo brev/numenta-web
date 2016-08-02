@@ -7,6 +7,7 @@ image: ../images/image.jpg
 org: VP Research
 tags:  Neuroscience, Machine Learning
 title: Introducing the first ever Sparse Football Pool!
+type: post
 ---
 
 #### Win a Kindle Paperwhite and a copy of *On Intelligence*

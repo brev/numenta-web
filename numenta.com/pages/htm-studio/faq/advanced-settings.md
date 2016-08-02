@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Using HTM Studio
 sort: h
 title: What are the advanced settings for?

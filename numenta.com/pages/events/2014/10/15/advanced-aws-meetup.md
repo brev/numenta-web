@@ -20,4 +20,5 @@ image: ../images/image.png
 org: Engineering Manager
 tags: numenta grok event advanced aws meetup lightning talk anomlay service
 title: Advanced AWS Meetup Lightning Talk
+type: post
 ---

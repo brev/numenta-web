@@ -8,5 +8,5 @@ link: http://www.newsweek.com/2014/06/06/computer-programming-dying-art-252618.h
 org: Newsweek
 tags: computer programming dying art
 title: Computer Programming is a Dying Art
-type: item
+type: link
 ---

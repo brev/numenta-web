@@ -8,5 +8,5 @@ link: http://dataconomy.com/cortical-io-gain-1-25-million-in-new-venture-capital
 org: Dataconomy
 tags: cortical.io million venture capital grand plans for future numenta semantic machine intelligence
 title: Cortical.io Gain $1.25 Million in New Venture Capital, Share Grand Plans for The Future
-type: item
+type: link
 ---

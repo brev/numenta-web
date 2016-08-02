@@ -19,6 +19,7 @@ image: ../images/image.png
 org: CEO, Co-Founder
 tags: orange institute 14 silicon valley redefine business donna dubinsky numenta machine intelligence
 title: Orange Institute 14 How Silicon Valley is Redefining Business Again
+type: post
 ---
 
 Disruption is the new norm. Many of us have watched the Digital Economy remake

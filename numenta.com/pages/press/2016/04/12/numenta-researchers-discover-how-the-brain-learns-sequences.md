@@ -9,7 +9,7 @@ link:
 org: Press Release
 tags: numenta neuron research paper published discover brain learns sequences key machine intelligence systems pattern theory
 title: Numenta Researchers Discover How The Brain Learns Sequences, A Key to Intelligent Systems
-type: release
+type: post
 ---
 
 > Numenta’s theory of how the brain learns and understands sequences of patterns

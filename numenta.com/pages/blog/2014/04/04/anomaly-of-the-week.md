@@ -7,6 +7,7 @@ image: ../images/image.png
 org: VP Research
 tags: science, anomaly, detection, grok, aws
 title: Anomaly of the Week
+type: post
 ---
 
 It was Thursday night, March 20th, at 8pm. I was cleaning up the kitchen and

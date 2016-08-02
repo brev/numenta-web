@@ -8,5 +8,5 @@ link: https://www.computer.org/web/computingnow/archive/brain-like-computing-may
 org: Computing Now
 tags: numenta brain-like computing ieee computer society 2022 report computing now smart devices seamless intelligence brain waves
 title: Brian-Like Computing
-type: item
+type: link
 ---

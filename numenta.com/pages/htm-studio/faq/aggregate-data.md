@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Using HTM Studio
 sort: g
 title: What does "aggregate my data" mean?

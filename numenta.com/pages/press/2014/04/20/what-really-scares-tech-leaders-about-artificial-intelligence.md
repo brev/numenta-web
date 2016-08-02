@@ -8,5 +8,5 @@ link: http://www.forbes.com/sites/anthonykosner/2015/04/20/what-really-scares-te
 org: Forbes
 tags: scares tech leaders artificial intelligence ai numenta htm jeff hawkins
 title: What Really Scares Tech Leaders About Artificial Intelligence?
-type: item
+type: link
 ---

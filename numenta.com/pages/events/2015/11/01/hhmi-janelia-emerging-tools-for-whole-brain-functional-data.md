@@ -19,6 +19,7 @@ image: ../images/image.png
 org: VP Research
 tags: subutai ahmad numenta htm machine intelligence janelia research emerging tools whole brain functional data
 title: HHMI Janelia Emerging Tools for Acquisition and Interpretation of Whole-Brain Functional Data
+type: post
 ---
 
 In the last few years, optical techniques have emerged that allow

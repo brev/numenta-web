@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins berkeley symposium energy efficient electronic systems htm hierarchical temporal memory
 title: Fourth Berkeley Symposium on Energy Efficient Electronic Systems
+type: post
 ---
 
 The technical program consists of invited and contributed papers. Complementing

@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing
 title: The Problem of Representation
 tags: Neuroscience, Machine Learning
+type: post
 ---
 
 Years ago, a retiring artificial intelligence researcher told Jeff Hawkins that

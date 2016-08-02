@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: ted tedx cornell tech alexander lavin numenta research engineer
 title: TEDx Cornell Tech
+type: post
 ---
 
 ### Event Details

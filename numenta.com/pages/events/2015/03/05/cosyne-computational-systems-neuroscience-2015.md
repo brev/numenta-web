@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP Research
 tags: computational systems neuroscience cosyne 2015 numenta nupic machine intelligence
 title: Computational and Systems Neuroscience (Cosyne) 2015
+type: post
 ---
 
 #### Title

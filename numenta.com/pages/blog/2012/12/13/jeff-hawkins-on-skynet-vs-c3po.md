@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing
 tags: Machine Learning, Neuroscience
 title: Jeff Hawkins on Skynet vs. C3PO
+type: post
 ---
 
 Will the future of machine intelligence lead to evil robots and a dystopian

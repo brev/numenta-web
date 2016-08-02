@@ -20,6 +20,7 @@ image: ../images/image.png
 org: VP Research
 tags: numenta grok cognitive computing forum san jose 2014
 title: Cognitive Computing Forum
+type: post
 ---
 
 #### Video:

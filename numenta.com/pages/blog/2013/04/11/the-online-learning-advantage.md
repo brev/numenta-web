@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Engineering
 tags: Machine Learning, Data
 title: The Online Learning Advantage
+type: post
 ---
 
 Streaming data is the future of data. Businesses need real-time solutions that

@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Troubleshooting
 sort: e
 title: What if I don't have a date/time column in my file, can I still use HTM Studio?

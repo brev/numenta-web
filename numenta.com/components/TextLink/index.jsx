@@ -5,11 +5,12 @@ import React from 'react'
 import styles from './index.css'
 
 
-const TextLink = ({children, to}) => {
+const TextLink = ({children, target, to}) => {
   const attrs = {
     // default internal non-index link
     className: styles.textlink,
     to: prefixLink(to),
+    target,
   }
   let Node = Link
 
@@ -33,6 +34,7 @@ const TextLink = ({children, to}) => {
 
 TextLink.propTypes = {
   children: React.PropTypes.any.isRequired,
+  target: React.PropTypes.string,
   to: React.PropTypes.string.isRequired,
 }
 

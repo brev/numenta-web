@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing
 tags: Neuroscience, Machine Learning
 title: Jeff Hawkins speaks this week at Berkeley
+type: post
 ---
 
 This week Jeff Hawkins will present two talks in the prestigious Berkeley

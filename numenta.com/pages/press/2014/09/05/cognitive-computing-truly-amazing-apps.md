@@ -8,5 +8,5 @@ link: http://www.programmableweb.com/news/cognitive-computing-makes-it-possible-
 org: ProgrammableWeb
 tags: cognitive computing numenta grok htm hierarchical temporal memory
 title: Cognitive Computing Makes It Possible To Build Truly Amazing Apps
-type: item
+type: link
 ---

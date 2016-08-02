@@ -8,5 +8,5 @@ link: https://gigaom.com/2015/01/09/artificial-intelligence-is-real-now-and-its-
 org: GigaOm
 tags: artificial intelligence real just getting started numenta machine intelligence
 title: Artificial Intelligence Is Real Now and It’s Just Getting Started
-type: item
+type: link
 ---

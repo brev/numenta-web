@@ -8,5 +8,5 @@ link: http://fortune.com/2015/03/05/forget-the-naysayers-robots-pose-no-threat-t
 org: Fortune
 tags: fortune scientists dismiss fear of robots ai artificial machine intelligence jeff hawkins numenta
 title: Many Scientists Dismiss the Fear of Robots — Here's Why
-type: item
+type: link
 ---

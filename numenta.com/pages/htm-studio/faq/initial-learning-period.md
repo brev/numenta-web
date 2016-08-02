@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Anomaly Detection
 sort: i
 title: What is the initial learning period?

@@ -8,6 +8,7 @@ image: ../images/image.png
 org: Director of Marketing
 tags: htm for stocks iphone apple app store real time insights random walk hierarchical temporal memory
 title: "Real-time Insights from a Random Walk: HTM for Stocks Hits the iPhone"
+type: post
 ---
 
 While Numenta may not be in the business of selling traditional products, we are

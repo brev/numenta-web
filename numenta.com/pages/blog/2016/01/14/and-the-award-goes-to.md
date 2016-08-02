@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Director of Marketing
 tags: numenta AI awards artificial machine intelligence learning deep htm brain neurons nupic
 title: And the award goes to...
+type: post
 ---
 
 This morning, as Hollywood anxiously awaited to hear the nominees for this

@@ -19,6 +19,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins nupic htm machine intelligence gsv labs gsvlabs pioneer summit
 title: GSVlabs Pioneer Summit 2015
+type: post
 ---
 
 We are convening the leading venture and growth companies from around the world,

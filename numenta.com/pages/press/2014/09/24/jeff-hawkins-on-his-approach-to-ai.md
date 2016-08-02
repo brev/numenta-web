@@ -8,5 +8,5 @@ link: https://gigaom.com/2014/09/24/the-gigaom-interview-jeff-hawkins-on-why-his
 org: Gigaom
 tags: jeff hawkins numenta gigaom ai artificial intelligence machine nupic htm
 title: Jeff Hawkins on why his approach to AI will become the approach to AI
-type: item
+type: link
 ---

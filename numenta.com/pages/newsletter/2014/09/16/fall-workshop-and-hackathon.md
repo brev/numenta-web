@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: numenta training workshop nupic machine intelligence hackathon fall 2014
 title: Opportunities to Learn About and Try Numenta Technology - Fall Workshop and Hackathon
+type: post
 ---
 
 I’m writing to let you know that we have two upcoming opportunities to learn

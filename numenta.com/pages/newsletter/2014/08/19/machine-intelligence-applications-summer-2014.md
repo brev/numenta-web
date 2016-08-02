@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: summer 2014 numenta nupic grok aws machine intelligence applications
 title: Machine Intelligence Applications 2014
+type: post
 ---
 
 We’ve had a busy summer at Numenta. Since the launch of our first product, Grok

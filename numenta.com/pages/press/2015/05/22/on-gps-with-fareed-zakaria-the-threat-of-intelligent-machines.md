@@ -8,5 +8,5 @@ link: http://www.cnn.com/videos/tv/2015/05/22/exp-gps-0524-hawkins-artificial-in
 org: CNN
 tags: cnn on gps fareed zakaria jeff hawkins threat intelligent machines numenta nupic brain neocortex
 title: "On GPS: The Threat of Intelligent Machines"
-type: item
+type: link
 ---

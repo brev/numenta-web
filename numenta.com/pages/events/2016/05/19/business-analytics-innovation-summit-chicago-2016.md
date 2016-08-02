@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Director of Marketing
 tags: business analytics innovation summit chicago 2016 numenta htm
 title: Business Analytics Innovation Summit Chicago 2016
+type: post
 ---
 
 > "Smart Business Insights for Smarter Business Decisions"

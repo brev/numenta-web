@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Founder
 title: Streams and Lakes
 tags: Machine Learning, Data, Neuroscience
+type: post
 ---
 
 Two weeks ago I attended a workshop at U.C. Berkeley titled, ["From Data to

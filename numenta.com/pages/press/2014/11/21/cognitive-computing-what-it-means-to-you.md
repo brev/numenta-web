@@ -8,5 +8,5 @@ link: http://www.techworld.com/blogs/talking-shop/cognitive-computing-explained-
 org: Techworld
 tags: cognitive computing numenta grok nupic techworld nlp natural language processing
 title: Cognitive Computing - What It Means To You
-type: item
+type: link
 ---

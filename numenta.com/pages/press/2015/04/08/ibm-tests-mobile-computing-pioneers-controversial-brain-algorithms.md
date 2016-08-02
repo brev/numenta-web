@@ -8,5 +8,5 @@ link: http://www.technologyreview.com/news/536326/ibm-tests-mobile-computing-pio
 org: MIT Technology Review
 tags: ibm mobile pioneer brain algorithms jeff hawkins numenta htm hierarchical temporal memory
 title: IBM Tests Mobile Computing Pioneer’s Controversial Brain Algorithms
-type: item
+type: link
 ---

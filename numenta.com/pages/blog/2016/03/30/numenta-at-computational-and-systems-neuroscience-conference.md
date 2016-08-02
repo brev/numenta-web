@@ -8,6 +8,7 @@ image: ../images/image.png
 org: Research Engineer
 tags: numenta computational systems neuroscience conference
 title: Numenta at the Computational and Systems Neuroscience Conference (COSYNE)
+type: post
 ---
 
 Earlier this month, I attended the annual

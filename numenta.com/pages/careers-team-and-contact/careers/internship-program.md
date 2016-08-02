@@ -1,9 +1,12 @@
 ---
+author: Numenta
 anchor: careers-intern
 date: 2014/01/01
 email: interns@numenta.com
+org: Careers
 sort: 9
 title: Internship Program
+type: post
 ---
 
 ***IMPORTANT NOTE:*** *Numenta is unable to consider internship applications

@@ -17,6 +17,7 @@ image: ../images/image.png
 org: Open Source Manager
 tags: nupic spring 2015 hackathon numenta machine intelligence htm hierarchical temporal memory
 title: NuPIC Spring 2015 Hackathon NYC
+type: post
 ---
 
 ### Please RSVP

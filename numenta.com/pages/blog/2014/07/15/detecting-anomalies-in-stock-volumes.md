@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Summer Intern, Engineering
 tags: anomaly, detection, stock, finance, volume
 title: Detecting Anomalies in Stock Volumes
+type: post
 ---
 
 In the film Pi, a mathematician by the name of Maximllian Cohen derives the

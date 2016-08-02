@@ -7,6 +7,7 @@ image: ../images/image.jpg
 org: Marketing
 tags:  Neuroscience, Machine Learning
 title: Sparse Football Pool Winner
+type: post
 ---
 
 Thanks to everyone for participating in the Sparse Football Pool!  It was a

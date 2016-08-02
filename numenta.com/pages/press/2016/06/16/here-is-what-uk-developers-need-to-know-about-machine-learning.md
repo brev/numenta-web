@@ -8,5 +8,5 @@ link: http://www.techworld.com/tutorial/apps/everything-uk-developers-need-know-
 org: Techworld
 tags: developers machine learning numenta htm hierarchical temporal memory machine intelligence
 title: Here's what UK Developers Need to Know about Machine Learning
-type: item
+type: post
 ---

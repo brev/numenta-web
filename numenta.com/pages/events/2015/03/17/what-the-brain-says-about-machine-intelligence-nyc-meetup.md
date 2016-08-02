@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: meetup nyc new york city cornell tech what the brain says about machine intelligence jeff hawkins numenta
 title: What the Brain Says About Machine Intelligence NYC Meetup
+type: post
 ---
 
 ### Summary

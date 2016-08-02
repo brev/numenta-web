@@ -1,8 +1,4 @@
 ---
-date:
-htmlmin: true
-isPage: false
-layout:
 section: Anomaly Detection
 sort: j
 title: How does HTM Studio determine what is anomalous?

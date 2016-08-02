@@ -8,5 +8,5 @@ link: http://twit.tv/show/triangulation/146
 org: Twit.tv
 tags: jeff hawkins on triangulation 146 with leo laporte
 title: Jeff Hawkins on Triangulation 146 with Leo Laporte
-type: item
+type: link
 ---

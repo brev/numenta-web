@@ -8,5 +8,5 @@ link: http://www.networkworld.com/article/2980746/infrastructure-management/nume
 org: Network World
 tags: numenta grok for it artifical intelligence network performance analysis htm hierarchical temporal memory
 title: "Numenta's Grok for IT: Artificial Intelligence Meets Network Performance Analysis"
-type: item
+type: link
 ---

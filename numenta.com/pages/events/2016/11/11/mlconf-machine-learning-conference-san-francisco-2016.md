@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Research Team
 tags: numenta machine learning conference san francisco sf 2016
 title: MLconf 2016 Machine Learning Conference San Francisco
+type: post
 ---
 
 ### About the MLconf

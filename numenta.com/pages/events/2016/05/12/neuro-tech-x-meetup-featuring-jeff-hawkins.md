@@ -20,6 +20,7 @@ image: ../images/image.png
 org: Co-Founder
 tags: jeff hawkins numenta founder speaking machine intelligence artificial neocortex
 title: NeuroTechX meetup featuring Jeff Hawkins
+type: post
 ---
 
 > What is Intelligence, that a Machine Might Have Some?

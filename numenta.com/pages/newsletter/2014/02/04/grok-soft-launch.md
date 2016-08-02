@@ -7,6 +7,7 @@ image: ../../../../images/numenta.png
 org: CEO
 tags: grok soft launch
 title: Announcing Grok 1.0 Soft Launch
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

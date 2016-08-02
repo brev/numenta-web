@@ -7,6 +7,7 @@ image: ../images/image.png
 org: Marketing
 tags: Neuroscience, Machine Learning
 title: Jeff Hawkins at Strange Loop
+type: post
 ---
 
 Jeff Hawkins recently gave a keynote address at

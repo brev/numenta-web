@@ -7,6 +7,7 @@ image: ../images/image.png
 org: VP Research
 tags: Machine Learning
 title: How is Grok's algorithm different?
+type: post
 ---
 
 **NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),

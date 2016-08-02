@@ -183,9 +183,7 @@ npm run build
 * explain react `contexts` available: **config**, etc.
 * watch out for jsx spaces {' '}
 * partners / links / fix numenta.com hard-coded PR, etc.
-* current openings links
 * add links to this Document
-* style template: legal, terms, etc. (too wide)
 * Migrate away old links /grok/ to grokstream.com
 * RSS feeds
 * Remove blog links/etc to `/legal/rules/` and `/legal/results/`
@@ -193,4 +191,3 @@ npm run build
 * WuFoo contact result from `/contact/thanks.html` to
     `/careers-team-and-contact/thanks/`
 * Migrate: `healthchecks/` `conf/` ... `out/`
-* Team/Board needs List/copy=false marked-up
