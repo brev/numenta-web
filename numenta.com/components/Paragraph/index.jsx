@@ -17,8 +17,8 @@ const Paragraph = ({children, lead}) => {
 }
 
 Paragraph.propTypes = {
-  children: React.PropTypes.any.isRequired,
-  lead: React.PropTypes.bool.isRequired,
+  children: React.PropTypes.any,
+  lead: React.PropTypes.bool,
 }
 
 Paragraph.defaultProps = {

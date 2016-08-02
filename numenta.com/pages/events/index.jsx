@@ -14,12 +14,16 @@ import SubTitle from '../../components/SubTitle'
 /**
  *
  */
-const EventsPage = (props, {route}) => {
+const EventsPage = (props, {config, route}) => {
   const {pages} = route
   const now = moment()
   const posts = pages.filter(({file}) => (file.path.match(/^events\/.*\.md/)))
-  const past = posts.filter(({data}) => (moment(data.date) < now))
-  const upcoming = posts.filter(({data}) => (moment(data.date) >= now))
+  const past = posts.filter(({data}) => (
+    (moment(data.date, config.moments.post) < now)
+  ))
+  const upcoming = posts.filter(({data}) => (
+    (moment(data.date, config.moments.post) >= now)
+  ))
   const itemsPast = past.sort(sortDateDescend).map((post) => (
     <ListItem key={post.file.stem}>
       <PostListItem post={post} />
@@ -51,6 +55,7 @@ const EventsPage = (props, {route}) => {
 }
 
 EventsPage.contextTypes = {
+  config: React.PropTypes.object,
   route: React.PropTypes.object,
 }
 
