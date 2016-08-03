@@ -1,6 +1,11 @@
+import IconDownload from 'react-icons/lib/fa/cloud-download'
+import IconGithub from 'react-icons/lib/fa/github'
+import IconPdf from 'react-icons/lib/fa/file-pdf-o'
+import IconSlideshare from 'react-icons/lib/fa/slideshare'
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
+import IconMarker from '../../components/IconMarker'
 import Image from '../../components/Image'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
@@ -147,11 +152,13 @@ const NabPage = (props, {config}) => {
               presentation was delivered at MLConf (Machine Learning Conference)
               in San Francisco 2015.
             </Paragraph>
-            {/* eslint-disable max-len */}
-            <TextLink to="http://www.slideshare.net/numenta/evaluating-realtime-anomaly-detection-the-numenta-anomaly-benchmark">
-              See Slides
-            </TextLink>
-            {/* eslint-enable max-len */}
+            <IconMarker icon={<IconSlideshare />}>
+              {/* eslint-disable max-len */}
+              <TextLink to="http://www.slideshare.net/numenta/evaluating-realtime-anomaly-detection-the-numenta-anomaly-benchmark">
+                See Slides
+              </TextLink>
+              {/* eslint-enable max-len */}
+            </IconMarker>
           </div>
           <div className={styles.aside}>
             <Video
@@ -176,11 +183,11 @@ const NabPage = (props, {config}) => {
               getting valuable insights as early as possible.
             </Paragraph>
             {/* eslint-disable max-len */}
-            <div>
+            <IconMarker icon={<IconPdf />}>
               <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
-                Learn More
+                Read Whitepaper
               </TextLink>
-            </div>
+            </IconMarker>
           </div>
           <div className={styles.aside}>
             <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
@@ -207,14 +214,14 @@ const NabPage = (props, {config}) => {
               December 9-11, 2015 in Miami. It contains technical details on
               NAB, including the mathematical explanation of the scoring system.
             </Paragraph>
-            <div>
-              <TextLink to={links.in.nab}>
-                Learn More
+            <IconMarker icon={<IconPdf />}>
+              <TextLink to="http://arxiv.org/abs/1510.03336">
+                Read Research Paper
               </TextLink>
-            </div>
+            </IconMarker>
           </div>
           <div className={styles.aside}>
-            <TextLink to={links.in.nab}>
+            <TextLink to="http://arxiv.org/abs/1510.03336">
               <Image
                 alt="NAB Scoreboard"
                 respond="mw"
@@ -232,11 +239,11 @@ const NabPage = (props, {config}) => {
               your own techniques against the published algorithms and share
               your results.
             </Paragraph>
-            <div>
+            <IconMarker icon={<IconGithub />}>
               <TextLink to="https://github.com/numenta/NAB">
-                Learn More
+                Visit Repository
               </TextLink>
-            </div>
+            </IconMarker>
           </div>
           <div className={styles.aside}>
             <TextLink to="https://github.com/numenta/NAB">
@@ -257,13 +264,13 @@ const NabPage = (props, {config}) => {
               Download this two-page data sheet to learn more about the key
               components of NAB.
             </Paragraph>
-            <div>
+            <IconMarker icon={<IconDownload />}>
               {/* eslint-disable max-len */}
               <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Data-Sheet.pdf">
-                Learn More
+                Download Datasheet
               </TextLink>
               {/* eslint-enable max-len */}
-            </div>
+            </IconMarker>
           </div>
           <div className={styles.aside}>
             <TextLink

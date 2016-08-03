@@ -95,6 +95,9 @@
   composes: w-100 from 'tachyons';
   composes: w-60-ns from 'tachyons';
 }
+.layout-content h3 {
+  width: 100%;
+}
 
 .layout-aside {
   composes: fr from 'tachyons';

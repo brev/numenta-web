@@ -1,0 +1,10 @@
+.iconMarker {
+  /* */
+}
+
+.icon {
+  composes: mr2 from 'tachyons';
+  composes: relative from 'tachyons';
+  composes: color-blue-dark from '../../static/assets/css/theme.css';
+  top: -0.15rem;
+}
