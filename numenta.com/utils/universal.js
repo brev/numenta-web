@@ -15,7 +15,7 @@ export function getConfig() {
  *
  */
 export function getModalAspect(width) {
-  const pad = 15
+  const pad = 20
   let long
 
   if (width >= (1280 - pad)) long = 1024

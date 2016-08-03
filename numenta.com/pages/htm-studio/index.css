@@ -1,0 +1,41 @@
+.columns {
+  composes: layout-columns from '../../static/assets/css/theme.css';
+}
+
+.content {
+  composes: layout-content from '../../static/assets/css/theme.css';
+}
+
+.aside {
+  composes: mt2 from 'tachyons';
+  composes: tc from 'tachyons';
+  composes: layout-aside from '../../static/assets/css/theme.css';
+}
+
+
+.agree {
+  composes: ml2 from 'tachyons';
+}
+
+.hide {
+  composes: dn from 'tachyons';
+}
+
+.icon {
+  composes: relative from 'tachyons';
+  composes: top--1 from 'tachyons';
+  composes: color-blue-mute from '../../static/assets/css/theme.css';
+  font-size: 5rem;
+}
+
+.column {
+  composes: fl from 'tachyons';
+  composes: pb2 from 'tachyons';
+  composes: ph4 from 'tachyons';
+  composes: tc from 'tachyons';
+  composes: w-50 from 'tachyons';
+}
+
+.pad {
+  composes: mt4 from 'tachyons';
+}
