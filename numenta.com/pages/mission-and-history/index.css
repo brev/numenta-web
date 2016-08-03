@@ -7,7 +7,13 @@
 }
 
 .aside {
-  composes: mt4 from 'tachyons';
+  composes: mt1 from 'tachyons';
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
+}
+
+.brain {
+  composes: center from 'tachyons';
+  composes: mt5 from 'tachyons';
+  composes: w5 from 'tachyons';
 }

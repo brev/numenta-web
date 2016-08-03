@@ -8,9 +8,11 @@ import Paragraph from '../../components/Paragraph'
 import Strong from '../../components/Strong'
 import SubTitle from '../../components/SubTitle'
 import TextLink from '../../components/TextLink'
+import Video from '../../components/Video'
 
 import ImageBrain from './images/brain.svg'
 import ImageTimeline from './images/timeline.png'
+import ImageVideoStory from './images/video-ourstory.png'
 import styles from './index.css'
 
 
@@ -61,12 +63,22 @@ const SectionMission = (props, {config}) => {
           </Paragraph>
         </div>
         <div className={styles.aside}>
-          <Image
-            alt="Stylized Brain Artwork"
+          <Video
+            image={ImageVideoStory}
             respond="mw"
-            shadow={false}
-            src={ImageBrain}
+            time="02:32"
+            title="Our Story"
+            type="youtube"
+            videoId="f1tYXv6ST_U"
           />
+          <div className={styles.brain}>
+            <Image
+              alt="Stylized Brain Artwork"
+              respond="mw"
+              shadow={false}
+              src={ImageBrain}
+            />
+          </div>
         </div>
       </div>
 
