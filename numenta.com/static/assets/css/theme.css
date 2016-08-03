@@ -88,6 +88,7 @@
 .layout-columns {
   composes: cf from 'tachyons';
   composes: mb3 from 'tachyons';
+  composes: w-100 from 'tachyons';
 }
 
 .layout-content {
