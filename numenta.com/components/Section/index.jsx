@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import IconAngleUp from 'react-icons/lib/fa/angle-up'
+import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
 import SectionTitle from '../SectionTitle'
@@ -22,6 +23,7 @@ class Section extends React.Component {
   static propTypes = {
     children: React.PropTypes.any.isRequired,
     headline: React.PropTypes.bool.isRequired,
+    id: React.PropTypes.string,
     open: React.PropTypes.bool.isRequired,
     title: React.PropTypes.string.isRequired,
     url: React.PropTypes.string,
@@ -41,9 +43,8 @@ class Section extends React.Component {
     // const {router} = this.context
 
     // Handle dynamic url changes as sections are opened/closed.
-    //  Currently NOT using react-router, manual instead, to prevent re-renders.
     if (open) {
-      global.window.history.pushState({}, '', url)
+      global.window.history.pushState({}, '', prefixLink(url))
       // router.push(url)
     }
     else {
@@ -55,7 +56,7 @@ class Section extends React.Component {
   }
 
   render() {
-    const {children, headline, title} = this.props
+    const {children, headline, id, title} = this.props
     const {open} = this.state
     const isHeadline = headline === true
     const isOpen = open === true
@@ -77,7 +78,7 @@ class Section extends React.Component {
     }
 
     return (
-      <section className={styles.section}>
+      <section id={id} className={styles.section}>
         <SectionTitle
           clickHandle={::this._toggle}
           headline={headline}

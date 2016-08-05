@@ -72,7 +72,7 @@ const mainSections = [
  * @param {Object} [current] - Current node, to alternate section title display.
  * @returns {Array} - Array of React Component node objects.
  */
-export function getMainSectionComponents(current) {
+export function getMainSections(current) {
   const details = {}
   const mainComponents = mainSections.map((item) => {
     const {component, title, url} = item
@@ -90,6 +90,7 @@ export function getMainSectionComponents(current) {
     return (
       <Section
         headline={headline}
+        id={key}
         key={key}
         open={open}
         title={title}
@@ -101,4 +102,14 @@ export function getMainSectionComponents(current) {
   })
 
   return childrenWithProps
+}
+
+/**
+ *
+ */
+export function scrollTo(current, pad = -60) {
+  const element = global.document.getElementById(current.type.name)
+  const {top} = element.getBoundingClientRect()
+
+  if (top) global.window.scroll(0, top + pad)
 }

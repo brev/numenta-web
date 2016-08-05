@@ -1,15 +1,17 @@
 import React from 'react'
 
-import {sortPostsDescend} from '../../utils/universal'
+import {capitalize, sortPostsDescend} from '../../utils/universal'
 
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
 import Paragraph from '../../components/Paragraph'
 import Spacer from '../../components/Spacer'
 import SubTitle from '../../components/SubTitle'
+import Subtle from '../../components/Subtle'
 import TextLink from '../../components/TextLink'
 import Video from '../../components/Video'
 
+import ImageVideo from './images/video.png'
 import styles from './index.css'
 
 
@@ -25,37 +27,44 @@ const SectionPapers = (props, {config, route}) => {
   const postsPapers = pages.filter(({file}) => (
     (file.path.match(/^papers\-videos.*\/papers\/.*\.md/))
   ))
-  const learn = postsLearn.sort(sortPostsDescend).map(({data, file, path}) => {
-    const org = data.org ? (<div>{data.org}</div>) : ''
-    return (
-      <ListItem key={file.stem}>
-        <TextLink to={path}>
-          {data.title}
-        </TextLink>
-        <div>
-          {data.type}
-        </div>
-        <div>
+  const learn = postsLearn.sort(sortPostsDescend).map(({data, file, path}) => (
+    <ListItem key={file.stem}>
+      <TextLink to={path}>
+        {data.title}
+      </TextLink>
+      <div>
+        <Subtle>
+          {capitalize(data.type)}
+          <Spacer />
           {data.author}
-        </div>
-        {org}
-      </ListItem>
-    )
-  })
+          <Spacer />
+          {data.org}
+        </Subtle>
+      </div>
+    </ListItem>
+  ))
   const papers = postsPapers.sort(sortPostsDescend).map(({data, file}) => {
-    const org = data.org ? (<div>{data.org}</div>) : ''
+    const typeNice = capitalize(data.type.replace(/-/, ' '))
+    const org = (
+      <div>
+        {typeNice}
+        <Spacer />
+        {data.org || ''}
+      </div>
+    )
     return (
       <ListItem key={file.stem}>
         <TextLink to={data.link}>
           {data.title}
         </TextLink>
         <div>
-          {data.type}
-        </div>
-        <div>
           {data.author}
         </div>
-        {org}
+        <div>
+          <Subtle>
+            {org}
+          </Subtle>
+        </div>
       </ListItem>
     )
   })
@@ -119,14 +128,16 @@ const SectionPapers = (props, {config, route}) => {
       </div>
       <div className={styles.aside}>
 
-        <Video
-          image=""
-          respond="mw"
-          time="1:00:00"
-          title="Jeff Hawkins on The Hard Unsolved Problems in HTM Theory"
-          type="youtube"
-          videoId="gXP-63sZM_o"
-        />
+        <div className={styles.video}>
+          <Video
+            image={ImageVideo}
+            respond="mw"
+            time="1:00:00"
+            title="The Hard Unsolved Problems in HTM Theory"
+            type="youtube"
+            videoId="gXP-63sZM_o"
+          />
+        </div>
 
         <SubTitle>
           Learn

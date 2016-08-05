@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {getMainSectionComponents} from '../../utils/client/sections'
+import {getMainSections, scrollTo} from '../../utils/client/sections'
 
 import SectionMission from './_Section'
 import Section from '../../components/Section'
@@ -23,8 +23,12 @@ class MissionPage extends React.Component {
 
   componentDidMount() {
     this.setState({  // eslint-disable-line react/no-did-mount-set-state
-      sections: getMainSectionComponents(Default),
+      sections: getMainSections(Default),
     })
+  }
+
+  componentDidUpdate() {
+    scrollTo(Default)
   }
 
   componentWillUnmount() {

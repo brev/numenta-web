@@ -10,3 +10,8 @@
   composes: mt2 from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
+
+.video {
+  composes: tc from 'tachyons';
+  composes: mb4 from 'tachyons';
+}
