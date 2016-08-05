@@ -50,6 +50,7 @@
 <url> <loc>http://numenta.com/blog/2016/02/18/real-time-insights-from-a-random-walk-htm-for-stocks-hits-the-iphone/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/blog/2016/03/30/numenta-at-computational-and-systems-neuroscience-conference/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/blog/2016/06/16/can-neuroscientists-understand-the-brain/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/blog/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/business-strategy-and-ip/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
@@ -107,7 +108,7 @@
 <url> <loc>http://numenta.com/events/2016/07/24/numenta-anomaly-benchmark-competition-at-ieee-wcci-2016/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/2016/07/26/ieee-wcci-2016/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/2016/08/02/sf-data-science-meetup/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
-<url> <loc>http://numenta.com/events/2016/08/08/htm-bay-area-meetup/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://numenta.com/events/2016/08/08/machine-intelligence-with-htm-a-new-approach-to-time-based-learning/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/2016/09/25/ai-with-the-best/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/2016/11/11/mlconf-machine-learning-conference-san-francisco-2016/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://numenta.com/events/</loc> <changefreq>daily</changefreq> <priority>0.3</priority> </url>

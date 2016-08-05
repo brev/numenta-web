@@ -32341,6 +32341,36 @@
 			{
 				"file": {
 					"root": "",
+					"dir": "blog/2016/08/04",
+					"base": "revisiting-a-1986-essay-on-brain-theory.md",
+					"ext": "md",
+					"name": "revisiting-a-1986-essay-on-brain-theory",
+					"extname": ".md",
+					"basename": "revisiting-a-1986-essay-on-brain-theory.md",
+					"dirname": "blog/2016/08/04",
+					"stem": "revisiting-a-1986-essay-on-brain-theory",
+					"path": "blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory.md",
+					"absolute": "/Users/brev/src/numenta-web/numenta.com/blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory.md",
+					"isAbsolute": false
+				},
+				"requirePath": "blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory.md",
+				"path": "/blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory/",
+				"data": {
+					"author": "Jeff Hawkins",
+					"brief": "This week I received an email from a gentleman in Japan. He was creating materials for a course and asked permission to include an extensive passage",
+					"date": "2016/08/04",
+					"featured": false,
+					"hideImage": false,
+					"image": "../images/image.png",
+					"org": "Co-Founder",
+					"tags": "jeff hawkins numenta blog revisiting 1986 essay brain theory",
+					"title": "Revisiting a 1986 Essay on Brain Theory",
+					"type": "post"
+				}
+			},
+			{
+				"file": {
+					"root": "",
 					"dir": "blog",
 					"base": "index.jsx",
 					"ext": "jsx",
@@ -34684,19 +34714,19 @@
 				"file": {
 					"root": "",
 					"dir": "events/2016/08/08",
-					"base": "htm-bay-area-meetup.md",
+					"base": "machine-intelligence-with-htm-a-new-approach-to-time-based-learning.md",
 					"ext": "md",
-					"name": "htm-bay-area-meetup",
+					"name": "machine-intelligence-with-htm-a-new-approach-to-time-based-learning",
 					"extname": ".md",
-					"basename": "htm-bay-area-meetup.md",
+					"basename": "machine-intelligence-with-htm-a-new-approach-to-time-based-learning.md",
 					"dirname": "events/2016/08/08",
-					"stem": "htm-bay-area-meetup",
-					"path": "events/2016/08/08/htm-bay-area-meetup.md",
-					"absolute": "/Users/brev/src/numenta-web/numenta.com/events/2016/08/08/htm-bay-area-meetup.md",
+					"stem": "machine-intelligence-with-htm-a-new-approach-to-time-based-learning",
+					"path": "events/2016/08/08/machine-intelligence-with-htm-a-new-approach-to-time-based-learning.md",
+					"absolute": "/Users/brev/src/numenta-web/numenta.com/events/2016/08/08/machine-intelligence-with-htm-a-new-approach-to-time-based-learning.md",
 					"isAbsolute": false
 				},
-				"requirePath": "events/2016/08/08/htm-bay-area-meetup.md",
-				"path": "/events/2016/08/08/htm-bay-area-meetup/",
+				"requirePath": "events/2016/08/08/machine-intelligence-with-htm-a-new-approach-to-time-based-learning.md",
+				"path": "/events/2016/08/08/machine-intelligence-with-htm-a-new-approach-to-time-based-learning/",
 				"data": {
 					"author": "Numenta",
 					"brief": "Welcome to the 3rd community hosted HTM [Hierarchical Temporal Memory] Meetup. Meet HTM hackers, AI researchers, Entrepreneurs and enthusiasts working in the field of Artificial Intelligence. Read more for a brief agenda.",
@@ -34721,7 +34751,7 @@
 					"image": "../images/meetup.png",
 					"org": "HTM Community",
 					"tags": "numenta hierarchical temporal memory htm community 3rd bay area meetup palo alto machine intelligence neuroscience biological",
-					"title": "HTM Bay Area Meetup",
+					"title": "Machine Intelligence with HTM - A New Approach to Time-Based Learning",
 					"type": "post"
 				}
 			},
@@ -38446,7 +38476,7 @@
 /* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -38497,8 +38527,7 @@
 	  }
 	
 	  componentDidMount() {
-	    // remove @ React 1.0
-	    if (window) (0, _reactTapEventPlugin2.default)(); // eslint-disable-line no-undef
+	    if (global.window) (0, _reactTapEventPlugin2.default)(); // remove @ React 1.0
 	  }
 	
 	  render() {
@@ -38548,6 +38577,7 @@
 	};
 	exports.default = Template;
 	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 370 */
@@ -43975,7 +44005,7 @@
 	 *
 	 */
 	function getModalAspect(width) {
-	  const pad = 15;
+	  const pad = 20;
 	  let long;
 	
 	  if (width >= 1280 - pad) long = 1024;else if (width >= 1024 - pad) long = 720;else if (width >= 720 - pad) long = 640;else long = 480 - pad;
@@ -44058,7 +44088,7 @@
 
 	module.exports = {
 		"name": "Numenta.com",
-		"version": "0.2.37",
+		"version": "0.2.38",
 		"description": "Numenta.com company website content, source code, and static generator tooling.",
 		"license": "SEE LICENSE IN LICENSE.TXT",
 		"main": false,
@@ -44096,7 +44126,7 @@
 			"darwin"
 		],
 		"dependencies": {
-			"babel-core": "6.11.4",
+			"babel-core": "6.13.0",
 			"babel-loader": "6.2.4",
 			"babel-plugin-add-module-exports": "0.2.1",
 			"babel-plugin-transform-class-properties": "6.11.5",
@@ -45931,7 +45961,7 @@
 /* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -45970,15 +46000,20 @@
 	  }
 	
 	  _toggle() {
-	    // const {url} = this.props
-	    // const {router} = this.context
+	    const { url } = this.props;
 	    const open = !this.state.open;
-	    // let page
+	    // const {router} = this.context
 	
-	    // if (open) page = url
-	    // else page = '/'
+	    // Handle dynamic url changes as sections are opened/closed.
+	    //  Currently NOT using react-router, manual instead, to prevent re-renders.
+	    if (open) {
+	      global.window.history.pushState({}, '', url);
+	      // router.push(url)
+	    } else {
+	      global.window.history.back();
+	      // router.goBack()
+	    }
 	
-	    // router.push(page)
 	    this.setState({ open });
 	  }
 	
@@ -46044,6 +46079,7 @@
 	};
 	exports.default = Section;
 	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 496 */
@@ -58112,16 +58148,29 @@
 /* 562 */
 /***/ function(module, exports) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.onRouteUpdate = onRouteUpdate;
 	/**
-	 * @param {String} location - Route Location from Gatsby on route change
+	 *
 	 */
-	function onRouteUpdate() {}
+	function onRouteUpdate() {
+	  const { hash } = global.window.location;
+	
+	  // if url has #hash try to scroll to it
+	  if (hash !== '') {
+	    setTimeout(() => {
+	      const id = hash.replace('#', '');
+	      const element = global.document.getElementById(id);
+	      const { top } = element.getBoundingClientRect();
+	      if (top) global.window.scroll(0, top - 15);
+	    }, 0);
+	  }
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 563 */
@@ -58339,507 +58388,510 @@
 		"./blog/2016/06/16/can-neuroscientists-understand-the-brain.md": 891,
 		"./blog/2016/06/16/images/image.png": 892,
 		"./blog/2016/06/16/images/image@2x.png": 893,
-		"./blog/index": 894,
-		"./blog/index.jsx": 894,
+		"./blog/2016/08/04/images/image.png": 894,
+		"./blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory.md": 895,
+		"./blog/index": 896,
+		"./blog/index.jsx": 896,
 		"./business-strategy-and-ip/_Section": 655,
 		"./business-strategy-and-ip/_Section.jsx": 655,
 		"./business-strategy-and-ip/images/business.png": 675,
-		"./business-strategy-and-ip/images/business@2x.png": 898,
-		"./business-strategy-and-ip/index": 899,
+		"./business-strategy-and-ip/images/business@2x.png": 900,
+		"./business-strategy-and-ip/index": 901,
 		"./business-strategy-and-ip/index.css": 676,
-		"./business-strategy-and-ip/index.jsx": 899,
+		"./business-strategy-and-ip/index.jsx": 901,
 		"./careers-team-and-contact/_Section": 678,
 		"./careers-team-and-contact/_Section.jsx": 678,
-		"./careers-team-and-contact/careers/internship-program.md": 900,
-		"./careers-team-and-contact/careers/research-internship.md": 901,
+		"./careers-team-and-contact/careers/internship-program.md": 902,
+		"./careers-team-and-contact/careers/research-internship.md": 903,
 		"./careers-team-and-contact/images/careers.png": 692,
-		"./careers-team-and-contact/images/careers@2x.png": 902,
+		"./careers-team-and-contact/images/careers@2x.png": 904,
 		"./careers-team-and-contact/images/map.png": 698,
 		"./careers-team-and-contact/images/team/celeste-baranski.png": 693,
-		"./careers-team-and-contact/images/team/celeste-baranski@2x.png": 903,
+		"./careers-team-and-contact/images/team/celeste-baranski@2x.png": 905,
 		"./careers-team-and-contact/images/team/donna-dubinsky.jpg": 694,
-		"./careers-team-and-contact/images/team/donna-dubinsky@2x.jpg": 904,
+		"./careers-team-and-contact/images/team/donna-dubinsky@2x.jpg": 906,
 		"./careers-team-and-contact/images/team/ed-colligan.jpg": 695,
-		"./careers-team-and-contact/images/team/ed-colligan@2x.jpg": 905,
+		"./careers-team-and-contact/images/team/ed-colligan@2x.jpg": 907,
 		"./careers-team-and-contact/images/team/harry-saal.jpg": 696,
-		"./careers-team-and-contact/images/team/harry-saal@2x.jpg": 906,
+		"./careers-team-and-contact/images/team/harry-saal@2x.jpg": 908,
 		"./careers-team-and-contact/images/team/jeff-hawkins.jpg": 697,
-		"./careers-team-and-contact/images/team/jeff-hawkins@2x.jpg": 907,
+		"./careers-team-and-contact/images/team/jeff-hawkins@2x.jpg": 909,
 		"./careers-team-and-contact/images/team/mike-farmwald.jpg": 699,
-		"./careers-team-and-contact/images/team/mike-farmwald@2x.jpg": 908,
+		"./careers-team-and-contact/images/team/mike-farmwald@2x.jpg": 910,
 		"./careers-team-and-contact/images/team/subutai-ahmad.jpg": 700,
-		"./careers-team-and-contact/images/team/subutai-ahmad@2x.jpg": 909,
-		"./careers-team-and-contact/index": 910,
+		"./careers-team-and-contact/images/team/subutai-ahmad@2x.jpg": 911,
+		"./careers-team-and-contact/index": 912,
 		"./careers-team-and-contact/index.css": 701,
-		"./careers-team-and-contact/index.jsx": 910,
-		"./careers-team-and-contact/thanks.md": 911,
-		"./events/2014/03/26/amazon-web-services-summit-sf.md": 912,
-		"./events/2014/03/26/images/image.png": 913,
-		"./events/2014/03/26/images/image@2x.png": 914,
-		"./events/2014/05/03/images/image.png": 915,
-		"./events/2014/05/03/nupic-spring-2014-hackathon.md": 916,
-		"./events/2014/05/05/grok-for-it-analytics-at-monitorama.md": 917,
-		"./events/2014/05/05/images/image.png": 918,
-		"./events/2014/07/09/amazon-web-services-summit-ny.md": 919,
-		"./events/2014/07/09/images/image.png": 920,
-		"./events/2014/07/09/images/image@2x.png": 921,
-		"./events/2014/08/20/cognitive-computing-forum.md": 922,
-		"./events/2014/08/20/images/image.png": 923,
-		"./events/2014/08/20/images/image@2x.png": 924,
-		"./events/2014/10/02/brainscales-neuromorphic-computing-conference.md": 925,
-		"./events/2014/10/02/images/image.png": 926,
-		"./events/2014/10/02/images/image@2x.png": 927,
-		"./events/2014/10/15/advanced-aws-meetup.md": 928,
-		"./events/2014/10/17/images/image.png": 929,
-		"./events/2014/10/17/images/image@2x.png": 930,
-		"./events/2014/10/17/numenta-training-workshop.md": 931,
-		"./events/2014/10/18/images/image.png": 932,
-		"./events/2014/10/18/nupic-fall-2014-hackathon.md": 933,
-		"./events/2014/10/30/ibm-research-cognitive-systems-colloquium.md": 934,
-		"./events/2014/10/30/images/image.png": 935,
-		"./events/2014/11/11/AWS-reInvent.md": 936,
-		"./events/2014/11/11/images/image.png": 937,
-		"./events/2014/12/04/images/image.png": 938,
-		"./events/2014/12/04/images/image@2x.png": 939,
-		"./events/2014/12/04/sv-forum-ihuman-the-future-of-minds-and-machines.md": 940,
-		"./events/2015/02/17/images/image.png": 941,
-		"./events/2015/02/17/images/image@2x.png": 942,
-		"./events/2015/02/17/strata-hadoop-world.md": 943,
-		"./events/2015/02/23/images/image.png": 944,
-		"./events/2015/02/23/sandia-national-labs-neuro-computational-workshop-2015.md": 945,
-		"./events/2015/03/05/cosyne-computational-systems-neuroscience-2015.md": 946,
-		"./events/2015/03/05/images/image.png": 947,
-		"./events/2015/03/05/images/image@2x.png": 948,
-		"./events/2015/03/17/images/image.png": 949,
-		"./events/2015/03/17/images/image@2x.png": 950,
-		"./events/2015/03/17/what-the-brain-says-about-machine-intelligence-nyc-meetup.md": 951,
-		"./events/2015/05/30/images/image.png": 952,
-		"./events/2015/05/30/nupic-spring-2015-hackathon.md": 953,
-		"./events/2015/06/01/images/image.png": 954,
-		"./events/2015/06/01/orange-institute-14-silicon-valley-redefining-business-again.md": 955,
-		"./events/2015/08/18/dataversity-smart-data-conference-san-jose-2015.md": 956,
-		"./events/2015/08/18/images/image.png": 957,
-		"./events/2015/08/18/images/image@2x.png": 958,
-		"./events/2015/10/01/berkeley-symposium-on-energy-efficient-electronic-systems.md": 959,
-		"./events/2015/10/01/images/image.png": 960,
-		"./events/2015/10/01/images/image@2x.png": 961,
-		"./events/2015/10/07/gsv-labs-pioneer-summit.md": 962,
-		"./events/2015/10/07/images/image.png": 963,
-		"./events/2015/10/07/images/image@2x.png": 964,
-		"./events/2015/10/22/compute-midwest-imagine-the-future-2015.md": 965,
-		"./events/2015/10/22/images/image.png": 966,
-		"./events/2015/11/01/hhmi-janelia-emerging-tools-for-whole-brain-functional-data.md": 967,
-		"./events/2015/11/01/images/image.png": 968,
-		"./events/2015/11/13/images/htm-challenge.png": 969,
-		"./events/2015/11/13/images/image.png": 970,
-		"./events/2015/11/13/images/image@2x.png": 971,
-		"./events/2015/11/13/ml-conf-machine-learning-conference-san-francisco.md": 972,
-		"./events/2015/11/13/numenta-htm-challenge-community-meetup.md": 973,
-		"./events/2015/11/14/images/image.png": 974,
-		"./events/2015/11/14/numenta-htm-challenge-onsite.md": 975,
-		"./events/2015/12/09/14th-ieee-international-conference-on-machine-learning-icmla.md": 976,
-		"./events/2015/12/09/images/image.png": 977,
-		"./events/2015/12/09/images/image@2x.png": 978,
-		"./events/2016/02/25/cosyne-computational-and-systems-neuroscience-meeting-2016.md": 979,
-		"./events/2016/02/25/images/image.png": 980,
-		"./events/2016/02/25/images/image@2x.png": 981,
-		"./events/2016/03/07/global-big-data-conference-2016.md": 982,
-		"./events/2016/03/07/images/bigdata.png": 983,
-		"./events/2016/03/07/images/nice.png": 984,
-		"./events/2016/03/07/neuro-inspired-elements-workshop-nice-2016.md": 985,
-		"./events/2016/03/14/images/image.png": 986,
-		"./events/2016/03/14/images/image@2x.png": 987,
-		"./events/2016/03/14/numenta-htm-bay-area-meetup-santa-clara.md": 988,
-		"./events/2016/03/17/images/image.png": 989,
-		"./events/2016/03/17/images/image@2x.png": 990,
-		"./events/2016/03/17/numenta-htm-workshop-berkeley-institute-for-data-science.md": 991,
-		"./events/2016/03/29/images/image.png": 992,
-		"./events/2016/03/29/images/image@2x.png": 993,
-		"./events/2016/03/29/strata-hadoop-world-big-data-conference-2016.md": 994,
-		"./events/2016/04/07/ai-meetup-hierarchical-temporal-memory-san-francisco.md": 995,
-		"./events/2016/04/07/images/image.png": 996,
-		"./events/2016/04/07/images/image@2x.png": 997,
-		"./events/2016/04/09/connected-car-hackathon-oakland-ca.md": 998,
-		"./events/2016/04/09/images/image.png": 999,
-		"./events/2016/04/09/images/image@2x.png": 1000,
-		"./events/2016/04/23/images/image.png": 1001,
-		"./events/2016/04/23/ted-x-cornell-tech.md": 1002,
-		"./events/2016/04/26/images/image.png": 1003,
-		"./events/2016/04/26/images/image@2x.png": 1004,
-		"./events/2016/04/26/numenta-webinar.md": 1005,
-		"./events/2016/05/12/images/image.png": 1006,
-		"./events/2016/05/12/neuro-tech-x-meetup-featuring-jeff-hawkins.md": 1007,
-		"./events/2016/05/19/ai-by-the-bay.md": 1008,
-		"./events/2016/05/19/business-analytics-innovation-summit-chicago-2016.md": 1009,
-		"./events/2016/05/19/images/aibythebay.png": 1010,
-		"./events/2016/05/19/images/image.png": 1011,
-		"./events/2016/05/25/ai-startups-conference.md": 1012,
-		"./events/2016/05/25/images/image.png": 1013,
-		"./events/2016/05/25/images/image@2x.png": 1014,
-		"./events/2016/06/01/orange-county-meetup-deriving-machine-intelligence-from-neuroscience.md": 1015,
-		"./events/2016/06/18/dendritic-anatomy-molecules-and-function-heraklion-crete.md": 1016,
-		"./events/2016/06/18/images/image.png": 1017,
-		"./events/2016/06/18/images/image@2x.png": 1018,
-		"./events/2016/06/22/areadne-2016-research-in-encoding-and-decoding-of-neural-ensembles.md": 1019,
-		"./events/2016/06/22/images/image.png": 1020,
-		"./events/2016/07/01/images/image.png": 1021,
-		"./events/2016/07/01/images/image@2x.png": 1022,
-		"./events/2016/07/01/the-playfair-ai-summit-2016.md": 1023,
-		"./events/2016/07/13/data-science-summit.md": 1024,
-		"./events/2016/07/13/images/image.png": 1025,
-		"./events/2016/07/13/images/image@2x.png": 1026,
-		"./events/2016/07/24/images/image.png": 1027,
-		"./events/2016/07/24/images/image@2x.png": 1028,
-		"./events/2016/07/24/numenta-anomaly-benchmark-competition-at-ieee-wcci-2016.md": 1029,
-		"./events/2016/07/26/ieee-wcci-2016.md": 1030,
-		"./events/2016/07/26/images/image.png": 1031,
-		"./events/2016/08/02/images/image.png": 1032,
-		"./events/2016/08/02/sf-data-science-meetup.md": 1033,
-		"./events/2016/08/08/htm-bay-area-meetup.md": 1034,
-		"./events/2016/08/08/images/meetup.png": 1035,
-		"./events/2016/08/08/images/meetup@2x.png": 1036,
-		"./events/2016/09/25/ai-with-the-best.md": 1037,
-		"./events/2016/09/25/images/image.png": 1038,
-		"./events/2016/09/25/images/image@2x.png": 1039,
-		"./events/2016/11/11/images/image.png": 1040,
-		"./events/2016/11/11/images/image@2x.png": 1041,
-		"./events/2016/11/11/mlconf-machine-learning-conference-san-francisco-2016.md": 1042,
-		"./events/index": 1043,
-		"./events/index.jsx": 1043,
-		"./htm-for-stocks/images/app-store-button.png": 1044,
-		"./htm-for-stocks/images/app-store-button@2x.png": 1045,
-		"./htm-for-stocks/images/feature1.png": 1046,
-		"./htm-for-stocks/images/feature2.png": 1047,
-		"./htm-for-stocks/images/feature3.png": 1048,
-		"./htm-for-stocks/images/handheld.png": 1049,
-		"./htm-for-stocks/images/handheld@2x.png": 1050,
-		"./htm-for-stocks/images/play-store-button.png": 1051,
-		"./htm-for-stocks/images/play-store-button@2x.png": 1052,
-		"./htm-for-stocks/images/raw1.png": 1053,
-		"./htm-for-stocks/images/raw1@2x.png": 1054,
-		"./htm-for-stocks/images/raw2.png": 1055,
-		"./htm-for-stocks/images/raw2@2x.png": 1056,
-		"./htm-for-stocks/images/use1.png": 1057,
-		"./htm-for-stocks/images/use1@2x.png": 1058,
-		"./htm-for-stocks/images/use2.png": 1059,
-		"./htm-for-stocks/images/use2@2x.png": 1060,
-		"./htm-for-stocks/images/use3.png": 1061,
-		"./htm-for-stocks/images/use3@2x.png": 1062,
-		"./htm-for-stocks/images/use4.png": 1063,
-		"./htm-for-stocks/images/use4@2x.png": 1064,
-		"./htm-for-stocks/index": 1065,
-		"./htm-for-stocks/index.css": 1066,
-		"./htm-for-stocks/index.jsx": 1065,
-		"./htm-studio/date-time-formats.md": 1068,
-		"./htm-studio/faq/advanced-settings.md": 1069,
-		"./htm-studio/faq/aggregate-data.md": 1070,
-		"./htm-studio/faq/data-formats.md": 1071,
-		"./htm-studio/faq/determine-anomalous.md": 1072,
-		"./htm-studio/faq/initial-learning-period.md": 1073,
-		"./htm-studio/faq/no-date-time-column.md": 1074,
-		"./htm-studio/faq/not-seeing-anomalies.md": 1075,
-		"./htm-studio/faq/supported-platforms-versions.md": 1076,
-		"./htm-studio/faq/whats-next.md": 1077,
-		"./htm-studio/images/charts.png": 1078,
-		"./htm-studio/images/charts@2x.png": 1079,
-		"./htm-studio/images/faq.png": 1080,
-		"./htm-studio/images/faq@2x.png": 1081,
-		"./htm-studio/images/hero-bg.jpg": 1082,
-		"./htm-studio/images/use1.png": 1083,
-		"./htm-studio/images/use1@2x.png": 1084,
-		"./htm-studio/images/use2.png": 1085,
-		"./htm-studio/images/use3.png": 1086,
-		"./htm-studio/images/use3@2x.png": 1087,
-		"./htm-studio/images/use4.png": 1088,
-		"./htm-studio/images/use4@2x.png": 1089,
-		"./htm-studio/images/video-datasource.png": 1090,
-		"./htm-studio/images/video-datasource@2x.png": 1091,
-		"./htm-studio/images/video-datetime.png": 1092,
-		"./htm-studio/images/video-datetime@2x.png": 1093,
-		"./htm-studio/images/video-intro.png": 1094,
-		"./htm-studio/images/video-intro@2x.png": 1095,
-		"./htm-studio/images/video-walkthru.png": 1096,
-		"./htm-studio/images/video-walkthru@2x.png": 1097,
-		"./htm-studio/images/windows1.png": 1098,
-		"./htm-studio/images/windows2.png": 1099,
-		"./htm-studio/index": 1100,
-		"./htm-studio/index.jsx": 1100,
-		"./htm-studio/terms.md": 1101,
-		"./htm-studio/windows.md": 1102,
-		"./index": 1103,
+		"./careers-team-and-contact/index.jsx": 912,
+		"./careers-team-and-contact/thanks.md": 913,
+		"./events/2014/03/26/amazon-web-services-summit-sf.md": 914,
+		"./events/2014/03/26/images/image.png": 915,
+		"./events/2014/03/26/images/image@2x.png": 916,
+		"./events/2014/05/03/images/image.png": 917,
+		"./events/2014/05/03/nupic-spring-2014-hackathon.md": 918,
+		"./events/2014/05/05/grok-for-it-analytics-at-monitorama.md": 919,
+		"./events/2014/05/05/images/image.png": 920,
+		"./events/2014/07/09/amazon-web-services-summit-ny.md": 921,
+		"./events/2014/07/09/images/image.png": 922,
+		"./events/2014/07/09/images/image@2x.png": 923,
+		"./events/2014/08/20/cognitive-computing-forum.md": 924,
+		"./events/2014/08/20/images/image.png": 925,
+		"./events/2014/08/20/images/image@2x.png": 926,
+		"./events/2014/10/02/brainscales-neuromorphic-computing-conference.md": 927,
+		"./events/2014/10/02/images/image.png": 928,
+		"./events/2014/10/02/images/image@2x.png": 929,
+		"./events/2014/10/15/advanced-aws-meetup.md": 930,
+		"./events/2014/10/17/images/image.png": 931,
+		"./events/2014/10/17/images/image@2x.png": 932,
+		"./events/2014/10/17/numenta-training-workshop.md": 933,
+		"./events/2014/10/18/images/image.png": 934,
+		"./events/2014/10/18/nupic-fall-2014-hackathon.md": 935,
+		"./events/2014/10/30/ibm-research-cognitive-systems-colloquium.md": 936,
+		"./events/2014/10/30/images/image.png": 937,
+		"./events/2014/11/11/AWS-reInvent.md": 938,
+		"./events/2014/11/11/images/image.png": 939,
+		"./events/2014/12/04/images/image.png": 940,
+		"./events/2014/12/04/images/image@2x.png": 941,
+		"./events/2014/12/04/sv-forum-ihuman-the-future-of-minds-and-machines.md": 942,
+		"./events/2015/02/17/images/image.png": 943,
+		"./events/2015/02/17/images/image@2x.png": 944,
+		"./events/2015/02/17/strata-hadoop-world.md": 945,
+		"./events/2015/02/23/images/image.png": 946,
+		"./events/2015/02/23/sandia-national-labs-neuro-computational-workshop-2015.md": 947,
+		"./events/2015/03/05/cosyne-computational-systems-neuroscience-2015.md": 948,
+		"./events/2015/03/05/images/image.png": 949,
+		"./events/2015/03/05/images/image@2x.png": 950,
+		"./events/2015/03/17/images/image.png": 951,
+		"./events/2015/03/17/images/image@2x.png": 952,
+		"./events/2015/03/17/what-the-brain-says-about-machine-intelligence-nyc-meetup.md": 953,
+		"./events/2015/05/30/images/image.png": 954,
+		"./events/2015/05/30/nupic-spring-2015-hackathon.md": 955,
+		"./events/2015/06/01/images/image.png": 956,
+		"./events/2015/06/01/orange-institute-14-silicon-valley-redefining-business-again.md": 957,
+		"./events/2015/08/18/dataversity-smart-data-conference-san-jose-2015.md": 958,
+		"./events/2015/08/18/images/image.png": 959,
+		"./events/2015/08/18/images/image@2x.png": 960,
+		"./events/2015/10/01/berkeley-symposium-on-energy-efficient-electronic-systems.md": 961,
+		"./events/2015/10/01/images/image.png": 962,
+		"./events/2015/10/01/images/image@2x.png": 963,
+		"./events/2015/10/07/gsv-labs-pioneer-summit.md": 964,
+		"./events/2015/10/07/images/image.png": 965,
+		"./events/2015/10/07/images/image@2x.png": 966,
+		"./events/2015/10/22/compute-midwest-imagine-the-future-2015.md": 967,
+		"./events/2015/10/22/images/image.png": 968,
+		"./events/2015/11/01/hhmi-janelia-emerging-tools-for-whole-brain-functional-data.md": 969,
+		"./events/2015/11/01/images/image.png": 970,
+		"./events/2015/11/13/images/htm-challenge.png": 971,
+		"./events/2015/11/13/images/image.png": 972,
+		"./events/2015/11/13/images/image@2x.png": 973,
+		"./events/2015/11/13/ml-conf-machine-learning-conference-san-francisco.md": 974,
+		"./events/2015/11/13/numenta-htm-challenge-community-meetup.md": 975,
+		"./events/2015/11/14/images/image.png": 976,
+		"./events/2015/11/14/numenta-htm-challenge-onsite.md": 977,
+		"./events/2015/12/09/14th-ieee-international-conference-on-machine-learning-icmla.md": 978,
+		"./events/2015/12/09/images/image.png": 979,
+		"./events/2015/12/09/images/image@2x.png": 980,
+		"./events/2016/02/25/cosyne-computational-and-systems-neuroscience-meeting-2016.md": 981,
+		"./events/2016/02/25/images/image.png": 982,
+		"./events/2016/02/25/images/image@2x.png": 983,
+		"./events/2016/03/07/global-big-data-conference-2016.md": 984,
+		"./events/2016/03/07/images/bigdata.png": 985,
+		"./events/2016/03/07/images/nice.png": 986,
+		"./events/2016/03/07/neuro-inspired-elements-workshop-nice-2016.md": 987,
+		"./events/2016/03/14/images/image.png": 988,
+		"./events/2016/03/14/images/image@2x.png": 989,
+		"./events/2016/03/14/numenta-htm-bay-area-meetup-santa-clara.md": 990,
+		"./events/2016/03/17/images/image.png": 991,
+		"./events/2016/03/17/images/image@2x.png": 992,
+		"./events/2016/03/17/numenta-htm-workshop-berkeley-institute-for-data-science.md": 993,
+		"./events/2016/03/29/images/image.png": 994,
+		"./events/2016/03/29/images/image@2x.png": 995,
+		"./events/2016/03/29/strata-hadoop-world-big-data-conference-2016.md": 996,
+		"./events/2016/04/07/ai-meetup-hierarchical-temporal-memory-san-francisco.md": 997,
+		"./events/2016/04/07/images/image.png": 998,
+		"./events/2016/04/07/images/image@2x.png": 999,
+		"./events/2016/04/09/connected-car-hackathon-oakland-ca.md": 1000,
+		"./events/2016/04/09/images/image.png": 1001,
+		"./events/2016/04/09/images/image@2x.png": 1002,
+		"./events/2016/04/23/images/image.png": 1003,
+		"./events/2016/04/23/ted-x-cornell-tech.md": 1004,
+		"./events/2016/04/26/images/image.png": 1005,
+		"./events/2016/04/26/images/image@2x.png": 1006,
+		"./events/2016/04/26/numenta-webinar.md": 1007,
+		"./events/2016/05/12/images/image.png": 1008,
+		"./events/2016/05/12/neuro-tech-x-meetup-featuring-jeff-hawkins.md": 1009,
+		"./events/2016/05/19/ai-by-the-bay.md": 1010,
+		"./events/2016/05/19/business-analytics-innovation-summit-chicago-2016.md": 1011,
+		"./events/2016/05/19/images/aibythebay.png": 1012,
+		"./events/2016/05/19/images/image.png": 1013,
+		"./events/2016/05/25/ai-startups-conference.md": 1014,
+		"./events/2016/05/25/images/image.png": 1015,
+		"./events/2016/05/25/images/image@2x.png": 1016,
+		"./events/2016/06/01/orange-county-meetup-deriving-machine-intelligence-from-neuroscience.md": 1017,
+		"./events/2016/06/18/dendritic-anatomy-molecules-and-function-heraklion-crete.md": 1018,
+		"./events/2016/06/18/images/image.png": 1019,
+		"./events/2016/06/18/images/image@2x.png": 1020,
+		"./events/2016/06/22/areadne-2016-research-in-encoding-and-decoding-of-neural-ensembles.md": 1021,
+		"./events/2016/06/22/images/image.png": 1022,
+		"./events/2016/07/01/images/image.png": 1023,
+		"./events/2016/07/01/images/image@2x.png": 1024,
+		"./events/2016/07/01/the-playfair-ai-summit-2016.md": 1025,
+		"./events/2016/07/13/data-science-summit.md": 1026,
+		"./events/2016/07/13/images/image.png": 1027,
+		"./events/2016/07/13/images/image@2x.png": 1028,
+		"./events/2016/07/24/images/image.png": 1029,
+		"./events/2016/07/24/images/image@2x.png": 1030,
+		"./events/2016/07/24/numenta-anomaly-benchmark-competition-at-ieee-wcci-2016.md": 1031,
+		"./events/2016/07/26/ieee-wcci-2016.md": 1032,
+		"./events/2016/07/26/images/image.png": 1033,
+		"./events/2016/08/02/images/image.png": 1034,
+		"./events/2016/08/02/sf-data-science-meetup.md": 1035,
+		"./events/2016/08/08/images/meetup.png": 1036,
+		"./events/2016/08/08/images/meetup@2x.png": 1037,
+		"./events/2016/08/08/machine-intelligence-with-htm-a-new-approach-to-time-based-learning.md": 1038,
+		"./events/2016/09/25/ai-with-the-best.md": 1039,
+		"./events/2016/09/25/images/image.png": 1040,
+		"./events/2016/09/25/images/image@2x.png": 1041,
+		"./events/2016/11/11/images/image.png": 1042,
+		"./events/2016/11/11/images/image@2x.png": 1043,
+		"./events/2016/11/11/mlconf-machine-learning-conference-san-francisco-2016.md": 1044,
+		"./events/index": 1045,
+		"./events/index.jsx": 1045,
+		"./htm-for-stocks/images/app-store-button.png": 1046,
+		"./htm-for-stocks/images/app-store-button@2x.png": 1047,
+		"./htm-for-stocks/images/feature1.png": 1048,
+		"./htm-for-stocks/images/feature2.png": 1049,
+		"./htm-for-stocks/images/feature3.png": 1050,
+		"./htm-for-stocks/images/handheld.png": 1051,
+		"./htm-for-stocks/images/handheld@2x.png": 1052,
+		"./htm-for-stocks/images/play-store-button.png": 1053,
+		"./htm-for-stocks/images/play-store-button@2x.png": 1054,
+		"./htm-for-stocks/images/raw1.png": 1055,
+		"./htm-for-stocks/images/raw1@2x.png": 1056,
+		"./htm-for-stocks/images/raw2.png": 1057,
+		"./htm-for-stocks/images/raw2@2x.png": 1058,
+		"./htm-for-stocks/images/use1.png": 1059,
+		"./htm-for-stocks/images/use1@2x.png": 1060,
+		"./htm-for-stocks/images/use2.png": 1061,
+		"./htm-for-stocks/images/use2@2x.png": 1062,
+		"./htm-for-stocks/images/use3.png": 1063,
+		"./htm-for-stocks/images/use3@2x.png": 1064,
+		"./htm-for-stocks/images/use4.png": 1065,
+		"./htm-for-stocks/images/use4@2x.png": 1066,
+		"./htm-for-stocks/index": 1067,
+		"./htm-for-stocks/index.css": 1068,
+		"./htm-for-stocks/index.jsx": 1067,
+		"./htm-studio/date-time-formats.md": 1070,
+		"./htm-studio/faq/advanced-settings.md": 1071,
+		"./htm-studio/faq/aggregate-data.md": 1072,
+		"./htm-studio/faq/data-formats.md": 1073,
+		"./htm-studio/faq/determine-anomalous.md": 1074,
+		"./htm-studio/faq/initial-learning-period.md": 1075,
+		"./htm-studio/faq/no-date-time-column.md": 1076,
+		"./htm-studio/faq/not-seeing-anomalies.md": 1077,
+		"./htm-studio/faq/supported-platforms-versions.md": 1078,
+		"./htm-studio/faq/whats-next.md": 1079,
+		"./htm-studio/images/charts.png": 1080,
+		"./htm-studio/images/charts@2x.png": 1081,
+		"./htm-studio/images/faq.png": 1082,
+		"./htm-studio/images/faq@2x.png": 1083,
+		"./htm-studio/images/hero-bg.jpg": 1084,
+		"./htm-studio/images/use1.png": 1085,
+		"./htm-studio/images/use1@2x.png": 1086,
+		"./htm-studio/images/use2.png": 1087,
+		"./htm-studio/images/use3.png": 1088,
+		"./htm-studio/images/use3@2x.png": 1089,
+		"./htm-studio/images/use4.png": 1090,
+		"./htm-studio/images/use4@2x.png": 1091,
+		"./htm-studio/images/video-datasource.png": 1092,
+		"./htm-studio/images/video-datasource@2x.png": 1093,
+		"./htm-studio/images/video-datetime.png": 1094,
+		"./htm-studio/images/video-datetime@2x.png": 1095,
+		"./htm-studio/images/video-intro.png": 1096,
+		"./htm-studio/images/video-intro@2x.png": 1097,
+		"./htm-studio/images/video-walkthru.png": 1098,
+		"./htm-studio/images/video-walkthru@2x.png": 1099,
+		"./htm-studio/images/windows1.png": 1100,
+		"./htm-studio/images/windows2.png": 1101,
+		"./htm-studio/index": 1102,
+		"./htm-studio/index.css": 1111,
+		"./htm-studio/index.jsx": 1102,
+		"./htm-studio/terms.md": 1113,
+		"./htm-studio/windows.md": 1114,
+		"./index": 1115,
 		"./index.css": 585,
-		"./index.jsx": 1103,
-		"./legal/privacy.md": 1104,
-		"./legal/terms.md": 1105,
+		"./index.jsx": 1115,
+		"./legal/privacy.md": 1116,
+		"./legal/terms.md": 1117,
 		"./mission-and-history/_Section": 703,
 		"./mission-and-history/_Section.jsx": 703,
 		"./mission-and-history/images/brain.svg": 704,
 		"./mission-and-history/images/timeline.png": 705,
-		"./mission-and-history/images/timeline@2x.png": 1106,
+		"./mission-and-history/images/timeline@2x.png": 1118,
 		"./mission-and-history/images/video-ourstory.png": 706,
-		"./mission-and-history/images/video-ourstory@2x.png": 1107,
-		"./mission-and-history/index": 1108,
+		"./mission-and-history/images/video-ourstory@2x.png": 1119,
+		"./mission-and-history/index": 1120,
 		"./mission-and-history/index.css": 707,
-		"./mission-and-history/index.jsx": 1108,
-		"./newsletter/2013/10/11/announcing-grok-for-it.md": 1109,
-		"./newsletter/2013/11/08/grok-at-aws-reinvent.md": 1110,
-		"./newsletter/2014/02/04/grok-soft-launch.md": 1111,
-		"./newsletter/2014/03/25/announcing-grok-for-it-analytics-on-aws.md": 1112,
-		"./newsletter/2014/06/10/progress-report-june-2014.md": 1113,
-		"./newsletter/2014/08/19/machine-intelligence-applications-summer-2014.md": 1114,
-		"./newsletter/2014/09/16/fall-workshop-and-hackathon.md": 1115,
-		"./newsletter/2014/11/11/grok-1-6-showcasing-at-aws-re-invent-las-vegas-2014.md": 1116,
-		"./newsletter/2015/01/26/welcome-to-2015.md": 1117,
-		"./newsletter/2015/03/12/numenta-newsletter-mar-2015.md": 1118,
-		"./newsletter/2015/04/29/numenta-newsletter-apr-2015.md": 1119,
-		"./newsletter/2015/05/14/announcing-relationship-with-cortical-io.md": 1120,
-		"./newsletter/2015/06/09/numenta-open-sourcing-two-htm-products.md": 1121,
-		"./newsletter/2015/07/02/announcing-open-source-htm-app-grok-for-stocks.md": 1122,
-		"./newsletter/2015/07/02/images/homescreen.png": 1123,
-		"./newsletter/2015/07/02/images/image.png": 1124,
-		"./newsletter/2015/09/01/images/image.png": 1125,
-		"./newsletter/2015/09/01/images/image@2x.png": 1126,
-		"./newsletter/2015/09/01/partnership-between-numenta-and-avik-partners-on-grok-for-it-analytics.md": 1127,
-		"./newsletter/2015/10/01/images/image.png": 1128,
-		"./newsletter/2015/10/01/images/image@2x.png": 1129,
-		"./newsletter/2015/10/01/numenta-anomaly-benchmark-and-numenta-htm-challenge.md": 1130,
-		"./newsletter/2015/11/10/images/image.png": 1131,
-		"./newsletter/2015/11/10/images/image@2x.png": 1132,
-		"./newsletter/2015/11/10/numenta-anomaly-benchmark-nab-open-source-with-white-paper.md": 1133,
-		"./newsletter/2015/11/17/images/image.png": 1134,
-		"./newsletter/2015/11/17/why-neurons-have-thousands-of-synapses-a-theory-of-sequence-memory.md": 1135,
-		"./newsletter/2016/01/07/year-in-review-numenta-2015.md": 1136,
-		"./newsletter/2016/02/10/numenta-anomaly-benchmark-competition.md": 1137,
-		"./newsletter/2016/02/18/htm-for-stocks-available-in-the-app-store.md": 1138,
-		"./newsletter/2016/02/18/images/image.png": 1139,
-		"./newsletter/2016/03/28/neuron-paper-published-in-peer-reviewed-neuroscience-journal.md": 1140,
-		"./newsletter/2016/05/11/announcing-bami-biological-and-machine-intelligence.md": 1141,
-		"./newsletter/2016/06/28/images/htm-studio.png": 1142,
-		"./newsletter/2016/06/28/images/htm-studio@2x.png": 1143,
-		"./newsletter/2016/06/28/numenta-releases-htm-studio-desktop-application.md": 1144,
-		"./newsletter/images/numenta.png": 1145,
-		"./newsletter/images/numenta@2x.png": 1146,
-		"./newsletter/index": 1147,
-		"./newsletter/index.css": 1148,
-		"./newsletter/index.jsx": 1147,
-		"./numenta-anomaly-benchmark/images/compare.png": 1150,
-		"./numenta-anomaly-benchmark/images/compare@2x.png": 1151,
-		"./numenta-anomaly-benchmark/images/datasheet.png": 1152,
-		"./numenta-anomaly-benchmark/images/datasheet@2x.png": 1153,
-		"./numenta-anomaly-benchmark/images/detail.png": 1154,
-		"./numenta-anomaly-benchmark/images/equations.png": 1155,
-		"./numenta-anomaly-benchmark/images/equations@2x.png": 1156,
-		"./numenta-anomaly-benchmark/images/github.png": 1157,
-		"./numenta-anomaly-benchmark/images/github@2x.png": 1158,
-		"./numenta-anomaly-benchmark/images/heartbeat.png": 1159,
-		"./numenta-anomaly-benchmark/images/heartbeat@2x.png": 1160,
-		"./numenta-anomaly-benchmark/images/math.png": 1161,
-		"./numenta-anomaly-benchmark/images/math@2x.png": 1162,
-		"./numenta-anomaly-benchmark/images/scoreboard.png": 1163,
-		"./numenta-anomaly-benchmark/images/video-mlconf.png": 1164,
-		"./numenta-anomaly-benchmark/images/video-mlconf@2x.png": 1165,
-		"./numenta-anomaly-benchmark/images/video-nab.png": 1166,
-		"./numenta-anomaly-benchmark/images/video-nab@2x.png": 1167,
-		"./numenta-anomaly-benchmark/index": 1168,
-		"./numenta-anomaly-benchmark/index.css": 1176,
-		"./numenta-anomaly-benchmark/index.jsx": 1168,
+		"./mission-and-history/index.jsx": 1120,
+		"./newsletter/2013/10/11/announcing-grok-for-it.md": 1121,
+		"./newsletter/2013/11/08/grok-at-aws-reinvent.md": 1122,
+		"./newsletter/2014/02/04/grok-soft-launch.md": 1123,
+		"./newsletter/2014/03/25/announcing-grok-for-it-analytics-on-aws.md": 1124,
+		"./newsletter/2014/06/10/progress-report-june-2014.md": 1125,
+		"./newsletter/2014/08/19/machine-intelligence-applications-summer-2014.md": 1126,
+		"./newsletter/2014/09/16/fall-workshop-and-hackathon.md": 1127,
+		"./newsletter/2014/11/11/grok-1-6-showcasing-at-aws-re-invent-las-vegas-2014.md": 1128,
+		"./newsletter/2015/01/26/welcome-to-2015.md": 1129,
+		"./newsletter/2015/03/12/numenta-newsletter-mar-2015.md": 1130,
+		"./newsletter/2015/04/29/numenta-newsletter-apr-2015.md": 1131,
+		"./newsletter/2015/05/14/announcing-relationship-with-cortical-io.md": 1132,
+		"./newsletter/2015/06/09/numenta-open-sourcing-two-htm-products.md": 1133,
+		"./newsletter/2015/07/02/announcing-open-source-htm-app-grok-for-stocks.md": 1134,
+		"./newsletter/2015/07/02/images/homescreen.png": 1135,
+		"./newsletter/2015/07/02/images/image.png": 1136,
+		"./newsletter/2015/09/01/images/image.png": 1137,
+		"./newsletter/2015/09/01/images/image@2x.png": 1138,
+		"./newsletter/2015/09/01/partnership-between-numenta-and-avik-partners-on-grok-for-it-analytics.md": 1139,
+		"./newsletter/2015/10/01/images/image.png": 1140,
+		"./newsletter/2015/10/01/images/image@2x.png": 1141,
+		"./newsletter/2015/10/01/numenta-anomaly-benchmark-and-numenta-htm-challenge.md": 1142,
+		"./newsletter/2015/11/10/images/image.png": 1143,
+		"./newsletter/2015/11/10/images/image@2x.png": 1144,
+		"./newsletter/2015/11/10/numenta-anomaly-benchmark-nab-open-source-with-white-paper.md": 1145,
+		"./newsletter/2015/11/17/images/image.png": 1146,
+		"./newsletter/2015/11/17/why-neurons-have-thousands-of-synapses-a-theory-of-sequence-memory.md": 1147,
+		"./newsletter/2016/01/07/year-in-review-numenta-2015.md": 1148,
+		"./newsletter/2016/02/10/numenta-anomaly-benchmark-competition.md": 1149,
+		"./newsletter/2016/02/18/htm-for-stocks-available-in-the-app-store.md": 1150,
+		"./newsletter/2016/02/18/images/image.png": 1151,
+		"./newsletter/2016/03/28/neuron-paper-published-in-peer-reviewed-neuroscience-journal.md": 1152,
+		"./newsletter/2016/05/11/announcing-bami-biological-and-machine-intelligence.md": 1153,
+		"./newsletter/2016/06/28/images/htm-studio.png": 1154,
+		"./newsletter/2016/06/28/images/htm-studio@2x.png": 1155,
+		"./newsletter/2016/06/28/numenta-releases-htm-studio-desktop-application.md": 1156,
+		"./newsletter/images/numenta.png": 1157,
+		"./newsletter/images/numenta@2x.png": 1158,
+		"./newsletter/index": 1159,
+		"./newsletter/index.css": 1160,
+		"./newsletter/index.jsx": 1159,
+		"./numenta-anomaly-benchmark/images/compare.png": 1162,
+		"./numenta-anomaly-benchmark/images/compare@2x.png": 1163,
+		"./numenta-anomaly-benchmark/images/datasheet.png": 1164,
+		"./numenta-anomaly-benchmark/images/datasheet@2x.png": 1165,
+		"./numenta-anomaly-benchmark/images/detail.png": 1166,
+		"./numenta-anomaly-benchmark/images/equations.png": 1167,
+		"./numenta-anomaly-benchmark/images/equations@2x.png": 1168,
+		"./numenta-anomaly-benchmark/images/github.png": 1169,
+		"./numenta-anomaly-benchmark/images/github@2x.png": 1170,
+		"./numenta-anomaly-benchmark/images/heartbeat.png": 1171,
+		"./numenta-anomaly-benchmark/images/heartbeat@2x.png": 1172,
+		"./numenta-anomaly-benchmark/images/math.png": 1173,
+		"./numenta-anomaly-benchmark/images/math@2x.png": 1174,
+		"./numenta-anomaly-benchmark/images/scoreboard.png": 1175,
+		"./numenta-anomaly-benchmark/images/video-mlconf.png": 1176,
+		"./numenta-anomaly-benchmark/images/video-mlconf@2x.png": 1177,
+		"./numenta-anomaly-benchmark/images/video-nab.png": 1178,
+		"./numenta-anomaly-benchmark/images/video-nab@2x.png": 1179,
+		"./numenta-anomaly-benchmark/index": 1180,
+		"./numenta-anomaly-benchmark/index.css": 1188,
+		"./numenta-anomaly-benchmark/index.jsx": 1180,
 		"./open-source-project/_Section": 709,
 		"./open-source-project/_Section.jsx": 709,
-		"./open-source-project/images/video-tech.png": 1178,
-		"./open-source-project/images/video-tech@2x.png": 1179,
-		"./open-source-project/index": 1180,
+		"./open-source-project/images/video-tech.png": 1190,
+		"./open-source-project/images/video-tech@2x.png": 1191,
+		"./open-source-project/index": 1192,
 		"./open-source-project/index.css": 711,
-		"./open-source-project/index.jsx": 1180,
+		"./open-source-project/index.jsx": 1192,
 		"./papers-videos-and-more/_Section": 713,
 		"./papers-videos-and-more/_Section.jsx": 713,
-		"./papers-videos-and-more/index": 1181,
+		"./papers-videos-and-more/index": 1193,
 		"./papers-videos-and-more/index.css": 714,
-		"./papers-videos-and-more/index.jsx": 1181,
-		"./papers-videos-and-more/learn/applications-of-hierarchical-temporal-memory.md": 1182,
-		"./papers-videos-and-more/learn/getting-started-with-numenta-technology.md": 1183,
-		"./papers-videos-and-more/learn/hierarchical-temporal-memory-basics-tutorial.md": 1184,
-		"./papers-videos-and-more/learn/hierarchical-temporal-memory-white-paper.md": 1185,
-		"./papers-videos-and-more/learn/htm-videos-from-jeff-hawkins.md": 1186,
-		"./papers-videos-and-more/learn/machine-intelligence-with-streaming-data-webinar.md": 1187,
-		"./papers-videos-and-more/learn/on-intelligence.md": 1188,
-		"./papers-videos-and-more/learn/science-of-anomaly-detection.md": 1189,
-		"./papers-videos-and-more/learn/sparse-distributed-representations.md": 1190,
-		"./papers-videos-and-more/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model.md": 1191,
-		"./papers-videos-and-more/papers/encoding-data-for-htm-systems.md": 1192,
-		"./papers-videos-and-more/papers/evaluating-real-time-anomaly-detection-algorithms-numenta-anomaly-benchmark.md": 1193,
-		"./papers-videos-and-more/papers/how-do-neurons-operate-on-sparse-distributed-representations.md": 1194,
-		"./papers-videos-and-more/papers/porting-htm-models-to-the-heidelberg-neuromorphic-computing-platform.md": 1195,
-		"./papers-videos-and-more/papers/properties-of-sparse-distributed-representations.md": 1196,
-		"./papers-videos-and-more/papers/real-time-anomaly-detection-for-streaming-analytics.md": 1197,
-		"./papers-videos-and-more/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex.md": 1198,
+		"./papers-videos-and-more/index.jsx": 1193,
+		"./papers-videos-and-more/learn/applications-of-hierarchical-temporal-memory.md": 1194,
+		"./papers-videos-and-more/learn/getting-started-with-numenta-technology.md": 1195,
+		"./papers-videos-and-more/learn/hierarchical-temporal-memory-basics-tutorial.md": 1196,
+		"./papers-videos-and-more/learn/hierarchical-temporal-memory-white-paper.md": 1197,
+		"./papers-videos-and-more/learn/htm-videos-from-jeff-hawkins.md": 1198,
+		"./papers-videos-and-more/learn/machine-intelligence-with-streaming-data-webinar.md": 1199,
+		"./papers-videos-and-more/learn/on-intelligence.md": 1200,
+		"./papers-videos-and-more/learn/science-of-anomaly-detection.md": 1201,
+		"./papers-videos-and-more/learn/sparse-distributed-representations.md": 1202,
+		"./papers-videos-and-more/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model.md": 1203,
+		"./papers-videos-and-more/papers/encoding-data-for-htm-systems.md": 1204,
+		"./papers-videos-and-more/papers/evaluating-real-time-anomaly-detection-algorithms-numenta-anomaly-benchmark.md": 1205,
+		"./papers-videos-and-more/papers/how-do-neurons-operate-on-sparse-distributed-representations.md": 1206,
+		"./papers-videos-and-more/papers/porting-htm-models-to-the-heidelberg-neuromorphic-computing-platform.md": 1207,
+		"./papers-videos-and-more/papers/properties-of-sparse-distributed-representations.md": 1208,
+		"./papers-videos-and-more/papers/real-time-anomaly-detection-for-streaming-analytics.md": 1209,
+		"./papers-videos-and-more/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex.md": 1210,
 		"./partners/_Section": 716,
 		"./partners/_Section.jsx": 716,
 		"./partners/images/cortical.png": 717,
 		"./partners/images/grokstream.png": 718,
-		"./partners/images/grokstream@2x.png": 1199,
-		"./partners/index": 1200,
+		"./partners/images/grokstream@2x.png": 1211,
+		"./partners/index": 1212,
 		"./partners/index.css": 719,
-		"./partners/index.jsx": 1200,
-		"./press/2013/02/14/images/numenta.png": 1201,
-		"./press/2013/02/14/images/numenta@2x.png": 1202,
-		"./press/2013/02/14/numenta-gigaom-presentation.md": 1203,
-		"./press/2013/04/18/images/numenta.png": 1204,
-		"./press/2013/04/18/images/numenta@2x.png": 1205,
-		"./press/2013/04/18/thingworx-partnership.md": 1206,
-		"./press/2013/05/17/images/numenta.png": 1207,
-		"./press/2013/05/17/images/numenta@2x.png": 1208,
-		"./press/2013/05/17/sybase-esp-integration.md": 1209,
-		"./press/2013/07/22/images/nupic.png": 1210,
-		"./press/2013/07/22/nupic-open-source-project.md": 1211,
-		"./press/2013/12/04/computing-like-the-brain.md": 1212,
-		"./press/2013/12/04/images/yow.png": 1213,
-		"./press/2014/01/22/fujitsu-natf-video.md": 1214,
-		"./press/2014/01/22/images/fujitsu.png": 1215,
-		"./press/2014/01/22/images/fujitsu@2x.png": 1216,
-		"./press/2014/01/29/brains-view-of-economics.md": 1217,
-		"./press/2014/01/29/images/project-syndicate.png": 1218,
-		"./press/2014/03/25/images/numenta.png": 1219,
-		"./press/2014/03/25/images/numenta@2x.png": 1220,
-		"./press/2014/03/25/numenta-releases-grok-for-it-analytics-on-aws.md": 1221,
-		"./press/2014/03/29/building-an-ai-that-mimics-our-neocortex.md": 1222,
-		"./press/2014/03/29/images/the-register.png": 1223,
-		"./press/2014/03/29/images/the-register@2x.png": 1224,
-		"./press/2014/04/07/images/twit.png": 1225,
-		"./press/2014/04/07/triangulation-146-with-leo-laporte.md": 1226,
-		"./press/2014/04/08/images/33rd-square.png": 1227,
-		"./press/2014/04/08/path-to-machine-intelligence.md": 1228,
-		"./press/2014/04/20/images/forbes.png": 1229,
-		"./press/2014/04/20/images/forbes@2x.png": 1230,
-		"./press/2014/04/20/what-really-scares-tech-leaders-about-artificial-intelligence.md": 1231,
-		"./press/2014/04/23/images/mit-technology-review.png": 1232,
-		"./press/2014/04/23/neuromorphic-chips-enhance-artificial-intelligence.md": 1233,
-		"./press/2014/04/30/images/nordea-invest.png": 1234,
-		"./press/2014/04/30/when-big-data-is-old-news.md": 1235,
-		"./press/2014/05/29/computer-programming-is-a-dying-art.md": 1236,
-		"./press/2014/05/29/images/newsweek.png": 1237,
-		"./press/2014/06/03/big-data-dump-overwhelms-spy-agencies.md": 1238,
-		"./press/2014/06/03/images/bloomberg.png": 1239,
-		"./press/2014/06/03/images/bloomberg@2x.png": 1240,
-		"./press/2014/07/09/images/venture-beat.png": 1241,
-		"./press/2014/07/09/numenta-apps-mimic-way-brain-works.md": 1242,
-		"./press/2014/08/13/images/search-cloud-computing.png": 1243,
-		"./press/2014/08/13/images/search-cloud-computing@2x.png": 1244,
-		"./press/2014/08/13/when-cloud-monitoring-falls-short.md": 1245,
-		"./press/2014/09/02/images/dataconomy.png": 1246,
-		"./press/2014/09/02/mimicking-brain-function-is-revolutionising-nlp.md": 1247,
-		"./press/2014/09/05/cognitive-computing-truly-amazing-apps.md": 1248,
-		"./press/2014/09/05/images/programmableweb.png": 1249,
-		"./press/2014/09/16/images/dataconomy.png": 1250,
-		"./press/2014/09/16/ten-machine-learning-experts.md": 1251,
-		"./press/2014/09/24/images/gigaom.png": 1252,
-		"./press/2014/09/24/jeff-hawkins-on-his-approach-to-ai.md": 1253,
-		"./press/2014/10/22/images/thinkingmachine.png": 1254,
-		"./press/2014/10/22/jeff-hawkins-limitations-of-artificial-neural-networks.md": 1255,
-		"./press/2014/11/05/images/numenta.png": 1256,
-		"./press/2014/11/05/images/numenta@2x.png": 1257,
-		"./press/2014/11/05/numenta-showcases-new-version-grok-aws-reinvent-2014.md": 1258,
-		"./press/2014/11/10/images/newsweek.png": 1259,
-		"./press/2014/11/10/innovation-lite-modern-day-technology-is-stuck.md": 1260,
-		"./press/2014/11/12/cortical-io-gain-over-1-million-in-new-venture-capital.md": 1261,
-		"./press/2014/11/12/images/dataconomy.png": 1262,
-		"./press/2014/11/21/cognitive-computing-what-it-means-to-you.md": 1263,
-		"./press/2014/11/21/images/techworld.png": 1264,
-		"./press/2014/11/21/images/techworld@2x.png": 1265,
-		"./press/2014/12/09/images/eetimes.png": 1266,
-		"./press/2014/12/09/smart-panel-ponders-ais-future.md": 1267,
-		"./press/2014/12/29/deep-learning-and-machine-intelligence-eat-the-world-2015.md": 1268,
-		"./press/2014/12/29/images/forbes.png": 1269,
-		"./press/2014/12/29/images/forbes@2x.png": 1270,
-		"./press/2015/01/09/artificial-intelligence-is-real-now.md": 1271,
-		"./press/2015/01/09/images/gigaom.png": 1272,
-		"./press/2015/02/19/images/science20.png": 1273,
-		"./press/2015/02/19/life-happens-ai-will-happen-probably-at-ibm-numenta.md": 1274,
-		"./press/2015/03/02/images/recode.png": 1275,
-		"./press/2015/03/02/images/recode@2x.png": 1276,
-		"./press/2015/03/02/terminator-not-coming-future-will-thank-us.md": 1277,
-		"./press/2015/03/05/images/fortune.png": 1278,
-		"./press/2015/03/05/images/fortune@2x.png": 1279,
-		"./press/2015/03/05/many-scientists-dismiss-the-fear-of-robots-heres-why.md": 1280,
-		"./press/2015/03/26/artificial-intelligence-could-have-prevented-the-germanwings-crash.md": 1281,
-		"./press/2015/03/26/images/forbes.png": 1282,
-		"./press/2015/03/26/images/forbes@2x.png": 1283,
-		"./press/2015/04/02/how-we-learn-to-stop-worrying-and-love-the-bots.md": 1284,
-		"./press/2015/04/02/images/wired.png": 1285,
-		"./press/2015/04/02/images/wired@2x.png": 1286,
-		"./press/2015/04/08/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms.md": 1287,
-		"./press/2015/04/08/images/mit-technology-review.png": 1288,
-		"./press/2015/04/14/images/science20.png": 1289,
-		"./press/2015/04/14/numenta-the-bruce-lee-of-ai-and-deep-learning.md": 1290,
-		"./press/2015/05/07/images/wired.png": 1291,
-		"./press/2015/05/07/images/wired@2x.png": 1292,
-		"./press/2015/05/07/jeff-hawkins-of-firing-up-the-silicon-brain.md": 1293,
-		"./press/2015/05/14/images/numenta.png": 1294,
-		"./press/2015/05/14/images/numenta@2x.png": 1295,
-		"./press/2015/05/14/numenta-and-cortical-io-form-strategic-partnership.md": 1296,
-		"./press/2015/05/22/images/cnn.png": 1297,
-		"./press/2015/05/22/images/cnn@2x.png": 1298,
-		"./press/2015/05/22/images/science20.png": 1299,
-		"./press/2015/05/22/numenta-and-ibm-to-build-biologically-inspired-intelligent-machines.md": 1300,
-		"./press/2015/05/22/on-gps-with-fareed-zakaria-the-threat-of-intelligent-machines.md": 1301,
-		"./press/2015/07/08/images/image.png": 1302,
-		"./press/2015/07/08/images/screen.png": 1303,
-		"./press/2015/07/08/images/venture-beat.png": 1304,
-		"./press/2015/07/08/numenta-grok-for-stocks-app-uses-ai-decipher-stock-market-patterns.md": 1305,
-		"./press/2015/07/08/numenta-ships-new-htm-example-app-htm-for-stocks.md": 1306,
-		"./press/2015/08/19/images/numenta.png": 1307,
-		"./press/2015/08/19/images/numenta@2x.png": 1308,
-		"./press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners.md": 1309,
-		"./press/2015/09/05/images/network-world.png": 1310,
-		"./press/2015/09/05/images/network-world@2x.png": 1311,
-		"./press/2015/09/05/numentas-grok-for-it-artificial-intelligence-meets-network-performance-analysis.md": 1312,
-		"./press/2015/10/06/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.md": 1313,
-		"./press/2015/10/06/images/it-business-edge.png": 1314,
-		"./press/2015/10/29/images/prweb.png": 1315,
-		"./press/2015/10/29/usd-2-million-for-brain-inspired-algorithm-made-in-austria-cortical-io.md": 1316,
-		"./press/2015/11/10/images/image.png": 1317,
-		"./press/2015/11/10/images/image@2x.png": 1318,
-		"./press/2015/11/10/numenta-anomaly-benchmark-nab-evaluates-anomaly-detection-techniques.md": 1319,
-		"./press/2015/11/12/images/mit-technology-review.png": 1320,
-		"./press/2015/11/12/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns.md": 1321,
-		"./press/2016/03/07/images/the-new-york-times.png": 1322,
-		"./press/2016/03/07/images/the-new-york-times@2x.png": 1323,
-		"./press/2016/03/07/the-terminator-and-the-washing-machine.md": 1324,
-		"./press/2016/04/12/images/image.jpg": 1325,
-		"./press/2016/04/12/numenta-researchers-discover-how-the-brain-learns-sequences.md": 1326,
-		"./press/2016/05/01/brain-like-computing.md": 1327,
-		"./press/2016/05/01/images/computing-now.png": 1328,
-		"./press/2016/05/01/images/computing-now@2x.png": 1329,
-		"./press/2016/05/22/images/wall-street-journal.png": 1330,
-		"./press/2016/05/22/images/wall-street-journal@2x.png": 1331,
-		"./press/2016/05/22/new-chips-propel-machine-learning.md": 1332,
-		"./press/2016/05/29/donna-dubinsky-standing-up-to-steve-jobs-and-being-right.md": 1333,
-		"./press/2016/05/29/images/learning-leader.png": 1334,
-		"./press/2016/06/16/here-is-what-uk-developers-need-to-know-about-machine-learning.md": 1335,
-		"./press/2016/06/16/images/techworld.png": 1336,
-		"./press/2016/06/16/images/techworld@2x.png": 1337,
-		"./press/2016/06/25/from-not-working-to-neural-networking.md": 1338,
-		"./press/2016/06/25/images/economist.png": 1339,
-		"./press/2016/06/25/images/economist@2x.png": 1340,
-		"./press/2016/06/26/images/htm-studio.png": 1341,
-		"./press/2016/06/26/images/htm-studio@2x.png": 1342,
-		"./press/2016/06/26/numenta-releases-htm-studio.md": 1343,
-		"./press/2016/06/27/images/recode.png": 1344,
-		"./press/2016/06/27/images/recode@2x.png": 1345,
-		"./press/2016/06/27/this-is-why-your-fears-about-artificial-intelligence-are-wrong.md": 1346,
-		"./press/2016/07/26/images/jaxenter.png": 1347,
-		"./press/2016/07/26/images/jaxenter@2x.png": 1348,
-		"./press/2016/07/26/machine-learning-expert-check-6-tips-for-getting-started-in-the-machine-learning.md": 1349,
-		"./press/index": 1350,
-		"./press/index.jsx": 1350,
-		"./sitemap/index": 1351,
-		"./sitemap/index.jsx": 1351,
+		"./partners/index.jsx": 1212,
+		"./press/2013/02/14/images/numenta.png": 1213,
+		"./press/2013/02/14/images/numenta@2x.png": 1214,
+		"./press/2013/02/14/numenta-gigaom-presentation.md": 1215,
+		"./press/2013/04/18/images/numenta.png": 1216,
+		"./press/2013/04/18/images/numenta@2x.png": 1217,
+		"./press/2013/04/18/thingworx-partnership.md": 1218,
+		"./press/2013/05/17/images/numenta.png": 1219,
+		"./press/2013/05/17/images/numenta@2x.png": 1220,
+		"./press/2013/05/17/sybase-esp-integration.md": 1221,
+		"./press/2013/07/22/images/nupic.png": 1222,
+		"./press/2013/07/22/nupic-open-source-project.md": 1223,
+		"./press/2013/12/04/computing-like-the-brain.md": 1224,
+		"./press/2013/12/04/images/yow.png": 1225,
+		"./press/2014/01/22/fujitsu-natf-video.md": 1226,
+		"./press/2014/01/22/images/fujitsu.png": 1227,
+		"./press/2014/01/22/images/fujitsu@2x.png": 1228,
+		"./press/2014/01/29/brains-view-of-economics.md": 1229,
+		"./press/2014/01/29/images/project-syndicate.png": 1230,
+		"./press/2014/03/25/images/numenta.png": 1231,
+		"./press/2014/03/25/images/numenta@2x.png": 1232,
+		"./press/2014/03/25/numenta-releases-grok-for-it-analytics-on-aws.md": 1233,
+		"./press/2014/03/29/building-an-ai-that-mimics-our-neocortex.md": 1234,
+		"./press/2014/03/29/images/the-register.png": 1235,
+		"./press/2014/03/29/images/the-register@2x.png": 1236,
+		"./press/2014/04/07/images/twit.png": 1237,
+		"./press/2014/04/07/triangulation-146-with-leo-laporte.md": 1238,
+		"./press/2014/04/08/images/33rd-square.png": 1239,
+		"./press/2014/04/08/path-to-machine-intelligence.md": 1240,
+		"./press/2014/04/20/images/forbes.png": 1241,
+		"./press/2014/04/20/images/forbes@2x.png": 1242,
+		"./press/2014/04/20/what-really-scares-tech-leaders-about-artificial-intelligence.md": 1243,
+		"./press/2014/04/23/images/mit-technology-review.png": 1244,
+		"./press/2014/04/23/neuromorphic-chips-enhance-artificial-intelligence.md": 1245,
+		"./press/2014/04/30/images/nordea-invest.png": 1246,
+		"./press/2014/04/30/when-big-data-is-old-news.md": 1247,
+		"./press/2014/05/29/computer-programming-is-a-dying-art.md": 1248,
+		"./press/2014/05/29/images/newsweek.png": 1249,
+		"./press/2014/06/03/big-data-dump-overwhelms-spy-agencies.md": 1250,
+		"./press/2014/06/03/images/bloomberg.png": 1251,
+		"./press/2014/06/03/images/bloomberg@2x.png": 1252,
+		"./press/2014/07/09/images/venture-beat.png": 1253,
+		"./press/2014/07/09/numenta-apps-mimic-way-brain-works.md": 1254,
+		"./press/2014/08/13/images/search-cloud-computing.png": 1255,
+		"./press/2014/08/13/images/search-cloud-computing@2x.png": 1256,
+		"./press/2014/08/13/when-cloud-monitoring-falls-short.md": 1257,
+		"./press/2014/09/02/images/dataconomy.png": 1258,
+		"./press/2014/09/02/mimicking-brain-function-is-revolutionising-nlp.md": 1259,
+		"./press/2014/09/05/cognitive-computing-truly-amazing-apps.md": 1260,
+		"./press/2014/09/05/images/programmableweb.png": 1261,
+		"./press/2014/09/16/images/dataconomy.png": 1262,
+		"./press/2014/09/16/ten-machine-learning-experts.md": 1263,
+		"./press/2014/09/24/images/gigaom.png": 1264,
+		"./press/2014/09/24/jeff-hawkins-on-his-approach-to-ai.md": 1265,
+		"./press/2014/10/22/images/thinkingmachine.png": 1266,
+		"./press/2014/10/22/jeff-hawkins-limitations-of-artificial-neural-networks.md": 1267,
+		"./press/2014/11/05/images/numenta.png": 1268,
+		"./press/2014/11/05/images/numenta@2x.png": 1269,
+		"./press/2014/11/05/numenta-showcases-new-version-grok-aws-reinvent-2014.md": 1270,
+		"./press/2014/11/10/images/newsweek.png": 1271,
+		"./press/2014/11/10/innovation-lite-modern-day-technology-is-stuck.md": 1272,
+		"./press/2014/11/12/cortical-io-gain-over-1-million-in-new-venture-capital.md": 1273,
+		"./press/2014/11/12/images/dataconomy.png": 1274,
+		"./press/2014/11/21/cognitive-computing-what-it-means-to-you.md": 1275,
+		"./press/2014/11/21/images/techworld.png": 1276,
+		"./press/2014/11/21/images/techworld@2x.png": 1277,
+		"./press/2014/12/09/images/eetimes.png": 1278,
+		"./press/2014/12/09/smart-panel-ponders-ais-future.md": 1279,
+		"./press/2014/12/29/deep-learning-and-machine-intelligence-eat-the-world-2015.md": 1280,
+		"./press/2014/12/29/images/forbes.png": 1281,
+		"./press/2014/12/29/images/forbes@2x.png": 1282,
+		"./press/2015/01/09/artificial-intelligence-is-real-now.md": 1283,
+		"./press/2015/01/09/images/gigaom.png": 1284,
+		"./press/2015/02/19/images/science20.png": 1285,
+		"./press/2015/02/19/life-happens-ai-will-happen-probably-at-ibm-numenta.md": 1286,
+		"./press/2015/03/02/images/recode.png": 1287,
+		"./press/2015/03/02/images/recode@2x.png": 1288,
+		"./press/2015/03/02/terminator-not-coming-future-will-thank-us.md": 1289,
+		"./press/2015/03/05/images/fortune.png": 1290,
+		"./press/2015/03/05/images/fortune@2x.png": 1291,
+		"./press/2015/03/05/many-scientists-dismiss-the-fear-of-robots-heres-why.md": 1292,
+		"./press/2015/03/26/artificial-intelligence-could-have-prevented-the-germanwings-crash.md": 1293,
+		"./press/2015/03/26/images/forbes.png": 1294,
+		"./press/2015/03/26/images/forbes@2x.png": 1295,
+		"./press/2015/04/02/how-we-learn-to-stop-worrying-and-love-the-bots.md": 1296,
+		"./press/2015/04/02/images/wired.png": 1297,
+		"./press/2015/04/02/images/wired@2x.png": 1298,
+		"./press/2015/04/08/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms.md": 1299,
+		"./press/2015/04/08/images/mit-technology-review.png": 1300,
+		"./press/2015/04/14/images/science20.png": 1301,
+		"./press/2015/04/14/numenta-the-bruce-lee-of-ai-and-deep-learning.md": 1302,
+		"./press/2015/05/07/images/wired.png": 1303,
+		"./press/2015/05/07/images/wired@2x.png": 1304,
+		"./press/2015/05/07/jeff-hawkins-of-firing-up-the-silicon-brain.md": 1305,
+		"./press/2015/05/14/images/numenta.png": 1306,
+		"./press/2015/05/14/images/numenta@2x.png": 1307,
+		"./press/2015/05/14/numenta-and-cortical-io-form-strategic-partnership.md": 1308,
+		"./press/2015/05/22/images/cnn.png": 1309,
+		"./press/2015/05/22/images/cnn@2x.png": 1310,
+		"./press/2015/05/22/images/science20.png": 1311,
+		"./press/2015/05/22/numenta-and-ibm-to-build-biologically-inspired-intelligent-machines.md": 1312,
+		"./press/2015/05/22/on-gps-with-fareed-zakaria-the-threat-of-intelligent-machines.md": 1313,
+		"./press/2015/07/08/images/image.png": 1314,
+		"./press/2015/07/08/images/screen.png": 1315,
+		"./press/2015/07/08/images/venture-beat.png": 1316,
+		"./press/2015/07/08/numenta-grok-for-stocks-app-uses-ai-decipher-stock-market-patterns.md": 1317,
+		"./press/2015/07/08/numenta-ships-new-htm-example-app-htm-for-stocks.md": 1318,
+		"./press/2015/08/19/images/numenta.png": 1319,
+		"./press/2015/08/19/images/numenta@2x.png": 1320,
+		"./press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners.md": 1321,
+		"./press/2015/09/05/images/network-world.png": 1322,
+		"./press/2015/09/05/images/network-world@2x.png": 1323,
+		"./press/2015/09/05/numentas-grok-for-it-artificial-intelligence-meets-network-performance-analysis.md": 1324,
+		"./press/2015/10/06/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.md": 1325,
+		"./press/2015/10/06/images/it-business-edge.png": 1326,
+		"./press/2015/10/29/images/prweb.png": 1327,
+		"./press/2015/10/29/usd-2-million-for-brain-inspired-algorithm-made-in-austria-cortical-io.md": 1328,
+		"./press/2015/11/10/images/image.png": 1329,
+		"./press/2015/11/10/images/image@2x.png": 1330,
+		"./press/2015/11/10/numenta-anomaly-benchmark-nab-evaluates-anomaly-detection-techniques.md": 1331,
+		"./press/2015/11/12/images/mit-technology-review.png": 1332,
+		"./press/2015/11/12/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns.md": 1333,
+		"./press/2016/03/07/images/the-new-york-times.png": 1334,
+		"./press/2016/03/07/images/the-new-york-times@2x.png": 1335,
+		"./press/2016/03/07/the-terminator-and-the-washing-machine.md": 1336,
+		"./press/2016/04/12/images/image.jpg": 1337,
+		"./press/2016/04/12/numenta-researchers-discover-how-the-brain-learns-sequences.md": 1338,
+		"./press/2016/05/01/brain-like-computing.md": 1339,
+		"./press/2016/05/01/images/computing-now.png": 1340,
+		"./press/2016/05/01/images/computing-now@2x.png": 1341,
+		"./press/2016/05/22/images/wall-street-journal.png": 1342,
+		"./press/2016/05/22/images/wall-street-journal@2x.png": 1343,
+		"./press/2016/05/22/new-chips-propel-machine-learning.md": 1344,
+		"./press/2016/05/29/donna-dubinsky-standing-up-to-steve-jobs-and-being-right.md": 1345,
+		"./press/2016/05/29/images/learning-leader.png": 1346,
+		"./press/2016/06/16/here-is-what-uk-developers-need-to-know-about-machine-learning.md": 1347,
+		"./press/2016/06/16/images/techworld.png": 1348,
+		"./press/2016/06/16/images/techworld@2x.png": 1349,
+		"./press/2016/06/25/from-not-working-to-neural-networking.md": 1350,
+		"./press/2016/06/25/images/economist.png": 1351,
+		"./press/2016/06/25/images/economist@2x.png": 1352,
+		"./press/2016/06/26/images/htm-studio.png": 1353,
+		"./press/2016/06/26/images/htm-studio@2x.png": 1354,
+		"./press/2016/06/26/numenta-releases-htm-studio.md": 1355,
+		"./press/2016/06/27/images/recode.png": 1356,
+		"./press/2016/06/27/images/recode@2x.png": 1357,
+		"./press/2016/06/27/this-is-why-your-fears-about-artificial-intelligence-are-wrong.md": 1358,
+		"./press/2016/07/26/images/jaxenter.png": 1359,
+		"./press/2016/07/26/images/jaxenter@2x.png": 1360,
+		"./press/2016/07/26/machine-learning-expert-check-6-tips-for-getting-started-in-the-machine-learning.md": 1361,
+		"./press/index": 1362,
+		"./press/index.jsx": 1362,
+		"./sitemap/index": 1363,
+		"./sitemap/index.jsx": 1363,
 		"./technology-overview/_Section": 721,
 		"./technology-overview/_Section.jsx": 721,
 		"./technology-overview/images/video-tech.png": 722,
-		"./technology-overview/images/video-tech@2x.png": 1352,
-		"./technology-overview/index": 1353,
+		"./technology-overview/images/video-tech@2x.png": 1364,
+		"./technology-overview/index": 1365,
 		"./technology-overview/index.css": 723,
-		"./technology-overview/index.jsx": 1353
+		"./technology-overview/index.jsx": 1365
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -59140,7 +59192,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"horizontal":"index_horizontal_7U1 tachyons_fl_wJK tachyons_h-100_Yu8 tachyons_ma0_2xh","vertical":"index_vertical_IQM tachyons_mb3_1mV tachyons_ml0_x1_","defineItem":"index_defineItem_6by"};
+	module.exports = {"horizontal":"index_horizontal_7U1 tachyons_fl_wJK tachyons_h-100_Yu8 tachyons_ma0_2xh","vertical":"index_vertical_IQM tachyons_mb3_1mV tachyons_ml0_x1_ tachyons_pl0_3tn","defineItem":"index_defineItem_6by"};
 
 /***/ },
 /* 570 */,
@@ -71325,6 +71377,9 @@
 	  value: true
 	});
 	exports.default = {
+	  overlay: {
+	    zIndex: 900
+	  },
 	  content: {
 	    boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 0.2)',
 	    top: '50%',
@@ -71333,7 +71388,7 @@
 	    bottom: 'auto',
 	    marginRight: '-50%',
 	    transform: 'translate(-50%, -50%)',
-	    zIndex: 20
+	    zIndex: 901
 	  }
 	};
 	module.exports = exports['default'];
@@ -71856,22 +71911,18 @@
 	              null,
 	              'For researchers who are doing work that is covered by Numenta patents, we have promised to not assert our patents for any non-commercial use including publications, teaching, and experimentation. We do ask that you provide appropriate citations of our work.',
 	              _react2.default.createElement(
-	                _Paragraph2.default,
+	                _SubTitle2.default,
+	                { level: 4 },
+	                'End Reference Example'
+	              ),
+	              _react2.default.createElement(
+	                _Code2.default,
 	                null,
-	                _react2.default.createElement(
-	                  _Strong2.default,
-	                  null,
-	                  'End Reference Example'
-	                ),
-	                _react2.default.createElement(
-	                  _Code2.default,
-	                  null,
-	                  'Hawkins, J. et al. 2016. Biological and Machine Intelligence.',
-	                  _react2.default.createElement('br', null),
-	                  '   Release 0.4. Accessed at',
-	                  _react2.default.createElement('br', null),
-	                  '   http://numenta.com/biological-and-machine-intelligence/.'
-	                )
+	                'Hawkins, J. et al. 2016. Biological and Machine Intelligence.',
+	                _react2.default.createElement('br', null),
+	                '   Release 0.4. Accessed at',
+	                _react2.default.createElement('br', null),
+	                '   http://numenta.com/biological-and-machine-intelligence/.'
 	              ),
 	              _react2.default.createElement(
 	                _Paragraph2.default,
@@ -72148,7 +72199,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"code":"index_code_2cu tachyons_bg-light-gray_2vM tachyons_db_32y tachyons_f6_14U tachyons_lh-copy_15f tachyons_mb4_3KK tachyons_nowrap_3x4 tachyons_overflow-auto_1h0 tachyons_ph3_Qxl tachyons_pv2_1UD"};
+	module.exports = {"code":"index_code_2cu tachyons_bg-light-gray_2vM tachyons_db_32y tachyons_f6_14U tachyons_lh-copy_15f tachyons_mb3_1mV tachyons_nowrap_3x4 tachyons_overflow-auto_1h0 tachyons_ph3_Qxl tachyons_pv2_1UD"};
 
 /***/ },
 /* 662 */,
@@ -74225,8 +74276,8 @@
 	const SectionPapers = (props, { config, route }) => {
 	  const { links } = config;
 	  const { pages } = route;
-	  const postsLearn = pages.filter(({ file }) => file.path.match(/^.*\/learn\/.*\.md/));
-	  const postsPapers = pages.filter(({ file }) => file.path.match(/^.*\/papers\/.*\.md/));
+	  const postsLearn = pages.filter(({ file }) => file.path.match(/^papers\-videos.*\/learn\/.*\.md/));
+	  const postsPapers = pages.filter(({ file }) => file.path.match(/^papers\-videos.*\/papers\/.*\.md/));
 	  const learn = postsLearn.sort(_universal.sortPostsDescend).map(({ data, file, path }) => {
 	    const org = data.org ? _react2.default.createElement(
 	      'div',
@@ -74290,7 +74341,7 @@
 	      { className: _index2.default.content },
 	      _react2.default.createElement(
 	        _Paragraph2.default,
-	        null,
+	        { lead: true },
 	        'To help you learn about our theory and technology, we have organized educational content below.'
 	      ),
 	      _react2.default.createElement(
@@ -76159,6 +76210,18 @@
 /* 894 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "efebf51c318b0561575137e4aa534559.png";
+
+/***/ },
+/* 895 */
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Jeff Hawkins","brief":"This week I received an email from a gentleman in Japan. He was creating materials for a course and asked permission to include an extensive passage","date":"2016/08/04","featured":false,"hideImage":false,"image":"../images/image.png","org":"Co-Founder","tags":"jeff hawkins numenta blog revisiting 1986 essay brain theory","title":"Revisiting a 1986 Essay on Brain Theory","type":"post","body":"<p>This week I received an email from a gentleman in Japan. He was creating\nmaterials for a course and asked permission to include an extensive passage I\nhad written. What surprised me about his request was that the passage was not\nfrom a paper I wrote at Numenta, nor from my time at the Redwood Neuroscience\nInstitute, nor was it from my book On Intelligence.  It was from an essay I’d\nwritten over 30 years ago when I was a graduate student at UC Berkeley.</p>\n<p>In January 1986 I gave up my career at a hot computer start-up company to become\na full-time graduate student. I wanted to study how the brain works and this\nseemed my best option. When I arrived at Berkeley I was eager to take every\nneuroscience course they offered and to dive into my research. It didn’t take\nlong for me to become dismayed. I was told I had to take courses that were\nuninteresting to me, such as a foreign language and organic chemistry lab, and\nworse, I might not be able to study brain theory at all. I met with the chairman\nof the graduate group of neurobiology, Dr. Frank Werblin, to get his advice. He\nsuggested that I write a paper on what I wanted to accomplish as a PhD student.\nSo that’s what I did in the spring of 1986.</p>\n<p>During that time I had the epiphany that the neocortex builds a predictive model\nof the world. Every part of the neocortex is continuously predicting what input\nit is going to receive. This is not the only thing the neocortex does but it is\na tangible problem. If I could decipher how neurons learn to make predictions of\nchanging inputs it would expose core principles underlying everything the\nneocortex does.</p>\n<p>The paper that I ultimately wrote made two arguments. First, I argued that it\nwas possible to understand how the neocortex works, that it could be done in a\nmatter of years, not centuries. I was surprised to learn that almost all\nneuroscientists and funding agencies disagreed. Second, I proposed that my\nresearch would initially focus on how neural tissue learns predictive models.</p>\n<p>Dr. Werblin read my paper and we sat down for lunch to discuss it. He was kind\nand supportive of my overall goal but he said the reality was that I could not\nwork on brain theory for my PhD thesis. He explained that it was not possible to\nget funding for the kind of theoretical studies I wanted to do and because of\nthis there were no faculty members at Berkeley, nor anywhere else, that I could\nwork with. Being a theoretical neuroscientist was not an option at that time.</p>\n<p>The title of my paper was\n<a href=\"http://www.onintelligence.org/resources/Hawkins1986.pdf\">An Investigation of Adaptive Behavior towards a Theory of Neocortical Function</a>*.\nIt was from this paper that the gentleman from Japan wanted an excerpt.</p>\n<p>I had not read this paper in many years so I sat down to read it again this\nweek. There are of course things that I would write differently today, and our\nneuroscience knowledge has advanced significantly, but many of the ideas and\naspirations I had back then I still hold today. Thirty years later we have made\nsignificant progress in neocortical theory and I remain confident we can\ncomplete a comprehensive theory of the neocortex in the next few years. My\nenthusiasm and optimism have not changed, nor has my approach to the problem. If\nyou are interested in a historical perspective underlying Numenta’s goals you\nmight enjoy reading my paper from thirty years ago. Understanding how the brain\nworks is recognized by many as one of the most important scientific endeavors of\nall time and, I believe, worthy of a lifetime of effort.</p>\n<p>* <em>There are a few typographical errors in the document, these came from\nscanning the original printed version many years ago.</em></p>\n"}
+
+/***/ },
+/* 896 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -76179,7 +76242,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _PostListItem = __webpack_require__(895);
+	var _PostListItem = __webpack_require__(897);
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
@@ -76224,7 +76287,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 895 */
+/* 897 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -76289,7 +76352,7 @@
 	
 	var _Time2 = _interopRequireDefault(_Time);
 	
-	var _index = __webpack_require__(896);
+	var _index = __webpack_require__(898);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -76444,21 +76507,21 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 896 */
+/* 898 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_GzH theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_3WA theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_20U tachyons_mt1_3Hm tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","postListItem":"index_postListItem_mif tachyons_b--light-gray_3is tachyons_bt_LY6 tachyons_pb1_2R8 tachyons_pt3_1QC","date":"index_date_1A9 tachyons_fw5_3Jq tachyons_lh-copy_15f tachyons_mb2_1U4","title":"index_title_1MW tachyons_db_32y tachyons_f4_1Zt tachyons_lh-title_1xo tachyons_mb1_2-H","author":"index_author_39J tachyons_lh-copy_15f tachyons_relative_1fO","image":"index_image_3iN tachyons_center_iwf tachyons_w-80_2JI tachyons_w-auto-m_1Sn"};
 
 /***/ },
-/* 897 */,
-/* 898 */
+/* 899 */,
+/* 900 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "075fc0d379661bf285ba5e712a08a936.png";
 
 /***/ },
-/* 899 */
+/* 901 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -76526,67 +76589,67 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 900 */
+/* 902 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","anchor":"careers-intern","date":"2014/01/01","email":"interns@numenta.com","org":"Careers","sort":9,"title":"Internship Program","type":"post","body":"<p><strong><em>IMPORTANT NOTE:</em></strong> <em>Numenta is unable to consider internship applications\nfrom international students unless they are currently enrolled in a\nUS University, are US Citizens, or hold a Green Card.</em></p>\n<p>We have filled our technical intern positions for Summer 2016, and are no longer\naccepting applications. We do have one open intern position for Fall-Winter\n2016, so you can submit an application if this time period is of interest. We\nwill start accepting applications for Summer 2017 on October 1, 2016.</p>\n<p>Numenta’s technical interns will get exposure to all aspects of HTM learning\nalgorithms and our streaming analytics platform. The commitment is for 3 to 4\nmonths, full time. We have internship positions in the following areas:</p>\n<h4>Algorithms Internships</h4>\n<p>What you can expect to learn:</p>\n<ul>\n<li>\n<p>The challenges of deploying complex machine learning algorithms in a\nproduction environment</p>\n</li>\n<li>\n<p>Deep understanding of our open source machine learning algorithms</p>\n</li>\n</ul>\n<p>Desired qualifications:</p>\n<ul>\n<li>\n<p>Experience with machine learning or pattern recognition algorithms</p>\n</li>\n<li>\n<p>Strong experience with conducting machine learning experiments. This\nincludes writing and evaluating machine learning algorithms</p>\n</li>\n<li>\n<p>Excellent programming skills in either Python (preferred), Java or C++</p>\n</li>\n<li>\n<p>Enrolled in undergraduate or graduate studies in CS, EE or related disciplines</p>\n</li>\n<li>\n<p>Preference given to candidates who have working knowledge of NuPIC or have\ncontributed to the NuPIC community</p>\n</li>\n<li>\n<p>Experience with data analytics</p>\n</li>\n</ul>\n<h4>Software Engineering Internships</h4>\n<p>Our innovative real time streaming data prediction service runs locally and in\nthe cloud, and includes both web and mobile applications. A developer API allows\ncustomers to integrate the service directly into their business.</p>\n<p>There are many interesting problems related to data analytics, visualization,\narchitecting web based API’s, and running complex algorithms reliably and\nquickly. As a Software Engineering intern, you will be exposed to all of these\nexciting areas.</p>\n<p>What you can expect to learn:</p>\n<ul>\n<li>\n<p>Improved understanding of data science</p>\n</li>\n<li>\n<p>Improved understanding of modern software engineering practices</p>\n</li>\n<li>\n<p>Working with professional development teams and experienced industry veterans</p>\n</li>\n</ul>\n<p>Desired qualifications:</p>\n<ul>\n<li>\n<p>Excellent programming skills in at least one language, preferably Java,\niPython or C++</p>\n</li>\n<li>\n<p>Enrolled in undergraduate or graduate studies in CS, EE or related disciplines</p>\n</li>\n<li>\n<p>Experience with the latest web development technologies\n(HTML 5, JavaScript, CSS 3, JSON, REST, etc.)</p>\n</li>\n<li>\n<p>Good understanding of cloud systems</p>\n</li>\n<li>\n<p>Experience with machine learning or data analytics</p>\n</li>\n<li>\n<p>Experience with NuPIC</p>\n</li>\n</ul>\n<h4>How to Apply</h4>\n<p>Qualified applicants should send the following:</p>\n<ul>\n<li>\n<p>Cover letter describing their specific interest in Numenta. Please include\nany relevant experience with NuPIC.</p>\n</li>\n<li>\n<p>Resume, including list of relevant course work.</p>\n</li>\n<li>\n<p>Period of the internship (e.g.: summer, January-March, etc.)</p>\n</li>\n<li>\n<p>Which area of internship you would like to be considered for.</p>\n</li>\n</ul>\n<p>Please email resume and cover letter to\n<a href=\"mailto:interns@numenta.com\">interns@numenta.com</a>. Numenta is an equal\nopportunity employer supporting workforce diversity.</p>\n"}
 
 /***/ },
-/* 901 */
+/* 903 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","anchor":"careers-research-intern","date":"2016/01/22","email":"interns@numenta.com","org":"Careers","sort":1,"title":"Research Internship","type":"post","body":"<p><strong><em>IMPORTANT NOTE:</em></strong> <em>Numenta is unable to consider internship applications\nfrom international applicants unless they currently enrolled in a US University,\nare US Citizens, or hold a Green Card or are NAFTA (Mexican or Canadian)\ncitizens.</em></p>\n<p>The Research Group at Numenta is looking for outstanding PhD students or other\nresearch scientists for internship opportunities during the Fall - Winter\n2016/2017 time frame (note that we have filled our Summer 2016 positions and are\nno longer accepting applications for this time period). We are looking for\ncandidates with expertise in Machine Learning, Computational Neuroscience and/or\nNatural Language Processing. Preference given to candidates with experience in\none or more of the following areas: sequence learning, natural language\nprocessing, neuron modeling, and computational models of cortex.</p>\n<p>The commitment is for 3 to 4 months full time (longer appointments up to one\nyear may be possible). Numenta’s research interns will get exposure to all\naspects of Hierarchical Temporal Memory (HTM) learning algorithms, participate\nin leading edge research in computational neuroscience, and get full clearance\nto publish their work.</p>\n<h4>What you can expect to learn and how you might contribute</h4>\n<ul>\n<li>\n<p>The challenges of designing and implementing detailed models of cortical\nfunction that can be applied to real-world problems</p>\n</li>\n<li>\n<p>Gain experience solving hard problems in domains such as natural language\nprocessing, streaming analytics, and/or sensorimotor inference</p>\n</li>\n<li>\n<p>Participate in designing functional models of Layers 2/3, 4, 5, and 6,\nthalamocortical circuits, feedback circuits, and sensorimotor processing</p>\n</li>\n<li>\n<p>Learn how to contribute to a top open source project, and improve your\nsoftware engineering skills</p>\n</li>\n<li>\n<p>Obtain a detailed understanding of Hierarchical Temporal Memory</p>\n</li>\n</ul>\n<h4>Desired qualifications</h4>\n<ul>\n<li>\n<p>Currently enrolled in a MS or PhD program, or a recent graduate, or equivalent\nresearch experience</p>\n</li>\n<li>\n<p>Strong research background in machine learning or machine intelligence</p>\n</li>\n<li>\n<p>Strong research background in computational neuroscience</p>\n</li>\n<li>\n<p>Excellent algorithmic problem solving skills, and the ability to implement\nsolutions in Python, C/C++, Java, etc.</p>\n</li>\n<li>\n<p>Established track record of publications in leading peer reviewed conferences\nand journals</p>\n</li>\n<li>\n<p>Working knowledge of HTM algorithms a plus</p>\n</li>\n<li>\n<p>Excellent written and verbal communication skills, and the ability to work in\na team oriented environment</p>\n</li>\n<li>\n<p>A belief that the best way to build intelligent machines is to understand the\ncortex</p>\n</li>\n</ul>\n<h4>How To Apply – Research Internship</h4>\n<p>Qualified applicants should send the following:</p>\n<ul>\n<li>\n<p>Cover letter describing their specific interest in Numenta.</p>\n</li>\n<li>\n<p>Resume, including list of relevant course work.</p>\n</li>\n<li>\n<p>Period of the internship (typically 3 to 4 months fulltime.)</p>\n</li>\n<li>\n<p>Please email resume and cover letter to <t render=\"hbs\">\n<a href=\"mailto:%7B%7Bdocument.email%7D%7D\">{{document.email}}</a></t>. Numenta is an equal\nopportunity employer supporting workforce diversity.</p>\n</li>\n</ul>\n"}
 
 /***/ },
-/* 902 */
+/* 904 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "33933b80131b88d9a73aa81789f2c915.png";
 
 /***/ },
-/* 903 */
+/* 905 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "98d9ae957f8a91ee4c9e24be504620c3.png";
 
 /***/ },
-/* 904 */
+/* 906 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "46268e58b679f51dc6c9ae76398a7883.jpg";
 
 /***/ },
-/* 905 */
+/* 907 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e76c4d14fe343a4b40f1e371ce0709b4.jpg";
 
 /***/ },
-/* 906 */
+/* 908 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7b4f6bd284586e0177ffea8371f64246.jpg";
 
 /***/ },
-/* 907 */
+/* 909 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d1d9b19369640b7eec2b1a1069f669d2.jpg";
 
 /***/ },
-/* 908 */
+/* 910 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "6b4efc8e9e3d23dd24fe9ef10d3ec6f6.jpg";
 
 /***/ },
-/* 909 */
+/* 911 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4dafcd0c423946b1e538a3608e610ecb.jpg";
 
 /***/ },
-/* 910 */
+/* 912 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -76655,739 +76718,739 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 911 */
+/* 913 */
 /***/ function(module, exports) {
 
 	module.exports = {"body":"<p>Thanks for contacting Numenta, we will be back in touch with you soon!</p>\n"}
 
 /***/ },
-/* 912 */
+/* 914 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2014/03/26","event":{"when":{"begin":"2014/03/26","end":"2014/03/26"},"where":{"desc":"Moscone Center Booth 100","city":"San Francisco","state":"CA","country":"USA","web":"https://aws.amazon.com/aws-summit-2014/san-francisco/"}},"featured":false,"image":"../images/image.png","org":"Event","tags":"grok it analytics aws amazon web services summit sf san francisco 2014","title":"AWS Summit San Francisco","type":"post","body":""}
 
 /***/ },
-/* 913 */
+/* 915 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "44562d4b30aa421af14d876d832a5681.png";
 
 /***/ },
-/* 914 */
+/* 916 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "5d8e4138e05356b6ff0256cb7ddc5a6d.png";
 
 /***/ },
-/* 915 */
+/* 917 */
 841,
-/* 916 */
+/* 918 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":null,"date":"2014/05/03","event":{"when":{"begin":"2014/05/03","end":"2014/05/04"},"where":{"desc":"Pinger, Inc.","city":"San Jose","state":"CA","country":"USA","web":"http://numenta.org/events.html#nupic_spring_2014_hackathon"}},"featured":false,"image":"../images/image.png","org":"Open Source Manager","tags":"nupic spring 2014 hackathon numenta platform for intelligent computing open source","title":"NuPIC Spring 2014 Hackathon","type":"post","body":""}
 
 /***/ },
-/* 917 */
+/* 919 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2014/05/05","event":{"when":{"begin":"2014/05/05","end":"2014/05/07"},"where":{"desc":"Gerding Theater at the Armory","city":"Portland","state":"OR","country":"USA","web":"http://monitorama.com/"}},"featured":false,"image":"../images/image.png","org":"Event","tags":"grok it analytics monitorama 2014","title":"Monitorama","type":"post","body":""}
 
 /***/ },
-/* 918 */
+/* 920 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4fb728ec5ef9682195f2af54978c70aa.png";
 
 /***/ },
-/* 919 */
+/* 921 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2014/07/09","event":{"when":{"begin":"2014/07/09","end":"2014/07/10"},"where":{"desc":"Javits Center","city":"New York","state":"NY","country":"USA","web":"https://aws.amazon.com/aws-summit-2014/"}},"featured":false,"image":"../images/image.png","org":"Event","tags":"grok it analytics aws amazon web services summit ny 2014","title":"AWS Summit New York","type":"post","body":""}
 
 /***/ },
-/* 920 */
-913,
-/* 921 */
-914,
 /* 922 */
+915,
+/* 923 */
+916,
+/* 924 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":null,"date":"2014/08/20","event":{"what":"Understanding Cortical Principles and Building Intelligent Machines","when":{"begin":"2014/08/20 15:10","end":"2014/08/20 15:10"},"where":{"desc":"Sainte Claire Hotel","city":"San Jose","state":"CA","country":"USA","web":"http://www.cognitivecomputingforum.com/"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"VP Research","tags":"numenta grok cognitive computing forum san jose 2014","title":"Cognitive Computing Forum","type":"post","body":"<h4>Video:</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/k_p58LbXd4Y\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"}
 
 /***/ },
-/* 923 */
+/* 925 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "50e7d0c2a48d312f35f3d71e95124631.png";
 
 /***/ },
-/* 924 */
+/* 926 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b148e4ac3429edf766b436d53721c7e1.png";
 
 /***/ },
-/* 925 */
+/* 927 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2014/10/02","event":{"what":"Modeling Cortical Layers","when":{"begin":"2014/10/02","end":"2014/10/02"},"where":{"desc":"Kirchhoff Institute for Physics","city":"Heidelberg","state":"Baden-Württemberg","country":"Germany","web":"https://brainscales.kip.uni-heidelberg.de/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-founder","tags":"brainscales neuromorphic computing conference jeff hawkins model cortical layers","title":"Frontiers in Neuromorphic Computing Conference","type":"post","body":""}
 
 /***/ },
-/* 926 */
+/* 928 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d96b679b69da7d15ca7aba5ea39f80b3.png";
 
 /***/ },
-/* 927 */
+/* 929 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f49d6dc038177eb087bc9ae4234be19c.png";
 
 /***/ },
-/* 928 */
+/* 930 */
 /***/ function(module, exports) {
 
 	module.exports = {"ignored":true,"author":"Scott Purdy","brief":null,"date":"2014/10/15","event":{"what":"Building an Anomaly Service for AWS","when":{"begin":"2014/10/15","end":"2014/10/15"},"where":{"desc":"AirBnB","city":"San Francisco","state":"CA","country":"USA"},"who":"Scott Purdy","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Engineering Manager","tags":"numenta grok event advanced aws meetup lightning talk anomlay service","title":"Advanced AWS Meetup Lightning Talk","type":"post","body":""}
 
 /***/ },
-/* 929 */
+/* 931 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3c7878d6c7ab19fa916ae5845b02e256.png";
 
 /***/ },
-/* 930 */
+/* 932 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "99677c19b13915036e83da4e31ef103e.png";
 
 /***/ },
-/* 931 */
+/* 933 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2014/10/17","event":{"when":{"begin":"2014/10/17","end":"2014/10/17"},"where":{"desc":"Numenta","city":"Redwood City","state":"CA","country":"USA","web":"https://www.eventbrite.com/e/numenta-training-workshop-registration-12898835765"}},"featured":true,"image":"../images/image.png","org":"Event","tags":"numenta training workshop htm hierarchical temporal memory october 2014","title":"Numenta Training Workshop","type":"post","body":"<p>Numenta is offering a half-day technical workshop to provide training for\ndevelopers or potential customers/partners interested in our technology.\nWorkshop sessions will review Numenta theory, technology, and applications\n– and provide an overview for how to get started on your own projects using\nNumenta technology. The majority of content will be technical in nature and\nis intended for a developer/technical audience. Training curriculum will be\nfollowed by a networking reception.</p>\n<p>Who should attend? Developers/technically-minded people interested in\nNumenta technology. A substantial portion of our content will focus on\nintroducing the basics of our technology.</p>\n<h2>Workshop Videos</h2>\n<h4>Principles of Hierarchical Temporal Memory (HTM): Foundations of Machine Intelligence</h4>\n<p>Jeff Hawkins, Co-Founder</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/6ufPpZDmPKA\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<p>Q &amp; A Session</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/EU2Vm-VlfEk\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Applications of Hierarchical Temporal Memory (HTM)</h4>\n<p>Chetan Surpur, Software Engineer</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/900nFOfzp2E\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Getting Started With Numenta Technology</h4>\n<p>Celeste Baranski, VP Engineering</p>\n<p>Matt Taylor, Open Source Community Flag-Bearer</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/5HD9NnXpRus\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Sparse Distributed Representations: Our Brain’s Data Structure</h4>\n<p>Subutai Ahmad, VP Research</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/LbZtc_zWBS4\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"}
 
 /***/ },
-/* 932 */
+/* 934 */
 841,
-/* 933 */
+/* 935 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":null,"date":"2014/10/18","event":{"when":{"begin":"2014-10-18 10:00","end":"2014-10-19 18:00"},"where":{"desc":"Pinger Inc","city":"San Jose","state":"CA","country":"USA","web":"http://numenta.org/events.html#nupic_fall_2014_hackathon"}},"featured":false,"image":"../images/image.png","org":"Open Source Manager","tags":"nupic numenta platform intelligent computing fall 2014 hackathon san jose california","title":"NuPIC Fall 2014 Hackathon","type":"post","body":"<p>Please RSVP!</p>\n<p><a href=\"http://www.meetup.com/numenta/events/202402962/\">http://www.meetup.com/numenta/events/202402962/</a></p>\n"}
 
 /***/ },
-/* 934 */
+/* 936 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2014/10/30","event":{"what":"What the Brain Can Tell Us About the Future of Computing","when":{"begin":"2014/10/30","end":"2014/10/30"},"where":{"desc":"T.J. Watson Research Center","city":"Yorktown Heights","state":"NY","country":"USA"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"ibm research cognitive systems colloquium jeff hawkins numenta machine intelligence cognitive computing","title":"IBM Research Cognitive Systems Colloquium","type":"post","body":"<h4>Event Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/0SroCjwkSFc\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Interview Video with Jeff Hawkins</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/OS55dojA-PY\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"}
 
 /***/ },
-/* 935 */
+/* 937 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "abc04f7761854013e61932e33e650947.png";
 
 /***/ },
-/* 936 */
+/* 938 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2014/11/11","event":{"when":{"begin":"2014/11/11","end":"2014/11/13"},"where":{"desc":"The Venetian, Booth 648","city":"Las Vegas","state":"NV","country":"USA","web":"https://reinvent.awsevents.com/"}},"featured":false,"image":"../images/image.png","org":"Event","tags":"grok it analytics aws reinvent 2014","title":"AWS re:Invent","type":"post","body":""}
 
 /***/ },
-/* 937 */
+/* 939 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "200a325aca5502c57037db676f74fe2d.png";
 
 /***/ },
-/* 938 */
+/* 940 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "16162b73581f7063186ca762310dcd0e.png";
 
 /***/ },
-/* 939 */
+/* 941 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b046d5a5ea2a3d9f07ff9864c0811228.png";
 
 /***/ },
-/* 940 */
+/* 942 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2014/12/04","event":{"when":{"begin":"2014/12/04 14:00","end":"2014/12/04 19:30"},"where":{"desc":"Hero City at Draper University","city":"San Mateo","state":"CA","country":"USA","web":"http://svforum.org/Education-Tech-Conference/iHuman-Future-Minds-and-Machines"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"sv silicon valley forum ihuman future of minds and machines jeff hawkins numenta machine intelligence","title":"SV Forum iHuman - The Future of Minds and Machines","type":"post","body":"<h3>Video</h3>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/RojcnwnEzSQ\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"}
 
 /***/ },
-/* 941 */
+/* 943 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "24e5235a1df254df6a1377f174afe5d0.png";
 
 /***/ },
-/* 942 */
+/* 944 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "77a676d6eb59a45534a1930e638b855b.png";
 
 /***/ },
-/* 943 */
+/* 945 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":null,"date":"2015/02/17","event":{"what":"Streaming Analytics - It’s Not The Same Game","when":{"begin":"2015/02/17","end":"2015/02/20"},"where":{"desc":"San Jose Convention Center","city":"San Jose","state":"CA","country":"USA","web":"http://strataconf.com/big-data-conference-ca-2015/public/schedule/detail/38703"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"VP Research","tags":"strata hadoop world big data subutai ahmad numenta machine intelligence streaming analytics","title":"Strata + Hadoop World 2015","type":"post","body":"<p><strong>Streaming Analytics: It’s Not The Same Game</strong></p>\n<h4>Slides</h4>\n<p>Link:\n<a href=\"http://www.slideshare.net/numenta/streaming-analytics-its-not-the-same-game\">Streaming Analytics: It’s Not The Same Game</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45044014\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/streaming-analytics-its-not-the-same-game\" title=\"Streaming Analytics: It&#x27;s Not the Same Game\" target=\"_blank\">Streaming Analytics: It&#x27;s Not the Same Game</a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n<h4>Talk Abstract</h4>\n<p>We are witnessing an explosion of sensors and machine generated data. Every\nserver, every building, and every device generates a continuous stream of\ninformation that is ever changing and potentially valuable. The existing big\ndata paradigm requires storing data for batch analysis, and extensive modeling\nby a human expert, prior to deployment. This is incredibly inefficient and\ncannot scale. Instead there is a growing need to rapidly create adaptive models\nthat accept streaming data sources and can take instant action.</p>\n<p>In this talk I will describe a new paradigm for streaming data algorithms, based\non recent neuroscience findings and on the computational properties of the\nneocortex.  These systems are highly automated, adapt to changing statistics,\nand naturally deal with temporal data streams. They require no batch training\nand custom models can be deployed on the fly.  Many of the core ideas have been\nimplemented in the open source project NuPIC, and validated in commercial\napplications.  Given the massive increase in the number of data sources, a\ngeneral-purpose automated approach is the only scalable way to effectively\nanalyze and act on continuously streaming information.</p>\n"}
 
 /***/ },
-/* 944 */
+/* 946 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9fc8aa6362ee4eba6e5e51f57a0c313e.png";
 
 /***/ },
-/* 945 */
+/* 947 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2015/02/23","event":{"when":{"begin":"2015/02/23","end":"2015/02/25"},"where":{"desc":"Hyatt Regency Tamaya","city":"Santa Ana Pueblo","state":"NM","country":"USA","web":"http://nice.sandia.gov/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"numenta jeff hawkins speaking sandia national laboratories neuro inspired computational elements workshop 2015","title":"Sandia National Laboratories Neuro-Inspired Computational Elements Workshop 2015","type":"post","body":"<h3>Sandia National Laboratories</h3>\n<p><strong>Neuro-Inspired Computational Elements Workshop 2015</strong></p>\n<h3>Video Links</h3>\n<p>Click link title to play.</p>\n<ul>\n<li>\n<p><a href=\"http://digitalops.sandia.gov/Mediasite/Play/515d11e3d7404d608c3b50ba4e8496981d\">Reverse Engineering the Neocortex (49:00)</a>,\nJeff Hawkins, Numenta.</p>\n</li>\n<li>\n<p><a href=\"http://digitalops.sandia.gov/Mediasite/Play/1365ba62685c4c91a1cb7143c1e321cc1d\">IBM Cortical Learning Center (33:18)</a>,\nWinfried Wilcke, IBM CLC.</p>\n</li>\n</ul>\n<h3>Abstract</h3>\n<p><strong>Beyond von Neumann/Turing Architecture and Moore’s Law Limits</strong></p>\n<p>Conventional, stored program architecture systems are designed for algorithmic\nand exact calculations.  However, the problems with highest impact involve\nlarge, noisy, incomplete, “natural” data sets that do not lend themselves to\nconvenient solutions by current systems.  Our task is to build upon the\nconvergence – cresting waves among neuroscience, microelectronics and\ncomputational systems to develop a new architecture designed to handle these\nnatural data sets.</p>\n"}
 
 /***/ },
-/* 946 */
+/* 948 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":null,"date":"2015/03/05","event":{"what":"Maintaining Stable Perception During Active Exploration","when":{"begin":"2015/03/05","end":"2015/03/08"},"where":{"desc":"Hilton Salt Lake City Center","city":"Salt Lake City","state":"UT","country":"USA","web":"http://www.cosyne.org/c/index.php?title=Cosyne_15"},"who":"Yuwei Cui, Subutai Ahmad, Chetan Surpur, and Jeff Hawkins","why":"Authors"},"featured":false,"image":"../images/image.png","org":"VP Research","tags":"computational systems neuroscience cosyne 2015 numenta nupic machine intelligence","title":"Computational and Systems Neuroscience (Cosyne) 2015","type":"post","body":"<h4>Title</h4>\n<p><strong>Maintaining Stable Perception During Active Exploration</strong></p>\n<h4>Abstract</h4>\n<p>Our sensory input changes dramatically as the result of our own behavior,\nincluding eye movements, head turns, and body movements. Despite these rapid\nsensory changes, our perception of the world is amazingly stable, and we can\nreliably discriminate between different patterns. This suggests that we learn\nstable but distinct representations through active exploration. There is reason\nto believe that efference copy, an internal copy of the motor signal, is\ncritical for such sensorimotor learning. However the exact brain mechanisms\nunderlying these computations remain unknown. In this study, we propose a\ncomputational model of sensorimotor learning and prediction. Sparse distributed\nrepresentations of visual scenes are built up incrementally by pooling together\npredictable temporal transitions during exploration. To enable accurate\npredictions during active exploration, we modified the Hierarchical Temporal\nMemory sequence-learning algorithm to use both sensory inputs and efference copy\nsignals. To enable forming stable representations of scenes, we implemented a\nnovel temporal pooling learning rule that allows downstream neurons to form\nconnections with upstream neurons that are predicting correctly.</p>\n<p>The overall model is unsupervised and the architecture is consistent with\nseveral important aspects of thalamocortical circuits. We tested the algorithm\non a set of simulated environments, as well as a robotics test bed. In both\ncases the model achieves two desired properties: 1) prediction of future sensory\ninputs during behavior, and 2) emergence of stable and distinct representations\nfor learned patterns. After learning, the sparse activity of cells in downstream\nregions is stable despite sensor movements, while different images lead to\ndistinct representations. These results demonstrate how efference copy can be\nused in sensory cortex to make predictions during behavior. We propose temporal\npooling as a novel computational principle for forming invariant representations\nduring unsupervised learning and active exploration.</p>\n"}
 
 /***/ },
-/* 947 */
+/* 949 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "669d4294c03eb1aeda3d8e2a2032fc17.png";
 
 /***/ },
-/* 948 */
+/* 950 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "96ea273775426b06230a610474000d09.png";
 
 /***/ },
-/* 949 */
+/* 951 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "607c167c3e2c10106fb5c0d5581caedf.png";
 
 /***/ },
-/* 950 */
+/* 952 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f063db3a2cb0865dd7ec220f5ef063a2.png";
 
 /***/ },
-/* 951 */
+/* 953 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2015/03/17","event":{"what":"What the Brain Says About Machine Intelligence","when":{"begin":"2015/03/17 19:00","end":"2015/03/17 21:00"},"where":{"desc":"Cornell Tech","city":"New York","state":"NY","country":"USA","web":"http://www.meetup.com/numenta/events/220895892/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"meetup nyc new york city cornell tech what the brain says about machine intelligence jeff hawkins numenta","title":"What the Brain Says About Machine Intelligence NYC Meetup","type":"post","body":"<h3>Summary</h3>\n<p>Come hear Jeff Hawkins speak about the machine intelligence work being done at\nNumenta in NYC. This Meetup is an hour-long presentation by Jeff at 7PM,\nfollowed by another hour of networking and socialization. Anyone is welcome to\nattend, but you must RSVP. Anyone showing up at the door without an RSVP will be\nturned away.</p>\n<h3>Abstract</h3>\n<p>The neocortex is the only example we have of a cognitive system. I will argue\nthat understanding the principles of how the neocortex works and then building\nmachines that work on those principles is the only way to build intelligent\nmachines. I will describe the progress we are making in understanding how the\nneocortex works and demonstrate how we are turning that knowledge into useful\ntechnology and products.</p>\n<h3>Biography</h3>\n<p>Jeff Hawkins is an engineer, serial entrepreneur, scientist, inventor, and\nauthor. He was a founder of two mobile computing companies, Palm and Handspring,\nand was the architect of many computing products such as the PalmPilot and Treo\nsmartphone. Throughout his life Jeff has also had a deep interest in\nneuroscience and theories of the neocortex. In 2002 he founded the Redwood\nNeuroscience Institute, a scientific institute focused on understanding how the\nneocortex processes information. The institute is now located at U.C. Berkeley.\nIn 2004 he wrote the book On Intelligence, which describes progress on\nunderstanding the neocortex. In 2005 he co-founded Numenta, a startup company\nbuilding a technology based on neocortical theory. It is his hope that Numenta\nwill play a catalytic role in the emerging field of machine intelligence. Jeff\nHawkins earned his B.S. in electrical engineering from Cornell University\nin 1979. He was elected to the National Academy of Engineering in 2003.</p>\n<h3>About Numenta</h3>\n<p>Numenta, Inc. was formed in 2005 to develop biologically-inspired machine\nintelligence technology for both commercial and scientific use.</p>\n<h3>What is NuPIC?</h3>\n<p>NuPIC, the Numenta Platform for Intelligent Computing, comprises a set of open\nsource learning algorithms that were first described in a white paper published\nby Numenta in 2009. The learning algorithms faithfully capture how layers of\nneurons in the neocortex learn. The white paper has been translated into seven\nlanguages by volunteers and has generated considerable interest among developers\nand research scientists.</p>\n"}
 
 /***/ },
-/* 952 */
+/* 954 */
 841,
-/* 953 */
+/* 955 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":null,"date":"2015/05/30","event":{"when":{"begin":"2015/05/30 10:00","end":"2015/05/31 20:00"},"where":{"desc":"Cornell Tech","city":"New York City","state":"NY","country":"USA","web":"http://www.meetup.com/numenta/events/220422020/"}},"featured":false,"image":"../images/image.png","org":"Open Source Manager","tags":"nupic spring 2015 hackathon numenta machine intelligence htm hierarchical temporal memory","title":"NuPIC Spring 2015 Hackathon NYC","type":"post","body":"<h3>Please RSVP</h3>\n<p>Please RSVP on our <a href=\"http://Meetup.com\">Meetup.com</a> info page:</p>\n<ul>\n<li>Meetup: <a href=\"http://www.meetup.com/numenta/events/220422020/\">http://www.meetup.com/numenta/events/220422020/</a></li>\n</ul>\n<h3>More Info</h3>\n<ul>\n<li>NuPIC Event Page: <a href=\"http://numenta.org/events/hackathon/2015/may/\">http://numenta.org/events/hackathon/2015/may/</a></li>\n</ul>\n"}
 
 /***/ },
-/* 954 */
+/* 956 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "028f4cdc8745f7a32bed5035b033e12f.png";
 
 /***/ },
-/* 955 */
+/* 957 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":null,"date":"2015/06/01","event":{"when":{"begin":"2015/06/01","end":"2015/06/04"},"where":{"desc":"TBD","city":"Silicon Valley","state":"CA","country":"USA","web":"http://institute.orange.com/sessions/2015-2016-program"},"who":"Donna Dubinsky","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"CEO, Co-Founder","tags":"orange institute 14 silicon valley redefine business donna dubinsky numenta machine intelligence","title":"Orange Institute 14 How Silicon Valley is Redefining Business Again","type":"post","body":"<p>Disruption is the new norm. Many of us have watched the Digital Economy remake\nthe IT and tech world, from mainframes to mobile phones. At Orange Institute, we\nare convinced that this time it’s fundamentally different: Digital is\ntransforming everything, not just the Tech world. Entertainment is always the\nfirst to feel Technology’s shock. It continues to be the test-bed today. But for\nthe first time - as never before - all industries are impacted.</p>\n<p>Orange Institute’s Silicon Valley session explores how technology is\nrestructuring industries and the companies within, and helping them adapt to\nchanging customer behaviors. From the drive toward network virtualization,\nvirtual reality, mobile payments, and Cloud technology, to new device and\nconsumtion patterns, the scale of these incursions is explosive.</p>\n<p>Topics included in this session (preliminary):</p>\n<ul>\n<li>Corporate interaction with Startups</li>\n<li>Machine learning / Deep Learning</li>\n<li>Self-driving Cars, Robots, and Smart Homes</li>\n<li>The Full Stack: Silicon Valley’s secret formula for Disruption</li>\n<li>Studio System to Ecosystem: Hollywood confronts the YouTube Effect</li>\n<li>Regulating Disruption: How Silicon Valley challenges the rules</li>\n<li>Neuroscience meets Computer Science</li>\n<li>The Virtual Reality Rollout</li>\n</ul>\n"}
 
 /***/ },
-/* 956 */
+/* 958 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":"We are witnessing an explosion of sensors and machine generated data. Every server, every building, and every device generates a continuous stream of information that is ever changing and potentially valuable","date":"2015/08/18","event":{"what":"How Cognitive Computing Will Drive the Future of Analytics","when":{"begin":"2015/08/18","end":"2015/08/20"},"where":{"desc":"San Jose Convention Center","city":"San Jose","state":"CA","country":"USA","web":"http://smartdata2015.dataversity.net/"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"VP Research","tags":"dataversity smart data conference san jose 2015 subutai ahmad numenta htm hierarchical temporal memory cognitive computing","title":"Dataversity Smart Data Conference San Jose 2015","type":"post","body":"<p>A conference about Cognitive Computing, Internet of Things, and other current\nhot topics in Silicon Valley.</p>\n<p>Register with our discount code: <strong>NUMENTA</strong></p>\n<h3>Opening Keynote</h3>\n<p>Come see Subutai Ahmad, VP of Research for Numenta, speak on how cognitive\ncomputing will drive the future of analytics.</p>\n<ul>\n<li>Wednesday, August 19, 2015</li>\n<li>09:00 AM - 09:30 AM</li>\n<li>Level: \tBusiness/Strategic</li>\n</ul>\n<blockquote>\n<p>We are witnessing an explosion of sensors and machine generated data. Every\nserver, every building, and every device generates a continuous stream of\ninformation that is ever changing and potentially valuable. The existing big\ndata paradigm requires storing data for batch analysis, and extensive modeling\nby a human expert, prior to deployment. This is incredibly inefficient and\ncannot scale. Instead there is a growing need to rapidly create adaptive\nmodels that accept streaming data sources and can take instant action.</p>\n<p>In this talk I will describe a new paradigm for streaming data algorithms,\nbased on recent neuroscience findings and on the computational properties of\nthe neocortex. These systems are highly automated, adapt to changing\nstatistics, and naturally deal with temporal data streams. They require no\nbatch training and custom models can be deployed on the fly. Many of the core\nideas have been implemented in the open source project NuPIC, and validated in\ncommercial applications. Given the massive increase in the number of data\nsources, a general-purpose automated approach is the only scalable way to\neffectively analyze and act on continuously streaming information.</p>\n</blockquote>\n<p>Subutai Ahmad is the VP of Research at Numenta, a company focused on Machine\nIntelligence. Our technology, Hierarchical Temporal Memory (HTM), is a detailed\ncomputational framework based on principles of the brain. Our HTM learning\nalgorithms are available through the NuPIC open source community and are\nembedded in our commercial streaming analytics applications.</p>\n<p>Subutai’s experience includes computational neuroscience, machine learning,\ncomputer vision and building real time commercial systems. He has previously\nserved as VP Engineering at YesVideo where he helped grow the company from a\nthree-person start-up to a leader in automated digital media authoring. In 1997,\nSubutai co-founded ePlanet Interactive, a spin-off from Interval Research.\nePlanet developed the IntelPlay Me2Cam, the first computer vision product\ndeveloped for consumers.</p>\n<p>Subutai holds a B.S. in Computer Science from Cornell, and a Ph.D in Computer\nScience from the University of Illinois at Urbana-Champaign.</p>\n<h3>Meet Numenta</h3>\n<p>The Numenta team would love to meet you, answer any questions about our HTM\ntechnology, discuss cognitive computing, and show you around our intelligent\napplications.</p>\n<p>Open Hours:</p>\n<ul>\n<li>Tue Aug 18: 4:00pm - 6:30pm</li>\n<li>Wed Aug 19: 2:15pm - 8:00pm</li>\n</ul>\n<p>App Demos:</p>\n<ul>\n<li><a href=\"http://grokstream.com\">Grok</a></li>\n<li><a href=\"/htm-for-stocks/\">HTM for Stocks</a></li>\n<li>Rogue Behavior detection:\n<a href=\"/assets/pdf/whitepapers/Rogue%20Behavior%20Detection%20White%20Paper.pdf\">Whitepaper</a> (PDF),\n<a href=\"https://github.com/numenta/nupic.rogue\">Source Code</a></li>\n<li>GPS tracking:\n<a href=\"/assets/pdf/whitepapers/Geospatial%20Tracking%20White%20Paper.pdf\">Whitepaper</a> (PDF),\n<a href=\"https://github.com/numenta/nupic.geospatial\">Source Code</a></li>\n<li><a href=\"http://numenta.org\">NuPIC</a></li>\n</ul>\n"}
 
 /***/ },
-/* 957 */
+/* 959 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "01955fb277318bcdad7ebd26723f8ceb.png";
 
 /***/ },
-/* 958 */
+/* 960 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "215548f3b11f8a0c37196fa5a2d70827.png";
 
 /***/ },
-/* 959 */
+/* 961 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"The Berkeley Symposium on Energy Efficient Electronic Systems brings together researchers from around the world who are working on breakthrough improvements in energy efficiency for information processing systems","date":"2015/10/01","event":{"when":{"begin":"2015/10/01","end":"2015/10/02"},"where":{"desc":"Sutardja Dai Hall @ UC Berkeley","city":"Berkeley","state":"CA","country":"USA","web":"http://www.e3s-center.org/events/e3s-symposium/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"numenta jeff hawkins berkeley symposium energy efficient electronic systems htm hierarchical temporal memory","title":"Fourth Berkeley Symposium on Energy Efficient Electronic Systems","type":"post","body":"<p>The technical program consists of invited and contributed papers. Complementing\nthe oral presentation sessions is a poster session.</p>\n<p>The 2015 Organizing Committee is soliciting contributed papers on advances in\nthe following areas that will contribute to radical reduction in power\nconsumption:</p>\n<ul>\n<li>Ultra Low Voltage Nanoelectronics</li>\n<li>Milli-Volt Nanomechanical Logic</li>\n<li>Ultra-Low Energy Spintronics Optical Chip Scale Interconnects</li>\n<li>Low Voltage CMOS Circuits and Architectures</li>\n<li>Energy Efficient Computing Systems</li>\n</ul>\n<h3>The Symposium</h3>\n<p>The Berkeley Symposium on Energy Efficient Electronic Systems brings together\nresearchers from around the world who are working on breakthrough improvements\nin energy efficiency for information processing systems. The goal is to foster\ncloser cooperation and collaborations among the researchers working in this\ndomain of technology.</p>\n<p>Established in 2009, it is a forum for speakers, from academia, industry, and\ngovernment laboratories, to share their perspectives, and discuss issues and\napproaches, enabling the attendees to better understand this area from both\nabove and below them on the food chain. We have a grand scope in mind, extending\nfrom new low-power nanoelectronic devices, through circuit design, chip-scale\narchitecture, short-range interconnects, long-range interconnect, networks,\nsoftware, storage systems, servers, data centers and supercomputers.</p>\n<p>IEEE Electron Device Society became a technical co-sponsor in 2013.</p>\n"}
 
 /***/ },
-/* 960 */
+/* 962 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3e7da25ff53acd7f330c3a7f5c202b19.png";
 
 /***/ },
-/* 961 */
+/* 963 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c67bfb171e642e67bafd1d4aea66efaa.png";
 
 /***/ },
-/* 962 */
+/* 964 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"We are convening the leading venture and growth companies from around the world, highly curated by the GSV TEAM, to gather in Silicon Valley. We don’t want incremental ideas","date":"2015/10/07","event":{"when":{"begin":"2015/10/07","end":"2015/10/09"},"where":{"desc":"GSVlabs","city":"Redwood City","state":"CA","country":"USA","web":"http://gsvlabs.com/gsv-pioneer/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"numenta jeff hawkins nupic htm machine intelligence gsv labs gsvlabs pioneer summit","title":"GSVlabs Pioneer Summit 2015","type":"post","body":"<p>We are convening the leading venture and growth companies from around the world,\nhighly curated by the GSV TEAM, to gather in Silicon Valley. We don’t want\nincremental ideas. Our main mission is to help accelerate entrepreneurs’ efforts\nto make a significant impact on industries and societies.</p>\n<p>In the spirit of Davos and TED, we want to explore the ideas that will transform\nand improve the world, yet focus on tangible companies that entrepreneurs are\nbuilding through blood, sweat and tears.</p>\n<p>Our goal is not to be the biggest summit, but to be the most impactful. We bring\ntogether the key people driving growth in the Global Silicon Valley. The\nPioneers at our Summit believe that we can build companies that are\ntransformative, global and inclusive.</p>\n"}
 
 /***/ },
-/* 963 */
+/* 965 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "656e6f50dac5f745e33a749d8e0d27ef.png";
 
 /***/ },
-/* 964 */
+/* 966 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0e1d5a50c59364fa86bf8973c774661c.png";
 
 /***/ },
-/* 965 */
+/* 967 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"Get inspired. Learn about what is next in technology. Straight from tech leaders, startup founders and visionaries. Hear the stories of innovators who are building companies that change our life, our work and our business.","date":"2015/10/22","event":{"what":"The Future of Machine Intelligence","when":{"begin":"2015/10/22","end":"2015/10/23"},"where":{"desc":"Municipal Arena","city":"Kansas City","state":"MO","country":"USA","web":"http://www.computemidwest.com/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"compute midwest 2015 jeff hawkins numenta future of machine intelligence imagine the future","title":"Compute Midwest 2015 - Imagine the Future","type":"post","body":"<h3>Imagine The Future</h3>\n<p>Get inspired: learn about what’s next in technology - straight from tech\nleaders, startup founders &amp; visionaries.</p>\n<p>Hear the stories of innovators who are building companies that change our life,\nour work &amp; our business.</p>\n<p>Connect with 500+ forward thinking tech minds, exchange/build new ideas &amp; gather\ntakeaways that can move your career/company forward!</p>\n"}
 
 /***/ },
-/* 966 */
+/* 968 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c0c66e69b9d84e3cac4e731e42c05372.png";
 
 /***/ },
-/* 967 */
+/* 969 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":"In the last few years, optical techniques have emerged that allow near-simultaneous acquisition of neuronal activity at the whole-brain level and with single-cell resolution","date":"2015/11/01","event":{"when":{"begin":"2015/11/01","end":"2015/11/04"},"where":{"desc":"HHMI Janelia Research Campus","city":"Ashburn","state":"VA","country":"USA","web":"https://www.janelia.org/you-janelia/conferences/emerging-tools-acquisition-and-interpretation-whole-brain-functional-data"},"who":"Subutai Ahmad","why":"Invited Participant"},"featured":false,"image":"../images/image.png","org":"VP Research","tags":"subutai ahmad numenta htm machine intelligence janelia research emerging tools whole brain functional data","title":"HHMI Janelia Emerging Tools for Acquisition and Interpretation of Whole-Brain Functional Data","type":"post","body":"<p>In the last few years, optical techniques have emerged that allow\nnear-simultaneous acquisition of neuronal activity at the whole-brain level and\nwith single-cell resolution for small model organisms. Given the enormous\ndensity of interconnectivity of neurons in the brain, these techniques bear\ngreat potential for advancing our understanding of how the information\nunderlying behavior is represented and processed by neuronal networks in a\ndynamic fashion and at the whole-brain level.  At the same time, these new tools\nhave transitioned neuroscience into the field of “Big Data”, where terabytes of\ndata are produced per microscope and day. It is expected that major\nbreakthroughs in coming years will result from making sense of these data sets.\nThis calls for the application of advanced machine learning, statistics tools\nand mathematical modeling as well as an IT infrastructure capable of handling\nsuch data sets efficiently. This meeting will bring together experts and\npioneers in these fields to identify synergies and new opportunities and to\ndiscuss the main challenges moving forward.</p>\n"}
 
 /***/ },
-/* 968 */
+/* 970 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c72032f31063e96d30db8524a06b8f8e.png";
 
 /***/ },
-/* 969 */
+/* 971 */
 866,
-/* 970 */
+/* 972 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0d981d48ae07394331be8e3dfb6ca851.png";
 
 /***/ },
-/* 971 */
+/* 973 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f4f7c3bc1f22708fc0b2238dcc6e1863.png";
 
 /***/ },
-/* 972 */
+/* 974 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":"Subutai Ahmad, VP Research at Numenta, speaks at MLConf SF on Real-time Anomaly Detection for Real-time Data Needs. MLconf gathers communities to discuss the recent research and application of Algorithms, Tools, and Platforms to solve the hard problems that exist within","date":"2015/11/13","event":{"what":"Real-time Anomaly Detection for Real-time Data Needs","when":{"begin":"2015/11/13","end":"2015/11/13"},"where":{"desc":"Julia Morgan Ballroom","city":"San Francisco","state":"CA","country":"USA","web":"http://mlconf.com/events/san-francisco-ca/"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"VP Research","tags":"subutai ahmad numenta htm real time streaming data anomaly detection mlconf machine learning conference san francisco sf 2015","title":"MLConf Machine Learning Conference San Francisco 2015","type":"post","body":"<h3>THE MACHINE LEARNING CONFERENCE</h3>\n<p>MLconf gathers communities to discuss the recent research and application of\nAlgorithms, Tools, and Platforms to solve the hard problems that exist within\norganizing and analyzing massive and noisy data sets.</p>\n"}
 
 /***/ },
-/* 973 */
+/* 975 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":"This is an event organized by the NuPIC community to accompany the Numenta HTM Challenge Onsite. If you are coming to the Challenge and want to meet members of the NuPIC community the night before, please RSVP.","date":"2015/11/13","event":{"what":"Numenta HTM Challenge Community Meetup","when":{"begin":"2015/11/13 15:00","end":"2015/11/13 21:00"},"where":{"desc":"Numenta","city":"Redwood City","state":"CA","country":"USA","web":"http://www.meetup.com/numenta/events/224711563/"},"who":null,"why":null},"featured":false,"image":"../images/htm-challenge.png","org":"Open Source Flag-Bearer","tags":"numenta htm challenge 2015 community meetup hierarchical temporal memory machine intelligence learning brain neocortex","title":"Numenta HTM Challenge Community Meetup","type":"post","body":"<h2>Numenta HTM Challenge Community Meetup</h2>\n<p>This is an event organized by the NuPIC community to accompany the Numenta HTM\nChallenge Onsite. If you are coming to the Challenge and want to meet members of\nthe NuPIC community the night before, please RSVP.</p>\n"}
 
 /***/ },
-/* 974 */
+/* 976 */
 866,
-/* 975 */
+/* 977 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":"The Numenta HTM Challenge is an online coding contest encouraging the creation of Hierarchical Temporal Memory applications.","date":"2015/11/14","event":{"what":"Numenta HTM Challenge Onsite","when":{"begin":"2015/11/14 10:00","end":"2015/11/14 20:00"},"where":{"desc":"San Mateo County History Museum","city":"Redwood City","state":"CA","country":"USA","web":"http://www.meetup.com/numenta/events/224711586/"},"who":null,"why":null},"featured":false,"image":"../images/image.png","org":"Open Source Flag-Bearer","tags":"numenta htm challenge onsite 2015 nupic hierarchical temporal memory brain neocortex machine learning intelligence","title":"Numenta HTM Challenge Onsite","type":"post","body":"<h2>Numenta HTM Challenge Onsite</h2>\n<p>The Numenta HTM Challenge is an online coding contest encouraging the creation\nof Hierarchical Temporal Memory applications.</p>\n"}
 
 /***/ },
-/* 976 */
+/* 978 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin","brief":"Alexander Lavin, Numenta Research Engineer, speaks on Evaluating Realtime Anomaly Detection Algorithms – the Numenta Anomaly Benchmark, at IEEE ICMLA'15 Miami.","date":"2015/12/09","event":{"what":"Evaluating Realtime Anomaly Detection Algorithms – the Numenta Anomaly Benchmark","when":{"begin":"2015/12/09","end":"2015/12/11"},"where":{"desc":"TBD","city":"Miami","state":"FL","country":"USA","web":"http://www.icmla-conference.org/icmla15/"},"who":"Alexander Lavin","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Engineer","tags":"ieee machine learning conference numenta alexander lavin reserach numenta anomaly detection algorithm benchmark","title":"14th IEEE International Conference on Machine Learning and Applications (ICMLA)","type":"post","body":"<h3>IEEE ICMLA’15</h3>\n<h4>14th International Conference on Machine Learning and Applications</h4>\n<p>The 14th International Conference on Machine Learning and Applications (IEEE\nICMLA’15) will be held in Miami, Florida, USA, December, 2015.</p>\n<p>The aim of the conference is to bring researchers working in the areas of\nmachine learning and applications together. The conference will cover both\ntheoretical and experimental research results. Submission of machine learning\npapers describing machine learning applications in fields like medicine,\nbiology, industry, manufacturing, security, education, virtual environments,\ngame playing and problem solving is strongly encouraged.</p>\n<p>Conference content will be submitted for inclusion into IEEE Xplore as well as\nother Abstracting and Indexing (A&amp;I) databases.</p>\n"}
 
 /***/ },
-/* 977 */
+/* 979 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e193cb425b32d81e254435ea88076d1e.png";
 
 /***/ },
-/* 978 */
+/* 980 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e060ccbe3090d5bb1040e4e5aec920b0.png";
 
 /***/ },
-/* 979 */
+/* 981 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/02/25","event":{"what":"A Theory of Sequence Memory in the Neocortex","when":{"begin":"2016/02/25","end":"2016/02/28"},"where":{"desc":"Marriott Downtown","city":"Salt Lake City","state":"UT","country":"USA","web":"http://www.cosyne.org/c/index.php?title=Cosyne_16"},"who":"Jeff Hawkins, Subutai Ahmad, Yuwei Cui, and Scott Purdy","why":"Poster Presentation"},"featured":false,"image":"../images/image.png","org":"Research Team","tags":"theory sequence memory neocortex cosyne 2016 computational and systems neuroscience numenta jeff hawkins","title":"COSYNE 2016 Computational and Systems Neuroscience Meeting","type":"post","body":"<h4>Abstract</h4>\n<p><strong>A Theory of Sequence Memory in the Neocortex</strong></p>\n<p>Neocortical neurons have thousands of excitatory synapses. It is a mystery how\nneurons integrate the input from so many synapses and what kind of large-scale\nnetwork behavior this enables. It has been previously proposed that non-linear\nproperties of dendrites enable neurons to recognize multiple patterns. In this\npaper we extend this idea by showing that a neuron with several thousand\nsynapses arranged along active dendrites can learn to accurately and robustly\nrecognize hundreds of unique patterns of cellular activity, even in the presence\nof large amounts of noise and pattern variation. We then propose a neuron model\nwhere some of the patterns recognized by a neuron lead to action potentials and\ndefine the classic receptive field of the neuron, whereas the majority of the\npatterns recognized by a neuron act as predictions by slightly depolarizing the\nneuron without immediately generating an action potential. We then present a\nnetwork model based on neurons with these properties and show that the network\nlearns a robust model of time-based sequences. Given the similarity of\nexcitatory neurons throughout the neocortex and the importance of sequence\nmemory in inference and behavior, we propose that this form of sequence memory\nis a universal property of neocortical tissue. We further propose that cellular\nlayers in the neocortex implement variations of the same sequence memory\nalgorithm to achieve different aspects of inference and behavior. The neuron and\nnetwork models we introduce are robust over a wide range of parameters as long\nas the network uses a sparse distributed code of cellular activations. The\nsequence capacity of the network scales linearly with the number of synapses on\neach neuron. Thus neurons need thousands of synapses to learn the many temporal\npatterns in sensory stimuli and motor sequences.</p>\n<p>Related links:</p>\n<ul>\n<li><a href=\"http://numenta.com/learn/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex.html\">Blog Post</a></li>\n<li><t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.sequence%7D%7D\">PDF Whitepaper</a></t></li>\n</ul>\n<h4>About Cosyne</h4>\n<p>The annual Cosyne meeting provides an inclusive forum for the exchange of\nexperimental and theoretical/computational approaches to problems in systems\nneuroscience.</p>\n<p>To encourage interdisciplinary interactions, the main meeting is arranged in a\nsingle track. A set of invited talks are selected by the Executive Committee and\nOrganizing Committee, and additional talks and posters are selected by the\nProgram Committee, based on submitted abstracts.</p>\n<p>Cosyne topics include (but are not limited to): neural coding, natural scene\nstatistics, dendritic computation, neural basis of persistent activity,\nnonlinear receptive field mapping, representations of time and sequence, reward\nsystems, decision-making, synaptic plasticity, map formation and plasticity,\npopulation coding, attention, and computation with spiking networks.\nParticipants include pure experimentalists, pure theorists, and everything in\nbetween.</p>\n"}
 
 /***/ },
-/* 980 */
-947,
-/* 981 */
-948,
 /* 982 */
+949,
+/* 983 */
+950,
+/* 984 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin","brief":null,"date":"2016/03/07","event":{"what":"Global Big Data Conference 2016","when":{"begin":"2016/03/07","end":"2016/03/09"},"where":{"desc":"Santa Clara Convention Center","city":"Santa Clara","state":"CA","country":"USA","web":"http://globalbigdataconference.com/67/santa-clara/global-data-science-conference/event.html"},"who":"Alexander Lavin","why":"Speaking"},"featured":false,"image":"../images/bigdata.png","org":"Research Engineer","tags":"global big data conference 2016 numenta htm hierarchical temporal memory","title":"Global Big Data Conference 2016","type":"post","body":"<p>Global Big Data Conference’s vendor agnostic Global Data Science Conference is\nheld on March 7th, March 8th &amp; March 9th, 2016 on all industry verticals. The\nConference allows practitioners to discuss data science through effective use\nof various data management techniques.</p>\n<p>Large amount of data created by various mobile platforms, social media\ninteractions, e-commerce transactions, and IoT provide an opportunity for\nbusinesses to effectively tailor their services by effective use of data\nanalytics. Proper use of data science can be a major competitive advantage for\nany business considering vast amount of  data being generated.</p>\n<p>Data Science is an emerging field that allows businesses to effectively mine\nhistorical data and better understand consumer behavior. This type of scientific\ndata management approach is critical for any business to successfully launch its\nproducts and better serve its existing markets.</p>\n"}
 
 /***/ },
-/* 983 */
+/* 985 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "14c87d4dcb18de2d88acdbaa197c63df.png";
 
 /***/ },
-/* 984 */
+/* 986 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3583715a9311e1973e4b76f72bf72236.png";
 
 /***/ },
-/* 985 */
+/* 987 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2016/03/07","event":{"what":null,"when":{"begin":"2016/03/07","end":"2016/03/09"},"where":{"desc":"Clark Kerr Campus, UC Berkeley","city":"Berkeley","state":"CA","country":"USA","web":"http://neuroscience.berkeley.edu/2016-neuro-inspired-computational-elements-workshop/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/nice.png","org":"Co-Founder","tags":"numenta jeff hawkins speaking neuro inspired computational elements workshop nice 2016","title":"Neuro-Inspired Computational Elements (NICE) Workshop 2016","type":"post","body":"<h3>Workshop focus</h3>\n<p>Conventional, stored program architecture systems are designed for algorithmic\nand exact calculations.  However, the problems with highest impact involve\nlarge, noisy, incomplete, “natural” data sets that do not lend themselves to\nconvenient solutions by current systems.  Our task is to build upon the\nconvergence among neuroscience, microelectronics and computational systems to\ndevelop a new architecture designed to handle these natural data sets. The\napplications and clarification of the value proposition for new neuro-inspired,\nneuromorphic systems are critical focal points of this workshop.</p>\n<h3>Themes</h3>\n<p><strong>Neuroscience:</strong> Sensory information processing in cells and circuits,\nmechanisms of plasticity, learning and development.</p>\n<p><strong>Theory:</strong> Theoretical principles of brain information processing, sparse\ncoding, stochastic computing, the role of spikes, Bayesian computing.</p>\n<p><strong>Algorithms:</strong> Computational synthesis of brain information processing, deep\nlearning.</p>\n<p><strong>Platforms/Hardware:</strong> Massively parallel neuromorphic hardware architectures,\napplication of commodity systems, novel digital, analog and mixed-signal\narchitectures, application of novel devices.</p>\n<p><strong>Applications:</strong> Robotics, spatio-temporal pattern detection, causal relations\nin big data, prediction, approximate computing.</p>\n"}
 
 /***/ },
-/* 986 */
-949,
-/* 987 */
-950,
 /* 988 */
+951,
+/* 989 */
+952,
+/* 990 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/03/14","event":{"what":"HTM Bay Area Meetup","when":{"begin":"2016/03/14 18:30","end":"2016/03/14 21:30"},"where":{"desc":"Trustly @ 4500 Great America Pkwy","city":"Santa Clara","state":"CA","country":"USA","web":"http://www.meetup.com/numenta"},"who":"Matthew Taylor & Christy Maver","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Matt Taylor & Christy Maver","tags":"numenta htm hierarchical temporal memory bay area meetup santa clara ca","title":"HTM Bay Area Meetup in Santa Clara","type":"post","body":"<p>Please join Numenta speakers Matt Taylor (Open-Source Community Manager) and\nChristy Maver (Director of Marketing) for this HTM Bay Area Community Meetup.\nEvent located at the Trustly offices in Santa Clara, CA.</p>\n<p>Meet HTM hackers, AI researchers, Entrepreneurs and enthusiast working in the\nfield of Artificial Intelligence. A brief agenda is listed below.  Like before\nwe have a special focus on HTM projects and talks.</p>\n<p>Make sure you are signing up for a lightning talk if you plan to present. <em>Slots\nare limited, make sure you sign up fast</em>.</p>\n"}
 
 /***/ },
-/* 989 */
+/* 991 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "581c67371b7e5272d3d8bf2c285d2ee3.png";
 
 /***/ },
-/* 990 */
+/* 992 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "23920bfcee833d9460abf49a099a7994.png";
 
 /***/ },
-/* 991 */
+/* 993 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/03/17","event":{"what":"Introductory Workshop - Numenta's Hierarchical Temporal Memory (HTM)","when":{"begin":"2016/03/17 18:00","end":"2016/03/17 20:00"},"where":{"desc":"190 Doe Memorial Library, UC Berkeley","city":"Berkeley","state":"CA","country":"USA","web":"http://bids.berkeley.edu/events/numenta-workshop"},"who":"Numenta Engineering","why":"Speaking"},"featured":true,"image":"../images/image.png","org":"Event","tags":"numenta htm workshop hierarchical temporal memory berkeley institute data science bids","title":"Numenta HTM Workshop at Berkeley Institute for Data Science","type":"post","body":"<h3>Description</h3>\n<p>This event will introduce the Numenta platform and give students\nthe opportunity to learn about cutting-edge research. Members of the Numenta\nengineering team will host a workshop on using their platform and its impact.</p>\n"}
 
 /***/ },
-/* 992 */
+/* 994 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3de52d9b1f0cc5ce7784024e9423e9bd.png";
 
 /***/ },
-/* 993 */
+/* 995 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7753b482bb7080225bf758dbef7093c3.png";
 
 /***/ },
-/* 994 */
+/* 996 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/03/29","event":{"what":null,"when":{"begin":"2016/03/29","end":"2016/03/31"},"where":{"desc":"San Jose Convention Center, Booth #540","city":"San Jose","state":"CA","country":"USA","web":"http://conferences.oreilly.com/strata/hadoop-big-data-ca"},"who":null,"why":null},"featured":false,"image":"../images/image.png","org":"Event","tags":"strata hadoop world big data conference 2016 oreilly numenta machine intelligence","title":"Strata + Hadoop World 2016: O’Reilly Big Data Conference","type":"post","body":"<blockquote>\n<p>Sponsored by Numenta. See us at Booth #540.</p>\n</blockquote>\n<h3>Event Details</h3>\n<p>Big data means big business. Learn to survive and thrive in a data-driven world.</p>\n<p>Make big data work. We’ve assembled the world’s best data scientists, analysts,\nand executives from innovative companies of all sizes to share deep, hard-won\nknowledge. Compelling data case studies, proven best practices, effective new\nanalytic approaches, and core skills will give you insight around:</p>\n<ul>\n<li>Data-driven business</li>\n<li>Data innovations</li>\n<li>Data science &amp; advanced analytics</li>\n<li>Enterprise adoption</li>\n<li>Hadoop use cases</li>\n<li>Hadoop internals &amp; development</li>\n<li>IoT &amp; real-time</li>\n<li>Law, ethics, governance</li>\n<li>Security</li>\n<li>Spark &amp; beyond</li>\n<li>Visualization &amp; user experience</li>\n</ul>\n"}
 
 /***/ },
-/* 995 */
+/* 997 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Yuwei Cui","brief":null,"date":"2016/04/07","event":{"what":null,"when":{"begin":"2016/04/07 18:30","end":"2016/04/07 19:30"},"where":{"desc":"404 Bryant Street","city":"San Francisco","state":"CA","country":"USA","web":"https://www.eventbrite.com/e/ai-meetup-hierarchal-temporal-memory-presented-by-numenta-tickets-24327505223"},"who":"Yuwei Cui","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"numenta htm hierarchical temporal memory ai meetup san francisco","title":"AI Meetup - Hierarchical Temporal Memory","type":"post","body":"<h3>Event Details</h3>\n<p>Hosted by San Francisco Artificial Intelligence Meetup. On April 7th, we are\nproudly having Yuwei Cui, Ph.D., and Research Engineer at Numenta who will\npresent us the heart of company’s technology - Hierarchical Temporal Memory.</p>\n<p>HTM is a detailed computational theory of the neocortex. At the core of HTM are\ntime-based learning algorithms that store and recall spatial and temporal\npatterns. HTM is well suited to a wide variety of problems; particularly those\ninvolve streaming data and time-based patterns. The current HTM systems are able\nto learn the structure of streaming data, make predictions and detect anomalies.\nIt is distinguished from other techniques in its ability to learn continuously\nin a fully unsupervised manner.</p>\n<p>HTM has been tested and implemented in software, all of which is developed with\nbest practices and is suitable for deploying in commercial applications. The\ncore learning algorithms are fully documented and available in an open source\nproject called NuPIC.</p>\n"}
 
 /***/ },
-/* 996 */
+/* 998 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d9fa06900dd9db596ffa6159ea5d34c1.png";
 
 /***/ },
-/* 997 */
+/* 999 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a4395369723561ce15ca1bae3332a852.png";
 
 /***/ },
-/* 998 */
+/* 1000 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":null,"date":"2016/04/09","event":{"what":"Using HTM with GPS Data","when":{"begin":"2016/04/09","end":"2016/04/10"},"where":{"desc":"Joseph P. Bort MetroCenter Auditorium","city":"Oakland","state":"CA","country":"USA","web":"http://connected-car.devpost.com/"},"who":"Matthew Taylor","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Open Source Manager","tags":"mtc connected car hackathon oakland numenta nupic","title":"Connected Car Hackathon","type":"post","body":"<h3>Event Details</h3>\n<p>Numenta is a Gold Sponsor of this hackathon that seeks to bring together\nprogrammers, developers, artists, technologists, data analysts, environmental\nstewards, travel behavior experts, commuters, and others who are interested in\nusing technology to address our region’s transportation challenges in order to\ntransform how we get around the Bay Area. Participants will have the opportunity\nto use data sets coming from connected cars to build apps and tools that\nencourage smarter driving, safer driving, and maybe even encourage travelers to\nconsider alternate travel options.</p>\n<p>Matt Taylor will give a breakout presentation and be on hand to help hackers use\nHTM with their GPS data.</p>\n"}
 
 /***/ },
-/* 999 */
+/* 1001 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4eb55cfe159ecaef9044401da7d644b8.png";
 
 /***/ },
-/* 1000 */
+/* 1002 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0eae53f0313267b0d869beb1487c52b6.png";
 
 /***/ },
-/* 1001 */
+/* 1003 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "eb99b3182524f1bafab6a2f2ceea542d.png";
 
 /***/ },
-/* 1002 */
+/* 1004 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin","brief":null,"date":"2016/04/23","event":{"what":"TEDx Cornell Tech","when":{"begin":"2016/04/23 10:00","end":"2016/04/23 16:00"},"where":{"desc":"Infor, 641 Avenue of the Americas","city":"New York City","state":"NY","country":"USA","web":"http://www.tedxcornelltech.com/"},"who":"Alexander Lavin","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"ted tedx cornell tech alexander lavin numenta research engineer","title":"TEDx Cornell Tech","type":"post","body":"<h3>Event Details</h3>\n<p>TEDx events are TED-like conferences organized and conducted by local\ncommunities, where speakers present on ideas that challenge audiences to change\nthe way they think. Our event is organized around our NYC-based Cornell Tech\ncommunity.</p>\n<p>Cornell Tech is a revolutionary new technology focused campus of Cornell\nUniversity, located in New York City.</p>\n"}
 
 /***/ },
-/* 1003 */
+/* 1005 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "eb20aed54e0e148213c73e7ee386a7a2.png";
 
 /***/ },
-/* 1004 */
+/* 1006 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "156c30af83f0ed7fd51d2373e94e9b3a.png";
 
 /***/ },
-/* 1005 */
+/* 1007 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/04/26","event":{"what":"Machine Intelligence with Streaming Data. A new approach for anomaly detection and time-based learning.","when":{"begin":"2016/04/26 09:00","end":"2016/04/26 10:00"},"where":{"desc":"Online","city":null,"state":null,"country":null,"web":"http://www.prohuddle.com/webinars/ChristyAndScott/Machine_Intelligence_with_Streaming_Data_A_New_Approach.php"},"who":"Christy Maver & Scott Purdy","why":"Webinar"},"featured":false,"image":"../images/image.png","org":"Christy Maver & Scott Purdy","tags":"numenta webinar machine intelligence with streaming data","title":"Webinar: Machine Intelligence with Streaming Data","type":"post","body":"<blockquote>\n<p><strong>Machine Intelligence with Streaming Data.</strong>\nA new approach for anomaly detection and time-based learning.</p>\n</blockquote>\n<h3>About the Webinar</h3>\n<p>Across every industry, we are seeing an exponential increase in the availability\nof streaming, time-series data. The real-time detection of anomalies has\nsignificant practical application. Finding anomalies in such data can be very\ndifficult, given the need to process data in real time, and learn while\nsimultaneously making predictions. With the increasing variety of streaming data\nsources, automated deployment—without manual parameter tuning—is also becoming\nimportant.</p>\n<p>Numenta’s online sequence memory algorithm, called Hierarchical Temporal Memory\n(HTM), has been used to detect anomalies in IT monitoring, human behavior, the\nstock market, geospatial data, and more. This webinar will introduce this novel\ntechnique, demonstrate its broad applicability, and cover performance details\nfrom a published benchmark designed for real-time anomaly detection.</p>\n"}
 
 /***/ },
-/* 1006 */
+/* 1008 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ecf4e85c9865a834ba820d3ce54c4025.png";
 
 /***/ },
-/* 1007 */
+/* 1009 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":null,"date":"2016/05/12","event":{"what":"What is Intelligence, that a Machine Might Have Some?","when":{"begin":"2016/05/12 18:30","end":"2016/05/12 20:00"},"where":{"desc":"Indiegogo","city":"San Francisco","state":"CA","country":"USA","web":"http://www.meetup.com/NeuroTechSF/events/230385690/"},"who":"Jeff Hawkins","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Co-Founder","tags":"jeff hawkins numenta founder speaking machine intelligence artificial neocortex","title":"NeuroTechX meetup featuring Jeff Hawkins","type":"post","body":"<blockquote>\n<p>What is Intelligence, that a Machine Might Have Some?</p>\n</blockquote>\n<h3>Event Details</h3>\n<p>On May 12, NeuroTechX and Indiegogo are proud to host Jeff Hawkins, co-founder\nof Numenta, who will give a talk titled, “What is Intelligence, that a Machine\nMight Have Some?”</p>\n<p>There’s no question that Artificial Intelligence (AI) is hotter than ever. Yet\nas interest continues to grow, so do the number of interpretations of AI itself.\nNumenta’s approach lays the groundwork for the new era of Machine Intelligence.\nLed by Hawkins, the company’s mission is to reverse engineer the neocortex to\nbuild intelligent machines. This approach, which is not just biologically\ninspired, but biologically constrained, is based on the understanding that the\nbrain is the only example we have of an intelligent system.</p>\n<p>While there’s more work to be done, Numenta has made great progress toward a\ncomputational theory of the neocortex called HTM. At the core of HTM are\ntime-based learning algorithms that store and recall spatial and temporal\npatterns. It is distinguished from other techniques in its ability to learn\ncontinuously in a fully unsupervised manner.</p>\n<p>In this talk, Jeff will raise important questions about the implications of this\nwork: what is the legacy that we should be aiming for? What is intelligence\nitself? What should we do to try to build intelligent machines? What might these\nmachines look like in the future and what will they do? He’ll cover the\nbiological components of intelligence, the functional components of intelligence\nand the diversity of intelligence machines.</p>\n<p>Don’t miss the chance to hear Jeff speak on this fascinating topic.</p>\n"}
 
 /***/ },
-/* 1008 */
+/* 1010 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":null,"date":"2016/05/19","event":{"what":"Detecting Anomalies in Streaming Data - Real-time Algorithms for Real-world applications","when":{"begin":"2016/05/19 14:10","end":"2016/05/19 14:50"},"where":{"desc":"Galvanize SOMA","city":"San Francisco","state":"CA","country":"USA","web":"http://ai.bythebay.io/"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/aibythebay.png","org":"VP Research","tags":"ai by the bay numenta detecting anomalies streaming data real time algorithms real world applications machine intelligence","title":"AI by the Bay","type":"post","body":"<blockquote>\n<p>“Detecting Anomalies in Streaming Data - Real-time Algorithms for Real-world\napplications”</p>\n</blockquote>\n<h3>Abstract</h3>\n<p>There’s no question that we are seeing an increase in the availability of\nstreaming, time-series data. Largely driven by the rise of the Internet of\nThings (IoT) and connected real-time data sources, we now have an enormous\nnumber of applications with sensors that produce important data that changes\nover time. This data presents a challenge and opportunity for businesses across\nevery industry. How do they handle the onslaught of streaming data? How can they\nexploit it to make decisions in real-time? One way is to detect, in real time,\nwhen something unusual occurs. Early anomaly detection in streaming data has\nsignificant implications, yet can be very difficult to execute. It requires\ndetectors to process data in real-time, not batches, and learn while\nsimultaneously making predictions. In this talk, we’ll look at algorithms\ndesigned for such data and analyze the components that lead to optimal\nperformance. We’ll also discuss a new benchmark with a labeled, real-world data\nset, designed to provide a controlled and repeatable environment of open-source\ntools to test and measure anomaly detection algorithms on streaming data. How do\nwe score in a way that rewards algorithms that detect all anomalies as soon as\npossible, triggers no false alarms, works with real-world time-series data\nacross a variety of domains, and automatically adapts to changing statistics?</p>\n<h3>Event Details</h3>\n<p>AI By the Bay is a new conference applying scalable Machine Learning to batch\nand streaming data. Text and speech channels such as social media, sensors and\nother Internet of Things devices are generating more of these streams every day.\nThese streams can be understood semantically, correlated, and used for real-time\nmodeling of interactions crucially relevant to your business. We’ll apply the\nsame scientific rigor and uncompromising software engineering presented at Text\nBy the Bay 2015 to the AI and IoT domains, and connect them through open-source\nsystems, applications, and community.</p>\n"}
 
 /***/ },
-/* 1009 */
+/* 1011 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":null,"date":"2016/05/19","event":{"what":null,"when":{"begin":"2016/05/19","end":"2016/05/20"},"where":{"desc":"InterContinental Chicago Magnificent Mile","city":"Chicago","state":"IL","country":"USA","web":"https://theinnovationenterprise.com/summits/business-analytics-innovation-summit-chicago-2016"},"who":"Christy Maver","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Director of Marketing","tags":"business analytics innovation summit chicago 2016 numenta htm","title":"Business Analytics Innovation Summit Chicago 2016","type":"post","body":"<blockquote>\n<p>“Smart Business Insights for Smarter Business Decisions”</p>\n</blockquote>\n<h3>Event Details</h3>\n<p>The Business Analytics Innovation Summit provides a platform to share unique\ninsight into the innovations that are driving success in the worlds leading\norganizations.</p>\n<ul>\n<li>25+ Industry thought leaders take the stage</li>\n<li>Case studies, challenges, successes, lessons &amp; more</li>\n<li>Solutions &amp; Services to fit your business analytics needs</li>\n<li>Ample Networking opportunities, over 20 hours of networking provided</li>\n<li>150+ Analytics professionals in attendance</li>\n<li>A range of industries representing their analytics stories</li>\n</ul>\n"}
 
 /***/ },
-/* 1010 */
+/* 1012 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ddbad9ff8c375d55aa00883022320680.png";
 
 /***/ },
-/* 1011 */
+/* 1013 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a863c732ad5fc58a7024116e91d57902.png";
 
 /***/ },
-/* 1012 */
+/* 1014 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Celeste Baranski","brief":null,"date":"2016/05/25","event":{"what":"Reverse-Engineering the Neocortex","when":{"begin":"2016/05/25 12:10","end":"2016/05/25 12:35"},"where":{"desc":"Rackspace","city":"San Francisco","state":"CA","country":"USA","web":"https://www.eventbrite.com/e/ai-startups-conference-tickets-24722374287"},"who":"Celeste Baranski","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"VP Engineering","tags":"ai startups conference 2016 san francisco reverse engineering neocortex machine intelligence","title":"AI Startups Conference","type":"post","body":"<h3>Event Details</h3>\n<p>Conference open from 9:00am - 5:00pm (PST).</p>\n"}
 
 /***/ },
-/* 1013 */
+/* 1015 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "18548fa99edb9ee022bf251186e37506.png";
 
 /***/ },
-/* 1014 */
+/* 1016 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8ba466249ad29a0dd7bae2377940c64d.png";
 
 /***/ },
-/* 1015 */
+/* 1017 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin","brief":null,"date":"2016/06/01","event":{"what":"Deriving Machine Intelligence from Neuroscience","when":{"begin":"2016/06/01 19:00","end":"2016/06/01 20:00"},"where":{"desc":"OC Deep Learning, HTM, ANN, NLP & AI Meetup","city":"Irvine","state":"CA","country":"USA","web":"http://www.meetup.com/OC-Deep-Learning-HTM-ANN-NLP-AI/events/230346144/"},"who":"Alexander Lavin","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"numenta machine intelligence neuroscience orange county oc meetup","title":"OC Meetup - Deriving Machine Intelligence from Neuroscience","type":"post","body":"<p><strong>Hosted by: OC Deep Learning, HTM, ANN, NLP &amp; AI Meetup.</strong></p>\n<p>Alex will be presenting via webinar and his company Numenta who’s a leader in\nthis new era of machine intelligence is kind enough to be sending us some\nmaterials and giveaways so we will be able to share in some first hand data\ncoming from this exciting field of Hierarchical Temporal Memory (HTM) which is\ndetailed computational theory based on the neocortex.</p>\n<p>This will be an interactive webinar for those that can not make it in person.\nSee event page to sign-up to attend in person, or via webinar.</p>\n"}
 
 /***/ },
-/* 1016 */
+/* 1018 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Yuwei Cui","brief":null,"date":"2016/06/18","event":{"what":null,"when":{"begin":"2016/06/18","end":"2016/06/21"},"where":{"desc":"The Foundation for Research and Technology-Hellas (FORTH)","city":"Heraklion","state":"Crete","country":"Greece","web":"http://www.dendrites2016.gr/"},"who":"Yuwei Cui","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"numenta htm hierarchical temporal memory dendritic anatomy molecules function herkalion crete 2016 event","title":"Dendritic Anatomy, Molecules and Function","type":"post","body":"<h3>Event Details</h3>\n<p>Spotlight on molecules, structure, and function</p>\n<p>Dendrites are thin processes extending from the cell bodies of multiple neuron\ntypes. Since the majority of synaptic connections take place on dendrites, they\nprovide the primary substrate for inter-neuronal communication. In addition to\ntheir role as conducting cables, the dendrites of many neuron types contain a\nrich repertoire of ionic mechanisms that allow them to perform all sorts of\nnonlinear computations. As a result, dendrites have been suggested to play a key\nrole in information processing in brain and may even serve as independent\nprocessing units. This Workshop brings together scientific leaders from around\nthe world to present their work on molecular, biophysical, anatomical and/or\nfunctional studies in dendrites, aiming to further our understanding of how\nthese beautiful structures contribute to different brain functions.</p>\n<p>With the backdrop of an informal yet spectacular setting on the Greek island of\nCrete, the meeting has been carefully planned to not only satisfy our scientific\ncuriosity but also foster discussion and encourage interaction between attendees\nwell beyond the traditional presentations. In this spirit, the workshop will\nalso provide soft skills sessions for all participants.</p>\n"}
 
 /***/ },
-/* 1017 */
+/* 1019 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7e36509aee2ba54cd9dbe936f2798a47.png";
 
 /***/ },
-/* 1018 */
+/* 1020 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d489b8aaa08d22c7f0043ae2024d25c9.png";
 
 /***/ },
-/* 1019 */
+/* 1021 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Yuwei Cui","brief":null,"date":"2016/06/22","event":{"what":null,"when":{"begin":"2016/06/22","end":"2016/06/26"},"where":{"desc":"Nomikos Conference Centre","city":"Fira","state":"Santorini","country":"Greece","web":"http://areadne.org/"},"who":"Yuwei Cui","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"numenta htm hierarchical temporal memory areadne 2016 research encoding decoding neural ensembles","title":"Areadne 2016 - Research in Encoding And Decoding of Neural Ensembles","type":"post","body":"<h3>Event Details</h3>\n<p>There are three major goals of the AREADNE Conferences. First and foremost, the\nmeetings are intended to gather global scientific leaders who work on neural\nensembles and create a touch-point for a widely disparate and hybrid field.\nSecond, with a spectacular setting on Santorini, the conferences have been\ncarefully planned to foster discussion and interaction between attendees to\nencourage the establishment of lasting professional relationships. Third, these\nmeetings continue our efforts to promote systems neuroscience in Greece through\ncreating a world-class forum for cutting-edge research.</p>\n"}
 
 /***/ },
-/* 1020 */
+/* 1022 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b04929c5c428f7661c48b088f6fdecbb.png";
 
 /***/ },
-/* 1021 */
+/* 1023 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bb4a4f6da1cd53f1ab95f0920b36e284.png";
 
 /***/ },
-/* 1022 */
+/* 1024 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cef08d9863adccbdff6286af86bf5804.png";
 
 /***/ },
-/* 1023 */
+/* 1025 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":null,"date":"2016/07/01","event":{"what":"Hierarchical Temporal Memory, a theoretical framework for both biological and machine intelligence","when":{"begin":"2016/07/01 13:15","end":"2016/07/01 13:40"},"where":{"desc":null,"city":"London","state":"United Kingdom","country":"England","web":"https://playfairaisummit2016.splashthat.com/"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"VP of Research","tags":"playfair ai summit 2016 subutai ahmad numenta htm hierarchical temporal memory theoretical biological machine intelligence","title":"Playfair AI Summit 2016","type":"post","body":"<h3>About the Event</h3>\n<p>Artificial intelligence is transforming our world. <strong>Fast.</strong></p>\n<p>In its second edition, the Playfair AI Summit 2016 will explore the frontiers of\nAI research and how these technologies are leveraged by companies to extend the\nfunctionality of products and services, as well as enable entirely new ones\naltogether. It’s overwhelmingly clear that AI is transforming our personal and\nprofessional lives, as well as the operations of businesses worldwide. AI also\nhas profound implications for the future fabric and functioning of society.</p>\n<p>Keeping with last year’s tradition, the Playfair AI Summit 2016 will showcase\nthe brightest academic and entrepreneurial leaders in engineering, research,\nproduct development from the most exciting technology companies and\nUniversities. Conversations will be led by the industry’s most respected\njournalists and thinkers.</p>\n"}
 
 /***/ },
-/* 1024 */
+/* 1026 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":null,"date":"2016/07/13","event":{"what":"Understanding Cortical Principles and Building Intelligent Machines","when":{"begin":"2016/07/13 14:30","end":"2016/07/13 14:55"},"where":{"desc":"Fairmont Hotel","city":"San Francisco","state":"CA","country":"USA","web":"http://conf.dato.com/2016/us/speakers/subutai-ahmad/"},"who":"Subutai Ahmad","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Numenta Event","tags":"data science summit 2016 numenta sponsor machine intelligence ai","title":"Data Science Summit US 2016","type":"post","body":"<h3>Topic</h3>\n<p>At Numenta we aim to understand the computational principles underlying the\nneocortex, and build intelligent machines based on those principles. At its most\nbasic level the neocortex takes in a stream of sensory data, builds a\nsensorimotor model of the world and outputs a stream of motor actions. Recent\nadvances in neuroscience and neural imaging techniques have led to an explosion\nof data and information regarding these functions. In this talk I will describe\na number of cortical principles and how, as computer scientists, we can\ntranslate them into working systems. The core ideas have been validated in\ncommercial streaming analytics applications, and an optimized implementation is\navailable in our open source project called NuPIC. Although we still have much\nwork to do, this work forms a foundation for building biologically inspired\nintelligent machines.</p>\n<h3>About</h3>\n<p>The Data Science Summit is packed with industry experts, authors, researchers\nand business leaders, delivering concrete examples of data science and machine\nlearning in action. Hear best practices, war stories, vital dos and don’ts and\nprecisely how innovators are deploying machine learning solutions in industry,\nand the business impact they deliver.</p>\n<h3>Highlights</h3>\n<ul>\n<li>\n<p>2 days &amp; 3 tracks with 60 talks and tutorials, and a startup showcase.</p>\n</li>\n<li>\n<p>Hands-on trainings: gain practical skills using the best tools in the\nindustry.</p>\n</li>\n<li>\n<p>Hear war stories from business leaders at Capital One, Cloudera, Deepart,\nGoogle, Kaggle, Pandora, Quora, Salesforce, StichFix, Tableau and more.</p>\n</li>\n<li>\n<p>Discover amazing machine learning advances from professors at Carnegie Mellon,\nStanford, UC Berkeley &amp; University of Washington.</p>\n</li>\n<li>\n<p>Book signings by scikit-learn’s Andreas Mueller &amp; Pedro Domingos, author of\n“The Master Algorithm”.</p>\n</li>\n<li>\n<p>1400 fellow data scientists, developers and business leaders for networking.</p>\n</li>\n</ul>\n"}
 
 /***/ },
-/* 1025 */
+/* 1027 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4d5cacc75e7797b79c587052b9aeb97b.png";
 
 /***/ },
-/* 1026 */
+/* 1028 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7a032599c192a63934b54ad60c59f751.png";
 
 /***/ },
-/* 1027 */
-1003,
-/* 1028 */
-1004,
 /* 1029 */
+1005,
+/* 1030 */
+1006,
+/* 1031 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/07/24","event":{"what":"Numenta Anomaly Benchmark Competition for Real-time Anomaly Detection @ IEEE WCCI 2016","when":{"begin":"2016/07/24","end":"2016/07/29"},"where":{"desc":"IEEE WCCI 2016","city":"Vancouver","state":"British Columbia","country":"Canada","web":"http://numenta.org/nab/"},"who":null,"why":null},"featured":false,"image":"../images/image.png","org":"Event","tags":"numenta anomaly benchmark competition nab ieee wcci world congress computational intelligence 2016","title":"IEEE WCCI 2016 - Numenta Anomaly Benchmark Competition","type":"post","body":"<p><a href=\"http://numenta.org/nab/\">Numenta Anomaly Benchmark Competition</a> for Real-Time\nAnomaly Detection at <a href=\"http://www.wcci2016.org/programs.php?id=home\">IEEE WCCI 2016</a>\n(World Congress on Computational Intelligence).</p>\n<h3>About Competition</h3>\n<p>Do you have an algorithm that detects anomalies in streaming data? Or a dataset\nof real-world, time-series data with labeled anomalies? If so, you’re encouraged\nto enter the Numenta Anomaly Benchmark (NAB) Competition.</p>\n<h3>About Conference</h3>\n<p>IEEE WCCI has traditionally been the largest technical event in the field of\ncomputational intelligence, hosting three separate prestigious conferences\n(IJCNN, FUZZ-IEEE, IEEE CEC) under one roof. Over the years the event has\nprovided a platform for highly acclaimed intellectuals from all over the world\nto discuss and present their research findings on computational intelligence.\nThe organizing committee will put in place a rich and varied technical program\nwhich is designed to engage participants in cross-fertilization of ideas among\nthe three big areas in computational intelligence. The event will also offer a\nseries of social functions, such as welcome reception, conference banquet etc.,\nwhich will serve as a good channel to establish new connections and foster\neverlasting friendship among fellow counterparts.</p>\n"}
 
 /***/ },
-/* 1030 */
+/* 1032 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Yuwei Cui","brief":null,"date":"2016/07/26","event":{"what":"A comparative study of HTM and other neural network models for online sequence learning with streaming data","when":{"begin":"2016/07/26 08:00","end":"2016/07/26 10:00"},"where":{"desc":"IEEE WCCI 2016","city":"Vancouver","state":"British Columbia","country":"Canada","web":"http://www.wcci2016.org/"},"who":"Yuwei Cui","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"numenta ieee wcci world congress computational intelligence 2016","title":"IEEE WCCI 2016","type":"post","body":"<h3>About Talk</h3>\n<p>This talk is part of the International Joint Conference on Neural Networks\n(IJCNN 2016). Special Session TA-4: Online Real-Time Learning Strategies for\nLarge Data Streams, located in room 215.</p>\n<p><strong>Conference Schedule:</strong>\n<a href=\"http://www.wcci2016.org/document/ijcnn2016_5new.pdf\">http://www.wcci2016.org/document/ijcnn2016_5new.pdf</a></p>\n<h3>About Conference</h3>\n<p>IEEE WCCI has traditionally been the largest technical event in the field of\ncomputational intelligence, hosting three separate prestigious conferences\n(IJCNN, FUZZ-IEEE, IEEE CEC) under one roof. Over the years the event has\nprovided a platform for highly acclaimed intellectuals from all over the world\nto discuss and present their research findings on computational intelligence.\nThe organizing committee will put in place a rich and varied technical program\nwhich is designed to engage participants in cross-fertilization of ideas among\nthe three big areas in computational intelligence. The event will also offer a\nseries of social functions, such as welcome reception, conference banquet etc.,\nwhich will serve as a good channel to establish new connections and foster\neverlasting friendship among fellow counterparts.</p>\n"}
 
 /***/ },
-/* 1031 */
+/* 1033 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c3e576c874eaf30a6a7693d7f3b72f85.png";
 
 /***/ },
-/* 1032 */
+/* 1034 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1ad8bc0a450c3c6f5c5fefb22f937360.png";
 
 /***/ },
-/* 1033 */
+/* 1035 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin","brief":null,"date":"2016/08/02","event":{"what":"Predictive Analytics with Numenta Machine Intelligence","when":{"begin":"2016/08/02 18:00","end":"2016/08/02 21:00"},"where":{"desc":"Galvanize @ 44 Tehama Street","city":"San Francisco","state":"CA","country":"USA","web":"http://www.meetup.com/SF-Data-Science/events/232031072/"},"who":"Alexander Lavin","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"Research Engineer","tags":"sf san francisco data science meetup predictive analytics numenta machine intelligence","title":"SF Data Science Meetup","type":"post","body":"<h3>Talk Abstract</h3>\n<p><strong>Predictive Analytics with Numenta Machine Intelligence</strong></p>\n<p>As sensors integrate with our daily lives, driven largely by the internet of\nthings (IoT), there is demand for streaming analytics algorithms to provide\ninsight from this data. Factories, farms, homes, people, and more are being\noutfitted with sensors that produce streaming data, but traditional\nbatch-processing analytics methods don’t suffice. Algorithms must be able to\nlearn and predict online, in real-time. They also must continuously learn and\nadapt to changing statistics of the environment while simultaneously making\npredictions.</p>\n<p>At Numenta we’ve developed Hierarchical Temporal Memory (HTM), a theory of\nneocortex implemented in software for machine learning applications. HTM runs\nonline and unsupervised, performing anomaly detection, prediction, and\nclassification on streaming data. HTM can run on wide variety of data streams,\nfrom IT server metrics to GPS coordinates. In this talk, Alex will discuss HTM\nin the context of predictive analytics, presenting real-world use cases.</p>\n<h3>Schedule</h3>\n<ul>\n<li><strong>6:00pm</strong> - Doors open &amp; food/drinks</li>\n<li><strong>6:50pm</strong> - Announcements</li>\n<li><strong>7:00pm</strong> - Talks Start</li>\n<li><strong>8:30pm</strong> - Networking</li>\n</ul>\n"}
 
 /***/ },
-/* 1034 */
+/* 1036 */
+951,
+/* 1037 */
+952,
+/* 1038 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Numenta","brief":"Welcome to the 3rd community hosted HTM [Hierarchical Temporal Memory] Meetup. Meet HTM hackers, AI researchers, Entrepreneurs and enthusiasts working in the field of Artificial Intelligence. Read more for a brief agenda.","date":"2016/08/08","event":{"what":"HTM Bay Area Meetup","when":{"begin":"2016/08/08 18:00","end":"2016/08/08 21:00"},"where":{"desc":"H2O.ai Headquarters","city":"Mountain View","state":"CA","country":"USA","web":"http://www.meetup.com/numenta/events/232848149/"},"who":null,"why":null},"featured":false,"image":"../images/meetup.png","org":"HTM Community","tags":"numenta hierarchical temporal memory htm community 3rd bay area meetup palo alto machine intelligence neuroscience biological","title":"HTM Bay Area Meetup","type":"post","body":"<h3>Details</h3>\n<p>Welcome to the 3rd community hosted HTM [Hierarchical Temporal Memory] Meetup.</p>\n<p>Meet HTM hackers, AI researchers, Entrepreneurs and enthusiasts working in the\nfield of Artificial Intelligence. See below for a brief agenda.</p>\n<p>As always we have a special focus on lightning talks where you get to talk about\nyour latest work. Sign up for a lightning talk if you plan to present. [Slots\nare limited, make sure you sign up fast].</p>\n<h3>Agenda</h3>\n<ul>\n<li>6:00 - 7:00: Welcome, Sign In and Networking</li>\n<li>7:00 - 7:10: About our Host [A message from our host for the day]</li>\n<li>7:10 - 7:20: State of HTM Open Source [Matt Taylor]</li>\n<li>7:20 - 7:30: Current HTM Theory thought process [TBD]</li>\n<li>7:30 - 9:00: Lightning Talks and Demos</li>\n</ul>\n<h3>Lightning Talks and Demos</h3>\n<ul>\n<li>\n<p>Two Extensions to HTM Engine - Ryan Mccall: an overview of HTM engine,\ndescribe the changes, and demo how to use them.</p>\n</li>\n<li>\n<p>SDRs and Spatial Pooling - Matt Taylor : Matt has been creating several\nYouTube videos about HTMs. He will talk in detail about Sparse Distributed\nRepresentations and Spatial Pooling.</p>\n</li>\n<li>\n<p>A Comparison of Popular AI Technologies - Chandan Maruthi: We have often been\nasked for a comparison of different algorithms used in AI. Chandan will cover\nsome of the key aspects of traditional AI methods including HTM’s.</p>\n</li>\n</ul>\n<p>To sign-up for a demo/lighting talk email:\n<a href=\"mailto:chandan.maruthi@gmail.com\">chandan.maruthi@gmail.com</a></p>\n<h3>What is HTM?</h3>\n<p>Hierarchical temporal memory (HTM) is an online machine learning model developed\nby Numenta, Inc. that models some of the structural and algorithmic properties\nof the neocortex. HTM is a biomimetic model based on the memory-prediction\ntheory of brain function described by Jeff Hawkins in his book On Intelligence.\nHTM is a method for discovering and inferring the high-level causes of observed\ninput patterns and sequences, thus building an increasingly complex model of the\nworld.</p>\n<p>More information about HTMs: <a href=\"http://numenta.org/htm-white-paper.html\">http://numenta.org/htm-white-paper.html</a></p>\n"}
+	module.exports = {"author":"Numenta","brief":"Welcome to the 3rd community hosted HTM [Hierarchical Temporal Memory] Meetup. Meet HTM hackers, AI researchers, Entrepreneurs and enthusiasts working in the field of Artificial Intelligence. Read more for a brief agenda.","date":"2016/08/08","event":{"what":"HTM Bay Area Meetup","when":{"begin":"2016/08/08 18:00","end":"2016/08/08 21:00"},"where":{"desc":"H2O.ai Headquarters","city":"Mountain View","state":"CA","country":"USA","web":"http://www.meetup.com/numenta/events/232848149/"},"who":null,"why":null},"featured":false,"image":"../images/meetup.png","org":"HTM Community","tags":"numenta hierarchical temporal memory htm community 3rd bay area meetup palo alto machine intelligence neuroscience biological","title":"Machine Intelligence with HTM - A New Approach to Time-Based Learning","type":"post","body":"<p><strong>Updated:</strong> <em>Aug 04, 2016, 5:00pm PST</em></p>\n<h3>Details</h3>\n<p>Welcome to the 3rd community-hosted HTM (Hierarchical Temporal Memory) Meetup.</p>\n<p>Meet HTM hackers, AI researchers, Entrepreneurs and enthusiasts working in the\nfield of Artificial Intelligence. See below for a brief agenda.</p>\n<p>As always we have a special focus on lightning talks where you get to talk about\nyour latest work. Sign up for a lightning talk if you plan to present. (Slots\nare limited, make sure you sign up fast).</p>\n<h3>Agenda</h3>\n<ul>\n<li>\n<p>6:00 - 7:00: Welcome, Sign In and Networking</p>\n</li>\n<li>\n<p>7:00 - 7:10: About our Host (A message from our host for the day)</p>\n</li>\n<li>\n<p>7:10 - 7:20: State of HTM Open Source\n(Matt Taylor, HTM Community Manager @ Numenta)</p>\n</li>\n<li>\n<p>7:20 - 7:30: Message from Numenta\n(Christy Maver, Director of Marketing @ Numenta)</p>\n</li>\n<li>\n<p>7:30 - 7:40: Current HTM Theory thought process (TBD)</p>\n</li>\n<li>\n<p>7:40 - 9:00: Lightning Talks and Demos</p>\n</li>\n</ul>\n<h3>Lightning Talks and Demos</h3>\n<ul>\n<li>\n<p>Two Extensions to HTM Engine - Ryan Mccall: an overview of HTM engine,\ndescribe the changes, and demo how to use them.</p>\n</li>\n<li>\n<p>HTM SCHOOL LIVE (SDRs and Spatial Pooling) - Matt Taylor: Matt has been\ncreating several YouTube videos about HTMs. He will talk in detail about\nSparse Distributed Representations and Spatial Pooling.</p>\n</li>\n<li>\n<p>Computational properties of the HTM spatial pooler - Yuwei Cui (Research\nEngineer @ Numenta): Talk about the HTM spatial pooler and update on state\nof current research.</p>\n</li>\n<li>\n<p>A Comparison of Popular AI Technologies - Chandan Maruthi: We have often been\nasked for a comparison of different algorithms used in AI. Chandan will cover\nsome of the key aspects of traditional AI methods, including HTM’s.</p>\n</li>\n</ul>\n<p>To sign-up for a demo/lighting talk email:\n<a href=\"mailto:chandan.maruthi@gmail.com\">chandan.maruthi@gmail.com</a>.</p>\n<h3>What is HTM?</h3>\n<p>Hierarchical Temporal Memory (HTM) is an online machine learning model developed\nby Numenta, Inc. that models some of the structural and algorithmic properties\nof the neocortex. HTM is a biomimetic model based on the memory-prediction\ntheory of brain function described by Jeff Hawkins in his book, On Intelligence.\nHTM is a method for discovering and inferring the high-level causes of observed\ninput patterns and sequences, thus building an increasingly complex model of the\nworld.</p>\n<p>More information about HTMs: <br /></p>\n"}
 
 /***/ },
-/* 1035 */
-949,
-/* 1036 */
-950,
-/* 1037 */
+/* 1039 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Matthew Taylor","brief":null,"date":"2016/09/25","event":{"what":"Hierarchical Temporal Memory: Computing Like the Brain","when":{"begin":"2016/09/25 12:40","end":"2016/09/25 13:40"},"where":{"desc":"Online","city":null,"state":null,"country":null,"web":"http://ai.withthebest.com/#Agenda"},"who":"Matthew Taylor","why":"Speaking"},"featured":false,"image":"../images/image.png","org":"HTM Community Leader","tags":"ai with the best artificial intelligence htm hierarchical temporal memory computing like the brain","title":"AI with the Best","type":"post","body":"<h3>Talk Abstract</h3>\n<p><strong>Hierarchical Temporal Memory: Computing Like the Brain</strong></p>\n<p>Most of today’s AI technologies are extensions of ANN models that were\nenvisioned twenty years ago. While they have some amazing capabilities, they are\nnot truly intelligent. To attain truly intelligent machines, our approach is to\nunderstand the only thing we can all agree is intelligent today: the human\nbrain. HTM is an AI technology that is biologically-constrained. All major\nalgorithms at work in an HTM system were uncovered by years of intensive\nneuroscience research. In this presentation, I’ll describe the major mechanism\nof HTM at a high level, and lay a path towards the future of truly intelligent\nmachines.</p>\n"}
 
 /***/ },
-/* 1038 */
+/* 1040 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a72ae003bad5d5ad5bd6bb07af85df68.png";
 
 /***/ },
-/* 1039 */
+/* 1041 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "82ef27aee02a91401233ed2440e294e5.png";
 
 /***/ },
-/* 1040 */
+/* 1042 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "684b4f3e7b1a4be52369590f77038768.png";
 
 /***/ },
-/* 1041 */
+/* 1043 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bc83f7cc3de4fb8fce1c32dade70d49a.png";
 
 /***/ },
-/* 1042 */
+/* 1044 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":null,"date":"2016/11/11","event":{"what":null,"when":{"begin":"2016/11/11","end":"2016/11/11"},"where":{"desc":"Hotel Nikko","city":"San Francisco","state":"CA","country":"USA","web":"http://mlconf.com/events/san-francisco-ca/"},"who":null,"why":null},"featured":false,"image":"../images/image.png","org":"Research Team","tags":"numenta machine learning conference san francisco sf 2016","title":"MLconf 2016 Machine Learning Conference San Francisco","type":"post","body":"<h3>About the MLconf</h3>\n<p>The Machine Learning Conference (MLconf) began in 2012, as a partnership with\nCarnegie Mellon University’s GraphLab team, to gather the thought leaders in\nMachine Learning, specifically Graph Databases.</p>\n<p>In 2013, MLconf became a separate event, devoted to the Machine Learning and\nData Science community in San Francisco, agnostic of any tool, platform or\ncompany. MLconf events host speakers from various industries, research and\nuniversities to discuss recent research and application of Machine Learning\nmethodologies and practices. In 2014, MLconf entered NYC and Atlanta, as well as\nSan Francisco. In 2015, MLconf will host conferences in NYC, Atlanta, Seattle\nand San Francisco, with plans to enter additional US cities in 2016, and the UK.</p>\n<p>MLconf gathers communities to discuss the recent research and application of\nAlgorithms, Tools, and Platforms to solve the hard problems that exist within\norganizing and analyzing massive and noisy data sets.</p>\n"}
 
 /***/ },
-/* 1043 */
+/* 1045 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -77418,7 +77481,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _PostListItem = __webpack_require__(895);
+	var _PostListItem = __webpack_require__(897);
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
@@ -77493,133 +77556,133 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1044 */
+/* 1046 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0b3ad31be645a9651c340689d7e6a51e.png";
 
 /***/ },
-/* 1045 */
+/* 1047 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1cc6a0683dc17fc4bcab53dd30463f85.png";
 
 /***/ },
-/* 1046 */
+/* 1048 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7e08c5ada5d933ff1904453c081f7df3.png";
 
 /***/ },
-/* 1047 */
+/* 1049 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "34c5ba0fe6facafce4b22052ae27c787.png";
 
 /***/ },
-/* 1048 */
+/* 1050 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a28ab1927c4910cffcdb1e624fbf06e8.png";
 
 /***/ },
-/* 1049 */
+/* 1051 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "aa6af66b3b9148467f53da542c6642e1.png";
 
 /***/ },
-/* 1050 */
+/* 1052 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "eae18ce33f8c5cdd732103b8c9cdbac0.png";
 
 /***/ },
-/* 1051 */
+/* 1053 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8ca0d329c12713f21efd4388f944d578.png";
 
 /***/ },
-/* 1052 */
+/* 1054 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ed896c6ad45235c409d6ce0205a97dff.png";
 
 /***/ },
-/* 1053 */
+/* 1055 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e3fca66f3fc378287f9236cadf230cb9.png";
 
 /***/ },
-/* 1054 */
+/* 1056 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "63319b14945fb17f488d2ecd36f80bff.png";
 
 /***/ },
-/* 1055 */
+/* 1057 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "46084355a6a9ebdafd3448770e39ac3e.png";
 
 /***/ },
-/* 1056 */
+/* 1058 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bd4f35dc362744424b087ab852213e7e.png";
 
 /***/ },
-/* 1057 */
+/* 1059 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "adfa08bd3c24328dee75a343969dda87.png";
 
 /***/ },
-/* 1058 */
+/* 1060 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d9c29257d0f6146a83260e9f31002597.png";
 
 /***/ },
-/* 1059 */
+/* 1061 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "98508a6fd4e34bdb91cfa4463ad01dd2.png";
 
 /***/ },
-/* 1060 */
+/* 1062 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "19856105f2b1cad3cc39ba42c33ea7fe.png";
 
 /***/ },
-/* 1061 */
+/* 1063 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ef7fa4d3ac293ecef6a9bbc34503487a.png";
 
 /***/ },
-/* 1062 */
+/* 1064 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "eac638c1fa8ce1d1b16157cde167c098.png";
 
 /***/ },
-/* 1063 */
+/* 1065 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "90144e733fbad06f2b4e84907c90961b.png";
 
 /***/ },
-/* 1064 */
+/* 1066 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3fc1c4944daa6d75da8fa9ba472efd0a.png";
 
 /***/ },
-/* 1065 */
+/* 1067 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -77684,55 +77747,55 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _feature = __webpack_require__(1046);
+	var _feature = __webpack_require__(1048);
 	
 	var _feature2 = _interopRequireDefault(_feature);
 	
-	var _feature3 = __webpack_require__(1047);
+	var _feature3 = __webpack_require__(1049);
 	
 	var _feature4 = _interopRequireDefault(_feature3);
 	
-	var _feature5 = __webpack_require__(1048);
+	var _feature5 = __webpack_require__(1050);
 	
 	var _feature6 = _interopRequireDefault(_feature5);
 	
-	var _handheld = __webpack_require__(1049);
+	var _handheld = __webpack_require__(1051);
 	
 	var _handheld2 = _interopRequireDefault(_handheld);
 	
-	var _raw = __webpack_require__(1053);
+	var _raw = __webpack_require__(1055);
 	
 	var _raw2 = _interopRequireDefault(_raw);
 	
-	var _raw3 = __webpack_require__(1055);
+	var _raw3 = __webpack_require__(1057);
 	
 	var _raw4 = _interopRequireDefault(_raw3);
 	
-	var _appStoreButton = __webpack_require__(1044);
+	var _appStoreButton = __webpack_require__(1046);
 	
 	var _appStoreButton2 = _interopRequireDefault(_appStoreButton);
 	
-	var _playStoreButton = __webpack_require__(1051);
+	var _playStoreButton = __webpack_require__(1053);
 	
 	var _playStoreButton2 = _interopRequireDefault(_playStoreButton);
 	
-	var _use = __webpack_require__(1057);
+	var _use = __webpack_require__(1059);
 	
 	var _use2 = _interopRequireDefault(_use);
 	
-	var _use3 = __webpack_require__(1059);
+	var _use3 = __webpack_require__(1061);
 	
 	var _use4 = _interopRequireDefault(_use3);
 	
-	var _use5 = __webpack_require__(1061);
+	var _use5 = __webpack_require__(1063);
 	
 	var _use6 = _interopRequireDefault(_use5);
 	
-	var _use7 = __webpack_require__(1063);
+	var _use7 = __webpack_require__(1065);
 	
 	var _use8 = _interopRequireDefault(_use7);
 	
-	var _index = __webpack_require__(1066);
+	var _index = __webpack_require__(1068);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -77767,7 +77830,7 @@
 	          ),
 	          _react2.default.createElement(
 	            _Paragraph2.default,
-	            null,
+	            { lead: true },
 	            'HTM for Stocks is an example HTM application that continually monitors hundreds of publicly traded companies and alerts you if something unusual is happening to any of them. HTM for Stocks uses',
 	            ' ',
 	            _react2.default.createElement(
@@ -78239,199 +78302,199 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1066 */
+/* 1068 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_lzy theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_1co theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_2IU tachyons_mv1_3WP tachyons_ph3_Qxl tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","pad":"index_pad_2Up tachyons_mt4_3dV","column":"index_column_4vK tachyons_fl_wJK tachyons_pb2_13e tachyons_ph4_-u9 tachyons_tc_3ab tachyons_w-50_bGL","download":"index_download_2kh tachyons_mb4_3KK"};
 
 /***/ },
-/* 1067 */,
-/* 1068 */
+/* 1069 */,
+/* 1070 */
 /***/ function(module, exports) {
 
 	module.exports = {"title":"HTM Studio - Supported Date/Time Formats","body":"<h3>UNIX</h3>\n<p>HTM Studio supports UNIX timestamps in seconds and milliseconds. If you are\nusing a UNIX timestamp, you must have a header row in your data file. The header\nof the column with date/time needs to contain either the word “<strong>date</strong>” or\n&quot;<strong>time</strong>&quot;.</p>\n<hr>\n<p><strong>Updated</strong>: Thu Jun 23 2016 09:07:21 GMT-0700</p>\n<p><strong>Source</strong>: <a href=\"https://raw.githubusercontent.com/numenta/numenta-apps/master/unicorn/app/config/momentjs_to_datetime_strptime.json\">Configuration File</a></p>\n<h3>ISO 8601</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss.SSSZ</td>\n<td>2016-06-23T09:07:21.205-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss.SSZ</td>\n<td>2016-06-23T09:07:21.20-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss.SZ</td>\n<td>2016-06-23T09:07:21.2-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss.SSS</td>\n<td>2016-06-23T09:07:21.205</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss.SS</td>\n<td>2016-06-23T09:07:21.20</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss.S</td>\n<td>2016-06-23T09:07:21.2</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ssZ</td>\n<td>2016-06-23T09:07:21-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm:ss</td>\n<td>2016-06-23T09:07:21</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mmZ</td>\n<td>2016-06-23T09:07-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH:mm</td>\n<td>2016-06-23T09:07</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHHZ</td>\n<td>2016-06-23T09-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DDTHH</td>\n<td>2016-06-23T09</td>\n</tr>\n</tbody>\n</table>\n<h3>Variation of ISO 8601</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss.SSSZ</td>\n<td>2016/06/23T09:07:21.205-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss.SSZ</td>\n<td>2016/06/23T09:07:21.20-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss.SZ</td>\n<td>2016/06/23T09:07:21.2-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss.SSS</td>\n<td>2016/06/23T09:07:21.205</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss.SS</td>\n<td>2016/06/23T09:07:21.20</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss.S</td>\n<td>2016/06/23T09:07:21.2</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ssZ</td>\n<td>2016/06/23T09:07:21-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm:ss</td>\n<td>2016/06/23T09:07:21</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mmZ</td>\n<td>2016/06/23T09:07-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH:mm</td>\n<td>2016/06/23T09:07</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHHZ</td>\n<td>2016/06/23T09-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DDTHH</td>\n<td>2016/06/23T09</td>\n</tr>\n</tbody>\n</table>\n<h3>ISO 8601 no T</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss.SSSZ</td>\n<td>2016-06-23 09:07:21.205-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss.SSZ</td>\n<td>2016-06-23 09:07:21.20-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss.SZ</td>\n<td>2016-06-23 09:07:21.2-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss.SSS</td>\n<td>2016-06-23 09:07:21.205</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss.SS</td>\n<td>2016-06-23 09:07:21.20</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss.S</td>\n<td>2016-06-23 09:07:21.2</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ssZ</td>\n<td>2016-06-23 09:07:21-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm:ss</td>\n<td>2016-06-23 09:07:21</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mmZ</td>\n<td>2016-06-23 09:07-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH:mm</td>\n<td>2016-06-23 09:07</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HHZ</td>\n<td>2016-06-23 09-07:00</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD HH</td>\n<td>2016-06-23 09</td>\n</tr>\n<tr>\n<td>YYYY-MM-DD</td>\n<td>2016-06-23</td>\n</tr>\n</tbody>\n</table>\n<h3>Variation of ISO 8601 no T</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss.SSSZ</td>\n<td>2016/06/23 09:07:21.205-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss.SSZ</td>\n<td>2016/06/23 09:07:21.20-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss.SZ</td>\n<td>2016/06/23 09:07:21.2-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss.SSS</td>\n<td>2016/06/23 09:07:21.205</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss.SS</td>\n<td>2016/06/23 09:07:21.20</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss.S</td>\n<td>2016/06/23 09:07:21.2</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ssZ</td>\n<td>2016/06/23 09:07:21-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm:ss</td>\n<td>2016/06/23 09:07:21</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mmZ</td>\n<td>2016/06/23 09:07-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH:mm</td>\n<td>2016/06/23 09:07</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HHZ</td>\n<td>2016/06/23 09-07:00</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD HH</td>\n<td>2016/06/23 09</td>\n</tr>\n<tr>\n<td>YYYY/MM/DD</td>\n<td>2016/06/23</td>\n</tr>\n</tbody>\n</table>\n<h3>US Date, 12h AM/PM time</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MM-DD-YYYY hh:mm:ss.SSS A</td>\n<td>06-23-2016 09:07:21.205 AM</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY hh:mm:ss.SS A</td>\n<td>06-23-2016 09:07:21.20 AM</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY hh:mm:ss.S A</td>\n<td>06-23-2016 09:07:21.2 AM</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY hh:mm:ss A</td>\n<td>06-23-2016 09:07:21 AM</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY hh:mm A</td>\n<td>06-23-2016 09:07 AM</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY hh:mm:ss.SSS A</td>\n<td>06/23/2016 09:07:21.205 AM</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY hh:mm:ss.SS A</td>\n<td>06/23/2016 09:07:21.20 AM</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY hh:mm:ss.S A</td>\n<td>06/23/2016 09:07:21.2 AM</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY hh:mm:ss A</td>\n<td>06/23/2016 09:07:21 AM</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY hh:mm A</td>\n<td>06/23/2016 09:07 AM</td>\n</tr>\n</tbody>\n</table>\n<h3>US Date, 24h time</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MM-DD-YYYY HH:mm:ss.SSS</td>\n<td>06-23-2016 09:07:21.205</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY HH:mm:ss.SS</td>\n<td>06-23-2016 09:07:21.20</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY HH:mm:ss.S</td>\n<td>06-23-2016 09:07:21.2</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY HH:mm:ss</td>\n<td>06-23-2016 09:07:21</td>\n</tr>\n<tr>\n<td>MM-DD-YYYY HH:mm</td>\n<td>06-23-2016 09:07</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm:ss.SSS</td>\n<td>06/23/2016 09:07:21.205</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm:ss.SS</td>\n<td>06/23/2016 09:07:21.20</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm:ss.S</td>\n<td>06/23/2016 09:07:21.2</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm:ss</td>\n<td>06/23/2016 09:07:21</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm</td>\n<td>06/23/2016 09:07</td>\n</tr>\n</tbody>\n</table>\n<h3>US Date, no time</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MM-DD-YYYY</td>\n<td>06-23-2016</td>\n</tr>\n<tr>\n<td>MM-DD-YY</td>\n<td>06-23-16</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY</td>\n<td>06/23/2016</td>\n</tr>\n<tr>\n<td>MM/DD/YY</td>\n<td>06/23/16</td>\n</tr>\n</tbody>\n</table>\n<h3>US Date, time (excel default on OSX)</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MM/DD/YY H:mm</td>\n<td>06/23/16 9:07</td>\n</tr>\n<tr>\n<td>MM/DD/YY H:mm:SS</td>\n<td>06/23/16 9:07:20</td>\n</tr>\n<tr>\n<td>MM/DD/YY HH:mm</td>\n<td>06/23/16 09:07</td>\n</tr>\n<tr>\n<td>MM/DD/YY HH:mm:SS</td>\n<td>06/23/16 09:07:20</td>\n</tr>\n<tr>\n<td>MM/DD/YY H</td>\n<td>06/23/16 9</td>\n</tr>\n<tr>\n<td>MM/DD/YY HH</td>\n<td>06/23/16 09</td>\n</tr>\n<tr>\n<td>MM/D/YY H:mm</td>\n<td>06/23/16 9:07</td>\n</tr>\n<tr>\n<td>MM/D/YY H:mm:SS</td>\n<td>06/23/16 9:07:20</td>\n</tr>\n<tr>\n<td>MM/D/YY HH:mm</td>\n<td>06/23/16 09:07</td>\n</tr>\n<tr>\n<td>MM/D/YY HH:mm:SS</td>\n<td>06/23/16 09:07:20</td>\n</tr>\n<tr>\n<td>MM/D/YY H</td>\n<td>06/23/16 9</td>\n</tr>\n<tr>\n<td>MM/D/YY HH</td>\n<td>06/23/16 09</td>\n</tr>\n<tr>\n<td>MM/D/YY</td>\n<td>06/23/16</td>\n</tr>\n<tr>\n<td>M/DD/YY H:mm</td>\n<td>6/23/16 9:07</td>\n</tr>\n<tr>\n<td>M/DD/YY H:mm:SS</td>\n<td>6/23/16 9:07:20</td>\n</tr>\n<tr>\n<td>M/DD/YY HH:mm</td>\n<td>6/23/16 09:07</td>\n</tr>\n<tr>\n<td>M/DD/YY HH:mm:SS</td>\n<td>6/23/16 09:07:20</td>\n</tr>\n<tr>\n<td>M/DD/YY H</td>\n<td>6/23/16 9</td>\n</tr>\n<tr>\n<td>M/DD/YY HH</td>\n<td>6/23/16 09</td>\n</tr>\n<tr>\n<td>M/DD/YY</td>\n<td>6/23/16</td>\n</tr>\n<tr>\n<td>M/D/YY H:mm</td>\n<td>6/23/16 9:07</td>\n</tr>\n<tr>\n<td>M/D/YY H:mm:SS</td>\n<td>6/23/16 9:07:20</td>\n</tr>\n<tr>\n<td>M/D/YY HH:mm</td>\n<td>6/23/16 09:07</td>\n</tr>\n<tr>\n<td>M/D/YY HH:mm:SS</td>\n<td>6/23/16 09:07:20</td>\n</tr>\n<tr>\n<td>M/D/YY H</td>\n<td>6/23/16 9</td>\n</tr>\n<tr>\n<td>M/D/YY HH</td>\n<td>6/23/16 09</td>\n</tr>\n<tr>\n<td>M/D/YY</td>\n<td>6/23/16</td>\n</tr>\n</tbody>\n</table>\n<h3>US Date, time (excel default on Windows)</h3>\n<table>\n<thead>\n<tr>\n<th>Format</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MM/DD/YYYY H:mm</td>\n<td>06/23/2016 9:07</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY H:mm:SS</td>\n<td>06/23/2016 9:07:20</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm</td>\n<td>06/23/2016 09:07</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH:mm:SS</td>\n<td>06/23/2016 09:07:20</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY H</td>\n<td>06/23/2016 9</td>\n</tr>\n<tr>\n<td>MM/DD/YYYY HH</td>\n<td>06/23/2016 09</td>\n</tr>\n<tr>\n<td>MM/D/YYYY H:mm</td>\n<td>06/23/2016 9:07</td>\n</tr>\n<tr>\n<td>MM/D/YYYY H:mm:SS</td>\n<td>06/23/2016 9:07:20</td>\n</tr>\n<tr>\n<td>MM/D/YYYY HH:mm</td>\n<td>06/23/2016 09:07</td>\n</tr>\n<tr>\n<td>MM/D/YYYY HH:mm:SS</td>\n<td>06/23/2016 09:07:20</td>\n</tr>\n<tr>\n<td>MM/D/YYYY H</td>\n<td>06/23/2016 9</td>\n</tr>\n<tr>\n<td>MM/D/YYYY HH</td>\n<td>06/23/2016 09</td>\n</tr>\n<tr>\n<td>MM/D/YYYY</td>\n<td>06/23/2016</td>\n</tr>\n<tr>\n<td>M/DD/YYYY H:mm</td>\n<td>6/23/2016 9:07</td>\n</tr>\n<tr>\n<td>M/DD/YYYY H:mm:SS</td>\n<td>6/23/2016 9:07:20</td>\n</tr>\n<tr>\n<td>M/DD/YYYY HH:mm</td>\n<td>6/23/2016 09:07</td>\n</tr>\n<tr>\n<td>M/DD/YYYY HH:mm:SS</td>\n<td>6/23/2016 09:07:20</td>\n</tr>\n<tr>\n<td>M/DD/YYYY H</td>\n<td>6/23/2016 9</td>\n</tr>\n<tr>\n<td>M/DD/YYYY HH</td>\n<td>6/23/2016 09</td>\n</tr>\n<tr>\n<td>M/DD/YYYY</td>\n<td>6/23/2016</td>\n</tr>\n<tr>\n<td>M/D/YYYY H:mm</td>\n<td>6/23/2016 9:07</td>\n</tr>\n<tr>\n<td>M/D/YYYY H:mm:SS</td>\n<td>6/23/2016 9:07:20</td>\n</tr>\n<tr>\n<td>M/D/YYYY HH:mm</td>\n<td>6/23/2016 09:07</td>\n</tr>\n<tr>\n<td>M/D/YYYY HH:mm:SS</td>\n<td>6/23/2016 09:07:20</td>\n</tr>\n<tr>\n<td>M/D/YYYY H</td>\n<td>6/23/2016 9</td>\n</tr>\n<tr>\n<td>M/D/YYYY HH</td>\n<td>6/23/2016 09</td>\n</tr>\n<tr>\n<td>M/D/YYYY</td>\n<td>6/23/2016</td>\n</tr>\n</tbody>\n</table>\n"}
 
 /***/ },
-/* 1069 */
+/* 1071 */
 /***/ function(module, exports) {
 
 	module.exports = {"section":"Using HTM Studio","sort":"h","title":"What are the advanced settings for?","body":"<p>HTM Studio determines the optimal parameters for each Hierarchical Temporal\nMemory (HTM) model and in some cases, aggregates your data for analysis. You can\nsee what these parameters are in the advanced settings. We recommend that you\nfollow the determined parameters for the best possible analysis. However, you\nmay modify these parameters by clicking the advanced settings. For example, you\ncan change the aggregation method and period. Or you can also suppress data\naggregation by disabling the check box. See question “What does aggregate my\ndata mean?” for information on aggregating data.</p>\n"}
 
 /***/ },
-/* 1070 */
+/* 1072 */
 /***/ function(module, exports) {
 
 	module.exports = {"section":"Using HTM Studio","sort":"g","title":"What does \"aggregate my data\" mean?","body":"<p>HTM Studio determines how much to aggregate the input records (or not at all)\nbefore feeding them into the HTM model. Generally, aggregating noisy data will\nreduce the amount of noise and help the HTM model learn faster. Aggregation\nmeans that multiple values will be combined over an aggregation period using the\naggregation method, sum or average.</p>\n"}
 
 /***/ },
-/* 1071 */
-/***/ function(module, exports) {
-
-	module.exports = {"section":"Using HTM Studio","sort":"f","title":"What data formats does HTM Studio accept?","body":"<p>HTM Studio only accepts CSV files that meet certain requirements, which can be\nfound in the <a href=\"/htm-studio/#start\">get started</a> section.</p>\n"}
-
-/***/ },
-/* 1072 */
-/***/ function(module, exports) {
-
-	module.exports = {"section":"Anomaly Detection","sort":"j","title":"How does HTM Studio determine what is anomalous?","body":"<p>HTM Studio first learns patterns in your data and builds a model to predict what\nis likely to happen in the next CSV record. Based on these predictions, the HTM\nalgorithm generates an anomaly score for each data point. If you would like to\nlearn more about anomaly detection, please refer to our <a href=\"/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf\">Science of Anomaly\nDetection White Paper</a></p>\n"}
-
-/***/ },
 /* 1073 */
 /***/ function(module, exports) {
 
-	module.exports = {"section":"Anomaly Detection","sort":"i","title":"What is the initial learning period?","body":"<p>HTM Studio begins to build models from the metric in your data immediately.\nDuring the initial learning period, the anomaly results are displayed as grey\nbars with the value “N/A” displayed in the chart area. Once a HTM model\nhas enough data points to learn on, it will display anomalies indicated by\ngreen, yellow and red bars.</p>\n"}
+	module.exports = {"section":"Using HTM Studio","sort":"f","title":"What data formats does HTM Studio accept?","body":"<p>HTM Studio only accepts CSV files that meet certain requirements, which can be\nfound in the <a href=\"#start\">get started</a> section.</p>\n"}
 
 /***/ },
 /* 1074 */
 /***/ function(module, exports) {
 
-	module.exports = {"section":"Troubleshooting","sort":"e","title":"What if I don't have a date/time column in my file, can I still use HTM Studio?","body":"<p>You can create a mock column for date / time by numbering each row (for example:\n0, 1, 2, 3) in your file and ensure you have a header row, with the mock column\nnamed “time”.</p>\n"}
+	module.exports = {"section":"Anomaly Detection","sort":"j","title":"How does HTM Studio determine what is anomalous?","body":"<p>HTM Studio first learns patterns in your data and builds a model to predict what\nis likely to happen in the next CSV record. Based on these predictions, the HTM\nalgorithm generates an anomaly score for each data point. If you would like to\nlearn more about anomaly detection, please refer to our\n<a href=\"http://numenta.com/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf\">Science of Anomaly Detection White Paper</a>.</p>\n"}
 
 /***/ },
 /* 1075 */
 /***/ function(module, exports) {
 
-	module.exports = {"section":"Troubleshooting","sort":"k","title":"Why am I not seeing any anomalies?","body":"<p>There are many reasons why this may occur, but some of the most common are:</p>\n<ul>\n<li>\n<p>If your data does not include any abnormal patterns, then HTM Studio cannot\ndetect any anomalies.</p>\n</li>\n<li>\n<p>HTM Studio learns and builds models from your data during its initial learning\nperiod, see question “What is the initial learning period?” HTM Studio needs\nto have enough data points, at least 500, to learn patterns and detect\nanomalies. See a <a href=\"#start\">full list of requirements here</a>.</p>\n</li>\n<li>\n<p>HTM Studio has not detected any anomalies during a given time period for this\ndata. Although some of the data may look unusual, if HTM Studio has previously\nlearned a pattern then it will not find it anomalous. Try looking at older\ndata in the chart to see if similar patterns have previously occurred.</p>\n</li>\n</ul>\n"}
+	module.exports = {"section":"Anomaly Detection","sort":"i","title":"What is the initial learning period?","body":"<p>HTM Studio begins to build models from the metric in your data immediately.\nDuring the initial learning period, the anomaly results are displayed as grey\nbars with the value “N/A” displayed in the chart area. Once a HTM model\nhas enough data points to learn on, it will display anomalies indicated by\ngreen, yellow and red bars.</p>\n"}
 
 /***/ },
 /* 1076 */
 /***/ function(module, exports) {
 
-	module.exports = {"section":"Using HTM Studio","sort":"d","title":"What are the supported platforms and versions?","body":"<p>We support Mac OS/X (versions Yosemite and El Capitan) and\nWindows (64-bit versions 7, 8 and 10).</p>\n"}
+	module.exports = {"section":"Troubleshooting","sort":"e","title":"What if I don't have a date/time column in my file, can I still use HTM Studio?","body":"<p>You can create a mock column for date / time by numbering each row (for example:\n0, 1, 2, 3) in your file and ensure you have a header row, with the mock column\nnamed “time”.</p>\n"}
 
 /***/ },
 /* 1077 */
 /***/ function(module, exports) {
 
-	module.exports = {"section":"Using HTM Studio","sort":"c","title":"I am interested in integrating HTM technology into my application, what can I do next?","body":"<p>Contact us to discuss adding HTM technology to your system and for licensing\nopportunities via our form here: <a href=\"http://numenta.com/contact/\">http://numenta.com/contact/</a>. You can also\nengage with our HTM open source community at <a href=\"http://numenta.org\">http://numenta.org</a>. Here you will\nfind all of our code, and learning resources to develop a project using HTM.</p>\n"}
+	module.exports = {"section":"Troubleshooting","sort":"k","title":"Why am I not seeing any anomalies?","body":"<p>There are many reasons why this may occur, but some of the most common are:</p>\n<ul>\n<li>\n<p>If your data does not include any abnormal patterns, then HTM Studio cannot\ndetect any anomalies.</p>\n</li>\n<li>\n<p>HTM Studio learns and builds models from your data during its initial learning\nperiod, see question “What is the initial learning period?” HTM Studio needs\nto have enough data points, at least 500, to learn patterns and detect\nanomalies. See a <a href=\"#start\">full list of requirements here</a>.</p>\n</li>\n<li>\n<p>HTM Studio has not detected any anomalies during a given time period for this\ndata. Although some of the data may look unusual, if HTM Studio has previously\nlearned a pattern then it will not find it anomalous. Try looking at older\ndata in the chart to see if similar patterns have previously occurred.</p>\n</li>\n</ul>\n"}
 
 /***/ },
 /* 1078 */
-647,
+/***/ function(module, exports) {
+
+	module.exports = {"section":"Using HTM Studio","sort":"d","title":"What are the supported platforms and versions?","body":"<p>We support Mac OS/X (versions Yosemite and El Capitan) and\nWindows (64-bit versions 7, 8 and 10).</p>\n"}
+
+/***/ },
 /* 1079 */
-728,
+/***/ function(module, exports) {
+
+	module.exports = {"section":"Using HTM Studio","sort":"c","title":"I am interested in integrating HTM technology into my application, what can I do next?","body":"<p><a href=\"/careers-team-and-contact/#contact\">Contact Us</a> to discuss adding HTM\ntechnology to your system and for licensing opportunities. You can also engage\nwith our HTM open source community at <a href=\"http://numenta.org\">http://numenta.org</a>. There you will find\nall of our code, and learning resources to develop a project using HTM.</p>\n"}
+
+/***/ },
 /* 1080 */
+647,
+/* 1081 */
+728,
+/* 1082 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "365db8ae8aa1fc009fbdf64588e0d866.png";
 
 /***/ },
-/* 1081 */
+/* 1083 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a6751d2d48db4f6c9caaaeb33b1a7cd7.png";
 
 /***/ },
-/* 1082 */
+/* 1084 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7846fb9e634429081d7d915316b5155c.jpg";
 
 /***/ },
-/* 1083 */
+/* 1085 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d3f1e727554437ebcd3fa8191a498603.png";
 
 /***/ },
-/* 1084 */
+/* 1086 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "39bc85ef76e2ba35d6ddb36fb9fb89d4.png";
 
 /***/ },
-/* 1085 */
+/* 1087 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a34a8b235b5124f21546411ef33751a5.png";
 
 /***/ },
-/* 1086 */
+/* 1088 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "adccff2bb8a5cf6933b9c9107ba24269.png";
 
 /***/ },
-/* 1087 */
+/* 1089 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "400e6348515f7239f5e85d4a2b363acb.png";
 
 /***/ },
-/* 1088 */
+/* 1090 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "acff8cb453425249f679c2edfe506a9b.png";
 
 /***/ },
-/* 1089 */
+/* 1091 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a0e2a9fb56edf8f1207614e4cf18c425.png";
 
 /***/ },
-/* 1090 */
+/* 1092 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "59c219c12a93b0a78502e5602586ae30.png";
 
 /***/ },
-/* 1091 */
+/* 1093 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "93eac123282eb27c287ec3a0666205e7.png";
 
 /***/ },
-/* 1092 */
+/* 1094 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e4007c2c1218ca09ec306e26208f1b25.png";
 
 /***/ },
-/* 1093 */
+/* 1095 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "458945a113b59413b43d2add3ef331d9.png";
 
 /***/ },
-/* 1094 */
+/* 1096 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0040de918ae9dd6157d8be8d1dbe5996.png";
 
 /***/ },
-/* 1095 */
+/* 1097 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a94e90b6a1cdcb71024f6ce6b5105103.png";
 
 /***/ },
-/* 1096 */
+/* 1098 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d988c77291ee680ff75a4fdda5de0b8e.png";
 
 /***/ },
-/* 1097 */
+/* 1099 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0e28b9c3f7bff0123c23d0499fa5c032.png";
 
 /***/ },
-/* 1098 */
+/* 1100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9c58a19a3056b164ed9fa3bacea2368a.png";
 
 /***/ },
-/* 1099 */
+/* 1101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "57acf9febbaffce55bb060d617e0bcb5.png";
 
 /***/ },
-/* 1100 */
+/* 1102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -78439,6 +78502,34 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _classnames = __webpack_require__(385);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	var _barChart = __webpack_require__(1103);
+	
+	var _barChart2 = _interopRequireDefault(_barChart);
+	
+	var _bullseye = __webpack_require__(1104);
+	
+	var _bullseye2 = _interopRequireDefault(_bullseye);
+	
+	var _cubes = __webpack_require__(1105);
+	
+	var _cubes2 = _interopRequireDefault(_cubes);
+	
+	var _folderOpen = __webpack_require__(1106);
+	
+	var _folderOpen2 = _interopRequireDefault(_folderOpen);
+	
+	var _lock = __webpack_require__(1107);
+	
+	var _lock2 = _interopRequireDefault(_lock);
+	
+	var _questionCircle = __webpack_require__(658);
+	
+	var _questionCircle2 = _interopRequireDefault(_questionCircle);
 	
 	var _react = __webpack_require__(2);
 	
@@ -78456,6 +78547,10 @@
 	
 	var _Form2 = _interopRequireDefault(_Form);
 	
+	var _FormCheckbox = __webpack_require__(1108);
+	
+	var _FormCheckbox2 = _interopRequireDefault(_FormCheckbox);
+	
 	var _FormInput = __webpack_require__(421);
 	
 	var _FormInput2 = _interopRequireDefault(_FormInput);
@@ -78471,6 +78566,10 @@
 	var _FormTextArea = __webpack_require__(682);
 	
 	var _FormTextArea2 = _interopRequireDefault(_FormTextArea);
+	
+	var _Image = __webpack_require__(384);
+	
+	var _Image2 = _interopRequireDefault(_Image);
 	
 	var _List = __webpack_require__(588);
 	
@@ -78504,7 +78603,49 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
+	var _use = __webpack_require__(1085);
+	
+	var _use2 = _interopRequireDefault(_use);
+	
+	var _use3 = __webpack_require__(1087);
+	
+	var _use4 = _interopRequireDefault(_use3);
+	
+	var _use5 = __webpack_require__(1088);
+	
+	var _use6 = _interopRequireDefault(_use5);
+	
+	var _use7 = __webpack_require__(1090);
+	
+	var _use8 = _interopRequireDefault(_use7);
+	
+	var _videoDatasource = __webpack_require__(1092);
+	
+	var _videoDatasource2 = _interopRequireDefault(_videoDatasource);
+	
+	var _videoDatetime = __webpack_require__(1094);
+	
+	var _videoDatetime2 = _interopRequireDefault(_videoDatetime);
+	
+	var _videoIntro = __webpack_require__(1096);
+	
+	var _videoIntro2 = _interopRequireDefault(_videoIntro);
+	
+	var _videoWalkthru = __webpack_require__(1098);
+	
+	var _videoWalkthru2 = _interopRequireDefault(_videoWalkthru);
+	
+	var _index = __webpack_require__(1111);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	const sortFaqs = (a, b) => {
+	  if (a.data.sort > b.data.sort) return 1;
+	  if (a.data.sort < b.data.sort) return -1;
+	  return 0;
+	};
 	
 	/**
 	 *
@@ -78513,9 +78654,10 @@
 	  const { links } = config;
 	  const { pages } = route;
 	  const faqs = pages.filter(({ file }) => file.path.match(/^htm\-studio\/faq\/.*\.md/));
-	  const faq = faqs.sort().map(({ data, file }) => _react2.default.createElement(
-	    _ListItem2.default,
+	  const faq = faqs.sort(sortFaqs).map(({ data, file }) => _react2.default.createElement(
+	    'div',
 	    { key: file.stem },
+	    _react2.default.createElement(_Anchor2.default, { name: file.stem }),
 	    _react2.default.createElement(
 	      _Strong2.default,
 	      null,
@@ -78539,77 +78681,204 @@
 	        title: 'HTM Studio'
 	      },
 	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        null,
-	        'Find Real-Time Anomalies in your Streaming Data'
-	      ),
-	      _react2.default.createElement(_Video2.default, {
-	        image: '/assets/img/pages/htm-studio/video-intro.png',
-	        respond: 'mw',
-	        time: '01:37',
-	        title: 'HTM Studio Introduction',
-	        type: 'youtube',
-	        videoId: 'Nqoruj4eCb8'
-	      }),
-	      _react2.default.createElement(
 	        'div',
-	        null,
-	        'VIDEO: HTM Studio Introduction (01:37)'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'HTM Studio allows you to test whether our Hierarchical Temporal Memory (HTM) algorithms will find anomalies in your data. With just one click, you can uncover anomalies other techniques cannot find in your numeric, time-series data, in minutes.'
-	      ),
-	      _react2.default.createElement(
-	        _Form2.default,
-	        null,
+	        { className: _index2.default.columns },
 	        _react2.default.createElement(
-	          _FormLabel2.default,
-	          null,
-	          _react2.default.createElement('input', { id: 'terms-accepted', type: 'checkbox' }),
-	          'I agree to the',
+	          'div',
+	          { className: _index2.default.content },
 	          _react2.default.createElement(
-	            _TextLink2.default,
-	            { to: `${ links.in.htmstudio }terms/` },
-	            'Terms and Conditions'
+	            'div',
+	            { className: _index2.default.tagline },
+	            _react2.default.createElement(
+	              _SubTitle2.default,
+	              { level: 3 },
+	              'Find Real-Time Anomalies in your Streaming Data'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            { lead: true },
+	            'HTM Studio allows you to test whether our Hierarchical Temporal Memory (HTM) algorithms will find anomalies in your data. With just one click, you can uncover anomalies other techniques cannot find in your numeric, time-series data, in minutes.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: _index2.default.download },
+	            _react2.default.createElement(
+	              _Form2.default,
+	              null,
+	              _react2.default.createElement(
+	                'div',
+	                { className: _index2.default.row },
+	                _react2.default.createElement(_FormCheckbox2.default, { name: 'terms-accepted' }),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: _index2.default.agree },
+	                  'I agree to the ',
+	                  ' ',
+	                  _react2.default.createElement(
+	                    _TextLink2.default,
+	                    { to: `${ links.in.htmstudio }terms/` },
+	                    'Terms and Conditions'
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                {
+	                  className: (0, _classnames2.default)(_index2.default.row, _index2.default.error, _index2.default.hide)
+	                },
+	                'Please agree to the ',
+	                ' ',
+	                _react2.default.createElement(
+	                  _TextLink2.default,
+	                  { to: `${ links.in.htmstudio }terms/` },
+	                  'Terms and Conditions'
+	                ),
+	                ' ',
+	                ' ',
+	                'before downloading.'
+	              ),
+	              _react2.default.createElement(
+	                _Button2.default,
+	                { theme: 'primary', type: 'button' },
+	                'Download HTM Studio'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: _index2.default.notes },
+	            _react2.default.createElement(
+	              _List2.default,
+	              { marker: 'disc' },
+	              _react2.default.createElement(
+	                _ListItem2.default,
+	                null,
+	                'Available on Desktop only, for Mac OS/X and Windows (64 bit versions).'
+	              ),
+	              _react2.default.createElement(
+	                _ListItem2.default,
+	                null,
+	                'Installation on Windows will take several minutes.'
+	              ),
+	              _react2.default.createElement(
+	                _ListItem2.default,
+	                null,
+	                'Windows 10 users, ',
+	                ' ',
+	                _react2.default.createElement(
+	                  _TextLink2.default,
+	                  { to: `${ links.in.htmstudio }windows/` },
+	                  'click here'
+	                ),
+	                ' ',
+	                ' ',
+	                'for further information.'
+	              )
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
-	          _Paragraph2.default,
-	          null,
-	          'Please agree to the ',
-	          ' ',
+	          'div',
+	          { className: _index2.default.aside },
+	          _react2.default.createElement(_Video2.default, {
+	            image: _videoIntro2.default,
+	            respond: 'mw',
+	            time: '01:37',
+	            title: 'HTM Studio Introduction',
+	            type: 'youtube',
+	            videoId: 'Nqoruj4eCb8'
+	          })
+	        )
+	      ),
+	      _react2.default.createElement(_Anchor2.default, { name: 'uses' }),
+	      _react2.default.createElement(
+	        _SubTitle2.default,
+	        null,
+	        'Use Cases'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: (0, _classnames2.default)(_index2.default.columns, _index2.default.pad) },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.column },
+	          _react2.default.createElement(_Image2.default, {
+	            alt: 'HTM Studio use case #1',
+	            respond: 'w',
+	            src: _use2.default
+	          }),
 	          _react2.default.createElement(
-	            _TextLink2.default,
-	            { to: `${ links.in.htmstudio }terms/` },
-	            'Terms and Conditions'
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Preventative Maintenance'
 	          ),
-	          ' ',
-	          ' ',
-	          'before downloading.'
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Monitor machine sensors to detect failures before they occur.'
+	          )
 	        ),
 	        _react2.default.createElement(
-	          _TextLink2.default,
-	          { to: '' },
-	          'Download HTM Studio'
+	          'div',
+	          { className: _index2.default.column },
+	          _react2.default.createElement(_Image2.default, {
+	            alt: 'HTM Studio use case #2',
+	            respond: 'w',
+	            src: _use4.default
+	          }),
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'IoT Sensors'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Understand energy usage and adjust resources in a connected building.'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.column },
+	          _react2.default.createElement(_Image2.default, {
+	            alt: 'HTM Studio use case #3',
+	            respond: 'w',
+	            src: _use6.default
+	          }),
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Traffic Patterns'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Identify unusual patterns in direction or speed from a vehicle.'
+	          )
 	        ),
 	        _react2.default.createElement(
-	          _Paragraph2.default,
-	          null,
-	          'Available on Desktop only, for Mac OS/X and Windows (64 bit versions).',
-	          _react2.default.createElement('br', null),
-	          'Installation on Windows will take several minutes.',
-	          _react2.default.createElement('br', null),
-	          'Windows 10 users, ',
-	          ' ',
+	          'div',
+	          { className: _index2.default.column },
+	          _react2.default.createElement(_Image2.default, {
+	            alt: 'HTM Studio use case #4',
+	            respond: 'w',
+	            src: _use8.default
+	          }),
 	          _react2.default.createElement(
-	            _TextLink2.default,
-	            { to: `${ links.in.htmstudio }windows/` },
-	            'click here'
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Network Servers'
 	          ),
-	          ' ',
-	          ' for further information.'
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Identify network changes and potential server degradation.'
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(_Anchor2.default, { name: 'features' }),
@@ -78619,120 +78888,119 @@
 	        'Features'
 	      ),
 	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'No Coding Skills Required'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Skip the hassle of setting parameters. Discover anomalies with one click.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Data Privacy'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Add local CSV (comma-separated value) files quickly with no upload or privacy issues.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Run Simultaneous Models'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Run multiple data streams simultaneously and compare discovered anomalies.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Run Simultaneous Models'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Summarized Results'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Visualize and export your results.'
-	      ),
-	      _react2.default.createElement(_Anchor2.default, { name: 'uses' }),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        null,
-	        'Use Cases'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Want to try HTM Studio but don’t have your own data readily available? Experiment with our pre-loaded datasets and see how HTM can be applied to a variety of use cases.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Preventative Maintenance'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Monitor machine sensors to detect failures before they occur.'
+	        'div',
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'No Coding Skills Required'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Skip the hassle of setting parameters. Discover anomalies with one click.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: (0, _classnames2.default)(_index2.default.aside, _index2.default.iconSmall) },
+	          _react2.default.createElement(_bullseye2.default, null)
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        '@TODO image /assets/img/pages/htm-studio/use1.png'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'IoT Sensors'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Understand energy usage and adjust resources in a connected building.'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        '@TODO image /assets/img/pages/htm-studio/use2.png'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Traffic Patterns'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Identify unusual patterns in direction or speed from a vehicle.'
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Data Privacy'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Add local CSV (comma-separated value) files quickly with no upload or privacy issues.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: (0, _classnames2.default)(_index2.default.aside, _index2.default.iconSmall) },
+	          _react2.default.createElement(_lock2.default, null)
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        '@TODO image /assets/img/pages/htm-studio/use3.png'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Network Servers'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Identify network changes and potential server degradation.'
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Run Simultaneous Models'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Run multiple data streams simultaneously and compare discovered anomalies.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: (0, _classnames2.default)(_index2.default.aside, _index2.default.iconSmall) },
+	          _react2.default.createElement(_cubes2.default, null)
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        '@TODO image /assets/img/pages/htm-studio/use4.png'
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Summarized Results'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Visualize and export your results.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: (0, _classnames2.default)(_index2.default.aside, _index2.default.iconSmall) },
+	          _react2.default.createElement(_barChart2.default, null)
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Pre-Loaded Datasets'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Don’t have your own data readily available? Experiment with our pre-loaded datasets, and see how HTM can be applied to a variety of use cases.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: (0, _classnames2.default)(_index2.default.aside, _index2.default.iconSmall) },
+	          _react2.default.createElement(_folderOpen2.default, null)
+	        )
 	      ),
 	      _react2.default.createElement(_Anchor2.default, { name: 'start' }),
 	      _react2.default.createElement(
@@ -78741,122 +79009,146 @@
 	        'Get Started'
 	      ),
 	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'To get the full HTM Studio experience, watch our short walk-through video.'
-	      ),
-	      _react2.default.createElement(_Video2.default, {
-	        image: '/assets/img/pages/htm-studio/video-walkthru.png',
-	        respond: 'mw',
-	        time: '04:41',
-	        title: 'HTM Studio Walk-through',
-	        type: 'youtube',
-	        videoId: 'a2hshyznLEE'
-	      }),
-	      _react2.default.createElement(
 	        'div',
-	        null,
-	        'VIDEO: HTM Studio Walk-Through (04:41)'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Data imported into HTM Studio must be formatted to meet certain conditions. See requirements and watch our brief instructional videos to learn how to prepare your data.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Date/Time Format'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Data imported into HTM Studio must be in CSV file format and meet the following conditions:'
-	      ),
-	      _react2.default.createElement(
-	        _List2.default,
-	        null,
+	        { className: _index2.default.columns },
 	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Only one Date/Time column'
-	        ),
-	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Only one header row'
-	        ),
-	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Number of rows in the CSV file should be minimum of 400.'
-	        ),
-	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Values in numeric columns will be skipped if equal to "NaN", "None", "null", "N/A", "NA" (not case sensitive)'
-	        ),
-	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Any number of numeric columns'
-	        ),
-	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Data is listed in chronological order'
-	        ),
-	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Date/Time column must be in a',
+	          'div',
+	          { className: _index2.default.content },
 	          _react2.default.createElement(
-	            _TextLink2.default,
-	            { to: `${ links.in.htmstudio }date-time-formats/` },
-	            'supported format'
+	            _Paragraph2.default,
+	            null,
+	            'To get the full HTM Studio experience, watch our short walk-through video.'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Data imported into HTM Studio must be formatted to meet certain conditions. See requirements and watch our brief instructional videos to learn how to prepare your data.'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          _ListItem2.default,
-	          null,
-	          'Unix timestamp support (both milliseconds and seconds) as long as the column name contains the words "time" or "date" (case insensitive)'
+	          'div',
+	          { className: _index2.default.aside },
+	          _react2.default.createElement(_Video2.default, {
+	            image: _videoWalkthru2.default,
+	            respond: 'mw',
+	            time: '04:41',
+	            title: 'HTM Studio Walk-through',
+	            type: 'youtube',
+	            videoId: 'a2hshyznLEE'
+	          })
 	        )
 	      ),
-	      _react2.default.createElement(_Video2.default, {
-	        image: '/assets/img/pages/htm-studio/video-datetime.png',
-	        respond: 'mw',
-	        time: '04:28',
-	        title: 'HTM Studio Date/Time Format Tutorial',
-	        type: 'youtube',
-	        videoId: 'f80ewxLvgks'
-	      }),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        'VIDEO: Date/Time Format Tutorial (04:28)'
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Isolating Data Sources'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'CSV files must contain data that has only been generated from one source. If you have multiple sources, you will need to split your data by source and into separate CSV files.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.aside },
+	          _react2.default.createElement(_Video2.default, {
+	            image: _videoDatasource2.default,
+	            respond: 'mw',
+	            time: '02:47',
+	            title: 'Isolating Data Sources Tutorial',
+	            type: 'youtube',
+	            videoId: 'CRzWS52EdM0'
+	          })
+	        )
 	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 3 },
-	        'Isolating Data Sources'
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'CSV files must contain data that has only been generated from one source. If you have multiple sources, you will need to split your data by source and into separate CSV files.'
-	      ),
-	      _react2.default.createElement(_Video2.default, {
-	        image: '/assets/img/pages/htm-studio/video-datasource.png',
-	        respond: 'mw',
-	        time: '02:47',
-	        title: 'HTM Studio Isolating Data Sources Tutorial',
-	        type: 'youtube',
-	        videoId: 'CRzWS52EdM0'
-	      }),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        'VIDEO: Isolating Data Sources Tutorial (02:47)'
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 3 },
+	            'Date/Time Format'
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Data imported into HTM Studio must be in CSV file format and meet the following conditions:'
+	          ),
+	          _react2.default.createElement(
+	            _List2.default,
+	            { marker: 'disc' },
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Only one Date/Time column'
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Only one header row'
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Number of rows in the CSV file should be minimum of 400.'
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Values in numeric columns will be skipped if equal to:',
+	              _react2.default.createElement('br', null),
+	              '"NaN", "None", "null", "N/A", "NA" (not case sensitive)'
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Any number of numeric columns'
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Data is listed in chronological order'
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Date/Time column must be in a ',
+	              ' ',
+	              _react2.default.createElement(
+	                _TextLink2.default,
+	                { to: `${ links.in.htmstudio }date-time-formats/` },
+	                'supported format'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _ListItem2.default,
+	              null,
+	              'Unix timestamp support (both milliseconds and seconds) as long as the column name contains the words "time" or "date" (case insensitive)'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.aside },
+	          _react2.default.createElement(_Video2.default, {
+	            image: _videoDatetime2.default,
+	            respond: 'mw',
+	            time: '04:28',
+	            title: 'Date/Time Format Tutorial',
+	            type: 'youtube',
+	            videoId: 'f80ewxLvgks'
+	          })
+	        )
 	      ),
 	      _react2.default.createElement(_Anchor2.default, { name: 'faq' }),
 	      _react2.default.createElement(
@@ -78865,14 +79157,22 @@
 	        'Frequently Asked Questions'
 	      ),
 	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'FAQ on HTM Studio and the underlying anomaly detection technology. Includes links to other documents for more detailed information.'
-	      ),
-	      _react2.default.createElement(
-	        _List2.default,
-	        null,
-	        faq
+	        'div',
+	        { className: _index2.default.columns },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            'div',
+	            { className: _index2.default.faq },
+	            faq
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: (0, _classnames2.default)(_index2.default.aside, _index2.default.iconLarge) },
+	          _react2.default.createElement(_questionCircle2.default, null)
+	        )
 	      ),
 	      _react2.default.createElement(_Anchor2.default, { name: 'resources' }),
 	      _react2.default.createElement(
@@ -78881,150 +79181,163 @@
 	        'Resources'
 	      ),
 	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 4 },
+	        'div',
+	        { className: _index2.default.columns },
 	        _react2.default.createElement(
-	          _TextLink2.default,
-	          { to: '/assets/pdf/htm-studio/HTM-Studio-Data-Sheet.pdf' },
-	          'HTM Studio Data Sheet'
+	          'div',
+	          { className: _index2.default.content },
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 4 },
+	            _react2.default.createElement(
+	              _TextLink2.default,
+	              { to: '/assets/pdf/htm-studio/HTM-Studio-Data-Sheet.pdf' },
+	              'HTM Studio Data Sheet'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Download this one-page data sheet to learn more about HTM Studio.'
+	          ),
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 4 },
+	            _react2.default.createElement(
+	              _TextLink2.default,
+	              { to: '/learn/science-of-anomaly-detection.html' },
+	              'Science of Anomaly Detection Video'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Learn about the science behind our HTM machine intelligence algorithms in this educational video.'
+	          ),
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 4 },
+	            _react2.default.createElement(
+	              _TextLink2.default,
+	              { to: `${ links.in.htmstudio }terms/` },
+	              'Terms and Conditions'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Terms and Conditions for HTM Studio.'
+	          ),
+	          _react2.default.createElement(
+	            _SubTitle2.default,
+	            { level: 4 },
+	            _react2.default.createElement(
+	              _TextLink2.default,
+	              { to: links.in.nab },
+	              'Numenta Anomaly Benchmark (NAB)'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Paragraph2.default,
+	            null,
+	            'Numenta Anomaly Benchmark (NAB) is an open-source benchmark for evaluating anomaly detection in streaming data.'
+	          )
 	        )
 	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Download this one-page data sheet to learn more about HTM Studio.'
-	      ),
+	      _react2.default.createElement(_Anchor2.default, { name: 'feedback' }),
 	      _react2.default.createElement(
 	        _SubTitle2.default,
-	        { level: 4 },
-	        _react2.default.createElement(
-	          _TextLink2.default,
-	          { to: '/learn/science-of-anomaly-detection.html' },
-	          'Science of Anomaly Detection Video'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
 	        null,
-	        'Learn about the science behind our HTM machine intelligence algorithms in this educational video.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 4 },
-	        _react2.default.createElement(
-	          _TextLink2.default,
-	          { to: `${ links.in.htmstudio }terms/` },
-	          'Terms and Conditions'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Terms and Conditions for HTM Studio.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 4 },
-	        _react2.default.createElement(
-	          _TextLink2.default,
-	          { to: links.in.nab },
-	          'Numenta Anomaly Benchmark (NAB)'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Numenta Anomaly Benchmark (NAB) is an open-source benchmark for evaluating anomaly detection in streaming data.'
-	      ),
-	      _react2.default.createElement(
-	        _SubTitle2.default,
-	        { level: 4 },
 	        'Feedback'
 	      ),
 	      _react2.default.createElement(
-	        _Paragraph2.default,
-	        null,
-	        'Provide your feedback on HTM Studio via the form below, or email ',
-	        ' ',
-	        _react2.default.createElement(
-	          _TextLink2.default,
-	          { to: 'mailto:htm-studio@numenta.com' },
-	          'htm-studio@numenta.com'
-	        ),
-	        ' ',
-	        ' ',
-	        'for further information on HTM.'
-	      ),
-	      _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: _index2.default.columns },
 	        _react2.default.createElement(
-	          _Form2.default,
-	          {
-	            action: 'https://numenta.wufoo.com/forms/z3mk1q016cylq6/#public',
-	            name: 'form17'
-	          },
+	          'div',
+	          { className: _index2.default.content },
 	          _react2.default.createElement(
-	            _FormRow2.default,
+	            _Paragraph2.default,
 	            null,
+	            'Provide your feedback on HTM Studio via the form below, or email ',
+	            ' ',
 	            _react2.default.createElement(
-	              _FormLabel2.default,
-	              { 'for': 'Field4' },
-	              'Name'
+	              _TextLink2.default,
+	              { to: 'mailto:htm-studio@numenta.com' },
+	              'htm-studio@numenta.com'
 	            ),
-	            _react2.default.createElement(_FormInput2.default, {
-	              name: 'Field4',
-	              placeholder: 'First Lastname',
-	              type: 'text'
-	            })
+	            ' ',
+	            ' ',
+	            'for further information on HTM.'
 	          ),
 	          _react2.default.createElement(
-	            _FormRow2.default,
-	            null,
+	            _Form2.default,
+	            {
+	              action: 'https://numenta.wufoo.com/forms/z3mk1q016cylq6/#public',
+	              name: 'form17'
+	            },
 	            _react2.default.createElement(
-	              _FormLabel2.default,
-	              { 'for': 'Field5' },
-	              'Email'
-	            ),
-	            _react2.default.createElement(_FormInput2.default, {
-	              name: 'Field5',
-	              type: 'email',
-	              'class': 'form-control',
-	              placeholder: 'name@company.com'
-	            })
-	          ),
-	          _react2.default.createElement(
-	            _FormRow2.default,
-	            null,
-	            _react2.default.createElement(
-	              _FormLabel2.default,
-	              { 'for': 'Field10' },
-	              'Feedback'
-	            ),
-	            _react2.default.createElement(_FormTextArea2.default, {
-	              name: 'Field10',
-	              placeholder: 'Please enter your feedback here.'
-	            })
-	          ),
-	          _react2.default.createElement(
-	            _FormRow2.default,
-	            null,
-	            _react2.default.createElement(
-	              _FormLabel2.default,
+	              _FormRow2.default,
 	              null,
-	              ' '
+	              _react2.default.createElement(
+	                _FormLabel2.default,
+	                { 'for': 'Field4' },
+	                'Name'
+	              ),
+	              _react2.default.createElement(_FormInput2.default, {
+	                name: 'Field4',
+	                placeholder: 'First Lastname',
+	                type: 'text'
+	              })
 	            ),
 	            _react2.default.createElement(
-	              _Button2.default,
-	              { theme: 'primary', type: 'submit' },
-	              'Submit'
-	            )
-	          ),
-	          _react2.default.createElement(_FormInput2.default, {
-	            name: 'idstamp',
-	            type: 'hidden',
-	            value: '8aHfSHvE01SmfTBSufr1bVy0Sz4OmbH39bFEqizTXs0='
-	          })
+	              _FormRow2.default,
+	              null,
+	              _react2.default.createElement(
+	                _FormLabel2.default,
+	                { 'for': 'Field5' },
+	                'Email'
+	              ),
+	              _react2.default.createElement(_FormInput2.default, {
+	                name: 'Field5',
+	                type: 'email',
+	                'class': 'form-control',
+	                placeholder: 'name@company.com'
+	              })
+	            ),
+	            _react2.default.createElement(
+	              _FormRow2.default,
+	              null,
+	              _react2.default.createElement(
+	                _FormLabel2.default,
+	                { 'for': 'Field10' },
+	                'Feedback'
+	              ),
+	              _react2.default.createElement(_FormTextArea2.default, {
+	                name: 'Field10',
+	                placeholder: 'Please enter your feedback here.'
+	              })
+	            ),
+	            _react2.default.createElement(
+	              _FormRow2.default,
+	              null,
+	              _react2.default.createElement(
+	                _FormLabel2.default,
+	                null,
+	                ' '
+	              ),
+	              _react2.default.createElement(
+	                _Button2.default,
+	                { theme: 'primary', type: 'submit' },
+	                'Submit'
+	              )
+	            ),
+	            _react2.default.createElement(_FormInput2.default, {
+	              name: 'idstamp',
+	              type: 'hidden',
+	              value: '8aHfSHvE01SmfTBSufr1bVy0Sz4OmbH39bFEqizTXs0='
+	            })
+	          )
 	        )
 	      )
 	    )
@@ -79040,19 +79353,337 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1101 */
+/* 1103 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(2);
+	var IconBase = __webpack_require__(414);
+	
+	var FaBarChart = function (_React$Component) {
+	    _inherits(FaBarChart, _React$Component);
+	
+	    function FaBarChart() {
+	        _classCallCheck(this, FaBarChart);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(FaBarChart).apply(this, arguments));
+	    }
+	
+	    _createClass(FaBarChart, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                IconBase,
+	                _extends({ viewBox: '0 0 40 40' }, this.props),
+	                React.createElement(
+	                    'g',
+	                    null,
+	                    React.createElement('path', { d: 'm12.4 20v9.9h-4.9v-9.9h4.9z m7.5-9.9v19.8h-5v-19.8h5z m19.9 22.3v2.5h-39.8v-29.8h2.5v27.3h37.3z m-12.5-17.4v14.9h-4.9v-14.9h4.9z m7.5-7.4v22.3h-5v-22.3h5z' })
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return FaBarChart;
+	}(React.Component);
+	
+	exports.default = FaBarChart;
+	module.exports = exports['default'];
+
+/***/ },
+/* 1104 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(2);
+	var IconBase = __webpack_require__(414);
+	
+	var FaBullseye = function (_React$Component) {
+	    _inherits(FaBullseye, _React$Component);
+	
+	    function FaBullseye() {
+	        _classCallCheck(this, FaBullseye);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(FaBullseye).apply(this, arguments));
+	    }
+	
+	    _createClass(FaBullseye, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                IconBase,
+	                _extends({ viewBox: '0 0 40 40' }, this.props),
+	                React.createElement(
+	                    'g',
+	                    null,
+	                    React.createElement('path', { d: 'm25.9 20q0 2.4-1.7 4t-4.1 1.7-4-1.7-1.7-4 1.7-4 4-1.7 4.1 1.7 1.7 4z m2.8 0q0-3.6-2.5-6.1t-6.1-2.5-6 2.5-2.5 6.1 2.5 6.1 6 2.5 6.1-2.5 2.5-6.1z m2.9 0q0 4.7-3.4 8.1t-8.1 3.3-8-3.3-3.4-8.1 3.4-8.1 8-3.3 8.1 3.3 3.4 8.1z m2.8 0q0-2.9-1.1-5.5t-3.1-4.6-4.5-3.1-5.6-1.1-5.5 1.1-4.6 3.1-3 4.6-1.1 5.5 1.1 5.5 3 4.6 4.6 3 5.5 1.2 5.6-1.2 4.5-3 3.1-4.6 1.1-5.5z m2.9 0q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z' })
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return FaBullseye;
+	}(React.Component);
+	
+	exports.default = FaBullseye;
+	module.exports = exports['default'];
+
+/***/ },
+/* 1105 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(2);
+	var IconBase = __webpack_require__(414);
+	
+	var FaCubes = function (_React$Component) {
+	    _inherits(FaCubes, _React$Component);
+	
+	    function FaCubes() {
+	        _classCallCheck(this, FaCubes);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(FaCubes).apply(this, arguments));
+	    }
+	
+	    _createClass(FaCubes, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                IconBase,
+	                _extends({ viewBox: '0 0 40 40' }, this.props),
+	                React.createElement(
+	                    'g',
+	                    null,
+	                    React.createElement('path', { d: 'm11.7 33.4l7-3.5v-5.7l-7 3v6.2z m-1.2-8.3l7.4-3.1-7.4-3.2-7.4 3.2z m19.8 8.3l7-3.5v-5.7l-7 3v6.2z m-1.1-8.3l7.3-3.1-7.3-3.2-7.4 3.2z m-8.2-5.3l7-3v-4.9l-7 3v4.9z m-1.2-6.9l8.1-3.5-8.1-3.4-8 3.5z m19.8 9.4v7.6q0 0.7-0.3 1.2t-0.9 0.9l-8.2 4.1q-0.5 0.2-1 0.2t-1.1-0.2l-8.1-4.1q-0.1 0-0.2-0.1 0 0.1-0.1 0.1l-8.2 4.1q-0.4 0.2-1 0.2t-1-0.2l-8.2-4.1q-0.6-0.3-1-0.9t-0.3-1.2v-7.6q0-0.7 0.4-1.2t1-0.9l7.9-3.4v-7.3q0-0.7 0.4-1.3t1.1-0.8l8.1-3.5q0.4-0.2 0.9-0.2t0.9 0.2l8.2 3.5q0.6 0.2 1 0.8t0.4 1.3v7.3l7.9 3.4q0.7 0.3 1.1 0.9t0.4 1.2z' })
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return FaCubes;
+	}(React.Component);
+	
+	exports.default = FaCubes;
+	module.exports = exports['default'];
+
+/***/ },
+/* 1106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(2);
+	var IconBase = __webpack_require__(414);
+	
+	var FaFolderOpen = function (_React$Component) {
+	    _inherits(FaFolderOpen, _React$Component);
+	
+	    function FaFolderOpen() {
+	        _classCallCheck(this, FaFolderOpen);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(FaFolderOpen).apply(this, arguments));
+	    }
+	
+	    _createClass(FaFolderOpen, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                IconBase,
+	                _extends({ viewBox: '0 0 40 40' }, this.props),
+	                React.createElement(
+	                    'g',
+	                    null,
+	                    React.createElement('path', { d: 'm39.9 21.2q0 0.6-0.6 1.4l-7.2 8.4q-0.9 1.1-2.5 1.9t-3.1 0.7h-23.1q-0.7 0-1.3-0.3t-0.5-0.9q0-0.6 0.6-1.4l7.2-8.4q0.9-1.1 2.5-1.8t3.1-0.8h23.1q0.7 0 1.3 0.3t0.5 0.9z m-7.2-7.3v3.4h-17.7q-2 0-4.2 1t-3.5 2.5l-7.3 8.6q0-0.1 0-0.3t0-0.3v-20.4q0-1.9 1.4-3.3t3.4-1.4h6.8q1.9 0 3.3 1.4t1.4 3.3v0.7h11.6q1.9 0 3.4 1.4t1.4 3.4z' })
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return FaFolderOpen;
+	}(React.Component);
+	
+	exports.default = FaFolderOpen;
+	module.exports = exports['default'];
+
+/***/ },
+/* 1107 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(2);
+	var IconBase = __webpack_require__(414);
+	
+	var FaLock = function (_React$Component) {
+	    _inherits(FaLock, _React$Component);
+	
+	    function FaLock() {
+	        _classCallCheck(this, FaLock);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(FaLock).apply(this, arguments));
+	    }
+	
+	    _createClass(FaLock, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                IconBase,
+	                _extends({ viewBox: '0 0 40 40' }, this.props),
+	                React.createElement(
+	                    'g',
+	                    null,
+	                    React.createElement('path', { d: 'm14.1 17.1h11.5v-4.2q0-2.4-1.7-4.1t-4-1.7-4.1 1.7-1.7 4.1v4.2z m18.6 2.2v12.8q0 0.9-0.6 1.6t-1.5 0.6h-21.5q-0.8 0-1.5-0.6t-0.6-1.6v-12.8q0-0.9 0.6-1.5t1.5-0.7h0.8v-4.2q0-4.1 2.9-7.1t7.1-2.9 7 2.9 3 7.1v4.2h0.7q0.9 0 1.5 0.7t0.6 1.5z' })
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return FaLock;
+	}(React.Component);
+	
+	exports.default = FaLock;
+	module.exports = exports['default'];
+
+/***/ },
+/* 1108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _index = __webpack_require__(1109);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	/**
+	 *
+	 */
+	const FormCheckbox = ({ name }) => _react2.default.createElement('input', {
+	  className: _index2.default.checkbox,
+	  id: name,
+	  name: name,
+	  type: 'checkbox'
+	});
+	
+	FormCheckbox.propTypes = {
+	  name: _react2.default.PropTypes.string.isRequired
+	};
+	
+	exports.default = FormCheckbox;
+	module.exports = exports['default'];
+
+/***/ },
+/* 1109 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"checkbox":"index_checkbox_3Ka tachyons_mr1_28B tachyons_relative_1fO"};
+
+/***/ },
+/* 1110 */,
+/* 1111 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"_icon":"index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","iconSmall":"index_iconSmall_1lp index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","iconLarge":"index_iconLarge_2-3 index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","columns":"index_columns_2eq theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_fPH theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_iOw tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","tagline":"index_tagline_7kp tachyons_mb2_1U4","row":"index_row_2ko tachyons_mv3_SSC","download":"index_download_3xs tachyons_mb4_3KK tachyons_mt3_11A tachyons_tc_3ab","agree":"index_agree_2_O tachyons_ml2_2p0","error":"index_error_2_o theme_color-danger_1Mm","hide":"index_hide_1q_ tachyons_dn_1fa","notes":"index_notes_pkK tachyons_f5_2mB tachyons_mh3-m_1R0 tachyons_mh4_zgA tachyons_silver_3lN","pad":"index_pad_2xd tachyons_mt4_3dV","column":"index_column_2UW tachyons_fl_wJK tachyons_pb2_13e tachyons_ph4_-u9 tachyons_tc_3ab tachyons_w-50_bGL","faq":"index_faq_1P2"};
+
+/***/ },
+/* 1112 */,
+/* 1113 */
 /***/ function(module, exports) {
 
 	module.exports = {"title":"HTM Studio Terms and Conditions","body":"<p><strong>Numenta is happy to license HTM Studio to you if you accept all of the terms\nand conditions contained in this Agreement. By accepting this agreement and\ndownloading HTM Studio, you indicate that you have read and understand this\nAgreement and accept all of its terms and conditions. If you agree to these\nterms and conditions on behalf of a business, government agency, or other\nentity, you warrant that you have authority to bind that business, agency, or\nother entity to this Agreement, and your agreement to these terms and conditions\nwill be treated as the agreement of that business, agency, or other entity. In\nthat event, “you” and “your” refer herein to that business, agency, or other\nentity.</strong></p>\n<h3>PREAMBLE</h3>\n<p>The purpose of this Preamble is to give a plain English description of this\nAgreement. Please read the rest of the Agreement carefully for detailed terms\nand conditions.</p>\n<p>Numenta welcomes individuals, businesses, and other entities to explore and\nadvance HTM technology. This license allows you to explore HTM ideas using HTM\nStudio in whole or in part, at no charge, as long as your work is for research\nand experimentation purposes only. You may not sell or distribute any portion of\nHTM Studio or your work product for commercial or production use unless you take\nan appropriate commercial license from us.</p>\n<p>HTM Studio collects anonymized application activity statistics (clicks, menus\nopened, etc.) and reports them to Numenta so we can learn about the use of HTM\nStudio and continue to improve it. <strong>HTM Studio will never collect or report\ninformation about HTM Studio users (names, IP addresses, etc.) or users’ data\n(file names, data points, results, etc.).</strong></p>\n<ol>\n<li><strong>Definitions</strong>.</li>\n</ol>\n<p><strong>“HTM”</strong> means the Hierarchical Temporal Memory theory.</p>\n<p><strong>“NuPIC”</strong> means the Numenta Platform for Intelligent Computing. All NuPIC\ncode is made available through the “numenta” GitHub organization at\n<a href=\"http://github.com/numenta\">http://github.com/numenta</a>, under an AGPLv3 license.</p>\n<p><strong>“HTM Studio”</strong> refers to the application that can be used to find anomalies\nin streaming data. All HTM Studio code is made available through the &quot;numenta&quot;\nGitHub organization at <a href=\"http://github.com/numenta\">http://github.com/numenta</a>, under an AGPLv3 license.</p>\n<ol start=\"2\">\n<li><strong>License, Permitted Uses, Restrictions, and Ownership.</strong></li>\n</ol>\n<ul>\n<li>\n<p>(a) <strong>License</strong>. Numenta hereby grants you a non-exclusive,\nnon-transferable, royalty-free license during the term of this Agreement to\ninstall and use HTM Studio for the permitted uses detailed in section 2(b)\nsubject to the restrictions detailed in section 2©.  Any technology that\ndoes not exist at <a href=\"http://github.com/numenta\">http://github.com/numenta</a> with an AGPL license is not\nincluded in this License.</p>\n</li>\n<li>\n<p>(b) <strong>Permitted Uses</strong>. You may use HTM Studio to conduct research and\nanalysis. You may use HTM Studio for evaluation of HTM and for validation of\nits applicability to specific problems. You may use HTM Studio for\ninstruction and training. You may publish information regarding the results\nof your research as long as you include an appropriate citation. You may\nmodify and create derivative works of HTM Studio.</p>\n</li>\n<li>\n<p>© <strong>Restrictions</strong>. You may not offer for sale, distribute, or permit\nothers to use any technology that includes the HTM Studio or NuPIC software\nor intellectual property, either free or for a fee, unless you have entered\ninto an appropriate Numenta commercial license agreement.</p>\n</li>\n<li>\n<p>(d) <strong>Ownership of Intellectual Property</strong>. You agree that Numenta owns all\nright, title and interest, including but not limited to copyright, patent,\ntrade secret and all other intellectual property rights, in and to HTM\nStudio and NuPIC, and any changes, modifications, or corrections thereto\nthat are made by or for Numenta. You hereby grant to Numenta a perpetual,\nirrevocable, world-wide, royalty-free, non-exclusive, license to use any\nfeedback, suggestions, or ideas that you provide directly to Numenta\nregarding HTM Studio or NuPIC.</p>\n</li>\n</ul>\n<ol start=\"3\">\n<li>\n<p><strong>Application Analytics.</strong> HTM Studio collects anonymized application\nactivity statistics, including but not limited to user clicks and frequency\nand order of menus opened in the application. These statistics are reported to\nNumenta. By accepting this agreement and downloading HTM Studio, you give your\npermission for Numenta to collect and use these statistics. HTM Studio will\nnever collect or report information about HTM Studio users (names, IP\naddresses, etc.) or users’ data (file names, data points, results, etc.).</p>\n</li>\n<li>\n<p><strong>Software Updates.</strong> HTM Studio may automatically download and install\nupdates from time to time from Numenta. These updates are designed to improve,\nenhance and further develop HTM Studio and may take the form of bug fixes,\nenhanced functions, new software modules and completely new versions. You\nagree to receive such updates (and permit Numenta to deliver these to you) as\npart of your use of HTM Studio.</p>\n</li>\n<li>\n<p><strong>No Support.</strong> You acknowledge and agree that Numenta undertakes no\nobligation to provide any support, error corrections, or upgrades for HTM\nStudio, and that you assume all risk arising from your use of HTM Studio.</p>\n</li>\n<li>\n<p><strong>Termination.</strong> You may terminate this Agreement at any time upon written\nnotice to Numenta. Either party may terminate this Agreement immediately upon\nwritten notice to the other party: (i) in the event of the insolvency,\nbankruptcy or voluntary dissolution of the other party; or (ii) if the other\nparty defaults in the performance of any provision hereunder, and if such\ndefault continues and is not cured within thirty (30) days after written\nnotice thereof to the defaulting party. Upon any termination of this\nAgreement, you agree to immediately cease using HTM Studio.</p>\n</li>\n<li>\n<p><strong>No Warranties; Limitation of Liability.</strong></p>\n</li>\n</ol>\n<ul>\n<li>\n<p>(a) <strong>No Warranty. HTM Studio is provided “as is” without warranty of any\nkind including without limitation, any warranty of merchantability, fitness\nfor a particular purpose, or non-infringement. Further, Numenta does not\nwarrant results of use or that HTM Studio is bug free or that its use will\nbe uninterrupted. The parties agree and acknowledge that NuPIC is an\nearly-stage technology and there can be no assurance that either HTM Studio\nor NuPIC will be further developed or improved by Numenta into a\ncommercially viable product. No advice or information, whether oral or\nwritten, obtained from Numenta or elsewhere will create any warranty not\nexpressly stated in this Agreement.</strong></p>\n</li>\n<li>\n<p>(b) <strong>Limitation of Liability. Numenta will have no liability to you under\nthis Agreement. In no event will either party be liable for costs of\nprocurement of substitute goods, loss of profits, or for any special,\nindirect, consequential or incidental damages, however caused, whether for\nbreach of warranty, breach of contract, repudiation of contract, negligence\nor otherwise.</strong></p>\n</li>\n</ul>\n<ol start=\"8\">\n<li><strong>General.</strong> Once executed, this Agreement takes precedence over the standard\nopen source licenses provided at <a href=\"http://numenta.org\">http://numenta.org</a>, <a href=\"http://github.com/numenta\">http://github.com/numenta</a>\nand <a href=\"https://github.com/numenta/numenta-apps\">https://github.com/numenta/numenta-apps</a>. The terms of this Agreement may\nonly be modified by a written agreement signed by both parties. You may not\nassign this Agreement without the prior written consent of Numenta. This\nAgreement will be governed by the laws of the state of California and the\nUnited States of America. No failure of either party to enforce any of its\nrights under this Agreement will act as a waiver of such rights or of any\nother rights hereunder.</li>\n</ol>\n"}
 
 /***/ },
-/* 1102 */
+/* 1114 */
 /***/ function(module, exports) {
 
 	module.exports = {"title":"HTM Studio - Windows 10","body":"<p>If you are using Windows 10\n“<a href=\"http://windows.microsoft.com/en-us/windows/defender-realtime-protection-on-off#1TC=windows-7\">Windows Defender</a>”,\nyou may see the following error screen. Click <strong>More info</strong>.</p>\n<p><img src=\"../images/windows1.png\" alt=\"Windows Screenshot 1\"></p>\n<p>After clicking <strong>More info</strong>, click <strong>Run anyway</strong> to continue downloading the\napplication.</p>\n<p><img src=\"../images/windows2.png\" alt=\"Windows Screenshot 2\"></p>\n"}
 
 /***/ },
-/* 1103 */
+/* 1115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -79129,31 +79760,31 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1104 */
+/* 1116 */
 /***/ function(module, exports) {
 
 	module.exports = {"date":"2016/07/22","title":"Privacy Policy","body":"<p>These terms of service apply to the use of Numenta’s streaming analytics product\nas distributed through cloud service providers (the Grok Product) and for the\nuse of Numenta’s web site. Together, the Grok Product and the Numenta web site\nare called the Numenta Offering.</p>\n<h3>1. ACCEPTANCE OF TERMS</h3>\n<p>If you do not agree to these Terms, you should not use the Numenta Offering. We\nreserve the right to change, modify, add or remove portions of these Terms\nperiodically. Such modifications shall be effective immediately upon posting of\nthe modified Terms to the Numenta website. Your continued use of the Numenta\nOffering will mean that you accept these terms.</p>\n<h3>2. NO UNLAWFUL OR PROHIBITED USE</h3>\n<p>You warrant to Numenta that you will not use the Numenta Offering, or any of the\ncontent therein, for any purpose that is unlawful or that is prohibited by these\nTerms.</p>\n<h3>3. LICENSE GRANT</h3>\n<p>Your rights to access, download, and use the Grok Product will be subject to the\nterms and conditions of the software license agreement provided on the cloud\nservice provider’s site through which it is distributed.</p>\n<h3>4. YOUR CONTENT</h3>\n<p>Numenta will not pre-screen or review your content, but Numenta shall have the\nright (but not the obligation) in its sole discretion to refuse or delete any\ncontent that it reasonably considers to violate the Terms or to be otherwise\nillegal.</p>\n<p>You grant Numenta the right to review your content for the purposes of debugging\nthe Numenta Offering and for providing you with technical support. Numenta will\nnot share your content with others without your explicit, written permission,\nexcept in the case where being required to do so by the appropriate court or\ngovernment agency.</p>\n<h3>5. TERMINATION</h3>\n<p>We may terminate your use of the Numenta Offering if we have reasonable belief\nthat your use: 1) violates these Terms; or 2) abuses site resources or attempts\nto gain unauthorized entry to the site or site resources; or 3) we are required\nto do so by law, regulation, court or governing agency order.</p>\n<p>Our termination of any user’s access to the Numenta Offering may be effected\nwithout notice and, on such termination, we may immediately deactivate or delete\nuser’s account and/or bar any further access to such files. Numenta shall not be\nliable to any Numenta user or other third party for any such termination.</p>\n<p>You may terminate your use of the Numenta Offering by stopping its use without\nnotice to us.</p>\n<h3>6. PAYMENT</h3>\n<p>The Numenta Product is delivered through a cloud service provider’s marketplace.\nYou will abide by the payment terms as detailed in that marketplace. If you do\nnot wish to continue using and paying for the Numenta Product, you may stop\nusing it at any time, and further charges will not accrue. We do not offer\nrefunds for any amounts paid.</p>\n<h3>7. LINKS</h3>\n<p>To the extent the Numenta website includes links to third parties, Numenta is\nnot responsible or liable for the content of such sites. The Numenta website\nprivacy statement is applicable only when you are on the Numenta websites.</p>\n<h3>8. SUPPORT</h3>\n<p>Technical support for the Grok Product is provided by email. We will make a\nreasonable effort to respond to your email within 48 hours. Support inquiries\nare to be sent to <a href=\"mailto:support@numenta.com\">support@numenta.com</a>.</p>\n<h3>9. TRADEMARK INFORMATION</h3>\n<p>Numenta, Grok, NuPIC, and the Numenta, Grok and NuPIC trademarks, logos and\nservice marks are the intellectual property of Numenta, Inc.</p>\n<p>All trademarks, trade names, service marks and logos referenced herein are the\nproperty of their respective owners.</p>\n<h3>10. COPYRIGHTS</h3>\n<p>If you believe that your work has been copied and is accessible in the Numenta\nOffering in a way that constitutes copyright infringement, you may notify us by\nproviding our copyright agent with the following information in writing:</p>\n<ul>\n<li>\n<p>the electronic or physical signature of the owner of the copyright or the\nperson authorized to act on the owner’s behalf;</p>\n</li>\n<li>\n<p>identification of the copyrighted work that you claim has been infringed;</p>\n</li>\n<li>\n<p>identification of the material that is claimed to be infringing and\ninformation reasonably sufficient to permit Grok to locate the material;</p>\n</li>\n<li>\n<p>your name, address, telephone number, and email address;</p>\n</li>\n<li>\n<p>a statement by you that you have a good faith belief that the disputed use is\nnot authorized by the copyright owner, its agent, or the law;</p>\n</li>\n<li>\n<p>a statement, made under penalty of perjury, that the above information in\nyour Notice is accurate and that you are the copyright owner or are authorized\nto act on the copyright owner’s behalf.</p>\n</li>\n</ul>\n<p>If Numenta receives such a claim, Numenta will investigate and report back to\nthe complainant. Numenta reserves the right to delete such reported content or\nto terminate a user’s account.</p>\n<p>Our designated agent to receive notification of claimed infringement under the\nDigital Millennium Copyright Act OF 1998 (“DMCA”) is:\n<a href=\"mailto:dmca@numenta.com\">dmca@numenta.com</a></p>\n<h3>11. VIOLATIONS OF TERMS</h3>\n<p>Please report any violations of the Terms to\n<a href=\"mailto:info@numenta.com\">info@numenta.com</a>.</p>\n<h3>12. PRIVACY</h3>\n<p>Our Privacy Policy is located at <a href=\"http://numenta.com/legal/privacy/\">http://numenta.com/legal/privacy/</a>.</p>\n"}
 
 /***/ },
-/* 1105 */
+/* 1117 */
 /***/ function(module, exports) {
 
 	module.exports = {"date":"2016/07/22","title":"Terms of Service","body":"<p>These terms of service apply to the use of Numenta’s streaming analytics product\nas distributed through cloud service providers (the Grok Product) and for the\nuse of Numenta’s web site. Together, the Grok Product and the Numenta web site\nare called the Numenta Offering.</p>\n<h3>1. ACCEPTANCE OF TERMS</h3>\n<p>If you do not agree to these Terms, you should not use the Numenta Offering. We\nreserve the right to change, modify, add or remove portions of these Terms\nperiodically. Such modifications shall be effective immediately upon posting of\nthe modified Terms to the Numenta website. Your continued use of the Numenta\nOffering will mean that you accept these terms.</p>\n<h3>2. NO UNLAWFUL OR PROHIBITED USE</h3>\n<p>You warrant to Numenta that you will not use the Numenta Offering, or any of the\ncontent therein, for any purpose that is unlawful or that is prohibited by these\nTerms.</p>\n<h3>3. LICENSE GRANT</h3>\n<p>Your rights to access, download, and use the Grok Product will be subject to the\nterms and conditions of the software license agreement provided on the cloud\nservice provider’s site through which it is distributed.</p>\n<h3>4. YOUR CONTENT</h3>\n<p>Numenta will not pre-screen or review your content, but Numenta shall have the\nright (but not the obligation) in its sole discretion to refuse or delete any\ncontent that it reasonably considers to violate the Terms or to be otherwise\nillegal.</p>\n<p>You grant Numenta the right to review your content for the purposes of debugging\nthe Numenta Offering and for providing you with technical support. Numenta will\nnot share your content with others without your explicit, written permission,\nexcept in the case where being required to do so by the appropriate court or\ngovernment agency.</p>\n<h3>5. TERMINATION</h3>\n<p>We may terminate your use of the Numenta Offering if we have reasonable belief\nthat your use: 1) violates these Terms; or 2) abuses site resources or attempts\nto gain unauthorized entry to the site or site resources; or 3) we are required\nto do so by law, regulation, court or governing agency order.</p>\n<p>Our termination of any user’s access to the Numenta Offering may be effected\nwithout notice and, on such termination, we may immediately deactivate or delete\nuser’s account and/or bar any further access to such files. Numenta shall not be\nliable to any Numenta user or other third party for any such termination.</p>\n<p>You may terminate your use of the Numenta Offering by stopping its use without\nnotice to us.</p>\n<h3>6. PAYMENT</h3>\n<p>The Numenta Product is delivered through a cloud service provider’s marketplace.\nYou will abide by the payment terms as detailed in that marketplace. If you do\nnot wish to continue using and paying for the Numenta Product, you may stop\nusing it at any time, and further charges will not accrue. We do not offer\nrefunds for any amounts paid.</p>\n<h3>7. LINKS</h3>\n<p>To the extent the Numenta website includes links to third parties, Numenta is\nnot responsible or liable for the content of such sites. The Numenta website\nprivacy statement is applicable only when you are on the Numenta websites.</p>\n<h3>8. SUPPORT</h3>\n<p>Technical support for the Grok Product is provided by email. We will make a\nreasonable effort to respond to your email within 48 hours. Support inquiries\nare to be sent to <a href=\"mailto:support@numenta.com\">support@numenta.com</a>.</p>\n<h3>9. TRADEMARK INFORMATION</h3>\n<p>Numenta, Grok, NuPIC, and the Numenta, Grok and NuPIC trademarks, logos and\nservice marks are the intellectual property of Numenta, Inc.</p>\n<p>All trademarks, trade names, service marks and logos referenced herein are the\nproperty of their respective owners.</p>\n<h3>10. COPYRIGHTS</h3>\n<p>If you believe that your work has been copied and is accessible in the Numenta\nOffering in a way that constitutes copyright infringement, you may notify us by\nproviding our copyright agent with the following information in writing:</p>\n<ul>\n<li>\n<p>the electronic or physical signature of the owner of the copyright or the\nperson authorized to act on the owner’s behalf;</p>\n</li>\n<li>\n<p>identification of the copyrighted work that you claim has been infringed;</p>\n</li>\n<li>\n<p>identification of the material that is claimed to be infringing and\ninformation reasonably sufficient to permit Grok to locate the material;</p>\n</li>\n<li>\n<p>your name, address, telephone number, and email address;</p>\n</li>\n<li>\n<p>a statement by you that you have a good faith belief that the disputed use is\nnot authorized by the copyright owner, its agent, or the law;</p>\n</li>\n<li>\n<p>a statement, made under penalty of perjury, that the above information in\nyour Notice is accurate and that you are the copyright owner or are authorized\nto act on the copyright owner’s behalf.</p>\n</li>\n</ul>\n<p>If Numenta receives such a claim, Numenta will investigate and report back to\nthe complainant. Numenta reserves the right to delete such reported content or\nto terminate a user’s account.</p>\n<p>Our designated agent to receive notification of claimed infringement under the\nDigital Millennium Copyright Act OF 1998 (“DMCA”) is:\n<a href=\"mailto:dmca@numenta.com\">dmca@numenta.com</a></p>\n<h3>11. VIOLATIONS OF TERMS</h3>\n<p>Please report any violations of the Terms to\n<a href=\"mailto:info@numenta.com\">info@numenta.com</a>.</p>\n<h3>12. PRIVACY</h3>\n<p>Our Privacy Policy is located at <a href=\"http://numenta.com/legal/privacy/\">http://numenta.com/legal/privacy/</a>.</p>\n"}
 
 /***/ },
-/* 1106 */
+/* 1118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "02c4277e82fcaf64077f6a989fea0e9b.png";
 
 /***/ },
-/* 1107 */
+/* 1119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8d8c0af1e10dd8f622f2f776c965d2cb.png";
 
 /***/ },
-/* 1108 */
+/* 1120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -79222,219 +79853,219 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1109 */
+/* 1121 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"Over the past year, we have tested our Grok technology on a variety of enterprise applications. Customers show substantial interest in our technology, with proposed","date":"2013/10/11","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"grok it","title":"Announcing Grok for IT","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Over the past year, we have tested our Grok technology on a variety of\nenterprise applications. Customers show substantial interest in our\ntechnology, with proposed applications ranging from remote equipment maintenance\nto power management to web advertising optimization, and many more.</p>\n<p>Although the interest level is strong, and we conducted many tests to prove the\nvalidity of the cortical learning algorithms, we found that it was difficult for\ncustomers to deploy Grok. The barriers to deployment included having clean\naccess to data streams as well as integrating the results into existing business\nprocesses.</p>\n<p>Because of this experience, we decided to create a more targeted solution that\nmakes it far easier for customers to deploy Grok.</p>\n<p>This product, currently under development, will monitor IT systems,\nautomatically figuring out whether the network is healthy or is in an anomalous\nstate. In essence, we are bringing deep science to the problem of\ndetecting anomalies in servers and server based applications. The first\nversion of the product is a simple-to-deploy tool focused on customers using\nAmazon Web Services (AWS).</p>\n<p>We have a few openings left for our private beta program, which will start\nshortly. If you have a current AWS environment (small or large) and would\nlike to participate in the private beta, please send an email to\n<a href=\"mailto:grokbeta@numenta.com\">grokbeta@numenta.com</a>. We welcome\nyour input and your help in finalizing this exciting new product.</p>\n<p>In other news, the NuPIC open source project we created in June is off to a\ngreat start. NuPIC contains the source code to our cortical learning\nalgorithms, the same code used in our product Grok. We are pleased with\nthe number of contributors, the email discussions, and overall\ninterest. We are holding our second NuPIC Hackathon in San Francisco\non November 2 – 3. To sign up for the Hackathon, go to\n<a href=\"http://www.numenta.org/events.html\">www.numenta.org/events.html</a>.\nTo learn more about the open source project, visit\n<a href=\"http://www.numenta.org\">www.numenta.org</a>.</p>\n<p>Thank you for your interest in Grok and in <a href=\"http://Numenta.org\">Numenta.org</a>. We look forward to\nmeeting some of you in our beta program or at the NuPIC Hackathon.</p>\n"}
 
 /***/ },
-/* 1110 */
+/* 1122 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"Grok is targeted towards Amazon Web Services (AWS) customers. We will be showing it publicly for the first time at the Amazon re:Invent conference next week in Las Vegas.","date":"2013/11/08","featured":false,"image":"../../../../images/numenta.png","org":"Founder","tags":"grok at aws reinvent 2013","title":"Grok at AWS re:Invent","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>As we wrote to you in October, we have developed an exciting product based on\nour Cortical Learning Algorithms (CLA). The product, called Grok, is targeted\ntowards Amazon Web Services (AWS) customers. We will be showing it publicly for\nthe first time at the\n<a href=\"http://reinvent.awsevents.com/\">Amazon re:Invent Conference</a>\nnext week in Las Vegas.</p>\n<p>This may be of interest to you for two reasons.</p>\n<ul>\n<li>\n<p>This is the first commercial application of the cortical learning models we\nhave developed over the past few years. It is a landmark event for us and\na step on the path towards machine intelligence.</p>\n</li>\n<li>\n<p>Some of you have expressed interest in using Grok. If you are attending\nre:Invent, we hope you will come by booth #1200, say hello, and see how we\napplied advanced cortical modeling to transform anomaly detection in computer\nservers.</p>\n</li>\n</ul>\n<p>Because of the capabilities of the CLA, Grok automates the process of\nmodeling normal behavior and identifying unusual behavior in Amazon\ninstances. The patterns found by Grok go well beyond those found by static\nor dynamic thresholds. In addition, Grok provides a mobile client that\nenables a unique ability to monitor the health of your network anytime,\nanywhere. It is a remarkable product and the first showcase for the CLA.</p>\n<p>We continue to recruit participants in our private beta program as well, so let\nus know at <a href=\"mailto:grokbeta@numenta.com\">grokbeta@numenta.com</a> if you\nare interested in using Grok.</p>\n<p>Finally, last weekend in San Francisco we held our second NuPIC Hackathon for\nthe open source community built around the CLA. It was a great\nsuccess. Two big themes at this event were to apply the CLA to robotics\nand natural language processing. Matt Taylor, the NuPIC community\nflag-bearer, put together this\n<a href=\"http://numenta.org/blog/2013/11/06/2013-fall-hackathon-outcome.html\">summary</a>.</p>\n<p>We hope to see some of you at re:Invent, and look forward to getting your\nfeedback on Grok. We are excited about approaching the first commercial\nrelease of a product that is based on the CLA.</p>\n"}
 
 /***/ },
-/* 1111 */
+/* 1123 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I am pleased to share with our newsletter subscribers the availability of Grok Amazon Web Services (AWS) Marketplace. Grok monitors complex networks running","date":"2014/02/04","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"grok soft launch","title":"Announcing Grok 1.0 Soft Launch","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>I am pleased to share with our newsletter subscribers the availability of Grok\n1.0 in “soft launch” on the\n<a href=\"/grok/#get\">Amazon Web Services (AWS) Marketplace</a>.\nGrok monitors complex networks running on AWS and is the first commercial\napplication of our groundbreaking Cortical Learning Algorithm (CLA).\nGrok enables IT professionals to easily spot unusual activity, thus staying\nahead of problems and preventing downtime. Grok includes the following features:</p>\n<ul>\n<li>Very easy configuration and set-up</li>\n<li>Using the CLA, automatically models each metric to determine normal patterns</li>\n<li>Automatically identifies and ranks unusual patterns</li>\n<li>Continuously learns new patterns as environments evolve</li>\n<li>Does not require any manual threshold setting</li>\n<li>Notifies the user when something curious is happening</li>\n<li>Displays output graphically on a mobile Android device</li>\n</ul>\n<p>Using Grok will enable IT professionals to get insights to their system\nperformance by providing an early warning that something has changed.\nSince everything happens automatically, using Grok can reduce costs of system\nmonitoring by requiring less work from engineers. And, given the mobile\ninterface, IT professionals can get this information anytime, anywhere.</p>\n<p>Grok 1.0 is available in two editions:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1391115095261\">Grok Free Edition</a>; supports up to 10 AWS instances or custom metrics</li>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00HJAA5MM/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1391115112131\">Grok Standard Edition</a>; supports up to 200 AWS instances or custom metrics (fee based)</li>\n</ul>\n<p>We plan to formally announce and exhibit at the AWS Summit on March 25-26 at the\nMoscone Center in San Francisco; please stop by and say hello. And be sure\nto check out our updated website.</p>\n<p>I’m also happy to tell you that in addition to working on the Grok product\nrelease, we continue to push our biologically-inspired algorithms forward.\nWe’ve made some important progress recently and look forward to sharing it\nwith you over the coming year. Our open source community,\n<a href=\"http://numenta.org/\">NuPIC</a>, is growing and actively contributing to\nthe advancement of the science.</p>\n<p>Thank you for your support and your interest. We hope you’ll try\nGrok and give us your feedback.</p>\n"}
 
 /***/ },
-/* 1112 */
+/* 1124 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"Today is an important day for Numenta.  We are pleased to announce the general availability of Grok on the Amazon Web Services Marketplace. We will be showcasing Grok at the","date":"2014/03/25","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"Grok","title":"Announcing Grok for IT Analytics on AWS","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Today is an important day for Numenta.  We are pleased to announce the general\navailability of Grok on the\n<a href=\"https://aws.amazon.com/marketplace/search/results/ref=gtw_navgno_search_box?page=1&amp;searchTerms=grok\">Amazon Web Services Marketplace</a>\nWe will be showcasing Grok at the\n<a href=\"https://aws.amazon.com/aws-summit-2014/san-francisco/\">AWS Summit</a>\nat the San Francisco Moscone Convention Center on March 26th.  If you are\nattending, please join us in booth 100 to see a demo - and experience our\nbreakthrough technology for anomaly detection.</p>\n<p>As we mentioned in our February newsletter, Grok for IT Analytics monitors\nservers running on AWS and is the first commercial application of our\ngroundbreaking Cortical Learning Algorithm (CLA). Grok enables\nIT professionals to spot anomalous system behavior in order to stay ahead of\nproblems and prevent business downtime, and to substantially reduce annoying\nfalse positives generated by threshold based systems.</p>\n<p>What makes us different is the powerful science behind our technology, enabling\nGrok to identify unusual patterns that many other monitoring tools may miss and\nto automatically learn changes in its environment without human intervention.\nWe encourage you to read our new whitepaper\n[The Science of Anomaly Detection](/assets/pdf/whitepapers/Numenta White Paper - Science of Anomaly Detection.pdf)\nfor details and examples of how Grok does its magic.</p>\n<p>Since our soft launch in February, our team has added valuable new features\nbased on customer feedback:</p>\n<ul>\n<li>Monitoring of AWS Auto-Scaling Groups</li>\n<li>Monitoring of logically-related server clusters</li>\n<li>Improved user-controlled notifications</li>\n<li>Addition of a command line interface tool</li>\n<li>Improved mobile interface on Android devices</li>\n<li>Ability to ingest any streaming data source via custom metrics</li>\n</ul>\n<p>If you are an IT professional or just wanted to explore Grok, we have several\noptions to make it easy to get started.  Grok is available in the AWS\nMarketplace in two editions:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1395708910993\">Grok Free Edition</a>:\nsupports up to 10 instances or custom metrics</li>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00HJAA5MM/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1395708888644\">Grok Standard Edition</a>:\nsupports up to 200 AWS instances or custom metrics</li>\n</ul>\n<p>We also invite you to <a href=\"/contact/\">provide your feedback</a>. Be\nsure to send us details on anomalies that Grok found that you would otherwise\nnot have seen!  And let us know about features you’d like to have us implement\nin order to make Grok more useful.</p>\n<p>To support our launch, we have upgraded our website and made a number of helpful\n<a href=\"/grok/#resources\">resources</a> available.</p>\n<p>Thanks for your continued interest and support.  We look forward to hearing how\nyou like Grok.</p>\n"}
 
 /***/ },
-/* 1113 */
+/* 1125 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I’m writing today to give you a progress report from Numenta.  We have continued to make strides towards our mission of being a catalyst for machine intelligence.","date":"2014/06/10","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"june 2014 numenta nupic grok aws","title":"Progress Report June 2014 Newsletter","type":"post","body":"<p>I’m writing today to give you a progress report from Numenta.  We have continued\nto make strides towards our mission of being a catalyst for machine\nintelligence.</p>\n<h4>NuPIC Open Source Community – Solid Growth in First Year</h4>\n<p>One year ago we created the NuPIC open source project to support scientists and\ndevelopers who are interested in machine intelligence based on neocortical\nprinciples.  Since our launch, we’ve made great progress in our goal of building\na vibrant community, now with more than 800 subscribers to the NuPIC mailing\nlist and nearly 100 contributors.</p>\n<p>We have recently concluded our third NuPIC Hackathon; the 32-hour weekend event\ndrew 76 developers and yielded 14 demos ranging from simple games to complex\nword associations based on CEPT, the Cortical Engine for Processing Text.  NuPIC\nCommunity Flag-Bearer, Matt Taylor, summarized it well, saying “We’ve come a\nlong way since we started with 90,000 lines of code on Github and held our first\nHackathon with 20 people. Today, I am happy to report we have an active\ncommunity and a pattern of steady growth over the past year. If you are\ninterested in biologically-inspired machine intelligence, there is no better\nplace to be.”</p>\n<h4>Grok for IT Analytics on AWS – Showcasing the Power of the CLA</h4>\n<p>Grok, the first commercial product using Numenta’s Cortical Learning Algorithm\n(CLA), is marking its first quarter in market. Grok learns patterns from its\ntemporal data stream, makes predictions, and identifies anomalies.\nSimultaneously with the product’s release, Numenta issued a\n<a href=\"/blog/science-of-anomaly-detection.html\">Science of Anomaly Detection Whitepaper</a>\nthat explains how it applied the science of the CLA to the technology of anomaly\ndetection. Here’s what some of our first customers have to say:</p>\n<blockquote>\n<p>“Having Grok monitor AWS CloudWatch to highlight unusual patterns is\nextremely useful. It highlighted leading indicators of problems in my AWS\nenvironment, which helped me prevent downtime.” – Greg Krill, Data Center\nArchitect, Founder and Director, EdgeSense</p>\n</blockquote>\n<blockquote>\n<p>“Grok is unique in that it delivers at-a-glance insight on top of our\nexisting metrics. As it learns automatically, we spend less time maintaining\nit and more time working on our technology,” – Chris Alexander, SysAdmin and\nEngineer, Import IO</p>\n</blockquote>\n<p>If you’d like to see Grok, we will be exhibiting at the AWS Summit in NYC on\nJuly 10th.  Grok is also available on the AWS Marketplace with no license fee.</p>\n<p>We are recruiting for two positions in our marketing department, one for a\nproduct manager and one for a marketing manager [URL].  Help us find outstanding\npeople by sharing this information with your friends and colleagues!</p>\n<p>We look forward to sharing more exciting news over the summer as we continue to\ndrive new innovations with our technology.  Thanks for your continued interest\nand support.</p>\n"}
 
 /***/ },
-/* 1114 */
+/* 1126 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"We’ve had a busy summer at Numenta. Since the launch of our first product, Grok for IT Analytics on Amazon Web Services (AWS), we’ve created a variety of demonstration applications to showcase","date":"2014/08/19","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"summer 2014 numenta nupic grok aws machine intelligence applications","title":"Machine Intelligence Applications 2014","type":"post","body":"<p>We’ve had a busy summer at Numenta. Since the launch of our first product, Grok\nfor IT Analytics on Amazon Web Services (AWS), we’ve created a variety of\ndemonstration applications to showcase the breadth of the underlying\nHierarchical Temporal Memory (HTM) technology.  We’ve also restructured our web\nsite to highlight these new applications.</p>\n<p>First, let me give you an update on our product, Grok.  We recently released\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1406131482540\">version 1.5</a>,\nwhich incorporates a great new web charting feature.  In addition,\nwe decided to eliminate the paid version of Grok in order to make it super easy\nfor customers to try and to deploy Grok.  If you are running an AWS installation\nbut haven’t tried out Grok, you can do so\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1406131482540\">here</a>.</p>\n<p>Then, in addition to Grok, we’ve created a group of demonstration applications\nto show the potential use of our core technology in a variety of areas. We’ve\npublished white papers on two of the demonstrations:</p>\n<ul>\n<li>\n<p><a href=\"/assets/pdf/whitepapers/Geospatial%20Tracking%20White%20Paper.pdf\">Geospatial Tracking</a>:\nusing 2D or 3D speed and location data, learn travel patterns and detect\nanomalies in objects or people moving through the world</p>\n</li>\n<li>\n<p><a href=\"/assets/pdf/whitepapers/Rogue%20Behavior%20Detection%20White%20Paper.pdf\">Rogue Behavior Detection</a>:\nModel human behavioral patterns to highlight anomalies in employee actions\nsuch as financial trading patterns, computer and device usage, and internal\nsystem access.</p>\n</li>\n</ul>\n<p>An additional demonstration application looks at anomalies in stock volume\ntracking.  We are in our initial exploration of this application, but you can\nread more about it in this\n<a href=\"/blog/detecting-anomalies-in-stock-volumes.html\">blog entry</a>.</p>\n<p>Finally, we are doing some very exciting research with our partner\n<a href=\"http://www.cortical.io/\">Cortical IO</a>\non using HTM to predict and classify language using semantic encoding.</p>\n<p>We are getting more visibility for our progress as we start to showcase these\napplications.  You may want to read Dean Takahashi of VentureBeat’s article\n<a href=\"http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long-nine-years-but-it-starting-to-pay-off-interview/\">here</a>.</p>\n<p>On August 20, Subutai Ahmad, our VP of Research will present “Understanding\nCortical Principles and Building Intelligent Machines” at the\n<a href=\"/events/cognitive-computing-forum.html\">Cognitive Computing Forum</a>\nin San Jose. If you’re interested, register using the discount code NUMENTA.</p>\n<p>I’d like to add a welcome to Celeste Baranski, who has joined us as VP\nEngineering, taking over the daily operations of our engineering group, enabling\nSubutai to dedicate himself to research and writing.</p>\n<p>Finally, we’re happy to celebrate the first anniversary of the creation of our\n<a href=\"http://numenta.org/\">NuPIC open source project</a>.\nNuPIC interest has grown steadily, and we are pleased to see the strength and\ncommitment building in this community.</p>\n<p>We will continue to update you as we build the demonstration applications into\nfull-featured applications and as our research efforts continue.</p>\n<p>Thank you for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1115 */
+/* 1127 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I’m writing to let you know that we have two upcoming opportunities to learn about and try our technology: Our Numenta Training Workshop and NuPIC Fall Hackathon 2014","date":"2014/09/16","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta training workshop nupic machine intelligence hackathon fall 2014","title":"Opportunities to Learn About and Try Numenta Technology - Fall Workshop and Hackathon","type":"post","body":"<p>I’m writing to let you know that we have two upcoming opportunities to learn\nabout and try our technology:</p>\n<h3>Numenta Training Workshop</h3>\n<ul>\n<li>Friday, Oct 17 2014, 12pm - 6pm</li>\n<li>Redwood City, CA</li>\n</ul>\n<p><a href=\"https://www.eventbrite.com/e/numenta-training-workshop-registration-12898835765\">https://www.eventbrite.com/e/numenta-training-workshop-registration-12898835765</a></p>\n<p>This half-day workshop for developers will review Numenta theory, technology and\napplications. Content will consist of presentations about HTM theory, including\nsome detailed implementation topics, and will be technical in nature.  The\nworkshop will be followed by a networking reception.  If you have been\ninterested in our work and have wanted to get a thorough grounding in the\nsubject matter, or if you already are active in our community but would like an\nupdate on our progress, attending this workshop is a great idea.  Our capacity\nis limited, and early-bird pricing is available through September 26th, so we\nencourage you to register soon.</p>\n<h3>Numenta Fall NuPIC Hackathon</h3>\n<ul>\n<li>Saturday, Oct 18 2014 - Sunday, Oct 19 2014</li>\n<li>San Jose, CA</li>\n</ul>\n<p><a href=\"http://www.meetup.com/numenta/events/202402962/\">http://www.meetup.com/numenta/events/202402962/</a></p>\n<p>The NuPIC fall hackathon follows our workshop and will be a 32-hour all-weekend\nhackathon. We’ll start with a kickoff presentation from the NuPIC team,\nincluding a few words from Jeff Hawkins. During the event, we’ll help you get\nNuPIC installed and provide several informational sessions about NuPIC. The\nevent will end with demonstrations of hacks that attendees have created during\nthe event.\n(<a href=\"http://numenta.org/blog/2014/05/09/2014-spring-hackathon-outcome.html#demos\">See example of past demos here</a>).\nThe hackathon is appropriate both for experienced NuPIC developers as well as\nfor new developers.</p>\n<p>I hope you’ve had a chance to check out our updated web site, where we have\nreleased some new whitepapers, including an expanded version of\n<a href=\"/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf\">The Science of Anomaly Detection</a>.</p>\n<p>I look forward to seeing many of you at the Workshop and/or the Hackathon.\nThank you for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1116 */
+/* 1128 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"We are pleased to report that Numenta has released version 1.6 of Grok for IT Analytics, which is available for no license charge on the AWS Marketplace. This version offers several new important features","date":"2014/11/11","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"grok 1.6 release aws amazon web services reinvent las vegas nov 2014 numenta it analytics","title":"Grok 1.6 Released - Showcasing at AWS ReInvent in Las Vegas, Nov 11-14","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<h3>Newsletter - November 11, 2014</h3>\n<p><strong>Grok 1.6 Released - Showcasing at AWS Re:invent in Las Vegas, Nov 11-14</strong></p>\n<p>We are pleased to report that Numenta has released version 1.6 of\n<a href=\"/grok/\">Grok for IT Analytics</a>, which is available for no\nlicense charge on the\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1415482679002\">AWS Marketplace</a>.</p>\n<p>This version offers several new important features:</p>\n<ul>\n<li>\n<p>Annotation of data streams, which allows sharing of information and\ncollaboration among users</p>\n</li>\n<li>\n<p>Increased support for additional data formats</p>\n</li>\n<li>\n<p>Enhanced performance</p>\n</li>\n</ul>\n<p>Based on Numenta’s breakthrough\n<a href=\"/#technology\">Hierarchical Temporal Memory</a>\ntechnology, Grok monitors servers running on AWS and enables complex pattern\ndetection, automatic model building, and continuous learning. Grok output is\ndisplayed on a constantly updated mobile device, enabling IT professionals to\nassess the health of their systems anytime, anywhere.</p>\n<p>We will be showcasing this new version of Grok at the\n<a href=\"/events/AWS-reInvent.html\">AWS re:Invent conference</a>\nin Las Vegas, November 11-14.  If you are attending, please visit us and see\nGrok 1.6 in action at Booth #648.</p>\n<p>I’m also happy to announce that the videos from our Numenta Training Workshop\nheld Friday, October 17th, are now available on our web site.  You can access\nthese videos on the <a href=\"/learn/\">Learning Center</a>\npage of our website. This new material offers a great way to get up to speed on\nour work. Please check back on this page over the coming months as we plan to\nadd more content shortly.</p>\n<p>Thank you for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1117 */
+/* 1129 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As a fun and educational kick-off to the year, we are offering our second Super Bowl sparse football pool. Entering the pool is free, and prizes are offered for the top five winners (note that because of legal constraints, those","date":"2015/01/26","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":null,"title":"Welcome to 2015!","type":"post","body":"<h3>Newsletter - January 26, 2015</h3>\n<p><strong>Welcome to 2015!</strong></p>\n<p>As a fun and educational kick-off to the year, we are offering our second\n<strong>Super Bowl sparse football pool</strong>.  Entering the pool is free, and prizes are\noffered for the top five winners (note that because of legal constraints, those\npeople under 18 or outside of the U.S. cannot win prizes … but they still can\nplay for the glory of winning!).  Participating is a fun way to learn more about\nSparse Distributed Representations. Subutai explains here the details of the\npool:\n<a href=\"/blog/introducing-sparse-football-pool-ii-super-bowl-xlix.html\">Super Bowl Sparse Football</a>.</p>\n<p>In early January, we delivered <strong>NuPIC version 0.1</strong>, our\n<a href=\"http://numenta.org/news/2015/01/22/nupic-0.1-released.html\">first formal release</a>\nof NuPIC.  Says Matt Taylor, our NuPIC flag-bearer, “With the NuPIC 0.1 release,\nmost OS X and Linux users won’t need to compile from source code to install.\nThis makes the installation process much easier for those wanting to use NuPIC\nas a python project.”</p>\n<p>In other news, we look forward to an exciting year at Numenta.  We are beginning\nthe hard work of publishing more information on our algorithms, including\nsubmissions for peer reviewed papers.  We are progressing in the science with a\nlot of focus on sensory-motor integration.  For those interested in the details,\nthe concepts are often discussed in the\n<a href=\"http://lists.numenta.org/mailman/listinfo/nupic-theory_lists.numenta.org\">NuPIC Theory Mailing List</a>\nand in <a href=\"http://numenta.org/events.html\">NuPIC office hours</a>. We are continuing\nto support our product, <a href=\"http://numenta.com/grok/\">Grok for AWS</a>, and have an\nadditional demonstration application in the works to announce later this year.\nWe also will be speaking or exhibiting at a number of events this year,\nincluding:</p>\n<ul>\n<li><a href=\"/events/strata-hadoop-world.html\">Strata + Hadoop World</a>,\n2/20, Subutai (VP of Research) will give a talk on streaming analytics</li>\n</ul>\n<p>We are also planning a <strong>Spring NuPIC Hackathon</strong>, which we expect to be on the\nU.S. East Coast.  Be sure to follow us on\n<a href=\"https://twitter.com/Numenta?lang=en\">Twitter</a>\nand check our\n<a href=\"/events/\">events page</a> as more speaking appearances or events are announced.</p>\n<p>You might enjoy seeing a\n<a href=\"https://www.youtube.com/watch?v=f1tYXv6ST_U&amp;feature=youtu.be\">short video</a>\nfeaturing Jeff that describes our mission.\nIn an effort to communicate more about our work, you can expect to see more\nmaterial like this over the coming year.</p>\n<p>Best wishes for a happy new year!</p>\n"}
 
 /***/ },
-/* 1118 */
+/* 1130 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As part of the community interested in machine intelligence, you may be following the current public debate about whether artificial intelligence should be feared or encouraged. Jeff Hawkins recently","date":"2015/03/12","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta newsletter march 2015","title":"Numenta Newsletter March 2015","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>March 12, 2015</strong></p>\n<p>As part of the community interested in machine intelligence, you may be\nfollowing the current public debate about whether artificial intelligence should\nbe feared or encouraged.  Jeff Hawkins recently wrote a thoughtful opinion piece\non this subject:\n<a href=\"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/\">The Terminator Is Not Coming. The Future Will Thank Us.</a>\nI hope you will have time to read Jeff’s piece and, if you find it worth\nsharing, to promote it within your social network.  We feel that the future of\nmachine intelligence is very exciting, and would welcome your help in spreading\nthe word.</p>\n<p>We have confirmed the date and location for our next NuPIC hackathon:  May 29-30\nin New York City. The 32-hour all-weekend event is our first east coast\nhackathon.  We hope that the New York location will facilitate attendance from\nthe east coast as well as from international locations.</p>\n<ul>\n<li><a href=\"http://www.meetup.com/numenta/events/220422020/\">RSVP on our event page</a></li>\n<li>Saturday, May 29 2015 – Sunday, May 30 2015</li>\n<li>Cornell Tech Campus in NYC</li>\n</ul>\n<p>Congratulations to the winners of our Sparse Football Pool (including me!)!\n<a href=\"/legal/results/sparse-football-pool-ii-2015.html\">See the results</a>\nand learn about the connection between football, HTM\nlearning algorithms and the brain in our\n<a href=\"/blog/super-bowl-neuroscience-sparse-pool-ii-2015-results.html\">blog post</a>.</p>\n<p>We also have two additional short videos about Numenta that I would like to\nshare:\n<a href=\"/?video=youtube:v-VvFRar5TY\">Intro to Technology</a> and\n<a href=\"/?video=youtube:9jWmS62MWx8\">Intro to Applications</a>.\nThese videos are a quick way to learn more about Numenta’s machine intelligence\ntechnology and its broad applicability, and are especially appropriate as\nintroductory videos for those new to our work.  Again, we hope you will share\nthese videos, along with Jeff’s overview video, with others who want to learn\nabout Numenta.</p>\n<p>Thank your for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1119 */
+/* 1131 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I have a lot of exciting news to share. Rather than making the newsletter overly long, I’ve provided links to get more information on any of these topics.","date":"2015/04/29","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta newsletter april 2015","title":"Numenta Newsletter April 2015","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>April 29, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I have a lot of exciting news to share.  Rather than making the newsletter\noverly long, I’ve provided links to get more information on any of these topics.</p>\n<p>We’re pleased to let you know about the establishment of a Cortical Learning\nCenter at IBM, which is actively experimenting with Numenta’s technology.  You\ncan view what Winfried Wilcke, a senior IBM researcher,\n<a href=\"http://digitalops.sandia.gov/Mediasite/Play/1365ba62685c4c91a1cb7143c1e321cc1d\">has to say about his work</a>.</p>\n<p>In the publications arena, we have posted an important paper on the mathematical\nproperties of sparse distributed representations. You can <t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.sdr%7D%7D\">read it here</a></t>.</p>\n<p>We also have a hackathon coming up.  For the first time, we are coming to the\neast coast for this hackathon:  May 30-31 in New York City.  Many of our Numenta\nengineers will be attending, as well as Jeff Hawkins and Subutai Ahmad.<br>\n<a href=\"http://numenta.org/events/hackathon/2015/may/\">There are still spaces left</a>!</p>\n<p>We have another project brewing called the Numenta Anomaly Benchmark.  We have\nfound it difficult to benchmark our algorithms given how few benchmarks exist\nwith streaming data.  Consequently we have decided to create an open source\nbenchmark ourselves in the hope that it becomes an industry standard for\nreal-time anomaly detection.  If you are interested in this project and,\nspecifically, if you have some streaming data sets that you can share, please\ncontact us at <a href=\"mailto:nab@numenta.org\">nab@numenta.org</a>.  We plan to have the\nNumenta Anomaly Benchmark available around the end of the summer.</p>\n<p>We’ve had a lot of positive reactions to Jeff’s article on the\n<a href=\"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/\">reality of AI dangers</a>,\nso be sure to view some of the commentary:</p>\n<ul>\n<li><a href=\"http://www.forbes.com/sites/anthonykosner/2015/04/20/what-really-scares-tech-leaders-about-artificial-intelligence/\">What Really Scares Tech Leaders about Artificial Intelligence</a></li>\n<li><a href=\"http://www.forbes.com/sites/anthonykosner/2015/04/21/graph-theory-helps-to-decode-the-ai-fears-of-tech-leaders/\">Graph Theory Helps To Decode The AI Fears of Tech Leaders</a></li>\n</ul>\n<p>Lastly, we have an opening in marketing at Numenta.  If HTM and machine\nintelligence is a passion of yours, and you have a strong marketing\ncommunications background, please consider\n<a href=\"http://numenta.com/careers/\">applying for our position</a>.</p>\n<p>We are excited about the momentum growing behind HTM technology and hope you’ll\nhave a chance to review some of these developments.</p>\n"}
 
 /***/ },
-/* 1120 */
+/* 1132 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I am excited to let you know that we recently announced a relationship with Cortical.io, an innovative company based in Austria that is working on the next generation of natural language processing: language intelligence. Cortical.io has created a technology that can","date":"2015/05/14","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta newsletter may 2015 announcing relatioship cortical.io","title":"May 2015 Newsletter: Cortical.io Relationship","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>May 14, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I am excited to let you know that we recently announced a relationship with\n<a href=\"http://Cortical.io\">Cortical.io</a>, an innovative company based\nin Austria that is working on the next generation of natural language\nprocessing: language intelligence. <a href=\"http://Cortical.io\">Cortical.io</a> has created a technology that can\ntranslate text into sparse distributed representations, called Semantic Folding.\nBy using <a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic Folding technology in combination with HTM, we\nplan to tackle problems in language that have frustrated computer scientists for\nmany years. To learn more about <a href=\"http://Cortical.io\">Cortical.io</a>, you can read our\n<a href=\"/press/numenta-and-cortical-io-form-strategic-partnership.html\">press release</a>,\nview the <a href=\"http://Cortical.io\">Cortical.io</a> <a href=\"http://cortical.io/\">website</a>, or try the <a href=\"http://Cortical.io\">Cortical.io</a> API\nat <a href=\"https://aws.amazon.com/marketplace/seller-profile?id=c88ca878-a648-464c-b29b-38ba057bd2f5\">AWS</a>.</p>\n<p>I also wanted to draw your attention to a new paper about HTM written by\nSebastian Billaudelle, with Subutai Ahmad, our VP Research. As part of the\nEuropean based Human Brain Project, Sebastian spent several months at Numenta\nporting HTM to the Heidelberg Neuromorphic Computing Platform, with positive\nresults. Sebastian implemented HTM using spiking neurons, which are complex\nmodels often used by neuroscientists to reproduce actual biophysical\ncharacteristics of neurons. You can read about his work <t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.neuromorph%7D%7D\">here</a></t>.</p>\n<p>We have several great projects under development and look forward to sharing\nmore with you over the coming months.</p>\n"}
 
 /***/ },
-/* 1121 */
+/* 1133 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"In order to encourage our developers and to facilitate the creation of applications, we have decided to release substantially more of our technology into open source. To that end, we just added to the code base two complete products","date":"2015/06/09","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta open source htm products apps applications nupic june 2015 newsletter donna dubinsky","title":"June 2015 Newsletter: Numenta Releasing Two Complete HTM Products into Open Source","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>June 09, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I’m writing to update you on exciting news for our open source project, NuPIC.</p>\n<p>In order to encourage our developers and to facilitate the creation of\napplications, we have decided to release substantially more of our technology\ninto open source. To that end, we just added to the code base two complete\nproducts: Grok for IT Analytics and HTM for Stocks (an example application\nthat will be made available to end users shortly). The released code for these\nproducts includes the HTM Engine as well as two different Android applications.\nThe HTM Engine runs multiple anomaly models in an easy, scalable way, allowing a\nsingle server to manage and run thousands of HTM models. The Android\napplications act as a client to the HTM engine, pulling in the data to display\nit in a human-understandable format. We are developing tutorials that will help\ndevelopers come up to speed on this new technology.</p>\n<p>This source code has been open-sourced under the AGPLv3.0 license<sup><a href=\"#agpl\">*</a></sup>. You can find\nall the code on <a href=\"https://github.com/numenta/numenta-apps\">GitHub</a>.</p>\n<p>We hope that developers will find this source code beneficial as example\napplications of NuPIC. If you are interested in creating a commercial\napplication using this code, you may do so in accordance with the terms of the\nAGPLv3<sup><a href=\"#agpl\">*</a></sup>, or may <a href=\"mailto:sales@numenta.com\">write us</a> to request a separate,\ncommercial license if you prefer different terms. Commercial licenses are\nhandled on a case-by-case basis. For more information on our open source\nlicensing, see: <a href=\"http://numenta.org/licenses/\">License</a>,\n<a href=\"http://numenta.org/blog/2013/07/01/patent-position.html\">Patent Position</a>,\n<a href=\"http://numenta.org/blog/2013/12/16/nupic-commercial-licenses.html\">Commercial Licenses</a>.</p>\n<p>We invite you to join our growing open source community.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n"}
 
 /***/ },
-/* 1122 */
+/* 1134 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"Over the last two years, we have created a series of example applications that illustrate the capabilities of HTM. Grok for IT Analytics, available for download on the Amazon Web Services Marketplace","date":"2015/07/02","featured":false,"image":"../images/image.png","org":"CEO","tags":"htm for stocks monitor stock price volume twitter anomaly outlier detection numenta open source htm app application nupic","title":"July 2015 Newsletter: Announcing HTM for Stocks - Open Source Example HTM App","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>July 02, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>Over the last two years, we have created a series of example applications that\nillustrate the capabilities of HTM.  Grok for IT Analytics, available for\ndownload on the Amazon Web Services Marketplace, uses HTM to detect anomalies in\nAWS server metrics. We have published source code for several other example\napplications that use HTM to detect anomalies in human behavior, and in GPS\ndata. But up until now it hasn’t been easy for an individual to get a sense of\nhow HTM-based anomaly detection works; you either need to bring up an AWS server\ninstance, or put in a reasonable amount of software development effort.</p>\n<p>So we have created a new example application, called HTM for Stocks, which\nmakes it much easier for you to experience how HTM detects anomalies. HTM for\nStocks is available for free here:\n<a href=\"http://numenta.com/htm-for-stocks/#get\">Download HTM for Stocks</a>. At this\npoint, the application is available only for an Android mobile device.</p>\n<p>HTM for Stocks applies HTM modeling and anomaly detection to 200 large\ncapitalization public companies.  The application automatically models three\ndata streams for each stock:  stock volume, stock price, and Twitter volume.  It\nfigures out “normal” for each of these data streams for each company, and then\nlets you know if something abnormal has occurred.</p>\n<p>Here is what we hope you will notice when using HTM for Stocks:</p>\n<ul>\n<li>\n<p>HTM enables automatic modeling of many models here, we are creating 600\nseparate models (3 for each of 200 companies).  No human intervention is\nrequired to adjust parameters or tune models.</p>\n</li>\n<li>\n<p>HTM models learn continuously, with each new data point.  If a company changes\nits fundamentals, taking its stock volume to a new level, at first it will\nshow an anomaly, but after a short period, it will learn the “new normal”.</p>\n</li>\n<li>\n<p>The models are ranked by the most anomalous to the least anomalous.  If you\nscroll down, you will note that many of the stocks show no anomalies.  This\nranking of anomalies allows you to focus on the companies that are the most\ndifferent from the norm.</p>\n</li>\n</ul>\n<p><img src=\"/assets/img/pages/newsletters/2015-07-02/homescreen.png\" alt=\"HTM for Stocks Home Screen\"></p>\n<p>Some of the anomalies detected by HTM for Stocks may appear obvious but others\nare subtle and not easily detected by a human.  For example, if you watch stock\nvolumes, you will see that there often is a spike in the beginning and at the\nend of the trading day.  It will notice if those spikes continue longer than\nnormal for that particular stock.  Such examples demonstrate the power of\nfinding temporal patterns</p>\n<p>When you see an anomaly, it’s very informative to look at the Twitter stream for\nthe corresponding time frame.  There, you often will be able to quickly\ndetermine the reason for the anomaly, such as an earnings announcement, a\ntakeover bid, a lawsuit, or a rapidly growing interest in something the company\ndid.</p>\n<p>In keeping with our focus as a technology provider, we do not intend to build\nHTM for Stocks into a full commercial application, and so we have provided the\nsource code for HTM for Stocks alongside our NuPIC open source project at\n<a href=\"https://github.com/numenta/numenta-apps\">https://github.com/numenta/numenta-apps</a>, available under a AGPL v3 license<sup><a href=\"#agpl\">*</a></sup>.\nDevelopers may find that HTM for Stocks code can be used to create derivative\nproducts that track other data streams.  We also welcome partners who are\ninterested in a commercial license to the HTM for Stocks code; in this case\nplease write to <a href=\"mailto:sales@numenta.com\">sales@numenta.com</a>.</p>\n<p>We hope that you will enjoy using HTM for Stocks.  We welcome your feedback at\n<a href=\"mailto:feedback@numenta.com\">feedback@numenta.com</a>.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n"}
 
 /***/ },
-/* 1123 */
+/* 1135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cdab7706d731991a537d9dc21122f4df.png";
 
 /***/ },
-/* 1124 */
+/* 1136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "abda5eaeb6988ea8400602a45d868cce.png";
 
 /***/ },
-/* 1125 */
+/* 1137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3ca6fed4dbd467a7b83e6e8e33b948be.png";
 
 /***/ },
-/* 1126 */
+/* 1138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a382c402d5750bc0bd75bef85be34422.png";
 
 /***/ },
-/* 1127 */
+/* 1139 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I am excited to tell you about a new partnership between Numenta and Avik Partners, an IT services and advanced analytics company. Before I tell you more about Avik, I want to remind you of our strategy for","date":"2015/09/01","featured":false,"image":"../images/image.png","org":"CEO","tags":"numenta partnership avik partners grok stream for it analytics","title":"September 2015 Newsletter: Partnership between Numenta and Avik Partners on Grok for IT Analytics","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>September 01, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I am excited to tell you about a new partnership between Numenta and Avik\nPartners, an IT services and advanced analytics company.</p>\n<p>Before I tell you more about Avik, I want to remind you of our strategy for\ndeploying HTM technology.  Over the past few years we have made excellent\nprogress in turning HTM cortical theory into a valuable technology, first for\nstreaming analytics, but ultimately as a core component of machine intelligence.\nIn order to demonstrate how HTM technology can be used, we created several\nexample applications.  Our plan is to partner with applications developers to\nbring commercial solutions to the market while we focus on developing the\nscience and technology.  Earlier this year we announced our first such\nrelationship with <a href=\"http://Cortical.io\">Cortical.io</a>, a company using HTM technology for natural\nlanguage applications.</p>\n<p>Avik Partners is our second commercial partnership.  Casey Kindiger, CEO of\nAvik, is a proven entrepreneur with deep experience in IT and developer\noperations.  Casey became intrigued with our Grok for IT Analytics example\napplication, recognizing the substantial commercial potential for our advanced\nanomaly detection capability in the IT environment, and approached us about a\nlicense.</p>\n<p>Our relationship with Avik is structured as a strategic partnership.  Avik will\nassume our Grok for IT product (including the name Grok), enhance the\napplication with the many features that have been requested, and market it to\nenterprise IT organizations.  Avik will be doing business on the\n<a href=\"http://grokstream.com\">http://grokstream.com</a> website, where you can sign up to receive information\nwhen the product is available.  We expect to complete the transition of the Grok\nfor IT Analytics product to Avik within 30 days.  As part of the license,\nNumenta has taken a minority ownership position in Avik.</p>\n<p>We believe that Avik is an ideal partner to apply HTM technology to solve major\nproblems in complex IT organizations.  Given the breadth of potential HTM\napplications, we are excited about our discussions with several other potential\nlicensees who want to apply HTM technology to a wide variety of application\ndomains.  Over time, we hope to establish a constellation of partners building\nintelligent applications using HTM technology.</p>\n<p>In order to facilitate consideration of a license, we have created several\nstandard license options.  We realize that these standard licenses won’t fit\nevery situation, so we also offer custom licenses.  We have just published a new\n<a href=\"/assets/pdf/apps/licensing-guide.pdf\">license guide</a> with details.  If you are\ninterested in becoming a licensee, please review this document, and feel free to\nwrite to us at <a href=\"mailto:sales@numenta.com\">sales@numenta.com</a>.</p>\n<p>Please join me in congratulating Casey and Avik Partners.  We look forward to\nworking together to bring machine intelligence to improve management of IT\ninfrastructure.</p>\n"}
 
 /***/ },
-/* 1128 */
+/* 1140 */
 597,
-/* 1129 */
+/* 1141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "74267284c3a0a1764fde6bcfd45a62cd.png";
 
 /***/ },
-/* 1130 */
+/* 1142 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"To start with, I’m pleased to announce that we have a paper accepted on the Numenta Anomaly Benchmark (NAB).  I’ve written to you about the development of","date":"2015/10/01","featured":false,"image":"../images/image.png","org":"CEO","tags":"numenta anomaly benchmark nab numenta htm challenge nupic onsite november 2015","title":"Numenta Anomaly Benchmark (NAB), and Numenta HTM Challenge","type":"post","body":"<h3>Numenta Newsletter October 2015</h3>\n<h4>Numenta Anomaly Benchmark (NAB), and Numenta HTM Challenge</h4>\n<p>To Numenta newsletter subscribers:</p>\n<p>I’m writing with a few exciting updates from Numenta.</p>\n<p>To start with, I’m pleased to announce that we have a paper accepted on the\nNumenta Anomaly Benchmark (NAB).  I’ve written to you about the development of\nNAB in the past.  NAB is essentially two things.  First, it consists of over 50\nstreaming data files with anomalies that are marked for ground truth.  These\nfiles are a combination of real-world data sets along with some simulated data\nsets.  Second, there is a scoring mechanism that is designed for streaming data.\nNumenta’s HTM algorithms do a great job at finding temporal structure, learning\ncontinuously, and detecting anomalies early.  These are valuable properties for\nreal-time streaming applications but benchmarks designed for batch data don’t\nincorporate them. For example, traditional benchmarks do not give “credit” for\nfinding an anomaly sooner rather than later.  Our development of NAB is an\neffort to create such a benchmark.</p>\n<p>We will be releasing NAB into open source such that the community can add new\ndata sets, propose different scoring mechanisms, and test/compare other\nalgorithms with HTM.  We hope that the developers in the community will get\nbehind NAB and enable a robust comparison of our anomaly detection with other\ntechniques.</p>\n<p>For more information on NAB, <a href=\"https://github.com/numenta/NAB\">go here</a>. We will\nbe presenting NAB at two conferences\n(<a href=\"http://mlconf.com/events/san-francisco-ca/\">MLconf SF</a> on November 13 in\nSan Francisco, and the\n<a href=\"http://www.icmla-conference.org/icmla15/\">IEEE Conference on Machine Learning and Applications</a>\non December 9-11 in Miami), so if you are in the vicinity, we hope you will be\nable to attend. Of course, once the paper is published, we will send you\nthe link.</p>\n<p>My second topic is an update from the NuPIC community.  We recently announced\nthe HTM Challenge.  The idea of the HTM Challenge is to provide a structure to\nencourage members of our open source community to create HTM sample\napplications. And, to add an extra incentive, we’re offering cash prizes of\n$3000 for first place, $2000 for second place and $1000 for third place, along\nwith some fun door prizes.</p>\n<p>The <a href=\"http://htmchallenge.devpost.com/\">Numenta HTM Challenge</a> is an online\ncontest open for submissions now and running until November 14th. Participants\npropose ideas for real-world applications of HTM technology and submit them for\napproval before starting work. We will check that the problem being solved is\napplicable to HTM, and that the data being analyzed is a good fit for HTM.\nOnce a project has been approved, hackers have until November 6th to work on it\nand submit a demo video for judging.</p>\n<p>This Challenge can be completed entirely online, but we encourage you to try to\nattend the <a href=\"http://www.meetup.com/numenta/events/224711586/\">onsite event</a> that\nculminates the Challenge on Saturday, November 14 in Redwood City, California.\nAt this event, all demonstration videos will be viewed by a judging panel and a\nlive audience. Judges will get a chance to comment and ask questions to\nsubmission authors (either live or over the phone). At the end of the event,\nwe’ll announce the winners and cash prizes will be awarded.</p>\n<p>In addition to judging, there will also be at least two educational sessions by\nNumenta team members Subutai Ahmad and Jeff Hawkins. They will be talking about\nthe history and evolution of HTM algorithms, the Numenta Anomaly Benchmark, and\nsome details about new algorithm development.</p>\n<p>You don’t have to participate in the Challenge to attend the onsite event.\nMaybe you just want to come see the latest presentations from Numenta or watch\nthe Challenge demonstration judging. That’s great! We welcome you to mingle with\nus HTM enthusiasts.\n<a href=\"http://www.meetup.com/numenta/events/224711586/\">Register here</a>.</p>\n<p>And as long as you’ll be in the area, there is a community event being planned\non Friday, November 13, the day before the onsite event. I hope you’ll come meet\nthe rest of the HTM community. This event is run by the NuPIC community, for the\nNuPIC community. A schedule is in the works.\n<a href=\"http://www.meetup.com/numenta/events/224711563/\">RSVP here</a>.</p>\n<p>Stay tuned for more information on NAB and on the HTM Challenge.  I’ll update\nyou as both projects develop.</p>\n<p>Lastly, let me remind you that Avik Partners has now taken over the Grok for IT\nproduct.  They have enhanced the product and are now in\n<a href=\"http://grokstream.com/\">beta</a>. If you want to experience breakthrough anomaly\ndetection on IT infrastructure, register to give it a try.</p>\n"}
 
 /***/ },
-/* 1131 */
+/* 1143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "662d816ee2af5ceb8e89c8f86953f183.png";
 
 /***/ },
-/* 1132 */
+/* 1144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1ce690e83fe0b9e7a935c4af2f75e944.png";
 
 /***/ },
-/* 1133 */
+/* 1145 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As I wrote you last month, we have been working hard on creating NAB, the Numenta Anomaly Benchmark, to test the HTM learning algorithms and enable comparison with other algorithms. Now, it’s here!","date":"2015/11/10","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta anomaly benchmark nab released open source streaming data","title":"Numenta Anomaly Benchmark (NAB) is Released, Open Source with White Paper","type":"post","body":"<h3>Numenta Newsletter November 2015</h3>\n<h4>Numenta Anomaly Benchmark (NAB) is Released, Open Source with White Paper</h4>\n<p>To Numenta newsletter subscribers:</p>\n<p>As I wrote you last month, we have been working hard on creating NAB, the\nNumenta Anomaly Benchmark, to test the HTM learning algorithms and enable\ncomparison with other algorithms.  Now, it’s here!</p>\n<p>We have found the need to create a benchmark for many reasons, including:</p>\n<ul>\n<li>\n<p>We sought a benchmark that incorporated time series data, i.e. that gives\n“credit” if you find an anomaly earlier rather than later.</p>\n</li>\n<li>\n<p>We wanted a benchmark that incorporated learning … if something about the\nsituation changes, and there is a “new normal”, does the algorithm keep\nfinding anomalies (false positives), or does it automatically adjust?</p>\n</li>\n<li>\n<p>We wanted real-world data files that have labeled anomalies …. did a machine\nfail?  Was it taken off line?  Knowing “ground truth” is important to evaluate\nwhether an algorithm correctly identifies an anomaly.</p>\n</li>\n<li>\n<p>We wanted an open dataset and code… in order for a benchmark to be accepted by\nthe community, it must be accessible to everyone.</p>\n</li>\n<li>\n<p>We saw the need for a new way of scoring.  Scoring can be tricky because you\nneed to think through questions such as:  if you see the anomaly TOO far in\nadvance, perhaps it is not related, and you didn’t really spot it …. how far\nin advance would that be?</p>\n</li>\n</ul>\n<p>We are now pleased to announce that the <a href=\"http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques\">Numenta Anomaly Benchmark (NAB) is released</a>.\nYou can read the technical paper <t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.nab%7D%7D\">here</a></t>.\nThe paper describes our data files, our scoring mechanism, and the test results\nof HTM algorithms along with other, publicly available anomaly detection\nalgorithms.  And, if you want to have a look at the code yourself, it is all in\nopen source.  You can <a href=\"https://github.com/numenta/NAB\">see it here</a>.</p>\n<p>For those readers less interested in technical details, we have created a more\nbusiness focused paper, which you can\n<a href=\"http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf\">download here</a>.</p>\n<p>Our hope is that we can build a community around NAB.  We’d like to collect\nadditional labeled data files that can be used for future versions.  We expect\nthat others will test their algorithms using our data files and scoring, and\ncompare and publish the results.  Since it is open source, companies can test\ntheir internal algorithms without sharing the results as well, although we hope\nthat they will.   We have received positive feedback from the research community\nso far, and we are confident that NAB will grow over time into a very useful\ntool.</p>\n<p>As a reminder, we will be presenting NAB at two conferences\n(<a href=\"http://mlconf.com/events/san-francisco-ca/\">MLconf SF</a> on November 13 in San\nFrancisco, and the\n<a href=\"http://www.icmla-conference.org/icmla15/\">IEEE Conference on Machine Learning and Applications</a>\non December 9-11 in Miami), so if you are in the vicinity, we hope you will be\nable to attend.</p>\n<p>I’m happy to share a couple updates from our strategic partners:\n<a href=\"http://www.grokstream.com/\">Avik Partners</a> and\n<a href=\"http://www.cortical.io/\">Cortical.io</a>. Avik Partners has had a successful beta\nfor Grok for IT and they’re getting ready to launch Grok 2.0.  <a href=\"http://Cortical.io\">Cortical.io</a>\nrecently announced its latest venture capital round of $1.8M and the opening of\nits San Francisco office.  We’re excited to see their progress in next\ngeneration natural language processing.</p>\n<p>Lastly, for any of you that are in the Bay Area, we’d love to see you at our HTM\nChallenge event this weekend.  If you can’t attend in person, you can still help\nchoose the winner.  Public voting for the 12 applications is now open.  Read\nthis blog post to learn more and cast your vote:</p>\n<p><a href=\"http://numenta.org/blog/2015/11/09/vote-for-the-best-htm-challenge-submissions.html\">http://numenta.org/blog/2015/11/09/vote-for-the-best-htm-challenge-submissions.html</a></p>\n"}
 
 /***/ },
-/* 1134 */
+/* 1146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "098825976cc10c5b5fe63583dcdef725.png";
 
 /***/ },
-/* 1135 */
+/* 1147 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"November is shaping up to be a busy and exciting month for Numenta. I wrote you about the release of our Numenta Anomaly Benchmark (NAB). Today I’m pleased to share more good news. Founders Jeff Hawkins and Subutai Ahmad have written a paper that","date":"2015/11/17","featured":false,"image":"../images/image.png","org":"CEO","tags":"numenta machine learning intelligence neurons thousands synapses theory sequence memory neocortex","title":"Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex","type":"post","body":"<h3>Numenta Newsletter — November 17, 2015</h3>\n<h4>Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex</h4>\n<p>To Numenta newsletter subscribers:</p>\n<p>November is shaping up to be a busy and exciting month for Numenta.\n<a href=\"/newsletters/numenta-anomaly-benchmark-nab-open-source-with-white-paper.html\">Earlier this month</a>,\nI wrote you about the release of our Numenta Anomaly Benchmark (NAB). Today I’m\npleased to share more good news.</p>\n<p>Numenta founders Jeff Hawkins and Subutai Ahmad have written a paper that we\nbelieve will become a seminal work in the field of biological and machine\nintelligence. It is titled, “Why Neurons Have Thousands of Synapses, A Theory of\nSequence Memory in Neocortex.”  We posted the paper to an academic archive a\ncouple of weeks ago. This makes it available while it is undergoing the peer\nreview process.</p>\n<p>MIT Technology Review noticed and wrote a thoughtful article about the paper\nthat explains the concepts and their importance in a very understandable way. We\nthought we’d share both the MIT Technology Review article and our paper. If you\nare interested in Numenta, brain theory, and machine intelligence I think you\nwill be interested in reading them.</p>\n<p><strong>MIT Technology Review article:</strong> <br/>\n<a href=\"http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/\">http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/</a></p>\n<p><strong>Numenta paper:</strong> <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.ext.paper.sequence%7D%7D\">{{site.paths.ext.paper.sequence}}</a>\n</t></p>\n"}
 
 /***/ },
-/* 1136 */
+/* 1148 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As we look forward to a bright 2016 here at Numenta, I thought I’d pause and review the highlights of 2015.  From advancing our research to expanding our community, we had many accomplishments that laid the groundwork for significant","date":"2016/01/07","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta 2015 review partners cortical.io avik grok nlp semantic folding nab numenta anomaly benchmark","title":"Year in Review for Numenta 2015","type":"post","body":"<h3>Numenta Newsletter — January 07, 2016</h3>\n<p>As we look forward to a bright 2016 here at Numenta, I thought I’d pause and\nreview the highlights of 2015.  From advancing our research to expanding our\ncommunity, we had many accomplishments that laid the groundwork for significant\nprogress going forward. I’d like to share four highlights.</p>\n<ol>\n<li>In 2015, we signed up two key strategic partners:\n<a href=\"http://www.cortical.io/\">Cortical.io</a> and\n<a href=\"http://www.grokstream.com/#home\">Avik Partners</a>.  In May, we\n<a href=\"http://numenta.com/press/numenta-and-cortical-io-form-strategic-partnership.html\">announced our Cortical.io partnership</a>,\nwhich focuses on advancing natural language processing (NLP).  We believe that\nthe combination of our HTM technology and Cortical’s Semantic Folding\ntechnology provides new possibilities to understanding text.  Co-founder\nFrancisco Webber has been a long-time supporter of Numenta. We look forward to\ncontinued collaboration with him and his team.</li>\n</ol>\n<p>In August, we\n<a href=\"http://numenta.com/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced our partnership with Avik Partners</a>,\nan IT services and advanced analytics startup to whom we transferred our Grok\napplication.  In a short time, Avik CEO Casey Kindiger launched a\n<a href=\"http://www.grokstream.com/#home\">commercial application</a> to use Grok to\nmonitor IT infrastructure. This partnership is a great example of our\n“technology transfer” business model where other companies complete and\ncommercialize our example applications.</p>\n<p>We can’t wait to see exciting results from <a href=\"http://Cortical.io\">Cortical.io</a> and Avik Partners, and\nI hope to share news of additional partnerships with you in the coming year.</p>\n<ol start=\"2\">\n<li>\n<p>We also released the\n<a href=\"http://numenta.com/numenta-anomaly-benchmark/\">Numenta Anomaly Benchmark (NAB)</a>,\nwhich was two years in the making.  We believe NAB offers the definitive way\nto assess the performance of algorithms for detecting anomalies in streaming\ndata.  We presented NAB v1.0 at two conferences and continue to get positive\nfeedback supporting the need for this benchmark. The launch was just the\nbeginning for NAB. We are actively working to collect additional data sources\nand publish additional algorithm results to incorporate in the next version.\nStay tuned for details on a NAB competition we are running this year in\nconjunction with the\n<a href=\"http://www.wcci2016.org/programs.php?id=home\">IEEE World Congress on Computational Intelligence</a>.</p>\n</li>\n<li>\n<p>This year also was a great year for our growing <a href=\"http://numenta.org/\">NuPIC</a>\ncommunity, which received a Top 3 ranking in a KDNuggets report on the\n<a href=\"http://www.kdnuggets.com/2015/06/top-20-python-machine-learning-open-source-projects.html\">Top 20 Python Machine Learning Open Source Projects</a>.\nWe increased the number of NuPIC followers by 750, put more of our technology\ninto open source, and had two hackathons that demonstrated the\n<a href=\"http://numenta.com/blog/htm-challenge-2015-results.html\">broad applicability of HTM applications</a>.\nI encourage you to\n<a href=\"https://www.youtube.com/playlist?list=PL3yXMgtrZmDqZc2m7qI3Kkbmxechp2-Zs\">view the videos</a>\nfrom our most recent hackathon.</p>\n</li>\n<li>\n<p>Perhaps one of the most exciting achievements of 2015 was the progress toward\na goal that we set at the beginning of the year: to <a href=\"/papers/\">publish major papers</a> about our work.\nWe have several papers undergoing peer review, which we’ve  made available\npre-publication on arxiv, an academic archive. I hope to be  sharing news of\npublication over the coming months, but in the meantime, you  can find all our\npapers on arxiv, here:</p>\n</li>\n</ol>\n<ul>\n<li>\n<p><a href=\"http://arxiv.org/abs/1511.00083\">Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex</a>\n(Preprint of journal submission) – Foundational paper describing core HTM\ntheory for sequence memory and its relationship to the neocortex. Written\nwith a neuroscience perspective, the paper explains why neurons need so many\nsynapses and how networks of neurons can form a powerful sequence learning\nmechanism.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1512.05463\">Continuous online sequence learning with an unsupervised neural network model</a>\n(Preprint of journal submission) – Analysis of HTM sequence memory applied\nto various sequence learning and prediction problems. Written with a machine\nlearning perspective, the paper contains some comparisons to statistical and\nDeep Learning techniques.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1510.03336\">Evaluating Real-time Anomaly Detection Algorithms</a> -\nthe Numenta Anomaly Benchmark  (Published conference paper) – This paper\ndiscusses how we should think about anomaly detection for streaming\napplications. It introduces a new open-source benchmark for detecting\nanomalies in real-time, time-series data.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1601.00720\">How do neurons operate on sparse distributed representations? A mathematical theory of sparsity, neurons and active dendrites</a>\n(Preprint of journal submission) – This paper describes a mathematical model\nfor quantifying the benefits and limitations of sparse representations in\nneurons and cortical networks.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1503.07469\">Properties of Sparse Distributed Representations and their Application to Hierarchical Temporal Memory</a> –\nAn earlier version of the above submission, this paper applies our\nmathematical model of sparse representations to practical HTM systems.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1505.02142\">Porting HTM Models to the Heidelberg Neuromorphic Computing Platform</a> –\nRecently there has been much interest in building custom hardware\nimplementations of HTM systems. This paper discusses one such scenario, and\nshows how to port HTM algorithms to analog hardware platforms such as the\none developed by the Human Brain Project.</p>\n</li>\n</ul>\n<p>As we kick off 2016, I am excited for what’s in store.  We are working to make\nNumenta technology even more accessible. We have several events and publications\nplanned. And we will remain dedicated to driving the creation of machine\nintelligence through neocortical principles.</p>\n<p>Best wishes for a Happy New Year.</p>\n"}
 
 /***/ },
-/* 1137 */
+/* 1149 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"This month, I am pleased to announce the Numenta Anomaly Benchmark competition offered in conjunction with the IEEE WCCI (World Congress on Computational Intelligence). This contest follows the release last fall of our","date":"2016/02/10","featured":false,"image":"../../../../images/numenta.png","org":"Director of Marketing","tags":"numenta anomaly benchmark competition research papers strata hadoop world","title":"Announcing the Numenta Anomaly Benchmark Competition","type":"post","body":"<h3>Numenta Newsletter — February 10, 2016</h3>\n<p>I’m excited to update you on what’s happening at Numenta this month, but before\nI do, I want to introduce myself, as some of you may notice a new name at the\nbottom of this newsletter. I joined Numenta as the Director of Marketing last\nfall, and I look forward to keeping you up to date on the latest Numenta news.</p>\n<p>This month, I am pleased to announce the\n<a href=\"http://numenta.org/nab/\">Numenta Anomaly Benchmark competition</a>,\noffered in conjunction with the\n<a href=\"http://www.wcci2016.org/programs.php?id=home\">IEEE WCCI (World Congress on Computational Intelligence)</a>.\nThis contest follows the release last fall of our\n<a href=\"http://numenta.com/numenta-anomaly-benchmark/\">Numenta Anomaly Benchmark</a>,\nwhich is designed to test algorithms that detect anomalies in\nstreaming data and reward early detection.</p>\n<p>The competition provides cash awards for two categories: algorithms and\ndatasets.  In the algorithms category, we’re looking for others to test and\npublish results of running anomaly detection algorithms on NAB.  For the dataset\ncategory, we’re looking for real-world, time-series data with labeled anomalies.\nWinning entrants that are participating in the WCCI contest will be announced\nduring official conference proceedings.  We are offering a parallel contest for\nthose who are not able to attend the conference.  We’ll award cash prizes for\nthe same two categories.  All contest entries are due by July 1, 2016, but we\nencourage you to submit early. For more details on the NAB competition, visit\n<a href=\"http://numenta.org/nab/\">http://numenta.org/nab/</a>. Our intention with NAB is to create a community around\nit and grow it into a widely used tool.  We hope the competition will be a fun\nway to add to the benchmark corpus and to position NAB as the standard benchmark\nfor anomaly detection in streaming data.</p>\n<p>In other news, we recently shared a summary of our published and submitted\nresearch papers.  You can now access all of these papers at\n<a href=\"http://numenta.com/papers/\">http://numenta.com/papers/</a>. I encourage you to bookmark the page as we will be\nupdating it with new material throughout the year.</p>\n<p>Lastly, I want to share that we will be participating in\n<a href=\"http://conferences.oreilly.com/strata/hadoop-big-data-ca\">Strata San Jose</a>,\nMarch 29-31. We’ll have a booth on the expo floor where you can meet our\nengineers and see our demonstration applications. We’ll also preview a new tool\nto enable broader experimentation with HTM, so stay tuned for more details.\nIf you’re planning on attending Strata, please stop by and see us.</p>\n"}
 
 /***/ },
-/* 1138 */
+/* 1150 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"I'm pleased to announce that we have released an iOS version of HTM for Stocks, a demonstration application that enables anybody to experience HTM technology firsthand. Previously available for Android only, HTM for Stocks now can be","date":"2016/02/18","featured":false,"image":"../images/image.png","org":"Director of Marketing","tags":"htm for stocks apple app store hierarchical temporal memory numenta","title":"HTM for Stocks available in the App Store","type":"post","body":"<h3>Numenta Newsletter — February 18, 2016</h3>\n<p>I’m pleased to announce that we have released an iOS version of <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.ext.htmstocks.ios%7D%7D\">HTM for Stocks</a></t>, a demonstration\napplication that enables anybody to experience HTM technology firsthand.\nPreviously available for Android only, HTM for Stocks now can be found in the\nApp Store.</p>\n<div class=\"text-center\">\n  <t render=\"hbs\">\n    [![Download from the App Store](/assets/img/icon/mobile/app-store-button.png)]({{site.paths.ext.htmstocks.ios}})\n  </t>\n</div>\n<p><t render=\"hbs\"><a href=\"%7B%7Bsite.paths.pages.htmstocks%7D%7D\">HTM for Stocks</a></t> continuously\nmonitors stock price, stock volume and Twitter volume for roughly 200 publicly\ntraded companies and alerts you in real time when something unusual is\nhappening. Results are displayed from most to least anomalous, so you can\ndetermine what is important and where to focus.</p>\n<p>This application not only makes detecting securities anomalies easy, but it also\nhighlights the value of HTM.  For example, you don’t have to know what you’re\nlooking for to find these real-time anomalies. HTM starts learning hundreds of\nmodels immediately.  In this case, it creates a model for three data streams per\nstock: stock price, stock volume and Twitter volume.  The application\ncontinuously compares a prediction of the next data point with the actual next\npoint and, if the overall behavior is unexpected, it reports an anomaly.  No\nhuman intervention is required. You don’t have to tune it or define parameters.\nYou don’t need to know anything about the stocks.  Because HTM for Stocks\ncontinuously learns, it adapts well to changes. For example, if a stock price\nspikes but then continues to stay at that level, HTM for Stocks learns the\nhigher price is a new normal.</p>\n<p>Perhaps one of the nicest benefits of this application is that it displays\nstocks from most to least anomalous activity. This ability to cut through vast\namounts of noisy data and surface only the companies where something unusual is\nhappening is extremely valuable and time-saving.   In this application, we’re\nmonitoring stocks, but you could use the same principles to find anomalous\nbehavior in many types of data streams:</p>\n<ul>\n<li>Machine sensor data - to do preventative maintenance and know which machines\nneed repairs</li>\n<li>Human behavior metrics – to identify suspicious activity</li>\n<li>GPS coordinates – to track vehicles and find deviations from an expected route</li>\n</ul>\n<p>Like all of our sample applications, we’ve made the <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.ext.htmstocks.source%7D%7D\">source code available</a></t>, and we hope to\nsee developers create derivative products.  If you are interested in developing\nHTM for Stocks into a commercial product, you can contact us at <t render=\"hbs\">\n<a href=\"mailto:%7B%7Bsite.email.sales%7D%7D\">{{site.email.sales}}</a></t>.</p>\n<p>In the meantime, we hope that our readers who are also iPhone users will\ndownload HTM for Stocks and give it a try.</p>\n"}
 
 /***/ },
-/* 1139 */
+/* 1151 */
 884,
-/* 1140 */
+/* 1152 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"Numenta has an ambitious mission: reverse-engineer the neocortex to understand how it works and apply those principles to software to create intelligent machines.  Because neuroscience is the foundation of everything we do","date":"2016/03/28","featured":false,"image":"../../../../images/numenta.png","org":"Director of Marketing","tags":"numenta neuron paper published peer reviewed neuroscience journal frontiers neural circuits neurons have thousands synapses theory sequence memory","title":"Neuron Paper Published in Peer-reviewed Neuroscience Journal","type":"post","body":"<h3>Numenta Newsletter — March 28, 2016</h3>\n<p>Numenta has an ambitious mission: reverse-engineer the neocortex to understand\nhow it works and apply those principles to software to create intelligent\nmachines.  Because neuroscience is the foundation of everything we do, it’s\nimportant to have our work published and critiqued in peer-reviewed neuroscience\njournals.  I’m excited to announce that Jeff Hawkins and Subutai Ahmad’s recent\nmanuscript, “<a href=\"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract\">Why Neurons Have Thousands of Synapses, A Theory of Sequence\nMemory in Neocortex</a>,”\nhas been accepted to Frontiers in Neural Circuits Journal, a publication devoted\nto research in neural circuits, serving the worldwide neuroscience community.</p>\n<p>We believe this paper will prove to be a significant contribution to brain\ntheory as well as introduce algorithms that will be important for machine\nintelligence.  The paper proposes a model of cortical neurons that explains why\nthey have thousands of synapses, why the synapses are segregated onto different\nparts of the dendrites, and how neurons integrate this input in a functionally\nmeaningful way.  There are many aspects of this neuron model that are novel.\nThe paper also provides a new and detailed theory of how networks of neurons\nthroughout the neocortex learn sequences and make predictions.</p>\n<p>This theory is radically different than the models used in most artificial\nneural networks such as deep learning and LSTM sequence memory. Deep learning\nand LSTM use artificial neurons that are simplistic and not biologically\naccurate.  Many deep learning models do not incorporate sequence memory at all.\nYet sequence memory is a critical component of the brain.  In fact, we believe\nthat learning and recalling sequences of patterns is the basic operation common\nto all brain function.</p>\n<p>Why is sequence memory so important? Because everything we as humans do is\nsequence based. When we hear someone talk, we take in a sequence of words; when\nwe look at something, our eyes saccade, moving quickly over the image, leading\nto a sequence of inputs from the retina; when we move our bodies, we’re\noutputting a sequence of motor commands, which causes changes in our inputs. It\nis this understanding of how sequence memory works in the brain that allows our\nsoftware to perform continuous, unsupervised learning without any training data.</p>\n<p>In case you are not familiar with academic publishing, being published in a\njournal like Frontiers is not as simple as writing and submitting your paper.\nIt involves a meticulous, multi-step review process where independent reviewers\nprovide feedback and request changes before accepting or denying the paper.\nThis paper is ambitious in how many new ideas it introduces, and took over a\nyear from when we first decided to write it to now, when it has been accepted.</p>\n<p>I invite you to read <a href=\"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract\">the paper</a>,\nand for those that want a less technical overview, I encourage you to read\n<a href=\"https://www.technologyreview.com/s/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/\">this article by MIT Tech Review</a>,\nwhich summarizes the findings of our pre-published version.</p>\n<p>Speaking of papers, we also recently completed a new white paper that addresses\none of the most popular topics that we’re asked when people are learning about\nNumenta’s HTM theory: encoders.  The paper, <a href=\"http://arxiv.org/abs/1602.05925\">Encoding Data for HTM Systems</a>,\nwritten by Scott Purdy, our Director of Engineering, describes how to encode\ndata into Sparse Distributed Representations (SDRs) so that the data can be used\nin HTM systems.  Scott reviews several existing encoders, which are available\nthrough our open source project called <a href=\"http://numenta.org\">NuPIC</a>, and explains\nthe requirements for creating encoders for new types of data.</p>\n<p>Lastly, for any of our readers that will be attending <a href=\"/events/strata-hadoop-world-big-data-conference-2016.html\">Strata + Hadoop World\n2016 in San Jose, CA</a>,\nplease stop by and say Hi.  We will be at Booth 540, along with representatives\nfrom our partners <a href=\"http://cortical.io\">Cortical.io</a> and\n<a href=\"http://grokstream.com\">Avik Partners</a>, giving demos and overviews on the\ncompany, our technology and our latest applications.</p>\n"}
 
 /***/ },
-/* 1141 */
+/* 1153 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"We receive many requests for better documentation of our work, and as our research has progressed, we know that some of our most popular papers are now outdated. As a result, we have been working for some time on creating a living","date":"2016/05/11","featured":false,"image":"../../../../images/numenta.png","org":"Director of Marketing","tags":"numenta newsletter may 2016 bami biological and machine intelligence living online book machine intelligence htm hierarchical temporal memory","title":"Announcing BAMI: Biological and Machine Intelligence, a Living Online Book","type":"post","body":"<h3>Numenta Newsletter — May 11, 2016</h3>\n<p>We receive many requests for better documentation of our work, and as our\nresearch has progressed, we know that some of our most popular papers are now\noutdated.  As a result, we have been working for some time on creating a “living\nbook”, a cohesive body of documentation that provides readers with the “A to Z”\nof HTM, and that can be updated as our work progresses.  I am pleased to\nannounce that we have released the first four chapters of this book, called\n<a href=\"/biological-and-machine-intelligence/\">Biological and Machine Intelligence (BAMI)</a>. We\nare calling this release v.4 to represent the 4 chapters available. We include a\nlist of future chapters that we hope to add, as well as links to research papers\nand supporting material. Material that is replaced by BAMI will be moved to the\narchive section of the <a href=\"/learn/\">learning center</a> on our web site.</p>\n<p>In addition to publishing peer reviewed papers, we hope to build on BAMI to\nbecome the principal resource for those who want to learn about HTM.  Over time,\nwe will include problem sets and lecture notes, making it particularly\nappropriate for academics who intend to create courses teaching HTM theory.</p>\n<p>For those who are interested, we’ve created a twitter account called\n<a href=\"https://twitter.com/NumentaBAMI\">@NumentaBAMI</a>, which we will only use for BAMI\nupdates.  If you’d like to be alerted when we add or revise a chapter, I\nencourage you to follow this account. We’ve designed BAMI such that each chapter\nincludes a revision history, so you will always be able to see what has changed.\nWe hope you find BAMI to be a useful resource, and we\n<a href=\"https://numenta.wufoo.com/forms/biological-and-machine-intelligence-bami/\">welcome your feedback and comments</a>.</p>\n<p>In addition to our BAMI news, we have some exciting events coming up this month\nas well. On May 12, Jeff Hawkins will be the featured guest at a\n<strong><a href=\"http://www.meetup.com/NeuroTechSF/events/230385690/\">NeurotechX meetup in San Francisco</a></strong>.\nCo-founded by one of our engineers, <a href=\"mailto:mleborgne@numenta.com\">Marion LeBorgne</a>,\nNeurotechX is a non-profit organization whose mission is to build a strong,\nglobal neurotechnology community by providing key resources and learning\nopportunities.  Jeff will give a talk titled &quot;What is Intelligence, that a\nMachine Might Have Some?”  For those that are not in the Bay Area, you can watch\nthe event live, and ask questions in the chat room.</p>\n<p>On May 19, Subutai Ahmad will be giving a talk titled, “Detecting Anomalies in\nStreaming Data – Real-time Algorithms for Real-world Applications” at\n<strong><a href=\"http://data.bythebay.io/\">Data By the Bay 2016</a></strong>. Spanning 150 talks over\n5 days, Data By The Bay is a by-data engineers, for-data engineers developer and\ndata scientist conference. If you’re interested in attending, you\n<a href=\"https://www.universe.com/embed/listings/BQJX8H/bookings/new?modal=1&amp;discount_code=NUMENTA10\">can get a 10% discount with the code NUMENTA10</a>.</p>\n<p>Also on May 19, I will be speaking at the\n<strong><a href=\"https://theinnovationenterprise.com/summits/business-analytics-innovation-summit-chicago-2016\">Business Analytics Innovation Summit</a></strong>\nin Chicago.  As a sponsor of this event, we will have the opportunity to\nintroduce and demonstrate our technology and its applications to a\nbusiness-focused audience over the course of two days.</p>\n<p>In partner news, <a href=\"http://Cortical.io\">Cortical.io</a> announced new releases to their products, which\ninclude more accurate results in the comparison of text similarity. This\nannouncement comes on the heels of an independent academic study that concluded\n<a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic Folding approach helps improve the prediction of stock\nreturn correlations. Visit <a href=\"http://cortical.io\">their website</a> for more details.</p>\n<p>Lastly, our Open Source Flag Bearer, <a href=\"mailto:mtaylor@numenta.com\">Matt Taylor</a>,\nhas created a new YouTube series called\n<a href=\"https://www.youtube.com/playlist?list=PL3yXMgtrZmDqhsFQzwUC9V8MeeVOQ7eZ9\">HTM School</a>.\nDesigned for the layperson, Matt breaks down the basics of various HTM topics in\nbite-size videos.  If you haven’t been to HTM School, be sure to check it out.</p>\n"}
 
 /***/ },
-/* 1142 */
+/* 1154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b32a2e03ff36e30f0feaedc627b4e034.png";
 
 /***/ },
-/* 1143 */
+/* 1155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8853868184591f8e767415d473e7f30e.png";
 
 /***/ },
-/* 1144 */
+/* 1156 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"Since I arrived at Numenta 9 months ago, one of the most common requests I’ve heard is that people want an easy way to experiment with HTM without having to dive deep into our code and algorithms","date":"2016/06/28","featured":false,"image":"../images/htm-studio.png","org":"Director of Marketing","tags":"numenta releases htm studio desktop application anomaly detection htm school nupic","title":"Numenta Releases HTM Studio Desktop Application","type":"post","body":"<h3>Numenta Newsletter — June 28, 2016</h3>\n<p>Since I arrived at Numenta 9 months ago, one of the most common requests I’ve\nheard is that people want an easy way to experiment with <a href=\"http://numenta.com/#technology\">HTM</a> without having\nto dive deep into our code and algorithms. Well, I’m happy to share that this\nweek we addressed that request when we announced the <a href=\"http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio\">release of HTM Studio</a>,\na desktop tool that allows you to test whether HTM finds interesting anomalies\nin your own numeric, time-series data.</p>\n<p>The ability to detect anomalies as soon as possible in streaming data has value\nacross a wide variety of applications – from health monitoring to preventative\nmaintenance to geospatial tracking and more. Yet early detection is easier said\nthan done, and traditional methods like thresholds often miss the subtle\nanomalies common within streaming data. Because HTM learns continuously and\nwithout supervision, it finds these types of anomalies very well.</p>\n<p><a href=\"http://numenta.com/htm-studio/\">HTM Studio</a> provides a way for anyone, even non-technical people, to\nexperiment with HTM for anomaly detection on their own data, without having to\nupload anything to the cloud. After downloading HTM Studio, you can import a\nlocal csv file, and with a few clicks, HTM analyzes your data and displays any\nanomalies it finds.  For those who don’t have streaming data sets, HTM Studio\ncomes with pre-loaded sample data.</p>\n<p>We hope that this release encourages broad experimentation with our technology.\nTry it on your home automation data to uncover anomalies in your usage patterns,\nor your sleep data to find abnormalities in your sleep-wake cycles, or your\ncompany’s sensors to see where unusual activity is occurring in the office. All\nyou need is a csv file with one Date/Time column, one header row and at least\n400 rows of numeric data listed in chronological order.  For more on how to\nensure your data is in the right format for HTM Studio, watch this\n<a href=\"http://youtu.be/f80ewxLvgks\">short tutorial video</a>.  HTM Studio provides an easy way to do a proof of\nconcept before fully implementing or deploying HTM. It also removes the\ntechnical hurdle and steep learning curve that typically accompanies HTM\nexperimentation.</p>\n<p>As a company with a scientific mission to understand how the brain learns, it’s\nbeen hard for us to make this technology accessible, which is why we are so\nproud of this release. If you’d like to try it, you can download the Windows or\nMac version, view our tutorials and give us feedback at\n<a href=\"http://numenta.com/htm-studio/\">http://numenta.com/htm-studio/</a>.  Feel free to write us about interesting\nanomalies that you find – we hope to share guest blog posts of the best ones.</p>\n<p>While many of you are likely planning summer trips, Numenta will be traveling\nthe globe this summer as well.  Our Research Engineer, <a href=\"mailto:ycui@numenta.com\">Yuwei Cui</a>, just\nreturned from speaking at two academic conferences in Greece (<a href=\"http://numenta.com/events/dendritic-anatomy-molecules-and-function-heraklion-crete.html\">Dendrite</a> and\n<a href=\"http://numenta.com/events/areadne-2016-research-in-encoding-and-decoding-of-neural-ensembles.html\">Areadne</a>), and will be in Vancouver, BC next month to speak at the\n<a href=\"http://numenta.com/events/ieee-wcci-2016.html\">IEEE World Congress on Computational Intelligence</a>. <a href=\"mailto:sahmad@numenta.com\">Subutai Ahmad</a>, VP\nof Research, is headed to speak at the <a href=\"http://numenta.com/events/the-playfair-ai-summit-2016.html\">Playfair AI Summit</a> in London, before\nreturning to speak in San Francisco at the <a href=\"http://numenta.com/events/data-science-summit.html\">Data Science Summit</a>.  We’ll be\nexhibiting at Data Science Summit as well, so if you’re planning to attend, be\nsure to stop by our table for a demo of HTM Studio.</p>\n<p>For those of you who follow our open source project, you may have seen that we\nmigrated our HTM mailing lists to the <a href=\"https://discourse.numenta.org/\">HTM Forum</a>.  With its clean,\nintuitive design, this new forum provides a better platform for fostering\ndiscussions as the community continues to grow. It categorizes content and\nallows you to choose which topics to follow. Moderated by our open source flag\nbearer, <a href=\"mailto:matt@numenta.org\">Matt Taylor</a>, HTM Forum is open to anyone, so I encourage you to\nread the posts and join the conversation at <a href=\"https://discourse.numenta.org/\">https://discourse.numenta.org/</a>.</p>\n<p>In other news, our partners have some exciting updates to share. <a href=\"http://www.grokstream.com/\">Grok</a> has\nmade several product improvements over the past few months. Grok now supports\nworkflow automation, features improvements to the anomaly dashboard and includes\nmany new design enhancements.  As Grok continues to grow, the company is looking\nto expand as well.  If you know anyone who would make a great community manager\nor full stack developer, particularly in the Southern California area, contact\n<a href=\"mailto:tarun@grokstream.com\">tarun@grokstream.com</a>.</p>\n<p><a href=\"http://Cortical.io\">Cortical.io</a> was recently named an IDC Innovator for the\n<a href=\"http://www.cortical.io/news.html#lead_1\">2016 Machine-Learning based Text Analytics market</a>. Much like Numenta,\n<a href=\"http://Cortical.io\">Cortical.io</a> has been traveling the globe and will be speaking at several\nupcoming <a href=\"http://www.cortical.io/company/events/\">events</a>, including the <a href=\"http://conferences.oreilly.com/artificial-intelligence/ai-deep-learning-bots-ny/public/content/about\">AI O’Reilly Conference</a> in New York\nSeptember 26-27.</p>\n<p>Lastly, we are in the final countdown of our Numenta Anomaly Benchmark (NAB)\ncompetition. This <a href=\"https://youtu.be/Wdr_s9Bdi3I\">short video</a> explains how easy it is to win up to $5,000.</p>\n"}
 
 /***/ },
-/* 1145 */
+/* 1157 */
 742,
-/* 1146 */
+/* 1158 */
 743,
-/* 1147 */
+/* 1159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -79477,7 +80108,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _PostListItem = __webpack_require__(895);
+	var _PostListItem = __webpack_require__(897);
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
@@ -79485,7 +80116,7 @@
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
-	var _index = __webpack_require__(1148);
+	var _index = __webpack_require__(1160);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -79567,111 +80198,111 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1148 */
+/* 1160 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"signup":"index_signup_1lt tachyons_fr_2Nn","field":"index_field_2nI tachyons_h2_1bn"};
 
 /***/ },
-/* 1149 */,
-/* 1150 */
-1131,
-/* 1151 */
-1132,
-/* 1152 */
+/* 1161 */,
+/* 1162 */
+1143,
+/* 1163 */
+1144,
+/* 1164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1cc1291c894be6ba5a90f44c1847a392.png";
 
 /***/ },
-/* 1153 */
+/* 1165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3c6b5b0070b0851948eb797d627d48f0.png";
 
 /***/ },
-/* 1154 */
+/* 1166 */
 597,
-/* 1155 */
+/* 1167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3edc9380b660a8bc5b6ce1e92c5dcc2d.png";
 
 /***/ },
-/* 1156 */
+/* 1168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "46689083e0bb2730103c6a0da82beb34.png";
 
 /***/ },
-/* 1157 */
+/* 1169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "31d694f4a88a96f7c4768b371347f526.png";
 
 /***/ },
-/* 1158 */
+/* 1170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b0a4bef758afdc080d6f4110bc9971de.png";
 
 /***/ },
-/* 1159 */
+/* 1171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d66c0791dd3a9cd8aff7aefcd82d00d2.png";
 
 /***/ },
-/* 1160 */
+/* 1172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7ded7cfe8e77e6bb12701348e45fbcdf.png";
 
 /***/ },
-/* 1161 */
+/* 1173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4a4128b63c075ebe51fca8f8e31b4b95.png";
 
 /***/ },
-/* 1162 */
+/* 1174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b985701528494a5f703277f8b48ae04f.png";
 
 /***/ },
-/* 1163 */
+/* 1175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bdec463600c284f9e7587ebf0d8695f6.png";
 
 /***/ },
-/* 1164 */
+/* 1176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b011bbf88a1de74046f862342469b4aa.png";
 
 /***/ },
-/* 1165 */
+/* 1177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "239beb0e8a848984428c3f123cc7c4f1.png";
 
 /***/ },
-/* 1166 */
+/* 1178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4cf895d8321fec60a3a876bb4227acf3.png";
 
 /***/ },
-/* 1167 */
+/* 1179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f85bd1d006e5b31a7674504ecbd30c5a.png";
 
 /***/ },
-/* 1168 */
+/* 1180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -79680,7 +80311,7 @@
 	  value: true
 	});
 	
-	var _cloudDownload = __webpack_require__(1169);
+	var _cloudDownload = __webpack_require__(1181);
 	
 	var _cloudDownload2 = _interopRequireDefault(_cloudDownload);
 	
@@ -79688,11 +80319,11 @@
 	
 	var _github2 = _interopRequireDefault(_github);
 	
-	var _filePdfO = __webpack_require__(1170);
+	var _filePdfO = __webpack_require__(1182);
 	
 	var _filePdfO2 = _interopRequireDefault(_filePdfO);
 	
-	var _slideshare = __webpack_require__(1171);
+	var _slideshare = __webpack_require__(1183);
 	
 	var _slideshare2 = _interopRequireDefault(_slideshare);
 	
@@ -79704,7 +80335,7 @@
 	
 	var _Anchor2 = _interopRequireDefault(_Anchor);
 	
-	var _IconMarker = __webpack_require__(1172);
+	var _IconMarker = __webpack_require__(1184);
 	
 	var _IconMarker2 = _interopRequireDefault(_IconMarker);
 	
@@ -79740,47 +80371,47 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
-	var _compare = __webpack_require__(1150);
+	var _compare = __webpack_require__(1162);
 	
 	var _compare2 = _interopRequireDefault(_compare);
 	
-	var _datasheet = __webpack_require__(1152);
+	var _datasheet = __webpack_require__(1164);
 	
 	var _datasheet2 = _interopRequireDefault(_datasheet);
 	
-	var _detail = __webpack_require__(1154);
+	var _detail = __webpack_require__(1166);
 	
 	var _detail2 = _interopRequireDefault(_detail);
 	
-	var _equations = __webpack_require__(1155);
+	var _equations = __webpack_require__(1167);
 	
 	var _equations2 = _interopRequireDefault(_equations);
 	
-	var _heartbeat = __webpack_require__(1159);
+	var _heartbeat = __webpack_require__(1171);
 	
 	var _heartbeat2 = _interopRequireDefault(_heartbeat);
 	
-	var _math = __webpack_require__(1161);
+	var _math = __webpack_require__(1173);
 	
 	var _math2 = _interopRequireDefault(_math);
 	
-	var _github3 = __webpack_require__(1157);
+	var _github3 = __webpack_require__(1169);
 	
 	var _github4 = _interopRequireDefault(_github3);
 	
-	var _scoreboard = __webpack_require__(1163);
+	var _scoreboard = __webpack_require__(1175);
 	
 	var _scoreboard2 = _interopRequireDefault(_scoreboard);
 	
-	var _videoMlconf = __webpack_require__(1164);
+	var _videoMlconf = __webpack_require__(1176);
 	
 	var _videoMlconf2 = _interopRequireDefault(_videoMlconf);
 	
-	var _videoNab = __webpack_require__(1166);
+	var _videoNab = __webpack_require__(1178);
 	
 	var _videoNab2 = _interopRequireDefault(_videoNab);
 	
-	var _index = __webpack_require__(1176);
+	var _index = __webpack_require__(1188);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -79812,7 +80443,7 @@
 	        ),
 	        _react2.default.createElement(
 	          _Paragraph2.default,
-	          null,
+	          { lead: true },
 	          'The Internet of Things has produced a world that’s overflowing with streaming data. As these data sources continue to grow, so does the need for anomaly detection. Uncovering anomalies allows you to:'
 	        ),
 	        _react2.default.createElement(
@@ -80223,7 +80854,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1169 */
+/* 1181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80276,7 +80907,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1170 */
+/* 1182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80329,7 +80960,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1171 */
+/* 1183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80382,7 +81013,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1172 */
+/* 1184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80391,7 +81022,7 @@
 	  value: true
 	});
 	
-	var _arrowCircleORight = __webpack_require__(1173);
+	var _arrowCircleORight = __webpack_require__(1185);
 	
 	var _arrowCircleORight2 = _interopRequireDefault(_arrowCircleORight);
 	
@@ -80399,7 +81030,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(1174);
+	var _index = __webpack_require__(1186);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -80429,7 +81060,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1173 */
+/* 1185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80482,31 +81113,31 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1174 */
+/* 1186 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"iconMarker":"index_iconMarker_30J","icon":"index_icon_FKO tachyons_mr2_2P1 tachyons_relative_1fO theme_color-blue-dark_2u0"};
 
 /***/ },
-/* 1175 */,
-/* 1176 */
+/* 1187 */,
+/* 1188 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"columns":"index_columns_3vh theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_3Kz theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_ktE tachyons_mt3_11A tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN"};
+	module.exports = {"columns":"index_columns_3vh theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_3Kz theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_ktE tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN"};
 
 /***/ },
-/* 1177 */,
-/* 1178 */
+/* 1189 */,
+/* 1190 */
 722,
-/* 1179 */
+/* 1191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "30e97fcd7264c3188222fe2a9ee71cad.png";
 
 /***/ },
-/* 1180 */
+/* 1192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80575,7 +81206,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1181 */
+/* 1193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80643,115 +81274,115 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1182 */
+/* 1194 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Chetan Surpur","brief":"This video talk on Applications of Hierarchical Temporal Memory (HTM) was delivered at a Numenta workshop.","date":"2014/10/17","image":null,"link":null,"org":"Software Engineer","section":"detail","sort":"e","tags":"numenta hierarchical temporal memory htm applications","title":"Applications of Hierarchical Temporal Memory (HTM)","type":"talk","body":"<p>This video talk on Applications of Hierarchical Temporal Memory (HTM) was\ndelivered at a Numenta workshop.</p>\n<h4>Talk Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/900nFOfzp2E\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/applications-of-htm-workshop\">Applications of Hierarchical Temporal Memory</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45034552\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/applications-of-htm-workshop\" title=\"Applications of Hierarchical Temporal Memory (HTM)\" target=\"_blank\">Applications of Hierarchical Temporal Memory (HTM)</a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1183 */
+/* 1195 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"This video is replaced by the Numenta License Guide","date":"2014/10/17","image":null,"link":null,"org":"Celeste Baranski & Matt Taylor","section":"archive","sort":"a","tags":"numenta getting started hierarchical temporal memory htm technology nupic","title":"Getting Started With Numenta Technology","type":"talk","body":"<p>This video is replaced by the\n<a href=\"/assets/pdf/apps/licensing-guide.pdf\">Numenta License Guide</a>.</p>\n<h4>Video</h4>\n<p>Presented by:</p>\n<ul>\n<li>Celeste Baranski, VP of Engineering, Numenta</li>\n<li>Matthew Taylor, Open Source Manager, Numenta</li>\n</ul>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/5HD9NnXpRus\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/getting-started-with-numenta-technology\">Getting Started with Numenta Technology</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45034781\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/getting-started-with-numenta-technology\" title=\"Getting Started with Numenta Technology \" target=\"_blank\">Getting Started with Numenta Technology </a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1184 */
+/* 1196 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Rahul Agarwal","brief":"This video tutorial follows the 2011 HTM whitepaper, and is largely obsolete. The content of this tutorial will be replace by HTM School (over time).","date":"2013/08/03","image":null,"link":null,"org":"Software Engineer","section":"archive","sort":"c","tags":"htm hierarchical temporal memory tutorial algorithm basics","title":"HTM Learning Algorithm Tutorial - Algorithm Basics","type":"talk","body":"<p>This video tutorial follows the 2011 HTM whitepaper, and is largely obsolete.\nThe content of this tutorial will be replace by\n<a href=\"https://www.youtube.com/watch?v=XMB0ri4qgwc\">HTM School</a> (over time).</p>\n<p><strong>Note:</strong> This video refers to the HTM learning algorithm as the Cortical\nLearning Algorithm, or CLA; we have recently decided to sunset this term.</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/z6r3ekreRzY\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"}
 
 /***/ },
-/* 1185 */
+/* 1197 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"There have been changes in our thinking, in algorithm implementation, in terminology and in other areas since this paper was written, rendering part of this paper obsolete. Much of this paper has been replaced by BAMI and the current white papers, and we will continue to provide updated material in subsequent releases of BAMI.","date":"2011/09/12","image":null,"link":"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf","org":"Co-Founder","section":"archive","sort":"b","tags":"hierarchical temporal memory htm jeff hawkins whitepaper pdf","title":"Hierarchical Temporal Memory (HTM) Whitepaper","type":"paper","body":"<p>There have been changes in our thinking, in algorithm implementation, in\nterminology and in other areas since this paper was written, rendering part of\nthis paper obsolete. Much of this paper has been replaced by\n<a href=\"/biological-and-machine-intelligence/\">BAMI</a> and the\n<a href=\"/papers/\">current white papers</a>, and we will continue to provide updated\nmaterial in subsequent releases of\n<a href=\"/biological-and-machine-intelligence/\">BAMI</a>.</p>\n<h4>About</h4>\n<p>At the heart of Hierarchical Temporal Memory (HTM), our machine intelligence\ntechnology, are time-based learning algorithms that store and recall spatial and\ntemporal patterns. This paper describes how the learning algorithms work and\ntheir biological mapping.</p>\n<p><strong>Note:</strong> This paper refers to the HTM learning algorithm as the Cortical\nLearning Algorithm, or CLA; we have recently decided to sunset this term as our\ntechnology has evolved.</p>\n<blockquote>\n<p><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf\">Download Whitepaper</a></p>\n</blockquote>\n<h4>Translations Available</h4>\n<table>\n<thead>\n<tr>\n<th>Language</th>\n<th>Code</th>\n<th>Translator</th>\n<th>Link</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Chinese</td>\n<td>CN</td>\n<td>Yu Tianxiang</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-cn.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>French</td>\n<td>FR</td>\n<td>Laurent Julliard</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-fr.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>German</td>\n<td>DE</td>\n<td>Ingmar Baetge</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-de.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Japanese</td>\n<td>JP</td>\n<td>Akihiro Yoshikawa</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-jp.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Korean</td>\n<td>KR</td>\n<td>Jihoon Oh</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-kr.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Portuguese</td>\n<td>PT</td>\n<td>David Ragazzi</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-pt.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Russian</td>\n<td>RU</td>\n<td>Mikhaile Netov</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-ru.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Spanish</td>\n<td>ES</td>\n<td>Garikoitz Lerma Usabiaga</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-es.pdf\">Download</a></td>\n</tr>\n</tbody>\n</table>\n"}
 
 /***/ },
-/* 1186 */
+/* 1198 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"These two videos are similar, and provide an overview of HTM and associated topics by Numenta’s founder, Jeff Hawkins. The talks have slightly different emphasis. For instance, the first video has more details on SDRs.","date":"2014/11/22","image":null,"link":null,"org":"Co-Founder","section":"overview","sort":"c","tags":"numenta htm videos heirarchical temporal memory brain machine intelligence jeff hawkins","title":"HTM Videos from Jeff Hawkins","type":"talk","body":"<p>These two videos are similar, and provide an overview of HTM and associated\ntopics by Numenta’s founder, Jeff Hawkins. The talks have slightly different\nemphasis (for instance, the first video has more details on SDRs). At the time\nof BAMI 0.4 release, we are currently rethinking the role of hierarchy and the\nconnections between the various layers of the neocortex, so the comments on\nthese subjects in the videos are out of date.</p>\n<hr>\n<h2>#1 What The Brain Says About Machine Intelligence</h2>\n<p>Video talk on What The Brain Says About Machine Intelligence by Jeff Hawkins,\nNumenta Co-Founder. Nov 2014 in Redwood City, CA.</p>\n<h4>Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/izO2_mCvFaw\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"//www.slideshare.net/numenta/what-the-brain-says-about-machine-intelligence\">What the Brain says about Machine Intelligence</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/44507410\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen></iframe>\n</div>\n<hr>\n<h2>#2 Principles of HTM - Foundations of Machine Intelligence</h2>\n<p>Video talk on Hierarchical Temporal Memory (HTM) and the Foundations of Machine\nIntelligence by Jeff Hawkins, Numenta Co-Founder. Numenta Workshop Oct 2014 in\nRedwood City, CA.</p>\n<h4>Talk</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/6ufPpZDmPKA\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Q &amp; A Session</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/EU2Vm-VlfEk\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/2014-10-17-numenta-workshop\">Principles of Hierarchical Temporal Memory</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45033943\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/2014-10-17-numenta-workshop\" title=\"Principles of Hierarchical Temporal Memory - Foundations of Machine Intelligence\" target=\"_blank\">Principles of Hierarchical Temporal Memory - Foundations of Machine Intelligence</a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1187 */
+/* 1199 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"This webinar provides an overview of the current state of HTM, with an emphasis on the software implementation and example applications. The Q&A session at the end of the webinar answers some popular user questions.","date":"2016/04/26","image":null,"link":null,"org":"Christy Maver & Scott Purdy","section":"overview","sort":"d","tags":"numenta webinar machine intelligence streaming data real time anomaly detection","title":"Machine Intelligence with Streaming Data Webinar","type":"talk","body":"<h2>Machine Intelligence with Streaming Data</h2>\n<h3>A new approach for anomaly detection and time-based learning</h3>\n<p>This webinar provides an overview of the current state of HTM, with an emphasis\non the software implementation and example applications. The Q&amp;A session at the\nend of the webinar answers some popular user questions.</p>\n<p>Presented by:</p>\n<ul>\n<li>Christy Maver (Marketing Director, Numenta)</li>\n<li>Scott Purdy (Director of Development, Numenta)</li>\n</ul>\n<h4>Video</h4>\n<iframe src=\"https://player.vimeo.com/video/164320064?title=0&byline=0&portrait=0\" width=\"640\" height=\"481\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"https://vimeo.com/164320064\">Machine Intelligence with Streaming Data</a> from <a href=\"https://vimeo.com/formspider\">ProHuddle</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>\n<h4>About</h4>\n<p>Links:</p>\n<ul>\n<li><a href=\"http://www.prohuddle.com/webinars/ChristyAndScott/Machine_Intelligence_with_Streaming_Data_A_New_Approach.php\">Main Event Website</a></li>\n<li><a href=\"/events/numenta-webinar.html\">Numenta Event Page</a></li>\n</ul>\n<p>Across every industry, we are seeing an exponential increase in the availability\nof streaming, time-series data. The real-time detection of anomalies has\nsignificant practical application. Finding anomalies in such data can be very\ndifficult, given the need to process data in real time, and learn while\nsimultaneously making predictions. With the increasing variety of streaming data\nsources, automated deployment—without manual parameter tuning—is also becoming\nimportant.</p>\n"}
 
 /***/ },
-/* 1188 */
+/* 1200 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins & Sandra Blakeslee","brief":"The core concepts in Hierarchical Temporal Memory (HTM) theory were first described in this book titled On Intelligence, which was written by Jeff Hawkins with the help of Sandra Blakeslee.","date":"2005/07/14","image":null,"link":"http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&qid=1363894040&sr=8-1&keywords=on+intelligence","org":"Co-Founder & Co-Author","section":"overview","sort":"a","tags":"on intelligence jeff hawkins htm hierarchical temporal memory","title":"On Intelligence","type":"book","body":"<p>The core concepts in Hierarchical Temporal Memory (HTM) theory were first\ndescribed in this book titled <strong>On Intelligence</strong>, which was written by Jeff\nHawkins with the help of Sandra Blakeslee. This book still provides background\nand a great introduction to our theory, though many of the ideas in chapter 6\n(“How the Cortex Works”) are currently being revised.</p>\n<p><strong>Buy Book</strong>: <a href=\"http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&amp;qid=1363894040&amp;sr=8-1&amp;keywords=on+intelligence\">Purchase on Amazon</a></p>\n<p><strong>Note:</strong> This book refers to the HTM learning algorithm as the Cortical\nLearning Algorithm, or CLA; we have recently decided to sunset this term as our\ntechnology has evolved.</p>\n<h4>Translations Available</h4>\n<p>Chinese, Finnish, French, German, Hebrew, Indonesian, Italian, Korean, Japanese,\nPolish, <a href=\"/assets/pdf/on-intelligence/on-intelligence-pt.pdf\">Portuguese</a>,\nRussian, <a href=\"/assets/pdf/on-intelligence/on-intelligence-es.pdf\">Spanish</a>,\nVietnamese.</p>\n"}
 
 /***/ },
-/* 1189 */
+/* 1201 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Scott Purdy","brief":"This video talk on the Science of Anomaly Detection was delivered at a Numenta workshop and covers the application of HTM to anomaly detection in streaming data.","date":"2014/10/17","image":null,"link":null,"org":"Engineering Manager","section":"detail","sort":"f","tags":"numenta science of anomaly detection","title":"Science of Anomaly Detection","type":"talk","body":"<p>This video talk on the Science of Anomaly Detection was delivered at a Numenta\nworkshop and covers the application of HTM to anomaly detection in streaming\ndata.</p>\n<h4>Talk Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/I5lSEHvngaI\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/science-of-anomaly-detection\">Science of Anomaly Detection</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45034949\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen></iframe>\n  <div style=\"margin-bottom:5px\">\n    <strong>\n      <a href=\"//www.slideshare.net/numenta/science-of-anomaly-detection\" title=\"Science of Anomaly Detection\">Science of Anomaly Detection</a>\n    </strong> from\n    <strong>\n      <a href=\"//www.slideshare.net/numenta\">Numenta</a>\n    </strong>\n  </div>\n</div>\n<h4>Whitepaper</h4>\n<p>Numenta PDF Whitepaper:\n<a href=\"/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf\">Science of Anomaly Detection</a></p>\n"}
 
 /***/ },
-/* 1190 */
+/* 1202 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":"This video talk on Sparse Distributed Representations (SDR) covers a subset of the topics in the BAMI chapter on SDRs.","date":"2014/10/17","image":null,"link":null,"org":"VP Research","section":"detail","sort":"g","tags":"numenta sparse distributed representations sdr brain data structure","title":"Sparse Distributed Representations - Our Brain's Data Structure","type":"talk","body":"<p>This video talk on Sparse Distributed Representations (SDR) covers a subset of\nthe topics in the <a href=\"/biological-and-machine-intelligence/\">BAMI</a> chapter on SDRs.</p>\n<h4>Talk Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/LbZtc_zWBS4\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/sparse-distributed-representations-sdr\">Sparse Distributed Representations</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45035404\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/sparse-distributed-representations-sdr\" title=\"Sparse Distributed Representations: Our Brain&#x27;s Data Structure \" target=\"_blank\">Sparse Distributed Representations: Our Brain&#x27;s Data Structure </a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1191 */
+/* 1203 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Yuwei Cui, Subutai Ahmad, Jeff Hawkins & Chetan Surpur","brief":"Analysis of HTM sequence memory applied to various sequence learning and prediction problems. Written with a machine learning perspective, the paper contains some comparisons to statistical and Deep Learning techniques.","date":"2015/12/17","image":null,"link":"http://arxiv.org/abs/1512.05463","org":"Preprint of journal submission","sort":"d","title":"Continuous Online Sequence Learning with an Unsupervised Neural Network Model","type":"machine-learning","body":""}
 
 /***/ },
-/* 1192 */
+/* 1204 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Scott Purdy","brief":"Hierarchical Temporal Memory (HTM) is a biologically inspired machine intelligence technology that mimics the architecture and processes of the neocortex. In this white paper we describe how to encode data as Sparse Distributed Representations (SDRs) for use in HTM systems. We explain several existing encoders, which are available through the open source project called NuPIC, and we discuss requirements for creating encoders for new types of data.","date":"2016/02/18","link":"http://arxiv.org/abs/1602.05925","org":null,"sort":"p","title":"Encoding Data for HTM Systems","type":"machine-learning","body":""}
 
 /***/ },
-/* 1193 */
+/* 1205 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin & Subutai Ahmad","brief":"14th IEEE ICMLA 2015 - This paper discusses how we should think about anomaly detection for streaming applications. It introduces a new open-source benchmark for detecting anomalies in real-time, time-series data.","date":"2015/10/12","image":null,"link":"http://arxiv.org/abs/1510.03336","org":"Published conference paper","sort":"g","title":"Evaluating Real-time Anomaly Detection Algorithms - the Numenta Anomaly Benchmark","type":"machine-learning","body":""}
 
 /***/ },
-/* 1194 */
+/* 1206 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad & Jeff Hawkins","brief":"This paper describes a mathematical model for quantifying the benefits and limitations of sparse representations in neurons and cortical networks.","date":"2016/01/05","link":"http://arxiv.org/abs/1601.00720","org":"Preprint of journal submission","sort":"j","title":"How Do Neurons Operate on Sparse Distributed Representations? A Mathematical Theory of Sparsity, Neurons and Active Dendrites","type":"neuroscience","body":""}
 
 /***/ },
-/* 1195 */
+/* 1207 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Sebastian Billaudelle & Subutai Ahmad","brief":"Recently there has been much interest in building custom hardware implementations of HTM systems. This paper discusses one such scenario, and shows how to port HTM algorithms to analog hardware platforms such as the one developed by the Human Brain Project.","date":"2015/05/08","image":null,"link":"http://arxiv.org/abs/1505.02142","org":null,"sort":"s","title":"Porting HTM Models to the Heidelberg Neuromorphic Computing Platform","type":"neuroscience","body":""}
 
 /***/ },
-/* 1196 */
+/* 1208 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad & Jeff Hawkins","brief":"An earlier version of the above submission, this paper applies our mathematical model of sparse representations to practical HTM systems.","date":"2014/10/28","link":"http://arxiv.org/abs/1503.07469","org":null,"sort":"m","title":"Properties of Sparse Distributed Representations and their Application To Hierarchical Temporal Memory","type":"neuroscience","body":""}
 
 /***/ },
-/* 1197 */
+/* 1209 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad & Scott Purdy","brief":"Much of the worlds data is streaming, time-series data, where anomalies give significant information in critical situations. Yet detecting anomalies in streaming data is a difficult task, requiring detectors to process data in real-time, and learn while simultaneously making predictions.","date":"2016/07/08","link":"https://arxiv.org/abs/1607.02480","org":"Preprint of journal submission","sort":"h","title":"Real-Time Anomaly Detection for Streaming Analytics","type":"machine-learning","body":""}
 
 /***/ },
-/* 1198 */
+/* 1210 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins & Subutai Ahmad","brief":"Foundational paper describing core HTM theory for sequence memory and its relationship to the neocortex. Written with a neuroscience perspective, the paper explains why neurons need so many synapses and how networks of neurons can form a powerful sequence learning mechanism.","date":"2015/10/31","image":null,"link":"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract","org":"Published in Frontiers in Neural Circuits Journal","sort":"a","title":"Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex","type":"neuroscience","body":""}
 
 /***/ },
-/* 1199 */
+/* 1211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ba14ece563e537ddf828f6951b50051b.png";
 
 /***/ },
-/* 1200 */
+/* 1212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80820,84 +81451,24 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1201 */
+/* 1213 */
 742,
-/* 1202 */
+/* 1214 */
 743,
-/* 1203 */
+/* 1215 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Numenta, a breakthrough machine intelligence company, today announced it has been selected as one of the four Big Ideas companies to be featured at the","date":"2013/02/14","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta grok gigaom structure data","title":"Numenta to Present Grok, a Solution for Fast Data, as one of the Big Ideas at the GigaOM Structure:Data Conference on March 20, 2013","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Numenta, a breakthrough machine intelligence company, today announced it has\nbeen selected as one of the four Big Ideas companies to be featured at the\nGigaOM <a href=\"http://event.gigaom.com/structuredata/\">Structure:Data</a>\nconference March 20-21 in New York City.  Numenta CEO\n<a href=\"http://event.gigaom.com/structuredata/speakers/%20\">Rami Branitzky</a>\nwill give an on-stage introduction of Grok, the company’s first product, on\nMarch 20 at 5:20 p.m.</p>\n<p><a href=\"/grok/\">Grok</a> brings together Numenta’s\ntrailblazing R&amp;D in biologically inspired machine intelligence software with\na highly scalable infrastructure for acting on fast data. The Grok platform\ningests data streams and creates actionable predictions in real time. Grok’s\nautomated modeling and continuous learning capability makes it uniquely suited\nfor fast data.</p>\n<p>“Machine generated streaming data is exploding. It has a short half-life and is\nconstantly changing,” said Branitzky. “To date, the focus in the area of Big\nData has been on machines to store and process data, with a short supply of data\nscientists to analyze and act on it. To best leverage fast data, we believe you\nmust have systems that model and learn from data automatically and use the\nresults to drive automated actions. That’s what Grok was designed to do.”</p>\n<p>“The GigaOM editorial team hand picked four companies and speakers who embody\ngreat ideas that are shaping our industry for the Big Ideas session, and our\neditors are excited to have\n<a href=\"http://gigaom.com/2013/01/29/palm-creators-brain-mimicking-software-helps-manage-the-smart-grid/\">Numenta</a>\nas one,” said Surj Patel, GigaOM’s Vice President for Events.</p>\n<p>Grok solutions currently are in private beta with customers in a variety of\nvertical markets, including electric energy, IT management, online advertising\nand finance.  Numenta recently announced EnerNOC, Inc., a leading provider\nof energy management applications, as one of its first\ncustomers - entering a partnership that couples Numenta’s Grok streaming\nanalytics solution with EnerNOC’s cloud-based software to create opportunities\nfor demand response and increased ability to detect energy efficiency faults\nand anomalies.</p>\n<h4>About GigaOM Structure:Data</h4>\n<p>Structure:Data 2013 will explore the technical and business opportunities\ncreated by the rapid growth of big data. Many of the industry’s brightest minds\nwill converge to reveal how they are making the most of the data revolution.\nDiscounted\n<a href=\"http://event.gigaom.com/structuredata/registration/\">supersaver tickets</a>\nare available through February 22.</p>\n<h4>About Numenta</h4>\n<p>Numenta’s mission is to build solutions that help companies automatically and\nintelligently act on the world’s data.  Numenta’s biologically inspired machine\nlearning technology was first described in Numenta’s co-founder Jeff Hawkin’s\nbook, <strong>On Intelligence</strong>.</p>\n<p>Numenta’s Grok platform, based on this technology, ingests data streams and\ncreates actionable predictions in real time. Grok’s automated modeling and\ncontinuous learning capability makes it uniquely suited to drive intelligent\naction from fast data.</p>\n<p>Grok solutions are available directly from Numenta and Numenta partners in a\nvariety of vertical markets, including electric energy, IT management, online\nadvertising and finance. For more information on Numenta and Grok go to\n<a href=\"/\">numenta.com</a>.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
-/* 1204 */
+/* 1216 */
 742,
-/* 1205 */
+/* 1217 */
 743,
-/* 1206 */
+/* 1218 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"The proliferation of devices and sensors creating machine-generated data yield enormous opportunity for automated predictive maintenance solutions. According","date":"2013/04/18","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"thingworx numenta partner predictive maintenance connected world","title":"ThingWorx and Numenta Partner to offer Next Generation Predictive Maintenance and Operations for the Connected World","type":"post","body":"<p>Partnership to fully integrate Numenta’s Grok action intelligence platform with\nThingWorx connected application platform</p>\n<p>Exton, Pa. — April 18, 2013 —\n<a href=\"http://www.thingworx.com\">ThingWorx�</a>, the provider of the\nfirst application development platform for the connected world, and\n<a href=\"/\">Numenta</a>, a leading provider of solutions\nthat help companies intelligently act on machine-generated data, today announced\na partnership to create the next generation of tools for predictive maintenance.\nThe companies will work together to deliver advanced maintenance solutions to\nenable organizations to fully leverage the troves of data being generated by\ntheir connected machinery to achieve maximum operational efficiency and reduce\nmaintenance costs.</p>\n<p>The proliferation of devices and sensors creating machine-generated data yield\nenormous opportunity for automated predictive maintenance solutions. According\nto leading device and network companies such as Ericsson and Cisco, the number\nof connected devices and machines is expected to reach\n<a href=\"http://www.ericsson.com/res/docs/whitepapers/wp-50-billions.pdf;\">50\nbillion devices by 2020</a>.  ARC Research estimates that Predictive Maintenance\nis a global\n<a href=\"http://www.arcweb.com/strategy-reports/2012-06-28/leveraging-predictive-maintenance-for-apm-1.aspx\">$20 billion opportunity</a>.\nTo fully capitalize on this opportunity, ThingWorx and Numenta believe that a\nnew generation of maintenance solutions are required that go beyond today’s\nbatch-driven analytics approaches.</p>\n<p>ThingWorx, which provides a powerful and flexible platform to rapidly deliver\ncustomizable applications and connected solutions, is architected for this\nexplosion of devices and data across a range of industries. Numenta’s industry\nleading biologically inspired machine intelligence technology, called\n<a href=\"http://grokstream.com\">Grok</a>, is designed to automatically\nanalyze data generated by these connected devices to drive actionable\npredictions.  Grok ingests data streams and can detect anomalous patterns in\ndata streams that indicate, for example, when a machine is in an unusual state\nand might fail.</p>\n<p>“Our two companies bring a unique combination of assets to tackle problems in\nreal-time predictive maintenance  to help companies minimize or avoid downtime\nof mission critical systems and reduce maintenance costs,” said Rami Branitzky,\nNumenta CEO. “Grok capabilities – especially its continuous learning and\nautomated modeling — are ideal for advanced, proactive monitoring of machinery\nthat needs to have continuous uptime. Working closely with ThingWorx’s industry\nleading connected device platform and rapid development environment we are well\npositioned to help transform the Predictive Maintenance market.”</p>\n<p>“ThingWorx is pleased to be able to offer plug-and-play access to the most\ninnovative analytic framework in the market today,” said Russ Fadel, CEO and Co-\nFounder of ThingWorx.  “Grok provides new capabilities for predictive\nmaintenance applications.  By integrating it into our platform we can eliminate\nthe time-consuming process of data analysis and predictive modeling and provide\ncustomers in asset-intensive industries such as energy, oil and gas, healthcare,\nand manufacturing, and equipment OEMs, with the critical analysis and actions in\norder for them to operate more reliably and efficiently. We are excited to be\noffering a solution that we believe  will allow companies to truly predict\nmachine behavior, which will enable a step change in efficiency.”</p>\n<p>As part of their collaboration, Grok has been certified as ThingWorx\nReady� and will be pre-integrated with the ThingWorx rapid application\ndevelopment platform.  Further information on the combined predictive\nmaintenance solution will be on display at the upcoming\n<a href=\"http://www.wbresearch.com/fieldserviceusa/home.aspx\">Field Service USA</a>\nevent, as well as during a live webcast on April 24, 2013,\n<a href=\"http://theservicecouncil.com/webcast-registration\">Smarter Services:\nThe Future of Connected Products Today</a>.</p>\n<h4>About Numenta</h4>\n<p>Numenta builds solutions that help companies automatically and intelligently act\non their data.  Its Grok technology and product platform are based on\nbiologically inspired machine learning technology first described in co-founder\nJeff Hawkin’s book, <strong>On Intelligence</strong>. Grok ingests data streams and\ncreates actionable predictions in real time. Grok’s automated modeling and\ncontinuous learning capability makes it uniquely suited to drive intelligent\naction from fast data.</p>\n<h4>About ThingWorx</h4>\n<p>ThingWorx� provides the first platform designed to efficiently build and\nrun the applications of today’s connected world. ThingWorx’s model-based design\nand search-based intelligence reduces application development efforts by 10X,\nminimizing cost, risk and time to market. The ThingWorx platform combines the\nkey functionality of Web 2.0, search, and social collaboration, and applies it\nto the world of “things,” including connected products, machines, sensors, and\nindustrial equipment. Businesses use the ThingWorx platform to rapidly deliver\ninnovative applications and connected solutions across markets ranging from\nmanufacturing, energy, and food, to Machine-to-Machine (M2M) remote monitoring\nand service, as well as in emerging Internet of Things applications, including\nsmart cities, smart grid, agriculture, and transportation.  For more\ninformation, please visit our website at\n<a href=\"http://www.thingworx.com\">www.thingworx.com</a> and our blog at\n<a href=\"http://www.thingworx.com/blog\">www.thingworx.com/blog</a> or follow us\non Twitter at <a href=\"https://twitter.com/thingworx\">@ThingWorx</a>.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
-
-/***/ },
-/* 1207 */
-742,
-/* 1208 */
-743,
-/* 1209 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Numenta","brief":"Numenta, a leading provider of solutions that help companies intelligently act on machine-generated data, today announced its Grok solution has achieved certified integration","date":"2013/05/17","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"grok sap sybase esp cep complex event processing","title":"Grok’s Action Intelligence Solution Achieves Certified Integration with SAP® Sybase ESP Complex Event Processing Platform","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p><strong>Grok delivers real-time predictions and finds anomalies in streaming data</strong></p>\n<p>Numenta, a leading provider of solutions\nthat help companies intelligently act on machine-generated data, today announced\nits Grok solution has achieved certified integration with the SAP® Sybase® Event\nStream Processor (SAP Sybase ESP). The SAP Integration and Certification Center\n(SAP ICC) has certified that the Grok 2.0 solution integrates with the SAP\nSybase ESP 5.1 to send and receive streaming data, predictions, and anomalies\nfound in data streams.</p>\n<p>Grok’s patented machine intelligence product ingests data streams and creates\nactionable predictions and detects anomalies in real-time. The Grok solution\nfeatures automated pattern discovery and predictive modeling capabilities based\non its unique biologically inspired machine intelligence algorithm. Grok was\nrecently named as one of the Cool Vendors in Analytics for 2013 by Gartner\nResearch.</p>\n<p>“Grok’s ability to learn from streaming data makes it a perfect add-on for\ncustomers who are looking to automatically and intelligently act on their\nmachine-generated data,” said Numenta CEO Rami Branitzky. “The Grok solution is\na natural complement to SAP Real-Time Data Platform. We look forward to working\nclosely with SAP to serve this rapidly expanding market.”</p>\n<p>In addition, Numenta has applied to join the SAP PartnerEdge® program as an SAP\nsoftware solution and technology partner. Through the program, partners work\nclosely with <a href=\"http://www.sap.com/\">SAP AG</a> (NYSE: SAP) to develop and\ncertify the technical integration of their solutions with SAP software.\nIntegrated partner applications extend, complement and add value to SAP\nsolutions, thereby helping mutual customers more successfully meet business\nneeds and drive strong results.</p>\n<h4>About Numenta</h4>\n<p>Numenta builds solutions that help companies automatically and intelligently act\non their data. Grok’s technology and product platform are based on biologically\ninspired machine learning technology first described in co-founder Jeff Hawkins’\nbook, <strong>On Intelligence</strong>. Grok ingests data streams and creates actionable\npredictions in real time. Grok’s automated modeling and continuous learning\ncapabilities make it uniquely suited to drive intelligent action from fast data.</p>\n<p>Grok solutions are available directly from Grok and its partners in a variety of\nvertical markets, including energy, IT management, and finance. For more\ninformation go to\n<a href=\"http://grokstream.com\">http://grokstream.com</a>.</p>\n<p>SAP, PartnerEdge and all SAP logos are trademarks or registered trademarks of\nSAP AG in Germany and in several other countries. Sybase is a trademark or\nregistered trademark of Sybase, Inc. ® indicates registration in the United\nStates. Sybase is an SAP company. All other product and service names mentioned\nherein are the trademarks of their respective owners.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
-
-/***/ },
-/* 1210 */
-841,
-/* 1211 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Numenta","brief":"Numenta.org has been created as the home for the NuPIC (Numenta Platform for Intelligent Computing) open source project and community.  The project was","date":"2013/07/22","featured":false,"image":"../images/nupic.png","link":null,"org":"Press Release","tags":"nupic open source numenta","title":"NuPIC Open Source Project and Community Established at Numenta.org","type":"post","body":"<p><a href=\"http://Numenta.org\">Numenta.org</a> has been created as the home for the NuPIC (Numenta Platform for\nIntelligent Computing) open source project and community.  The project was\nannounced today in a keynote address at the OSCON open source conference.</p>\n<p>“The mission of this project is to build a community interested in machine\nintelligence based on biological principles,” said Jeff Hawkins, co-founder of\nNumenta, Inc. “Developers and scientists told us they wanted to work with our\nlearning algorithms.  There were already several independent implementations\nbased on our publications.  We felt that an open source structure was the best\nway to share knowledge and accelerate progress in machine intelligence.”</p>\n<p>Hawkins, who has studied neuroscience for more than 30 years, wrote a book\ncalled <strong>On Intelligence</strong> (along with Sandra Blakeslee) in 2005 that\ndescribed a theory of the neocortex.  Numenta, Inc. was formed as a company to\npursue the theory for commercial and scientific purposes shortly thereafter.</p>\n<p>NuPIC comprises a set of learning algorithms called the Cortical Learning\nAlgorithm (CLA) first described in a\n<a href=\"http://numenta.org/resources/HTM_CorticalLearningAlgorithms.pdf\">whitepaper</a>\npublished by Numenta in 2009. The CLA algorithms replicate part of the function\nof a region of the neocortex. They can be used for pattern recognition,\nprediction, and anomaly detection in many domains. They have been tested\nextensively and are embedded in a product called Grok, which the company\nreleased last year. <a href=\"/grok/\">Grok</a> is now being\nbranded and commercialized separately from Numenta.</p>\n<p>“Understanding the brain and building fantastically intelligent machines is a\ngrand quest for humanity,” Hawkins continued. “This is not a trivial pursuit,\nand there is a tremendous amount of work to be done, but we believe the CLA is a\nkey building block that provides a path forward. Our hope is that NuPIC\ncontributors will work on these problems, accelerate our progress, and uncover\nfascinating new applications.”</p>\n<p>Anyone can access the NuPIC open source code under the AGPLv3 license<sup><a href=\"#agpl\">*</a></sup>. For more\ninformation see the\n<a href=\"http://numenta.org/news/2013/06/03/introducing-nupic.html\">Introduction to NuPIC</a>\nand go to <a href=\"http://numenta.org\">Numenta.org</a>.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n<h4>About <a href=\"http://Numenta.org\">Numenta.org</a></h4>\n<p><a href=\"http://Numenta.org\">Numenta.org</a> is the home and community for the NuPIC (Numenta Platform for\nIntelligent Computing) open source project. NuPIC was developed by Numenta Inc.\nbased on the theory of the neocortex first described in co-founder Jeff Hawkins’\n2005 book <strong>On Intelligence.</strong></p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
-
-/***/ },
-/* 1212 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Editor","brief":"Computing Like the Brain - The Path to Machine Intelligence, a video off Jeff Hawkins at the YOW 2013 conference","date":"2013/12/04","featured":false,"image":"../images/yow.png","link":"http://yow.eventer.com/yow-2013-1080/computing-like-the-brain-the-path-to-machine-intelligence-by-jeff-hawkins-1408","org":"YOW","tags":"computing brain machine intelligence jeff hawkins yow 2013","title":"Computing Like the Brain: The Path to Machine Intelligence","type":"link","body":""}
-
-/***/ },
-/* 1213 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "c9c5b1fe9e530ebfd85314ae87740a39.png";
-
-/***/ },
-/* 1214 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Editor","brief":"Fujitsu NATF Video with Jeff Hawkins","date":"2014/01/22","featured":false,"image":"../images/fujitsu.png","link":"https://www.youtube.com/watch?v=cz-3WDdqbj0&list=PLX9JDz3uBpNCjNfq20KOCvsP6szY94r2e","org":"Fujitsu","tags":"fujitsu natf video jeff hawkins","title":"Brains, Data, and Machine Intelligence","type":"link","body":""}
-
-/***/ },
-/* 1215 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "86b1b57cee0360a4a868624b669ff3bb.png";
-
-/***/ },
-/* 1216 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "789a17233f0936f0e495f8deed877619.png";
-
-/***/ },
-/* 1217 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Ricardo Hausmann","brief":"In his pathbreaking 2005 book On Intelligence, Jeff Hawkins proposed an alternative paradigm of how the human brain works. In his view, the brain is not a Turing machine that manipulates symbols according to a table of rules, which is the model on which computers and artificial intelligence have been based","date":"2014/01/29","featured":false,"image":"../images/project-syndicate.png","link":"http://www.project-syndicate.org/commentary/ricardo-hausmann-proposes-an-alternative-approach-to-economic-development-based-on-how-the-human-brain-functions","org":"Project Syndicate","tags":"brain view economics alternative","title":"A Brain's View of Economics","type":"link","body":""}
-
-/***/ },
-/* 1218 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "eb566664982ac36466f26150c87aac7f.png";
 
 /***/ },
 /* 1219 */
@@ -80907,666 +81478,726 @@
 /* 1221 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Numenta","brief":"Grok anomaly detection leverages sophisticated machine intelligence algorithms to enable new insights into critical IT systems. Grok automatically learns complex patterns and then","date":"2014/03/25","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"grok it analytics numenta aws","title":"Numenta Releases Grok for IT Analytics on AWS","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Numenta, Inc. today announced the commercial\navailability of Grok for IT Analytics on Amazon Web Services (AWS) in the\n<a href=\"/grok/#get\">AWS Marketplace</a>. <a href=\"/grok/\">Grok</a> anomaly detection\nleverages sophisticated machine intelligence algorithms to enable new insights\ninto critical IT systems. Grok automatically learns complex patterns and then\nhighlights unusual behavior.  As software topologies and usage patterns change,\nGrok continuously learns and adapts, eliminating the need for frequent resetting\nof thresholds. Visualization of Grok output is displayed on a constantly updated\nmobile device, enabling IT professionals to assess the health of their systems\nanytime, anywhere.  Using Grok, IT operators can better prevent business\ndowntime while reducing false positives.</p>\n<p>Grok is the first commercial application of Numenta’s groundbreaking Cortical Learning Algorithm\n(CLA), biologically inspired algorithms for machine intelligence. The core\nCLA technology is ideal for large-scale analysis of continuously streaming\ndatasets and excels at modeling and predicting patterns in data.</p>\n<p>“Grok provides an early warning system to IT professionals to give them real-\ntime insights into their system performance,” said Numenta CEO Donna Dubinsky.\n“Grok anticipates problems before they happen, reduces false positives, and\nlowers engineering costs through automated modeling and continuous learning.”</p>\n<p>Grok features include:</p>\n<ul>\n<li>Monitoring of performance and health of AWS environments or other systems</li>\n<li>Automatic modeling to determine normal patterns</li>\n<li>Automatic identification and ranking of unusual patterns</li>\n<li>Continuous learning of new patterns as environments evolve – no need for\nmanual threshold setting</li>\n<li>Notification to user when an anomaly occurs</li>\n<li>Output displayed graphically on an Android mobile device</li>\n<li>Simple setup via a web-based or command-line interface</li>\n<li>Support for AWS auto-scaling groups and logical clusters</li>\n</ul>\n<p>Grok is available now:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1391115095261\">Grok Free Edition</a>; supports up to 10 AWS instances or custom metrics</li>\n</ul>\n<p>Grok will be demonstrated in Booth 100 at the\n<a href=\"https://aws.amazon.com/aws-summit-2014/\">AWS Summit</a> on March 26 at the\nMoscone Center in San Francisco.</p>\n<p>In addition to working on the Grok product release, Numenta continues to push\nits biologically-inspired algorithms forward.  “We’ve made some important\nprogress recently and look forward to sharing it with our community over the\ncoming year,” said Jeff Hawkins, Numenta co-founder. “Our open source community,\n<a href=\"http://numenta.org\">NuPIC</a>, is also growing and actively\ncontributing to the advancement of the science.”</p>\n<h4>About Numenta Inc.</h4>\n<p>Numenta, Inc., was founded in 2005 to be a catalyst in the emerging field of\nmachine intelligence. Numenta builds solutions that help companies automatically\nand intelligently act on machine generated data.  Its biologically inspired\nmachine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, <strong>On Intelligence</strong>. Its first\ncommercial product, called Grok, offers a breakthrough solution for anomaly\ndetection for IT Operations. In addition, Numenta has created NuPIC (Numenta\nPlatform for Intelligent Computing) as an open source project.</p>\n<p>Numenta is based in Redwood City, California. It is privately funded.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
+	module.exports = {"author":"Numenta","brief":"Numenta, a leading provider of solutions that help companies intelligently act on machine-generated data, today announced its Grok solution has achieved certified integration","date":"2013/05/17","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"grok sap sybase esp cep complex event processing","title":"Grok’s Action Intelligence Solution Achieves Certified Integration with SAP® Sybase ESP Complex Event Processing Platform","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p><strong>Grok delivers real-time predictions and finds anomalies in streaming data</strong></p>\n<p>Numenta, a leading provider of solutions\nthat help companies intelligently act on machine-generated data, today announced\nits Grok solution has achieved certified integration with the SAP® Sybase® Event\nStream Processor (SAP Sybase ESP). The SAP Integration and Certification Center\n(SAP ICC) has certified that the Grok 2.0 solution integrates with the SAP\nSybase ESP 5.1 to send and receive streaming data, predictions, and anomalies\nfound in data streams.</p>\n<p>Grok’s patented machine intelligence product ingests data streams and creates\nactionable predictions and detects anomalies in real-time. The Grok solution\nfeatures automated pattern discovery and predictive modeling capabilities based\non its unique biologically inspired machine intelligence algorithm. Grok was\nrecently named as one of the Cool Vendors in Analytics for 2013 by Gartner\nResearch.</p>\n<p>“Grok’s ability to learn from streaming data makes it a perfect add-on for\ncustomers who are looking to automatically and intelligently act on their\nmachine-generated data,” said Numenta CEO Rami Branitzky. “The Grok solution is\na natural complement to SAP Real-Time Data Platform. We look forward to working\nclosely with SAP to serve this rapidly expanding market.”</p>\n<p>In addition, Numenta has applied to join the SAP PartnerEdge® program as an SAP\nsoftware solution and technology partner. Through the program, partners work\nclosely with <a href=\"http://www.sap.com/\">SAP AG</a> (NYSE: SAP) to develop and\ncertify the technical integration of their solutions with SAP software.\nIntegrated partner applications extend, complement and add value to SAP\nsolutions, thereby helping mutual customers more successfully meet business\nneeds and drive strong results.</p>\n<h4>About Numenta</h4>\n<p>Numenta builds solutions that help companies automatically and intelligently act\non their data. Grok’s technology and product platform are based on biologically\ninspired machine learning technology first described in co-founder Jeff Hawkins’\nbook, <strong>On Intelligence</strong>. Grok ingests data streams and creates actionable\npredictions in real time. Grok’s automated modeling and continuous learning\ncapabilities make it uniquely suited to drive intelligent action from fast data.</p>\n<p>Grok solutions are available directly from Grok and its partners in a variety of\nvertical markets, including energy, IT management, and finance. For more\ninformation go to\n<a href=\"http://grokstream.com\">http://grokstream.com</a>.</p>\n<p>SAP, PartnerEdge and all SAP logos are trademarks or registered trademarks of\nSAP AG in Germany and in several other countries. Sybase is a trademark or\nregistered trademark of Sybase, Inc. ® indicates registration in the United\nStates. Sybase is an SAP company. All other product and service names mentioned\nherein are the trademarks of their respective owners.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
 /* 1222 */
+841,
+/* 1223 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Jack Clark","brief":"Jeff Hawkins has bet his reputation, fortune, and entire intellectual life on one idea: that he understands the brain well enough to create machines with an intelligence we recognize as our own","date":"2014/03/29","featured":false,"image":"../images/the-register.png","link":"http://www.theregister.co.uk/2014/03/29/hawkins_ai_feature/","org":"The Register","tags":"building ai mimic neocortex","title":"Meet the Man Building an AI that Mimics Our Neocortex","type":"link","body":""}
-
-/***/ },
-/* 1223 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "e3961127a8c23e9d084b507970ab35e6.png";
+	module.exports = {"author":"Numenta","brief":"Numenta.org has been created as the home for the NuPIC (Numenta Platform for Intelligent Computing) open source project and community.  The project was","date":"2013/07/22","featured":false,"image":"../images/nupic.png","link":null,"org":"Press Release","tags":"nupic open source numenta","title":"NuPIC Open Source Project and Community Established at Numenta.org","type":"post","body":"<p><a href=\"http://Numenta.org\">Numenta.org</a> has been created as the home for the NuPIC (Numenta Platform for\nIntelligent Computing) open source project and community.  The project was\nannounced today in a keynote address at the OSCON open source conference.</p>\n<p>“The mission of this project is to build a community interested in machine\nintelligence based on biological principles,” said Jeff Hawkins, co-founder of\nNumenta, Inc. “Developers and scientists told us they wanted to work with our\nlearning algorithms.  There were already several independent implementations\nbased on our publications.  We felt that an open source structure was the best\nway to share knowledge and accelerate progress in machine intelligence.”</p>\n<p>Hawkins, who has studied neuroscience for more than 30 years, wrote a book\ncalled <strong>On Intelligence</strong> (along with Sandra Blakeslee) in 2005 that\ndescribed a theory of the neocortex.  Numenta, Inc. was formed as a company to\npursue the theory for commercial and scientific purposes shortly thereafter.</p>\n<p>NuPIC comprises a set of learning algorithms called the Cortical Learning\nAlgorithm (CLA) first described in a\n<a href=\"http://numenta.org/resources/HTM_CorticalLearningAlgorithms.pdf\">whitepaper</a>\npublished by Numenta in 2009. The CLA algorithms replicate part of the function\nof a region of the neocortex. They can be used for pattern recognition,\nprediction, and anomaly detection in many domains. They have been tested\nextensively and are embedded in a product called Grok, which the company\nreleased last year. <a href=\"/grok/\">Grok</a> is now being\nbranded and commercialized separately from Numenta.</p>\n<p>“Understanding the brain and building fantastically intelligent machines is a\ngrand quest for humanity,” Hawkins continued. “This is not a trivial pursuit,\nand there is a tremendous amount of work to be done, but we believe the CLA is a\nkey building block that provides a path forward. Our hope is that NuPIC\ncontributors will work on these problems, accelerate our progress, and uncover\nfascinating new applications.”</p>\n<p>Anyone can access the NuPIC open source code under the AGPLv3 license<sup><a href=\"#agpl\">*</a></sup>. For more\ninformation see the\n<a href=\"http://numenta.org/news/2013/06/03/introducing-nupic.html\">Introduction to NuPIC</a>\nand go to <a href=\"http://numenta.org\">Numenta.org</a>.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n<h4>About <a href=\"http://Numenta.org\">Numenta.org</a></h4>\n<p><a href=\"http://Numenta.org\">Numenta.org</a> is the home and community for the NuPIC (Numenta Platform for\nIntelligent Computing) open source project. NuPIC was developed by Numenta Inc.\nbased on the theory of the neocortex first described in co-founder Jeff Hawkins’\n2005 book <strong>On Intelligence.</strong></p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
 /* 1224 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "4a8752db0788974d1a59a2992c102088.png";
+	module.exports = {"author":"Editor","brief":"Computing Like the Brain - The Path to Machine Intelligence, a video off Jeff Hawkins at the YOW 2013 conference","date":"2013/12/04","featured":false,"image":"../images/yow.png","link":"http://yow.eventer.com/yow-2013-1080/computing-like-the-brain-the-path-to-machine-intelligence-by-jeff-hawkins-1408","org":"YOW","tags":"computing brain machine intelligence jeff hawkins yow 2013","title":"Computing Like the Brain: The Path to Machine Intelligence","type":"link","body":""}
 
 /***/ },
 /* 1225 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "589ca4cc59b0a009a86ed0bf0d05e324.png";
+	module.exports = __webpack_require__.p + "c9c5b1fe9e530ebfd85314ae87740a39.png";
 
 /***/ },
 /* 1226 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Leo Laporte","brief":"Jeff Hawkins on Triangulation 146 with Leo Laporte","date":"2014/04/07","featured":false,"image":"../images/twit.png","link":"http://twit.tv/show/triangulation/146","org":"Twit.tv","tags":"jeff hawkins on triangulation 146 with leo laporte","title":"Jeff Hawkins on Triangulation 146 with Leo Laporte","type":"link","body":""}
+	module.exports = {"author":"Editor","brief":"Fujitsu NATF Video with Jeff Hawkins","date":"2014/01/22","featured":false,"image":"../images/fujitsu.png","link":"https://www.youtube.com/watch?v=cz-3WDdqbj0&list=PLX9JDz3uBpNCjNfq20KOCvsP6szY94r2e","org":"Fujitsu","tags":"fujitsu natf video jeff hawkins","title":"Brains, Data, and Machine Intelligence","type":"link","body":""}
 
 /***/ },
 /* 1227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "66fe1317baab3fadfca60eb908edb6c6.png";
+	module.exports = __webpack_require__.p + "86b1b57cee0360a4a868624b669ff3bb.png";
 
 /***/ },
 /* 1228 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Editor","brief":"Jeff Hawkins, founder of Numenta recently gave a talk highlighting his approach to machine intelligence—an approach that is highly dependent on an understanding of the human neocortex","date":"2014/04/08","featured":false,"image":"../images/33rd-square.png","link":"http://www.33rdsquare.com/2014/04/jeff-hawkins-on-path-to-machine.html","org":"33rd Square","tags":"path to machine intelligence","title":"Jeff Hawkins on the Path to Machine Intelligence","type":"link","body":""}
+	module.exports = __webpack_require__.p + "789a17233f0936f0e495f8deed877619.png";
 
 /***/ },
 /* 1229 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "b432b1ba51ae2a570cbd32fad8457dcc.png";
+	module.exports = {"author":"Ricardo Hausmann","brief":"In his pathbreaking 2005 book On Intelligence, Jeff Hawkins proposed an alternative paradigm of how the human brain works. In his view, the brain is not a Turing machine that manipulates symbols according to a table of rules, which is the model on which computers and artificial intelligence have been based","date":"2014/01/29","featured":false,"image":"../images/project-syndicate.png","link":"http://www.project-syndicate.org/commentary/ricardo-hausmann-proposes-an-alternative-approach-to-economic-development-based-on-how-the-human-brain-functions","org":"Project Syndicate","tags":"brain view economics alternative","title":"A Brain's View of Economics","type":"link","body":""}
 
 /***/ },
 /* 1230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "b4bff8bf7efbf862d1562009140f3f63.png";
+	module.exports = __webpack_require__.p + "eb566664982ac36466f26150c87aac7f.png";
 
 /***/ },
 /* 1231 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Anthony Wing Kosner","brief":"Does artificial intelligence represent an existential threat to humanity? Some very smart people think so. Technologists are supposed to be rationalists, and yet Musk waxed supernatural about the threat of renegade AI.","date":"2015/04/20","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2015/04/20/what-really-scares-tech-leaders-about-artificial-intelligence/","org":"Forbes","tags":"scares tech leaders artificial intelligence ai numenta htm jeff hawkins","title":"What Really Scares Tech Leaders About Artificial Intelligence?","type":"link","body":""}
-
-/***/ },
+742,
 /* 1232 */
-1134,
+743,
 /* 1233 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Robert D. Hof","brief":"Trying to emulate the brain just by using special software on conventional processors—the way Google did in its cat experiment—is way too inefficient to be the basis of machines with still greater intelligence, says Jeff Hawkins, a leading thinker on AI who created the Palm Pilot before cofounding Numenta, a maker of brain-inspired software","date":"2014/04/23","featured":false,"image":"../images/mit-technology-review.png","link":"http://m.technologyreview.com/featuredstory/526506/neuromorphic-chips/","org":"MIT Technology Review","tags":"neuromorphic chips enhance artificial intelligence","title":"Neuromorphic Chips: Microprocessors Configured Like Brains","type":"link","body":""}
+	module.exports = {"author":"Numenta","brief":"Grok anomaly detection leverages sophisticated machine intelligence algorithms to enable new insights into critical IT systems. Grok automatically learns complex patterns and then","date":"2014/03/25","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"grok it analytics numenta aws","title":"Numenta Releases Grok for IT Analytics on AWS","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Numenta, Inc. today announced the commercial\navailability of Grok for IT Analytics on Amazon Web Services (AWS) in the\n<a href=\"/grok/#get\">AWS Marketplace</a>. <a href=\"/grok/\">Grok</a> anomaly detection\nleverages sophisticated machine intelligence algorithms to enable new insights\ninto critical IT systems. Grok automatically learns complex patterns and then\nhighlights unusual behavior.  As software topologies and usage patterns change,\nGrok continuously learns and adapts, eliminating the need for frequent resetting\nof thresholds. Visualization of Grok output is displayed on a constantly updated\nmobile device, enabling IT professionals to assess the health of their systems\nanytime, anywhere.  Using Grok, IT operators can better prevent business\ndowntime while reducing false positives.</p>\n<p>Grok is the first commercial application of Numenta’s groundbreaking Cortical Learning Algorithm\n(CLA), biologically inspired algorithms for machine intelligence. The core\nCLA technology is ideal for large-scale analysis of continuously streaming\ndatasets and excels at modeling and predicting patterns in data.</p>\n<p>“Grok provides an early warning system to IT professionals to give them real-\ntime insights into their system performance,” said Numenta CEO Donna Dubinsky.\n“Grok anticipates problems before they happen, reduces false positives, and\nlowers engineering costs through automated modeling and continuous learning.”</p>\n<p>Grok features include:</p>\n<ul>\n<li>Monitoring of performance and health of AWS environments or other systems</li>\n<li>Automatic modeling to determine normal patterns</li>\n<li>Automatic identification and ranking of unusual patterns</li>\n<li>Continuous learning of new patterns as environments evolve – no need for\nmanual threshold setting</li>\n<li>Notification to user when an anomaly occurs</li>\n<li>Output displayed graphically on an Android mobile device</li>\n<li>Simple setup via a web-based or command-line interface</li>\n<li>Support for AWS auto-scaling groups and logical clusters</li>\n</ul>\n<p>Grok is available now:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1391115095261\">Grok Free Edition</a>; supports up to 10 AWS instances or custom metrics</li>\n</ul>\n<p>Grok will be demonstrated in Booth 100 at the\n<a href=\"https://aws.amazon.com/aws-summit-2014/\">AWS Summit</a> on March 26 at the\nMoscone Center in San Francisco.</p>\n<p>In addition to working on the Grok product release, Numenta continues to push\nits biologically-inspired algorithms forward.  “We’ve made some important\nprogress recently and look forward to sharing it with our community over the\ncoming year,” said Jeff Hawkins, Numenta co-founder. “Our open source community,\n<a href=\"http://numenta.org\">NuPIC</a>, is also growing and actively\ncontributing to the advancement of the science.”</p>\n<h4>About Numenta Inc.</h4>\n<p>Numenta, Inc., was founded in 2005 to be a catalyst in the emerging field of\nmachine intelligence. Numenta builds solutions that help companies automatically\nand intelligently act on machine generated data.  Its biologically inspired\nmachine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, <strong>On Intelligence</strong>. Its first\ncommercial product, called Grok, offers a breakthrough solution for anomaly\ndetection for IT Operations. In addition, Numenta has created NuPIC (Numenta\nPlatform for Intelligent Computing) as an open source project.</p>\n<p>Numenta is based in Redwood City, California. It is privately funded.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
 /* 1234 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "7d1e954f645f551ffc4b5bf72aadd7dc.png";
+	module.exports = {"author":"Jack Clark","brief":"Jeff Hawkins has bet his reputation, fortune, and entire intellectual life on one idea: that he understands the brain well enough to create machines with an intelligence we recognize as our own","date":"2014/03/29","featured":false,"image":"../images/the-register.png","link":"http://www.theregister.co.uk/2014/03/29/hawkins_ai_feature/","org":"The Register","tags":"building ai mimic neocortex","title":"Meet the Man Building an AI that Mimics Our Neocortex","type":"link","body":""}
 
 /***/ },
 /* 1235 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Editor","brief":"Big data gives you large amounts of data that can provide interesting insights, but typically static. But we live in reality more and more in the direction of data that is constantly moving and changing. We call it streaming data","date":"2014/04/30","featured":false,"image":"../images/nordea-invest.png","link":"http://mag.nordea.dk/invest/2014/04/naar-big-data-bliver-old-news","org":"Nordea Invest","tags":"big data old news","title":"As Big Data Becomes Old News","type":"link","body":""}
+	module.exports = __webpack_require__.p + "e3961127a8c23e9d084b507970ab35e6.png";
 
 /***/ },
 /* 1236 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Kevin Maney","brief":"Numenta, run by PalmPilot inventor Jeff Hawkins, developed technology called Grok that learns by recognizing patterns over time, the way brains do. It’s being used, for instance, by Amazon to spot unusual activity on its computers.","date":"2014/05/29","featured":false,"image":"../images/newsweek.png","link":"http://www.newsweek.com/2014/06/06/computer-programming-dying-art-252618.html","org":"Newsweek","tags":"computer programming dying art","title":"Computer Programming is a Dying Art","type":"link","body":""}
+	module.exports = __webpack_require__.p + "4a8752db0788974d1a59a2992c102088.png";
 
 /***/ },
 /* 1237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "dcaadf8f4c139cf49ebd2bc75abfb74d.png";
+	module.exports = __webpack_require__.p + "589ca4cc59b0a009a86ed0bf0d05e324.png";
 
 /***/ },
 /* 1238 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Jordan Robertson","brief":"Last year, ImportIO began using software made by Numenta, a Redwood City, California-based company founded by Palm's founder Jeff Hawkins and former CEO Donna Dubinsky. Their approach: Instead of focusing on data collection and retrospective looks at information piling up in a warehouse, focus on analyzing data streams in real time to spot anomalies.","date":"2014/06/03","featured":false,"image":"../images/bloomberg.png","link":"http://www.bloomberg.com/news/2014-06-03/big-data-s-dumping-grounds-how-hoarding-hinders-startups-to-spy-agencies.html","org":"Bloomberg","tags":"big data overwhelm spy agencies","title":"The Big Data Dump: How Info-Hoarding Can Overwhelm Startups and Spy Agencies","type":"link","body":""}
+	module.exports = {"author":"Leo Laporte","brief":"Jeff Hawkins on Triangulation 146 with Leo Laporte","date":"2014/04/07","featured":false,"image":"../images/twit.png","link":"http://twit.tv/show/triangulation/146","org":"Twit.tv","tags":"jeff hawkins on triangulation 146 with leo laporte","title":"Jeff Hawkins on Triangulation 146 with Leo Laporte","type":"link","body":""}
 
 /***/ },
 /* 1239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "2aa0de5f3f073ef96915415a6d13b651.png";
+	module.exports = __webpack_require__.p + "66fe1317baab3fadfca60eb908edb6c6.png";
 
 /***/ },
 /* 1240 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "b2d19f90850730b15446ad75dd7a8b20.png";
+	module.exports = {"author":"Editor","brief":"Jeff Hawkins, founder of Numenta recently gave a talk highlighting his approach to machine intelligence—an approach that is highly dependent on an understanding of the human neocortex","date":"2014/04/08","featured":false,"image":"../images/33rd-square.png","link":"http://www.33rdsquare.com/2014/04/jeff-hawkins-on-path-to-machine.html","org":"33rd Square","tags":"path to machine intelligence","title":"Jeff Hawkins on the Path to Machine Intelligence","type":"link","body":""}
 
 /***/ },
 /* 1241 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "65041c6ad3ad1b1ff815e498d9f5752b.png";
+	module.exports = __webpack_require__.p + "b432b1ba51ae2a570cbd32fad8457dcc.png";
 
 /***/ },
 /* 1242 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Dean Takahashi","brief":"Numenta founders Jeff Hawkins and Donna Dubinsky sit down with VentureBeat to talk about Numenta’s breakthrough progress in machine intelligence","date":"2014/07/09","featured":false,"image":"../images/venture-beat.png","link":"http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long-nine-years-but-it-starting-to-pay-off-interview/","org":"Venture Beat","tags":"numenta apps mimic brain","title":"After Nine Years of Research Numenta Finally Has Apps That Mimic the Way the Brain Works","type":"link","body":""}
+	module.exports = __webpack_require__.p + "b4bff8bf7efbf862d1562009140f3f63.png";
 
 /***/ },
 /* 1243 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "6ddb267ba48a74cff217a8046db850ef.png";
+	module.exports = {"author":"Anthony Wing Kosner","brief":"Does artificial intelligence represent an existential threat to humanity? Some very smart people think so. Technologists are supposed to be rationalists, and yet Musk waxed supernatural about the threat of renegade AI.","date":"2015/04/20","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2015/04/20/what-really-scares-tech-leaders-about-artificial-intelligence/","org":"Forbes","tags":"scares tech leaders artificial intelligence ai numenta htm jeff hawkins","title":"What Really Scares Tech Leaders About Artificial Intelligence?","type":"link","body":""}
 
 /***/ },
 /* 1244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "2fcfda406645f4bc59888c20cabbe9d9.png";
-
-/***/ },
+1146,
 /* 1245 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Dan Sullivan","brief":"Cloud monitoring can collect a range of performance data, but a crucial piece of the puzzle, networking, often falls short. A third-party network monitoring tool is essential to keep your cloud running up to par.","date":"2014/08/13","featured":false,"image":"../images/search-cloud-computing.png","link":"http://searchcloudcomputing.techtarget.com/tip/Network-monitoring-tools-for-when-cloud-monitoring-falls-short","org":"Search Cloud Computing","tags":"network monitoring tools cloud monitoring numenta grok","title":"Network Monitoring Tools For When Cloud Monitoring Falls Short","type":"link","body":""}
+	module.exports = {"author":"Robert D. Hof","brief":"Trying to emulate the brain just by using special software on conventional processors—the way Google did in its cat experiment—is way too inefficient to be the basis of machines with still greater intelligence, says Jeff Hawkins, a leading thinker on AI who created the Palm Pilot before cofounding Numenta, a maker of brain-inspired software","date":"2014/04/23","featured":false,"image":"../images/mit-technology-review.png","link":"http://m.technologyreview.com/featuredstory/526506/neuromorphic-chips/","org":"MIT Technology Review","tags":"neuromorphic chips enhance artificial intelligence","title":"Neuromorphic Chips: Microprocessors Configured Like Brains","type":"link","body":""}
 
 /***/ },
 /* 1246 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "241f15fce1dd3238bc4a2f2937b6796f.png";
+	module.exports = __webpack_require__.p + "7d1e954f645f551ffc4b5bf72aadd7dc.png";
 
 /***/ },
 /* 1247 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Eileen McNulty","brief":"We’ve seen huge improvements in the way algorithms can detect our language and dialogue. IBM have continued to pour money and resources into the development of Watson; Apple have moved","date":"2014/09/02","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/how-an-austrian-startup-is-mimicking-brain-function-to-revolutionise-nlp/","org":"Dataconomy","tags":"mimicking brain function revolutionising nlp natural language processing numenta nupic cortical.io","title":"How Mimicking Brain Function is Revolutionising NLP","type":"link","body":""}
+	module.exports = {"author":"Editor","brief":"Big data gives you large amounts of data that can provide interesting insights, but typically static. But we live in reality more and more in the direction of data that is constantly moving and changing. We call it streaming data","date":"2014/04/30","featured":false,"image":"../images/nordea-invest.png","link":"http://mag.nordea.dk/invest/2014/04/naar-big-data-bliver-old-news","org":"Nordea Invest","tags":"big data old news","title":"As Big Data Becomes Old News","type":"link","body":""}
 
 /***/ },
 /* 1248 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Janet Wagner","brief":"Cognitive computing is a relatively new area of computer science that has been growing fairly rapidly in recent years. While artificial intelligence, a field of study that has been around since","date":"2014/09/05","featured":false,"image":"../images/programmableweb.png","link":"http://www.programmableweb.com/news/cognitive-computing-makes-it-possible-to-build-truly-amazing-apps/analysis/2014/09/05","org":"ProgrammableWeb","tags":"cognitive computing numenta grok htm hierarchical temporal memory","title":"Cognitive Computing Makes It Possible To Build Truly Amazing Apps","type":"link","body":""}
+	module.exports = {"author":"Kevin Maney","brief":"Numenta, run by PalmPilot inventor Jeff Hawkins, developed technology called Grok that learns by recognizing patterns over time, the way brains do. It’s being used, for instance, by Amazon to spot unusual activity on its computers.","date":"2014/05/29","featured":false,"image":"../images/newsweek.png","link":"http://www.newsweek.com/2014/06/06/computer-programming-dying-art-252618.html","org":"Newsweek","tags":"computer programming dying art","title":"Computer Programming is a Dying Art","type":"link","body":""}
 
 /***/ },
 /* 1249 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "4b15f86f525fc954d0f94fb7cecea737.png";
+	module.exports = __webpack_require__.p + "dcaadf8f4c139cf49ebd2bc75abfb74d.png";
 
 /***/ },
 /* 1250 */
-1246,
-/* 1251 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Eileen McNulty","brief":"Machine learning, to put it mildly, is an incredibly broad and varied field, with multitudes of applications. Thus, this list of Ten Machine Learning Experts You Need to Know","date":"2014/09/16","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/10-machine-learning-experts-you-need-to-know/","org":"Dataconomy","tags":"machine learning experts jeff hawkins numenta grok","title":"Ten Machine Learning Experts You Need to Know","type":"link","body":""}
+	module.exports = {"author":"Jordan Robertson","brief":"Last year, ImportIO began using software made by Numenta, a Redwood City, California-based company founded by Palm's founder Jeff Hawkins and former CEO Donna Dubinsky. Their approach: Instead of focusing on data collection and retrospective looks at information piling up in a warehouse, focus on analyzing data streams in real time to spot anomalies.","date":"2014/06/03","featured":false,"image":"../images/bloomberg.png","link":"http://www.bloomberg.com/news/2014-06-03/big-data-s-dumping-grounds-how-hoarding-hinders-startups-to-spy-agencies.html","org":"Bloomberg","tags":"big data overwhelm spy agencies","title":"The Big Data Dump: How Info-Hoarding Can Overwhelm Startups and Spy Agencies","type":"link","body":""}
+
+/***/ },
+/* 1251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "2aa0de5f3f073ef96915415a6d13b651.png";
 
 /***/ },
 /* 1252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "06d0b1e1a4509fc8efa994cfe7773b64.png";
+	module.exports = __webpack_require__.p + "b2d19f90850730b15446ad75dd7a8b20.png";
 
 /***/ },
 /* 1253 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Derrick Harris","brief":"Jeff Hawkins is best known for bringing us the Palm Pilot, but he’s working on something that could be much, much bigger. For the past several years, Hawkins has been studying how the human brain functions with the hope of replicating it in software.","date":"2014/09/24","featured":false,"image":"../images/gigaom.png","link":"https://gigaom.com/2014/09/24/the-gigaom-interview-jeff-hawkins-on-why-his-approach-to-ai-will-become-the-approach-to-ai/","org":"Gigaom","tags":"jeff hawkins numenta gigaom ai artificial intelligence machine nupic htm","title":"Jeff Hawkins on why his approach to AI will become the approach to AI","type":"link","body":""}
+	module.exports = __webpack_require__.p + "65041c6ad3ad1b1ff815e498d9f5752b.png";
 
 /***/ },
 /* 1254 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "169dac90c5c88faa02e28a27d2dc5ad3.png";
+	module.exports = {"author":"Dean Takahashi","brief":"Numenta founders Jeff Hawkins and Donna Dubinsky sit down with VentureBeat to talk about Numenta’s breakthrough progress in machine intelligence","date":"2014/07/09","featured":false,"image":"../images/venture-beat.png","link":"http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long-nine-years-but-it-starting-to-pay-off-interview/","org":"Venture Beat","tags":"numenta apps mimic brain","title":"After Nine Years of Research Numenta Finally Has Apps That Mimic the Way the Brain Works","type":"link","body":""}
 
 /***/ },
 /* 1255 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Augustus Van Dusen","brief":"The media hype surrounding artificial neural networks (ANN) is becoming absurd. These articles tend to be uncritical summaries of company press releases. The most over the top articles","date":"2014/10/22","featured":false,"image":"../images/thinkingmachine.png","link":"http://thinkingmachineblog.net/jeff-hawkins-on-the-limitations-of-artificial-neural-networks/","org":"Thinking Machine","tags":"jeff hawkins numenta limitations of artificial nerual networks","title":"Jeff Hawkins on the Limitations of Artificial Neural Networks","type":"link","body":""}
+	module.exports = __webpack_require__.p + "6ddb267ba48a74cff217a8046db850ef.png";
 
 /***/ },
 /* 1256 */
-742,
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "2fcfda406645f4bc59888c20cabbe9d9.png";
+
+/***/ },
 /* 1257 */
-743,
-/* 1258 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Numenta","brief":"Grok enables IT professionals to easily spot unusual activity and to gain immediate insights into the health of their critical IT systems. Now, with annotations, they can more easily share","date":"2014/11/05","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta grok it analytics aws reinvent amazon web services","title":"Numenta to Showcase New Version of Grok at AWS reInvent 2014","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>AWS re:Invent 2014</p>\n<p>REDWOOD CITY, Calif. --(<a href=\"http://www.businesswire.com/\">BUSINESS WIRE</a>)–\n<a href=\"/\">Numenta Inc.</a>, a leader in machine intelligence technology,\ntoday announced the newest release of\n<a href=\"/assets/pdf/grok/resources/1.6/Grok-1.6-DataSheet.pdf\">Grok IT for Analytics</a>.\nThe application, which runs on Amazon Web Services, will be featured\nat the <a href=\"https://reinvent.awsevents.com/\">upcoming AWS re:Invent 2014</a>,\nNovember 11-14 in Las Vegas. Visit Numenta and see Grok in action at\nAWS Booth 648.</p>\n<p>Based on Numenta’s breakthrough Hierarchical Temporal Memory technology, Grok\nmonitors servers running on AWS and enables complex pattern detection, automatic\nmodel building, and continuous learning. Grok output is displayed on a\nconstantly updated mobile device, enabling IT professionals to assess the health\nof their systems anytime, anywhere.</p>\n<p>The latest Grok 1.6 release features:</p>\n<ul>\n<li>A major new feature called “Annotations,” which allows sharing of information\nand collaboration among users</li>\n<li>Increased ability to support additional sources and formats of data</li>\n<li>Enhanced performance</li>\n</ul>\n<p>“Grok enables IT professionals to easily spot unusual activity and to gain\nimmediate insights into the health of their critical IT systems. Now, with\nannotations, they can more easily share these insights with colleagues, enabling\nthe organization to get ahead of problems before they become serious,” noted\nNumenta CEO Donna Dubinsky.</p>\n<p>Unlike other tools that rely on static thresholds or simple statistics, Grok\nautomatically learns complex patterns in the AWS environment, and then\nidentifies unusual behavior in those systems.</p>\n<p>Key features of Grok IT for Analytics include:</p>\n<ul>\n<li>Very easy configuration and set-up</li>\n<li>Automatically models each metric to determine normal patterns</li>\n<li>Automatically identifies and ranks unusual patterns</li>\n<li>Continuously learns new patterns as environments evolve</li>\n<li>Does not require any manual threshold setting</li>\n<li>Notifies the user when something curious is happening</li>\n<li>Displays output graphically on a mobile Android device</li>\n</ul>\n<p>To learn more about use cases for IT operators, go to\n<a href=\"/grok/\">http://numenta.com/grok</a>.</p>\n<p>Grok is available for free on the <a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1390942511618\">AWS Marketplace</a>.</p>\n<h4>About Numenta</h4>\n<p><a href=\"/\">Numenta, Inc.</a> was founded in 2005 to be a catalyst in the\nnew era of machine intelligence. Its biologically inspired machine learning\ntechnology is based on a theory of the neocortex first described in co-founder\nJeff Hawkins’ book, On Intelligence. The technology can be applied to anomaly\ndetection in servers and applications, human behavior, and geo-spatial tracking\ndata, and to the predication and classification of natural language. In\naddition, Numenta has created NuPIC (Numenta Platform for Intelligent Computing)\nas an open source project. Based in Redwood City, CA, the company is privately\nfunded. For more information go to <a href=\"/\">numenta.com</a>.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<h4>Media Contact</h4>\n<div>Krause Taylor Associates</div>\n<div>**Betty Taylor**</div>\n<div>[408-981-7551](tel:+1-408-981-7551)</div>\n<div>[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)</div>\n"}
+	module.exports = {"author":"Dan Sullivan","brief":"Cloud monitoring can collect a range of performance data, but a crucial piece of the puzzle, networking, often falls short. A third-party network monitoring tool is essential to keep your cloud running up to par.","date":"2014/08/13","featured":false,"image":"../images/search-cloud-computing.png","link":"http://searchcloudcomputing.techtarget.com/tip/Network-monitoring-tools-for-when-cloud-monitoring-falls-short","org":"Search Cloud Computing","tags":"network monitoring tools cloud monitoring numenta grok","title":"Network Monitoring Tools For When Cloud Monitoring Falls Short","type":"link","body":""}
+
+/***/ },
+/* 1258 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "241f15fce1dd3238bc4a2f2937b6796f.png";
 
 /***/ },
 /* 1259 */
-1237,
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Eileen McNulty","brief":"We’ve seen huge improvements in the way algorithms can detect our language and dialogue. IBM have continued to pour money and resources into the development of Watson; Apple have moved","date":"2014/09/02","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/how-an-austrian-startup-is-mimicking-brain-function-to-revolutionise-nlp/","org":"Dataconomy","tags":"mimicking brain function revolutionising nlp natural language processing numenta nupic cortical.io","title":"How Mimicking Brain Function is Revolutionising NLP","type":"link","body":""}
+
+/***/ },
 /* 1260 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Kevin Maney","brief":"Technology is stuck. It’s stuck while an overcrowding, polluting, beheading, virus-spreading planet needs the kind of breakthroughs that reorganize life and create a clear before and after.","date":"2014/11/10","featured":false,"image":"../images/newsweek.png","link":"http://www.newsweek.com/innovation-lite-modern-day-technology-stuck-283338","org":"Newsweek","tags":"modern day technology stuck newsweek numenta hierarchical temporal memory htm jeff hawkins","title":"Innovation Lite - Modern-Day Technology is Stuck","type":"link","body":""}
+	module.exports = {"author":"Janet Wagner","brief":"Cognitive computing is a relatively new area of computer science that has been growing fairly rapidly in recent years. While artificial intelligence, a field of study that has been around since","date":"2014/09/05","featured":false,"image":"../images/programmableweb.png","link":"http://www.programmableweb.com/news/cognitive-computing-makes-it-possible-to-build-truly-amazing-apps/analysis/2014/09/05","org":"ProgrammableWeb","tags":"cognitive computing numenta grok htm hierarchical temporal memory","title":"Cognitive Computing Makes It Possible To Build Truly Amazing Apps","type":"link","body":""}
 
 /***/ },
 /* 1261 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Eileen McNulty","brief":"Cortical.io, an Austrian startup whose tech mimics brain function to process language more accurately and natively, have just announced an impressive new funding round. Reventon (NL) is a venture capital firm responsible","date":"2014/11/12","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/cortical-io-gain-1-25-million-in-new-venture-capital-share-grand-plans-for-the-future/","org":"Dataconomy","tags":"cortical.io million venture capital grand plans for future numenta semantic machine intelligence","title":"Cortical.io Gain $1.25 Million in New Venture Capital, Share Grand Plans for The Future","type":"link","body":""}
+	module.exports = __webpack_require__.p + "4b15f86f525fc954d0f94fb7cecea737.png";
 
 /***/ },
 /* 1262 */
-1246,
+1258,
 /* 1263 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Dan Hartveld","brief":"Ever since IBM Watson won the hugely popular US quiz show ‘Jeopardy’ back in 2011, cognitive computing has been a hot topic for discussion. Those who have had a glimpse of this new technology recognise its importance","date":"2014/11/21","featured":false,"image":"../images/techworld.png","link":"http://www.techworld.com/blogs/talking-shop/cognitive-computing-explained-3588242/","org":"Techworld","tags":"cognitive computing numenta grok nupic techworld nlp natural language processing","title":"Cognitive Computing - What It Means To You","type":"link","body":""}
+	module.exports = {"author":"Eileen McNulty","brief":"Machine learning, to put it mildly, is an incredibly broad and varied field, with multitudes of applications. Thus, this list of Ten Machine Learning Experts You Need to Know","date":"2014/09/16","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/10-machine-learning-experts-you-need-to-know/","org":"Dataconomy","tags":"machine learning experts jeff hawkins numenta grok","title":"Ten Machine Learning Experts You Need to Know","type":"link","body":""}
 
 /***/ },
 /* 1264 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "8eb1e39b1f4b7320e170be348fc2801d.png";
+	module.exports = __webpack_require__.p + "06d0b1e1a4509fc8efa994cfe7773b64.png";
 
 /***/ },
 /* 1265 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "60c90fad6d02e99c8ddae2ab9c4d1119.png";
+	module.exports = {"author":"Derrick Harris","brief":"Jeff Hawkins is best known for bringing us the Palm Pilot, but he’s working on something that could be much, much bigger. For the past several years, Hawkins has been studying how the human brain functions with the hope of replicating it in software.","date":"2014/09/24","featured":false,"image":"../images/gigaom.png","link":"https://gigaom.com/2014/09/24/the-gigaom-interview-jeff-hawkins-on-why-his-approach-to-ai-will-become-the-approach-to-ai/","org":"Gigaom","tags":"jeff hawkins numenta gigaom ai artificial intelligence machine nupic htm","title":"Jeff Hawkins on why his approach to AI will become the approach to AI","type":"link","body":""}
 
 /***/ },
 /* 1266 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "818cdf44c0fb7bfe59bf3ac5ebfcf4f2.png";
+	module.exports = __webpack_require__.p + "169dac90c5c88faa02e28a27d2dc5ad3.png";
 
 /***/ },
 /* 1267 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Jessica Lipsky","brief":"At a conference hosted by Silicon Valley Forum last week, industry experts projected the future of AI, machine learning, and deep learning. Jeff Hawkins, CEO and co-founder of Numenta, a firm that has developed a computational framework for AI,","date":"2014/12/09","featured":false,"image":"../images/eetimes.png","link":"http://www.eetimes.com/document.asp?doc_id=1324910&_mc=sm_eet_editor_rickmerritt","org":"EE Times","tags":"artificial intelligence future smart panel silicon valley forum jeff hawkins numenta","title":"Smart Panel Ponders AI's Future","type":"link","body":""}
+	module.exports = {"author":"Augustus Van Dusen","brief":"The media hype surrounding artificial neural networks (ANN) is becoming absurd. These articles tend to be uncritical summaries of company press releases. The most over the top articles","date":"2014/10/22","featured":false,"image":"../images/thinkingmachine.png","link":"http://thinkingmachineblog.net/jeff-hawkins-on-the-limitations-of-artificial-neural-networks/","org":"Thinking Machine","tags":"jeff hawkins numenta limitations of artificial nerual networks","title":"Jeff Hawkins on the Limitations of Artificial Neural Networks","type":"link","body":""}
 
 /***/ },
 /* 1268 */
-/***/ function(module, exports) {
-
-	module.exports = {"author":"Anthony Wing Kosner","brief":"Despite what Stephen Hawking or Elon Musk say, hostile Artificial Intelligence is not going to destroy the world anytime soon. What is certain to happen, however, is the continued ascent of the practical applications of AI","date":"2014/12/29","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2014/12/29/tech-2015-deep-learning-and-machine-intelligence-will-eat-the-world/","org":"Forbes","tags":"2015 deep learning machine intelligence numenta grok forbes","title":"Tech 2015 Deep Learning And Machine Intelligence Will Eat The World","type":"link","body":""}
-
-/***/ },
+742,
 /* 1269 */
-1229,
+743,
 /* 1270 */
-1230,
-/* 1271 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Derrick Harris","brief":"Artificial intelligence is already very real. Not conscious machines, omnipotent machines or even reasoning machines (yet), but statistical machines that automate and increasingly can outperform humans at certain","date":"2015/01/09","featured":false,"image":"../images/gigaom.png","link":"https://gigaom.com/2015/01/09/artificial-intelligence-is-real-now-and-its-just-getting-started/?utm_medium=content&utm_campaign=syndication&utm_source=googlemustreads&utm_content=artificial-intelligence-is-real-now-and-its-just-getting-started_905416&google_editors_picks=true","org":"GigaOm","tags":"artificial intelligence real just getting started numenta machine intelligence","title":"Artificial Intelligence Is Real Now and It’s Just Getting Started","type":"link","body":""}
+	module.exports = {"author":"Numenta","brief":"Grok enables IT professionals to easily spot unusual activity and to gain immediate insights into the health of their critical IT systems. Now, with annotations, they can more easily share","date":"2014/11/05","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta grok it analytics aws reinvent amazon web services","title":"Numenta to Showcase New Version of Grok at AWS reInvent 2014","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>AWS re:Invent 2014</p>\n<p>REDWOOD CITY, Calif. --(<a href=\"http://www.businesswire.com/\">BUSINESS WIRE</a>)–\n<a href=\"/\">Numenta Inc.</a>, a leader in machine intelligence technology,\ntoday announced the newest release of\n<a href=\"/assets/pdf/grok/resources/1.6/Grok-1.6-DataSheet.pdf\">Grok IT for Analytics</a>.\nThe application, which runs on Amazon Web Services, will be featured\nat the <a href=\"https://reinvent.awsevents.com/\">upcoming AWS re:Invent 2014</a>,\nNovember 11-14 in Las Vegas. Visit Numenta and see Grok in action at\nAWS Booth 648.</p>\n<p>Based on Numenta’s breakthrough Hierarchical Temporal Memory technology, Grok\nmonitors servers running on AWS and enables complex pattern detection, automatic\nmodel building, and continuous learning. Grok output is displayed on a\nconstantly updated mobile device, enabling IT professionals to assess the health\nof their systems anytime, anywhere.</p>\n<p>The latest Grok 1.6 release features:</p>\n<ul>\n<li>A major new feature called “Annotations,” which allows sharing of information\nand collaboration among users</li>\n<li>Increased ability to support additional sources and formats of data</li>\n<li>Enhanced performance</li>\n</ul>\n<p>“Grok enables IT professionals to easily spot unusual activity and to gain\nimmediate insights into the health of their critical IT systems. Now, with\nannotations, they can more easily share these insights with colleagues, enabling\nthe organization to get ahead of problems before they become serious,” noted\nNumenta CEO Donna Dubinsky.</p>\n<p>Unlike other tools that rely on static thresholds or simple statistics, Grok\nautomatically learns complex patterns in the AWS environment, and then\nidentifies unusual behavior in those systems.</p>\n<p>Key features of Grok IT for Analytics include:</p>\n<ul>\n<li>Very easy configuration and set-up</li>\n<li>Automatically models each metric to determine normal patterns</li>\n<li>Automatically identifies and ranks unusual patterns</li>\n<li>Continuously learns new patterns as environments evolve</li>\n<li>Does not require any manual threshold setting</li>\n<li>Notifies the user when something curious is happening</li>\n<li>Displays output graphically on a mobile Android device</li>\n</ul>\n<p>To learn more about use cases for IT operators, go to\n<a href=\"/grok/\">http://numenta.com/grok</a>.</p>\n<p>Grok is available for free on the <a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1390942511618\">AWS Marketplace</a>.</p>\n<h4>About Numenta</h4>\n<p><a href=\"/\">Numenta, Inc.</a> was founded in 2005 to be a catalyst in the\nnew era of machine intelligence. Its biologically inspired machine learning\ntechnology is based on a theory of the neocortex first described in co-founder\nJeff Hawkins’ book, On Intelligence. The technology can be applied to anomaly\ndetection in servers and applications, human behavior, and geo-spatial tracking\ndata, and to the predication and classification of natural language. In\naddition, Numenta has created NuPIC (Numenta Platform for Intelligent Computing)\nas an open source project. Based in Redwood City, CA, the company is privately\nfunded. For more information go to <a href=\"/\">numenta.com</a>.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<h4>Media Contact</h4>\n<div>Krause Taylor Associates</div>\n<div>**Betty Taylor**</div>\n<div>[408-981-7551](tel:+1-408-981-7551)</div>\n<div>[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)</div>\n"}
 
 /***/ },
+/* 1271 */
+1249,
 /* 1272 */
-1252,
-/* 1273 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "c9abdea7e95f2be8244f9723c65010c5.png";
+	module.exports = {"author":"Kevin Maney","brief":"Technology is stuck. It’s stuck while an overcrowding, polluting, beheading, virus-spreading planet needs the kind of breakthroughs that reorganize life and create a clear before and after.","date":"2014/11/10","featured":false,"image":"../images/newsweek.png","link":"http://www.newsweek.com/innovation-lite-modern-day-technology-stuck-283338","org":"Newsweek","tags":"modern day technology stuck newsweek numenta hierarchical temporal memory htm jeff hawkins","title":"Innovation Lite - Modern-Day Technology is Stuck","type":"link","body":""}
+
+/***/ },
+/* 1273 */
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Eileen McNulty","brief":"Cortical.io, an Austrian startup whose tech mimics brain function to process language more accurately and natively, have just announced an impressive new funding round. Reventon (NL) is a venture capital firm responsible","date":"2014/11/12","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/cortical-io-gain-1-25-million-in-new-venture-capital-share-grand-plans-for-the-future/","org":"Dataconomy","tags":"cortical.io million venture capital grand plans for future numenta semantic machine intelligence","title":"Cortical.io Gain $1.25 Million in New Venture Capital, Share Grand Plans for The Future","type":"link","body":""}
 
 /***/ },
 /* 1274 */
+1258,
+/* 1275 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Alex Alaniz","brief":"Before pressing to Numenta’s remarkable (and likely correct) approach to general AI an IBM talk, let’s consider the question of how much you and I are already uploaded and super intelligent","date":"2015/02/19","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/life_happens_ai_will_happen_probably_at_ibmnumenta-153354","org":"Science2.0","tags":"general ai artificial intelligence ibm numenta hierarchical temporal memory science 2.0","title":"Life happens, AI will happen, probably at IBM/Numenta","type":"link","body":""}
-
-/***/ },
-/* 1275 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "bdcbc7433ee574a8f7cf09be97e0d027.png";
+	module.exports = {"author":"Dan Hartveld","brief":"Ever since IBM Watson won the hugely popular US quiz show ‘Jeopardy’ back in 2011, cognitive computing has been a hot topic for discussion. Those who have had a glimpse of this new technology recognise its importance","date":"2014/11/21","featured":false,"image":"../images/techworld.png","link":"http://www.techworld.com/blogs/talking-shop/cognitive-computing-explained-3588242/","org":"Techworld","tags":"cognitive computing numenta grok nupic techworld nlp natural language processing","title":"Cognitive Computing - What It Means To You","type":"link","body":""}
 
 /***/ },
 /* 1276 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "398f50162f5618f3e3e5aaa88cc2c634.png";
+	module.exports = __webpack_require__.p + "8eb1e39b1f4b7320e170be348fc2801d.png";
 
 /***/ },
 /* 1277 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {"author":"Jeff Hawkins","brief":"Stephen Hawking and Elon Musk are worried. Could machine intelligence really lead to the extinction of humans?","date":"2015/03/02","featured":false,"image":"../images/recode.png","link":"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/","org":"Re/Code","tags":"general ai artificial intelligence machine recode terminator","title":"The Terminator Is Not Coming. The Future Will Thank Us.","type":"link","body":""}
+	module.exports = __webpack_require__.p + "60c90fad6d02e99c8ddae2ab9c4d1119.png";
 
 /***/ },
 /* 1278 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "8b39c03294d11a98ee4bb129d9bcf4de.png";
+	module.exports = __webpack_require__.p + "818cdf44c0fb7bfe59bf3ac5ebfcf4f2.png";
 
 /***/ },
 /* 1279 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "7fc6f8461f741be8dc6b9dc25f2f22f8.png";
+	module.exports = {"author":"Jessica Lipsky","brief":"At a conference hosted by Silicon Valley Forum last week, industry experts projected the future of AI, machine learning, and deep learning. Jeff Hawkins, CEO and co-founder of Numenta, a firm that has developed a computational framework for AI,","date":"2014/12/09","featured":false,"image":"../images/eetimes.png","link":"http://www.eetimes.com/document.asp?doc_id=1324910&_mc=sm_eet_editor_rickmerritt","org":"EE Times","tags":"artificial intelligence future smart panel silicon valley forum jeff hawkins numenta","title":"Smart Panel Ponders AI's Future","type":"link","body":""}
 
 /***/ },
 /* 1280 */
 /***/ function(module, exports) {
 
-	module.exports = {"author":"Erik Sherman","brief":"These leading scientists dismiss the doomsday predictions and say artificial intelligence, automation and robotics will bring a better world. Here’s why.","date":"2015/03/05","featured":false,"image":"../images/fortune.png","link":"http://fortune.com/2015/03/05/forget-the-naysayers-robots-pose-no-threat-to-humanity-these-experts-say/","org":"Fortune","tags":"fortune scientists dismiss fear of robots ai artificial machine intelligence jeff hawkins numenta","title":"Many Scientists Dismiss the Fear of Robots — Here's Why","type":"link","body":""}
+	module.exports = {"author":"Anthony Wing Kosner","brief":"Despite what Stephen Hawking or Elon Musk say, hostile Artificial Intelligence is not going to destroy the world anytime soon. What is certain to happen, however, is the continued ascent of the practical applications of AI","date":"2014/12/29","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2014/12/29/tech-2015-deep-learning-and-machine-intelligence-will-eat-the-world/","org":"Forbes","tags":"2015 deep learning machine intelligence numenta grok forbes","title":"Tech 2015 Deep Learning And Machine Intelligence Will Eat The World","type":"link","body":""}
 
 /***/ },
 /* 1281 */
+1241,
+/* 1282 */
+1242,
+/* 1283 */
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Derrick Harris","brief":"Artificial intelligence is already very real. Not conscious machines, omnipotent machines or even reasoning machines (yet), but statistical machines that automate and increasingly can outperform humans at certain","date":"2015/01/09","featured":false,"image":"../images/gigaom.png","link":"https://gigaom.com/2015/01/09/artificial-intelligence-is-real-now-and-its-just-getting-started/?utm_medium=content&utm_campaign=syndication&utm_source=googlemustreads&utm_content=artificial-intelligence-is-real-now-and-its-just-getting-started_905416&google_editors_picks=true","org":"GigaOm","tags":"artificial intelligence real just getting started numenta machine intelligence","title":"Artificial Intelligence Is Real Now and It’s Just Getting Started","type":"link","body":""}
+
+/***/ },
+/* 1284 */
+1264,
+/* 1285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c9abdea7e95f2be8244f9723c65010c5.png";
+
+/***/ },
+/* 1286 */
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Alex Alaniz","brief":"Before pressing to Numenta’s remarkable (and likely correct) approach to general AI an IBM talk, let’s consider the question of how much you and I are already uploaded and super intelligent","date":"2015/02/19","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/life_happens_ai_will_happen_probably_at_ibmnumenta-153354","org":"Science2.0","tags":"general ai artificial intelligence ibm numenta hierarchical temporal memory science 2.0","title":"Life happens, AI will happen, probably at IBM/Numenta","type":"link","body":""}
+
+/***/ },
+/* 1287 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "bdcbc7433ee574a8f7cf09be97e0d027.png";
+
+/***/ },
+/* 1288 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "398f50162f5618f3e3e5aaa88cc2c634.png";
+
+/***/ },
+/* 1289 */
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Jeff Hawkins","brief":"Stephen Hawking and Elon Musk are worried. Could machine intelligence really lead to the extinction of humans?","date":"2015/03/02","featured":false,"image":"../images/recode.png","link":"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/","org":"Re/Code","tags":"general ai artificial intelligence machine recode terminator","title":"The Terminator Is Not Coming. The Future Will Thank Us.","type":"link","body":""}
+
+/***/ },
+/* 1290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "8b39c03294d11a98ee4bb129d9bcf4de.png";
+
+/***/ },
+/* 1291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "7fc6f8461f741be8dc6b9dc25f2f22f8.png";
+
+/***/ },
+/* 1292 */
+/***/ function(module, exports) {
+
+	module.exports = {"author":"Erik Sherman","brief":"These leading scientists dismiss the doomsday predictions and say artificial intelligence, automation and robotics will bring a better world. Here’s why.","date":"2015/03/05","featured":false,"image":"../images/fortune.png","link":"http://fortune.com/2015/03/05/forget-the-naysayers-robots-pose-no-threat-to-humanity-these-experts-say/","org":"Fortune","tags":"fortune scientists dismiss fear of robots ai artificial machine intelligence jeff hawkins numenta","title":"Many Scientists Dismiss the Fear of Robots — Here's Why","type":"link","body":""}
+
+/***/ },
+/* 1293 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Anthony Wing Kosner","brief":"I thought of this story as the news unfolded from the Alps. We are so concerned, it seems, about giving machines too much power that we appear to miss the fact that the largest existential threat to humans is other humans.","date":"2015/03/26","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2015/03/26/artificial-intelligence-could-have-prevented-the-germanwings-crash/","org":"Forbes","tags":"artificial machine general intelligence ai could have prevented germanwings crash jeff hawkins numenta nupic","title":"Artificial Intelligence Could Have Prevented The Germanwings Crash","type":"link","body":""}
 
 /***/ },
-/* 1282 */
-1229,
-/* 1283 */
-1230,
-/* 1284 */
+/* 1294 */
+1241,
+/* 1295 */
+1242,
+/* 1296 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Wired","brief":"A sharp dichotomy has emerged in the big debate about where technology is taking us (or vice versa). In one high-profile camp are technologists and scientists sounding the alarm about the perils of artificial intelligence.","date":"2015/04/02","featured":false,"image":"../images/wired.png","link":"http://www.wired.com/2015/04/learn-stop-worrying-love-bots/","org":"Wired","tags":"artificial general machine intelligence ai stop worrying love the bots numenta nupic jeff hawkins","title":"How We Learn to Stop Worrying and Love the Bots","type":"link","body":""}
 
 /***/ },
-/* 1285 */
+/* 1297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8873abdc9a7894129201e4a40f0e1239.png";
 
 /***/ },
-/* 1286 */
+/* 1298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "dd72979816c79e7076cf346c2f79dcc6.png";
 
 /***/ },
-/* 1287 */
+/* 1299 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Tom Simonite","brief":"For more than a decade Jeff Hawkins, founder of mobile computing company Palm, has dedicated his time and fortune to a theory meant to explain the workings of the human brain, and provide a blueprint for a powerful new kind of artificial intelligence software.","date":"2015/04/08","featured":false,"image":"../images/mit-technology-review.png","link":"http://www.technologyreview.com/news/536326/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms/","org":"MIT Technology Review","tags":"ibm mobile pioneer brain algorithms jeff hawkins numenta htm hierarchical temporal memory","title":"IBM Tests Mobile Computing Pioneer’s Controversial Brain Algorithms","type":"link","body":""}
 
 /***/ },
-/* 1288 */
-1134,
-/* 1289 */
-1273,
-/* 1290 */
+/* 1300 */
+1146,
+/* 1301 */
+1285,
+/* 1302 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alex Alaniz","brief":"Growing new connections in your brain is more essential to learning than strengthening established connections. You may know how to be a tax lawyer because you've spent years strengthening your old tax law connections, but these are utterly useless when you take up ballroom dancing to find yourself a mate.","date":"2015/04/14","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/numenta_the_bruce_lee_of_ai_and_deep_learning-154801","tags":"numenta ai artificial intelligence deep learning jeff hawkins htm hierarchical temporal memory","title":"Numenta, The Bruce Lee of AI and Deep Learning","type":"link","body":""}
 
 /***/ },
-/* 1291 */
-1285,
-/* 1292 */
-1286,
-/* 1293 */
+/* 1303 */
+1297,
+/* 1304 */
+1298,
+/* 1305 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Caleb Garling","brief":"Along with other researchers, Hawkins believes that the brain’s structure holds the keys for the next generation of computers that will interpret our world with far more insight than our eyes and ears ever could.","date":"2015/05/07","featured":false,"image":"../images/wired.png","link":"http://www.wired.com/2015/05/jeff-hawkins-firing-silicon-brain/","org":"Wired","tags":"jeff hawkins firing up silicion brain wired neocortex htm hierarchical temporal memory nupic numenta","title":"Jeff Hawkins on Firing Up the Silicon Brain","type":"link","body":""}
 
 /***/ },
-/* 1294 */
+/* 1306 */
 742,
-/* 1295 */
+/* 1307 */
 743,
-/* 1296 */
+/* 1308 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Numenta, Inc., a leader in machine intelligence, and Cortical.io, an innovator in natural language processing (NLP), are pleased to announce a strategic partnership to create a new computing approach to understanding text. As part of the strategic relationship,","date":"2015/05/14","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta cortical.io form strategic partnership htm hierarchical temporal memory sdr sparse distributed memory retina wikipedia natural lanuage learning","title":"Numenta and Cortical.io Form Strategic Partnership","type":"post","body":"<p>Numenta and <a href=\"http://Cortical.io\">Cortical.io</a> Form Strategic Partnership</p>\n<p>Redwood City, CA –May 14, 2015— <a href=\"/\">Numenta, Inc.</a>, a leader in machine\nintelligence, and <a href=\"http://cortical.io\">Cortical.io</a>, an innovator in natural\nlanguage processing (NLP), are pleased to announce a strategic partnership to\ncreate a new computing approach to understanding text.  As part of the strategic\nrelationship, <a href=\"http://Cortical.io\">Cortical.io</a> has taken a broad general license to Numenta’s\nHierarchical Temporal Memory (HTM) technology, and Numenta has taken an\nownership position in <a href=\"http://Cortical.io\">Cortical.io</a>.  The combination of <a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic\nFolding technology and Numenta’s HTM technology enables a host of exciting\napplications that have challenged computer scientists for decades, including\nsentiment analysis, automatic summarization, semantic search, and conversational\ndialogue systems.</p>\n<p>“<a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic Folding technology is a clever and elegant way to feed\nnatural language into our HTM technology“, said Jeff Hawkins, founder of\nNumenta.  “<a href=\"http://Cortical.io\">Cortical.io</a> takes advantage of the semantic encoding and predictive\nmodeling of HTM systems in a way that will lead to significant advances in\nnatural language processing.”</p>\n<p>“Natural language understanding is one of the central problems of artificial\nintelligence,” said Francisco Webber, founder and CEO of <a href=\"http://Cortical.io\">Cortical.io</a>.  “We aim\nto build the next generation of NLP, Language Intelligence, and in so doing,\nshow the path to broadly applied machine intelligence.”</p>\n<p>Building on their existing commercial product, the Retina API, <a href=\"http://Cortical.io\">Cortical.io</a> will\nmake the combined technologies available through their industrial-grade cloud\nservice for customers ranging from innovative startups to international\ncorporations.</p>\n<h4>About Numenta</h4>\n<p><a href=\"/\">Numenta, Inc.</a>, was founded in 2005 to be a leader in the emerging field of\nmachine intelligence. Numenta builds technology that helps companies\nautomatically and intelligently act on machine generated data.  Its biologically\ninspired machine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book,\n<a href=\"/learn/on-intelligence.html\">On Intelligence</a>. Its first commercial product,\ncalled <a href=\"/grok/\">Grok</a>, offers a breakthrough solution for\nanomaly detection for IT Operations. In addition, Numenta has created\n<a href=\"http://numenta.org\">NuPIC</a> (Numenta Platform for Intelligent Computing) as an\nopen source project (<a href=\"http://numenta.org\">http://numenta.org</a>). Numenta is based in Redwood City,\nCalifornia.</p>\n<p>Numenta Media Contact: <br/>\nBetty Taylor,\nKrause Taylor Associates:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Connect with Numenta: <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>\n</t></p>\n<h4>About <a href=\"http://Cortical.io\">Cortical.io</a></h4>\n<p>Headquartered in Vienna, Austria, <a href=\"http://cortical.io\">Cortical.io</a> is a\nscience-based start-up that has developed a fundamentally new approach to\nNatural Language Processing (NLP), Semantic Folding, inspired by the latest\nfindings on the way the human neocortex processes information.  By representing\nlanguage with highly efficient semantic fingerprints, the Retina API is the\nfirst semantic engine that painlessly handles the avalanche of text data\nexperienced by global business today –in any language and in real-time. A US\nsubsidiary has been incorporated recently.</p>\n<p><a href=\"http://Cortical.io\">Cortical.io</a> Media Contact: <br/>\nMarie-Pierre Garnier,\n<a href=\"http://Cortical.io\">Cortical.io</a>:\n<a href=\"mailto:mp.garnier@Cortical.io\">mp.garnier@Cortical.io</a></p>\n"}
 
 /***/ },
-/* 1297 */
+/* 1309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e4493dd67f0129d21e81645cefdf309d.png";
 
 /***/ },
-/* 1298 */
+/* 1310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d551f71134455a8dfc47a63264e7102a.png";
 
 /***/ },
-/* 1299 */
-1273,
-/* 1300 */
+/* 1311 */
+1285,
+/* 1312 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alex Alaniz","brief":"When we catch balls, Jeff Hawkins, cofounder of Numenta and author of “On Intelligence,” tells us we aren’t solving differential equations. A robot, on the other hand, does solve differential equations, requiring roughly 3-trillion calculations for a 1s toss","date":"2015/05/22","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/numenta_and_ibm_to_build_biologically_inspired_intelligent_machines-155769","org":"Science 2.0","tags":"numenta ibm build biologically inspired intelligent machines neocortex","title":"Numenta And IBM To Build Biologically Inspired Intelligent Machines","type":"link","body":""}
 
 /***/ },
-/* 1301 */
+/* 1313 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Fareed Zakaria, GPS","brief":"Fareed asks Jeff Hawkins about artificial intelligence -- could robots one day rise up against humans?","date":"2015/05/22","featured":false,"image":"../images/cnn.png","link":"http://www.cnn.com/videos/tv/2015/05/22/exp-gps-0524-hawkins-artificial-intelligence.cnn","org":"CNN","tags":"cnn on gps fareed zakaria jeff hawkins threat intelligent machines numenta nupic brain neocortex","title":"On GPS: The Threat of Intelligent Machines","type":"link","body":""}
 
 /***/ },
-/* 1302 */
+/* 1314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9813db4647115c47d95e4b4e393999aa.png";
 
 /***/ },
-/* 1303 */
+/* 1315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3d12354c6b9b77c3f2f818cd7e5226b7.png";
 
 /***/ },
-/* 1304 */
-1241,
-/* 1305 */
+/* 1316 */
+1253,
+/* 1317 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Dean Takahashi","brief":"Numenta today released HTM for Stocks, a new mobile application that tracks the trading patterns of companies in the stock market. The new Google Play app can monitor stock price, stock volume, and Twitter activity for hundreds of publicly traded companies","date":"2015/07/08","featured":false,"image":"../images/venture-beat.png","link":"http://venturebeat.com/2015/07/08/numentas-grok-for-stocks-app-uses-a-i-to-decipher-stock-market-patterns/","org":"VentureBeat","tags":"numenta htm for stocks app ai htm stock market patterns venturebeat","title":"Numenta’s HTM for Stocks app uses A.I. to decipher stock market patterns","type":"link","body":""}
 
 /***/ },
-/* 1306 */
+/* 1318 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Redwood City, CA –July 8, 2015— Numenta, Inc., today announced the availability of HTM for Stocks, the newest example application showing how Hierarchical Temporal Memory (HTM) technology can be applied to streaming data","date":"2015/07/08","featured":false,"image":"../images/image.png","link":null,"org":"Press Release","tags":"numenta new htm example application htm for stocks monitor stock price volume twitter activity public companies anomaly detection unusual notifications","title":"Numenta Ships New HTM Example App: HTM for Stocks","type":"post","body":"<h3>An Easy Way to Experience HTM Machine Learning Technology</h3>\n<p>Redwood City, CA –July 8, 2015— <a href=\"/\">Numenta</a>, Inc., today announced the\navailability of HTM for Stocks, the newest example application showing how\n<a href=\"/#technology\">Hierarchical Temporal Memory</a> (HTM) technology can be applied to\nstreaming data and the Internet of Things.</p>\n<p>HTM for Stocks is a mobile application that continually monitors stock price,\nstock volume, and Twitter activity for hundreds of publicly traded companies.\nHTM for Stocks learns the normal patterns for each company and notifies you if\nsomething unusual is happening to any of the companies.</p>\n<p>During the past two years, Numenta has created a series of example applications\nto illustrate the capabilities of HTM.  The first application, Grok for IT\nAnalytics, uses HTM to detect anomalies in AWS server metrics and is available\non the <a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6\">Amazon Web Services Marketplace</a>.\nNumenta also published example source code that uses HTM to detect anomalies in\nhuman behavior and in GPS tracking data.</p>\n<p>“HTM for Stocks is our most accessible demonstration of Numenta HTM\ntechnology,” said Numenta CEO Donna Dubinsky. “Until now, it has required\nprogramming expertise to experience HTM-based anomaly detection. With HTM for\nStocks, it is as simple as downloading the app to your smartphone from the\n<a href=\"https://play.google.com/store/apps/details?id=com.numenta.taurus\">Google Play store</a>.”</p>\n<p>In keeping with its mission to be a technology provider, Numenta is providing\nthe source code for HTM for Stocks under an open source license at:\n<a href=\"https://github.com/numenta/numenta-apps\">https://github.com/numenta/numenta-apps</a>.  Said Dubinsky, “We encourage\ndevelopers to use the HTM for Stocks code to create derivative products that\ntrack a variety of data streams. HTM for Stocks shows how thousands of data\nstreams can be made useful in a mobile application using HTM technology.”</p>\n<h3>How HTM for Stocks Works</h3>\n<p>HTM for Stocks applies Numenta’s HTM modeling and anomaly detection to 200\nlarge capitalization public companies.  It automatically models three data\nstreams for each company:  stock volume, stock price, and Twitter volume.  The\nHTM models learn continuously, receiving new data every five minutes.  HTM\nlearns what is “normal” for each of the data streams for each company.  The\ncompanies are ranked from the most anomalous to the least anomalous over the\nprevious hour. HTM for Stocks lets you see the text of the Tweets as well,\noften explaining why the company is showing an anomaly.</p>\n<p><img src=\"../images/screen.png\" alt=\"HTM for Stocks Screenshot\"></p>\n<h3>About Numenta</h3>\n<p><a href=\"/\">Numenta</a>, Inc., is a leader in the field of machine intelligence.  Numenta\nbuilds technology that helps companies automatically act on streaming data. Its\nmachine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, <em>On Intelligence</em>. In\naddition, Numenta has created <a href=\"http://numenta.org\">NuPIC</a> (Numenta Platform for\nIntelligent Computing) as an open source project (<a href=\"http://numenta.org\">http://numenta.org</a>). Numenta\nis based in Redwood City, California.</p>\n<p>To obtain more info about partnering and licenses write to\n<a href=\"mailto:sales@numenta.com\">sales@numenta.com</a>.</p>\n<p>Numenta Media Contact: <br/>\nBetty Taylor,\nKrause Taylor Associates:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Connect with Numenta: <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>\n</t></p>\n"}
 
 /***/ },
-/* 1307 */
+/* 1319 */
 742,
-/* 1308 */
+/* 1320 */
 743,
-/* 1309 */
+/* 1321 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, CA –August 19, 2015— Numenta, Inc., a leader in machine intelligence, today announced a strategic partnership with Avik Partners, a new IT services and advanced analytics company, for its Grok for IT Analytics on AWS technology.","date":"2015/08/19","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta license grok for it analytics to avik partners smart data conference 2015 dataversity","title":"Numenta Announces Licensing of Grok for IT Analytics to Avik Partners","type":"post","body":"<p>REDWOOD CITY, CA –August 19, 2015— <a href=\"/\">Numenta, Inc.</a>, a leader in machine\nintelligence, today announced a strategic partnership with\n<a href=\"http://www.grokstream.com/\">Avik Partners</a>, a new IT services and advanced\nanalytics company, for its Grok for IT Analytics on AWS technology. The\nannouncement was made during the\n<a href=\"http://smartdata2015.dataversity.net\">Smart Data Conference</a> being held in\nSan Jose, CA. (See Numenta at Booth #406).</p>\n<p>Grok for IT Analytics on AWS detects anomalies in Amazon Web Services server\nmetrics and is currently available on the\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6\">Amazon Web Services Marketplace</a>.<br>\nAs part of this strategic relationship, Numenta will transfer the Grok\napplication and the Grok brand to Avik under a broad general licensing agreement\nfor Numenta’s <a href=\"http://numenta.com/learn/hierarchical-temporal-memory-white-paper.html\">Hierarchical Temporal Memory (HTM)</a>\ntechnology. Numenta also will take a minority ownership position in Avik.</p>\n<p>“Our core HTM technology can be applied to such a broad array of machine\nintelligence solutions, it would be impossible for us to pursue\ncommercialization in all of these verticals. We decided that the best approach\nfor us, like that taken by premier research institutions, is a licensing and\ntechnology transfer model. It is an exciting way for us to see our HTM\napplications built out for commercial use,” said Numenta CEO Donna Dubinsky.</p>\n<p>She added, “In Casey Kindiger, the CEO of Avik, we found the perfect match to\ntake Grok for IT Analytics and run with it. He is a proven entrepreneur who is\nstarting this new venture to apply HTM technology to solve problems in IT\nanalytics.”</p>\n<p>Kindiger, a veteran enterprise software solutions provider and consultant,\nfounded Avik after more than a decade of designing and developing process\nautomation solutions for companies like JP Morgan Chase, T-Mobile, Allstate\nInsurance, and others.</p>\n<p>“HTM offers substantially better technology for finding anomalies and is well\nsuited to the needs of today’s streaming data in IT and dev ops environments,”\nsaid Kindiger. “We are very excited to be able to take the Grok technology and\nbrand, move it forward and build on it.”</p>\n<p>During the past two years, Numenta has created a series of example applications\nto illustrate the capabilities of HTM, beginning with Grok for IT Analytics on\nAWS. The HTM technology also has been applied to anomaly detection in stock\nprices and volumes\n(<a href=\"http://numenta.com/press/numenta-ships-new-htm-example-app-htm-for-stocks.html\">HTM for Stocks</a>),\nhuman behavior, geo-spatial tracking data, and to the predication and\nclassification of natural language. For the latter application, Numenta recently\nannounced a partnership and licensing agreement with\n<a href=\"http://numenta.com/press/numenta-and-cortical-io-form-strategic-partnership.html\">Cortical.io</a>,\nan innovator in natural language processing (NLP), to license HTM and use the\ntechnology for the development of language intelligence products.</p>\n<p>“We will continue to create example applications to inspire others, and hope to\ncreate a constellation of partnerships like Avik and <a href=\"http://Cortical.io\">Cortical.io</a> going forward\nto enable broad commercialization of HTM technology,” Dubinsky concluded.</p>\n<p>Numenta, Inc. was founded in 2005 to be a leader in the emerging field of\nmachine intelligence. Numenta builds technology that helps companies\nautomatically and intelligently act on machine generated data.  Its biologically\ninspired machine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, On Intelligence. In addition,\nNumenta has created NuPIC (Numenta Platform for Intelligent Computing) as an\nopen source project (<a href=\"http://numenta.org\">http://numenta.org</a>).  Numenta is based in Redwood City,\nCalifornia.</p>\n<p>To contact Avik Partners and for further information about Grok for IT\nAnalytics, go to <a href=\"http://grokstream.com\">http://grokstream.com</a>.</p>\n<p>Numenta Media Contact: <br/>\nBetty Taylor,\nKrause Taylor Associates:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Avik Partners Media Contact: <br/>\nPaula Johns:\n<a href=\"mailto:paula@paulajohnscommunications.com\">paula@paulajohnscommunications.com</a>\n<a href=\"tel:+1-760-522-0941\">760-522-0941</a></p>\n"}
 
 /***/ },
-/* 1310 */
+/* 1322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "063725e3b5730c0407452e01fbf5f3a8.png";
 
 /***/ },
-/* 1311 */
+/* 1323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "61fa382703455b6d39531055bc115827.png";
 
 /***/ },
-/* 1312 */
+/* 1324 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Mark Gibbs","brief":"Anomalies in data are everywhere. They appear in the performance of just about anything you can measure. Sometimes, if you’re lucky, they’re rare. Other times they aren’t. The problem in both cases, however, is figuring out what is truly an anomaly","date":"2015/09/05","featured":false,"image":"../images/network-world.png","link":"http://www.networkworld.com/article/2980746/infrastructure-management/numentas-grok-for-it-artificial-intelligence-meets-network-performance-analysis.html","org":"Network World","tags":"numenta grok for it artifical intelligence network performance analysis htm hierarchical temporal memory","title":"Numenta's Grok for IT: Artificial Intelligence Meets Network Performance Analysis","type":"link","body":""}
 
 /***/ },
-/* 1313 */
+/* 1325 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Mike Vizard","brief":"Machine learning has the potential to transform the way IT is managed by applying automation at an unprecedented level of scale, so it was only a matter of time before an IT management","date":"2015/10/06","featured":false,"image":"../images/it-business-edge.png","link":"http://www.itbusinessedge.com/blogs/it-unmasked/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.html","org":"IT Business Edge","tags":"numenta avik partners grok stream machine learning service optimize it operations htm hierarchical temporal memory","title":"Avik Partners Unfurls Machine Learning Service to Optimize IT Operations","type":"link","body":""}
 
 /***/ },
-/* 1314 */
+/* 1326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "186d232dd31d4657c46a38c0aa362040.png";
 
 /***/ },
-/* 1315 */
+/* 1327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "602de983f8c5115d7d9fabe22966c6f3.png";
 
 /***/ },
-/* 1316 */
+/* 1328 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Cortical.io","brief":"Cortical.io, an innovator in Natural Language Processing (NLP), announces its next venture capital round. In this third round, Cortical.io opens its capital to a new investor from the US, a fund affiliated with Open Field Capital","date":"2015/10/29","featured":false,"image":"../images/prweb.png","link":"http://www.prweb.com/releases/corticalio/3rdcapitalround/prweb13038027.htm","org":"PRWeb","tags":"cortical.io numenta nupic htm hierarchical temporal memory nlp natural language processing machine intelligence","title":"USD 1.8 Million for Cortical.io Brain-Inspired Algorithm Made in Austria","type":"link","body":""}
 
 /***/ },
-/* 1317 */
+/* 1329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "140b07ce6927f9bc6e2916a8030feda6.png";
 
 /***/ },
-/* 1318 */
+/* 1330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "100523f46754d36d9483b933e4fc99b2.png";
 
 /***/ },
-/* 1319 */
+/* 1331 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, CA –November 10, 2015— Numenta, Inc., a leader in machine intelligence, today launched the Numenta Anomaly Benchmark (NAB), an open-source benchmark and tool designed to help data","date":"2015/11/10","featured":false,"image":"../images/image.png","link":null,"org":"Press Release","tags":"numenta anomaly benchmark nab evaluate anomaly detection techniques on real-time streaming data","title":"Numenta Anomaly Benchmark Evaluates Anomaly Detection Techniques for Real-time, Streaming Data","type":"post","body":"<h3>Open Source Tool Tests Effectiveness of Algorithms on IoT Data</h3>\n<p>REDWOOD CITY, CA –November 10, 2015— <a href=\"/\">Numenta</a>, Inc., a leader in machine\nintelligence, today launched the\n<a href=\"/numenta-anomaly-benchmark/\">Numenta Anomaly Benchmark (NAB)</a>, an\nopen-source benchmark and tool designed to help data researchers evaluate the\neffectiveness of algorithms for anomaly detection in streaming,\nreal-time applications.</p>\n<p>Anomalies in streaming data are patterns that do not conform to past patterns of\nbehavior for a given data stream. Until now, no benchmark has existed to\nevaluate anomaly detection in real-time streaming data.</p>\n<p>NAB will be publicly unveiled on November 13 during\n<a href=\"http://mlconf.com/events/san-francisco-ca/\">MLconf</a> in San Francisco in a\npresentation by Numenta Research VP Subutai Ahmad, “Real-time Anomaly Detection\nfor Real-time Data Needs.” A peer-reviewed paper on NAB also was accepted by the\n<a href=\"http://www.icmla-conference.org/icmla15/\">IEEE Conference on Machine Learning and Applications</a>\nand will be presented during the conference on December 9-11 in Miami.</p>\n<h4>The Need for Anomaly Detection in Time-Series Data</h4>\n<p>Explosive growth in streaming data is happening across industries, largely\ndriven by the rise of the Internet of Things (IoT) and the proliferation of\nconnected real-time data sources and applications with sensors producing waves\nof data. Voluminous amounts of this data are being stored for later analysis,\nthough it often isn’t necessary or practical to capture and store all the\ninformation. Instead, data analysts need a way to analyze time-series data in\nreal time, identify when something is different and act upon that insight.</p>\n<p>Different approaches are being pursued to solve this problem, in the form of\nanomaly detection algorithms. But until now, a measurement to gauge the\neffectiveness of real-time anomaly detection algorithms has been lacking. With\nthis goal in mind, Numenta created NAB.</p>\n<p>“There is an explosion in real-time streaming data sources.  Data owners want to\nbe able to model this data and figure out if anything has changed,” commented\nNumenta CEO Donna Dubinsky.  “We created this open benchmark as a tool to help\ndata scientists evaluate the effectiveness of different algorithms in finding\nanomalous behavior in these data streams.”</p>\n<p>Early anomaly detection in streaming data has practical and significant\napplications across many industries – from monitoring critical IT infrastructure\nto detecting potential fraudulent financial transactions, from understanding\nenergy consumption to geo-tracking of vehicles in logistics networks.</p>\n<h4>The Numenta Anomaly Benchmark</h4>\n<p>NAB is an open source framework that was created to help data professionals\ntest, score and evaluate anomaly detection algorithms on time-series data and to\ncompare their internal anomaly detection techniques to published algorithms.</p>\n<p>NAB also allows people to test their algorithms against Numenta’s HTM detector,\nwhich is based on Numenta’s Hierarchical Temporal Memory technology. It uses a\nbiologically inspired memory prediction algorithm to model real-time data\nstreams and continuously learns.</p>\n<p>The major components to the NAB framework include:</p>\n<ul>\n<li>Real-world data. Includes 58 labeled streaming data files that are a\ncombination of real-world data sets along with some simulated datasets. All\nanomalies are marked.</li>\n<li>Anomaly windows. These are defined ranges of data points that surround a known\nanomaly label. NAB uses these windows to decide whether, and how early, an\nalgorithm detected each anomaly.</li>\n<li>A scoring mechanism. Scoring is specifically designed for streaming data and\nrewards early detection.</li>\n</ul>\n<p>“NAB’s emphasis on anomaly windows and early detection is pioneering. In\naddition the research community stands to benefit greatly from an open dataset\ncontaining real world data, and an open source tool for measuring the\neffectiveness of real-time anomaly detection algorithms,” said Varun Chandola,\nAssistant Professor in Computer Science and Engineering, SUNY Buffalo.</p>\n<p>“Having a standard benchmark could spur innovation in real-time anomaly\ndetection algorithms. Our hope is the open source community will add new data\nsets, propose different scoring mechanisms, and test and compare other\nalgorithms with our HTM algorithms,” said Dubinsky.</p>\n<p>For more detailed information on NAB, go to:</p>\n<p><strong>NAB Peer-Reviewed Research Paper</strong> <br/> <t render=\"hbs\">\n{{site.paths.ext.paper.nab}}\n</t></p>\n<p><strong>NAB Business White Paper</strong> <br/>\n<a href=\"http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf\">http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf</a></p>\n<p><strong>Numenta Anomaly Benchmark Repository</strong> <br/>\n<a href=\"https://github.com/numenta/NAB\">https://github.com/numenta/NAB</a></p>\n<p><strong>Algorithm &amp; product code</strong> <br/>\n<a href=\"http://numenta.org\">http://numenta.org</a></p>\n<h4>About Numenta</h4>\n<p>Founded in 2005, Numenta has developed a cohesive theory, core software\ntechnology, and numerous applications all based on principles of the neocortex.\nLaying the groundwork for the new era of machine intelligence, this technology\nis ideal for large-scale analysis of continuously streaming data sets and excels\nat modeling and predicting patterns in data. Numenta has also developed a suite\nof products and demonstration applications that utilize its flexible and\ngeneralizable HTM learning algorithms to provide solutions that encompass the\nfields of machine generated data, human behavioral modeling, geo-location\nprocessing, semantic understanding and sensory-motor control. In addition,\nNumenta has created\n<a href=\"http://numenta.org\">NuPIC (Numenta Platform for Intelligent Computing)</a> as an\nopen source project. <a href=\"/\">Numenta</a> is based in Redwood City, California.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<p><strong>Numenta Media Contact:</strong> <br/>\nBetty Taylor <br/>\nKrause Taylor Associates <br/>\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a> <br/>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p><a href=\"http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques\">http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques</a></p>\n"}
 
 /***/ },
-/* 1320 */
-1134,
-/* 1321 */
+/* 1332 */
+1146,
+/* 1333 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Emerging Technology","brief":"Biologists have long puzzled over why neurons have thousands of synapses. Now neuroscientists have shown they are crucial not just for recognizing patterns but for learning the sequence in which they appear.","date":"2015/11/12","featured":false,"image":"../images/mit-technology-review.png","link":"http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/","org":"MIT Technology Review","tags":"numenta artificial neuron taught to recognize patterns htm neuron synapse dendrite axon proximal distal","title":"Single Artificial Neuron Taught to Recognize Hundreds of Patterns","type":"link","body":""}
 
 /***/ },
-/* 1322 */
+/* 1334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "025f642657586a08e95252b873f7ddcd.png";
 
 /***/ },
-/* 1323 */
+/* 1335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b2bd405c3d3d483eceffb3efa161147e.png";
 
 /***/ },
-/* 1324 */
+/* 1336 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"U.S. & Politics Retro Report","brief":"(VIDEO) What the legendary matches between supercomputer Deep Blue and chess grandmaster Garry Kasparov reveal about today’s artificial intelligence and machine learning fears.","date":"2016/03/07","featured":false,"image":"../images/the-new-york-times.png","link":"http://www.nytimes.com/video/us/100000004255656/the-terminator-and-the-washing-machine.html?action=click&gtype=vhs&version=vhs-heading&module=vhs&region=title-area","org":"The New York Times","tags":"numenta jeff hawkins terminator and the washing machine the new york times us politics retro report video supercomputer","title":"The Terminator and the Washing Machine","type":"link","body":""}
 
 /***/ },
-/* 1325 */
+/* 1337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ce5b6e9e95b8aceb1ab2b52ba4b0c143.jpg";
 
 /***/ },
-/* 1326 */
+/* 1338 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, CA –April 12, 2016— How do our brains learn and understand the world? That question is of paramount importance to both neuroscientists and technologists who want to build intelligent machines.","date":"2016/04/12","featured":false,"hideImage":true,"image":"../images/image.jpg","link":null,"org":"Press Release","tags":"numenta neuron research paper published discover brain learns sequences key machine intelligence systems pattern theory","title":"Numenta Researchers Discover How The Brain Learns Sequences, A Key to Intelligent Systems","type":"post","body":"<blockquote>\n<p>Numenta’s theory of how the brain learns and understands sequences of patterns\nmay be an essential component for creating intelligent machines</p>\n</blockquote>\n<p>REDWOOD CITY, CA –April 12, 2016— How do our brains learn and understand the\nworld? That question is of paramount importance to both neuroscientists and\ntechnologists who want to build intelligent machines.</p>\n<p>It has been understood for over a hundred years that the inputs and outputs of\nthe brain are constantly changing sequences of patterns and therefore learning\nand recalling sequences must be a fundamental operation of neurons. Numerous\nproposals have been made for how neural networks might learn sequences. However,\nthese proposals did not match the anatomy and function observed in the brain.</p>\n<p>Now, researchers at <a href=\"/\">Numenta Inc.</a> have published a new theory that\nrepresents a breakthrough in understanding how networks of neurons in the\nneocortex learn sequences. A paper, authored by Numenta co-founder Jeff Hawkins\nand VP of Research Subutai Ahmad, <a href=\"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full\">“Why Neurons Have Thousands of Synapses, A\nTheory of Sequence Memory in Neocortex,”</a>*\nhas been published in the Frontiers in Neural Circuits Journal, a publication\ndevoted to research in neural circuits, serving the worldwide neuroscience\ncommunity.</p>\n<p>“This study is a key milestone on the path to achieving that long-sought goal of\ncreating truly intelligent machines that simulate human cerebral cortex and\nforebrain system operations,” commented Michael Merzenich, PhD, Professor\nEmeritus UCSF, Chief Scientific Officer for Posit Science.</p>\n<p>The Numenta paper introduces two advances. First, it provides an explanation of\nwhy neurons in the neocortex have thousands of synapses, and why the synapses\nare segregated onto different parts of the cell, called dendrites. The authors\npropose that the majority of these synapses are used to learn transitions of\npatterns, a feature missing from most artificial neural networks. Second, the\nauthors show that neurons with these properties, arranged in layers and\ncolumns - a structure observed throughout the neocortex - form a powerful\nsequence memory. This suggests the new sequence memory algorithm could be a\nunifying principle for understanding how the neocortex works. Through\nsimulations, the authors show the new sequence memory exhibits a number of\nimportant properties such as the ability to learn complex sequences, continuous\nunsupervised learning, and extremely high fault tolerance.</p>\n<img src=\"../images/image.jpg\" class=\"center-block img-responsive media-border\" alt=\"Neuron image\" />\n<div class=\"caption\">\n  **Comparison of Biological and Artificial Neuron Models:**\n  The Hawkins-Ahmad paper on the theory of sequence memory in the neocortex\n  proposes a model of cortical neurons that explains why they have thousands of\n  synapses, why the synapses are segregated onto different parts of the\n  dendrites, and how neurons integrate this input in a functionally meaningful\n  way. This diagram draws a comparison between the human neocortical pyramidal\n  neuron, the HTM biologically-inspired neuron model, and the model used in most\n  mathematically-inspired artificial neural networks and Deep Learning models\n  today.\n</div>\n<p>“Our paper makes contributions in both neuroscience and machine learning,”\nHawkins noted. “From a neuroscience perspective, it offers a computational model\nof pyramidal neurons, explaining how a neuron can effectively use thousands of\nsynapses and computationally active dendrites to learn sequences. From a machine\nlearning and computer science perspective, it introduces a new sequence memory\nalgorithm that we believe will be important in building intelligent machines.”</p>\n<p>“This research extends the work Jeff first outlined in his 2004 book On\nIntelligence and encompasses many years of research we have undertaken here at\nNumenta,” said Ahmad, “It explains the neuroscience behind our HTM (Hierarchical\nTemporal Memory) technology and makes several detailed predictions that can be\nexperimentally verified. The software we have created proves that the theory\nactually works in real world applications.”</p>\n<p>Numenta’s primary goal is to reverse engineer the neocortex, to understand the\ndetailed biology underlying intelligence. The Numenta team also believes this is\nthe quickest route to creating machine intelligence. As a result of this\napproach, the neuron and network models described in the new paper are\nstrikingly different than the neuron and network models being used in today’s\ndeep learning and other artificial neural networks. Functionally, the new theory\naddresses several of the biggest challenges confronting deep learning today,\nsuch as the lack of continuous and unsupervised learning.</p>\n<div class=\"caption\">\n  * Hawkins, J., and Ahmad, S. (2016). Why Neurons Have Thousands of Synapses, A\n  Theory of Sequence Memory in Neocortex. Front. Neural Circuits 10.\n  doi:10.3389/fncir.2016.00023\n</div>\n<h4>About Frontiers in Neural Circuits</h4>\n<p>Frontiers is a leading open-access publisher. Established in 2007, Frontiers\ndrives innovations in peer review, post-publication review, impact metrics, and\nan ecosystem of open-science tools. Frontiers has published over 43,000 articles\nacross 55 journals and over 400 disciplines, which receive 4 million monthly\nviews, and are supported by over 210,000 researchers.</p>\n<h4>About Numenta</h4>\n<p>Founded in 2005, Numenta develops theory, software technology, and applications\nall based on reverse engineering the neocortex. Laying the groundwork for the\nnew era of machine intelligence, this technology is ideal for analysis of\ncontinuously streaming data sets and excels at modeling and predicting patterns\nin data. Numenta has also developed a suite of products and demonstration\napplications that utilize its flexible and generalizable\n<a href=\"/#technology\">Hierarchical Temporal Memory (HTM)</a> learning algorithms to\nprovide solutions that encompass the fields of machine generated data, human\nbehavioral modeling, geo-location processing, semantic understanding and\nsensory-motor control.</p>\n<p>In addition, Numenta has created\n<a href=\"http://numenta.org\">NuPIC (Numenta Platform for Intelligent Computing)</a>\nas an open source project. <a href=\"/\">Numenta</a> is based in Redwood City, California.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<p><strong>Numenta Media Contact:</strong> <br/>\nBetty Taylor <br/>\nKrause Taylor Associates <br/>\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a> <br/>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n"}
 
 /***/ },
-/* 1327 */
+/* 1339 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Tiejun Huang","brief":"The IEEE Computer Society’s 2022 Report, which was released through the Computing Now site in 2014, presents insights from tech leaders to explore what our world might look like in 2022. Among its findings, the report predicts an integrated network of smart devices, which it calls “seamless intelligence,” that will be able to directly interface with our brain waves.","date":"2016/05/01","featured":false,"image":"../images/computing-now.png","link":"https://www.computer.org/web/computingnow/archive/brain-like-computing-may-2016","org":"Computing Now","tags":"numenta brain-like computing ieee computer society 2022 report computing now smart devices seamless intelligence brain waves","title":"Brian-Like Computing","type":"link","body":""}
 
 /***/ },
-/* 1328 */
+/* 1340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3d047a5ecde4d6056a4954e530cfa520.png";
 
 /***/ },
-/* 1329 */
+/* 1341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4c092ea422e4f175c78cda88100500ae.png";
 
 /***/ },
-/* 1330 */
+/* 1342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "5ebcc93c1102e7f487854ba4c496803f.png";
 
 /***/ },
-/* 1331 */
+/* 1343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "144caaf043afff669e387a058fed108f.png";
 
 /***/ },
-/* 1332 */
+/* 1344 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Don Clark","brief":"Massachusetts General Hospital recently established a center in Boston that plans to use Nvidia chips to help an artificial-intelligence system spot anomalies on CT scans and other medical images, jobs now carried out by human radiologists. The project, drawing on a database of 10 billion existing images","date":"2016/05/22","featured":false,"image":"../images/wall-street-journal.png","link":"http://www.wsj.com/articles/new-chips-propel-machine-learning-1463957238","org":"Wall Street Journal","tags":"nvidia microchip ct scan numenta machine learning","title":"New Chips Propel Machine Learning","type":"link","body":""}
 
 /***/ },
-/* 1333 */
+/* 1345 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Ryan Hawk","brief":"Donna Dubinsky was made famous by the Harvard Business School study about the time when she disagreed with Steve Jobs (when he decided that Apple should eliminate their distribution warehouses).  She ultimately prevailed and we discussed what happened next in her incredible career.  We had a fascinating conversation on this episode of The Learning Leader Show.","date":"2016/05/29","featured":false,"image":"../images/learning-leader.png","link":"http://learningleader.com/episode-128-donna-dubinsky-standing-up-to-steve-jobs-and-being-right/","org":"Learning Leader","tags":"learning leader donna dubinsky standing up to steve jobs being right ryan hawk numenta","title":"Donna Dubinsky – Standing Up To Steve Jobs And Being Right","type":"link","body":""}
 
 /***/ },
-/* 1334 */
+/* 1346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9ca8ab49304b7313fb9b6592cbbe7a70.png";
 
 /***/ },
-/* 1335 */
+/* 1347 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Charlotte Jee","brief":"Thanks to its role underpinning many of the recent advances in artificial intelligence, machine learning has become of mainstream interest to many technologists and developers. Here we’ll explain what it is, how you can get started plus the best tools and languages you need to develop machine learning technology.","date":"2016/06/16","featured":false,"image":"../images/techworld.png","link":"http://www.techworld.com/tutorial/apps/everything-uk-developers-need-know-about-machine-learning-3641971/","org":"Techworld","tags":"developers machine learning numenta htm hierarchical temporal memory machine intelligence","title":"Here's what UK Developers Need to Know about Machine Learning","type":"post","body":""}
 
 /***/ },
-/* 1336 */
-1264,
-/* 1337 */
-1265,
-/* 1338 */
+/* 1348 */
+1276,
+/* 1349 */
+1277,
+/* 1350 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Tom Standage","brief":"How has artificial intelligence, associated with hubris and disappointment since its earliest days, suddenly become the hottest field in technology? The term was coined in a research proposal written in 1956 which suggested that significant progress could be made in getting machines to “solve the kinds of problems now reserved for humans","date":"2016/06/25","featured":false,"image":"../images/economist.png","link":"http://www.economist.com/news/special-report/21700756-artificial-intelligence-boom-based-old-idea-modern-twist-not","org":"Economist","tags":"from not working neural networking economist numenta artificial machine intelligence","title":"From Not Working to Neural Networking","type":"link","body":""}
 
 /***/ },
-/* 1339 */
+/* 1351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "79d9bef821ae98be0f12058e61db321b.png";
 
 /***/ },
-/* 1340 */
+/* 1352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9ef01d113c890608327015be131199d9.png";
 
 /***/ },
-/* 1341 */
-1142,
-/* 1342 */
-1143,
-/* 1343 */
+/* 1353 */
+1154,
+/* 1354 */
+1155,
+/* 1355 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, Calif. --(BUSINESS WIRE)-- Numenta, Inc., a leader in machine intelligence, today announced the release of HTM Studio for anomaly detection, a desktop tool that makes it easy for businesses to experiment with advanced machine intelligence algorithms to uncover anomalies in their streaming data.","date":"2016/06/26","featured":false,"image":"../images/htm-studio.png","link":null,"org":"Press Release","tags":"numenta releases htm studio business wire machine intelligence find anomalies streaming data","title":"Numenta Releases HTM Studio","type":"post","body":"<h3>HTM Studio - Uncover anomalies in your streaming data</h3>\n<p>REDWOOD CITY, Calif.–(BUSINESS WIRE)-- <a href=\"/\">Numenta</a>, Inc., a leader in machine\nintelligence, today announced the release of HTM Studio for anomaly detection, a\ndesktop tool that makes it easy for businesses to experiment with advanced\nmachine intelligence algorithms to uncover anomalies in their streaming data.\nSimply add numeric, time-series data files to HTM Studio and with the click of a\nbutton, discover and visualize within minutes what anomalies can be found.</p>\n<blockquote>\n<p>#Numenta #HTMStudio for anomaly detection makes it easy to experiment with\nadvanced machine intelligence</p>\n</blockquote>\n<p>HTM Studio is based on Numenta’s HTM (Hierarchical Temporal Memory) biologically\ninspired machine intelligence technology. HTM learns time-based patterns in\nunlabeled streaming data, making it ideal for prediction, classification and\nanomaly detection. Because of its ability to perform continuous, unsupervised\nlearning, HTM can find subtle, temporal anomalies that other techniques cannot\nfind.</p>\n<p>&quot;I was impressed with the ease of use and how quickly it is to iterate on\ntesting a variety of data streams. The HTM was able to pick out and forecast the\nneedle I was interested in, within a haystack of needles,” commented early beta\ntester Vaughn DiMarco, Lead Data Science Consultant at Montreal-based\nVONALYTICS.</p>\n<p>HTM Studio provides an easy way for businesses interested in using Numenta’s\ntechnology for anomaly detection to undertake a proof of concept securely using\ntheir own data. If HTM Studio finds interesting anomalies, then a user can do a\nfull implementation or deployment of HTM.</p>\n<p>“Detecting anomalies early in streaming data can have significant value, but\nit’s difficult to do. We wanted to make it easy to try HTM on your own streaming\ndata,” said Donna Dubinsky, CEO of Numenta. “With HTM Studio, no coding skills\nare required. Parameters are automatically set. In a matter of minutes, you can\nvisualize anomalies in your datasets.”</p>\n<p>For those who don’t have streaming data readily available, HTM Studio includes\npre-loaded datasets for experimentation. Sample datasets include a variety of\nuse cases: IoT sensors, preventative maintenance, tracking vehicles and network\nservers.</p>\n<p>The tool is available at no charge for Mac and Windows desktop systems. Go to\n<a href=\"http://numenta.com/htm-studio/\">http://numenta.com/htm-studio/</a> for details and to get started with HTM Studio.</p>\n<p>To learn more about HTM go to <a href=\"http://numenta.com\">http://numenta.com</a>.</p>\n<h3>About Numenta</h3>\n<p>Founded in 2005, Numenta has developed a cohesive theory, core software\ntechnology, and numerous applications all based on principles of the neocortex.\nLaying the groundwork for the new era of machine intelligence, this technology\nis ideal for large-scale analysis of continuously streaming data sets and excels\nat modeling and predicting patterns in data. Numenta has also developed a suite\nof demonstration applications that utilize its flexible and generalizable HTM\nlearning algorithms to provide solutions that encompass the fields of machine\ngenerated data, human behavioral modeling, geo-location processing, semantic\nunderstanding and sensory-motor control. In addition, Numenta has created\n<a href=\"http://numenta.org\">NuPIC</a> (Platform for Intelligent Computing) as an open\nsource project. <a href=\"/\">Numenta</a> is based in Redwood City, California.</p>\n<p>Numenta Media Contact: <br/>\nKrause Taylor Associates,\nBetty Taylor:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Connect with Numenta: <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>\n</t></p>\n<p><a href=\"http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio\">http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio</a></p>\n"}
 
 /***/ },
-/* 1344 */
-1275,
-/* 1345 */
-1276,
-/* 1346 */
+/* 1356 */
+1287,
+/* 1357 */
+1288,
+/* 1358 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Kara Swisher","brief":"On the latest episode of Recode Decode, hosted by Kara Swisher, the co-founders of Numenta (who previously co-founded Palm and Handspring) predicted AI will indeed drive technological advances for the rest of the century","date":"2016/06/27","featured":false,"image":"../images/recode.png","link":"http://www.recode.net/2016/6/27/12037248/artificial-intelligence-machine-learning-numenta-jeff-hawkins-donna-dubinsky-podcast","org":"Re/Code","tags":"your fears about artificial intelligence are wrong recode podcast kara swisher jeff hawkins donna dubinsky numenta machine intelligence","title":"This Is Why Your Fears About Artificial Intelligence Are Wrong","type":"link","body":""}
 
 /***/ },
-/* 1347 */
+/* 1359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d074d6ca361e92237d809c07c90b2cbc.png";
 
 /***/ },
-/* 1348 */
+/* 1360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d03e106a2ce9bce7f7021ad06d449045.png";
 
 /***/ },
-/* 1349 */
+/* 1361 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Kypriani Sinaris","brief":"Note: original article published in German. Machine Learning is the new formula for what we once called Artificial Intelligence. In our Thematic Dossier we feel the new trend and introduce current ML solutions, including the Numenta platform for intelligent computing, ...and, the Natural Language Processing Project Cortical.io.","date":"2016/07/26","featured":false,"image":"../images/jaxenter.png","link":"https://jaxenter.de/machine-learning-experten-check-43830","org":"Jaxenter","tags":"machine learning expore check six tips getting started machine learning numenta htm hierarchical temporal memory cortical","title":"Machine Learning Expert Check: 6 Tips for Getting Started in the Machine Learning","type":"link","body":""}
 
 /***/ },
-/* 1350 */
+/* 1362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -81589,7 +82220,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _PostListItem = __webpack_require__(895);
+	var _PostListItem = __webpack_require__(897);
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
@@ -81634,7 +82265,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1351 */
+/* 1363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -81695,9 +82326,9 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1352 */
-1179,
-/* 1353 */
+/* 1364 */
+1191,
+/* 1365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
