@@ -45,7 +45,7 @@ const NabPage = () => (
             The First Benchmark For Evaluating Anomaly Detection In Streaming
             Data
           </SubTitle>
-          <Paragraph>
+          <Paragraph lead={true}>
             The Internet of Things has produced a world that’s overflowing
             with streaming data. As these data sources continue to grow, so
             does the need for anomaly detection. Uncovering anomalies allows

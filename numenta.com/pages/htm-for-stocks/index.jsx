@@ -48,7 +48,7 @@ const HtmStocksPage = (props, {config}) => {
               Find anomalies in publicly traded stocks using trading and
               Twitter data.
             </SubTitle>
-            <Paragraph>
+            <Paragraph lead={true}>
               HTM for Stocks is an example HTM application that continually
               monitors hundreds of publicly traded companies and alerts you if
               something unusual is happening to any of them. HTM for Stocks uses

@@ -1,3 +1,17 @@
+._icon {
+  composes: relative from 'tachyons';
+  composes: top--1 from 'tachyons';
+  composes: color-blue-mute from '../../static/assets/css/theme.css';
+}
+.iconSmall {
+  composes: _icon;
+  font-size: 5rem;
+}
+.iconLarge {
+  composes: _icon;
+  font-size: 10rem;
+}
+
 .columns {
   composes: layout-columns from '../../static/assets/css/theme.css';
 }
@@ -13,19 +27,46 @@
 }
 
 
+/* hero + download */
+
+.tagline {
+  composes: mb2 from 'tachyons';
+}
+
+.row {
+  composes: mv3 from 'tachyons';
+}
+
+.download {
+  composes: mb4 from 'tachyons';
+  composes: mt3 from 'tachyons';
+  composes: tc from 'tachyons';
+}
+
 .agree {
   composes: ml2 from 'tachyons';
+}
+
+.error {
+  composes: color-danger from '../../static/assets/css/theme.css';
 }
 
 .hide {
   composes: dn from 'tachyons';
 }
 
-.icon {
-  composes: relative from 'tachyons';
-  composes: top--1 from 'tachyons';
-  composes: color-blue-mute from '../../static/assets/css/theme.css';
-  font-size: 5rem;
+.notes {
+  composes: f5 from 'tachyons';
+  composes: mh3-m from 'tachyons';
+  composes: mh4 from 'tachyons';
+  composes: silver from 'tachyons';
+}
+
+
+/* uses, features, faq, etc. */
+
+.pad {
+  composes: mt4 from 'tachyons';
 }
 
 .column {
@@ -35,7 +76,14 @@
   composes: tc from 'tachyons';
   composes: w-50 from 'tachyons';
 }
+.column h3 {
+  width: 100%;
+}
 
-.pad {
-  composes: mt4 from 'tachyons';
+.faq {
+  /* */
+}
+.faq strong {
+  display: block;
+  margin-bottom: -0.75rem;
 }

@@ -22,5 +22,5 @@
   composes: mh3 from 'tachyons';
   composes: relative from 'tachyons';
   composes: w1 from 'tachyons';
-  top: 0.5rem;
+  top: 0.4rem;
 }

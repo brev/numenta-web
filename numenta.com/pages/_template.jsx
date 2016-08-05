@@ -35,8 +35,7 @@ class Template extends React.Component {
   }
 
   componentDidMount() {
-    // remove @ React 1.0
-    if (window) injectTapEventPlugin()  // eslint-disable-line no-undef
+    if (global.window) injectTapEventPlugin()  // remove @ React 1.0
   }
 
   render() {

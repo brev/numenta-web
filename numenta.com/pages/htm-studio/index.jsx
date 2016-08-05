@@ -35,6 +35,12 @@ import ImageVideoIntro from './images/video-intro.png'
 import ImageVideoWalkthru from './images/video-walkthru.png'
 import styles from './index.css'
 
+const sortFaqs = (a, b) => {
+  if (a.data.sort > b.data.sort) return 1
+  if (a.data.sort < b.data.sort) return -1
+  return 0
+}
+
 
 /**
  *
@@ -45,14 +51,16 @@ const HtmStudioPage = (props, {config, route}) => {
   const faqs = pages.filter(({file}) => (
     (file.path.match(/^htm\-studio\/faq\/.*\.md/))
   ))
-  const faq = faqs.sort().map(({data, file}) => (
-    <ListItem id={file.stem} key={file.stem}>
+  const faq = faqs.sort(sortFaqs).map(({data, file}) => (
+    <div key={file.stem}>
       <Anchor name={file.stem} />
-      <Strong>{data.title}</Strong>
+      <Strong>
+        {data.title}
+      </Strong>
       <Paragraph>
         <span dangerouslySetInnerHTML={{__html: data.body}} />
       </Paragraph>
-    </ListItem>
+    </div>
   ))
 
   return (
@@ -64,50 +72,60 @@ const HtmStudioPage = (props, {config, route}) => {
       >
         <div className={styles.columns}>
           <div className={styles.content}>
-            <SubTitle level={3}>
-              Find Real-Time Anomalies in your Streaming Data
-            </SubTitle>
+            <div className={styles.tagline}>
+              <SubTitle level={3}>
+                  Find Real-Time Anomalies in your Streaming Data
+              </SubTitle>
+            </div>
             <Paragraph lead={true}>
               HTM Studio allows you to test whether our Hierarchical Temporal
               Memory (HTM) algorithms will find anomalies in your data. With
               just one click, you can uncover anomalies other techniques cannot
               find in your numeric, time-series data, in minutes.
             </Paragraph>
-            <Form>
-              <FormCheckbox name="terms-accepted" />
-              <span className={styles.agree}>
-                I agree to the {' '}
-                <TextLink to={`${links.in.htmstudio}terms/`}>
-                  Terms and Conditions
-                </TextLink>
-              </span>
-            </Form>
-            <div className={styles.hide}>
-              Please agree to the {' '}
-              <TextLink to={`${links.in.htmstudio}terms/`}>
-                Terms and Conditions
-              </TextLink> {' '}
-              before downloading.
+            <div className={styles.download}>
+              <Form>
+                <div className={styles.row}>
+                  <FormCheckbox name="terms-accepted" />
+                  <span className={styles.agree}>
+                    I agree to the {' '}
+                    <TextLink to={`${links.in.htmstudio}terms/`}>
+                      Terms and Conditions
+                    </TextLink>
+                  </span>
+                </div>
+                <div
+                  className={classNames(styles.row, styles.error, styles.hide)}
+                >
+                  Please agree to the {' '}
+                  <TextLink to={`${links.in.htmstudio}terms/`}>
+                    Terms and Conditions
+                  </TextLink> {' '}
+                  before downloading.
+                </div>
+                <Button theme="primary" type="button">
+                  Download HTM Studio
+                </Button>
+              </Form>
             </div>
-            <Button theme="primary">
-              Download HTM Studio
-            </Button>
-            <List marker="disc">
-              <ListItem>
-                Available on Desktop only, for Mac OS/X and Windows (64 bit
-                versions).
-              </ListItem>
-              <ListItem>
-                Installation on Windows will take several minutes.
-              </ListItem>
-              <ListItem>
-                Windows 10 users, {' '}
-                <TextLink to={`${links.in.htmstudio}windows/`}>
-                  click here
-                </TextLink> {' '}
-                for further information.
-              </ListItem>
-            </List>
+            <div className={styles.notes}>
+              <List marker="disc">
+                <ListItem>
+                  Available on Desktop only, for Mac OS/X and Windows (64 bit
+                  versions).
+                </ListItem>
+                <ListItem>
+                  Installation on Windows will take several minutes.
+                </ListItem>
+                <ListItem>
+                  Windows 10 users, {' '}
+                  <TextLink to={`${links.in.htmstudio}windows/`}>
+                    click here
+                  </TextLink> {' '}
+                  for further information.
+                </ListItem>
+              </List>
+            </div>
           </div>
           <div className={styles.aside}>
             <Video
@@ -118,81 +136,6 @@ const HtmStudioPage = (props, {config, route}) => {
               type="youtube"
               videoId="Nqoruj4eCb8"
             />
-          </div>
-        </div>
-
-        <Anchor name="features" />
-        <SubTitle>
-          Features
-        </SubTitle>
-        <div className={styles.columns}>
-          <div className={styles.content}>
-            <SubTitle level={3}>
-              No Coding Skills Required
-            </SubTitle>
-            <Paragraph>
-              Skip the hassle of setting parameters. Discover anomalies with one
-              click.
-            </Paragraph>
-          </div>
-          <div className={classNames(styles.aside, styles.icon)}>
-            <IconBullseye />
-          </div>
-        </div>
-        <div className={styles.columns}>
-          <div className={styles.content}>
-            <SubTitle level={3}>
-              Data Privacy
-            </SubTitle>
-            <Paragraph>
-              Add local CSV (comma-separated value) files quickly with no upload
-              or privacy issues.
-            </Paragraph>
-          </div>
-          <div className={classNames(styles.aside, styles.icon)}>
-            <IconLock />
-          </div>
-        </div>
-        <div className={styles.columns}>
-          <div className={styles.content}>
-            <SubTitle level={3}>
-              Run Simultaneous Models
-            </SubTitle>
-            <Paragraph>
-              Run multiple data streams simultaneously and compare discovered
-              anomalies.
-            </Paragraph>
-          </div>
-          <div className={classNames(styles.aside, styles.icon)}>
-            <IconCubes />
-          </div>
-        </div>
-        <div className={styles.columns}>
-          <div className={styles.content}>
-            <SubTitle level={3}>
-              Summarized Results
-            </SubTitle>
-            <Paragraph>
-              Visualize and export your results.
-            </Paragraph>
-          </div>
-          <div className={classNames(styles.aside, styles.icon)}>
-            <IconBarChart />
-          </div>
-        </div>
-        <div className={styles.columns}>
-          <div className={styles.content}>
-            <SubTitle level={3}>
-              Pre-Loaded Datasets
-            </SubTitle>
-            <Paragraph>
-              Don’t have your own data readily available? Experiment with our
-              pre-loaded datasets, and see how HTM can be applied to a variety
-              of use cases.
-            </Paragraph>
-          </div>
-          <div className={classNames(styles.aside, styles.icon)}>
-            <IconFolder />
           </div>
         </div>
 
@@ -258,6 +201,81 @@ const HtmStudioPage = (props, {config, route}) => {
           </div>
         </div>
 
+        <Anchor name="features" />
+        <SubTitle>
+          Features
+        </SubTitle>
+        <div className={styles.columns}>
+          <div className={styles.content}>
+            <SubTitle level={3}>
+              No Coding Skills Required
+            </SubTitle>
+            <Paragraph>
+              Skip the hassle of setting parameters. Discover anomalies with one
+              click.
+            </Paragraph>
+          </div>
+          <div className={classNames(styles.aside, styles.iconSmall)}>
+            <IconBullseye />
+          </div>
+        </div>
+        <div className={styles.columns}>
+          <div className={styles.content}>
+            <SubTitle level={3}>
+              Data Privacy
+            </SubTitle>
+            <Paragraph>
+              Add local CSV (comma-separated value) files quickly with no upload
+              or privacy issues.
+            </Paragraph>
+          </div>
+          <div className={classNames(styles.aside, styles.iconSmall)}>
+            <IconLock />
+          </div>
+        </div>
+        <div className={styles.columns}>
+          <div className={styles.content}>
+            <SubTitle level={3}>
+              Run Simultaneous Models
+            </SubTitle>
+            <Paragraph>
+              Run multiple data streams simultaneously and compare discovered
+              anomalies.
+            </Paragraph>
+          </div>
+          <div className={classNames(styles.aside, styles.iconSmall)}>
+            <IconCubes />
+          </div>
+        </div>
+        <div className={styles.columns}>
+          <div className={styles.content}>
+            <SubTitle level={3}>
+              Summarized Results
+            </SubTitle>
+            <Paragraph>
+              Visualize and export your results.
+            </Paragraph>
+          </div>
+          <div className={classNames(styles.aside, styles.iconSmall)}>
+            <IconBarChart />
+          </div>
+        </div>
+        <div className={styles.columns}>
+          <div className={styles.content}>
+            <SubTitle level={3}>
+              Pre-Loaded Datasets
+            </SubTitle>
+            <Paragraph>
+              Don’t have your own data readily available? Experiment with our
+              pre-loaded datasets, and see how HTM can be applied to a variety
+              of use cases.
+            </Paragraph>
+          </div>
+          <div className={classNames(styles.aside, styles.iconSmall)}>
+            <IconFolder />
+          </div>
+        </div>
+
         <Anchor name="start" />
         <SubTitle>
           Get Started
@@ -282,6 +300,28 @@ const HtmStudioPage = (props, {config, route}) => {
               title="HTM Studio Walk-through"
               type="youtube"
               videoId="a2hshyznLEE"
+            />
+          </div>
+        </div>
+        <div className={styles.columns}>
+          <div className={styles.content}>
+            <SubTitle level={3}>
+              Isolating Data Sources
+            </SubTitle>
+            <Paragraph>
+              CSV files must contain data that has only been generated from one
+              source. If you have multiple sources, you will need to split your
+              data by source and into separate CSV files.
+            </Paragraph>
+          </div>
+          <div className={styles.aside}>
+            <Video
+              image={ImageVideoDatasource}
+              respond="mw"
+              time="02:47"
+              title="Isolating Data Sources Tutorial"
+              type="youtube"
+              videoId="CRzWS52EdM0"
             />
           </div>
         </div>
@@ -339,28 +379,6 @@ const HtmStudioPage = (props, {config, route}) => {
             />
           </div>
         </div>
-        <div className={styles.columns}>
-          <div className={styles.content}>
-            <SubTitle level={3}>
-              Isolating Data Sources
-            </SubTitle>
-            <Paragraph>
-              CSV files must contain data that has only been generated from one
-              source. If you have multiple sources, you will need to split your
-              data by source and into separate CSV files.
-            </Paragraph>
-          </div>
-          <div className={styles.aside}>
-            <Video
-              image={ImageVideoDatasource}
-              respond="mw"
-              time="02:47"
-              title="Isolating Data Sources Tutorial"
-              type="youtube"
-              videoId="CRzWS52EdM0"
-            />
-          </div>
-        </div>
 
         <Anchor name="faq" />
         <SubTitle>
@@ -368,15 +386,11 @@ const HtmStudioPage = (props, {config, route}) => {
         </SubTitle>
         <div className={styles.columns}>
           <div className={styles.content}>
-            <Paragraph>
-              FAQ on HTM Studio and the underlying anomaly detection technology.
-              Includes links to other documents for more detailed information.
-            </Paragraph>
-            <List>
+            <div className={styles.faq}>
               {faq}
-            </List>
+            </div>
           </div>
-          <div className={classNames(styles.aside, styles.icon)}>
+          <div className={classNames(styles.aside, styles.iconLarge)}>
             <IconQuestion />
           </div>
         </div>
@@ -431,7 +445,8 @@ const HtmStudioPage = (props, {config, route}) => {
         <div className={styles.columns}>
           <div className={styles.content}>
             <Paragraph>
-              Provide your feedback on HTM Studio via the form below, or email {' '}
+              Provide your feedback on HTM Studio via the form below,
+              or email {' '}
               <TextLink to="mailto:htm-studio@numenta.com">
                 htm-studio@numenta.com
               </TextLink> {' '}

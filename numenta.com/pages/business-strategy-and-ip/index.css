@@ -26,6 +26,10 @@
 .faq {
   composes: _prefix;
 }
+.faq h4 {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
 
 .icon {
   composes: color-blue-mute from '../../static/assets/css/theme.css';

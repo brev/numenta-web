@@ -36,15 +36,21 @@ class Section extends React.Component {
   }
 
   _toggle() {
-    // const {url} = this.props
-    // const {router} = this.context
+    const {url} = this.props
     const open = !this.state.open
-    // let page
+    // const {router} = this.context
 
-    // if (open) page = url
-    // else page = '/'
+    // Handle dynamic url changes as sections are opened/closed.
+    //  Currently NOT using react-router, manual instead, to prevent re-renders.
+    if (open) {
+      global.window.history.pushState({}, '', url)
+      // router.push(url)
+    }
+    else {
+      global.window.history.back()
+      // router.goBack()
+    }
 
-    // router.push(page)
     this.setState({open})
   }
 

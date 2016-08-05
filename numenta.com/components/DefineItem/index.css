@@ -10,6 +10,7 @@
 .vertical {
   composes: mb3 from 'tachyons';
   composes: ml0 from 'tachyons';
+  composes: pl0 from 'tachyons';
 }
 
 

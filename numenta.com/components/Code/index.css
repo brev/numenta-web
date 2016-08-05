@@ -3,7 +3,7 @@
   composes: db from 'tachyons';
   composes: f6 from 'tachyons';
   composes: lh-copy from 'tachyons';
-  composes: mb4 from 'tachyons';
+  composes: mb3 from 'tachyons';
   composes: nowrap from 'tachyons';
   composes: overflow-auto from 'tachyons';
   composes: ph3 from 'tachyons';

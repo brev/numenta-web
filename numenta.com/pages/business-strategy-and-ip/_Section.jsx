@@ -292,21 +292,19 @@ const SectionBusiness = (props, {config}) => {
                 non-commercial use including publications, teaching, and
                 experimentation. We do ask that you provide appropriate
                 citations of our work.
-                <Paragraph>
-                  <Strong>
-                    End Reference Example
-                  </Strong>
-                  <Code>
-                    Hawkins, J. et al. 2016. Biological and Machine
-                    Intelligence.
-                    <br />
-                    &nbsp;&nbsp;
-                    Release 0.4. Accessed at
-                    <br />
-                    &nbsp;&nbsp;
-                    http://numenta.com/biological-and-machine-intelligence/.
-                  </Code>
-                </Paragraph>
+                <SubTitle level={4}>
+                  End Reference Example
+                </SubTitle>
+                <Code>
+                  Hawkins, J. et al. 2016. Biological and Machine
+                  Intelligence.
+                  <br />
+                  &nbsp;&nbsp;
+                  Release 0.4. Accessed at
+                  <br />
+                  &nbsp;&nbsp;
+                  http://numenta.com/biological-and-machine-intelligence/.
+                </Code>
                 <Paragraph>
                   If you are a corporate researcher who is applying this
                   technology to commercial use, then you will need to evaluate

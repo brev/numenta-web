@@ -6,7 +6,7 @@
   composes: shadow-1 from 'tachyons';
   composes: top-0 from 'tachyons';
   composes: w-100 from 'tachyons';
-  z-index: 999;
+  z-index: 800;
 }
 
 .header {

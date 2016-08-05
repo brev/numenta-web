@@ -1,6 +1,6 @@
 {
   "name": "Numenta.com",
-  "version": "0.2.37",
+  "version": "0.2.38",
   "description": "Numenta.com company website content, source code, and static generator tooling.",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "main": false,
@@ -38,7 +38,7 @@
     "darwin"
   ],
   "dependencies": {
-    "babel-core": "6.11.4",
+    "babel-core": "6.13.0",
     "babel-loader": "6.2.4",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-class-properties": "6.11.5",

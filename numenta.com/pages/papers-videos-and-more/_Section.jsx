@@ -20,10 +20,10 @@ const SectionPapers = (props, {config, route}) => {
   const {links} = config
   const {pages} = route
   const postsLearn = pages.filter(({file}) => (
-    (file.path.match(/^.*\/learn\/.*\.md/))
+    (file.path.match(/^papers\-videos.*\/learn\/.*\.md/))
   ))
   const postsPapers = pages.filter(({file}) => (
-    (file.path.match(/^.*\/papers\/.*\.md/))
+    (file.path.match(/^papers\-videos.*\/papers\/.*\.md/))
   ))
   const learn = postsLearn.sort(sortPostsDescend).map(({data, file, path}) => {
     const org = data.org ? (<div>{data.org}</div>) : ''
@@ -64,7 +64,7 @@ const SectionPapers = (props, {config, route}) => {
     <div className={styles.columns}>
       <div className={styles.content}>
 
-        <Paragraph>
+        <Paragraph lead={true}>
           To help you learn about our theory and technology, we have organized
           educational content below.
         </Paragraph>

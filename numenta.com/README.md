@@ -191,3 +191,6 @@ npm run build
 * WuFoo contact result from `/contact/thanks.html` to
     `/careers-team-and-contact/thanks/`
 * Migrate: `healthchecks/` `conf/` ... `out/`
+* JSX file order (import external, import internal lib, intenral components,
+    image/css)
+* yaml headmatter, quotes, escaping, etc
