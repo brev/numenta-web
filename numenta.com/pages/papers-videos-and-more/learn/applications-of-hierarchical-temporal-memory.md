@@ -4,12 +4,13 @@ brief: This video talk on Applications of Hierarchical Temporal Memory (HTM) was
 date: 2014/10/17
 image:
 link:
+media: video
 org: Software Engineer
 section: detail
 sort: e
 tags: numenta hierarchical temporal memory htm applications
 title: Applications of Hierarchical Temporal Memory (HTM)
-type: talk
+type: post
 ---
 
 This video talk on Applications of Hierarchical Temporal Memory (HTM) was

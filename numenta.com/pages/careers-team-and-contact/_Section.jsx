@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {sortPostsDescend} from '../../utils/universal'
+import {sortDateDescend} from '../../utils/universal'
 
 import Anchor from '../../components/Anchor'
 import Button from '../../components/Button'
@@ -58,7 +58,7 @@ const SectionCareers = (props, {config, route}) => {
   const posts = pages.filter(({file}) => (
     (file.path.match(/^.*\/careers\/.*\.md/))
   ))
-  const careers = posts.sort(sortPostsDescend).map(({data, file, path}) => (
+  const careers = posts.sort(sortDateDescend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
       <TextLink to={path}>
         {data.title}

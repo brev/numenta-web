@@ -4,12 +4,13 @@ brief: This video talk on Sparse Distributed Representations (SDR) covers a subs
 date: 2014/10/17
 image:
 link:
+media: video
 org: VP Research
 section: detail
 sort: g
 tags: numenta sparse distributed representations sdr brain data structure
 title: Sparse Distributed Representations - Our Brain's Data Structure
-type: talk
+type: post
 ---
 
 This video talk on Sparse Distributed Representations (SDR) covers a subset of

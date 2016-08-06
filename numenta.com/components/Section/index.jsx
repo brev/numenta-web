@@ -48,7 +48,9 @@ class Section extends React.Component {
       // router.push(url)
     }
     else {
-      global.window.history.back()
+      // @TODO set URL based on what's visible, and/or
+      //    localStorage section open flag
+      // global.window.history.back()
       // router.goBack()
     }
 

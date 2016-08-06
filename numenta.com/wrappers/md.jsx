@@ -16,7 +16,7 @@ import Time from '../components/Time'
 
 import styles from './md.css'
 
-const postTypes = ['blog', 'events', 'newsletter', 'press']
+const postTypes = ['blog', 'events', 'learn', 'newsletter', 'press']
 
 
 /**
@@ -26,13 +26,19 @@ const MarkdownWrapper = ({route}, {config}) => {
   const {data, file, path} = route.page
   const datetime = moment(data.date, config.moments.post)
   const when = datetime.format(config.moments.human)
-  const key = file.dir.split('/')[0]
+  const keys = file.dir.split('/')
+  let key = keys[0]
+  let url = `/${key}/`
   let author
   let back
   let date
   let event
   let photo
   let type
+
+  if (key === 'papers-videos-and-more') {
+    key = keys[1]  // 'learn'
+  }
 
   if (data.type === 'post') {
     author = (
@@ -50,14 +56,14 @@ const MarkdownWrapper = ({route}, {config}) => {
       type = (
         <span>
           <Spacer />
-          <TextLink to={`/${key}/`}>
+          <TextLink to={url}>
             {key}
           </TextLink>
         </span>
       )
       back = (
         <div className={styles.back}>
-          <TextLink to={`/${key}/`}>
+          <TextLink to={url}>
             ◄ All {key} Posts
           </TextLink>
         </div>

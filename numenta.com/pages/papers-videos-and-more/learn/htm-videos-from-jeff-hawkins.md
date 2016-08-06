@@ -4,12 +4,13 @@ brief: These two videos are similar, and provide an overview of HTM and associat
 date: 2014/11/22
 image:
 link:
+media: video
 org: Co-Founder
 section: overview
 sort: c
 tags: numenta htm videos heirarchical temporal memory brain machine intelligence jeff hawkins
 title: HTM Videos from Jeff Hawkins
-type: talk
+type: post
 ---
 
 These two videos are similar, and provide an overview of HTM and associated

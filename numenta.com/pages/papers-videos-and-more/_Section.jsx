@@ -1,7 +1,11 @@
+import IconBook from 'react-icons/lib/fa/book'
+import IconPaper from 'react-icons/lib/fa/file-pdf-o'
+import IconVideo from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import {capitalize, sortPostsDescend} from '../../utils/universal'
+import {capitalize, sortDateDescend} from '../../utils/universal'
 
+import Anchor from '../../components/Anchor'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
 import Paragraph from '../../components/Paragraph'
@@ -13,6 +17,12 @@ import Video from '../../components/Video'
 
 import ImageVideo from './images/video.png'
 import styles from './index.css'
+
+const learnIcons = {
+  book: (<IconBook />),
+  paper: (<IconPaper />),
+  video: (<IconVideo />),
+}
 
 
 /**
@@ -27,44 +37,49 @@ const SectionPapers = (props, {config, route}) => {
   const postsPapers = pages.filter(({file}) => (
     (file.path.match(/^papers\-videos.*\/papers\/.*\.md/))
   ))
-  const learn = postsLearn.sort(sortPostsDescend).map(({data, file, path}) => (
+  const learns = postsLearn.sort(sortDateDescend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
-      <TextLink to={path}>
-        {data.title}
-      </TextLink>
-      <div>
-        <Subtle>
-          {capitalize(data.type)}
-          <Spacer />
-          {data.author}
-          <Spacer />
-          {data.org}
-        </Subtle>
+      <div className={styles.columns}>
+        <div className={styles.icon}>
+          {learnIcons[data.media]}
+        </div>
+        <div className={styles.learn}>
+          <TextLink to={path}>
+            {data.title}
+          </TextLink>
+          <div>
+            <Subtle>
+              {data.author}
+              <Spacer />
+              {data.org}
+              <Spacer />
+              {data.date}
+            </Subtle>
+          </div>
+        </div>
       </div>
     </ListItem>
   ))
-  const papers = postsPapers.sort(sortPostsDescend).map(({data, file}) => {
-    const typeNice = capitalize(data.type.replace(/-/, ' '))
-    const org = (
-      <div>
-        {typeNice}
-        <Spacer />
-        {data.org || ''}
-      </div>
-    )
+  const papers = postsPapers.sort(sortDateDescend).map(({data, file}) => {
+    const categoryNice = capitalize(data.category.replace(/-/, ' '))
     return (
       <ListItem key={file.stem}>
         <TextLink to={data.link}>
           {data.title}
         </TextLink>
-        <div>
+        <Paragraph>
+          {data.brief}
+        </Paragraph>
+        <Subtle>
           {data.author}
-        </div>
-        <div>
-          <Subtle>
-            {org}
-          </Subtle>
-        </div>
+          <div>
+            {categoryNice}
+            <Spacer />
+            {data.org}
+            <Spacer />
+            {data.date}
+          </div>
+        </Subtle>
       </ListItem>
     )
   })
@@ -75,7 +90,9 @@ const SectionPapers = (props, {config, route}) => {
 
         <Paragraph lead={true}>
           To help you learn about our theory and technology, we have organized
-          educational content below.
+          educational content below. It is designed for anyone who wants to
+          learn about HTM cortical theory and its applications for machine
+          intelligence.
         </Paragraph>
         <List marker="disc">
           <ListItem>
@@ -85,9 +102,7 @@ const SectionPapers = (props, {config, route}) => {
             <Spacer />
             This living book (Biological And Machine Intelligence) documents our
             Hierarchical Temporal Memory framework for both biological and
-            machine intelligence. It is designed for anyone who wants to learn
-            about HTM cortical theory and its applications for machine
-            intelligence.
+            machine intelligence.
           </ListItem>
           <ListItem>
             {/* eslint-disable max-len */}
@@ -112,14 +127,16 @@ const SectionPapers = (props, {config, route}) => {
           </ListItem>
         </List>
 
+        <Anchor name="papers" />
         <SubTitle>
           Research Papers
         </SubTitle>
         <Paragraph>
           Here you’ll find a collection of recent Numenta Research papers. Some
           of them are currently under review at journals/conferences but we have
-          made all manuscripts available on arXiv, an online repository of
-          self-archived scientific papers.
+          made all manuscripts available on {' '}
+          <TextLink to="http://arxiv.org">arXiv,</TextLink> {' '}
+          an online repository of self-archived scientific papers.
         </Paragraph>
         <List marker="disc">
           {papers}
@@ -139,11 +156,12 @@ const SectionPapers = (props, {config, route}) => {
           />
         </div>
 
+        <Anchor name="learn" />
         <SubTitle>
           Learn
         </SubTitle>
-        <List marker="disc">
-          {learn}
+        <List>
+          {learns}
         </List>
 
       </div>

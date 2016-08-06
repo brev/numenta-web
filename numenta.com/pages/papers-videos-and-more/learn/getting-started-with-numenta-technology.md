@@ -4,12 +4,13 @@ brief: This video is replaced by the Numenta License Guide
 date: 2014/10/17
 image:
 link:
+media: video
 org: Celeste Baranski & Matt Taylor
 section: archive
 sort: a
 tags: numenta getting started hierarchical temporal memory htm technology nupic
 title: Getting Started With Numenta Technology
-type: talk
+type: post
 ---
 
 This video is replaced by the

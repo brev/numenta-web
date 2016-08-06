@@ -4,12 +4,13 @@ brief: This video talk on the Science of Anomaly Detection was delivered at a Nu
 date: 2014/10/17
 image:
 link:
+media: video
 org: Engineering Manager
 section: detail
 sort: f
 tags: numenta science of anomaly detection
 title: Science of Anomaly Detection
-type: talk
+type: post
 ---
 
 This video talk on the Science of Anomaly Detection was delivered at a Numenta

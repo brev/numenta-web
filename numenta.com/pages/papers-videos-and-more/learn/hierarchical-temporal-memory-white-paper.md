@@ -4,12 +4,13 @@ brief: There have been changes in our thinking, in algorithm implementation, in 
 date: 2011/09/12
 image:
 link: /assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf
+media: paper
 org: Co-Founder
 section: archive
 sort: b
 tags: hierarchical temporal memory htm jeff hawkins whitepaper pdf
 title: Hierarchical Temporal Memory (HTM) Whitepaper
-type: paper
+type: post
 ---
 
 There have been changes in our thinking, in algorithm implementation, in

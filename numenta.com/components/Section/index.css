@@ -29,5 +29,5 @@
 .closeIcon {
   composes: f4 from 'tachyons';
   composes: relative from 'tachyons';
-  top: -3px;
+  top: -1px;
 }

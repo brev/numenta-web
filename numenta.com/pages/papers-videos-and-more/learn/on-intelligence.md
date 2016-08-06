@@ -4,12 +4,13 @@ brief: The core concepts in Hierarchical Temporal Memory (HTM) theory were first
 date: 2005/07/14
 image:
 link: http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&qid=1363894040&sr=8-1&keywords=on+intelligence
+media: book
 org: Co-Founder & Co-Author
 section: overview
 sort: a
 tags: on intelligence jeff hawkins htm hierarchical temporal memory
 title: On Intelligence
-type: book
+type: post
 ---
 
 The core concepts in Hierarchical Temporal Memory (HTM) theory were first

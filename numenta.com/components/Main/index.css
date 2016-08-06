@@ -1,5 +1,7 @@
 .main {
   composes: bg-white from 'tachyons';
+  composes: br--bottom from 'tachyons';
+  composes: br2 from 'tachyons';
   composes: center from 'tachyons';
   composes: mt5 from 'tachyons';
   composes: mw-100 from 'tachyons';

@@ -4,12 +4,13 @@ brief: This webinar provides an overview of the current state of HTM, with an em
 date: 2016/04/26
 image:
 link:
+media: video
 org: Christy Maver & Scott Purdy
 section: overview
 sort: d
 tags: numenta webinar machine intelligence streaming data real time anomaly detection
 title: Machine Intelligence with Streaming Data Webinar
-type: talk
+type: post
 ---
 
 ## Machine Intelligence with Streaming Data

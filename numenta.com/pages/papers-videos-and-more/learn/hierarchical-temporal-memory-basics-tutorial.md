@@ -4,12 +4,13 @@ brief: This video tutorial follows the 2011 HTM whitepaper, and is largely obsol
 date: 2013/08/03
 image:
 link:
+media: video
 org: Software Engineer
 section: archive
 sort: c
 tags: htm hierarchical temporal memory tutorial algorithm basics
 title: HTM Learning Algorithm Tutorial - Algorithm Basics
-type: talk
+type: post
 ---
 
 This video tutorial follows the 2011 HTM whitepaper, and is largely obsolete.
