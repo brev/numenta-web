@@ -96,6 +96,7 @@
   composes: w-100 from 'tachyons';
   composes: w-60-ns from 'tachyons';
 }
+.layout-content h2,
 .layout-content h3 {
   width: 100%;
 }
@@ -105,6 +106,10 @@
   composes: pl4-m from 'tachyons';
   composes: w-100 from 'tachyons';
   composes: w-40-ns from 'tachyons';
+}
+.layout-aside h2,
+.layout-aside h3 {
+  width: 100%;
 }
 .layout-aside-icon {
   composes: color-blue-mute;
