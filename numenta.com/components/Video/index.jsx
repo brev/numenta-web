@@ -66,7 +66,7 @@ class Video extends React.Component {
     const width = getModalAspect(this._width)
     const playerOptions = {
       width: width.toString(),
-      height: (width * 0.5625).toString(),  // ~640x360
+      height: (width * (360 / 640)).toString(),  // ~640x360
       playerVars: {autoplay: 1},
     }
     const alternate = `${title} ${type} video screenshot`
@@ -80,7 +80,7 @@ class Video extends React.Component {
       <div className={styles.video}>
         <Image
           alt={alternate}
-          onClick={::this._playerOpen}
+          onClick={() => this._playerOpen()}
           respond={respond}
           src={image}
         />
@@ -89,7 +89,7 @@ class Video extends React.Component {
         </div>
         <Modal
           isOpen={open}
-          onRequestClose={::this._playerClose}
+          onRequestClose={() => this._playerClose()}
           style={modalStyles}
         >
           {player}

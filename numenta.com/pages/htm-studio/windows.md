@@ -12,3 +12,7 @@ After clicking **More info**, click **Run anyway** to continue downloading the
 application.
 
 ![Windows Screenshot 2](../images/windows2.png)
+
+
+
+◄ Back to [HTM Studio](/htm-studio/)

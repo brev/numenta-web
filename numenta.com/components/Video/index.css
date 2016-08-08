@@ -22,12 +22,12 @@
 }
 ._play:focus,
 ._play:hover {
-  color: #fff;
+  color: #9de0fd;
   text-decoration: none;
 }
 ._play:hover::before {
-  border: 5px solid #fff;
-  color: #fff;
+  border: 5px solid #9de0fd;
+  color: #9de0fd;
   text-decoration: none;
 }
 

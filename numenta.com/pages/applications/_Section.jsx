@@ -150,11 +150,11 @@ const SectionApplications = (props, {config}) => {
             stock volume, and Twitter volume for top publicly traded companies
             and alerts you in real time when something unusual is happening.
             HTM for Stocks is available for free via the {' '}
-            <TextLink to={links.out.htmstocksApp}>
+            <TextLink to={links.out.htmstocks.app}>
               App Store
             </TextLink>
             {' '} or {' '}
-            <TextLink to={links.out.htmstocksPlay}>
+            <TextLink to={links.out.htmstocks.play}>
               Google Play Store.
             </TextLink>
           </Paragraph>
@@ -198,7 +198,7 @@ const SectionApplications = (props, {config}) => {
           </Paragraph>
           <List marker="disc">
             <ListItem>
-              <TextLink to={links.out.grokGet}>
+              <TextLink to={`${links.out.grok}/#pricing`}>
                 Sign Up
               </TextLink>
             </ListItem>

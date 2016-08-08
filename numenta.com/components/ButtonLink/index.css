@@ -1,0 +1,25 @@
+._disabled:disabled {
+  background-color: #999 !important;
+}
+
+.primary {
+  composes: bn from 'tachyons';
+  composes: f4 from 'tachyons';
+  composes: f5-ns from 'tachyons';
+  composes: ph4 from 'tachyons';
+  composes: pv3 from 'tachyons';
+  composes: white from 'tachyons';
+  composes: bg-color-blue from '../../static/assets/css/theme.css';
+}
+
+.buttonLink {
+  composes: br2 from 'tachyons';
+  composes: dib from 'tachyons';
+  composes: dim from 'tachyons';
+  composes: flex-auto from 'tachyons';
+  composes: link from 'tachyons';
+  composes: ma0 from 'tachyons';
+  composes: pointer from 'tachyons';
+  composes: shadow-4 from 'tachyons';
+  composes: _disabled;
+}

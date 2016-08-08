@@ -1,8 +1,10 @@
 import Helmet from 'react-helmet'
+import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
 import React from 'react'
 
 import Avatar from '../components/Avatar'
+import IconMarker from '../components/IconMarker'
 import Image from '../components/Image'
 import Section from '../components/Section'
 import Spacer from '../components/Spacer'
@@ -63,9 +65,11 @@ const MarkdownWrapper = ({route}, {config}) => {
       )
       back = (
         <div className={styles.back}>
-          <TextLink to={url}>
-            ◄ All {key} Posts
-          </TextLink>
+          <IconMarker icon={<IconArrow />}>
+            <TextLink to={url}>
+              All {key} Posts
+            </TextLink>
+          </IconMarker>
         </div>
       )
     }

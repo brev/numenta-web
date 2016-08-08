@@ -19,7 +19,8 @@
 }
 .h3 {
   composes: f4 from 'tachyons';
-  composes: fw5 from 'tachyons';
+  composes: fw6 from 'tachyons';
+  composes: fw5-ns from 'tachyons';
   composes: mid-gray from 'tachyons';
   composes: mb1 from 'tachyons';
   composes: _heading;

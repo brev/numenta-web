@@ -38,8 +38,7 @@
 }
 
 .download {
-  composes: mb4 from 'tachyons';
-  composes: mt3 from 'tachyons';
+  composes: mv3 from 'tachyons';
   composes: tc from 'tachyons';
 }
 
@@ -56,12 +55,12 @@
 }
 
 .notes {
-  composes: f5 from 'tachyons';
-  composes: mh3-m from 'tachyons';
-  composes: mh4 from 'tachyons';
+  composes: center from 'tachyons';
+  composes: f6 from 'tachyons';
+  composes: mb3 from 'tachyons';
   composes: silver from 'tachyons';
+  composes: w-80 from 'tachyons';
 }
-
 
 /* uses, features, faq, etc. */
 
@@ -74,7 +73,8 @@
   composes: pb2 from 'tachyons';
   composes: ph4 from 'tachyons';
   composes: tc from 'tachyons';
-  composes: w-50 from 'tachyons';
+  composes: w-100 from 'tachyons';
+  composes: w-50-ns from 'tachyons';
 }
 .column h3 {
   width: 100%;

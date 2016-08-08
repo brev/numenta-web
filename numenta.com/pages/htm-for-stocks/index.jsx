@@ -343,7 +343,7 @@ const HtmStocksPage = (props, {config}) => {
           </div>
           <div className={styles.aside}>
             <div className={styles.download}>
-              <ImageLink to={links.out.htmstocksApp}>
+              <ImageLink to={links.out.htmstocks.app}>
                 <Image
                   alt="HTM for Stocks on Apple iOS App Store"
                   center={true}
@@ -357,7 +357,7 @@ const HtmStocksPage = (props, {config}) => {
               </div>
             </div>
             <div className={styles.download}>
-              <ImageLink to={links.out.htmstocksPlay}>
+              <ImageLink to={links.out.htmstocks.play}>
                 <Image
                   alt="HTM for Stocks on Google Android Play Store"
                   center={true}

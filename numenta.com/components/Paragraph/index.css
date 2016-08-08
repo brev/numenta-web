@@ -22,7 +22,8 @@
 
 .paragraph {
   composes: lh-copy from 'tachyons';
-  composes: measure from 'tachyons';
+  composes: measure-wide from 'tachyons';
+  composes: measure-m from 'tachyons';
   composes: measure-wide-l from 'tachyons';
   composes: mt0 from 'tachyons';
 }

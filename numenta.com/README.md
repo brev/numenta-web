@@ -194,3 +194,4 @@ npm run build
 * JSX file order (import external, import internal lib, intenral components,
     image/css)
 * yaml headmatter, quotes, escaping, etc
+* video images could be 400px or so looks like (bigger)

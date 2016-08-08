@@ -37,7 +37,7 @@ class Section extends React.Component {
     }
   }
 
-  _toggle() {
+  _toggleSection() {
     const {url} = this.props
     const open = !this.state.open
     // const {router} = this.context
@@ -71,7 +71,7 @@ class Section extends React.Component {
       close = (
         <div
           className={styles.closeButton}
-          onClick={::this._toggle}
+          onClick={() => this._toggleSection()}
         >
           <IconAngleUp className={styles.closeIcon} color="inherit" />
           Close Section
@@ -82,7 +82,7 @@ class Section extends React.Component {
     return (
       <section id={id} className={styles.section}>
         <SectionTitle
-          clickHandle={::this._toggle}
+          clickHandle={() => this._toggleSection()}
           headline={headline}
           open={open}
         >

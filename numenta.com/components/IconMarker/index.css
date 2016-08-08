@@ -3,7 +3,7 @@
 }
 
 .icon {
-  composes: mr2 from 'tachyons';
+  composes: mr1 from 'tachyons';
   composes: relative from 'tachyons';
   composes: color-blue-dark from '../../static/assets/css/theme.css';
   top: -0.1rem;

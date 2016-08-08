@@ -26,24 +26,25 @@ description = 'Leading the New Era of Machine Intelligence'
     grokGet = 'http://grokstream.com/#pricing'
     geo = 'https://github.com/numenta/nupic.geospatial'
     rogue = 'https://github.com/numenta/nupic.rogue'
-    htmstocksApp = 'https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8'
-    htmstocksPlay = 'https://play.google.com/store/apps/details?id=com.numenta.taurus'
-
     # legal
     license = 'http://numenta.org/licenses/'
     trial = 'http://numenta.org/licenses/trial/'
-
     # partners
     cortical = 'http://cortical.io'
-    grok = 'http://grokstream.com/'
+    grok = 'http://grokstream.com'
     org = 'http://numenta.org'
-
     # social
     facebook = 'https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf'
     linkedin = 'https://www.linkedin.com/company/numenta'
     map = 'http://maps.google.com/maps?q=791+Middlefield+Road,+Redwood+City,+CA+94063'
     twitter = 'https://twitter.com/numenta'
     youtube = 'https://www.youtube.com/user/numenta'
+    [links.out.htmstocks]
+      app = 'https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8'
+      play = 'https://play.google.com/store/apps/details?id=com.numenta.taurus'
+    [links.out.htmstudio]
+      macos = 'http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg'
+      windows = 'http://public.numenta.com/releases/htm-studio/win/HTM%20Studio%20Setup%201.0.0.exe'
 
   [links.in]  # internal paths
     # main/home pseudo-single page
@@ -57,7 +58,6 @@ description = 'Leading the New Era of Machine Intelligence'
     business = '/business-strategy-and-ip/'
     papers = '/papers-videos-and-more/'
     careers = '/careers-team-and-contact/'
-
     # other site pages
     bami = '/biological-and-machine-intelligence/'
     blog = '/blog/'
@@ -75,7 +75,6 @@ description = 'Leading the New Era of Machine Intelligence'
     # mission
     mission = '#mission'
     history = '#history'
-
     # applications
     htmstudio = '#htmstudio'
     htmstocks = '#htmstocks'
@@ -83,18 +82,15 @@ description = 'Leading the New Era of Machine Intelligence'
     rogue = '#rogue'
     geo = '#geo'
     nlp = '#nlp'
-
     # partners
     cortical = '#cortical'
     grok = '#grok'
-
     # business
     transparency = '#transparency'
     science = '#science'
     deployment = '#deployment'
     licenses = '#licenses'
     faq = '#faq'
-
     # careers
     careers = '#careers'
     team = '#team'
@@ -102,6 +98,5 @@ description = 'Leading the New Era of Machine Intelligence'
     contact = '#contact'
     office = '#office'
     follow = '#follow'
-
     # other pages
     get = '#get'  # htmstocks, etc.
