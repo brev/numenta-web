@@ -24,17 +24,23 @@ const Glance = (props, context) => {
     Employees: '15 — 20',
     Business: 'Licensing',
     Type: 'Private',
-    Media: (
+    Content: (
       <span>
         <TextLink to={links.in.blog}>Blog</TextLink>
         <Spacer />
-        <TextLink to={links.in.events}>Events</TextLink>
-        <Spacer />
         <TextLink to={links.in.newsletter}>Newsletter</TextLink>
-        <Spacer />
-        <TextLink to={links.in.press}>Press</TextLink>
       </span>
     ),
+    Media: (
+      <span>
+        <TextLink to={links.in.press}>Press Releases</TextLink>
+        <Spacer />
+        <TextLink to={`${links.in.press}${links.anchor.links}`}>
+          Press Links
+        </TextLink>
+      </span>
+    ),
+    Events: (<TextLink to={links.in.events}>Events</TextLink>),
     Latest: (
       <TextLink to={links.in.htmstudio}>
         Numenta releases HTM Studio! <Tag>New</Tag>

@@ -51,6 +51,5 @@
   composes: flex-auto from 'tachyons';
   composes: ma0 from 'tachyons';
   composes: pointer from 'tachyons';
-  composes: shadow-4 from 'tachyons';
   composes: _disabled;
 }

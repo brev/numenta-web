@@ -100,3 +100,4 @@ description = 'Leading the New Era of Machine Intelligence'
     follow = '#follow'
     # other pages
     get = '#get'  # htmstocks, etc.
+    links = '#links'  # press links
