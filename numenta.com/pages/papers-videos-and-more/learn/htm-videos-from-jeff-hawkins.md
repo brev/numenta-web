@@ -7,7 +7,7 @@ link:
 media: video
 org: Co-Founder
 section: overview
-sort: c
+sort: b
 tags: numenta htm videos heirarchical temporal memory brain machine intelligence jeff hawkins
 title: HTM Videos from Jeff Hawkins
 type: post

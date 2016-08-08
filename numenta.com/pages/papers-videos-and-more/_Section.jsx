@@ -24,6 +24,12 @@ const learnIcons = {
   video: (<IconVideo />),
 }
 
+function sortOrderAscend(a, b) {
+  if (a.data.sort > b.data.sort) return 1
+  if (a.data.sort < b.data.sort) return -1
+  return 0
+}
+
 
 /**
  *
@@ -66,7 +72,7 @@ const SectionPapers = (props, {config, route}) => {
       </div>
     </ListItem>
   ))
-  const videos = postsVideos.sort(sortDateDescend).map(({data, file, path}) => (
+  const videos = postsVideos.sort(sortOrderAscend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
       <div className={styles.columns}>
         <div className={styles.icon}>
@@ -89,7 +95,7 @@ const SectionPapers = (props, {config, route}) => {
       </div>
     </ListItem>
   ))
-  const papers = postsPapers.sort(sortDateDescend).map(({data, file}) => {
+  const papers = postsPapers.sort(sortOrderAscend).map(({data, file}) => {
     const categoryNice = capitalize(data.category.replace(/-/, ' '))
     return (
       <ListItem key={file.stem}>
@@ -143,16 +149,6 @@ const SectionPapers = (props, {config, route}) => {
             This YouTube series is designed to educate the general public about
             Hierarchical Temporal Memory (HTM). Each 10-15 minute episode dives
             into a particular topic of HTM theory.
-          </ListItem>
-          <ListItem>
-            <TextLink to={links.out.org}>
-              NuPIC
-            </TextLink>
-            <Spacer />
-            This is the Numenta Platform for Intelligent Computing. For those
-            interested in a more technical perspective, go to this site for
-            information about our open source communities, including online
-            forums and installation instructions.
           </ListItem>
         </List>
 
