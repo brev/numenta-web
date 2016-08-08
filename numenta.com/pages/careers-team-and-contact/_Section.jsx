@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/universal'
+import {sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import Button from '../../components/Button'

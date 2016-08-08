@@ -1,7 +1,7 @@
 import moment from 'moment'
 import React from 'react'
 
-import {sortDateAscend, sortDateDescend} from '../../utils/universal'
+import {sortDateAscend, sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import List from '../../components/List'

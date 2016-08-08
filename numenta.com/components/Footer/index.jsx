@@ -1,7 +1,8 @@
 import moment from 'moment'
 import React from 'react'
 
-import {getRepo} from '../../utils/universal'
+import {getRepo} from '../../utils/shared'
+
 import LogoMark from '../LogoMark'
 import Spacer from '../Spacer'
 import TextLink from '../TextLink'
@@ -25,9 +26,9 @@ const Footer = (props, {config}) => {
           <LogoMark />
         </span>
         <span>
-          <TextLink to={links.in.privacy}>Privacy</TextLink>
-          <Spacer />
           <TextLink to={links.in.terms}>Terms</TextLink>
+          <Spacer />
+          <TextLink to={links.in.privacy}>Privacy</TextLink>
           <Spacer />
           <TextLink to={repo}>Source</TextLink>
           <Spacer />

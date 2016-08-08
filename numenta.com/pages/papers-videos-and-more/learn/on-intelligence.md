@@ -9,7 +9,7 @@ org: Co-Founder & Co-Author
 section: overview
 sort: a
 tags: on intelligence jeff hawkins htm hierarchical temporal memory
-title: On Intelligence
+title: On Intelligence (Book)
 type: post
 ---
 

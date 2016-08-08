@@ -23,7 +23,6 @@
     "object-curly-spacing": [2, "never"],
     "react/jsx-boolean-value": [2, "always"],
     "react/jsx-filename-extension": [1],
-    "react/jsx-no-bind": [1],
     "react/require-extension": [0],
     "semi": [2, "never"]
   }

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {trims} from '../../utils/shared'
+
 import DefineItem from '../DefineItem'
 import DefineList from '../DefineList'
 import DefineTitle from '../DefineTitle'
@@ -7,7 +9,6 @@ import Logo from '../Logo'
 import Spacer from '../Spacer'
 import Tag from '../Tag'
 import TextLink from '../TextLink'
-import {trims} from '../../utils/universal'
 
 import styles from './index.css'
 

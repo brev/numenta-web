@@ -2,7 +2,7 @@ import Helmet from 'react-helmet'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
-import {stamp} from './utils/universal'
+import {stamp} from './utils/shared'
 
 
 /**

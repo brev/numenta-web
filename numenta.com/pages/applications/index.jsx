@@ -1,7 +1,8 @@
 import React from 'react'
 
-import {getMainSections, scrollTo} from '../../utils/client/sections'
+import {scrollTo} from '../../utils/client/sections'
 
+import MainSections from '../_MainSections'
 import SectionApplications from './_Section'
 import Section from '../../components/Section'
 
@@ -23,7 +24,7 @@ class ApplicationsPage extends React.Component {
 
   componentDidMount() {
     this.setState({  // eslint-disable-line react/no-did-mount-set-state
-      sections: getMainSections(Default),
+      sections: (<MainSections current={Default} />),
     })
   }
 
@@ -37,12 +38,7 @@ class ApplicationsPage extends React.Component {
 
   render() {
     const {sections} = this.state
-
-    return (
-      <div>
-        {sections}
-      </div>
-    )
+    return sections
   }
 }
 

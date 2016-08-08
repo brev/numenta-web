@@ -3,6 +3,10 @@ import moment from 'moment'
 
 import {repository, version} from '../package'
 
+/**
+ * Utils Shared between Client and Server (Isomorphic, Universal, etc.)
+ */
+
 
 /**
  *

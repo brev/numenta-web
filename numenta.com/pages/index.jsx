@@ -1,7 +1,6 @@
 import React from 'react'
 
-import {getMainSections} from '../utils/client/sections'
-
+import MainSections from './_MainSections'
 import SectionIndex from './_Section'
 import Section from '../components/Section'
 
@@ -29,7 +28,7 @@ class HomePage extends React.Component {
 
   componentDidMount() {
     this.setState({  // eslint-disable-line react/no-did-mount-set-state
-      sections: getMainSections(Default),
+      sections: (<MainSections current={Default} />),
     })
   }
 
@@ -39,7 +38,6 @@ class HomePage extends React.Component {
 
   render() {
     const {sections} = this.state
-
     return (
       <div className={styles.page}>
         {sections}

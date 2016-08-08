@@ -180,18 +180,14 @@ npm run build
 
 ## @TODO
 
-* explain react `contexts` available: **config**, etc.
-* watch out for jsx spaces {' '}
-* partners / links / fix numenta.com hard-coded PR, etc.
-* add links to this Document
-* Migrate away old links /grok/ to grokstream.com
-* RSS feeds
-* Remove blog links/etc to `/legal/rules/` and `/legal/results/`
-* Disqus comments on items
-* WuFoo contact result from `/contact/thanks.html` to
-    `/careers-team-and-contact/thanks/`
 * Migrate: `healthchecks/` `conf/` ... `out/`
-* JSX file order (import external, import internal lib, intenral components,
-    image/css)
-* yaml headmatter, quotes, escaping, etc
-* video images could be 400px or so looks like (bigger)
+* document the code, build docs
+* document this file
+  * add links to stuff
+  * explain react `contexts` available: **config**, etc.
+  * watch out for jsx spaces {' '}
+  * JSX file order (import external, import internal lib, intenral components,
+      image/css)
+  * yaml headmatter, quotes, escaping, etc
+  * special custom npm modules: tachyons,etc. - howto, updating, etc.
+* Papers/Videos/More _Section.jsx => Refactor learn item (video/more) components

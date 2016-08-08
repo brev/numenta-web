@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/universal'
+import {sortDateDescend} from '../../utils/shared'
 
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'

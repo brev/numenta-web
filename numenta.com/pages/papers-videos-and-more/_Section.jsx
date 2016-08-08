@@ -3,7 +3,7 @@ import IconPaper from 'react-icons/lib/fa/file-pdf-o'
 import IconVideo from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import {capitalize, sortDateDescend} from '../../utils/universal'
+import {capitalize, sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import List from '../../components/List'
@@ -34,10 +34,39 @@ const SectionPapers = (props, {config, route}) => {
   const postsLearn = pages.filter(({file}) => (
     (file.path.match(/^papers\-videos.*\/learn\/.*\.md/))
   ))
+  const postsMore = postsLearn.filter(({data}) => (
+    (data.media !== 'video')
+  ))
+  const postsVideos = postsLearn.filter(({data}) => (
+    (data.media === 'video')
+  ))
   const postsPapers = pages.filter(({file}) => (
     (file.path.match(/^papers\-videos.*\/papers\/.*\.md/))
   ))
-  const learns = postsLearn.sort(sortDateDescend).map(({data, file, path}) => (
+  const mores = postsMore.sort(sortDateDescend).map(({data, file, path}) => (
+    <ListItem key={file.stem}>
+      <div className={styles.columns}>
+        <div className={styles.icon}>
+          {learnIcons[data.media]}
+        </div>
+        <div className={styles.learn}>
+          <TextLink to={path}>
+            {data.title}
+          </TextLink>
+          <div>
+            <Subtle>
+              {data.author}
+              <Spacer />
+              {data.org}
+              <Spacer />
+              {data.date}
+            </Subtle>
+          </div>
+        </div>
+      </div>
+    </ListItem>
+  ))
+  const videos = postsVideos.sort(sortDateDescend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
       <div className={styles.columns}>
         <div className={styles.icon}>
@@ -156,12 +185,20 @@ const SectionPapers = (props, {config, route}) => {
           />
         </div>
 
-        <Anchor name="learn" />
+        <Anchor name="videos" />
         <SubTitle>
-          Learn
+          Videos
         </SubTitle>
         <List>
-          {learns}
+          {videos}
+        </List>
+
+        <Anchor name="more" />
+        <SubTitle>
+          More
+        </SubTitle>
+        <List>
+          {mores}
         </List>
 
       </div>
