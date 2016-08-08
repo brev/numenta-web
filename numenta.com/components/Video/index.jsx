@@ -42,7 +42,7 @@ class Video extends React.Component {
     this._sizer = browserSize()
     this._width = this._sizer.width
     this._sizer.on('resize', () => {
-      this._width = this._sizer.width
+      if (this._sizer) this._width = this._sizer.width
     })
   }
 

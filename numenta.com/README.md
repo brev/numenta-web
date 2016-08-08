@@ -190,4 +190,6 @@ npm run build
       image/css)
   * yaml headmatter, quotes, escaping, etc
   * special custom npm modules: tachyons,etc. - howto, updating, etc.
+  * Static assets don't load from /static/assets on dev, but do on staging
+    and prod after static build
 * Papers/Videos/More _Section.jsx => Refactor learn item (video/more) components
