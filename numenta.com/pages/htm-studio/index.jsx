@@ -5,6 +5,7 @@ import IconCubes from 'react-icons/lib/fa/cubes'
 import IconFolder from 'react-icons/lib/fa/folder-open'
 import IconLock from 'react-icons/lib/fa/lock'
 import IconQuestion from 'react-icons/lib/fa/question-circle'
+import Modal from 'react-modal'
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
@@ -23,6 +24,7 @@ import Paragraph from '../../components/Paragraph'
 import Section from '../../components/Section'
 import Strong from '../../components/Strong'
 import SubTitle from '../../components/SubTitle'
+import Terms from './terms.md'
 import TextLink from '../../components/TextLink'
 import Video from '../../components/Video'
 
@@ -54,12 +56,14 @@ class HtmStudioPage extends React.Component {
   }
 
   state = {
-    accepted: false,
-    warning: false,
+    accepted: false,  // has download terms acceptance checkbox been checked?
+    terms: false,     // is the terms modal showing?
+    warning: false,   // is the user seeing check-acceptance-checkbox warning?
   }
 
   _startDownload() {
     const {accepted} = this.state
+    console.log('_startDownload', this.state)
 
     if (!accepted) {
       this.setState({warning: true})
@@ -72,6 +76,7 @@ class HtmStudioPage extends React.Component {
   _toggleAcceptance() {
     const {accepted} = this.state
     const newState = {accepted: !accepted}
+    console.log('_toggleAcceptance', this.state)
 
     if (newState.accepted) {
       newState.warning = false
@@ -80,9 +85,18 @@ class HtmStudioPage extends React.Component {
     this.setState(newState)
   }
 
+  _toggleTerms(event) {
+    const {terms} = this.state
+    if (event) {
+      event.stopPropagation()
+      event.preventDefault()
+    }
+    this.setState({terms: !terms})
+  }
+
   render() {
     const {config, route} = this.context
-    const {accepted, warning} = this.state
+    const {accepted, terms, warning} = this.state
     const {links} = config
     const {pages} = route
     const warningClasses = [styles.row, styles.error]
@@ -100,6 +114,14 @@ class HtmStudioPage extends React.Component {
         </Paragraph>
       </div>
     ))
+    const termsModal = (
+      <Modal
+        isOpen={terms}
+        onRequestClose={() => this._toggleTerms()}
+      >
+        <span dangerouslySetInnerHTML={{__html: Terms.body}} />
+      </Modal>
+    )
 
     if (!warning) {
       warningClasses.push(styles.hide)
@@ -134,7 +156,10 @@ class HtmStudioPage extends React.Component {
                     />
                     <span className={styles.agree}>
                       I agree to the {' '}
-                      <TextLink to={`${links.in.htmstudio}terms/`}>
+                      <TextLink
+                        onClick={(event) => this._toggleTerms(event)}
+                        to={`${links.in.htmstudio}terms/`}
+                      >
                         Terms and Conditions
                       </TextLink>
                     </span>
@@ -445,12 +470,12 @@ class HtmStudioPage extends React.Component {
             </div>
           </div>
 
-          <Anchor name="resources" />
-          <SubTitle>
-            Resources
-          </SubTitle>
           <div className={styles.columns}>
-            <div className={styles.content}>
+            <div className={styles.asideLeft}>
+              <Anchor name="resources" />
+              <SubTitle>
+                Resources
+              </SubTitle>
               <List marker="disc">
                 <ListItem>
                   <TextLink
@@ -475,7 +500,10 @@ class HtmStudioPage extends React.Component {
                   </Paragraph>
                 </ListItem>
                 <ListItem>
-                  <TextLink to={`${links.in.htmstudio}terms/`}>
+                  <TextLink
+                    onClick={() => this._toggleTerms()}
+                    to={`${links.in.htmstudio}terms/`}
+                  >
                     Terms and Conditions
                   </TextLink>
                   <Paragraph>
@@ -493,14 +521,11 @@ class HtmStudioPage extends React.Component {
                 </ListItem>
               </List>
             </div>
-          </div>
-
-          <Anchor name="feedback" />
-          <SubTitle>
-            Feedback
-          </SubTitle>
-          <div className={styles.columns}>
             <div className={styles.content}>
+              <Anchor name="feedback" />
+              <SubTitle>
+                Feedback
+              </SubTitle>
               <Paragraph>
                 Provide your feedback on HTM Studio via the form below,
                 or email {' '}
@@ -509,10 +534,12 @@ class HtmStudioPage extends React.Component {
                 </TextLink> {' '}
                 for further information on HTM.
               </Paragraph>
+              {/* eslint-disable max-len */}
               <Form
                 action="https://numenta.wufoo.com/forms/z3mk1q016cylq6/#public"
                 name="form17"
               >
+              {/* eslint-enable max-len */}
                 <FormRow>
                   <FormLabel for="Field4">
                     Name
@@ -556,6 +583,7 @@ class HtmStudioPage extends React.Component {
             </div>
           </div>
         </Section>
+        {termsModal}
       </div>
     )
   }

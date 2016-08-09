@@ -3,7 +3,7 @@ title: HTM Studio Terms and Conditions
 ---
 
 **Numenta is happy to license HTM Studio to you if you accept all of the terms
-and conditions contained in this Agreement. By accepting this agreement and
+and conditions contained in this Agreement.** By accepting this agreement and
 downloading HTM Studio, you indicate that you have read and understand this
 Agreement and accept all of its terms and conditions. If you agree to these
 terms and conditions on behalf of a business, government agency, or other
@@ -11,7 +11,7 @@ entity, you warrant that you have authority to bind that business, agency, or
 other entity to this Agreement, and your agreement to these terms and conditions
 will be treated as the agreement of that business, agency, or other entity. In
 that event, “you” and “your” refer herein to that business, agency, or other
-entity.**
+entity.
 
 ### PREAMBLE
 

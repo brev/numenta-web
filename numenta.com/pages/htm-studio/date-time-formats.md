@@ -2,6 +2,13 @@
 title: HTM Studio - Supported Date/Time Formats
 ---
 
+The following document gives details on the supported date/time formats which
+HTM Studio can input. This file is auto-generated and will be updated
+periodically.
+
+◄ [Back to HTM Studio](/htm-studio/)
+
+
 ### UNIX
 
 HTM Studio supports UNIX timestamps in seconds and milliseconds. If you are
@@ -11,9 +18,7 @@ of the column with date/time needs to contain either the word "**date**" or
 
 ---
 
-**Updated**: Thu Jun 23 2016 09:07:21 GMT-0700
-
-**Source**: [Configuration File](https://raw.githubusercontent.com/numenta/numenta-apps/master/unicorn/app/config/momentjs_to_datetime_strptime.json)
+*Last Generated*: Thu Jun 23 2016 09:07:21 GMT-0700 [Source](https://raw.githubusercontent.com/numenta/numenta-apps/master/unicorn/app/config/momentjs_to_datetime_strptime.json)
 
 ### ISO 8601
 

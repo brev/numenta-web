@@ -25,6 +25,10 @@
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
+.asideLeft {
+  composes: pl4-ns from 'tachyons';
+  composes: layout-aside from '../../static/assets/css/theme.css';
+}
 
 
 /* hero + download */
