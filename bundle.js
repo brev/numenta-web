@@ -30918,8 +30918,8 @@
 						"play": "https://play.google.com/store/apps/details?id=com.numenta.taurus"
 					},
 					"htmstudio": {
-						"macos": "http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg",
-						"windows": "http://public.numenta.com/releases/htm-studio/win/HTM%20Studio%20Setup%201.0.0.exe"
+						"osx": "http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg",
+						"win": "http://public.numenta.com/releases/htm-studio/win/HTM%20Studio%20Setup%201.0.0.exe"
 					}
 				},
 				"in": {
@@ -35156,6 +35156,25 @@
 				},
 				"requirePath": "htm-studio/index.jsx",
 				"path": "/htm-studio/",
+				"data": {}
+			},
+			{
+				"file": {
+					"root": "",
+					"dir": "htm-studio",
+					"base": "style-modal.js",
+					"ext": "js",
+					"name": "style-modal",
+					"extname": ".js",
+					"basename": "style-modal.js",
+					"dirname": "htm-studio",
+					"stem": "style-modal",
+					"path": "htm-studio/style-modal.js",
+					"absolute": "/Users/brev/src/numenta-web/numenta.com/htm-studio/style-modal.js",
+					"isAbsolute": false
+				},
+				"requirePath": "htm-studio/style-modal.js",
+				"path": "/htm-studio/style-modal/",
 				"data": {}
 			},
 			{
@@ -44177,7 +44196,7 @@
 
 	module.exports = {
 		"name": "Numenta.com",
-		"version": "0.2.42",
+		"version": "0.2.43",
 		"description": "Numenta.com company website content, source code, and static generator tooling.",
 		"license": "SEE LICENSE IN LICENSE.TXT",
 		"main": false,
@@ -44231,6 +44250,7 @@
 			"js-yaml": "3.6.1",
 			"moment": "2.14.1",
 			"ncp": "2.0.0",
+			"platform": "1.3.1",
 			"react": "15.3.0",
 			"react-addons-pure-render-mixin": "15.3.0",
 			"react-dom": "15.3.0",
@@ -45215,7 +45235,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"_disabled":"index__disabled_1OX","default":"index_default_Div tachyons_bg-white_WF0 tachyons_ba_1NL tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_ph4_-u9 tachyons_pv3_1Zi theme_color-blue_2lo","light":"index_light_4I5 tachyons_bg-white_WF0 tachyons_bn_3W7 tachyons_f4_1Zt tachyons_pa1_3f3 theme_color-blue_2lo","primary":"index_primary_Bxm tachyons_bn_3W7 tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_ph4_-u9 tachyons_pv3_1Zi tachyons_white_3f5 theme_bg-color-blue_6KT","short":"index_short_SEQ tachyons_bn_3W7 tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_h2_1bn tachyons_ph3_Qxl tachyons_pv0_Ryp tachyons_relative_1fO tachyons_white_3f5 theme_bg-color-blue_6KT","button":"index_button_2lC tachyons_br2_rOa tachyons_dim_1n1 tachyons_flex-auto_1Fv tachyons_ma0_2xh tachyons_pointer_25K index__disabled_1OX"};
+	module.exports = {"_disabled":"index__disabled_1OX","default":"index_default_Div tachyons_bg-near-white_1Oi tachyons_ba_1NL tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_ph4_-u9 tachyons_pv3_1Zi theme_color-blue_2lo","light":"index_light_4I5 tachyons_bg-white_WF0 tachyons_bn_3W7 tachyons_f4_1Zt tachyons_pa1_3f3 theme_color-blue_2lo","primary":"index_primary_Bxm tachyons_bn_3W7 tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_ph4_-u9 tachyons_pv3_1Zi tachyons_white_3f5 theme_bg-color-blue_6KT","short":"index_short_SEQ tachyons_bn_3W7 tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_h2_1bn tachyons_ph3_Qxl tachyons_pv0_Ryp tachyons_relative_1fO tachyons_white_3f5 theme_bg-color-blue_6KT","button":"index_button_2lC tachyons_br2_rOa tachyons_dim_1n1 tachyons_flex-auto_1Fv tachyons_ma0_2xh tachyons_pointer_25K index__disabled_1OX"};
 
 /***/ },
 /* 419 */,
@@ -46446,8 +46466,9 @@
 	    // Handle dynamic url changes as sections are opened/closed.
 	    if (open) {
 	      // manual
-	      // @TODO google-analtyics manual record url changes!!!
 	      global.window.history.pushState({}, '', (0, _gatsbyHelpers.prefixLink)(url));
+	      global.window.ga('set', 'page', (0, _gatsbyHelpers.prefixLink)(url));
+	      global.window.ga('send', 'pageview');
 	
 	      // auto
 	      // router.push(url)
@@ -58652,34 +58673,34 @@
 		"./404.md": 572,
 		"./_MainSections": 573,
 		"./_MainSections.jsx": 573,
-		"./_Section": 700,
-		"./_Section.jsx": 700,
+		"./_Section": 701,
+		"./_Section.jsx": 701,
 		"./_template": 369,
 		"./_template.jsx": 369,
 		"./anomaly-detection-benchmark/_Section": 574,
 		"./anomaly-detection-benchmark/_Section.jsx": 574,
 		"./anomaly-detection-benchmark/images/benchmark.png": 587,
-		"./anomaly-detection-benchmark/index": 736,
+		"./anomaly-detection-benchmark/index": 737,
 		"./anomaly-detection-benchmark/index.css": 588,
-		"./anomaly-detection-benchmark/index.jsx": 736,
+		"./anomaly-detection-benchmark/index.jsx": 737,
 		"./applications/_Section": 590,
 		"./applications/_Section.jsx": 590,
-		"./applications/images/geo.png": 636,
+		"./applications/images/geo.png": 637,
 		"./applications/images/geo@2x.png": 738,
-		"./applications/images/grok.png": 637,
+		"./applications/images/grok.png": 638,
 		"./applications/images/grok@2x.png": 739,
-		"./applications/images/htm-for-stocks.png": 634,
+		"./applications/images/htm-for-stocks.png": 635,
 		"./applications/images/htm-for-stocks@2x.png": 740,
-		"./applications/images/htm-studio.png": 635,
+		"./applications/images/htm-studio.png": 636,
 		"./applications/images/htm-studio@2x.png": 741,
-		"./applications/images/intrude.png": 639,
+		"./applications/images/intrude.png": 640,
 		"./applications/images/intrude@2x.png": 742,
-		"./applications/images/nlp.png": 638,
+		"./applications/images/nlp.png": 639,
 		"./applications/images/nlp@2x.png": 743,
-		"./applications/images/video-apps.png": 640,
+		"./applications/images/video-apps.png": 641,
 		"./applications/images/video-apps@2x.png": 744,
 		"./applications/index": 745,
-		"./applications/index.css": 641,
+		"./applications/index.css": 642,
 		"./applications/index.jsx": 745,
 		"./biological-and-machine-intelligence/index": 746,
 		"./biological-and-machine-intelligence/index.css": 748,
@@ -58845,36 +58866,36 @@
 		"./blog/2016/08/04/revisiting-a-1986-essay-on-brain-theory.md": 908,
 		"./blog/index": 909,
 		"./blog/index.jsx": 909,
-		"./business-strategy-and-ip/_Section": 643,
-		"./business-strategy-and-ip/_Section.jsx": 643,
-		"./business-strategy-and-ip/images/business.png": 672,
+		"./business-strategy-and-ip/_Section": 644,
+		"./business-strategy-and-ip/_Section.jsx": 644,
+		"./business-strategy-and-ip/images/business.png": 673,
 		"./business-strategy-and-ip/images/business@2x.png": 913,
 		"./business-strategy-and-ip/index": 914,
-		"./business-strategy-and-ip/index.css": 673,
+		"./business-strategy-and-ip/index.css": 674,
 		"./business-strategy-and-ip/index.jsx": 914,
-		"./careers-team-and-contact/_Section": 675,
-		"./careers-team-and-contact/_Section.jsx": 675,
+		"./careers-team-and-contact/_Section": 676,
+		"./careers-team-and-contact/_Section.jsx": 676,
 		"./careers-team-and-contact/careers/internship-program.md": 915,
 		"./careers-team-and-contact/careers/research-internship.md": 916,
-		"./careers-team-and-contact/images/careers.png": 689,
+		"./careers-team-and-contact/images/careers.png": 690,
 		"./careers-team-and-contact/images/careers@2x.png": 917,
-		"./careers-team-and-contact/images/map.png": 695,
-		"./careers-team-and-contact/images/team/celeste-baranski.png": 690,
+		"./careers-team-and-contact/images/map.png": 696,
+		"./careers-team-and-contact/images/team/celeste-baranski.png": 691,
 		"./careers-team-and-contact/images/team/celeste-baranski@2x.png": 918,
-		"./careers-team-and-contact/images/team/donna-dubinsky.jpg": 691,
+		"./careers-team-and-contact/images/team/donna-dubinsky.jpg": 692,
 		"./careers-team-and-contact/images/team/donna-dubinsky@2x.jpg": 919,
-		"./careers-team-and-contact/images/team/ed-colligan.jpg": 692,
+		"./careers-team-and-contact/images/team/ed-colligan.jpg": 693,
 		"./careers-team-and-contact/images/team/ed-colligan@2x.jpg": 920,
-		"./careers-team-and-contact/images/team/harry-saal.jpg": 693,
+		"./careers-team-and-contact/images/team/harry-saal.jpg": 694,
 		"./careers-team-and-contact/images/team/harry-saal@2x.jpg": 921,
-		"./careers-team-and-contact/images/team/jeff-hawkins.jpg": 694,
+		"./careers-team-and-contact/images/team/jeff-hawkins.jpg": 695,
 		"./careers-team-and-contact/images/team/jeff-hawkins@2x.jpg": 922,
-		"./careers-team-and-contact/images/team/mike-farmwald.jpg": 696,
+		"./careers-team-and-contact/images/team/mike-farmwald.jpg": 697,
 		"./careers-team-and-contact/images/team/mike-farmwald@2x.jpg": 923,
-		"./careers-team-and-contact/images/team/subutai-ahmad.jpg": 697,
+		"./careers-team-and-contact/images/team/subutai-ahmad.jpg": 698,
 		"./careers-team-and-contact/images/team/subutai-ahmad@2x.jpg": 924,
 		"./careers-team-and-contact/index": 925,
-		"./careers-team-and-contact/index.css": 698,
+		"./careers-team-and-contact/index.css": 699,
 		"./careers-team-and-contact/index.jsx": 925,
 		"./careers-team-and-contact/thanks.md": 926,
 		"./events/2014/03/26/amazon-web-services-summit-sf.md": 927,
@@ -59067,286 +59088,288 @@
 		"./htm-studio/images/windows1.png": 1113,
 		"./htm-studio/images/windows2.png": 1114,
 		"./htm-studio/index": 1115,
-		"./htm-studio/index.css": 1128,
+		"./htm-studio/index.css": 1129,
 		"./htm-studio/index.jsx": 1115,
-		"./htm-studio/terms.md": 1127,
-		"./htm-studio/windows.md": 1130,
-		"./index": 1131,
-		"./index.css": 707,
-		"./index.jsx": 1131,
-		"./legal/privacy.md": 1132,
-		"./legal/terms.md": 1133,
-		"./mission-and-history/_Section": 709,
-		"./mission-and-history/_Section.jsx": 709,
-		"./mission-and-history/images/brain.svg": 710,
-		"./mission-and-history/images/timeline.png": 711,
-		"./mission-and-history/images/timeline@2x.png": 1134,
-		"./mission-and-history/images/video-ourstory.png": 712,
-		"./mission-and-history/images/video-ourstory@2x.png": 1135,
-		"./mission-and-history/index": 1136,
-		"./mission-and-history/index.css": 713,
-		"./mission-and-history/index.jsx": 1136,
-		"./newsletter/2013/10/11/announcing-grok-for-it.md": 1137,
-		"./newsletter/2013/11/08/grok-at-aws-reinvent.md": 1138,
-		"./newsletter/2014/02/04/grok-soft-launch.md": 1139,
-		"./newsletter/2014/03/25/announcing-grok-for-it-analytics-on-aws.md": 1140,
-		"./newsletter/2014/06/10/progress-report-june-2014.md": 1141,
-		"./newsletter/2014/08/19/machine-intelligence-applications-summer-2014.md": 1142,
-		"./newsletter/2014/09/16/fall-workshop-and-hackathon.md": 1143,
-		"./newsletter/2014/11/11/grok-1-6-showcasing-at-aws-re-invent-las-vegas-2014.md": 1144,
-		"./newsletter/2015/01/26/welcome-to-2015.md": 1145,
-		"./newsletter/2015/03/12/numenta-newsletter-mar-2015.md": 1146,
-		"./newsletter/2015/04/29/numenta-newsletter-apr-2015.md": 1147,
-		"./newsletter/2015/05/14/announcing-relationship-with-cortical-io.md": 1148,
-		"./newsletter/2015/06/09/numenta-open-sourcing-two-htm-products.md": 1149,
-		"./newsletter/2015/07/02/announcing-open-source-htm-app-grok-for-stocks.md": 1150,
-		"./newsletter/2015/07/02/images/homescreen.png": 1151,
-		"./newsletter/2015/07/02/images/image.png": 1152,
-		"./newsletter/2015/09/01/images/image.png": 1153,
-		"./newsletter/2015/09/01/images/image@2x.png": 1154,
-		"./newsletter/2015/09/01/partnership-between-numenta-and-avik-partners-on-grok-for-it-analytics.md": 1155,
-		"./newsletter/2015/10/01/images/image.png": 1156,
-		"./newsletter/2015/10/01/images/image@2x.png": 1157,
-		"./newsletter/2015/10/01/numenta-anomaly-benchmark-and-numenta-htm-challenge.md": 1158,
-		"./newsletter/2015/11/10/images/image.png": 1159,
-		"./newsletter/2015/11/10/images/image@2x.png": 1160,
-		"./newsletter/2015/11/10/numenta-anomaly-benchmark-nab-open-source-with-white-paper.md": 1161,
-		"./newsletter/2015/11/17/images/image.png": 1162,
-		"./newsletter/2015/11/17/why-neurons-have-thousands-of-synapses-a-theory-of-sequence-memory.md": 1163,
-		"./newsletter/2016/01/07/year-in-review-numenta-2015.md": 1164,
-		"./newsletter/2016/02/10/numenta-anomaly-benchmark-competition.md": 1165,
-		"./newsletter/2016/02/18/htm-for-stocks-available-in-the-app-store.md": 1166,
-		"./newsletter/2016/02/18/images/image.png": 1167,
-		"./newsletter/2016/03/28/neuron-paper-published-in-peer-reviewed-neuroscience-journal.md": 1168,
-		"./newsletter/2016/05/11/announcing-bami-biological-and-machine-intelligence.md": 1169,
-		"./newsletter/2016/06/28/images/htm-studio.png": 1170,
-		"./newsletter/2016/06/28/images/htm-studio@2x.png": 1171,
-		"./newsletter/2016/06/28/numenta-releases-htm-studio-desktop-application.md": 1172,
-		"./newsletter/images/numenta.png": 1173,
-		"./newsletter/images/numenta@2x.png": 1174,
-		"./newsletter/index": 1175,
-		"./newsletter/index.css": 1176,
-		"./newsletter/index.jsx": 1175,
-		"./numenta-anomaly-benchmark/images/compare.png": 1178,
-		"./numenta-anomaly-benchmark/images/compare@2x.png": 1179,
-		"./numenta-anomaly-benchmark/images/datasheet.png": 1180,
-		"./numenta-anomaly-benchmark/images/datasheet@2x.png": 1181,
-		"./numenta-anomaly-benchmark/images/detail.png": 1182,
-		"./numenta-anomaly-benchmark/images/equations.png": 1183,
-		"./numenta-anomaly-benchmark/images/equations@2x.png": 1184,
-		"./numenta-anomaly-benchmark/images/github.png": 1185,
-		"./numenta-anomaly-benchmark/images/github@2x.png": 1186,
-		"./numenta-anomaly-benchmark/images/heartbeat.png": 1187,
-		"./numenta-anomaly-benchmark/images/heartbeat@2x.png": 1188,
-		"./numenta-anomaly-benchmark/images/math.png": 1189,
-		"./numenta-anomaly-benchmark/images/math@2x.png": 1190,
-		"./numenta-anomaly-benchmark/images/scoreboard.png": 1191,
-		"./numenta-anomaly-benchmark/images/video-mlconf.png": 1192,
-		"./numenta-anomaly-benchmark/images/video-mlconf@2x.png": 1193,
-		"./numenta-anomaly-benchmark/images/video-nab.png": 1194,
-		"./numenta-anomaly-benchmark/images/video-nab@2x.png": 1195,
-		"./numenta-anomaly-benchmark/index": 1196,
-		"./numenta-anomaly-benchmark/index.css": 1199,
-		"./numenta-anomaly-benchmark/index.jsx": 1196,
-		"./open-source-project/_Section": 715,
-		"./open-source-project/_Section.jsx": 715,
-		"./open-source-project/images/video-tech.png": 1201,
-		"./open-source-project/images/video-tech@2x.png": 1202,
-		"./open-source-project/index": 1203,
-		"./open-source-project/index.css": 717,
-		"./open-source-project/index.jsx": 1203,
-		"./papers-videos-and-more/_Section": 719,
-		"./papers-videos-and-more/_Section.jsx": 719,
-		"./papers-videos-and-more/images/video.png": 724,
-		"./papers-videos-and-more/images/video@2x.png": 1204,
-		"./papers-videos-and-more/index": 1205,
-		"./papers-videos-and-more/index.css": 725,
-		"./papers-videos-and-more/index.jsx": 1205,
-		"./papers-videos-and-more/learn/applications-of-hierarchical-temporal-memory.md": 1206,
-		"./papers-videos-and-more/learn/getting-started-with-numenta-technology.md": 1207,
-		"./papers-videos-and-more/learn/hierarchical-temporal-memory-basics-tutorial.md": 1208,
-		"./papers-videos-and-more/learn/hierarchical-temporal-memory-white-paper.md": 1209,
-		"./papers-videos-and-more/learn/htm-videos-from-jeff-hawkins.md": 1210,
-		"./papers-videos-and-more/learn/machine-intelligence-with-streaming-data-webinar.md": 1211,
-		"./papers-videos-and-more/learn/on-intelligence.md": 1212,
-		"./papers-videos-and-more/learn/science-of-anomaly-detection.md": 1213,
-		"./papers-videos-and-more/learn/sparse-distributed-representations.md": 1214,
-		"./papers-videos-and-more/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model.md": 1215,
-		"./papers-videos-and-more/papers/encoding-data-for-htm-systems.md": 1216,
-		"./papers-videos-and-more/papers/evaluating-real-time-anomaly-detection-algorithms-numenta-anomaly-benchmark.md": 1217,
-		"./papers-videos-and-more/papers/how-do-neurons-operate-on-sparse-distributed-representations.md": 1218,
-		"./papers-videos-and-more/papers/porting-htm-models-to-the-heidelberg-neuromorphic-computing-platform.md": 1219,
-		"./papers-videos-and-more/papers/properties-of-sparse-distributed-representations.md": 1220,
-		"./papers-videos-and-more/papers/real-time-anomaly-detection-for-streaming-analytics.md": 1221,
-		"./papers-videos-and-more/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex.md": 1222,
-		"./partners/_Section": 727,
-		"./partners/_Section.jsx": 727,
-		"./partners/images/cortical.png": 728,
-		"./partners/images/grokstream.png": 729,
-		"./partners/images/grokstream@2x.png": 1223,
-		"./partners/index": 1224,
-		"./partners/index.css": 730,
-		"./partners/index.jsx": 1224,
-		"./press/2013/02/14/images/numenta.png": 1225,
-		"./press/2013/02/14/images/numenta@2x.png": 1226,
-		"./press/2013/02/14/numenta-gigaom-presentation.md": 1227,
-		"./press/2013/04/18/images/numenta.png": 1228,
-		"./press/2013/04/18/images/numenta@2x.png": 1229,
-		"./press/2013/04/18/thingworx-partnership.md": 1230,
-		"./press/2013/05/17/images/numenta.png": 1231,
-		"./press/2013/05/17/images/numenta@2x.png": 1232,
-		"./press/2013/05/17/sybase-esp-integration.md": 1233,
-		"./press/2013/07/22/images/nupic.png": 1234,
-		"./press/2013/07/22/nupic-open-source-project.md": 1235,
-		"./press/2013/12/04/computing-like-the-brain.md": 1236,
-		"./press/2013/12/04/images/yow.png": 1237,
-		"./press/2014/01/22/fujitsu-natf-video.md": 1238,
-		"./press/2014/01/22/images/fujitsu.png": 1239,
-		"./press/2014/01/22/images/fujitsu@2x.png": 1240,
-		"./press/2014/01/29/brains-view-of-economics.md": 1241,
-		"./press/2014/01/29/images/project-syndicate.png": 1242,
-		"./press/2014/03/25/images/numenta.png": 1243,
-		"./press/2014/03/25/images/numenta@2x.png": 1244,
-		"./press/2014/03/25/numenta-releases-grok-for-it-analytics-on-aws.md": 1245,
-		"./press/2014/03/29/building-an-ai-that-mimics-our-neocortex.md": 1246,
-		"./press/2014/03/29/images/the-register.png": 1247,
-		"./press/2014/03/29/images/the-register@2x.png": 1248,
-		"./press/2014/04/07/images/twit.png": 1249,
-		"./press/2014/04/07/triangulation-146-with-leo-laporte.md": 1250,
-		"./press/2014/04/08/images/33rd-square.png": 1251,
-		"./press/2014/04/08/path-to-machine-intelligence.md": 1252,
-		"./press/2014/04/20/images/forbes.png": 1253,
-		"./press/2014/04/20/images/forbes@2x.png": 1254,
-		"./press/2014/04/20/what-really-scares-tech-leaders-about-artificial-intelligence.md": 1255,
-		"./press/2014/04/23/images/mit-technology-review.png": 1256,
-		"./press/2014/04/23/neuromorphic-chips-enhance-artificial-intelligence.md": 1257,
-		"./press/2014/04/30/images/nordea-invest.png": 1258,
-		"./press/2014/04/30/when-big-data-is-old-news.md": 1259,
-		"./press/2014/05/29/computer-programming-is-a-dying-art.md": 1260,
-		"./press/2014/05/29/images/newsweek.png": 1261,
-		"./press/2014/06/03/big-data-dump-overwhelms-spy-agencies.md": 1262,
-		"./press/2014/06/03/images/bloomberg.png": 1263,
-		"./press/2014/06/03/images/bloomberg@2x.png": 1264,
-		"./press/2014/07/09/images/venture-beat.png": 1265,
-		"./press/2014/07/09/numenta-apps-mimic-way-brain-works.md": 1266,
-		"./press/2014/08/13/images/search-cloud-computing.png": 1267,
-		"./press/2014/08/13/images/search-cloud-computing@2x.png": 1268,
-		"./press/2014/08/13/when-cloud-monitoring-falls-short.md": 1269,
-		"./press/2014/09/02/images/dataconomy.png": 1270,
-		"./press/2014/09/02/mimicking-brain-function-is-revolutionising-nlp.md": 1271,
-		"./press/2014/09/05/cognitive-computing-truly-amazing-apps.md": 1272,
-		"./press/2014/09/05/images/programmableweb.png": 1273,
-		"./press/2014/09/16/images/dataconomy.png": 1274,
-		"./press/2014/09/16/ten-machine-learning-experts.md": 1275,
-		"./press/2014/09/24/images/gigaom.png": 1276,
-		"./press/2014/09/24/jeff-hawkins-on-his-approach-to-ai.md": 1277,
-		"./press/2014/10/22/images/thinkingmachine.png": 1278,
-		"./press/2014/10/22/jeff-hawkins-limitations-of-artificial-neural-networks.md": 1279,
-		"./press/2014/11/05/images/numenta.png": 1280,
-		"./press/2014/11/05/images/numenta@2x.png": 1281,
-		"./press/2014/11/05/numenta-showcases-new-version-grok-aws-reinvent-2014.md": 1282,
-		"./press/2014/11/10/images/newsweek.png": 1283,
-		"./press/2014/11/10/innovation-lite-modern-day-technology-is-stuck.md": 1284,
-		"./press/2014/11/12/cortical-io-gain-over-1-million-in-new-venture-capital.md": 1285,
-		"./press/2014/11/12/images/dataconomy.png": 1286,
-		"./press/2014/11/21/cognitive-computing-what-it-means-to-you.md": 1287,
-		"./press/2014/11/21/images/techworld.png": 1288,
-		"./press/2014/11/21/images/techworld@2x.png": 1289,
-		"./press/2014/12/09/images/eetimes.png": 1290,
-		"./press/2014/12/09/smart-panel-ponders-ais-future.md": 1291,
-		"./press/2014/12/29/deep-learning-and-machine-intelligence-eat-the-world-2015.md": 1292,
-		"./press/2014/12/29/images/forbes.png": 1293,
-		"./press/2014/12/29/images/forbes@2x.png": 1294,
-		"./press/2015/01/09/artificial-intelligence-is-real-now.md": 1295,
-		"./press/2015/01/09/images/gigaom.png": 1296,
-		"./press/2015/02/19/images/science20.png": 1297,
-		"./press/2015/02/19/life-happens-ai-will-happen-probably-at-ibm-numenta.md": 1298,
-		"./press/2015/03/02/images/recode.png": 1299,
-		"./press/2015/03/02/images/recode@2x.png": 1300,
-		"./press/2015/03/02/terminator-not-coming-future-will-thank-us.md": 1301,
-		"./press/2015/03/05/images/fortune.png": 1302,
-		"./press/2015/03/05/images/fortune@2x.png": 1303,
-		"./press/2015/03/05/many-scientists-dismiss-the-fear-of-robots-heres-why.md": 1304,
-		"./press/2015/03/26/artificial-intelligence-could-have-prevented-the-germanwings-crash.md": 1305,
-		"./press/2015/03/26/images/forbes.png": 1306,
-		"./press/2015/03/26/images/forbes@2x.png": 1307,
-		"./press/2015/04/02/how-we-learn-to-stop-worrying-and-love-the-bots.md": 1308,
-		"./press/2015/04/02/images/wired.png": 1309,
-		"./press/2015/04/02/images/wired@2x.png": 1310,
-		"./press/2015/04/08/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms.md": 1311,
-		"./press/2015/04/08/images/mit-technology-review.png": 1312,
-		"./press/2015/04/14/images/science20.png": 1313,
-		"./press/2015/04/14/numenta-the-bruce-lee-of-ai-and-deep-learning.md": 1314,
-		"./press/2015/05/07/images/wired.png": 1315,
-		"./press/2015/05/07/images/wired@2x.png": 1316,
-		"./press/2015/05/07/jeff-hawkins-of-firing-up-the-silicon-brain.md": 1317,
-		"./press/2015/05/14/images/numenta.png": 1318,
-		"./press/2015/05/14/images/numenta@2x.png": 1319,
-		"./press/2015/05/14/numenta-and-cortical-io-form-strategic-partnership.md": 1320,
-		"./press/2015/05/22/images/cnn.png": 1321,
-		"./press/2015/05/22/images/cnn@2x.png": 1322,
-		"./press/2015/05/22/images/science20.png": 1323,
-		"./press/2015/05/22/numenta-and-ibm-to-build-biologically-inspired-intelligent-machines.md": 1324,
-		"./press/2015/05/22/on-gps-with-fareed-zakaria-the-threat-of-intelligent-machines.md": 1325,
-		"./press/2015/07/08/images/image.png": 1326,
-		"./press/2015/07/08/images/screen.png": 1327,
-		"./press/2015/07/08/images/venture-beat.png": 1328,
-		"./press/2015/07/08/numenta-grok-for-stocks-app-uses-ai-decipher-stock-market-patterns.md": 1329,
-		"./press/2015/07/08/numenta-ships-new-htm-example-app-htm-for-stocks.md": 1330,
-		"./press/2015/08/19/images/numenta.png": 1331,
-		"./press/2015/08/19/images/numenta@2x.png": 1332,
-		"./press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners.md": 1333,
-		"./press/2015/09/05/images/network-world.png": 1334,
-		"./press/2015/09/05/images/network-world@2x.png": 1335,
-		"./press/2015/09/05/numentas-grok-for-it-artificial-intelligence-meets-network-performance-analysis.md": 1336,
-		"./press/2015/10/06/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.md": 1337,
-		"./press/2015/10/06/images/it-business-edge.png": 1338,
-		"./press/2015/10/29/images/prweb.png": 1339,
-		"./press/2015/10/29/usd-2-million-for-brain-inspired-algorithm-made-in-austria-cortical-io.md": 1340,
-		"./press/2015/11/10/images/image.png": 1341,
-		"./press/2015/11/10/images/image@2x.png": 1342,
-		"./press/2015/11/10/numenta-anomaly-benchmark-nab-evaluates-anomaly-detection-techniques.md": 1343,
-		"./press/2015/11/12/images/mit-technology-review.png": 1344,
-		"./press/2015/11/12/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns.md": 1345,
-		"./press/2016/03/07/images/the-new-york-times.png": 1346,
-		"./press/2016/03/07/images/the-new-york-times@2x.png": 1347,
-		"./press/2016/03/07/the-terminator-and-the-washing-machine.md": 1348,
-		"./press/2016/04/12/images/image.jpg": 1349,
-		"./press/2016/04/12/numenta-researchers-discover-how-the-brain-learns-sequences.md": 1350,
-		"./press/2016/05/01/brain-like-computing.md": 1351,
-		"./press/2016/05/01/images/computing-now.png": 1352,
-		"./press/2016/05/01/images/computing-now@2x.png": 1353,
-		"./press/2016/05/22/images/wall-street-journal.png": 1354,
-		"./press/2016/05/22/images/wall-street-journal@2x.png": 1355,
-		"./press/2016/05/22/new-chips-propel-machine-learning.md": 1356,
-		"./press/2016/05/29/donna-dubinsky-standing-up-to-steve-jobs-and-being-right.md": 1357,
-		"./press/2016/05/29/images/learning-leader.png": 1358,
-		"./press/2016/06/16/here-is-what-uk-developers-need-to-know-about-machine-learning.md": 1359,
-		"./press/2016/06/16/images/techworld.png": 1360,
-		"./press/2016/06/16/images/techworld@2x.png": 1361,
-		"./press/2016/06/25/from-not-working-to-neural-networking.md": 1362,
-		"./press/2016/06/25/images/economist.png": 1363,
-		"./press/2016/06/25/images/economist@2x.png": 1364,
-		"./press/2016/06/26/images/htm-studio.png": 1365,
-		"./press/2016/06/26/images/htm-studio@2x.png": 1366,
-		"./press/2016/06/26/numenta-releases-htm-studio.md": 1367,
-		"./press/2016/06/27/images/recode.png": 1368,
-		"./press/2016/06/27/images/recode@2x.png": 1369,
-		"./press/2016/06/27/this-is-why-your-fears-about-artificial-intelligence-are-wrong.md": 1370,
-		"./press/2016/07/26/images/jaxenter.png": 1371,
-		"./press/2016/07/26/images/jaxenter@2x.png": 1372,
-		"./press/2016/07/26/machine-learning-expert-check-6-tips-for-getting-started-in-the-machine-learning.md": 1373,
-		"./press/index": 1374,
-		"./press/index.jsx": 1374,
-		"./sitemap/index": 1375,
-		"./sitemap/index.jsx": 1375,
-		"./technology-overview/_Section": 732,
-		"./technology-overview/_Section.jsx": 732,
-		"./technology-overview/images/video-tech.png": 733,
-		"./technology-overview/images/video-tech@2x.png": 1376,
-		"./technology-overview/index": 1377,
-		"./technology-overview/index.css": 734,
-		"./technology-overview/index.jsx": 1377
+		"./htm-studio/style-modal": 1131,
+		"./htm-studio/style-modal.js": 1131,
+		"./htm-studio/terms.md": 1128,
+		"./htm-studio/windows.md": 1132,
+		"./index": 1133,
+		"./index.css": 708,
+		"./index.jsx": 1133,
+		"./legal/privacy.md": 1134,
+		"./legal/terms.md": 1135,
+		"./mission-and-history/_Section": 710,
+		"./mission-and-history/_Section.jsx": 710,
+		"./mission-and-history/images/brain.svg": 711,
+		"./mission-and-history/images/timeline.png": 712,
+		"./mission-and-history/images/timeline@2x.png": 1136,
+		"./mission-and-history/images/video-ourstory.png": 713,
+		"./mission-and-history/images/video-ourstory@2x.png": 1137,
+		"./mission-and-history/index": 1138,
+		"./mission-and-history/index.css": 714,
+		"./mission-and-history/index.jsx": 1138,
+		"./newsletter/2013/10/11/announcing-grok-for-it.md": 1139,
+		"./newsletter/2013/11/08/grok-at-aws-reinvent.md": 1140,
+		"./newsletter/2014/02/04/grok-soft-launch.md": 1141,
+		"./newsletter/2014/03/25/announcing-grok-for-it-analytics-on-aws.md": 1142,
+		"./newsletter/2014/06/10/progress-report-june-2014.md": 1143,
+		"./newsletter/2014/08/19/machine-intelligence-applications-summer-2014.md": 1144,
+		"./newsletter/2014/09/16/fall-workshop-and-hackathon.md": 1145,
+		"./newsletter/2014/11/11/grok-1-6-showcasing-at-aws-re-invent-las-vegas-2014.md": 1146,
+		"./newsletter/2015/01/26/welcome-to-2015.md": 1147,
+		"./newsletter/2015/03/12/numenta-newsletter-mar-2015.md": 1148,
+		"./newsletter/2015/04/29/numenta-newsletter-apr-2015.md": 1149,
+		"./newsletter/2015/05/14/announcing-relationship-with-cortical-io.md": 1150,
+		"./newsletter/2015/06/09/numenta-open-sourcing-two-htm-products.md": 1151,
+		"./newsletter/2015/07/02/announcing-open-source-htm-app-grok-for-stocks.md": 1152,
+		"./newsletter/2015/07/02/images/homescreen.png": 1153,
+		"./newsletter/2015/07/02/images/image.png": 1154,
+		"./newsletter/2015/09/01/images/image.png": 1155,
+		"./newsletter/2015/09/01/images/image@2x.png": 1156,
+		"./newsletter/2015/09/01/partnership-between-numenta-and-avik-partners-on-grok-for-it-analytics.md": 1157,
+		"./newsletter/2015/10/01/images/image.png": 1158,
+		"./newsletter/2015/10/01/images/image@2x.png": 1159,
+		"./newsletter/2015/10/01/numenta-anomaly-benchmark-and-numenta-htm-challenge.md": 1160,
+		"./newsletter/2015/11/10/images/image.png": 1161,
+		"./newsletter/2015/11/10/images/image@2x.png": 1162,
+		"./newsletter/2015/11/10/numenta-anomaly-benchmark-nab-open-source-with-white-paper.md": 1163,
+		"./newsletter/2015/11/17/images/image.png": 1164,
+		"./newsletter/2015/11/17/why-neurons-have-thousands-of-synapses-a-theory-of-sequence-memory.md": 1165,
+		"./newsletter/2016/01/07/year-in-review-numenta-2015.md": 1166,
+		"./newsletter/2016/02/10/numenta-anomaly-benchmark-competition.md": 1167,
+		"./newsletter/2016/02/18/htm-for-stocks-available-in-the-app-store.md": 1168,
+		"./newsletter/2016/02/18/images/image.png": 1169,
+		"./newsletter/2016/03/28/neuron-paper-published-in-peer-reviewed-neuroscience-journal.md": 1170,
+		"./newsletter/2016/05/11/announcing-bami-biological-and-machine-intelligence.md": 1171,
+		"./newsletter/2016/06/28/images/htm-studio.png": 1172,
+		"./newsletter/2016/06/28/images/htm-studio@2x.png": 1173,
+		"./newsletter/2016/06/28/numenta-releases-htm-studio-desktop-application.md": 1174,
+		"./newsletter/images/numenta.png": 1175,
+		"./newsletter/images/numenta@2x.png": 1176,
+		"./newsletter/index": 1177,
+		"./newsletter/index.css": 1178,
+		"./newsletter/index.jsx": 1177,
+		"./numenta-anomaly-benchmark/images/compare.png": 1180,
+		"./numenta-anomaly-benchmark/images/compare@2x.png": 1181,
+		"./numenta-anomaly-benchmark/images/datasheet.png": 1182,
+		"./numenta-anomaly-benchmark/images/datasheet@2x.png": 1183,
+		"./numenta-anomaly-benchmark/images/detail.png": 1184,
+		"./numenta-anomaly-benchmark/images/equations.png": 1185,
+		"./numenta-anomaly-benchmark/images/equations@2x.png": 1186,
+		"./numenta-anomaly-benchmark/images/github.png": 1187,
+		"./numenta-anomaly-benchmark/images/github@2x.png": 1188,
+		"./numenta-anomaly-benchmark/images/heartbeat.png": 1189,
+		"./numenta-anomaly-benchmark/images/heartbeat@2x.png": 1190,
+		"./numenta-anomaly-benchmark/images/math.png": 1191,
+		"./numenta-anomaly-benchmark/images/math@2x.png": 1192,
+		"./numenta-anomaly-benchmark/images/scoreboard.png": 1193,
+		"./numenta-anomaly-benchmark/images/video-mlconf.png": 1194,
+		"./numenta-anomaly-benchmark/images/video-mlconf@2x.png": 1195,
+		"./numenta-anomaly-benchmark/images/video-nab.png": 1196,
+		"./numenta-anomaly-benchmark/images/video-nab@2x.png": 1197,
+		"./numenta-anomaly-benchmark/index": 1198,
+		"./numenta-anomaly-benchmark/index.css": 1201,
+		"./numenta-anomaly-benchmark/index.jsx": 1198,
+		"./open-source-project/_Section": 716,
+		"./open-source-project/_Section.jsx": 716,
+		"./open-source-project/images/video-tech.png": 1203,
+		"./open-source-project/images/video-tech@2x.png": 1204,
+		"./open-source-project/index": 1205,
+		"./open-source-project/index.css": 718,
+		"./open-source-project/index.jsx": 1205,
+		"./papers-videos-and-more/_Section": 720,
+		"./papers-videos-and-more/_Section.jsx": 720,
+		"./papers-videos-and-more/images/video.png": 725,
+		"./papers-videos-and-more/images/video@2x.png": 1206,
+		"./papers-videos-and-more/index": 1207,
+		"./papers-videos-and-more/index.css": 726,
+		"./papers-videos-and-more/index.jsx": 1207,
+		"./papers-videos-and-more/learn/applications-of-hierarchical-temporal-memory.md": 1208,
+		"./papers-videos-and-more/learn/getting-started-with-numenta-technology.md": 1209,
+		"./papers-videos-and-more/learn/hierarchical-temporal-memory-basics-tutorial.md": 1210,
+		"./papers-videos-and-more/learn/hierarchical-temporal-memory-white-paper.md": 1211,
+		"./papers-videos-and-more/learn/htm-videos-from-jeff-hawkins.md": 1212,
+		"./papers-videos-and-more/learn/machine-intelligence-with-streaming-data-webinar.md": 1213,
+		"./papers-videos-and-more/learn/on-intelligence.md": 1214,
+		"./papers-videos-and-more/learn/science-of-anomaly-detection.md": 1215,
+		"./papers-videos-and-more/learn/sparse-distributed-representations.md": 1216,
+		"./papers-videos-and-more/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model.md": 1217,
+		"./papers-videos-and-more/papers/encoding-data-for-htm-systems.md": 1218,
+		"./papers-videos-and-more/papers/evaluating-real-time-anomaly-detection-algorithms-numenta-anomaly-benchmark.md": 1219,
+		"./papers-videos-and-more/papers/how-do-neurons-operate-on-sparse-distributed-representations.md": 1220,
+		"./papers-videos-and-more/papers/porting-htm-models-to-the-heidelberg-neuromorphic-computing-platform.md": 1221,
+		"./papers-videos-and-more/papers/properties-of-sparse-distributed-representations.md": 1222,
+		"./papers-videos-and-more/papers/real-time-anomaly-detection-for-streaming-analytics.md": 1223,
+		"./papers-videos-and-more/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex.md": 1224,
+		"./partners/_Section": 728,
+		"./partners/_Section.jsx": 728,
+		"./partners/images/cortical.png": 729,
+		"./partners/images/grokstream.png": 730,
+		"./partners/images/grokstream@2x.png": 1225,
+		"./partners/index": 1226,
+		"./partners/index.css": 731,
+		"./partners/index.jsx": 1226,
+		"./press/2013/02/14/images/numenta.png": 1227,
+		"./press/2013/02/14/images/numenta@2x.png": 1228,
+		"./press/2013/02/14/numenta-gigaom-presentation.md": 1229,
+		"./press/2013/04/18/images/numenta.png": 1230,
+		"./press/2013/04/18/images/numenta@2x.png": 1231,
+		"./press/2013/04/18/thingworx-partnership.md": 1232,
+		"./press/2013/05/17/images/numenta.png": 1233,
+		"./press/2013/05/17/images/numenta@2x.png": 1234,
+		"./press/2013/05/17/sybase-esp-integration.md": 1235,
+		"./press/2013/07/22/images/nupic.png": 1236,
+		"./press/2013/07/22/nupic-open-source-project.md": 1237,
+		"./press/2013/12/04/computing-like-the-brain.md": 1238,
+		"./press/2013/12/04/images/yow.png": 1239,
+		"./press/2014/01/22/fujitsu-natf-video.md": 1240,
+		"./press/2014/01/22/images/fujitsu.png": 1241,
+		"./press/2014/01/22/images/fujitsu@2x.png": 1242,
+		"./press/2014/01/29/brains-view-of-economics.md": 1243,
+		"./press/2014/01/29/images/project-syndicate.png": 1244,
+		"./press/2014/03/25/images/numenta.png": 1245,
+		"./press/2014/03/25/images/numenta@2x.png": 1246,
+		"./press/2014/03/25/numenta-releases-grok-for-it-analytics-on-aws.md": 1247,
+		"./press/2014/03/29/building-an-ai-that-mimics-our-neocortex.md": 1248,
+		"./press/2014/03/29/images/the-register.png": 1249,
+		"./press/2014/03/29/images/the-register@2x.png": 1250,
+		"./press/2014/04/07/images/twit.png": 1251,
+		"./press/2014/04/07/triangulation-146-with-leo-laporte.md": 1252,
+		"./press/2014/04/08/images/33rd-square.png": 1253,
+		"./press/2014/04/08/path-to-machine-intelligence.md": 1254,
+		"./press/2014/04/20/images/forbes.png": 1255,
+		"./press/2014/04/20/images/forbes@2x.png": 1256,
+		"./press/2014/04/20/what-really-scares-tech-leaders-about-artificial-intelligence.md": 1257,
+		"./press/2014/04/23/images/mit-technology-review.png": 1258,
+		"./press/2014/04/23/neuromorphic-chips-enhance-artificial-intelligence.md": 1259,
+		"./press/2014/04/30/images/nordea-invest.png": 1260,
+		"./press/2014/04/30/when-big-data-is-old-news.md": 1261,
+		"./press/2014/05/29/computer-programming-is-a-dying-art.md": 1262,
+		"./press/2014/05/29/images/newsweek.png": 1263,
+		"./press/2014/06/03/big-data-dump-overwhelms-spy-agencies.md": 1264,
+		"./press/2014/06/03/images/bloomberg.png": 1265,
+		"./press/2014/06/03/images/bloomberg@2x.png": 1266,
+		"./press/2014/07/09/images/venture-beat.png": 1267,
+		"./press/2014/07/09/numenta-apps-mimic-way-brain-works.md": 1268,
+		"./press/2014/08/13/images/search-cloud-computing.png": 1269,
+		"./press/2014/08/13/images/search-cloud-computing@2x.png": 1270,
+		"./press/2014/08/13/when-cloud-monitoring-falls-short.md": 1271,
+		"./press/2014/09/02/images/dataconomy.png": 1272,
+		"./press/2014/09/02/mimicking-brain-function-is-revolutionising-nlp.md": 1273,
+		"./press/2014/09/05/cognitive-computing-truly-amazing-apps.md": 1274,
+		"./press/2014/09/05/images/programmableweb.png": 1275,
+		"./press/2014/09/16/images/dataconomy.png": 1276,
+		"./press/2014/09/16/ten-machine-learning-experts.md": 1277,
+		"./press/2014/09/24/images/gigaom.png": 1278,
+		"./press/2014/09/24/jeff-hawkins-on-his-approach-to-ai.md": 1279,
+		"./press/2014/10/22/images/thinkingmachine.png": 1280,
+		"./press/2014/10/22/jeff-hawkins-limitations-of-artificial-neural-networks.md": 1281,
+		"./press/2014/11/05/images/numenta.png": 1282,
+		"./press/2014/11/05/images/numenta@2x.png": 1283,
+		"./press/2014/11/05/numenta-showcases-new-version-grok-aws-reinvent-2014.md": 1284,
+		"./press/2014/11/10/images/newsweek.png": 1285,
+		"./press/2014/11/10/innovation-lite-modern-day-technology-is-stuck.md": 1286,
+		"./press/2014/11/12/cortical-io-gain-over-1-million-in-new-venture-capital.md": 1287,
+		"./press/2014/11/12/images/dataconomy.png": 1288,
+		"./press/2014/11/21/cognitive-computing-what-it-means-to-you.md": 1289,
+		"./press/2014/11/21/images/techworld.png": 1290,
+		"./press/2014/11/21/images/techworld@2x.png": 1291,
+		"./press/2014/12/09/images/eetimes.png": 1292,
+		"./press/2014/12/09/smart-panel-ponders-ais-future.md": 1293,
+		"./press/2014/12/29/deep-learning-and-machine-intelligence-eat-the-world-2015.md": 1294,
+		"./press/2014/12/29/images/forbes.png": 1295,
+		"./press/2014/12/29/images/forbes@2x.png": 1296,
+		"./press/2015/01/09/artificial-intelligence-is-real-now.md": 1297,
+		"./press/2015/01/09/images/gigaom.png": 1298,
+		"./press/2015/02/19/images/science20.png": 1299,
+		"./press/2015/02/19/life-happens-ai-will-happen-probably-at-ibm-numenta.md": 1300,
+		"./press/2015/03/02/images/recode.png": 1301,
+		"./press/2015/03/02/images/recode@2x.png": 1302,
+		"./press/2015/03/02/terminator-not-coming-future-will-thank-us.md": 1303,
+		"./press/2015/03/05/images/fortune.png": 1304,
+		"./press/2015/03/05/images/fortune@2x.png": 1305,
+		"./press/2015/03/05/many-scientists-dismiss-the-fear-of-robots-heres-why.md": 1306,
+		"./press/2015/03/26/artificial-intelligence-could-have-prevented-the-germanwings-crash.md": 1307,
+		"./press/2015/03/26/images/forbes.png": 1308,
+		"./press/2015/03/26/images/forbes@2x.png": 1309,
+		"./press/2015/04/02/how-we-learn-to-stop-worrying-and-love-the-bots.md": 1310,
+		"./press/2015/04/02/images/wired.png": 1311,
+		"./press/2015/04/02/images/wired@2x.png": 1312,
+		"./press/2015/04/08/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms.md": 1313,
+		"./press/2015/04/08/images/mit-technology-review.png": 1314,
+		"./press/2015/04/14/images/science20.png": 1315,
+		"./press/2015/04/14/numenta-the-bruce-lee-of-ai-and-deep-learning.md": 1316,
+		"./press/2015/05/07/images/wired.png": 1317,
+		"./press/2015/05/07/images/wired@2x.png": 1318,
+		"./press/2015/05/07/jeff-hawkins-of-firing-up-the-silicon-brain.md": 1319,
+		"./press/2015/05/14/images/numenta.png": 1320,
+		"./press/2015/05/14/images/numenta@2x.png": 1321,
+		"./press/2015/05/14/numenta-and-cortical-io-form-strategic-partnership.md": 1322,
+		"./press/2015/05/22/images/cnn.png": 1323,
+		"./press/2015/05/22/images/cnn@2x.png": 1324,
+		"./press/2015/05/22/images/science20.png": 1325,
+		"./press/2015/05/22/numenta-and-ibm-to-build-biologically-inspired-intelligent-machines.md": 1326,
+		"./press/2015/05/22/on-gps-with-fareed-zakaria-the-threat-of-intelligent-machines.md": 1327,
+		"./press/2015/07/08/images/image.png": 1328,
+		"./press/2015/07/08/images/screen.png": 1329,
+		"./press/2015/07/08/images/venture-beat.png": 1330,
+		"./press/2015/07/08/numenta-grok-for-stocks-app-uses-ai-decipher-stock-market-patterns.md": 1331,
+		"./press/2015/07/08/numenta-ships-new-htm-example-app-htm-for-stocks.md": 1332,
+		"./press/2015/08/19/images/numenta.png": 1333,
+		"./press/2015/08/19/images/numenta@2x.png": 1334,
+		"./press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners.md": 1335,
+		"./press/2015/09/05/images/network-world.png": 1336,
+		"./press/2015/09/05/images/network-world@2x.png": 1337,
+		"./press/2015/09/05/numentas-grok-for-it-artificial-intelligence-meets-network-performance-analysis.md": 1338,
+		"./press/2015/10/06/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.md": 1339,
+		"./press/2015/10/06/images/it-business-edge.png": 1340,
+		"./press/2015/10/29/images/prweb.png": 1341,
+		"./press/2015/10/29/usd-2-million-for-brain-inspired-algorithm-made-in-austria-cortical-io.md": 1342,
+		"./press/2015/11/10/images/image.png": 1343,
+		"./press/2015/11/10/images/image@2x.png": 1344,
+		"./press/2015/11/10/numenta-anomaly-benchmark-nab-evaluates-anomaly-detection-techniques.md": 1345,
+		"./press/2015/11/12/images/mit-technology-review.png": 1346,
+		"./press/2015/11/12/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns.md": 1347,
+		"./press/2016/03/07/images/the-new-york-times.png": 1348,
+		"./press/2016/03/07/images/the-new-york-times@2x.png": 1349,
+		"./press/2016/03/07/the-terminator-and-the-washing-machine.md": 1350,
+		"./press/2016/04/12/images/image.jpg": 1351,
+		"./press/2016/04/12/numenta-researchers-discover-how-the-brain-learns-sequences.md": 1352,
+		"./press/2016/05/01/brain-like-computing.md": 1353,
+		"./press/2016/05/01/images/computing-now.png": 1354,
+		"./press/2016/05/01/images/computing-now@2x.png": 1355,
+		"./press/2016/05/22/images/wall-street-journal.png": 1356,
+		"./press/2016/05/22/images/wall-street-journal@2x.png": 1357,
+		"./press/2016/05/22/new-chips-propel-machine-learning.md": 1358,
+		"./press/2016/05/29/donna-dubinsky-standing-up-to-steve-jobs-and-being-right.md": 1359,
+		"./press/2016/05/29/images/learning-leader.png": 1360,
+		"./press/2016/06/16/here-is-what-uk-developers-need-to-know-about-machine-learning.md": 1361,
+		"./press/2016/06/16/images/techworld.png": 1362,
+		"./press/2016/06/16/images/techworld@2x.png": 1363,
+		"./press/2016/06/25/from-not-working-to-neural-networking.md": 1364,
+		"./press/2016/06/25/images/economist.png": 1365,
+		"./press/2016/06/25/images/economist@2x.png": 1366,
+		"./press/2016/06/26/images/htm-studio.png": 1367,
+		"./press/2016/06/26/images/htm-studio@2x.png": 1368,
+		"./press/2016/06/26/numenta-releases-htm-studio.md": 1369,
+		"./press/2016/06/27/images/recode.png": 1370,
+		"./press/2016/06/27/images/recode@2x.png": 1371,
+		"./press/2016/06/27/this-is-why-your-fears-about-artificial-intelligence-are-wrong.md": 1372,
+		"./press/2016/07/26/images/jaxenter.png": 1373,
+		"./press/2016/07/26/images/jaxenter@2x.png": 1374,
+		"./press/2016/07/26/machine-learning-expert-check-6-tips-for-getting-started-in-the-machine-learning.md": 1375,
+		"./press/index": 1376,
+		"./press/index.jsx": 1376,
+		"./sitemap/index": 1377,
+		"./sitemap/index.jsx": 1377,
+		"./technology-overview/_Section": 733,
+		"./technology-overview/_Section.jsx": 733,
+		"./technology-overview/images/video-tech.png": 734,
+		"./technology-overview/images/video-tech@2x.png": 1378,
+		"./technology-overview/index": 1379,
+		"./technology-overview/index.css": 735,
+		"./technology-overview/index.jsx": 1379
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -59390,35 +59413,35 @@
 	
 	var _Section4 = _interopRequireDefault(_Section3);
 	
-	var _Section5 = __webpack_require__(643);
+	var _Section5 = __webpack_require__(644);
 	
 	var _Section6 = _interopRequireDefault(_Section5);
 	
-	var _Section7 = __webpack_require__(675);
+	var _Section7 = __webpack_require__(676);
 	
 	var _Section8 = _interopRequireDefault(_Section7);
 	
-	var _Section9 = __webpack_require__(700);
+	var _Section9 = __webpack_require__(701);
 	
 	var _Section10 = _interopRequireDefault(_Section9);
 	
-	var _Section11 = __webpack_require__(709);
+	var _Section11 = __webpack_require__(710);
 	
 	var _Section12 = _interopRequireDefault(_Section11);
 	
-	var _Section13 = __webpack_require__(715);
+	var _Section13 = __webpack_require__(716);
 	
 	var _Section14 = _interopRequireDefault(_Section13);
 	
-	var _Section15 = __webpack_require__(719);
+	var _Section15 = __webpack_require__(720);
 	
 	var _Section16 = _interopRequireDefault(_Section15);
 	
-	var _Section17 = __webpack_require__(727);
+	var _Section17 = __webpack_require__(728);
 	
 	var _Section18 = _interopRequireDefault(_Section17);
 	
-	var _Section19 = __webpack_require__(732);
+	var _Section19 = __webpack_require__(733);
 	
 	var _Section20 = _interopRequireDefault(_Section19);
 	
@@ -59970,35 +59993,35 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
-	var _htmForStocks = __webpack_require__(634);
+	var _htmForStocks = __webpack_require__(635);
 	
 	var _htmForStocks2 = _interopRequireDefault(_htmForStocks);
 	
-	var _htmStudio = __webpack_require__(635);
+	var _htmStudio = __webpack_require__(636);
 	
 	var _htmStudio2 = _interopRequireDefault(_htmStudio);
 	
-	var _geo = __webpack_require__(636);
+	var _geo = __webpack_require__(637);
 	
 	var _geo2 = _interopRequireDefault(_geo);
 	
-	var _grok = __webpack_require__(637);
+	var _grok = __webpack_require__(638);
 	
 	var _grok2 = _interopRequireDefault(_grok);
 	
-	var _nlp = __webpack_require__(638);
+	var _nlp = __webpack_require__(639);
 	
 	var _nlp2 = _interopRequireDefault(_nlp);
 	
-	var _intrude = __webpack_require__(639);
+	var _intrude = __webpack_require__(640);
 	
 	var _intrude2 = _interopRequireDefault(_intrude);
 	
-	var _videoApps = __webpack_require__(640);
+	var _videoApps = __webpack_require__(641);
 	
 	var _videoApps2 = _interopRequireDefault(_videoApps);
 	
-	var _index = __webpack_require__(641);
+	var _index = __webpack_require__(642);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -60513,11 +60536,7 @@
 	  value: true
 	});
 	
-	var _browserSize = __webpack_require__(595);
-	
-	var _browserSize2 = _interopRequireDefault(_browserSize);
-	
-	var _reactModal = __webpack_require__(601);
+	var _reactModal = __webpack_require__(595);
 	
 	var _reactModal2 = _interopRequireDefault(_reactModal);
 	
@@ -60525,9 +60544,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactYoutube = __webpack_require__(611);
+	var _reactYoutube = __webpack_require__(605);
 	
 	var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
+	
+	var _client = __webpack_require__(625);
 	
 	var _shared = __webpack_require__(381);
 	
@@ -60535,17 +60556,15 @@
 	
 	var _Image2 = _interopRequireDefault(_Image);
 	
-	var _index = __webpack_require__(631);
+	var _index = __webpack_require__(632);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _styleModal = __webpack_require__(633);
+	var _styleModal = __webpack_require__(634);
 	
 	var _styleModal2 = _interopRequireDefault(_styleModal);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	const DefaultWidth = 640;
 	
 	class Video extends _react2.default.Component {
 	
@@ -60555,22 +60574,6 @@
 	    this.state = {
 	      open: false
 	    };
-	
-	    this._sizer = null;
-	    this._width = DefaultWidth;
-	  }
-	
-	  componentDidMount() {
-	    this._sizer = (0, _browserSize2.default)();
-	    this._width = this._sizer.width;
-	    this._sizer.on('resize', () => {
-	      if (this._sizer) this._width = this._sizer.width;
-	    });
-	  }
-	
-	  componentWillUnmount() {
-	    this._sizer = null;
-	    this._width = DefaultWidth;
 	  }
 	
 	  _playerClose() {
@@ -60585,7 +60588,7 @@
 	    const { image, respond, time, title, type, videoId } = this.props;
 	    const { open } = this.state;
 	    const isOpen = open === true;
-	    const width = (0, _shared.getModalAspect)(this._width);
+	    const width = (0, _shared.getModalAspect)((0, _client.getBrowserWidth)());
 	    const playerOptions = {
 	      width: width.toString(),
 	      height: (width * (360 / 640)).toString(), // ~640x360
@@ -60648,952 +60651,22 @@
 /* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	
-	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
-	
-	var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
-	
-	var _inherits = function (subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
-	
-	var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
-	
-	var EventEmitter = __webpack_require__(596).EventEmitter;
-	var throttle = _interopRequire(__webpack_require__(597));
-	
-	var singleton = _interopRequire(__webpack_require__(600));
-	
-	var BrowserSize = (function (EventEmitter) {
-	  function BrowserSize() {
-	    var _this = this;
-	    _classCallCheck(this, BrowserSize);
-	
-	    window.addEventListener("resize", throttle(function () {
-	      _this.computeSize();
-	      _this.emit("resize");
-	    }, 200));
-	
-	    this.computeSize();
-	  }
-	
-	  _inherits(BrowserSize, EventEmitter);
-	
-	  _prototypeProperties(BrowserSize, null, {
-	    computeSize: {
-	      value: function computeSize() {
-	        this.width = document.documentElement.clientWidth;
-	        this.height = document.documentElement.clientHeight;
-	      },
-	      writable: true,
-	      configurable: true
-	    }
-	  });
-	
-	  return BrowserSize;
-	})(EventEmitter);
-	
-	module.exports = singleton(BrowserSize);
+	module.exports = __webpack_require__(596);
 	
 
 
 /***/ },
 /* 596 */
-/***/ function(module, exports) {
-
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-	
-	function EventEmitter() {
-	  this._events = this._events || {};
-	  this._maxListeners = this._maxListeners || undefined;
-	}
-	module.exports = EventEmitter;
-	
-	// Backwards-compat with node 0.10.x
-	EventEmitter.EventEmitter = EventEmitter;
-	
-	EventEmitter.prototype._events = undefined;
-	EventEmitter.prototype._maxListeners = undefined;
-	
-	// By default EventEmitters will print a warning if more than 10 listeners are
-	// added to it. This is a useful default which helps finding memory leaks.
-	EventEmitter.defaultMaxListeners = 10;
-	
-	// Obviously not all Emitters should be limited to 10. This function allows
-	// that to be increased. Set to zero for unlimited.
-	EventEmitter.prototype.setMaxListeners = function(n) {
-	  if (!isNumber(n) || n < 0 || isNaN(n))
-	    throw TypeError('n must be a positive number');
-	  this._maxListeners = n;
-	  return this;
-	};
-	
-	EventEmitter.prototype.emit = function(type) {
-	  var er, handler, len, args, i, listeners;
-	
-	  if (!this._events)
-	    this._events = {};
-	
-	  // If there is no 'error' event listener then throw.
-	  if (type === 'error') {
-	    if (!this._events.error ||
-	        (isObject(this._events.error) && !this._events.error.length)) {
-	      er = arguments[1];
-	      if (er instanceof Error) {
-	        throw er; // Unhandled 'error' event
-	      } else {
-	        // At least give some kind of context to the user
-	        var err = new Error('Uncaught, unspecified "error" event. (' + er + ')');
-	        err.context = er;
-	        throw err;
-	      }
-	    }
-	  }
-	
-	  handler = this._events[type];
-	
-	  if (isUndefined(handler))
-	    return false;
-	
-	  if (isFunction(handler)) {
-	    switch (arguments.length) {
-	      // fast cases
-	      case 1:
-	        handler.call(this);
-	        break;
-	      case 2:
-	        handler.call(this, arguments[1]);
-	        break;
-	      case 3:
-	        handler.call(this, arguments[1], arguments[2]);
-	        break;
-	      // slower
-	      default:
-	        args = Array.prototype.slice.call(arguments, 1);
-	        handler.apply(this, args);
-	    }
-	  } else if (isObject(handler)) {
-	    args = Array.prototype.slice.call(arguments, 1);
-	    listeners = handler.slice();
-	    len = listeners.length;
-	    for (i = 0; i < len; i++)
-	      listeners[i].apply(this, args);
-	  }
-	
-	  return true;
-	};
-	
-	EventEmitter.prototype.addListener = function(type, listener) {
-	  var m;
-	
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  if (!this._events)
-	    this._events = {};
-	
-	  // To avoid recursion in the case that type === "newListener"! Before
-	  // adding it to the listeners, first emit "newListener".
-	  if (this._events.newListener)
-	    this.emit('newListener', type,
-	              isFunction(listener.listener) ?
-	              listener.listener : listener);
-	
-	  if (!this._events[type])
-	    // Optimize the case of one listener. Don't need the extra array object.
-	    this._events[type] = listener;
-	  else if (isObject(this._events[type]))
-	    // If we've already got an array, just append.
-	    this._events[type].push(listener);
-	  else
-	    // Adding the second element, need to change to array.
-	    this._events[type] = [this._events[type], listener];
-	
-	  // Check for listener leak
-	  if (isObject(this._events[type]) && !this._events[type].warned) {
-	    if (!isUndefined(this._maxListeners)) {
-	      m = this._maxListeners;
-	    } else {
-	      m = EventEmitter.defaultMaxListeners;
-	    }
-	
-	    if (m && m > 0 && this._events[type].length > m) {
-	      this._events[type].warned = true;
-	      console.error('(node) warning: possible EventEmitter memory ' +
-	                    'leak detected. %d listeners added. ' +
-	                    'Use emitter.setMaxListeners() to increase limit.',
-	                    this._events[type].length);
-	      if (typeof console.trace === 'function') {
-	        // not supported in IE 10
-	        console.trace();
-	      }
-	    }
-	  }
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
-	
-	EventEmitter.prototype.once = function(type, listener) {
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  var fired = false;
-	
-	  function g() {
-	    this.removeListener(type, g);
-	
-	    if (!fired) {
-	      fired = true;
-	      listener.apply(this, arguments);
-	    }
-	  }
-	
-	  g.listener = listener;
-	  this.on(type, g);
-	
-	  return this;
-	};
-	
-	// emits a 'removeListener' event iff the listener was removed
-	EventEmitter.prototype.removeListener = function(type, listener) {
-	  var list, position, length, i;
-	
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  if (!this._events || !this._events[type])
-	    return this;
-	
-	  list = this._events[type];
-	  length = list.length;
-	  position = -1;
-	
-	  if (list === listener ||
-	      (isFunction(list.listener) && list.listener === listener)) {
-	    delete this._events[type];
-	    if (this._events.removeListener)
-	      this.emit('removeListener', type, listener);
-	
-	  } else if (isObject(list)) {
-	    for (i = length; i-- > 0;) {
-	      if (list[i] === listener ||
-	          (list[i].listener && list[i].listener === listener)) {
-	        position = i;
-	        break;
-	      }
-	    }
-	
-	    if (position < 0)
-	      return this;
-	
-	    if (list.length === 1) {
-	      list.length = 0;
-	      delete this._events[type];
-	    } else {
-	      list.splice(position, 1);
-	    }
-	
-	    if (this._events.removeListener)
-	      this.emit('removeListener', type, listener);
-	  }
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.removeAllListeners = function(type) {
-	  var key, listeners;
-	
-	  if (!this._events)
-	    return this;
-	
-	  // not listening for removeListener, no need to emit
-	  if (!this._events.removeListener) {
-	    if (arguments.length === 0)
-	      this._events = {};
-	    else if (this._events[type])
-	      delete this._events[type];
-	    return this;
-	  }
-	
-	  // emit removeListener for all listeners on all events
-	  if (arguments.length === 0) {
-	    for (key in this._events) {
-	      if (key === 'removeListener') continue;
-	      this.removeAllListeners(key);
-	    }
-	    this.removeAllListeners('removeListener');
-	    this._events = {};
-	    return this;
-	  }
-	
-	  listeners = this._events[type];
-	
-	  if (isFunction(listeners)) {
-	    this.removeListener(type, listeners);
-	  } else if (listeners) {
-	    // LIFO order
-	    while (listeners.length)
-	      this.removeListener(type, listeners[listeners.length - 1]);
-	  }
-	  delete this._events[type];
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.listeners = function(type) {
-	  var ret;
-	  if (!this._events || !this._events[type])
-	    ret = [];
-	  else if (isFunction(this._events[type]))
-	    ret = [this._events[type]];
-	  else
-	    ret = this._events[type].slice();
-	  return ret;
-	};
-	
-	EventEmitter.prototype.listenerCount = function(type) {
-	  if (this._events) {
-	    var evlistener = this._events[type];
-	
-	    if (isFunction(evlistener))
-	      return 1;
-	    else if (evlistener)
-	      return evlistener.length;
-	  }
-	  return 0;
-	};
-	
-	EventEmitter.listenerCount = function(emitter, type) {
-	  return emitter.listenerCount(type);
-	};
-	
-	function isFunction(arg) {
-	  return typeof arg === 'function';
-	}
-	
-	function isNumber(arg) {
-	  return typeof arg === 'number';
-	}
-	
-	function isObject(arg) {
-	  return typeof arg === 'object' && arg !== null;
-	}
-	
-	function isUndefined(arg) {
-	  return arg === void 0;
-	}
-
-
-/***/ },
-/* 597 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * lodash 3.0.4 (Custom Build) <https://lodash.com/>
-	 * Build: `lodash modern modularize exports="npm" -o ./`
-	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <https://lodash.com/license>
-	 */
-	var debounce = __webpack_require__(598);
-	
-	/** Used as the `TypeError` message for "Functions" methods. */
-	var FUNC_ERROR_TEXT = 'Expected a function';
-	
-	/**
-	 * Creates a throttled function that only invokes `func` at most once per
-	 * every `wait` milliseconds. The throttled function comes with a `cancel`
-	 * method to cancel delayed invocations. Provide an options object to indicate
-	 * that `func` should be invoked on the leading and/or trailing edge of the
-	 * `wait` timeout. Subsequent calls to the throttled function return the
-	 * result of the last `func` call.
-	 *
-	 * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked
-	 * on the trailing edge of the timeout only if the the throttled function is
-	 * invoked more than once during the `wait` timeout.
-	 *
-	 * See [David Corbacho's article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
-	 * for details over the differences between `_.throttle` and `_.debounce`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Function
-	 * @param {Function} func The function to throttle.
-	 * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
-	 * @param {Object} [options] The options object.
-	 * @param {boolean} [options.leading=true] Specify invoking on the leading
-	 *  edge of the timeout.
-	 * @param {boolean} [options.trailing=true] Specify invoking on the trailing
-	 *  edge of the timeout.
-	 * @returns {Function} Returns the new throttled function.
-	 * @example
-	 *
-	 * // avoid excessively updating the position while scrolling
-	 * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
-	 *
-	 * // invoke `renewToken` when the click event is fired, but not more than once every 5 minutes
-	 * jQuery('.interactive').on('click', _.throttle(renewToken, 300000, {
-	 *   'trailing': false
-	 * }));
-	 *
-	 * // cancel a trailing throttled call
-	 * jQuery(window).on('popstate', throttled.cancel);
-	 */
-	function throttle(func, wait, options) {
-	  var leading = true,
-	      trailing = true;
-	
-	  if (typeof func != 'function') {
-	    throw new TypeError(FUNC_ERROR_TEXT);
-	  }
-	  if (options === false) {
-	    leading = false;
-	  } else if (isObject(options)) {
-	    leading = 'leading' in options ? !!options.leading : leading;
-	    trailing = 'trailing' in options ? !!options.trailing : trailing;
-	  }
-	  return debounce(func, wait, { 'leading': leading, 'maxWait': +wait, 'trailing': trailing });
-	}
-	
-	/**
-	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
-	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(1);
-	 * // => false
-	 */
-	function isObject(value) {
-	  // Avoid a V8 JIT bug in Chrome 19-20.
-	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
-	  var type = typeof value;
-	  return !!value && (type == 'object' || type == 'function');
-	}
-	
-	module.exports = throttle;
-
-
-/***/ },
-/* 598 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * lodash 3.1.1 (Custom Build) <https://lodash.com/>
-	 * Build: `lodash modern modularize exports="npm" -o ./`
-	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <https://lodash.com/license>
-	 */
-	var getNative = __webpack_require__(599);
-	
-	/** Used as the `TypeError` message for "Functions" methods. */
-	var FUNC_ERROR_TEXT = 'Expected a function';
-	
-	/* Native method references for those with the same name as other `lodash` methods. */
-	var nativeMax = Math.max,
-	    nativeNow = getNative(Date, 'now');
-	
-	/**
-	 * Gets the number of milliseconds that have elapsed since the Unix epoch
-	 * (1 January 1970 00:00:00 UTC).
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Date
-	 * @example
-	 *
-	 * _.defer(function(stamp) {
-	 *   console.log(_.now() - stamp);
-	 * }, _.now());
-	 * // => logs the number of milliseconds it took for the deferred function to be invoked
-	 */
-	var now = nativeNow || function() {
-	  return new Date().getTime();
-	};
-	
-	/**
-	 * Creates a debounced function that delays invoking `func` until after `wait`
-	 * milliseconds have elapsed since the last time the debounced function was
-	 * invoked. The debounced function comes with a `cancel` method to cancel
-	 * delayed invocations. Provide an options object to indicate that `func`
-	 * should be invoked on the leading and/or trailing edge of the `wait` timeout.
-	 * Subsequent calls to the debounced function return the result of the last
-	 * `func` invocation.
-	 *
-	 * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked
-	 * on the trailing edge of the timeout only if the the debounced function is
-	 * invoked more than once during the `wait` timeout.
-	 *
-	 * See [David Corbacho's article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
-	 * for details over the differences between `_.debounce` and `_.throttle`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Function
-	 * @param {Function} func The function to debounce.
-	 * @param {number} [wait=0] The number of milliseconds to delay.
-	 * @param {Object} [options] The options object.
-	 * @param {boolean} [options.leading=false] Specify invoking on the leading
-	 *  edge of the timeout.
-	 * @param {number} [options.maxWait] The maximum time `func` is allowed to be
-	 *  delayed before it is invoked.
-	 * @param {boolean} [options.trailing=true] Specify invoking on the trailing
-	 *  edge of the timeout.
-	 * @returns {Function} Returns the new debounced function.
-	 * @example
-	 *
-	 * // avoid costly calculations while the window size is in flux
-	 * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
-	 *
-	 * // invoke `sendMail` when the click event is fired, debouncing subsequent calls
-	 * jQuery('#postbox').on('click', _.debounce(sendMail, 300, {
-	 *   'leading': true,
-	 *   'trailing': false
-	 * }));
-	 *
-	 * // ensure `batchLog` is invoked once after 1 second of debounced calls
-	 * var source = new EventSource('/stream');
-	 * jQuery(source).on('message', _.debounce(batchLog, 250, {
-	 *   'maxWait': 1000
-	 * }));
-	 *
-	 * // cancel a debounced call
-	 * var todoChanges = _.debounce(batchLog, 1000);
-	 * Object.observe(models.todo, todoChanges);
-	 *
-	 * Object.observe(models, function(changes) {
-	 *   if (_.find(changes, { 'user': 'todo', 'type': 'delete'})) {
-	 *     todoChanges.cancel();
-	 *   }
-	 * }, ['delete']);
-	 *
-	 * // ...at some point `models.todo` is changed
-	 * models.todo.completed = true;
-	 *
-	 * // ...before 1 second has passed `models.todo` is deleted
-	 * // which cancels the debounced `todoChanges` call
-	 * delete models.todo;
-	 */
-	function debounce(func, wait, options) {
-	  var args,
-	      maxTimeoutId,
-	      result,
-	      stamp,
-	      thisArg,
-	      timeoutId,
-	      trailingCall,
-	      lastCalled = 0,
-	      maxWait = false,
-	      trailing = true;
-	
-	  if (typeof func != 'function') {
-	    throw new TypeError(FUNC_ERROR_TEXT);
-	  }
-	  wait = wait < 0 ? 0 : (+wait || 0);
-	  if (options === true) {
-	    var leading = true;
-	    trailing = false;
-	  } else if (isObject(options)) {
-	    leading = !!options.leading;
-	    maxWait = 'maxWait' in options && nativeMax(+options.maxWait || 0, wait);
-	    trailing = 'trailing' in options ? !!options.trailing : trailing;
-	  }
-	
-	  function cancel() {
-	    if (timeoutId) {
-	      clearTimeout(timeoutId);
-	    }
-	    if (maxTimeoutId) {
-	      clearTimeout(maxTimeoutId);
-	    }
-	    lastCalled = 0;
-	    maxTimeoutId = timeoutId = trailingCall = undefined;
-	  }
-	
-	  function complete(isCalled, id) {
-	    if (id) {
-	      clearTimeout(id);
-	    }
-	    maxTimeoutId = timeoutId = trailingCall = undefined;
-	    if (isCalled) {
-	      lastCalled = now();
-	      result = func.apply(thisArg, args);
-	      if (!timeoutId && !maxTimeoutId) {
-	        args = thisArg = undefined;
-	      }
-	    }
-	  }
-	
-	  function delayed() {
-	    var remaining = wait - (now() - stamp);
-	    if (remaining <= 0 || remaining > wait) {
-	      complete(trailingCall, maxTimeoutId);
-	    } else {
-	      timeoutId = setTimeout(delayed, remaining);
-	    }
-	  }
-	
-	  function maxDelayed() {
-	    complete(trailing, timeoutId);
-	  }
-	
-	  function debounced() {
-	    args = arguments;
-	    stamp = now();
-	    thisArg = this;
-	    trailingCall = trailing && (timeoutId || !leading);
-	
-	    if (maxWait === false) {
-	      var leadingCall = leading && !timeoutId;
-	    } else {
-	      if (!maxTimeoutId && !leading) {
-	        lastCalled = stamp;
-	      }
-	      var remaining = maxWait - (stamp - lastCalled),
-	          isCalled = remaining <= 0 || remaining > maxWait;
-	
-	      if (isCalled) {
-	        if (maxTimeoutId) {
-	          maxTimeoutId = clearTimeout(maxTimeoutId);
-	        }
-	        lastCalled = stamp;
-	        result = func.apply(thisArg, args);
-	      }
-	      else if (!maxTimeoutId) {
-	        maxTimeoutId = setTimeout(maxDelayed, remaining);
-	      }
-	    }
-	    if (isCalled && timeoutId) {
-	      timeoutId = clearTimeout(timeoutId);
-	    }
-	    else if (!timeoutId && wait !== maxWait) {
-	      timeoutId = setTimeout(delayed, wait);
-	    }
-	    if (leadingCall) {
-	      isCalled = true;
-	      result = func.apply(thisArg, args);
-	    }
-	    if (isCalled && !timeoutId && !maxTimeoutId) {
-	      args = thisArg = undefined;
-	    }
-	    return result;
-	  }
-	  debounced.cancel = cancel;
-	  return debounced;
-	}
-	
-	/**
-	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
-	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(1);
-	 * // => false
-	 */
-	function isObject(value) {
-	  // Avoid a V8 JIT bug in Chrome 19-20.
-	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
-	  var type = typeof value;
-	  return !!value && (type == 'object' || type == 'function');
-	}
-	
-	module.exports = debounce;
-
-
-/***/ },
-/* 599 */
-/***/ function(module, exports) {
-
-	/**
-	 * lodash 3.9.1 (Custom Build) <https://lodash.com/>
-	 * Build: `lodash modern modularize exports="npm" -o ./`
-	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <https://lodash.com/license>
-	 */
-	
-	/** `Object#toString` result references. */
-	var funcTag = '[object Function]';
-	
-	/** Used to detect host constructors (Safari > 5). */
-	var reIsHostCtor = /^\[object .+?Constructor\]$/;
-	
-	/**
-	 * Checks if `value` is object-like.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
-	 */
-	function isObjectLike(value) {
-	  return !!value && typeof value == 'object';
-	}
-	
-	/** Used for native method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to resolve the decompiled source of functions. */
-	var fnToString = Function.prototype.toString;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/**
-	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objToString = objectProto.toString;
-	
-	/** Used to detect if a method is native. */
-	var reIsNative = RegExp('^' +
-	  fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&')
-	  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
-	);
-	
-	/**
-	 * Gets the native function at `key` of `object`.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @param {string} key The key of the method to get.
-	 * @returns {*} Returns the function if it's native, else `undefined`.
-	 */
-	function getNative(object, key) {
-	  var value = object == null ? undefined : object[key];
-	  return isNative(value) ? value : undefined;
-	}
-	
-	/**
-	 * Checks if `value` is classified as a `Function` object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
-	 * @example
-	 *
-	 * _.isFunction(_);
-	 * // => true
-	 *
-	 * _.isFunction(/abc/);
-	 * // => false
-	 */
-	function isFunction(value) {
-	  // The use of `Object#toString` avoids issues with the `typeof` operator
-	  // in older versions of Chrome and Safari which return 'function' for regexes
-	  // and Safari 8 equivalents which return 'object' for typed array constructors.
-	  return isObject(value) && objToString.call(value) == funcTag;
-	}
-	
-	/**
-	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
-	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(1);
-	 * // => false
-	 */
-	function isObject(value) {
-	  // Avoid a V8 JIT bug in Chrome 19-20.
-	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
-	  var type = typeof value;
-	  return !!value && (type == 'object' || type == 'function');
-	}
-	
-	/**
-	 * Checks if `value` is a native function.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a native function, else `false`.
-	 * @example
-	 *
-	 * _.isNative(Array.prototype.push);
-	 * // => true
-	 *
-	 * _.isNative(_);
-	 * // => false
-	 */
-	function isNative(value) {
-	  if (value == null) {
-	    return false;
-	  }
-	  if (isFunction(value)) {
-	    return reIsNative.test(fnToString.call(value));
-	  }
-	  return isObjectLike(value) && reIsHostCtor.test(value);
-	}
-	
-	module.exports = getNative;
-
-
-/***/ },
-/* 600 */
-/***/ function(module, exports) {
-
-	/* 
-	 * pragma-singleton-d
-	 *
-	 * Copyright (c) 2013 Pragma Dudes and project contributors.
-	 *
-	 * pragma-singleton-d's license follows:
-	 *
-	 * Permission is hereby granted, free of charge, to any person
-	 * obtaining a copy of this software and associated documentation
-	 * files (the "Software"), to deal in the Software without restriction,
-	 * including without limitation the rights to use, copy, modify, merge, 
-	 * publish, distribute, sublicense, and/or sell copies of the Software, 
-	 * and to permit persons to whom the Software is furnished to do so, 
-	 * subject to the following conditions:
-	 *
-	 * The above copyright notice and this permission notice shall be included
-	 * in all copies or substantial portions of the Software.
-	
-	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
-	 * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-	 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	 * SOFTWARE.
-	 * 
-	 * This license applies to all parts of pragma-singleton-d that are not externally
-	 * maintained libraries.
-	 */
-	
-	'use strict';
-	
-	var singletonInstances = {};
-	
-	/**
-	 * Creates singleton constructor wrapper by constructor name.
-	 * @param {Function} constructor Specified constructor.
-	 * @return {Function} Singleton constructor wrapper.
-	 */
-	module.exports = function (constructor) {
-	
-		var singletonKey = constructor.toString(),
-			singletonWrapper = function () {
-	
-				if (singletonKey in singletonInstances) {
-					return singletonInstances[singletonKey];
-				}
-	
-				// create new object as we use "new" operator and set constructor to it.
-				singletonInstances[singletonKey] =
-					Object.create(constructor.prototype, {
-						constructor: {
-							value: constructor,
-							enumerable: true,
-							writable: true,
-							configurable: true
-						}
-					});
-	
-				// apply constructor logic to new object.
-				constructor.apply(singletonInstances[singletonKey], arguments);
-	
-				return singletonInstances[singletonKey];
-			};
-	
-		// jshint proto: true, camelcase: false
-		// NOTE: this string below isn't portable to some browsers like IE.
-		// Using __proto__ is not a good idea, but solving current task it's an only way
-		// for saving properties which were saved to constructor itself and V8 allows to do it.
-		singletonWrapper.__proto__ = constructor;
-	
-		return singletonWrapper;
-	};
-	
-	/**
-	 * Clears all singleton instances.
-	 */
-	module.exports.clear = function () {
-		singletonInstances = {};
-	};
-
-/***/ },
-/* 601 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(602);
-	
-
-
-/***/ },
-/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(32);
-	var ExecutionEnvironment = __webpack_require__(603);
-	var ModalPortal = React.createFactory(__webpack_require__(604));
-	var ariaAppHider = __webpack_require__(609);
-	var elementClass = __webpack_require__(610);
+	var ExecutionEnvironment = __webpack_require__(597);
+	var ModalPortal = React.createFactory(__webpack_require__(598));
+	var ariaAppHider = __webpack_require__(603);
+	var elementClass = __webpack_require__(604);
 	var renderSubtreeIntoContainer = __webpack_require__(32).unstable_renderSubtreeIntoContainer;
-	var Assign = __webpack_require__(608);
+	var Assign = __webpack_require__(602);
 	
 	var SafeHTMLElement = ExecutionEnvironment.canUseDOM ? window.HTMLElement : {};
 	var AppElement = ExecutionEnvironment.canUseDOM ? document.body : {appendChild: function() {}};
@@ -61700,7 +60773,7 @@
 
 
 /***/ },
-/* 603 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -61745,14 +60818,14 @@
 
 
 /***/ },
-/* 604 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
 	var div = React.DOM.div;
-	var focusManager = __webpack_require__(605);
-	var scopeTab = __webpack_require__(607);
-	var Assign = __webpack_require__(608);
+	var focusManager = __webpack_require__(599);
+	var scopeTab = __webpack_require__(601);
+	var Assign = __webpack_require__(602);
 	
 	// so that our CSS is statically analyzable
 	var CLASS_NAMES = {
@@ -61943,10 +61016,10 @@
 
 
 /***/ },
-/* 605 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(606);
+	var findTabbable = __webpack_require__(600);
 	var modalElement = null;
 	var focusLaterElement = null;
 	var needToFocus = false;
@@ -62017,7 +61090,7 @@
 
 
 /***/ },
-/* 606 */
+/* 600 */
 /***/ function(module, exports) {
 
 	/*!
@@ -62073,10 +61146,10 @@
 
 
 /***/ },
-/* 607 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(606);
+	var findTabbable = __webpack_require__(600);
 	
 	module.exports = function(node, event) {
 	  var tabbable = findTabbable(node);
@@ -62098,7 +61171,7 @@
 
 
 /***/ },
-/* 608 */
+/* 602 */
 /***/ function(module, exports) {
 
 	/**
@@ -62815,7 +61888,7 @@
 
 
 /***/ },
-/* 609 */
+/* 603 */
 /***/ function(module, exports) {
 
 	var _element = typeof document !== 'undefined' ? document.body : null;
@@ -62863,7 +61936,7 @@
 
 
 /***/ },
-/* 610 */
+/* 604 */
 /***/ function(module, exports) {
 
 	module.exports = function(opts) {
@@ -62928,7 +62001,7 @@
 
 
 /***/ },
-/* 611 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62945,11 +62018,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _lodash = __webpack_require__(612);
+	var _lodash = __webpack_require__(606);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _youtubePlayer = __webpack_require__(613);
+	var _youtubePlayer = __webpack_require__(607);
 	
 	var _youtubePlayer2 = _interopRequireDefault(_youtubePlayer);
 	
@@ -63281,7 +62354,7 @@
 	exports.default = YouTube;
 
 /***/ },
-/* 612 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -65008,7 +64081,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(331)(module)))
 
 /***/ },
-/* 613 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65021,19 +64094,19 @@
 	    value: true
 	});
 	
-	var _sister = __webpack_require__(614);
+	var _sister = __webpack_require__(608);
 	
 	var _sister2 = _interopRequireDefault(_sister);
 	
-	var _bluebird = __webpack_require__(615);
+	var _bluebird = __webpack_require__(609);
 	
 	var _bluebird2 = _interopRequireDefault(_bluebird);
 	
-	var _loadYouTubeIframeAPI = __webpack_require__(618);
+	var _loadYouTubeIframeAPI = __webpack_require__(612);
 	
 	var _loadYouTubeIframeAPI2 = _interopRequireDefault(_loadYouTubeIframeAPI);
 	
-	var _YouTubePlayer = __webpack_require__(620);
+	var _YouTubePlayer = __webpack_require__(614);
 	
 	var _YouTubePlayer2 = _interopRequireDefault(_YouTubePlayer);
 	
@@ -65104,7 +64177,7 @@
 
 
 /***/ },
-/* 614 */
+/* 608 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -65170,7 +64243,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 615 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process, global, setImmediate) {/* @preserve
@@ -70649,13 +69722,13 @@
 	
 	},{"./es5":13}]},{},[4])(4)
 	});                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(114), (function() { return this; }()), __webpack_require__(616).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(114), (function() { return this; }()), __webpack_require__(610).setImmediate))
 
 /***/ },
-/* 616 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(617).nextTick;
+	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(611).nextTick;
 	var apply = Function.prototype.apply;
 	var slice = Array.prototype.slice;
 	var immediateIds = {};
@@ -70731,10 +69804,10 @@
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(616).setImmediate, __webpack_require__(616).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(610).setImmediate, __webpack_require__(610).clearImmediate))
 
 /***/ },
-/* 617 */
+/* 611 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -70793,7 +69866,7 @@
 
 
 /***/ },
-/* 618 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70802,11 +69875,11 @@
 	    value: true
 	});
 	
-	var _bluebird = __webpack_require__(615);
+	var _bluebird = __webpack_require__(609);
 	
 	var _bluebird2 = _interopRequireDefault(_bluebird);
 	
-	var _loadScript = __webpack_require__(619);
+	var _loadScript = __webpack_require__(613);
 	
 	var _loadScript2 = _interopRequireDefault(_loadScript);
 	
@@ -70848,7 +69921,7 @@
 
 
 /***/ },
-/* 619 */
+/* 613 */
 /***/ function(module, exports) {
 
 	
@@ -70919,16 +69992,16 @@
 
 
 /***/ },
-/* 620 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _upperFirst2 = __webpack_require__(621);
+	var _upperFirst2 = __webpack_require__(615);
 	
 	var _upperFirst3 = _interopRequireDefault(_upperFirst2);
 	
-	var _forEach2 = __webpack_require__(627);
+	var _forEach2 = __webpack_require__(621);
 	
 	var _forEach3 = _interopRequireDefault(_forEach2);
 	
@@ -70936,11 +70009,11 @@
 	    value: true
 	});
 	
-	var _functionNames = __webpack_require__(629);
+	var _functionNames = __webpack_require__(623);
 	
 	var _functionNames2 = _interopRequireDefault(_functionNames);
 	
-	var _eventNames = __webpack_require__(630);
+	var _eventNames = __webpack_require__(624);
 	
 	var _eventNames2 = _interopRequireDefault(_eventNames);
 	
@@ -71010,10 +70083,10 @@
 
 
 /***/ },
-/* 621 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createCaseFirst = __webpack_require__(622);
+	var createCaseFirst = __webpack_require__(616);
 	
 	/**
 	 * Converts the first character of `string` to upper case.
@@ -71038,12 +70111,12 @@
 
 
 /***/ },
-/* 622 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var castSlice = __webpack_require__(623),
-	    reHasComplexSymbol = __webpack_require__(625),
-	    stringToArray = __webpack_require__(626),
+	var castSlice = __webpack_require__(617),
+	    reHasComplexSymbol = __webpack_require__(619),
+	    stringToArray = __webpack_require__(620),
 	    toString = __webpack_require__(341);
 	
 	/**
@@ -71077,10 +70150,10 @@
 
 
 /***/ },
-/* 623 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseSlice = __webpack_require__(624);
+	var baseSlice = __webpack_require__(618);
 	
 	/**
 	 * Casts `array` to a slice if it's needed.
@@ -71101,7 +70174,7 @@
 
 
 /***/ },
-/* 624 */
+/* 618 */
 /***/ function(module, exports) {
 
 	/**
@@ -71138,7 +70211,7 @@
 
 
 /***/ },
-/* 625 */
+/* 619 */
 /***/ function(module, exports) {
 
 	/** Used to compose unicode character classes. */
@@ -71157,7 +70230,7 @@
 
 
 /***/ },
-/* 626 */
+/* 620 */
 /***/ function(module, exports) {
 
 	/** Used to compose unicode character classes. */
@@ -71201,10 +70274,10 @@
 
 
 /***/ },
-/* 627 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayEach = __webpack_require__(628),
+	var arrayEach = __webpack_require__(622),
 	    baseEach = __webpack_require__(353),
 	    baseIteratee = __webpack_require__(259),
 	    isArray = __webpack_require__(256);
@@ -71248,7 +70321,7 @@
 
 
 /***/ },
-/* 628 */
+/* 622 */
 /***/ function(module, exports) {
 
 	/**
@@ -71276,7 +70349,7 @@
 
 
 /***/ },
-/* 629 */
+/* 623 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71293,7 +70366,7 @@
 
 
 /***/ },
-/* 630 */
+/* 624 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71310,15 +70383,988 @@
 
 
 /***/ },
+/* 625 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getBrowserWidth = getBrowserWidth;
+	exports.scrollToSection = scrollToSection;
+	
+	var _browserSize = __webpack_require__(626);
+	
+	var _browserSize2 = _interopRequireDefault(_browserSize);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	/**
+	 * Utils for the Clientside
+	 */
+	
+	/**
+	 *
+	 */
+	function getBrowserWidth() {
+	  if (global.window) {
+	    const { width } = (0, _browserSize2.default)();
+	    return width;
+	  }
+	  return 640;
+	}
+	
+	/**
+	 *
+	 */
+	function scrollToSection(current, pad = -60) {
+	  const element = global.document.getElementById(current.type.name);
+	  const { top } = element.getBoundingClientRect();
+	  if (top) global.window.scroll(0, top + pad);
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 626 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
+	
+	var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
+	
+	var _inherits = function (subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
+	
+	var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
+	
+	var EventEmitter = __webpack_require__(627).EventEmitter;
+	var throttle = _interopRequire(__webpack_require__(628));
+	
+	var singleton = _interopRequire(__webpack_require__(631));
+	
+	var BrowserSize = (function (EventEmitter) {
+	  function BrowserSize() {
+	    var _this = this;
+	    _classCallCheck(this, BrowserSize);
+	
+	    window.addEventListener("resize", throttle(function () {
+	      _this.computeSize();
+	      _this.emit("resize");
+	    }, 200));
+	
+	    this.computeSize();
+	  }
+	
+	  _inherits(BrowserSize, EventEmitter);
+	
+	  _prototypeProperties(BrowserSize, null, {
+	    computeSize: {
+	      value: function computeSize() {
+	        this.width = document.documentElement.clientWidth;
+	        this.height = document.documentElement.clientHeight;
+	      },
+	      writable: true,
+	      configurable: true
+	    }
+	  });
+	
+	  return BrowserSize;
+	})(EventEmitter);
+	
+	module.exports = singleton(BrowserSize);
+	
+
+
+/***/ },
+/* 627 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	function EventEmitter() {
+	  this._events = this._events || {};
+	  this._maxListeners = this._maxListeners || undefined;
+	}
+	module.exports = EventEmitter;
+	
+	// Backwards-compat with node 0.10.x
+	EventEmitter.EventEmitter = EventEmitter;
+	
+	EventEmitter.prototype._events = undefined;
+	EventEmitter.prototype._maxListeners = undefined;
+	
+	// By default EventEmitters will print a warning if more than 10 listeners are
+	// added to it. This is a useful default which helps finding memory leaks.
+	EventEmitter.defaultMaxListeners = 10;
+	
+	// Obviously not all Emitters should be limited to 10. This function allows
+	// that to be increased. Set to zero for unlimited.
+	EventEmitter.prototype.setMaxListeners = function(n) {
+	  if (!isNumber(n) || n < 0 || isNaN(n))
+	    throw TypeError('n must be a positive number');
+	  this._maxListeners = n;
+	  return this;
+	};
+	
+	EventEmitter.prototype.emit = function(type) {
+	  var er, handler, len, args, i, listeners;
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // If there is no 'error' event listener then throw.
+	  if (type === 'error') {
+	    if (!this._events.error ||
+	        (isObject(this._events.error) && !this._events.error.length)) {
+	      er = arguments[1];
+	      if (er instanceof Error) {
+	        throw er; // Unhandled 'error' event
+	      } else {
+	        // At least give some kind of context to the user
+	        var err = new Error('Uncaught, unspecified "error" event. (' + er + ')');
+	        err.context = er;
+	        throw err;
+	      }
+	    }
+	  }
+	
+	  handler = this._events[type];
+	
+	  if (isUndefined(handler))
+	    return false;
+	
+	  if (isFunction(handler)) {
+	    switch (arguments.length) {
+	      // fast cases
+	      case 1:
+	        handler.call(this);
+	        break;
+	      case 2:
+	        handler.call(this, arguments[1]);
+	        break;
+	      case 3:
+	        handler.call(this, arguments[1], arguments[2]);
+	        break;
+	      // slower
+	      default:
+	        args = Array.prototype.slice.call(arguments, 1);
+	        handler.apply(this, args);
+	    }
+	  } else if (isObject(handler)) {
+	    args = Array.prototype.slice.call(arguments, 1);
+	    listeners = handler.slice();
+	    len = listeners.length;
+	    for (i = 0; i < len; i++)
+	      listeners[i].apply(this, args);
+	  }
+	
+	  return true;
+	};
+	
+	EventEmitter.prototype.addListener = function(type, listener) {
+	  var m;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // To avoid recursion in the case that type === "newListener"! Before
+	  // adding it to the listeners, first emit "newListener".
+	  if (this._events.newListener)
+	    this.emit('newListener', type,
+	              isFunction(listener.listener) ?
+	              listener.listener : listener);
+	
+	  if (!this._events[type])
+	    // Optimize the case of one listener. Don't need the extra array object.
+	    this._events[type] = listener;
+	  else if (isObject(this._events[type]))
+	    // If we've already got an array, just append.
+	    this._events[type].push(listener);
+	  else
+	    // Adding the second element, need to change to array.
+	    this._events[type] = [this._events[type], listener];
+	
+	  // Check for listener leak
+	  if (isObject(this._events[type]) && !this._events[type].warned) {
+	    if (!isUndefined(this._maxListeners)) {
+	      m = this._maxListeners;
+	    } else {
+	      m = EventEmitter.defaultMaxListeners;
+	    }
+	
+	    if (m && m > 0 && this._events[type].length > m) {
+	      this._events[type].warned = true;
+	      console.error('(node) warning: possible EventEmitter memory ' +
+	                    'leak detected. %d listeners added. ' +
+	                    'Use emitter.setMaxListeners() to increase limit.',
+	                    this._events[type].length);
+	      if (typeof console.trace === 'function') {
+	        // not supported in IE 10
+	        console.trace();
+	      }
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+	
+	EventEmitter.prototype.once = function(type, listener) {
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  var fired = false;
+	
+	  function g() {
+	    this.removeListener(type, g);
+	
+	    if (!fired) {
+	      fired = true;
+	      listener.apply(this, arguments);
+	    }
+	  }
+	
+	  g.listener = listener;
+	  this.on(type, g);
+	
+	  return this;
+	};
+	
+	// emits a 'removeListener' event iff the listener was removed
+	EventEmitter.prototype.removeListener = function(type, listener) {
+	  var list, position, length, i;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events || !this._events[type])
+	    return this;
+	
+	  list = this._events[type];
+	  length = list.length;
+	  position = -1;
+	
+	  if (list === listener ||
+	      (isFunction(list.listener) && list.listener === listener)) {
+	    delete this._events[type];
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	
+	  } else if (isObject(list)) {
+	    for (i = length; i-- > 0;) {
+	      if (list[i] === listener ||
+	          (list[i].listener && list[i].listener === listener)) {
+	        position = i;
+	        break;
+	      }
+	    }
+	
+	    if (position < 0)
+	      return this;
+	
+	    if (list.length === 1) {
+	      list.length = 0;
+	      delete this._events[type];
+	    } else {
+	      list.splice(position, 1);
+	    }
+	
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.removeAllListeners = function(type) {
+	  var key, listeners;
+	
+	  if (!this._events)
+	    return this;
+	
+	  // not listening for removeListener, no need to emit
+	  if (!this._events.removeListener) {
+	    if (arguments.length === 0)
+	      this._events = {};
+	    else if (this._events[type])
+	      delete this._events[type];
+	    return this;
+	  }
+	
+	  // emit removeListener for all listeners on all events
+	  if (arguments.length === 0) {
+	    for (key in this._events) {
+	      if (key === 'removeListener') continue;
+	      this.removeAllListeners(key);
+	    }
+	    this.removeAllListeners('removeListener');
+	    this._events = {};
+	    return this;
+	  }
+	
+	  listeners = this._events[type];
+	
+	  if (isFunction(listeners)) {
+	    this.removeListener(type, listeners);
+	  } else if (listeners) {
+	    // LIFO order
+	    while (listeners.length)
+	      this.removeListener(type, listeners[listeners.length - 1]);
+	  }
+	  delete this._events[type];
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.listeners = function(type) {
+	  var ret;
+	  if (!this._events || !this._events[type])
+	    ret = [];
+	  else if (isFunction(this._events[type]))
+	    ret = [this._events[type]];
+	  else
+	    ret = this._events[type].slice();
+	  return ret;
+	};
+	
+	EventEmitter.prototype.listenerCount = function(type) {
+	  if (this._events) {
+	    var evlistener = this._events[type];
+	
+	    if (isFunction(evlistener))
+	      return 1;
+	    else if (evlistener)
+	      return evlistener.length;
+	  }
+	  return 0;
+	};
+	
+	EventEmitter.listenerCount = function(emitter, type) {
+	  return emitter.listenerCount(type);
+	};
+	
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+
+
+/***/ },
+/* 628 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * lodash 3.0.4 (Custom Build) <https://lodash.com/>
+	 * Build: `lodash modern modularize exports="npm" -o ./`
+	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <https://lodash.com/license>
+	 */
+	var debounce = __webpack_require__(629);
+	
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+	
+	/**
+	 * Creates a throttled function that only invokes `func` at most once per
+	 * every `wait` milliseconds. The throttled function comes with a `cancel`
+	 * method to cancel delayed invocations. Provide an options object to indicate
+	 * that `func` should be invoked on the leading and/or trailing edge of the
+	 * `wait` timeout. Subsequent calls to the throttled function return the
+	 * result of the last `func` call.
+	 *
+	 * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked
+	 * on the trailing edge of the timeout only if the the throttled function is
+	 * invoked more than once during the `wait` timeout.
+	 *
+	 * See [David Corbacho's article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
+	 * for details over the differences between `_.throttle` and `_.debounce`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Function
+	 * @param {Function} func The function to throttle.
+	 * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
+	 * @param {Object} [options] The options object.
+	 * @param {boolean} [options.leading=true] Specify invoking on the leading
+	 *  edge of the timeout.
+	 * @param {boolean} [options.trailing=true] Specify invoking on the trailing
+	 *  edge of the timeout.
+	 * @returns {Function} Returns the new throttled function.
+	 * @example
+	 *
+	 * // avoid excessively updating the position while scrolling
+	 * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
+	 *
+	 * // invoke `renewToken` when the click event is fired, but not more than once every 5 minutes
+	 * jQuery('.interactive').on('click', _.throttle(renewToken, 300000, {
+	 *   'trailing': false
+	 * }));
+	 *
+	 * // cancel a trailing throttled call
+	 * jQuery(window).on('popstate', throttled.cancel);
+	 */
+	function throttle(func, wait, options) {
+	  var leading = true,
+	      trailing = true;
+	
+	  if (typeof func != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  if (options === false) {
+	    leading = false;
+	  } else if (isObject(options)) {
+	    leading = 'leading' in options ? !!options.leading : leading;
+	    trailing = 'trailing' in options ? !!options.trailing : trailing;
+	  }
+	  return debounce(func, wait, { 'leading': leading, 'maxWait': +wait, 'trailing': trailing });
+	}
+	
+	/**
+	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
+	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(1);
+	 * // => false
+	 */
+	function isObject(value) {
+	  // Avoid a V8 JIT bug in Chrome 19-20.
+	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+	
+	module.exports = throttle;
+
+
+/***/ },
+/* 629 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * lodash 3.1.1 (Custom Build) <https://lodash.com/>
+	 * Build: `lodash modern modularize exports="npm" -o ./`
+	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <https://lodash.com/license>
+	 */
+	var getNative = __webpack_require__(630);
+	
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+	
+	/* Native method references for those with the same name as other `lodash` methods. */
+	var nativeMax = Math.max,
+	    nativeNow = getNative(Date, 'now');
+	
+	/**
+	 * Gets the number of milliseconds that have elapsed since the Unix epoch
+	 * (1 January 1970 00:00:00 UTC).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Date
+	 * @example
+	 *
+	 * _.defer(function(stamp) {
+	 *   console.log(_.now() - stamp);
+	 * }, _.now());
+	 * // => logs the number of milliseconds it took for the deferred function to be invoked
+	 */
+	var now = nativeNow || function() {
+	  return new Date().getTime();
+	};
+	
+	/**
+	 * Creates a debounced function that delays invoking `func` until after `wait`
+	 * milliseconds have elapsed since the last time the debounced function was
+	 * invoked. The debounced function comes with a `cancel` method to cancel
+	 * delayed invocations. Provide an options object to indicate that `func`
+	 * should be invoked on the leading and/or trailing edge of the `wait` timeout.
+	 * Subsequent calls to the debounced function return the result of the last
+	 * `func` invocation.
+	 *
+	 * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked
+	 * on the trailing edge of the timeout only if the the debounced function is
+	 * invoked more than once during the `wait` timeout.
+	 *
+	 * See [David Corbacho's article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
+	 * for details over the differences between `_.debounce` and `_.throttle`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Function
+	 * @param {Function} func The function to debounce.
+	 * @param {number} [wait=0] The number of milliseconds to delay.
+	 * @param {Object} [options] The options object.
+	 * @param {boolean} [options.leading=false] Specify invoking on the leading
+	 *  edge of the timeout.
+	 * @param {number} [options.maxWait] The maximum time `func` is allowed to be
+	 *  delayed before it is invoked.
+	 * @param {boolean} [options.trailing=true] Specify invoking on the trailing
+	 *  edge of the timeout.
+	 * @returns {Function} Returns the new debounced function.
+	 * @example
+	 *
+	 * // avoid costly calculations while the window size is in flux
+	 * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
+	 *
+	 * // invoke `sendMail` when the click event is fired, debouncing subsequent calls
+	 * jQuery('#postbox').on('click', _.debounce(sendMail, 300, {
+	 *   'leading': true,
+	 *   'trailing': false
+	 * }));
+	 *
+	 * // ensure `batchLog` is invoked once after 1 second of debounced calls
+	 * var source = new EventSource('/stream');
+	 * jQuery(source).on('message', _.debounce(batchLog, 250, {
+	 *   'maxWait': 1000
+	 * }));
+	 *
+	 * // cancel a debounced call
+	 * var todoChanges = _.debounce(batchLog, 1000);
+	 * Object.observe(models.todo, todoChanges);
+	 *
+	 * Object.observe(models, function(changes) {
+	 *   if (_.find(changes, { 'user': 'todo', 'type': 'delete'})) {
+	 *     todoChanges.cancel();
+	 *   }
+	 * }, ['delete']);
+	 *
+	 * // ...at some point `models.todo` is changed
+	 * models.todo.completed = true;
+	 *
+	 * // ...before 1 second has passed `models.todo` is deleted
+	 * // which cancels the debounced `todoChanges` call
+	 * delete models.todo;
+	 */
+	function debounce(func, wait, options) {
+	  var args,
+	      maxTimeoutId,
+	      result,
+	      stamp,
+	      thisArg,
+	      timeoutId,
+	      trailingCall,
+	      lastCalled = 0,
+	      maxWait = false,
+	      trailing = true;
+	
+	  if (typeof func != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  wait = wait < 0 ? 0 : (+wait || 0);
+	  if (options === true) {
+	    var leading = true;
+	    trailing = false;
+	  } else if (isObject(options)) {
+	    leading = !!options.leading;
+	    maxWait = 'maxWait' in options && nativeMax(+options.maxWait || 0, wait);
+	    trailing = 'trailing' in options ? !!options.trailing : trailing;
+	  }
+	
+	  function cancel() {
+	    if (timeoutId) {
+	      clearTimeout(timeoutId);
+	    }
+	    if (maxTimeoutId) {
+	      clearTimeout(maxTimeoutId);
+	    }
+	    lastCalled = 0;
+	    maxTimeoutId = timeoutId = trailingCall = undefined;
+	  }
+	
+	  function complete(isCalled, id) {
+	    if (id) {
+	      clearTimeout(id);
+	    }
+	    maxTimeoutId = timeoutId = trailingCall = undefined;
+	    if (isCalled) {
+	      lastCalled = now();
+	      result = func.apply(thisArg, args);
+	      if (!timeoutId && !maxTimeoutId) {
+	        args = thisArg = undefined;
+	      }
+	    }
+	  }
+	
+	  function delayed() {
+	    var remaining = wait - (now() - stamp);
+	    if (remaining <= 0 || remaining > wait) {
+	      complete(trailingCall, maxTimeoutId);
+	    } else {
+	      timeoutId = setTimeout(delayed, remaining);
+	    }
+	  }
+	
+	  function maxDelayed() {
+	    complete(trailing, timeoutId);
+	  }
+	
+	  function debounced() {
+	    args = arguments;
+	    stamp = now();
+	    thisArg = this;
+	    trailingCall = trailing && (timeoutId || !leading);
+	
+	    if (maxWait === false) {
+	      var leadingCall = leading && !timeoutId;
+	    } else {
+	      if (!maxTimeoutId && !leading) {
+	        lastCalled = stamp;
+	      }
+	      var remaining = maxWait - (stamp - lastCalled),
+	          isCalled = remaining <= 0 || remaining > maxWait;
+	
+	      if (isCalled) {
+	        if (maxTimeoutId) {
+	          maxTimeoutId = clearTimeout(maxTimeoutId);
+	        }
+	        lastCalled = stamp;
+	        result = func.apply(thisArg, args);
+	      }
+	      else if (!maxTimeoutId) {
+	        maxTimeoutId = setTimeout(maxDelayed, remaining);
+	      }
+	    }
+	    if (isCalled && timeoutId) {
+	      timeoutId = clearTimeout(timeoutId);
+	    }
+	    else if (!timeoutId && wait !== maxWait) {
+	      timeoutId = setTimeout(delayed, wait);
+	    }
+	    if (leadingCall) {
+	      isCalled = true;
+	      result = func.apply(thisArg, args);
+	    }
+	    if (isCalled && !timeoutId && !maxTimeoutId) {
+	      args = thisArg = undefined;
+	    }
+	    return result;
+	  }
+	  debounced.cancel = cancel;
+	  return debounced;
+	}
+	
+	/**
+	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
+	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(1);
+	 * // => false
+	 */
+	function isObject(value) {
+	  // Avoid a V8 JIT bug in Chrome 19-20.
+	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+	
+	module.exports = debounce;
+
+
+/***/ },
+/* 630 */
+/***/ function(module, exports) {
+
+	/**
+	 * lodash 3.9.1 (Custom Build) <https://lodash.com/>
+	 * Build: `lodash modern modularize exports="npm" -o ./`
+	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <https://lodash.com/license>
+	 */
+	
+	/** `Object#toString` result references. */
+	var funcTag = '[object Function]';
+	
+	/** Used to detect host constructors (Safari > 5). */
+	var reIsHostCtor = /^\[object .+?Constructor\]$/;
+	
+	/**
+	 * Checks if `value` is object-like.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+	
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to resolve the decompiled source of functions. */
+	var fnToString = Function.prototype.toString;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objToString = objectProto.toString;
+	
+	/** Used to detect if a method is native. */
+	var reIsNative = RegExp('^' +
+	  fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&')
+	  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+	);
+	
+	/**
+	 * Gets the native function at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {string} key The key of the method to get.
+	 * @returns {*} Returns the function if it's native, else `undefined`.
+	 */
+	function getNative(object, key) {
+	  var value = object == null ? undefined : object[key];
+	  return isNative(value) ? value : undefined;
+	}
+	
+	/**
+	 * Checks if `value` is classified as a `Function` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @example
+	 *
+	 * _.isFunction(_);
+	 * // => true
+	 *
+	 * _.isFunction(/abc/);
+	 * // => false
+	 */
+	function isFunction(value) {
+	  // The use of `Object#toString` avoids issues with the `typeof` operator
+	  // in older versions of Chrome and Safari which return 'function' for regexes
+	  // and Safari 8 equivalents which return 'object' for typed array constructors.
+	  return isObject(value) && objToString.call(value) == funcTag;
+	}
+	
+	/**
+	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
+	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(1);
+	 * // => false
+	 */
+	function isObject(value) {
+	  // Avoid a V8 JIT bug in Chrome 19-20.
+	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+	
+	/**
+	 * Checks if `value` is a native function.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a native function, else `false`.
+	 * @example
+	 *
+	 * _.isNative(Array.prototype.push);
+	 * // => true
+	 *
+	 * _.isNative(_);
+	 * // => false
+	 */
+	function isNative(value) {
+	  if (value == null) {
+	    return false;
+	  }
+	  if (isFunction(value)) {
+	    return reIsNative.test(fnToString.call(value));
+	  }
+	  return isObjectLike(value) && reIsHostCtor.test(value);
+	}
+	
+	module.exports = getNative;
+
+
+/***/ },
 /* 631 */
+/***/ function(module, exports) {
+
+	/* 
+	 * pragma-singleton-d
+	 *
+	 * Copyright (c) 2013 Pragma Dudes and project contributors.
+	 *
+	 * pragma-singleton-d's license follows:
+	 *
+	 * Permission is hereby granted, free of charge, to any person
+	 * obtaining a copy of this software and associated documentation
+	 * files (the "Software"), to deal in the Software without restriction,
+	 * including without limitation the rights to use, copy, modify, merge, 
+	 * publish, distribute, sublicense, and/or sell copies of the Software, 
+	 * and to permit persons to whom the Software is furnished to do so, 
+	 * subject to the following conditions:
+	 *
+	 * The above copyright notice and this permission notice shall be included
+	 * in all copies or substantial portions of the Software.
+	
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+	 * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+	 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	 * SOFTWARE.
+	 * 
+	 * This license applies to all parts of pragma-singleton-d that are not externally
+	 * maintained libraries.
+	 */
+	
+	'use strict';
+	
+	var singletonInstances = {};
+	
+	/**
+	 * Creates singleton constructor wrapper by constructor name.
+	 * @param {Function} constructor Specified constructor.
+	 * @return {Function} Singleton constructor wrapper.
+	 */
+	module.exports = function (constructor) {
+	
+		var singletonKey = constructor.toString(),
+			singletonWrapper = function () {
+	
+				if (singletonKey in singletonInstances) {
+					return singletonInstances[singletonKey];
+				}
+	
+				// create new object as we use "new" operator and set constructor to it.
+				singletonInstances[singletonKey] =
+					Object.create(constructor.prototype, {
+						constructor: {
+							value: constructor,
+							enumerable: true,
+							writable: true,
+							configurable: true
+						}
+					});
+	
+				// apply constructor logic to new object.
+				constructor.apply(singletonInstances[singletonKey], arguments);
+	
+				return singletonInstances[singletonKey];
+			};
+	
+		// jshint proto: true, camelcase: false
+		// NOTE: this string below isn't portable to some browsers like IE.
+		// Using __proto__ is not a good idea, but solving current task it's an only way
+		// for saving properties which were saved to constructor itself and V8 allows to do it.
+		singletonWrapper.__proto__ = constructor;
+	
+		return singletonWrapper;
+	};
+	
+	/**
+	 * Clears all singleton instances.
+	 */
+	module.exports.clear = function () {
+		singletonInstances = {};
+	};
+
+/***/ },
+/* 632 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"_play":"index__play_3J_","video":"index_video_ApY tachyons_pointer_25K index__play_3J_","caption":"index_caption_10L tachyons_f6_14U tachyons_fw3_3xI tachyons_mt1_3Hm tachyons_silver_3lN"};
 
 /***/ },
-/* 632 */,
-/* 633 */
+/* 633 */,
+/* 634 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71344,57 +71390,57 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 634 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "71531685d4dc169a16015de030d3af3a.png";
 
 /***/ },
-/* 635 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "52db84fcabda7a563259eca747f7e68b.png";
 
 /***/ },
-/* 636 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "dcc1d163b9ed2a1b837883d42ae8115b.png";
 
 /***/ },
-/* 637 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f67339de28c30289780b3b0bfa2e4508.png";
 
 /***/ },
-/* 638 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e4c7ebad64587796c159991b9fc88da2.png";
 
 /***/ },
-/* 639 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cdb77423deb17e90ed4346d8be60bd52.png";
 
 /***/ },
-/* 640 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a2c3e6df9bd0eb4efeb1f5786403d155.png";
 
 /***/ },
-/* 641 */
+/* 642 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_2g- theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_34u theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_2nD tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN"};
 
 /***/ },
-/* 642 */,
-/* 643 */
+/* 643 */,
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71403,19 +71449,19 @@
 	  value: true
 	});
 	
-	var _cloudUpload = __webpack_require__(644);
+	var _cloudUpload = __webpack_require__(645);
 	
 	var _cloudUpload2 = _interopRequireDefault(_cloudUpload);
 	
-	var _diamond = __webpack_require__(645);
+	var _diamond = __webpack_require__(646);
 	
 	var _diamond2 = _interopRequireDefault(_diamond);
 	
-	var _questionCircle = __webpack_require__(646);
+	var _questionCircle = __webpack_require__(647);
 	
 	var _questionCircle2 = _interopRequireDefault(_questionCircle);
 	
-	var _spaceShuttle = __webpack_require__(647);
+	var _spaceShuttle = __webpack_require__(648);
 	
 	var _spaceShuttle2 = _interopRequireDefault(_spaceShuttle);
 	
@@ -71427,19 +71473,19 @@
 	
 	var _Anchor2 = _interopRequireDefault(_Anchor);
 	
-	var _Code = __webpack_require__(648);
+	var _Code = __webpack_require__(649);
 	
 	var _Code2 = _interopRequireDefault(_Code);
 	
-	var _DefineItem = __webpack_require__(651);
+	var _DefineItem = __webpack_require__(652);
 	
 	var _DefineItem2 = _interopRequireDefault(_DefineItem);
 	
-	var _DefineList = __webpack_require__(654);
+	var _DefineList = __webpack_require__(655);
 	
 	var _DefineList2 = _interopRequireDefault(_DefineList);
 	
-	var _DefineTitle = __webpack_require__(657);
+	var _DefineTitle = __webpack_require__(658);
 	
 	var _DefineTitle2 = _interopRequireDefault(_DefineTitle);
 	
@@ -71451,7 +71497,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _ListOrder = __webpack_require__(660);
+	var _ListOrder = __webpack_require__(661);
 	
 	var _ListOrder2 = _interopRequireDefault(_ListOrder);
 	
@@ -71471,11 +71517,11 @@
 	
 	var _Table2 = _interopRequireDefault(_Table);
 	
-	var _TableHead = __webpack_require__(663);
+	var _TableHead = __webpack_require__(664);
 	
 	var _TableHead2 = _interopRequireDefault(_TableHead);
 	
-	var _TableBody = __webpack_require__(666);
+	var _TableBody = __webpack_require__(667);
 	
 	var _TableBody2 = _interopRequireDefault(_TableBody);
 	
@@ -71483,7 +71529,7 @@
 	
 	var _TableRow2 = _interopRequireDefault(_TableRow);
 	
-	var _TableTitle = __webpack_require__(669);
+	var _TableTitle = __webpack_require__(670);
 	
 	var _TableTitle2 = _interopRequireDefault(_TableTitle);
 	
@@ -71495,11 +71541,11 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _business = __webpack_require__(672);
+	var _business = __webpack_require__(673);
 	
 	var _business2 = _interopRequireDefault(_business);
 	
-	var _index = __webpack_require__(673);
+	var _index = __webpack_require__(674);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -71900,7 +71946,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 644 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71953,7 +71999,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 645 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72006,7 +72052,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 646 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72059,7 +72105,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 647 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72112,7 +72158,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 648 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72125,7 +72171,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(649);
+	var _index = __webpack_require__(650);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72145,15 +72191,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 649 */
+/* 650 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"code":"index_code_2cu tachyons_bg-light-gray_2vM tachyons_db_32y tachyons_f6_14U tachyons_lh-copy_15f tachyons_mb3_1mV tachyons_nowrap_3x4 tachyons_overflow-auto_1h0 tachyons_ph3_Qxl tachyons_pv2_1UD"};
 
 /***/ },
-/* 650 */,
-/* 651 */
+/* 651 */,
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72170,7 +72216,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(652);
+	var _index = __webpack_require__(653);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72197,15 +72243,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 652 */
+/* 653 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"horizontal":"index_horizontal_7U1 tachyons_fl_wJK tachyons_h-100_Yu8 tachyons_ma0_2xh","vertical":"index_vertical_IQM tachyons_mb3_1mV tachyons_ml0_x1_ tachyons_pl0_3tn","defineItem":"index_defineItem_6by"};
 
 /***/ },
-/* 653 */,
-/* 654 */
+/* 654 */,
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72222,7 +72268,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(655);
+	var _index = __webpack_require__(656);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72252,15 +72298,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 655 */
+/* 656 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"horizontal":"index_horizontal_2iP tachyons_cf_g7R tachyons_lh-title_1xo","vertical":"index_vertical_1Dv tachyons_lh-copy_15f tachyons_mb3_1mV tachyons_measure_hbr tachyons_measure-wide-l_2Qf","defineList":"index_defineList_2Bk tachyons_ma0_2xh tachyons_pa0_RbR"};
 
 /***/ },
-/* 656 */,
-/* 657 */
+/* 657 */,
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72277,7 +72323,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(658);
+	var _index = __webpack_require__(659);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72304,15 +72350,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 658 */
+/* 659 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"horizontal":"index_horizontal_1Zy tachyons_fl_wJK tachyons_h-100_Yu8 tachyons_ma0_2xh","vertical":"index_vertical_3bW tachyons_lh-title_1xo tachyons_mb1_2-H","defineTitle":"index_defineTitle_1cB tachyons_fw6_1NV"};
 
 /***/ },
-/* 659 */,
-/* 660 */
+/* 660 */,
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72325,7 +72371,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(661);
+	var _index = __webpack_require__(662);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72350,15 +72396,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 661 */
+/* 662 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"ol":"index_ol_X9V tachyons_list_amB tachyons_mb4_3KK tachyons_pl0_3tn"};
 
 /***/ },
-/* 662 */,
-/* 663 */
+/* 663 */,
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72371,7 +72417,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(664);
+	var _index = __webpack_require__(665);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72391,15 +72437,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 664 */
+/* 665 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"tableHeader":"index_tableHeader_10b"};
 
 /***/ },
-/* 665 */,
-/* 666 */
+/* 666 */,
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72412,7 +72458,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(667);
+	var _index = __webpack_require__(668);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72432,15 +72478,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 667 */
+/* 668 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"tableBody":"index_tableBody_1ce"};
 
 /***/ },
-/* 668 */,
-/* 669 */
+/* 669 */,
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72453,7 +72499,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(670);
+	var _index = __webpack_require__(671);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -72478,29 +72524,29 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 670 */
+/* 671 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"tableTitle":"index_tableTitle_3Zd tachyons_b--black-10_14L tachyons_bg-near-white_1Oi tachyons_bl_1ft tachyons_bt_LY6 tachyons_pa2_2x2"};
 
 /***/ },
-/* 671 */,
-/* 672 */
+/* 672 */,
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "fec6bbc70272ab75a30222b9315a8a0f.png";
 
 /***/ },
-/* 673 */
+/* 674 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"_prefix":"index__prefix_dvV","columns":"index_columns_KDn theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_2YI theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_3Hk tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","faq":"index_faq_1Lk index__prefix_dvV","icon":"index_icon_jEz theme_color-blue-mute_20f"};
 
 /***/ },
-/* 674 */,
-/* 675 */
+/* 675 */,
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72523,15 +72569,15 @@
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _DefineItem = __webpack_require__(651);
+	var _DefineItem = __webpack_require__(652);
 	
 	var _DefineItem2 = _interopRequireDefault(_DefineItem);
 	
-	var _DefineList = __webpack_require__(654);
+	var _DefineList = __webpack_require__(655);
 	
 	var _DefineList2 = _interopRequireDefault(_DefineList);
 	
-	var _DefineTitle = __webpack_require__(657);
+	var _DefineTitle = __webpack_require__(658);
 	
 	var _DefineTitle2 = _interopRequireDefault(_DefineTitle);
 	
@@ -72547,11 +72593,11 @@
 	
 	var _FormLabel2 = _interopRequireDefault(_FormLabel);
 	
-	var _FormRow = __webpack_require__(676);
+	var _FormRow = __webpack_require__(677);
 	
 	var _FormRow2 = _interopRequireDefault(_FormRow);
 	
-	var _FormTextArea = __webpack_require__(679);
+	var _FormTextArea = __webpack_require__(680);
 	
 	var _FormTextArea2 = _interopRequireDefault(_FormTextArea);
 	
@@ -72575,7 +72621,7 @@
 	
 	var _Paragraph2 = _interopRequireDefault(_Paragraph);
 	
-	var _SocialMedia = __webpack_require__(682);
+	var _SocialMedia = __webpack_require__(683);
 	
 	var _SocialMedia2 = _interopRequireDefault(_SocialMedia);
 	
@@ -72591,7 +72637,7 @@
 	
 	var _Table2 = _interopRequireDefault(_Table);
 	
-	var _TableBody = __webpack_require__(666);
+	var _TableBody = __webpack_require__(667);
 	
 	var _TableBody2 = _interopRequireDefault(_TableBody);
 	
@@ -72607,43 +72653,43 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _careers = __webpack_require__(689);
+	var _careers = __webpack_require__(690);
 	
 	var _careers2 = _interopRequireDefault(_careers);
 	
-	var _celesteBaranski = __webpack_require__(690);
+	var _celesteBaranski = __webpack_require__(691);
 	
 	var _celesteBaranski2 = _interopRequireDefault(_celesteBaranski);
 	
-	var _donnaDubinsky = __webpack_require__(691);
+	var _donnaDubinsky = __webpack_require__(692);
 	
 	var _donnaDubinsky2 = _interopRequireDefault(_donnaDubinsky);
 	
-	var _edColligan = __webpack_require__(692);
+	var _edColligan = __webpack_require__(693);
 	
 	var _edColligan2 = _interopRequireDefault(_edColligan);
 	
-	var _harrySaal = __webpack_require__(693);
+	var _harrySaal = __webpack_require__(694);
 	
 	var _harrySaal2 = _interopRequireDefault(_harrySaal);
 	
-	var _jeffHawkins = __webpack_require__(694);
+	var _jeffHawkins = __webpack_require__(695);
 	
 	var _jeffHawkins2 = _interopRequireDefault(_jeffHawkins);
 	
-	var _map = __webpack_require__(695);
+	var _map = __webpack_require__(696);
 	
 	var _map2 = _interopRequireDefault(_map);
 	
-	var _mikeFarmwald = __webpack_require__(696);
+	var _mikeFarmwald = __webpack_require__(697);
 	
 	var _mikeFarmwald2 = _interopRequireDefault(_mikeFarmwald);
 	
-	var _subutaiAhmad = __webpack_require__(697);
+	var _subutaiAhmad = __webpack_require__(698);
 	
 	var _subutaiAhmad2 = _interopRequireDefault(_subutaiAhmad);
 	
-	var _index = __webpack_require__(698);
+	var _index = __webpack_require__(699);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -73482,7 +73528,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 676 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73495,7 +73541,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(677);
+	var _index = __webpack_require__(678);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -73515,15 +73561,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 677 */
+/* 678 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"formRow":"index_formRow_Dre tachyons_cb_1nJ tachyons_cf_g7R tachyons_flex_22H tachyons_mb2_1U4 tachyons_mr4_16Z"};
 
 /***/ },
-/* 678 */,
-/* 679 */
+/* 679 */,
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73536,7 +73582,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(680);
+	var _index = __webpack_require__(681);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -73563,15 +73609,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 680 */
+/* 681 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"_focus":"index__focus_2PQ","formTextArea":"index_formTextArea_38M tachyons_ba_1NL tachyons_b--black-20_1zc tachyons_br2_rOa tachyons_f5_2mB tachyons_flex-auto_1Fv tachyons_fw3_3xI tachyons_h4_923 tachyons_input-reset_3Az tachyons_pb1_2R8 tachyons_ph2_2up tachyons_pt2_3ym tachyons_silver_3lN index__focus_2PQ"};
 
 /***/ },
-/* 681 */,
-/* 682 */
+/* 682 */,
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73580,19 +73626,19 @@
 	  value: true
 	});
 	
-	var _facebook = __webpack_require__(683);
+	var _facebook = __webpack_require__(684);
 	
 	var _facebook2 = _interopRequireDefault(_facebook);
 	
-	var _linkedin = __webpack_require__(684);
+	var _linkedin = __webpack_require__(685);
 	
 	var _linkedin2 = _interopRequireDefault(_linkedin);
 	
-	var _twitter = __webpack_require__(685);
+	var _twitter = __webpack_require__(686);
 	
 	var _twitter2 = _interopRequireDefault(_twitter);
 	
-	var _youtube = __webpack_require__(686);
+	var _youtube = __webpack_require__(687);
 	
 	var _youtube2 = _interopRequireDefault(_youtube);
 	
@@ -73604,7 +73650,7 @@
 	
 	var _ImageLink2 = _interopRequireDefault(_ImageLink);
 	
-	var _index = __webpack_require__(687);
+	var _index = __webpack_require__(688);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -73651,7 +73697,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 683 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73704,7 +73750,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 684 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73757,7 +73803,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 685 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73810,7 +73856,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 686 */
+/* 687 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73863,77 +73909,77 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 687 */
+/* 688 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"spread":"index_spread_1iI tachyons_ph3_Qxl","social":"index_social_271 tachyons_f2_ipM tachyons_mb4_3KK tachyons_mt3_11A"};
 
 /***/ },
-/* 688 */,
-/* 689 */
+/* 689 */,
+/* 690 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "5cbd96a017881938ee40712e1ef50342.png";
 
 /***/ },
-/* 690 */
+/* 691 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1021626eaa7df142339c274e88554461.png";
 
 /***/ },
-/* 691 */
+/* 692 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b7776ddbbeba361fdba7906ad07b012f.jpg";
 
 /***/ },
-/* 692 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "628cdb3e510623780fea05b4f848deb9.jpg";
 
 /***/ },
-/* 693 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a4c3355c774d2547d70bb34d8c1ed549.jpg";
 
 /***/ },
-/* 694 */
+/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "aa0e50831f86b3918f88bd27665d00df.jpg";
 
 /***/ },
-/* 695 */
+/* 696 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b8e60076ee828720b68172e556dc0cd4.png";
 
 /***/ },
-/* 696 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f7145bbf2137b9927c4b8b5a80e73b55.jpg";
 
 /***/ },
-/* 697 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1ffa9e4c57f51359061d0c21b116ecc7.jpg";
 
 /***/ },
-/* 698 */
+/* 699 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_3o2 theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_1JA theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_29G theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","asideCenter":"index_asideCenter_1t7 tachyons_mt2_3dR tachyons_tc_3ab index_aside_29G theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","emails":"index_emails_8en tachyons_bg-near-white_1Oi tachyons_center_iwf tachyons_f6_14U tachyons_mt4_3dV tachyons_pb3_9S8 tachyons_ph4_-u9 tachyons_pt4_3TE tachyons_tl_3s2 tachyons_w5_2u9","office":"index_office_27C tachyons_f5_2mB tachyons_mb4_3KK tachyons_mt2_3dR","address":"index_address_xqM tachyons_fs-normal_34f"};
 
 /***/ },
-/* 699 */,
-/* 700 */
+/* 700 */,
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -73946,7 +73992,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Glance = __webpack_require__(701);
+	var _Glance = __webpack_require__(702);
 	
 	var _Glance2 = _interopRequireDefault(_Glance);
 	
@@ -73962,7 +74008,7 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _index = __webpack_require__(707);
+	var _index = __webpack_require__(708);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -74024,7 +74070,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 701 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74039,15 +74085,15 @@
 	
 	var _shared = __webpack_require__(381);
 	
-	var _DefineItem = __webpack_require__(651);
+	var _DefineItem = __webpack_require__(652);
 	
 	var _DefineItem2 = _interopRequireDefault(_DefineItem);
 	
-	var _DefineList = __webpack_require__(654);
+	var _DefineList = __webpack_require__(655);
 	
 	var _DefineList2 = _interopRequireDefault(_DefineList);
 	
-	var _DefineTitle = __webpack_require__(657);
+	var _DefineTitle = __webpack_require__(658);
 	
 	var _DefineTitle2 = _interopRequireDefault(_DefineTitle);
 	
@@ -74059,7 +74105,7 @@
 	
 	var _Spacer2 = _interopRequireDefault(_Spacer);
 	
-	var _Tag = __webpack_require__(702);
+	var _Tag = __webpack_require__(703);
 	
 	var _Tag2 = _interopRequireDefault(_Tag);
 	
@@ -74067,7 +74113,7 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _index = __webpack_require__(705);
+	var _index = __webpack_require__(706);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -74171,7 +74217,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 702 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74184,7 +74230,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(703);
+	var _index = __webpack_require__(704);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -74204,31 +74250,31 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 703 */
+/* 704 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"tag":"index_tag_5Af tachyons_br2_rOa tachyons_fw4_3tj tachyons_mh1_-Z3 tachyons_relative_1fO tachyons_ttu_1fW tachyons_white_3f5 theme_bg-color-blue-lite_1Sp"};
 
 /***/ },
-/* 704 */,
-/* 705 */
+/* 705 */,
+/* 706 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"_rules":"index__rules_3UH","glance":"index_glance_21U tachyons_bg-near-white_1Oi tachyons_br2_rOa tachyons_f5_2mB tachyons_f6-ns_27V tachyons_mb3_1mV tachyons_pb3_9S8 tachyons_ph3_Qxl tachyons_pt2_3ym tachyons_tl_3s2 index__rules_3UH","logo":"index_logo_3u- tachyons_center_iwf tachyons_mb3_1mV tachyons_mt2_3dR tachyons_w5_2u9 tachyons_w4-m_39b"};
 
 /***/ },
-/* 706 */,
-/* 707 */
+/* 707 */,
+/* 708 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"page":"index_page_1OM tachyons_mt2_3dR","columns":"index_columns_1d3 theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","aside":"index_aside_2P5 tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","content":"index_content_3bf theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_"};
 
 /***/ },
-/* 708 */,
-/* 709 */
+/* 709 */,
+/* 710 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74253,7 +74299,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _ListOrder = __webpack_require__(660);
+	var _ListOrder = __webpack_require__(661);
 	
 	var _ListOrder2 = _interopRequireDefault(_ListOrder);
 	
@@ -74277,19 +74323,19 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
-	var _brain = __webpack_require__(710);
+	var _brain = __webpack_require__(711);
 	
 	var _brain2 = _interopRequireDefault(_brain);
 	
-	var _timeline = __webpack_require__(711);
+	var _timeline = __webpack_require__(712);
 	
 	var _timeline2 = _interopRequireDefault(_timeline);
 	
-	var _videoOurstory = __webpack_require__(712);
+	var _videoOurstory = __webpack_require__(713);
 	
 	var _videoOurstory2 = _interopRequireDefault(_videoOurstory);
 	
-	var _index = __webpack_require__(713);
+	var _index = __webpack_require__(714);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -74429,33 +74475,33 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 710 */
+/* 711 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a4379c4d5b4b4d15d68b9289d29ad58f.svg";
 
 /***/ },
-/* 711 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "36c7a95281bf15f9f9be260eb2ac34a1.png";
 
 /***/ },
-/* 712 */
+/* 713 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a5ecf4fadc795b8b0bd69376d0d63427.png";
 
 /***/ },
-/* 713 */
+/* 714 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_1eH theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_2Oz theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_1mY tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","brain":"index_brain_2MO tachyons_center_iwf tachyons_mt5_2gs tachyons_w5_2u9"};
 
 /***/ },
-/* 714 */,
-/* 715 */
+/* 715 */,
+/* 716 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74464,7 +74510,7 @@
 	  value: true
 	});
 	
-	var _github = __webpack_require__(716);
+	var _github = __webpack_require__(717);
 	
 	var _github2 = _interopRequireDefault(_github);
 	
@@ -74480,7 +74526,7 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _index = __webpack_require__(717);
+	var _index = __webpack_require__(718);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -74564,7 +74610,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 716 */
+/* 717 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74617,15 +74663,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 717 */
+/* 718 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_Zrd theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_lhd theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_2ZG tachyons_mt3_11A tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","icon":"index_icon_4Rt theme_layout-aside-icon_102 theme_color-blue-mute_20f"};
 
 /***/ },
-/* 718 */,
-/* 719 */
+/* 719 */,
+/* 720 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74634,17 +74680,17 @@
 	  value: true
 	});
 	
-	var _lodash = __webpack_require__(720);
+	var _lodash = __webpack_require__(721);
 	
-	var _book = __webpack_require__(721);
+	var _book = __webpack_require__(722);
 	
 	var _book2 = _interopRequireDefault(_book);
 	
-	var _filePdfO = __webpack_require__(722);
+	var _filePdfO = __webpack_require__(723);
 	
 	var _filePdfO2 = _interopRequireDefault(_filePdfO);
 	
-	var _youtubePlay = __webpack_require__(723);
+	var _youtubePlay = __webpack_require__(724);
 	
 	var _youtubePlay2 = _interopRequireDefault(_youtubePlay);
 	
@@ -74690,11 +74736,11 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
-	var _video = __webpack_require__(724);
+	var _video = __webpack_require__(725);
 	
 	var _video2 = _interopRequireDefault(_video);
 	
-	var _index = __webpack_require__(725);
+	var _index = __webpack_require__(726);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -74937,7 +74983,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 720 */
+/* 721 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -91535,7 +91581,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(331)(module)))
 
 /***/ },
-/* 721 */
+/* 722 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -91588,7 +91634,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 722 */
+/* 723 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -91641,7 +91687,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 723 */
+/* 724 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -91694,21 +91740,21 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 724 */
+/* 725 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cf3fb23747b3451580c0a1d48caacd83.png";
 
 /***/ },
-/* 725 */
+/* 726 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_1or theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_1ib tachyons_pr3_2en theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_16h tachyons_mt2_3dR theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","video":"index_video_37h tachyons_tc_3ab tachyons_mb4_3KK","icon":"index_icon_2SX tachyons_fl_wJK tachyons_mr2_2P1 tachyons_relative_1fO tachyons_w1_1jO theme_color-blue-dark_2u0","learn":"index_learn_2hG tachyons_fl_wJK"};
 
 /***/ },
-/* 726 */,
-/* 727 */
+/* 727 */,
+/* 728 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -91757,15 +91803,15 @@
 	
 	var _TextLink2 = _interopRequireDefault(_TextLink);
 	
-	var _cortical = __webpack_require__(728);
+	var _cortical = __webpack_require__(729);
 	
 	var _cortical2 = _interopRequireDefault(_cortical);
 	
-	var _grokstream = __webpack_require__(729);
+	var _grokstream = __webpack_require__(730);
 	
 	var _grokstream2 = _interopRequireDefault(_grokstream);
 	
-	var _index = __webpack_require__(730);
+	var _index = __webpack_require__(731);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -91971,27 +92017,27 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 728 */
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "816188988e9b01dda6f946c19d80c499.png";
 
 /***/ },
-/* 729 */
+/* 730 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7ef47ce13b749d8026e65a7282b41087.png";
 
 /***/ },
-/* 730 */
+/* 731 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_2Dv theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_8ih theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_hgE tachyons_mt4_3dV tachyons_ph3_Qxl tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","logomark":"index_logomark_2FO tachyons_center_iwf tachyons_w4_3jJ"};
 
 /***/ },
-/* 731 */,
-/* 732 */
+/* 732 */,
+/* 733 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92020,11 +92066,11 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
-	var _videoTech = __webpack_require__(733);
+	var _videoTech = __webpack_require__(734);
 	
 	var _videoTech2 = _interopRequireDefault(_videoTech);
 	
-	var _index = __webpack_require__(734);
+	var _index = __webpack_require__(735);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -92112,21 +92158,21 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 733 */
+/* 734 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "95808d84b4e5692bf0c0546f1ca0a9c7.png";
 
 /***/ },
-/* 734 */
+/* 735 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_1dD theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_1AA theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_1xj tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN"};
 
 /***/ },
-/* 735 */,
-/* 736 */
+/* 736 */,
+/* 737 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92139,7 +92185,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
@@ -92180,7 +92226,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -92196,31 +92242,6 @@
 	
 	exports.default = AnomalyBenchmarkPage;
 	module.exports = exports['default'];
-
-/***/ },
-/* 737 */
-/***/ function(module, exports) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.scrollTo = scrollTo;
-	/**
-	 * Main Section Utils for the Clientside
-	 */
-	
-	/**
-	 *
-	 */
-	function scrollTo(current, pad = -60) {
-	  const element = global.document.getElementById(current.type.name);
-	  const { top } = element.getBoundingClientRect();
-	
-	  if (top) global.window.scroll(0, top + pad);
-	}
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 738 */
@@ -92278,7 +92299,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
@@ -92319,7 +92340,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -92357,7 +92378,7 @@
 	
 	var _Anchor2 = _interopRequireDefault(_Anchor);
 	
-	var _Code = __webpack_require__(648);
+	var _Code = __webpack_require__(649);
 	
 	var _Code2 = _interopRequireDefault(_Code);
 	
@@ -92365,7 +92386,7 @@
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _ListOrder = __webpack_require__(660);
+	var _ListOrder = __webpack_require__(661);
 	
 	var _ListOrder2 = _interopRequireDefault(_ListOrder);
 	
@@ -93903,13 +93924,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(643);
+	var _Section = __webpack_require__(644);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -93944,7 +93965,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -94034,13 +94055,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(675);
+	var _Section = __webpack_require__(676);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -94075,7 +94096,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -95093,7 +95114,7 @@
 	
 	var _FormLabel2 = _interopRequireDefault(_FormLabel);
 	
-	var _FormRow = __webpack_require__(676);
+	var _FormRow = __webpack_require__(677);
 	
 	var _FormRow2 = _interopRequireDefault(_FormRow);
 	
@@ -95745,7 +95766,7 @@
 
 /***/ },
 /* 1093 */
-635,
+636,
 /* 1094 */
 741,
 /* 1095 */
@@ -95877,6 +95898,8 @@
 	  value: true
 	});
 	
+	var _lodash = __webpack_require__(721);
+	
 	var _classnames = __webpack_require__(387);
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
@@ -95901,17 +95924,25 @@
 	
 	var _lock2 = _interopRequireDefault(_lock);
 	
-	var _questionCircle = __webpack_require__(646);
+	var _questionCircle = __webpack_require__(647);
 	
 	var _questionCircle2 = _interopRequireDefault(_questionCircle);
 	
-	var _reactModal = __webpack_require__(601);
+	var _reactModal = __webpack_require__(595);
 	
 	var _reactModal2 = _interopRequireDefault(_reactModal);
+	
+	var _platform = __webpack_require__(1121);
+	
+	var _platform2 = _interopRequireDefault(_platform);
 	
 	var _react = __webpack_require__(2);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _client = __webpack_require__(625);
+	
+	var _shared = __webpack_require__(381);
 	
 	var _Anchor = __webpack_require__(591);
 	
@@ -95921,7 +95952,7 @@
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _ButtonLink = __webpack_require__(1121);
+	var _ButtonLink = __webpack_require__(1122);
 	
 	var _ButtonLink2 = _interopRequireDefault(_ButtonLink);
 	
@@ -95929,7 +95960,7 @@
 	
 	var _Form2 = _interopRequireDefault(_Form);
 	
-	var _FormCheckbox = __webpack_require__(1124);
+	var _FormCheckbox = __webpack_require__(1125);
 	
 	var _FormCheckbox2 = _interopRequireDefault(_FormCheckbox);
 	
@@ -95941,11 +95972,11 @@
 	
 	var _FormLabel2 = _interopRequireDefault(_FormLabel);
 	
-	var _FormRow = __webpack_require__(676);
+	var _FormRow = __webpack_require__(677);
 	
 	var _FormRow2 = _interopRequireDefault(_FormRow);
 	
-	var _FormTextArea = __webpack_require__(679);
+	var _FormTextArea = __webpack_require__(680);
 	
 	var _FormTextArea2 = _interopRequireDefault(_FormTextArea);
 	
@@ -95977,7 +96008,7 @@
 	
 	var _SubTitle2 = _interopRequireDefault(_SubTitle);
 	
-	var _terms = __webpack_require__(1127);
+	var _terms = __webpack_require__(1128);
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
@@ -96021,9 +96052,13 @@
 	
 	var _videoWalkthru2 = _interopRequireDefault(_videoWalkthru);
 	
-	var _index = __webpack_require__(1128);
+	var _index = __webpack_require__(1129);
 	
 	var _index2 = _interopRequireDefault(_index);
+	
+	var _styleModal = __webpack_require__(1131);
+	
+	var _styleModal2 = _interopRequireDefault(_styleModal);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -96046,35 +96081,29 @@
 	      warning: false }, _temp;
 	  }
 	
-	  _startDownload() {
+	  _startDownload(event) {
 	    const { accepted } = this.state;
-	    console.log('_startDownload', this.state);
-	
 	    if (!accepted) {
+	      event.preventDefault();
+	      event.stopPropagation();
 	      this.setState({ warning: true });
-	      return false;
 	    }
-	
-	    return true;
 	  }
 	
 	  _toggleAcceptance() {
 	    const { accepted } = this.state;
 	    const newState = { accepted: !accepted };
-	    console.log('_toggleAcceptance', this.state);
-	
 	    if (newState.accepted) {
 	      newState.warning = false;
 	    }
-	
 	    this.setState(newState);
 	  }
 	
 	  _toggleTerms(event) {
 	    const { terms } = this.state;
-	    if (event) {
-	      event.stopPropagation();
+	    if (event && !terms) {
 	      event.preventDefault();
+	      event.stopPropagation();
 	    }
 	    this.setState({ terms: !terms });
 	  }
@@ -96084,7 +96113,10 @@
 	    const { accepted, terms, warning } = this.state;
 	    const { links } = config;
 	    const { pages } = route;
+	    const { os } = _platform2.default;
 	    const warningClasses = [_index2.default.row, _index2.default.error];
+	    const family = (0, _lodash.camelCase)(os.family).toLowerCase();
+	    const downloadLink = family && family.match(/win/) ? links.out.htmstudio.win : links.out.htmstudio.osx;
 	    const faqs = pages.filter(({ file }) => file.path.match(/^htm\-studio\/faq\/.*\.md/));
 	    const faq = faqs.sort(sortFaqs).map(({ data, file }) => _react2.default.createElement(
 	      'div',
@@ -96101,13 +96133,39 @@
 	        _react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: data.body } })
 	      )
 	    ));
-	    const termsModal = _react2.default.createElement(
+	    const TermsLink = _react2.default.createElement(
+	      _TextLink2.default,
+	      {
+	        onClick: event => this._toggleTerms(event),
+	        to: `${ links.in.htmstudio }terms/`
+	      },
+	      'Terms and Conditions'
+	    );
+	    let termsModal;
+	
+	    _styleModal2.default.content.width = (0, _shared.getModalAspect)((0, _client.getBrowserWidth)() - 100);
+	    termsModal = _react2.default.createElement(
 	      _reactModal2.default,
 	      {
 	        isOpen: terms,
-	        onRequestClose: () => this._toggleTerms()
+	        onRequestClose: () => this._toggleTerms(),
+	        style: _styleModal2.default
 	      },
-	      _react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: _terms2.default.body } })
+	      _react2.default.createElement(
+	        _SubTitle2.default,
+	        null,
+	        _terms2.default.title
+	      ),
+	      _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _terms2.default.body } }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: _index2.default.close },
+	        _react2.default.createElement(
+	          _Button2.default,
+	          { onClick: () => this._toggleTerms() },
+	          'Close'
+	        )
+	      )
 	    );
 	
 	    if (!warning) {
@@ -96162,14 +96220,7 @@
 	                    { className: _index2.default.agree },
 	                    'I agree to the ',
 	                    ' ',
-	                    _react2.default.createElement(
-	                      _TextLink2.default,
-	                      {
-	                        onClick: event => this._toggleTerms(event),
-	                        to: `${ links.in.htmstudio }terms/`
-	                      },
-	                      'Terms and Conditions'
-	                    )
+	                    TermsLink
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -96177,14 +96228,10 @@
 	                  { className: (0, _classnames2.default)(...warningClasses) },
 	                  'Please agree to the ',
 	                  ' ',
-	                  _react2.default.createElement(
-	                    _TextLink2.default,
-	                    { to: `${ links.in.htmstudio }terms/` },
-	                    'Terms and Conditions'
-	                  ),
+	                  TermsLink,
 	                  ' ',
 	                  ' ',
-	                  'before downloading.'
+	                  'above before downloading.'
 	                ),
 	                _react2.default.createElement(
 	                  'div',
@@ -96193,9 +96240,9 @@
 	                    _ButtonLink2.default,
 	                    {
 	                      disabled: !accepted,
-	                      onClick: () => this._startDownload(),
+	                      onClick: event => this._startDownload(event),
 	                      theme: 'primary',
-	                      to: links.out.htmstudio.macos
+	                      to: downloadLink
 	                    },
 	                    'Download HTM Studio'
 	                  )
@@ -96679,14 +96726,7 @@
 	              _react2.default.createElement(
 	                _ListItem2.default,
 	                null,
-	                _react2.default.createElement(
-	                  _TextLink2.default,
-	                  {
-	                    onClick: () => this._toggleTerms(),
-	                    to: `${ links.in.htmstudio }terms/`
-	                  },
-	                  'Terms and Conditions'
-	                ),
+	                TermsLink,
 	                _react2.default.createElement(
 	                  _Paragraph2.default,
 	                  null,
@@ -97084,6 +97124,1148 @@
 /* 1121 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*!
+	 * Platform.js v1.3.1 <http://mths.be/platform>
+	 * Copyright 2014-2016 Benjamin Tan <https://d10.github.io/>
+	 * Copyright 2011-2013 John-David Dalton <http://allyoucanleet.com/>
+	 * Available under MIT license <http://mths.be/mit>
+	 */
+	;(function() {
+	  'use strict';
+	
+	  /** Used to determine if values are of the language type `Object` */
+	  var objectTypes = {
+	    'function': true,
+	    'object': true
+	  };
+	
+	  /** Used as a reference to the global object */
+	  var root = (objectTypes[typeof window] && window) || this;
+	
+	  /** Backup possible global object */
+	  var oldRoot = root;
+	
+	  /** Detect free variable `exports` */
+	  var freeExports = objectTypes[typeof exports] && exports;
+	
+	  /** Detect free variable `module` */
+	  var freeModule = objectTypes[typeof module] && module && !module.nodeType && module;
+	
+	  /** Detect free variable `global` from Node.js or Browserified code and use it as `root` */
+	  var freeGlobal = freeExports && freeModule && typeof global == 'object' && global;
+	  if (freeGlobal && (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal || freeGlobal.self === freeGlobal)) {
+	    root = freeGlobal;
+	  }
+	
+	  /**
+	   * Used as the maximum length of an array-like object.
+	   * See the [ES6 spec](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength)
+	   * for more details.
+	   */
+	  var maxSafeInteger = Math.pow(2, 53) - 1;
+	
+	  /** Opera regexp */
+	  var reOpera = /\bOpera/;
+	
+	  /** Possible global object */
+	  var thisBinding = this;
+	
+	  /** Used for native method references */
+	  var objectProto = Object.prototype;
+	
+	  /** Used to check for own properties of an object */
+	  var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	  /** Used to resolve the internal `[[Class]]` of values */
+	  var toString = objectProto.toString;
+	
+	  /*--------------------------------------------------------------------------*/
+	
+	  /**
+	   * Capitalizes a string value.
+	   *
+	   * @private
+	   * @param {string} string The string to capitalize.
+	   * @returns {string} The capitalized string.
+	   */
+	  function capitalize(string) {
+	    string = String(string);
+	    return string.charAt(0).toUpperCase() + string.slice(1);
+	  }
+	
+	  /**
+	   * A utility function to clean up the OS name.
+	   *
+	   * @private
+	   * @param {string} os The OS name to clean up.
+	   * @param {string} [pattern] A `RegExp` pattern matching the OS name.
+	   * @param {string} [label] A label for the OS.
+	   */
+	  function cleanupOS(os, pattern, label) {
+	    // platform tokens defined at
+	    // http://msdn.microsoft.com/en-us/library/ms537503(VS.85).aspx
+	    // http://web.archive.org/web/20081122053950/http://msdn.microsoft.com/en-us/library/ms537503(VS.85).aspx
+	    var data = {
+	      '6.4':  '10',
+	      '6.3':  '8.1',
+	      '6.2':  '8',
+	      '6.1':  'Server 2008 R2 / 7',
+	      '6.0':  'Server 2008 / Vista',
+	      '5.2':  'Server 2003 / XP 64-bit',
+	      '5.1':  'XP',
+	      '5.01': '2000 SP1',
+	      '5.0':  '2000',
+	      '4.0':  'NT',
+	      '4.90': 'ME'
+	    };
+	    // detect Windows version from platform tokens
+	    if (pattern && label && /^Win/i.test(os) &&
+	        (data = data[0/*Opera 9.25 fix*/, /[\d.]+$/.exec(os)])) {
+	      os = 'Windows ' + data;
+	    }
+	    // correct character case and cleanup
+	    os = String(os);
+	
+	    if (pattern && label) {
+	      os = os.replace(RegExp(pattern, 'i'), label);
+	    }
+	
+	    os = format(
+	      os.replace(/ ce$/i, ' CE')
+	        .replace(/\bhpw/i, 'web')
+	        .replace(/\bMacintosh\b/, 'Mac OS')
+	        .replace(/_PowerPC\b/i, ' OS')
+	        .replace(/\b(OS X) [^ \d]+/i, '$1')
+	        .replace(/\bMac (OS X)\b/, '$1')
+	        .replace(/\/(\d)/, ' $1')
+	        .replace(/_/g, '.')
+	        .replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, '')
+	        .replace(/\bx86\.64\b/gi, 'x86_64')
+	        .replace(/\b(Windows Phone) OS\b/, '$1')
+	        .split(' on ')[0]
+	    );
+	
+	    return os;
+	  }
+	
+	  /**
+	   * An iteration utility for arrays and objects.
+	   *
+	   * @private
+	   * @param {Array|Object} object The object to iterate over.
+	   * @param {Function} callback The function called per iteration.
+	   */
+	  function each(object, callback) {
+	    var index = -1,
+	        length = object ? object.length : 0;
+	
+	    if (typeof length == 'number' && length > -1 && length <= maxSafeInteger) {
+	      while (++index < length) {
+	        callback(object[index], index, object);
+	      }
+	    } else {
+	      forOwn(object, callback);
+	    }
+	  }
+	
+	  /**
+	   * Trim and conditionally capitalize string values.
+	   *
+	   * @private
+	   * @param {string} string The string to format.
+	   * @returns {string} The formatted string.
+	   */
+	  function format(string) {
+	    string = trim(string);
+	    return /^(?:webOS|i(?:OS|P))/.test(string)
+	      ? string
+	      : capitalize(string);
+	  }
+	
+	  /**
+	   * Iterates over an object's own properties, executing the `callback` for each.
+	   *
+	   * @private
+	   * @param {Object} object The object to iterate over.
+	   * @param {Function} callback The function executed per own property.
+	   */
+	  function forOwn(object, callback) {
+	    for (var key in object) {
+	      if (hasOwnProperty.call(object, key)) {
+	        callback(object[key], key, object);
+	      }
+	    }
+	  }
+	
+	  /**
+	   * Gets the internal `[[Class]]` of a value.
+	   *
+	   * @private
+	   * @param {*} value The value.
+	   * @returns {string} The `[[Class]]`.
+	   */
+	  function getClassOf(value) {
+	    return value == null
+	      ? capitalize(value)
+	      : toString.call(value).slice(8, -1);
+	  }
+	
+	  /**
+	   * Host objects can return type values that are different from their actual
+	   * data type. The objects we are concerned with usually return non-primitive
+	   * types of "object", "function", or "unknown".
+	   *
+	   * @private
+	   * @param {*} object The owner of the property.
+	   * @param {string} property The property to check.
+	   * @returns {boolean} Returns `true` if the property value is a non-primitive, else `false`.
+	   */
+	  function isHostType(object, property) {
+	    var type = object != null ? typeof object[property] : 'number';
+	    return !/^(?:boolean|number|string|undefined)$/.test(type) &&
+	      (type == 'object' ? !!object[property] : true);
+	  }
+	
+	  /**
+	   * Prepares a string for use in a `RegExp` by making hyphens and spaces optional.
+	   *
+	   * @private
+	   * @param {string} string The string to qualify.
+	   * @returns {string} The qualified string.
+	   */
+	  function qualify(string) {
+	    return String(string).replace(/([ -])(?!$)/g, '$1?');
+	  }
+	
+	  /**
+	   * A bare-bones `Array#reduce` like utility function.
+	   *
+	   * @private
+	   * @param {Array} array The array to iterate over.
+	   * @param {Function} callback The function called per iteration.
+	   * @returns {*} The accumulated result.
+	   */
+	  function reduce(array, callback) {
+	    var accumulator = null;
+	    each(array, function(value, index) {
+	      accumulator = callback(accumulator, value, index, array);
+	    });
+	    return accumulator;
+	  }
+	
+	  /**
+	   * Removes leading and trailing whitespace from a string.
+	   *
+	   * @private
+	   * @param {string} string The string to trim.
+	   * @returns {string} The trimmed string.
+	   */
+	  function trim(string) {
+	    return String(string).replace(/^ +| +$/g, '');
+	  }
+	
+	  /*--------------------------------------------------------------------------*/
+	
+	  /**
+	   * Creates a new platform object.
+	   *
+	   * @memberOf platform
+	   * @param {Object|string} [ua=navigator.userAgent] The user agent string or
+	   *  context object.
+	   * @returns {Object} A platform object.
+	   */
+	  function parse(ua) {
+	
+	    /** The environment context object */
+	    var context = root;
+	
+	    /** Used to flag when a custom context is provided */
+	    var isCustomContext = ua && typeof ua == 'object' && getClassOf(ua) != 'String';
+	
+	    // juggle arguments
+	    if (isCustomContext) {
+	      context = ua;
+	      ua = null;
+	    }
+	
+	    /** Browser navigator object */
+	    var nav = context.navigator || {};
+	
+	    /** Browser user agent string */
+	    var userAgent = nav.userAgent || '';
+	
+	    ua || (ua = userAgent);
+	
+	    /** Used to flag when `thisBinding` is the [ModuleScope] */
+	    var isModuleScope = isCustomContext || thisBinding == oldRoot;
+	
+	    /** Used to detect if browser is like Chrome */
+	    var likeChrome = isCustomContext
+	      ? !!nav.likeChrome
+	      : /\bChrome\b/.test(ua) && !/internal|\n/i.test(toString.toString());
+	
+	    /** Internal `[[Class]]` value shortcuts */
+	    var objectClass = 'Object',
+	        airRuntimeClass = isCustomContext ? objectClass : 'ScriptBridgingProxyObject',
+	        enviroClass = isCustomContext ? objectClass : 'Environment',
+	        javaClass = (isCustomContext && context.java) ? 'JavaPackage' : getClassOf(context.java),
+	        phantomClass = isCustomContext ? objectClass : 'RuntimeObject';
+	
+	    /** Detect Java environment */
+	    var java = /\bJava/.test(javaClass) && context.java;
+	
+	    /** Detect Rhino */
+	    var rhino = java && getClassOf(context.environment) == enviroClass;
+	
+	    /** A character to represent alpha */
+	    var alpha = java ? 'a' : '\u03b1';
+	
+	    /** A character to represent beta */
+	    var beta = java ? 'b' : '\u03b2';
+	
+	    /** Browser document object */
+	    var doc = context.document || {};
+	
+	    /**
+	     * Detect Opera browser (Presto-based)
+	     * http://www.howtocreate.co.uk/operaStuff/operaObject.html
+	     * http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/#operamini
+	     */
+	    var opera = context.operamini || context.opera;
+	
+	    /** Opera `[[Class]]` */
+	    var operaClass = reOpera.test(operaClass = (isCustomContext && opera) ? opera['[[Class]]'] : getClassOf(opera))
+	      ? operaClass
+	      : (opera = null);
+	
+	    /*------------------------------------------------------------------------*/
+	
+	    /** Temporary variable used over the script's lifetime */
+	    var data;
+	
+	    /** The CPU architecture */
+	    var arch = ua;
+	
+	    /** Platform description array */
+	    var description = [];
+	
+	    /** Platform alpha/beta indicator */
+	    var prerelease = null;
+	
+	    /** A flag to indicate that environment features should be used to resolve the platform */
+	    var useFeatures = ua == userAgent;
+	
+	    /** The browser/environment version */
+	    var version = useFeatures && opera && typeof opera.version == 'function' && opera.version();
+	
+	    /** A flag to indicate if the OS ends with "/ Version" */
+	    var isSpecialCasedOS;
+	
+	    /* Detectable layout engines (order is important) */
+	    var layout = getLayout([
+	      'Trident',
+	      { 'label': 'WebKit', 'pattern': 'AppleWebKit' },
+	      'iCab',
+	      'Presto',
+	      'NetFront',
+	      'Tasman',
+	      'KHTML',
+	      'Gecko'
+	    ]);
+	
+	    /* Detectable browser names (order is important) */
+	    var name = getName([
+	      'Adobe AIR',
+	      'Arora',
+	      'Avant Browser',
+	      'Breach',
+	      'Camino',
+	      'Epiphany',
+	      'Fennec',
+	      'Flock',
+	      'Galeon',
+	      'GreenBrowser',
+	      'iCab',
+	      'Iceweasel',
+	      { 'label': 'SRWare Iron', 'pattern': 'Iron' },
+	      'K-Meleon',
+	      'Konqueror',
+	      'Lunascape',
+	      'Maxthon',
+	      'Midori',
+	      'Nook Browser',
+	      'PhantomJS',
+	      'Raven',
+	      'Rekonq',
+	      'RockMelt',
+	      'SeaMonkey',
+	      { 'label': 'Silk', 'pattern': '(?:Cloud9|Silk-Accelerated)' },
+	      'Sleipnir',
+	      'SlimBrowser',
+	      'Sunrise',
+	      'Swiftfox',
+	      'WebPositive',
+	      'Opera Mini',
+	      { 'label': 'Opera Mini', 'pattern': 'OPiOS' },
+	      'Opera',
+	      { 'label': 'Opera', 'pattern': 'OPR' },
+	      'Chrome',
+	      { 'label': 'Chrome Mobile', 'pattern': '(?:CriOS|CrMo)' },
+	      { 'label': 'Firefox', 'pattern': '(?:Firefox|Minefield)' },
+	      { 'label': 'IE', 'pattern': 'IEMobile' },
+	      { 'label': 'IE', 'pattern': 'MSIE' },
+	      'Safari'
+	    ]);
+	
+	    /* Detectable products (order is important) */
+	    var product = getProduct([
+	      { 'label': 'BlackBerry', 'pattern': 'BB10' },
+	      'BlackBerry',
+	      { 'label': 'Galaxy S', 'pattern': 'GT-I9000' },
+	      { 'label': 'Galaxy S2', 'pattern': 'GT-I9100' },
+	      { 'label': 'Galaxy S3', 'pattern': 'GT-I9300' },
+	      { 'label': 'Galaxy S4', 'pattern': 'GT-I9500' },
+	      'Google TV',
+	      'Lumia',
+	      'iPad',
+	      'iPod',
+	      'iPhone',
+	      'Kindle',
+	      { 'label': 'Kindle Fire', 'pattern': '(?:Cloud9|Silk-Accelerated)' },
+	      'Nook',
+	      'PlayBook',
+	      'PlayStation 4',
+	      'PlayStation 3',
+	      'PlayStation Vita',
+	      'TouchPad',
+	      'Transformer',
+	      { 'label': 'Wii U', 'pattern': 'WiiU' },
+	      'Wii',
+	      'Xbox One',
+	      { 'label': 'Xbox 360', 'pattern': 'Xbox' },
+	      'Xoom'
+	    ]);
+	
+	    /* Detectable manufacturers */
+	    var manufacturer = getManufacturer({
+	      'Apple': { 'iPad': 1, 'iPhone': 1, 'iPod': 1 },
+	      'Amazon': { 'Kindle': 1, 'Kindle Fire': 1 },
+	      'Asus': { 'Transformer': 1 },
+	      'Barnes & Noble': { 'Nook': 1 },
+	      'BlackBerry': { 'PlayBook': 1 },
+	      'Google': { 'Google TV': 1 },
+	      'HP': { 'TouchPad': 1 },
+	      'HTC': {},
+	      'LG': {},
+	      'Microsoft': { 'Xbox': 1, 'Xbox One': 1 },
+	      'Motorola': { 'Xoom': 1 },
+	      'Nintendo': { 'Wii U': 1,  'Wii': 1 },
+	      'Nokia': { 'Lumia': 1 },
+	      'Samsung': { 'Galaxy S': 1, 'Galaxy S2': 1, 'Galaxy S3': 1, 'Galaxy S4': 1 },
+	      'Sony': { 'PlayStation 4': 1, 'PlayStation 3': 1, 'PlayStation Vita': 1 }
+	    });
+	
+	    /* Detectable OSes (order is important) */
+	    var os = getOS([
+	      'Windows Phone ',
+	      'Android',
+	      'CentOS',
+	      'Debian',
+	      'Fedora',
+	      'FreeBSD',
+	      'Gentoo',
+	      'Haiku',
+	      'Kubuntu',
+	      'Linux Mint',
+	      'Red Hat',
+	      'SuSE',
+	      'Ubuntu',
+	      'Xubuntu',
+	      'Cygwin',
+	      'Symbian OS',
+	      'hpwOS',
+	      'webOS ',
+	      'webOS',
+	      'Tablet OS',
+	      'Linux',
+	      'Mac OS X',
+	      'Macintosh',
+	      'Mac',
+	      'Windows 98;',
+	      'Windows '
+	    ]);
+	
+	    /*------------------------------------------------------------------------*/
+	
+	    /**
+	     * Picks the layout engine from an array of guesses.
+	     *
+	     * @private
+	     * @param {Array} guesses An array of guesses.
+	     * @returns {null|string} The detected layout engine.
+	     */
+	    function getLayout(guesses) {
+	      return reduce(guesses, function(result, guess) {
+	        return result || RegExp('\\b' + (
+	          guess.pattern || qualify(guess)
+	        ) + '\\b', 'i').exec(ua) && (guess.label || guess);
+	      });
+	    }
+	
+	    /**
+	     * Picks the manufacturer from an array of guesses.
+	     *
+	     * @private
+	     * @param {Array} guesses An object of guesses.
+	     * @returns {null|string} The detected manufacturer.
+	     */
+	    function getManufacturer(guesses) {
+	      return reduce(guesses, function(result, value, key) {
+	        // lookup the manufacturer by product or scan the UA for the manufacturer
+	        return result || (
+	          value[product] ||
+	          value[0/*Opera 9.25 fix*/, /^[a-z]+(?: +[a-z]+\b)*/i.exec(product)] ||
+	          RegExp('\\b' + qualify(key) + '(?:\\b|\\w*\\d)', 'i').exec(ua)
+	        ) && key;
+	      });
+	    }
+	
+	    /**
+	     * Picks the browser name from an array of guesses.
+	     *
+	     * @private
+	     * @param {Array} guesses An array of guesses.
+	     * @returns {null|string} The detected browser name.
+	     */
+	    function getName(guesses) {
+	      return reduce(guesses, function(result, guess) {
+	        return result || RegExp('\\b' + (
+	          guess.pattern || qualify(guess)
+	        ) + '\\b', 'i').exec(ua) && (guess.label || guess);
+	      });
+	    }
+	
+	    /**
+	     * Picks the OS name from an array of guesses.
+	     *
+	     * @private
+	     * @param {Array} guesses An array of guesses.
+	     * @returns {null|string} The detected OS name.
+	     */
+	    function getOS(guesses) {
+	      return reduce(guesses, function(result, guess) {
+	        var pattern = guess.pattern || qualify(guess);
+	        if (!result && (result =
+	              RegExp('\\b' + pattern + '(?:/[\\d.]+|[ \\w.]*)', 'i').exec(ua)
+	            )) {
+	          result = cleanupOS(result, pattern, guess.label || guess);
+	        }
+	        return result;
+	      });
+	    }
+	
+	    /**
+	     * Picks the product name from an array of guesses.
+	     *
+	     * @private
+	     * @param {Array} guesses An array of guesses.
+	     * @returns {null|string} The detected product name.
+	     */
+	    function getProduct(guesses) {
+	      return reduce(guesses, function(result, guess) {
+	        var pattern = guess.pattern || qualify(guess);
+	        if (!result && (result =
+	              RegExp('\\b' + pattern + ' *\\d+[.\\w_]*', 'i').exec(ua) ||
+	              RegExp('\\b' + pattern + '(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)', 'i').exec(ua)
+	            )) {
+	          // split by forward slash and append product version if needed
+	          if ((result = String((guess.label && !RegExp(pattern, 'i').test(guess.label)) ? guess.label : result).split('/'))[1] && !/[\d.]+/.test(result[0])) {
+	            result[0] += ' ' + result[1];
+	          }
+	          // correct character case and cleanup
+	          guess = guess.label || guess;
+	          result = format(result[0]
+	            .replace(RegExp(pattern, 'i'), guess)
+	            .replace(RegExp('; *(?:' + guess + '[_-])?', 'i'), ' ')
+	            .replace(RegExp('(' + guess + ')[-_.]?(\\w)', 'i'), '$1 $2'));
+	        }
+	        return result;
+	      });
+	    }
+	
+	    /**
+	     * Resolves the version using an array of UA patterns.
+	     *
+	     * @private
+	     * @param {Array} patterns An array of UA patterns.
+	     * @returns {null|string} The detected version.
+	     */
+	    function getVersion(patterns) {
+	      return reduce(patterns, function(result, pattern) {
+	        return result || (RegExp(pattern +
+	          '(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)', 'i').exec(ua) || 0)[1] || null;
+	      });
+	    }
+	
+	    /**
+	     * Returns `platform.description` when the platform object is coerced to a string.
+	     *
+	     * @name toString
+	     * @memberOf platform
+	     * @returns {string} Returns `platform.description` if available, else an empty string.
+	     */
+	    function toStringPlatform() {
+	      return this.description || '';
+	    }
+	
+	    /*------------------------------------------------------------------------*/
+	
+	    // convert layout to an array so we can add extra details
+	    layout && (layout = [layout]);
+	
+	    // detect product names that contain their manufacturer's name
+	    if (manufacturer && !product) {
+	      product = getProduct([manufacturer]);
+	    }
+	    // clean up Google TV
+	    if ((data = /\bGoogle TV\b/.exec(product))) {
+	      product = data[0];
+	    }
+	    // detect simulators
+	    if (/\bSimulator\b/i.test(ua)) {
+	      product = (product ? product + ' ' : '') + 'Simulator';
+	    }
+	    // detect Opera Mini 8+ running in Turbo/Uncompressed mode on iOS
+	    if (name == 'Opera Mini' && /\bOPiOS\b/.test(ua)) {
+	      description.push('running in Turbo/Uncompressed mode');
+	    }
+	    // detect iOS
+	    if (/^iP/.test(product)) {
+	      name || (name = 'Safari');
+	      os = 'iOS' + ((data = / OS ([\d_]+)/i.exec(ua))
+	        ? ' ' + data[1].replace(/_/g, '.')
+	        : '');
+	    }
+	    // detect Kubuntu
+	    else if (name == 'Konqueror' && !/buntu/i.test(os)) {
+	      os = 'Kubuntu';
+	    }
+	    // detect Android browsers
+	    else if (manufacturer && manufacturer != 'Google' &&
+	        ((/Chrome/.test(name) && !/\bMobile Safari\b/i.test(ua)) || /\bVita\b/.test(product))) {
+	      name = 'Android Browser';
+	      os = /\bAndroid\b/.test(os) ? os : 'Android';
+	    }
+	    // detect false positives for Firefox/Safari
+	    else if (!name || (data = !/\bMinefield\b|\(Android;/i.test(ua) && /\b(?:Firefox|Safari)\b/.exec(name))) {
+	      // escape the `/` for Firefox 1
+	      if (name && !product && /[\/,]|^[^(]+?\)/.test(ua.slice(ua.indexOf(data + '/') + 8))) {
+	        // clear name of false positives
+	        name = null;
+	      }
+	      // reassign a generic name
+	      if ((data = product || manufacturer || os) &&
+	          (product || manufacturer || /\b(?:Android|Symbian OS|Tablet OS|webOS)\b/.test(os))) {
+	        name = /[a-z]+(?: Hat)?/i.exec(/\bAndroid\b/.test(os) ? os : data) + ' Browser';
+	      }
+	    }
+	    // detect Firefox OS
+	    if ((data = /\((Mobile|Tablet).*?Firefox\b/i.exec(ua)) && data[1]) {
+	      os = 'Firefox OS';
+	      if (!product) {
+	        product = data[1];
+	      }
+	    }
+	    // detect non-Opera versions (order is important)
+	    if (!version) {
+	      version = getVersion([
+	        '(?:Cloud9|CriOS|CrMo|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|Silk(?!/[\\d.]+$))',
+	        'Version',
+	        qualify(name),
+	        '(?:Firefox|Minefield|NetFront)'
+	      ]);
+	    }
+	    // detect stubborn layout engines
+	    if (layout == 'iCab' && parseFloat(version) > 3) {
+	      layout = ['WebKit'];
+	    } else if (
+	        layout != 'Trident' &&
+	        (data =
+	          /\bOpera\b/.test(name) && (/\bOPR\b/.test(ua) ? 'Blink' : 'Presto') ||
+	          /\b(?:Midori|Nook|Safari)\b/i.test(ua) && 'WebKit' ||
+	          !layout && /\bMSIE\b/i.test(ua) && (os == 'Mac OS' ? 'Tasman' : 'Trident')
+	        )
+	    ) {
+	      layout = [data];
+	    }
+	    // detect NetFront on PlayStation
+	    else if (/\bPlayStation\b(?! Vita\b)/i.test(name) && layout == 'WebKit') {
+	      layout = ['NetFront'];
+	    }
+	    // detect Windows Phone 7 desktop mode
+	    if (name == 'IE' && (data = (/; *(?:XBLWP|ZuneWP)(\d+)/i.exec(ua) || 0)[1])) {
+	      name += ' Mobile';
+	      os = 'Windows Phone ' + (/\+$/.test(data) ? data : data + '.x');
+	      description.unshift('desktop mode');
+	    }
+	    // detect Windows Phone 8+ desktop mode
+	    else if (/\bWPDesktop\b/i.test(ua)) {
+	      name = 'IE Mobile';
+	      os = 'Windows Phone 8+';
+	      description.unshift('desktop mode');
+	      version || (version = (/\brv:([\d.]+)/.exec(ua) || 0)[1]);
+	    }
+	    // detect IE 11 and above
+	    else if (name != 'IE' && layout == 'Trident' && (data = /\brv:([\d.]+)/.exec(ua))) {
+	      if (!/\bWPDesktop\b/i.test(ua)) {
+	        if (name) {
+	          description.push('identifying as ' + name + (version ? ' ' + version : ''));
+	        }
+	        name = 'IE';
+	      }
+	      version = data[1];
+	    }
+	    // detect Microsoft Edge
+	    else if ((name == 'Chrome' || name != 'IE') && (data = /\bEdge\/([\d.]+)/.exec(ua))) {
+	      name = 'Microsoft Edge';
+	      version = data[1];
+	      layout = ['Trident'];
+	    }
+	    // leverage environment features
+	    if (useFeatures) {
+	      // detect server-side environments
+	      // Rhino has a global function while others have a global object
+	      if (isHostType(context, 'global')) {
+	        if (java) {
+	          data = java.lang.System;
+	          arch = data.getProperty('os.arch');
+	          os = os || data.getProperty('os.name') + ' ' + data.getProperty('os.version');
+	        }
+	        if (isModuleScope && isHostType(context, 'system') && (data = [context.system])[0]) {
+	          os || (os = data[0].os || null);
+	          try {
+	            data[1] = context.require('ringo/engine').version;
+	            version = data[1].join('.');
+	            name = 'RingoJS';
+	          } catch(e) {
+	            if (data[0].global.system == context.system) {
+	              name = 'Narwhal';
+	            }
+	          }
+	        }
+	        else if (typeof context.process == 'object' && (data = context.process)) {
+	          name = 'Node.js';
+	          arch = data.arch;
+	          os = data.platform;
+	          version = /[\d.]+/.exec(data.version)[0];
+	        }
+	        else if (rhino) {
+	          name = 'Rhino';
+	        }
+	      }
+	      // detect Adobe AIR
+	      else if (getClassOf((data = context.runtime)) == airRuntimeClass) {
+	        name = 'Adobe AIR';
+	        os = data.flash.system.Capabilities.os;
+	      }
+	      // detect PhantomJS
+	      else if (getClassOf((data = context.phantom)) == phantomClass) {
+	        name = 'PhantomJS';
+	        version = (data = data.version || null) && (data.major + '.' + data.minor + '.' + data.patch);
+	      }
+	      // detect IE compatibility modes
+	      else if (typeof doc.documentMode == 'number' && (data = /\bTrident\/(\d+)/i.exec(ua))) {
+	        // we're in compatibility mode when the Trident version + 4 doesn't
+	        // equal the document mode
+	        version = [version, doc.documentMode];
+	        if ((data = +data[1] + 4) != version[1]) {
+	          description.push('IE ' + version[1] + ' mode');
+	          layout && (layout[1] = '');
+	          version[1] = data;
+	        }
+	        version = name == 'IE' ? String(version[1].toFixed(1)) : version[0];
+	      }
+	      os = os && format(os);
+	    }
+	    // detect prerelease phases
+	    if (version && (data =
+	          /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(version) ||
+	          /(?:alpha|beta)(?: ?\d)?/i.exec(ua + ';' + (useFeatures && nav.appMinorVersion)) ||
+	          /\bMinefield\b/i.test(ua) && 'a'
+	        )) {
+	      prerelease = /b/i.test(data) ? 'beta' : 'alpha';
+	      version = version.replace(RegExp(data + '\\+?$'), '') +
+	        (prerelease == 'beta' ? beta : alpha) + (/\d+\+?/.exec(data) || '');
+	    }
+	    // detect Firefox Mobile
+	    if (name == 'Fennec' || name == 'Firefox' && /\b(?:Android|Firefox OS)\b/.test(os)) {
+	      name = 'Firefox Mobile';
+	    }
+	    // obscure Maxthon's unreliable version
+	    else if (name == 'Maxthon' && version) {
+	      version = version.replace(/\.[\d.]+/, '.x');
+	    }
+	    // detect Silk desktop/accelerated modes
+	    else if (name == 'Silk') {
+	      if (!/\bMobi/i.test(ua)) {
+	        os = 'Android';
+	        description.unshift('desktop mode');
+	      }
+	      if (/Accelerated *= *true/i.test(ua)) {
+	        description.unshift('accelerated');
+	      }
+	    }
+	    // detect Xbox 360 and Xbox One
+	    else if (/\bXbox\b/i.test(product)) {
+	      os = null;
+	      if (product == 'Xbox 360' && /\bIEMobile\b/.test(ua)) {
+	        description.unshift('mobile mode');
+	      }
+	    }
+	    // add mobile postfix
+	    else if ((/^(?:Chrome|IE|Opera)$/.test(name) || name && !product && !/Browser|Mobi/.test(name)) &&
+	        (os == 'Windows CE' || /Mobi/i.test(ua))) {
+	      name += ' Mobile';
+	    }
+	    // detect IE platform preview
+	    else if (name == 'IE' && useFeatures && context.external === null) {
+	      description.unshift('platform preview');
+	    }
+	    // detect BlackBerry OS version
+	    // http://docs.blackberry.com/en/developers/deliverables/18169/HTTP_headers_sent_by_BB_Browser_1234911_11.jsp
+	    else if ((/\bBlackBerry\b/.test(product) || /\bBB10\b/.test(ua)) && (data =
+	          (RegExp(product.replace(/ +/g, ' *') + '/([.\\d]+)', 'i').exec(ua) || 0)[1] ||
+	          version
+	        )) {
+	      data = [data, /BB10/.test(ua)];
+	      os = (data[1] ? (product = null, manufacturer = 'BlackBerry') : 'Device Software') + ' ' + data[0];
+	      version = null;
+	    }
+	    // detect Opera identifying/masking itself as another browser
+	    // http://www.opera.com/support/kb/view/843/
+	    else if (this != forOwn && (
+	          product != 'Wii' && (
+	            (useFeatures && opera) ||
+	            (/Opera/.test(name) && /\b(?:MSIE|Firefox)\b/i.test(ua)) ||
+	            (name == 'Firefox' && /\bOS X (?:\d+\.){2,}/.test(os)) ||
+	            (name == 'IE' && (
+	              (os && !/^Win/.test(os) && version > 5.5) ||
+	              /\bWindows XP\b/.test(os) && version > 8 ||
+	              version == 8 && !/\bTrident\b/.test(ua)
+	            ))
+	          )
+	        ) && !reOpera.test((data = parse.call(forOwn, ua.replace(reOpera, '') + ';'))) && data.name) {
+	
+	      // when "indentifying", the UA contains both Opera and the other browser's name
+	      data = 'ing as ' + data.name + ((data = data.version) ? ' ' + data : '');
+	      if (reOpera.test(name)) {
+	        if (/\bIE\b/.test(data) && os == 'Mac OS') {
+	          os = null;
+	        }
+	        data = 'identify' + data;
+	      }
+	      // when "masking", the UA contains only the other browser's name
+	      else {
+	        data = 'mask' + data;
+	        if (operaClass) {
+	          name = format(operaClass.replace(/([a-z])([A-Z])/g, '$1 $2'));
+	        } else {
+	          name = 'Opera';
+	        }
+	        if (/\bIE\b/.test(data)) {
+	          os = null;
+	        }
+	        if (!useFeatures) {
+	          version = null;
+	        }
+	      }
+	      layout = ['Presto'];
+	      description.push(data);
+	    }
+	    // detect WebKit Nightly and approximate Chrome/Safari versions
+	    if ((data = (/\bAppleWebKit\/([\d.]+\+?)/i.exec(ua) || 0)[1])) {
+	      // correct build for numeric comparison
+	      // (e.g. "532.5" becomes "532.05")
+	      data = [parseFloat(data.replace(/\.(\d)$/, '.0$1')), data];
+	      // nightly builds are postfixed with a `+`
+	      if (name == 'Safari' && data[1].slice(-1) == '+') {
+	        name = 'WebKit Nightly';
+	        prerelease = 'alpha';
+	        version = data[1].slice(0, -1);
+	      }
+	      // clear incorrect browser versions
+	      else if (version == data[1] ||
+	          version == (data[2] = (/\bSafari\/([\d.]+\+?)/i.exec(ua) || 0)[1])) {
+	        version = null;
+	      }
+	      // use the full Chrome version when available
+	      data[1] = (/\bChrome\/([\d.]+)/i.exec(ua) || 0)[1];
+	      // detect Blink layout engine
+	      if (data[0] == 537.36 && data[2] == 537.36 && parseFloat(data[1]) >= 28 && name != 'IE' && name != 'Microsoft Edge') {
+	        layout = ['Blink'];
+	      }
+	      // detect JavaScriptCore
+	      // http://stackoverflow.com/questions/6768474/how-can-i-detect-which-javascript-engine-v8-or-jsc-is-used-at-runtime-in-androi
+	      if (!useFeatures || (!likeChrome && !data[1])) {
+	        layout && (layout[1] = 'like Safari');
+	        data = (data = data[0], data < 400 ? 1 : data < 500 ? 2 : data < 526 ? 3 : data < 533 ? 4 : data < 534 ? '4+' : data < 535 ? 5 : data < 537 ? 6 : data < 538 ? 7 : data < 601 ? 8 : '8');
+	      } else {
+	        layout && (layout[1] = 'like Chrome');
+	        data = data[1] || (data = data[0], data < 530 ? 1 : data < 532 ? 2 : data < 532.05 ? 3 : data < 533 ? 4 : data < 534.03 ? 5 : data < 534.07 ? 6 : data < 534.10 ? 7 : data < 534.13 ? 8 : data < 534.16 ? 9 : data < 534.24 ? 10 : data < 534.30 ? 11 : data < 535.01 ? 12 : data < 535.02 ? '13+' : data < 535.07 ? 15 : data < 535.11 ? 16 : data < 535.19 ? 17 : data < 536.05 ? 18 : data < 536.10 ? 19 : data < 537.01 ? 20 : data < 537.11 ? '21+' : data < 537.13 ? 23 : data < 537.18 ? 24 : data < 537.24 ? 25 : data < 537.36 ? 26 : layout != 'Blink' ? '27' : '28');
+	      }
+	      // add the postfix of ".x" or "+" for approximate versions
+	      layout && (layout[1] += ' ' + (data += typeof data == 'number' ? '.x' : /[.+]/.test(data) ? '' : '+'));
+	      // obscure version for some Safari 1-2 releases
+	      if (name == 'Safari' && (!version || parseInt(version) > 45)) {
+	        version = data;
+	      }
+	    }
+	    // detect Opera desktop modes
+	    if (name == 'Opera' &&  (data = /\bzbov|zvav$/.exec(os))) {
+	      name += ' ';
+	      description.unshift('desktop mode');
+	      if (data == 'zvav') {
+	        name += 'Mini';
+	        version = null;
+	      } else {
+	        name += 'Mobile';
+	      }
+	      os = os.replace(RegExp(' *' + data + '$'), '');
+	    }
+	    // detect Chrome desktop mode
+	    else if (name == 'Safari' && /\bChrome\b/.exec(layout && layout[1])) {
+	      description.unshift('desktop mode');
+	      name = 'Chrome Mobile';
+	      version = null;
+	
+	      if (/\bOS X\b/.test(os)) {
+	        manufacturer = 'Apple';
+	        os = 'iOS 4.3+';
+	      } else {
+	        os = null;
+	      }
+	    }
+	    // strip incorrect OS versions
+	    if (version && version.indexOf((data = /[\d.]+$/.exec(os))) == 0 &&
+	        ua.indexOf('/' + data + '-') > -1) {
+	      os = trim(os.replace(data, ''));
+	    }
+	    // add layout engine
+	    if (layout && !/\b(?:Avant|Nook)\b/.test(name) && (
+	        /Browser|Lunascape|Maxthon/.test(name) ||
+	        /^(?:Adobe|Arora|Breach|Midori|Opera|Phantom|Rekonq|Rock|Sleipnir|Web)/.test(name) && layout[1])) {
+	      // don't add layout details to description if they are falsey
+	      (data = layout[layout.length - 1]) && description.push(data);
+	    }
+	    // combine contextual information
+	    if (description.length) {
+	      description = ['(' + description.join('; ') + ')'];
+	    }
+	    // append manufacturer
+	    if (manufacturer && product && product.indexOf(manufacturer) < 0) {
+	      description.push('on ' + manufacturer);
+	    }
+	    // append product
+	    if (product) {
+	      description.push((/^on /.test(description[description.length -1]) ? '' : 'on ') + product);
+	    }
+	    // parse OS into an object
+	    if (os) {
+	      data = / ([\d.+]+)$/.exec(os);
+	      isSpecialCasedOS = data && os.charAt(os.length - data[0].length - 1) == '/';
+	      os = {
+	        'architecture': 32,
+	        'family': (data && !isSpecialCasedOS) ? os.replace(data[0], '') : os,
+	        'version': data ? data[1] : null,
+	        'toString': function() {
+	          var version = this.version;
+	          return this.family + ((version && !isSpecialCasedOS) ? ' ' + version : '') + (this.architecture == 64 ? ' 64-bit' : '');
+	        }
+	      };
+	    }
+	    // add browser/OS architecture
+	    if ((data = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(arch)) && !/\bi686\b/i.test(arch)) {
+	      if (os) {
+	        os.architecture = 64;
+	        os.family = os.family.replace(RegExp(' *' + data), '');
+	      }
+	      if (
+	          name && (/\bWOW64\b/i.test(ua) ||
+	          (useFeatures && /\w(?:86|32)$/.test(nav.cpuClass || nav.platform) && !/\bWin64; x64\b/i.test(ua)))
+	      ) {
+	        description.unshift('32-bit');
+	      }
+	    }
+	
+	    ua || (ua = null);
+	
+	    /*------------------------------------------------------------------------*/
+	
+	    /**
+	     * The platform object.
+	     *
+	     * @name platform
+	     * @type Object
+	     */
+	    var platform = {};
+	
+	    /**
+	     * The platform description.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.description = ua;
+	
+	    /**
+	     * The name of the browser's layout engine.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.layout = layout && layout[0];
+	
+	    /**
+	     * The name of the product's manufacturer.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.manufacturer = manufacturer;
+	
+	    /**
+	     * The name of the browser/environment.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.name = name;
+	
+	    /**
+	     * The alpha/beta release indicator.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.prerelease = prerelease;
+	
+	    /**
+	     * The name of the product hosting the browser.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.product = product;
+	
+	    /**
+	     * The browser's user agent string.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.ua = ua;
+	
+	    /**
+	     * The browser/environment version.
+	     *
+	     * @memberOf platform
+	     * @type string|null
+	     */
+	    platform.version = name && version;
+	
+	    /**
+	     * The name of the operating system.
+	     *
+	     * @memberOf platform
+	     * @type Object
+	     */
+	    platform.os = os || {
+	
+	      /**
+	       * The CPU architecture the OS is built for.
+	       *
+	       * @memberOf platform.os
+	       * @type number|null
+	       */
+	      'architecture': null,
+	
+	      /**
+	       * The family of the OS.
+	       *
+	       * Common values include:
+	       * "Windows", "Windows Server 2008 R2 / 7", "Windows Server 2008 / Vista",
+	       * "Windows XP", "OS X", "Ubuntu", "Debian", "Fedora", "Red Hat", "SuSE",
+	       * "Android", "iOS" and "Windows Phone"
+	       *
+	       * @memberOf platform.os
+	       * @type string|null
+	       */
+	      'family': null,
+	
+	      /**
+	       * The version of the OS.
+	       *
+	       * @memberOf platform.os
+	       * @type string|null
+	       */
+	      'version': null,
+	
+	      /**
+	       * Returns the OS string.
+	       *
+	       * @memberOf platform.os
+	       * @returns {string} The OS string.
+	       */
+	      'toString': function() { return 'null'; }
+	    };
+	
+	    platform.parse = parse;
+	    platform.toString = toStringPlatform;
+	
+	    if (platform.version) {
+	      description.unshift(version);
+	    }
+	    if (platform.name) {
+	      description.unshift(name);
+	    }
+	    if (os && name && !(os == String(os).split(' ')[0] && (os == name.split(' ')[0] || product))) {
+	      description.push(product ? '(' + os + ')' : 'on ' + os);
+	    }
+	    if (description.length) {
+	      platform.description = description.join(' ');
+	    }
+	    return platform;
+	  }
+	
+	  /*--------------------------------------------------------------------------*/
+	
+	  // export platform
+	  // some AMD build optimizers, like r.js, check for condition patterns like the following:
+	  if (true) {
+	    // define as an anonymous module so, through path mapping, it can be aliased
+	    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	      return parse();
+	    }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  }
+	  // check for `exports` after `define` in case a build optimizer adds an `exports` object
+	  else if (freeExports && freeModule) {
+	    // in Narwhal, Node.js, Rhino -require, or RingoJS
+	    forOwn(parse(), function(value, key) {
+	      freeExports[key] = value;
+	    });
+	  }
+	  // in a browser or Rhino
+	  else {
+	    root.platform = parse();
+	  }
+	}.call(this));
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(331)(module), (function() { return this; }())))
+
+/***/ },
+/* 1122 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -97098,7 +98280,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(1122);
+	var _index = __webpack_require__(1123);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -97110,14 +98292,14 @@
 	const ButtonLink = ({ children, disabled, onClick, theme, to }) => {
 	  const classes = [_index2.default.buttonLink, _index2.default[theme]];
 	
-	  if (disabled) classes.push(_index2.default.disabled);
+	  if (disabled) classes.push(_index2.default.disabled);else classes.push(_index2.default.enabled);
 	
 	  return _react2.default.createElement(
 	    'a',
 	    {
 	      className: (0, _classnames2.default)(...classes),
 	      href: to,
-	      onClick: !disabled ? onClick : null
+	      onClick: onClick
 	    },
 	    children
 	  );
@@ -97140,15 +98322,15 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1122 */
+/* 1123 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"_disabled":"index__disabled_2PD","primary":"index_primary_2a2 tachyons_bn_3W7 tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_ph4_-u9 tachyons_pv3_1Zi tachyons_white_3f5 theme_bg-color-blue_6KT","buttonLink":"index_buttonLink_EwJ tachyons_br2_rOa tachyons_dib_1gH tachyons_dim_1n1 tachyons_flex-auto_1Fv tachyons_link_2zV tachyons_ma0_2xh tachyons_pointer_25K index__disabled_2PD"};
+	module.exports = {"enabled":"index_enabled_1eN theme_bg-color-blue_6KT","disabled":"index_disabled_1Xv tachyons_bg-silver_16i","primary":"index_primary_2a2 tachyons_bn_3W7 tachyons_f4_1Zt tachyons_f5-ns_QvA tachyons_ph4_-u9 tachyons_pv3_1Zi tachyons_white_3f5","buttonLink":"index_buttonLink_EwJ tachyons_br2_rOa tachyons_dib_1gH tachyons_dim_1n1 tachyons_flex-auto_1Fv tachyons_link_2zV tachyons_ma0_2xh tachyons_pointer_25K"};
 
 /***/ },
-/* 1123 */,
-/* 1124 */
+/* 1124 */,
+/* 1125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97161,7 +98343,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(1125);
+	var _index = __webpack_require__(1126);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -97187,35 +98369,61 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1125 */
+/* 1126 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"checkbox":"index_checkbox_3Ka tachyons_mr1_28B tachyons_relative_1fO"};
 
 /***/ },
-/* 1126 */,
-/* 1127 */
+/* 1127 */,
+/* 1128 */
 /***/ function(module, exports) {
 
 	module.exports = {"title":"HTM Studio Terms and Conditions","body":"<p><strong>Numenta is happy to license HTM Studio to you if you accept all of the terms\nand conditions contained in this Agreement.</strong> By accepting this agreement and\ndownloading HTM Studio, you indicate that you have read and understand this\nAgreement and accept all of its terms and conditions. If you agree to these\nterms and conditions on behalf of a business, government agency, or other\nentity, you warrant that you have authority to bind that business, agency, or\nother entity to this Agreement, and your agreement to these terms and conditions\nwill be treated as the agreement of that business, agency, or other entity. In\nthat event, “you” and “your” refer herein to that business, agency, or other\nentity.</p>\n<h3>PREAMBLE</h3>\n<p>The purpose of this Preamble is to give a plain English description of this\nAgreement. Please read the rest of the Agreement carefully for detailed terms\nand conditions.</p>\n<p>Numenta welcomes individuals, businesses, and other entities to explore and\nadvance HTM technology. This license allows you to explore HTM ideas using HTM\nStudio in whole or in part, at no charge, as long as your work is for research\nand experimentation purposes only. You may not sell or distribute any portion of\nHTM Studio or your work product for commercial or production use unless you take\nan appropriate commercial license from us.</p>\n<p>HTM Studio collects anonymized application activity statistics (clicks, menus\nopened, etc.) and reports them to Numenta so we can learn about the use of HTM\nStudio and continue to improve it. <strong>HTM Studio will never collect or report\ninformation about HTM Studio users (names, IP addresses, etc.) or users’ data\n(file names, data points, results, etc.).</strong></p>\n<ol>\n<li><strong>Definitions</strong>.</li>\n</ol>\n<p><strong>“HTM”</strong> means the Hierarchical Temporal Memory theory.</p>\n<p><strong>“NuPIC”</strong> means the Numenta Platform for Intelligent Computing. All NuPIC\ncode is made available through the “numenta” GitHub organization at\n<a href=\"http://github.com/numenta\">http://github.com/numenta</a>, under an AGPLv3 license.</p>\n<p><strong>“HTM Studio”</strong> refers to the application that can be used to find anomalies\nin streaming data. All HTM Studio code is made available through the &quot;numenta&quot;\nGitHub organization at <a href=\"http://github.com/numenta\">http://github.com/numenta</a>, under an AGPLv3 license.</p>\n<ol start=\"2\">\n<li><strong>License, Permitted Uses, Restrictions, and Ownership.</strong></li>\n</ol>\n<ul>\n<li>\n<p>(a) <strong>License</strong>. Numenta hereby grants you a non-exclusive,\nnon-transferable, royalty-free license during the term of this Agreement to\ninstall and use HTM Studio for the permitted uses detailed in section 2(b)\nsubject to the restrictions detailed in section 2©.  Any technology that\ndoes not exist at <a href=\"http://github.com/numenta\">http://github.com/numenta</a> with an AGPL license is not\nincluded in this License.</p>\n</li>\n<li>\n<p>(b) <strong>Permitted Uses</strong>. You may use HTM Studio to conduct research and\nanalysis. You may use HTM Studio for evaluation of HTM and for validation of\nits applicability to specific problems. You may use HTM Studio for\ninstruction and training. You may publish information regarding the results\nof your research as long as you include an appropriate citation. You may\nmodify and create derivative works of HTM Studio.</p>\n</li>\n<li>\n<p>© <strong>Restrictions</strong>. You may not offer for sale, distribute, or permit\nothers to use any technology that includes the HTM Studio or NuPIC software\nor intellectual property, either free or for a fee, unless you have entered\ninto an appropriate Numenta commercial license agreement.</p>\n</li>\n<li>\n<p>(d) <strong>Ownership of Intellectual Property</strong>. You agree that Numenta owns all\nright, title and interest, including but not limited to copyright, patent,\ntrade secret and all other intellectual property rights, in and to HTM\nStudio and NuPIC, and any changes, modifications, or corrections thereto\nthat are made by or for Numenta. You hereby grant to Numenta a perpetual,\nirrevocable, world-wide, royalty-free, non-exclusive, license to use any\nfeedback, suggestions, or ideas that you provide directly to Numenta\nregarding HTM Studio or NuPIC.</p>\n</li>\n</ul>\n<ol start=\"3\">\n<li>\n<p><strong>Application Analytics.</strong> HTM Studio collects anonymized application\nactivity statistics, including but not limited to user clicks and frequency\nand order of menus opened in the application. These statistics are reported to\nNumenta. By accepting this agreement and downloading HTM Studio, you give your\npermission for Numenta to collect and use these statistics. HTM Studio will\nnever collect or report information about HTM Studio users (names, IP\naddresses, etc.) or users’ data (file names, data points, results, etc.).</p>\n</li>\n<li>\n<p><strong>Software Updates.</strong> HTM Studio may automatically download and install\nupdates from time to time from Numenta. These updates are designed to improve,\nenhance and further develop HTM Studio and may take the form of bug fixes,\nenhanced functions, new software modules and completely new versions. You\nagree to receive such updates (and permit Numenta to deliver these to you) as\npart of your use of HTM Studio.</p>\n</li>\n<li>\n<p><strong>No Support.</strong> You acknowledge and agree that Numenta undertakes no\nobligation to provide any support, error corrections, or upgrades for HTM\nStudio, and that you assume all risk arising from your use of HTM Studio.</p>\n</li>\n<li>\n<p><strong>Termination.</strong> You may terminate this Agreement at any time upon written\nnotice to Numenta. Either party may terminate this Agreement immediately upon\nwritten notice to the other party: (i) in the event of the insolvency,\nbankruptcy or voluntary dissolution of the other party; or (ii) if the other\nparty defaults in the performance of any provision hereunder, and if such\ndefault continues and is not cured within thirty (30) days after written\nnotice thereof to the defaulting party. Upon any termination of this\nAgreement, you agree to immediately cease using HTM Studio.</p>\n</li>\n<li>\n<p><strong>No Warranties; Limitation of Liability.</strong></p>\n</li>\n</ol>\n<ul>\n<li>\n<p>(a) <strong>No Warranty. HTM Studio is provided “as is” without warranty of any\nkind including without limitation, any warranty of merchantability, fitness\nfor a particular purpose, or non-infringement. Further, Numenta does not\nwarrant results of use or that HTM Studio is bug free or that its use will\nbe uninterrupted. The parties agree and acknowledge that NuPIC is an\nearly-stage technology and there can be no assurance that either HTM Studio\nor NuPIC will be further developed or improved by Numenta into a\ncommercially viable product. No advice or information, whether oral or\nwritten, obtained from Numenta or elsewhere will create any warranty not\nexpressly stated in this Agreement.</strong></p>\n</li>\n<li>\n<p>(b) <strong>Limitation of Liability. Numenta will have no liability to you under\nthis Agreement. In no event will either party be liable for costs of\nprocurement of substitute goods, loss of profits, or for any special,\nindirect, consequential or incidental damages, however caused, whether for\nbreach of warranty, breach of contract, repudiation of contract, negligence\nor otherwise.</strong></p>\n</li>\n</ul>\n<ol start=\"8\">\n<li><strong>General.</strong> Once executed, this Agreement takes precedence over the standard\nopen source licenses provided at <a href=\"http://numenta.org\">http://numenta.org</a>, <a href=\"http://github.com/numenta\">http://github.com/numenta</a>\nand <a href=\"https://github.com/numenta/numenta-apps\">https://github.com/numenta/numenta-apps</a>. The terms of this Agreement may\nonly be modified by a written agreement signed by both parties. You may not\nassign this Agreement without the prior written consent of Numenta. This\nAgreement will be governed by the laws of the state of California and the\nUnited States of America. No failure of either party to enforce any of its\nrights under this Agreement will act as a waiver of such rights or of any\nother rights hereunder.</li>\n</ol>\n"}
 
 /***/ },
-/* 1128 */
+/* 1129 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"_icon":"index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","iconSmall":"index_iconSmall_1lp index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","iconLarge":"index_iconLarge_2-3 index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","columns":"index_columns_2eq theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_fPH theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_iOw tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","asideLeft":"index_asideLeft_TZJ tachyons_pl4-ns_2au theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","tagline":"index_tagline_7kp tachyons_mb2_1U4","row":"index_row_2ko tachyons_mv3_SSC","download":"index_download_3xs tachyons_mv3_SSC tachyons_tc_3ab","agree":"index_agree_2_O tachyons_ml2_2p0","error":"index_error_2_o theme_color-danger_1Mm","hide":"index_hide_1q_ tachyons_dn_1fa","notes":"index_notes_pkK tachyons_center_iwf tachyons_f6_14U tachyons_mb3_1mV tachyons_silver_3lN tachyons_w-80_2JI","pad":"index_pad_2xd tachyons_mt4_3dV","column":"index_column_2UW tachyons_fl_wJK tachyons_pb2_13e tachyons_ph4_-u9 tachyons_tc_3ab tachyons_w-100_1xC tachyons_w-50-ns_5NX","faq":"index_faq_1P2"};
+	module.exports = {"_icon":"index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","iconSmall":"index_iconSmall_1lp index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","iconLarge":"index_iconLarge_2-3 index__icon_34c tachyons_relative_1fO tachyons_top--1_24- theme_color-blue-mute_20f","columns":"index_columns_2eq theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_fPH theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_iOw tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","asideLeft":"index_asideLeft_TZJ tachyons_pl4-ns_2au theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN","tagline":"index_tagline_7kp tachyons_mb2_1U4","row":"index_row_2ko tachyons_mv3_SSC","download":"index_download_3xs tachyons_mv3_SSC tachyons_tc_3ab","close":"index_close_1nO tachyons_fr_2Nn","agree":"index_agree_2_O tachyons_ml2_2p0","error":"index_error_2_o theme_color-danger_1Mm","hide":"index_hide_1q_ tachyons_dn_1fa","notes":"index_notes_pkK tachyons_center_iwf tachyons_f6_14U tachyons_mb3_1mV tachyons_silver_3lN tachyons_w-80_2JI","pad":"index_pad_2xd tachyons_mt4_3dV","column":"index_column_2UW tachyons_fl_wJK tachyons_pb2_13e tachyons_ph4_-u9 tachyons_tc_3ab tachyons_w-100_1xC tachyons_w-50-ns_5NX","faq":"index_faq_1P2"};
 
 /***/ },
-/* 1129 */,
-/* 1130 */
+/* 1130 */,
+/* 1131 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  overlay: {
+	    zIndex: 900
+	  },
+	  content: {
+	    bottom: 'inherit',
+	    boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 0.2)',
+	    left: 'inherit',
+	    margin: '3rem auto',
+	    padding: '2rem',
+	    right: 'inherit',
+	    top: 'inherit',
+	    zIndex: 901
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 1132 */
 /***/ function(module, exports) {
 
 	module.exports = {"title":"HTM Studio - Windows 10","body":"<p>If you are using Windows 10\n“<a href=\"http://windows.microsoft.com/en-us/windows/defender-realtime-protection-on-off#1TC=windows-7\">Windows Defender</a>”,\nyou may see the following error screen. Click <strong>More info</strong>.</p>\n<p><img src=\"../images/windows1.png\" alt=\"Windows Screenshot 1\"></p>\n<p>After clicking <strong>More info</strong>, click <strong>Run anyway</strong> to continue downloading the\napplication.</p>\n<p><img src=\"../images/windows2.png\" alt=\"Windows Screenshot 2\"></p>\n<p>◄ <a href=\"/htm-studio/\">Back to HTM Studio</a></p>\n"}
 
 /***/ },
-/* 1131 */
+/* 1133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97232,7 +98440,7 @@
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(700);
+	var _Section = __webpack_require__(701);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -97240,7 +98448,7 @@
 	
 	var _Section4 = _interopRequireDefault(_Section3);
 	
-	var _index = __webpack_require__(707);
+	var _index = __webpack_require__(708);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -97293,31 +98501,31 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1132 */
+/* 1134 */
 /***/ function(module, exports) {
 
 	module.exports = {"date":"2016/07/22","title":"Privacy Policy","body":"<p>These terms of service apply to the use of Numenta’s streaming analytics product\nas distributed through cloud service providers (the Grok Product) and for the\nuse of Numenta’s web site. Together, the Grok Product and the Numenta web site\nare called the Numenta Offering.</p>\n<h3>1. ACCEPTANCE OF TERMS</h3>\n<p>If you do not agree to these Terms, you should not use the Numenta Offering. We\nreserve the right to change, modify, add or remove portions of these Terms\nperiodically. Such modifications shall be effective immediately upon posting of\nthe modified Terms to the Numenta website. Your continued use of the Numenta\nOffering will mean that you accept these terms.</p>\n<h3>2. NO UNLAWFUL OR PROHIBITED USE</h3>\n<p>You warrant to Numenta that you will not use the Numenta Offering, or any of the\ncontent therein, for any purpose that is unlawful or that is prohibited by these\nTerms.</p>\n<h3>3. LICENSE GRANT</h3>\n<p>Your rights to access, download, and use the Grok Product will be subject to the\nterms and conditions of the software license agreement provided on the cloud\nservice provider’s site through which it is distributed.</p>\n<h3>4. YOUR CONTENT</h3>\n<p>Numenta will not pre-screen or review your content, but Numenta shall have the\nright (but not the obligation) in its sole discretion to refuse or delete any\ncontent that it reasonably considers to violate the Terms or to be otherwise\nillegal.</p>\n<p>You grant Numenta the right to review your content for the purposes of debugging\nthe Numenta Offering and for providing you with technical support. Numenta will\nnot share your content with others without your explicit, written permission,\nexcept in the case where being required to do so by the appropriate court or\ngovernment agency.</p>\n<h3>5. TERMINATION</h3>\n<p>We may terminate your use of the Numenta Offering if we have reasonable belief\nthat your use: 1) violates these Terms; or 2) abuses site resources or attempts\nto gain unauthorized entry to the site or site resources; or 3) we are required\nto do so by law, regulation, court or governing agency order.</p>\n<p>Our termination of any user’s access to the Numenta Offering may be effected\nwithout notice and, on such termination, we may immediately deactivate or delete\nuser’s account and/or bar any further access to such files. Numenta shall not be\nliable to any Numenta user or other third party for any such termination.</p>\n<p>You may terminate your use of the Numenta Offering by stopping its use without\nnotice to us.</p>\n<h3>6. PAYMENT</h3>\n<p>The Numenta Product is delivered through a cloud service provider’s marketplace.\nYou will abide by the payment terms as detailed in that marketplace. If you do\nnot wish to continue using and paying for the Numenta Product, you may stop\nusing it at any time, and further charges will not accrue. We do not offer\nrefunds for any amounts paid.</p>\n<h3>7. LINKS</h3>\n<p>To the extent the Numenta website includes links to third parties, Numenta is\nnot responsible or liable for the content of such sites. The Numenta website\nprivacy statement is applicable only when you are on the Numenta websites.</p>\n<h3>8. SUPPORT</h3>\n<p>Technical support for the Grok Product is provided by email. We will make a\nreasonable effort to respond to your email within 48 hours. Support inquiries\nare to be sent to <a href=\"mailto:support@numenta.com\">support@numenta.com</a>.</p>\n<h3>9. TRADEMARK INFORMATION</h3>\n<p>Numenta, Grok, NuPIC, and the Numenta, Grok and NuPIC trademarks, logos and\nservice marks are the intellectual property of Numenta, Inc.</p>\n<p>All trademarks, trade names, service marks and logos referenced herein are the\nproperty of their respective owners.</p>\n<h3>10. COPYRIGHTS</h3>\n<p>If you believe that your work has been copied and is accessible in the Numenta\nOffering in a way that constitutes copyright infringement, you may notify us by\nproviding our copyright agent with the following information in writing:</p>\n<ul>\n<li>\n<p>the electronic or physical signature of the owner of the copyright or the\nperson authorized to act on the owner’s behalf;</p>\n</li>\n<li>\n<p>identification of the copyrighted work that you claim has been infringed;</p>\n</li>\n<li>\n<p>identification of the material that is claimed to be infringing and\ninformation reasonably sufficient to permit Grok to locate the material;</p>\n</li>\n<li>\n<p>your name, address, telephone number, and email address;</p>\n</li>\n<li>\n<p>a statement by you that you have a good faith belief that the disputed use is\nnot authorized by the copyright owner, its agent, or the law;</p>\n</li>\n<li>\n<p>a statement, made under penalty of perjury, that the above information in\nyour Notice is accurate and that you are the copyright owner or are authorized\nto act on the copyright owner’s behalf.</p>\n</li>\n</ul>\n<p>If Numenta receives such a claim, Numenta will investigate and report back to\nthe complainant. Numenta reserves the right to delete such reported content or\nto terminate a user’s account.</p>\n<p>Our designated agent to receive notification of claimed infringement under the\nDigital Millennium Copyright Act OF 1998 (“DMCA”) is:\n<a href=\"mailto:dmca@numenta.com\">dmca@numenta.com</a></p>\n<h3>11. VIOLATIONS OF TERMS</h3>\n<p>Please report any violations of the Terms to\n<a href=\"mailto:info@numenta.com\">info@numenta.com</a>.</p>\n<h3>12. PRIVACY</h3>\n<p>Our Privacy Policy is located at <a href=\"http://numenta.com/legal/privacy/\">http://numenta.com/legal/privacy/</a>.</p>\n"}
 
 /***/ },
-/* 1133 */
+/* 1135 */
 /***/ function(module, exports) {
 
 	module.exports = {"date":"2016/07/22","title":"Terms of Service","body":"<p>These terms of service apply to the use of Numenta’s streaming analytics product\nas distributed through cloud service providers (the Grok Product) and for the\nuse of Numenta’s web site. Together, the Grok Product and the Numenta web site\nare called the Numenta Offering.</p>\n<h3>1. ACCEPTANCE OF TERMS</h3>\n<p>If you do not agree to these Terms, you should not use the Numenta Offering. We\nreserve the right to change, modify, add or remove portions of these Terms\nperiodically. Such modifications shall be effective immediately upon posting of\nthe modified Terms to the Numenta website. Your continued use of the Numenta\nOffering will mean that you accept these terms.</p>\n<h3>2. NO UNLAWFUL OR PROHIBITED USE</h3>\n<p>You warrant to Numenta that you will not use the Numenta Offering, or any of the\ncontent therein, for any purpose that is unlawful or that is prohibited by these\nTerms.</p>\n<h3>3. LICENSE GRANT</h3>\n<p>Your rights to access, download, and use the Grok Product will be subject to the\nterms and conditions of the software license agreement provided on the cloud\nservice provider’s site through which it is distributed.</p>\n<h3>4. YOUR CONTENT</h3>\n<p>Numenta will not pre-screen or review your content, but Numenta shall have the\nright (but not the obligation) in its sole discretion to refuse or delete any\ncontent that it reasonably considers to violate the Terms or to be otherwise\nillegal.</p>\n<p>You grant Numenta the right to review your content for the purposes of debugging\nthe Numenta Offering and for providing you with technical support. Numenta will\nnot share your content with others without your explicit, written permission,\nexcept in the case where being required to do so by the appropriate court or\ngovernment agency.</p>\n<h3>5. TERMINATION</h3>\n<p>We may terminate your use of the Numenta Offering if we have reasonable belief\nthat your use: 1) violates these Terms; or 2) abuses site resources or attempts\nto gain unauthorized entry to the site or site resources; or 3) we are required\nto do so by law, regulation, court or governing agency order.</p>\n<p>Our termination of any user’s access to the Numenta Offering may be effected\nwithout notice and, on such termination, we may immediately deactivate or delete\nuser’s account and/or bar any further access to such files. Numenta shall not be\nliable to any Numenta user or other third party for any such termination.</p>\n<p>You may terminate your use of the Numenta Offering by stopping its use without\nnotice to us.</p>\n<h3>6. PAYMENT</h3>\n<p>The Numenta Product is delivered through a cloud service provider’s marketplace.\nYou will abide by the payment terms as detailed in that marketplace. If you do\nnot wish to continue using and paying for the Numenta Product, you may stop\nusing it at any time, and further charges will not accrue. We do not offer\nrefunds for any amounts paid.</p>\n<h3>7. LINKS</h3>\n<p>To the extent the Numenta website includes links to third parties, Numenta is\nnot responsible or liable for the content of such sites. The Numenta website\nprivacy statement is applicable only when you are on the Numenta websites.</p>\n<h3>8. SUPPORT</h3>\n<p>Technical support for the Grok Product is provided by email. We will make a\nreasonable effort to respond to your email within 48 hours. Support inquiries\nare to be sent to <a href=\"mailto:support@numenta.com\">support@numenta.com</a>.</p>\n<h3>9. TRADEMARK INFORMATION</h3>\n<p>Numenta, Grok, NuPIC, and the Numenta, Grok and NuPIC trademarks, logos and\nservice marks are the intellectual property of Numenta, Inc.</p>\n<p>All trademarks, trade names, service marks and logos referenced herein are the\nproperty of their respective owners.</p>\n<h3>10. COPYRIGHTS</h3>\n<p>If you believe that your work has been copied and is accessible in the Numenta\nOffering in a way that constitutes copyright infringement, you may notify us by\nproviding our copyright agent with the following information in writing:</p>\n<ul>\n<li>\n<p>the electronic or physical signature of the owner of the copyright or the\nperson authorized to act on the owner’s behalf;</p>\n</li>\n<li>\n<p>identification of the copyrighted work that you claim has been infringed;</p>\n</li>\n<li>\n<p>identification of the material that is claimed to be infringing and\ninformation reasonably sufficient to permit Grok to locate the material;</p>\n</li>\n<li>\n<p>your name, address, telephone number, and email address;</p>\n</li>\n<li>\n<p>a statement by you that you have a good faith belief that the disputed use is\nnot authorized by the copyright owner, its agent, or the law;</p>\n</li>\n<li>\n<p>a statement, made under penalty of perjury, that the above information in\nyour Notice is accurate and that you are the copyright owner or are authorized\nto act on the copyright owner’s behalf.</p>\n</li>\n</ul>\n<p>If Numenta receives such a claim, Numenta will investigate and report back to\nthe complainant. Numenta reserves the right to delete such reported content or\nto terminate a user’s account.</p>\n<p>Our designated agent to receive notification of claimed infringement under the\nDigital Millennium Copyright Act OF 1998 (“DMCA”) is:\n<a href=\"mailto:dmca@numenta.com\">dmca@numenta.com</a></p>\n<h3>11. VIOLATIONS OF TERMS</h3>\n<p>Please report any violations of the Terms to\n<a href=\"mailto:info@numenta.com\">info@numenta.com</a>.</p>\n<h3>12. PRIVACY</h3>\n<p>Our Privacy Policy is located at <a href=\"http://numenta.com/legal/privacy/\">http://numenta.com/legal/privacy/</a>.</p>\n"}
 
 /***/ },
-/* 1134 */
+/* 1136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "02c4277e82fcaf64077f6a989fea0e9b.png";
 
 /***/ },
-/* 1135 */
+/* 1137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8d8c0af1e10dd8f622f2f776c965d2cb.png";
 
 /***/ },
-/* 1136 */
+/* 1138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97330,13 +98538,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(709);
+	var _Section = __webpack_require__(710);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -97371,7 +98579,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -97389,219 +98597,219 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1137 */
+/* 1139 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"Over the past year, we have tested our Grok technology on a variety of enterprise applications. Customers show substantial interest in our technology, with proposed","date":"2013/10/11","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"grok it","title":"Announcing Grok for IT","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Over the past year, we have tested our Grok technology on a variety of\nenterprise applications. Customers show substantial interest in our\ntechnology, with proposed applications ranging from remote equipment maintenance\nto power management to web advertising optimization, and many more.</p>\n<p>Although the interest level is strong, and we conducted many tests to prove the\nvalidity of the cortical learning algorithms, we found that it was difficult for\ncustomers to deploy Grok. The barriers to deployment included having clean\naccess to data streams as well as integrating the results into existing business\nprocesses.</p>\n<p>Because of this experience, we decided to create a more targeted solution that\nmakes it far easier for customers to deploy Grok.</p>\n<p>This product, currently under development, will monitor IT systems,\nautomatically figuring out whether the network is healthy or is in an anomalous\nstate. In essence, we are bringing deep science to the problem of\ndetecting anomalies in servers and server based applications. The first\nversion of the product is a simple-to-deploy tool focused on customers using\nAmazon Web Services (AWS).</p>\n<p>We have a few openings left for our private beta program, which will start\nshortly. If you have a current AWS environment (small or large) and would\nlike to participate in the private beta, please send an email to\n<a href=\"mailto:grokbeta@numenta.com\">grokbeta@numenta.com</a>. We welcome\nyour input and your help in finalizing this exciting new product.</p>\n<p>In other news, the NuPIC open source project we created in June is off to a\ngreat start. NuPIC contains the source code to our cortical learning\nalgorithms, the same code used in our product Grok. We are pleased with\nthe number of contributors, the email discussions, and overall\ninterest. We are holding our second NuPIC Hackathon in San Francisco\non November 2 – 3. To sign up for the Hackathon, go to\n<a href=\"http://www.numenta.org/events.html\">www.numenta.org/events.html</a>.\nTo learn more about the open source project, visit\n<a href=\"http://www.numenta.org\">www.numenta.org</a>.</p>\n<p>Thank you for your interest in Grok and in <a href=\"http://Numenta.org\">Numenta.org</a>. We look forward to\nmeeting some of you in our beta program or at the NuPIC Hackathon.</p>\n"}
 
 /***/ },
-/* 1138 */
+/* 1140 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"Grok is targeted towards Amazon Web Services (AWS) customers. We will be showing it publicly for the first time at the Amazon re:Invent conference next week in Las Vegas.","date":"2013/11/08","featured":false,"image":"../../../../images/numenta.png","org":"Founder","tags":"grok at aws reinvent 2013","title":"Grok at AWS re:Invent","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>As we wrote to you in October, we have developed an exciting product based on\nour Cortical Learning Algorithms (CLA). The product, called Grok, is targeted\ntowards Amazon Web Services (AWS) customers. We will be showing it publicly for\nthe first time at the\n<a href=\"http://reinvent.awsevents.com/\">Amazon re:Invent Conference</a>\nnext week in Las Vegas.</p>\n<p>This may be of interest to you for two reasons.</p>\n<ul>\n<li>\n<p>This is the first commercial application of the cortical learning models we\nhave developed over the past few years. It is a landmark event for us and\na step on the path towards machine intelligence.</p>\n</li>\n<li>\n<p>Some of you have expressed interest in using Grok. If you are attending\nre:Invent, we hope you will come by booth #1200, say hello, and see how we\napplied advanced cortical modeling to transform anomaly detection in computer\nservers.</p>\n</li>\n</ul>\n<p>Because of the capabilities of the CLA, Grok automates the process of\nmodeling normal behavior and identifying unusual behavior in Amazon\ninstances. The patterns found by Grok go well beyond those found by static\nor dynamic thresholds. In addition, Grok provides a mobile client that\nenables a unique ability to monitor the health of your network anytime,\nanywhere. It is a remarkable product and the first showcase for the CLA.</p>\n<p>We continue to recruit participants in our private beta program as well, so let\nus know at <a href=\"mailto:grokbeta@numenta.com\">grokbeta@numenta.com</a> if you\nare interested in using Grok.</p>\n<p>Finally, last weekend in San Francisco we held our second NuPIC Hackathon for\nthe open source community built around the CLA. It was a great\nsuccess. Two big themes at this event were to apply the CLA to robotics\nand natural language processing. Matt Taylor, the NuPIC community\nflag-bearer, put together this\n<a href=\"http://numenta.org/blog/2013/11/06/2013-fall-hackathon-outcome.html\">summary</a>.</p>\n<p>We hope to see some of you at re:Invent, and look forward to getting your\nfeedback on Grok. We are excited about approaching the first commercial\nrelease of a product that is based on the CLA.</p>\n"}
 
 /***/ },
-/* 1139 */
+/* 1141 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I am pleased to share with our newsletter subscribers the availability of Grok Amazon Web Services (AWS) Marketplace. Grok monitors complex networks running","date":"2014/02/04","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"grok soft launch","title":"Announcing Grok 1.0 Soft Launch","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>I am pleased to share with our newsletter subscribers the availability of Grok\n1.0 in “soft launch” on the\n<a href=\"/grok/#get\">Amazon Web Services (AWS) Marketplace</a>.\nGrok monitors complex networks running on AWS and is the first commercial\napplication of our groundbreaking Cortical Learning Algorithm (CLA).\nGrok enables IT professionals to easily spot unusual activity, thus staying\nahead of problems and preventing downtime. Grok includes the following features:</p>\n<ul>\n<li>Very easy configuration and set-up</li>\n<li>Using the CLA, automatically models each metric to determine normal patterns</li>\n<li>Automatically identifies and ranks unusual patterns</li>\n<li>Continuously learns new patterns as environments evolve</li>\n<li>Does not require any manual threshold setting</li>\n<li>Notifies the user when something curious is happening</li>\n<li>Displays output graphically on a mobile Android device</li>\n</ul>\n<p>Using Grok will enable IT professionals to get insights to their system\nperformance by providing an early warning that something has changed.\nSince everything happens automatically, using Grok can reduce costs of system\nmonitoring by requiring less work from engineers. And, given the mobile\ninterface, IT professionals can get this information anytime, anywhere.</p>\n<p>Grok 1.0 is available in two editions:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1391115095261\">Grok Free Edition</a>; supports up to 10 AWS instances or custom metrics</li>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00HJAA5MM/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1391115112131\">Grok Standard Edition</a>; supports up to 200 AWS instances or custom metrics (fee based)</li>\n</ul>\n<p>We plan to formally announce and exhibit at the AWS Summit on March 25-26 at the\nMoscone Center in San Francisco; please stop by and say hello. And be sure\nto check out our updated website.</p>\n<p>I’m also happy to tell you that in addition to working on the Grok product\nrelease, we continue to push our biologically-inspired algorithms forward.\nWe’ve made some important progress recently and look forward to sharing it\nwith you over the coming year. Our open source community,\n<a href=\"http://numenta.org/\">NuPIC</a>, is growing and actively contributing to\nthe advancement of the science.</p>\n<p>Thank you for your support and your interest. We hope you’ll try\nGrok and give us your feedback.</p>\n"}
 
 /***/ },
-/* 1140 */
+/* 1142 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"Today is an important day for Numenta.  We are pleased to announce the general availability of Grok on the Amazon Web Services Marketplace. We will be showcasing Grok at the","date":"2014/03/25","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"Grok","title":"Announcing Grok for IT Analytics on AWS","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Today is an important day for Numenta.  We are pleased to announce the general\navailability of Grok on the\n<a href=\"https://aws.amazon.com/marketplace/search/results/ref=gtw_navgno_search_box?page=1&amp;searchTerms=grok\">Amazon Web Services Marketplace</a>\nWe will be showcasing Grok at the\n<a href=\"https://aws.amazon.com/aws-summit-2014/san-francisco/\">AWS Summit</a>\nat the San Francisco Moscone Convention Center on March 26th.  If you are\nattending, please join us in booth 100 to see a demo - and experience our\nbreakthrough technology for anomaly detection.</p>\n<p>As we mentioned in our February newsletter, Grok for IT Analytics monitors\nservers running on AWS and is the first commercial application of our\ngroundbreaking Cortical Learning Algorithm (CLA). Grok enables\nIT professionals to spot anomalous system behavior in order to stay ahead of\nproblems and prevent business downtime, and to substantially reduce annoying\nfalse positives generated by threshold based systems.</p>\n<p>What makes us different is the powerful science behind our technology, enabling\nGrok to identify unusual patterns that many other monitoring tools may miss and\nto automatically learn changes in its environment without human intervention.\nWe encourage you to read our new whitepaper\n[The Science of Anomaly Detection](/assets/pdf/whitepapers/Numenta White Paper - Science of Anomaly Detection.pdf)\nfor details and examples of how Grok does its magic.</p>\n<p>Since our soft launch in February, our team has added valuable new features\nbased on customer feedback:</p>\n<ul>\n<li>Monitoring of AWS Auto-Scaling Groups</li>\n<li>Monitoring of logically-related server clusters</li>\n<li>Improved user-controlled notifications</li>\n<li>Addition of a command line interface tool</li>\n<li>Improved mobile interface on Android devices</li>\n<li>Ability to ingest any streaming data source via custom metrics</li>\n</ul>\n<p>If you are an IT professional or just wanted to explore Grok, we have several\noptions to make it easy to get started.  Grok is available in the AWS\nMarketplace in two editions:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1395708910993\">Grok Free Edition</a>:\nsupports up to 10 instances or custom metrics</li>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00HJAA5MM/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1395708888644\">Grok Standard Edition</a>:\nsupports up to 200 AWS instances or custom metrics</li>\n</ul>\n<p>We also invite you to <a href=\"/contact/\">provide your feedback</a>. Be\nsure to send us details on anomalies that Grok found that you would otherwise\nnot have seen!  And let us know about features you’d like to have us implement\nin order to make Grok more useful.</p>\n<p>To support our launch, we have upgraded our website and made a number of helpful\n<a href=\"/grok/#resources\">resources</a> available.</p>\n<p>Thanks for your continued interest and support.  We look forward to hearing how\nyou like Grok.</p>\n"}
 
 /***/ },
-/* 1141 */
+/* 1143 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I’m writing today to give you a progress report from Numenta.  We have continued to make strides towards our mission of being a catalyst for machine intelligence.","date":"2014/06/10","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"june 2014 numenta nupic grok aws","title":"Progress Report June 2014 Newsletter","type":"post","body":"<p>I’m writing today to give you a progress report from Numenta.  We have continued\nto make strides towards our mission of being a catalyst for machine\nintelligence.</p>\n<h4>NuPIC Open Source Community – Solid Growth in First Year</h4>\n<p>One year ago we created the NuPIC open source project to support scientists and\ndevelopers who are interested in machine intelligence based on neocortical\nprinciples.  Since our launch, we’ve made great progress in our goal of building\na vibrant community, now with more than 800 subscribers to the NuPIC mailing\nlist and nearly 100 contributors.</p>\n<p>We have recently concluded our third NuPIC Hackathon; the 32-hour weekend event\ndrew 76 developers and yielded 14 demos ranging from simple games to complex\nword associations based on CEPT, the Cortical Engine for Processing Text.  NuPIC\nCommunity Flag-Bearer, Matt Taylor, summarized it well, saying “We’ve come a\nlong way since we started with 90,000 lines of code on Github and held our first\nHackathon with 20 people. Today, I am happy to report we have an active\ncommunity and a pattern of steady growth over the past year. If you are\ninterested in biologically-inspired machine intelligence, there is no better\nplace to be.”</p>\n<h4>Grok for IT Analytics on AWS – Showcasing the Power of the CLA</h4>\n<p>Grok, the first commercial product using Numenta’s Cortical Learning Algorithm\n(CLA), is marking its first quarter in market. Grok learns patterns from its\ntemporal data stream, makes predictions, and identifies anomalies.\nSimultaneously with the product’s release, Numenta issued a\n<a href=\"/blog/science-of-anomaly-detection.html\">Science of Anomaly Detection Whitepaper</a>\nthat explains how it applied the science of the CLA to the technology of anomaly\ndetection. Here’s what some of our first customers have to say:</p>\n<blockquote>\n<p>“Having Grok monitor AWS CloudWatch to highlight unusual patterns is\nextremely useful. It highlighted leading indicators of problems in my AWS\nenvironment, which helped me prevent downtime.” – Greg Krill, Data Center\nArchitect, Founder and Director, EdgeSense</p>\n</blockquote>\n<blockquote>\n<p>“Grok is unique in that it delivers at-a-glance insight on top of our\nexisting metrics. As it learns automatically, we spend less time maintaining\nit and more time working on our technology,” – Chris Alexander, SysAdmin and\nEngineer, Import IO</p>\n</blockquote>\n<p>If you’d like to see Grok, we will be exhibiting at the AWS Summit in NYC on\nJuly 10th.  Grok is also available on the AWS Marketplace with no license fee.</p>\n<p>We are recruiting for two positions in our marketing department, one for a\nproduct manager and one for a marketing manager [URL].  Help us find outstanding\npeople by sharing this information with your friends and colleagues!</p>\n<p>We look forward to sharing more exciting news over the summer as we continue to\ndrive new innovations with our technology.  Thanks for your continued interest\nand support.</p>\n"}
 
 /***/ },
-/* 1142 */
+/* 1144 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"We’ve had a busy summer at Numenta. Since the launch of our first product, Grok for IT Analytics on Amazon Web Services (AWS), we’ve created a variety of demonstration applications to showcase","date":"2014/08/19","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"summer 2014 numenta nupic grok aws machine intelligence applications","title":"Machine Intelligence Applications 2014","type":"post","body":"<p>We’ve had a busy summer at Numenta. Since the launch of our first product, Grok\nfor IT Analytics on Amazon Web Services (AWS), we’ve created a variety of\ndemonstration applications to showcase the breadth of the underlying\nHierarchical Temporal Memory (HTM) technology.  We’ve also restructured our web\nsite to highlight these new applications.</p>\n<p>First, let me give you an update on our product, Grok.  We recently released\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1406131482540\">version 1.5</a>,\nwhich incorporates a great new web charting feature.  In addition,\nwe decided to eliminate the paid version of Grok in order to make it super easy\nfor customers to try and to deploy Grok.  If you are running an AWS installation\nbut haven’t tried out Grok, you can do so\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1406131482540\">here</a>.</p>\n<p>Then, in addition to Grok, we’ve created a group of demonstration applications\nto show the potential use of our core technology in a variety of areas. We’ve\npublished white papers on two of the demonstrations:</p>\n<ul>\n<li>\n<p><a href=\"/assets/pdf/whitepapers/Geospatial%20Tracking%20White%20Paper.pdf\">Geospatial Tracking</a>:\nusing 2D or 3D speed and location data, learn travel patterns and detect\nanomalies in objects or people moving through the world</p>\n</li>\n<li>\n<p><a href=\"/assets/pdf/whitepapers/Rogue%20Behavior%20Detection%20White%20Paper.pdf\">Rogue Behavior Detection</a>:\nModel human behavioral patterns to highlight anomalies in employee actions\nsuch as financial trading patterns, computer and device usage, and internal\nsystem access.</p>\n</li>\n</ul>\n<p>An additional demonstration application looks at anomalies in stock volume\ntracking.  We are in our initial exploration of this application, but you can\nread more about it in this\n<a href=\"/blog/detecting-anomalies-in-stock-volumes.html\">blog entry</a>.</p>\n<p>Finally, we are doing some very exciting research with our partner\n<a href=\"http://www.cortical.io/\">Cortical IO</a>\non using HTM to predict and classify language using semantic encoding.</p>\n<p>We are getting more visibility for our progress as we start to showcase these\napplications.  You may want to read Dean Takahashi of VentureBeat’s article\n<a href=\"http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long-nine-years-but-it-starting-to-pay-off-interview/\">here</a>.</p>\n<p>On August 20, Subutai Ahmad, our VP of Research will present “Understanding\nCortical Principles and Building Intelligent Machines” at the\n<a href=\"/events/cognitive-computing-forum.html\">Cognitive Computing Forum</a>\nin San Jose. If you’re interested, register using the discount code NUMENTA.</p>\n<p>I’d like to add a welcome to Celeste Baranski, who has joined us as VP\nEngineering, taking over the daily operations of our engineering group, enabling\nSubutai to dedicate himself to research and writing.</p>\n<p>Finally, we’re happy to celebrate the first anniversary of the creation of our\n<a href=\"http://numenta.org/\">NuPIC open source project</a>.\nNuPIC interest has grown steadily, and we are pleased to see the strength and\ncommitment building in this community.</p>\n<p>We will continue to update you as we build the demonstration applications into\nfull-featured applications and as our research efforts continue.</p>\n<p>Thank you for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1143 */
+/* 1145 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I’m writing to let you know that we have two upcoming opportunities to learn about and try our technology: Our Numenta Training Workshop and NuPIC Fall Hackathon 2014","date":"2014/09/16","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta training workshop nupic machine intelligence hackathon fall 2014","title":"Opportunities to Learn About and Try Numenta Technology - Fall Workshop and Hackathon","type":"post","body":"<p>I’m writing to let you know that we have two upcoming opportunities to learn\nabout and try our technology:</p>\n<h3>Numenta Training Workshop</h3>\n<ul>\n<li>Friday, Oct 17 2014, 12pm - 6pm</li>\n<li>Redwood City, CA</li>\n</ul>\n<p><a href=\"https://www.eventbrite.com/e/numenta-training-workshop-registration-12898835765\">https://www.eventbrite.com/e/numenta-training-workshop-registration-12898835765</a></p>\n<p>This half-day workshop for developers will review Numenta theory, technology and\napplications. Content will consist of presentations about HTM theory, including\nsome detailed implementation topics, and will be technical in nature.  The\nworkshop will be followed by a networking reception.  If you have been\ninterested in our work and have wanted to get a thorough grounding in the\nsubject matter, or if you already are active in our community but would like an\nupdate on our progress, attending this workshop is a great idea.  Our capacity\nis limited, and early-bird pricing is available through September 26th, so we\nencourage you to register soon.</p>\n<h3>Numenta Fall NuPIC Hackathon</h3>\n<ul>\n<li>Saturday, Oct 18 2014 - Sunday, Oct 19 2014</li>\n<li>San Jose, CA</li>\n</ul>\n<p><a href=\"http://www.meetup.com/numenta/events/202402962/\">http://www.meetup.com/numenta/events/202402962/</a></p>\n<p>The NuPIC fall hackathon follows our workshop and will be a 32-hour all-weekend\nhackathon. We’ll start with a kickoff presentation from the NuPIC team,\nincluding a few words from Jeff Hawkins. During the event, we’ll help you get\nNuPIC installed and provide several informational sessions about NuPIC. The\nevent will end with demonstrations of hacks that attendees have created during\nthe event.\n(<a href=\"http://numenta.org/blog/2014/05/09/2014-spring-hackathon-outcome.html#demos\">See example of past demos here</a>).\nThe hackathon is appropriate both for experienced NuPIC developers as well as\nfor new developers.</p>\n<p>I hope you’ve had a chance to check out our updated web site, where we have\nreleased some new whitepapers, including an expanded version of\n<a href=\"/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf\">The Science of Anomaly Detection</a>.</p>\n<p>I look forward to seeing many of you at the Workshop and/or the Hackathon.\nThank you for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1144 */
+/* 1146 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"We are pleased to report that Numenta has released version 1.6 of Grok for IT Analytics, which is available for no license charge on the AWS Marketplace. This version offers several new important features","date":"2014/11/11","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"grok 1.6 release aws amazon web services reinvent las vegas nov 2014 numenta it analytics","title":"Grok 1.6 Released - Showcasing at AWS ReInvent in Las Vegas, Nov 11-14","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<h3>Newsletter - November 11, 2014</h3>\n<p><strong>Grok 1.6 Released - Showcasing at AWS Re:invent in Las Vegas, Nov 11-14</strong></p>\n<p>We are pleased to report that Numenta has released version 1.6 of\n<a href=\"/grok/\">Grok for IT Analytics</a>, which is available for no\nlicense charge on the\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-2&amp;qid=1415482679002\">AWS Marketplace</a>.</p>\n<p>This version offers several new important features:</p>\n<ul>\n<li>\n<p>Annotation of data streams, which allows sharing of information and\ncollaboration among users</p>\n</li>\n<li>\n<p>Increased support for additional data formats</p>\n</li>\n<li>\n<p>Enhanced performance</p>\n</li>\n</ul>\n<p>Based on Numenta’s breakthrough\n<a href=\"/#technology\">Hierarchical Temporal Memory</a>\ntechnology, Grok monitors servers running on AWS and enables complex pattern\ndetection, automatic model building, and continuous learning. Grok output is\ndisplayed on a constantly updated mobile device, enabling IT professionals to\nassess the health of their systems anytime, anywhere.</p>\n<p>We will be showcasing this new version of Grok at the\n<a href=\"/events/AWS-reInvent.html\">AWS re:Invent conference</a>\nin Las Vegas, November 11-14.  If you are attending, please visit us and see\nGrok 1.6 in action at Booth #648.</p>\n<p>I’m also happy to announce that the videos from our Numenta Training Workshop\nheld Friday, October 17th, are now available on our web site.  You can access\nthese videos on the <a href=\"/learn/\">Learning Center</a>\npage of our website. This new material offers a great way to get up to speed on\nour work. Please check back on this page over the coming months as we plan to\nadd more content shortly.</p>\n<p>Thank you for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1145 */
+/* 1147 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As a fun and educational kick-off to the year, we are offering our second Super Bowl sparse football pool. Entering the pool is free, and prizes are offered for the top five winners (note that because of legal constraints, those","date":"2015/01/26","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":null,"title":"Welcome to 2015!","type":"post","body":"<h3>Newsletter - January 26, 2015</h3>\n<p><strong>Welcome to 2015!</strong></p>\n<p>As a fun and educational kick-off to the year, we are offering our second\n<strong>Super Bowl sparse football pool</strong>.  Entering the pool is free, and prizes are\noffered for the top five winners (note that because of legal constraints, those\npeople under 18 or outside of the U.S. cannot win prizes … but they still can\nplay for the glory of winning!).  Participating is a fun way to learn more about\nSparse Distributed Representations. Subutai explains here the details of the\npool:\n<a href=\"/blog/introducing-sparse-football-pool-ii-super-bowl-xlix.html\">Super Bowl Sparse Football</a>.</p>\n<p>In early January, we delivered <strong>NuPIC version 0.1</strong>, our\n<a href=\"http://numenta.org/news/2015/01/22/nupic-0.1-released.html\">first formal release</a>\nof NuPIC.  Says Matt Taylor, our NuPIC flag-bearer, “With the NuPIC 0.1 release,\nmost OS X and Linux users won’t need to compile from source code to install.\nThis makes the installation process much easier for those wanting to use NuPIC\nas a python project.”</p>\n<p>In other news, we look forward to an exciting year at Numenta.  We are beginning\nthe hard work of publishing more information on our algorithms, including\nsubmissions for peer reviewed papers.  We are progressing in the science with a\nlot of focus on sensory-motor integration.  For those interested in the details,\nthe concepts are often discussed in the\n<a href=\"http://lists.numenta.org/mailman/listinfo/nupic-theory_lists.numenta.org\">NuPIC Theory Mailing List</a>\nand in <a href=\"http://numenta.org/events.html\">NuPIC office hours</a>. We are continuing\nto support our product, <a href=\"http://numenta.com/grok/\">Grok for AWS</a>, and have an\nadditional demonstration application in the works to announce later this year.\nWe also will be speaking or exhibiting at a number of events this year,\nincluding:</p>\n<ul>\n<li><a href=\"/events/strata-hadoop-world.html\">Strata + Hadoop World</a>,\n2/20, Subutai (VP of Research) will give a talk on streaming analytics</li>\n</ul>\n<p>We are also planning a <strong>Spring NuPIC Hackathon</strong>, which we expect to be on the\nU.S. East Coast.  Be sure to follow us on\n<a href=\"https://twitter.com/Numenta?lang=en\">Twitter</a>\nand check our\n<a href=\"/events/\">events page</a> as more speaking appearances or events are announced.</p>\n<p>You might enjoy seeing a\n<a href=\"https://www.youtube.com/watch?v=f1tYXv6ST_U&amp;feature=youtu.be\">short video</a>\nfeaturing Jeff that describes our mission.\nIn an effort to communicate more about our work, you can expect to see more\nmaterial like this over the coming year.</p>\n<p>Best wishes for a happy new year!</p>\n"}
 
 /***/ },
-/* 1146 */
+/* 1148 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As part of the community interested in machine intelligence, you may be following the current public debate about whether artificial intelligence should be feared or encouraged. Jeff Hawkins recently","date":"2015/03/12","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta newsletter march 2015","title":"Numenta Newsletter March 2015","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>March 12, 2015</strong></p>\n<p>As part of the community interested in machine intelligence, you may be\nfollowing the current public debate about whether artificial intelligence should\nbe feared or encouraged.  Jeff Hawkins recently wrote a thoughtful opinion piece\non this subject:\n<a href=\"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/\">The Terminator Is Not Coming. The Future Will Thank Us.</a>\nI hope you will have time to read Jeff’s piece and, if you find it worth\nsharing, to promote it within your social network.  We feel that the future of\nmachine intelligence is very exciting, and would welcome your help in spreading\nthe word.</p>\n<p>We have confirmed the date and location for our next NuPIC hackathon:  May 29-30\nin New York City. The 32-hour all-weekend event is our first east coast\nhackathon.  We hope that the New York location will facilitate attendance from\nthe east coast as well as from international locations.</p>\n<ul>\n<li><a href=\"http://www.meetup.com/numenta/events/220422020/\">RSVP on our event page</a></li>\n<li>Saturday, May 29 2015 – Sunday, May 30 2015</li>\n<li>Cornell Tech Campus in NYC</li>\n</ul>\n<p>Congratulations to the winners of our Sparse Football Pool (including me!)!\n<a href=\"/legal/results/sparse-football-pool-ii-2015.html\">See the results</a>\nand learn about the connection between football, HTM\nlearning algorithms and the brain in our\n<a href=\"/blog/super-bowl-neuroscience-sparse-pool-ii-2015-results.html\">blog post</a>.</p>\n<p>We also have two additional short videos about Numenta that I would like to\nshare:\n<a href=\"/?video=youtube:v-VvFRar5TY\">Intro to Technology</a> and\n<a href=\"/?video=youtube:9jWmS62MWx8\">Intro to Applications</a>.\nThese videos are a quick way to learn more about Numenta’s machine intelligence\ntechnology and its broad applicability, and are especially appropriate as\nintroductory videos for those new to our work.  Again, we hope you will share\nthese videos, along with Jeff’s overview video, with others who want to learn\nabout Numenta.</p>\n<p>Thank your for your ongoing interest in Numenta.</p>\n"}
 
 /***/ },
-/* 1147 */
+/* 1149 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I have a lot of exciting news to share. Rather than making the newsletter overly long, I’ve provided links to get more information on any of these topics.","date":"2015/04/29","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta newsletter april 2015","title":"Numenta Newsletter April 2015","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>April 29, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I have a lot of exciting news to share.  Rather than making the newsletter\noverly long, I’ve provided links to get more information on any of these topics.</p>\n<p>We’re pleased to let you know about the establishment of a Cortical Learning\nCenter at IBM, which is actively experimenting with Numenta’s technology.  You\ncan view what Winfried Wilcke, a senior IBM researcher,\n<a href=\"http://digitalops.sandia.gov/Mediasite/Play/1365ba62685c4c91a1cb7143c1e321cc1d\">has to say about his work</a>.</p>\n<p>In the publications arena, we have posted an important paper on the mathematical\nproperties of sparse distributed representations. You can <t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.sdr%7D%7D\">read it here</a></t>.</p>\n<p>We also have a hackathon coming up.  For the first time, we are coming to the\neast coast for this hackathon:  May 30-31 in New York City.  Many of our Numenta\nengineers will be attending, as well as Jeff Hawkins and Subutai Ahmad.<br>\n<a href=\"http://numenta.org/events/hackathon/2015/may/\">There are still spaces left</a>!</p>\n<p>We have another project brewing called the Numenta Anomaly Benchmark.  We have\nfound it difficult to benchmark our algorithms given how few benchmarks exist\nwith streaming data.  Consequently we have decided to create an open source\nbenchmark ourselves in the hope that it becomes an industry standard for\nreal-time anomaly detection.  If you are interested in this project and,\nspecifically, if you have some streaming data sets that you can share, please\ncontact us at <a href=\"mailto:nab@numenta.org\">nab@numenta.org</a>.  We plan to have the\nNumenta Anomaly Benchmark available around the end of the summer.</p>\n<p>We’ve had a lot of positive reactions to Jeff’s article on the\n<a href=\"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/\">reality of AI dangers</a>,\nso be sure to view some of the commentary:</p>\n<ul>\n<li><a href=\"http://www.forbes.com/sites/anthonykosner/2015/04/20/what-really-scares-tech-leaders-about-artificial-intelligence/\">What Really Scares Tech Leaders about Artificial Intelligence</a></li>\n<li><a href=\"http://www.forbes.com/sites/anthonykosner/2015/04/21/graph-theory-helps-to-decode-the-ai-fears-of-tech-leaders/\">Graph Theory Helps To Decode The AI Fears of Tech Leaders</a></li>\n</ul>\n<p>Lastly, we have an opening in marketing at Numenta.  If HTM and machine\nintelligence is a passion of yours, and you have a strong marketing\ncommunications background, please consider\n<a href=\"http://numenta.com/careers/\">applying for our position</a>.</p>\n<p>We are excited about the momentum growing behind HTM technology and hope you’ll\nhave a chance to review some of these developments.</p>\n"}
 
 /***/ },
-/* 1148 */
+/* 1150 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I am excited to let you know that we recently announced a relationship with Cortical.io, an innovative company based in Austria that is working on the next generation of natural language processing: language intelligence. Cortical.io has created a technology that can","date":"2015/05/14","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta newsletter may 2015 announcing relatioship cortical.io","title":"May 2015 Newsletter: Cortical.io Relationship","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>May 14, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I am excited to let you know that we recently announced a relationship with\n<a href=\"http://Cortical.io\">Cortical.io</a>, an innovative company based\nin Austria that is working on the next generation of natural language\nprocessing: language intelligence. <a href=\"http://Cortical.io\">Cortical.io</a> has created a technology that can\ntranslate text into sparse distributed representations, called Semantic Folding.\nBy using <a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic Folding technology in combination with HTM, we\nplan to tackle problems in language that have frustrated computer scientists for\nmany years. To learn more about <a href=\"http://Cortical.io\">Cortical.io</a>, you can read our\n<a href=\"/press/numenta-and-cortical-io-form-strategic-partnership.html\">press release</a>,\nview the <a href=\"http://Cortical.io\">Cortical.io</a> <a href=\"http://cortical.io/\">website</a>, or try the <a href=\"http://Cortical.io\">Cortical.io</a> API\nat <a href=\"https://aws.amazon.com/marketplace/seller-profile?id=c88ca878-a648-464c-b29b-38ba057bd2f5\">AWS</a>.</p>\n<p>I also wanted to draw your attention to a new paper about HTM written by\nSebastian Billaudelle, with Subutai Ahmad, our VP Research. As part of the\nEuropean based Human Brain Project, Sebastian spent several months at Numenta\nporting HTM to the Heidelberg Neuromorphic Computing Platform, with positive\nresults. Sebastian implemented HTM using spiking neurons, which are complex\nmodels often used by neuroscientists to reproduce actual biophysical\ncharacteristics of neurons. You can read about his work <t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.neuromorph%7D%7D\">here</a></t>.</p>\n<p>We have several great projects under development and look forward to sharing\nmore with you over the coming months.</p>\n"}
 
 /***/ },
-/* 1149 */
+/* 1151 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"In order to encourage our developers and to facilitate the creation of applications, we have decided to release substantially more of our technology into open source. To that end, we just added to the code base two complete products","date":"2015/06/09","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta open source htm products apps applications nupic june 2015 newsletter donna dubinsky","title":"June 2015 Newsletter: Numenta Releasing Two Complete HTM Products into Open Source","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>June 09, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I’m writing to update you on exciting news for our open source project, NuPIC.</p>\n<p>In order to encourage our developers and to facilitate the creation of\napplications, we have decided to release substantially more of our technology\ninto open source. To that end, we just added to the code base two complete\nproducts: Grok for IT Analytics and HTM for Stocks (an example application\nthat will be made available to end users shortly). The released code for these\nproducts includes the HTM Engine as well as two different Android applications.\nThe HTM Engine runs multiple anomaly models in an easy, scalable way, allowing a\nsingle server to manage and run thousands of HTM models. The Android\napplications act as a client to the HTM engine, pulling in the data to display\nit in a human-understandable format. We are developing tutorials that will help\ndevelopers come up to speed on this new technology.</p>\n<p>This source code has been open-sourced under the AGPLv3.0 license<sup><a href=\"#agpl\">*</a></sup>. You can find\nall the code on <a href=\"https://github.com/numenta/numenta-apps\">GitHub</a>.</p>\n<p>We hope that developers will find this source code beneficial as example\napplications of NuPIC. If you are interested in creating a commercial\napplication using this code, you may do so in accordance with the terms of the\nAGPLv3<sup><a href=\"#agpl\">*</a></sup>, or may <a href=\"mailto:sales@numenta.com\">write us</a> to request a separate,\ncommercial license if you prefer different terms. Commercial licenses are\nhandled on a case-by-case basis. For more information on our open source\nlicensing, see: <a href=\"http://numenta.org/licenses/\">License</a>,\n<a href=\"http://numenta.org/blog/2013/07/01/patent-position.html\">Patent Position</a>,\n<a href=\"http://numenta.org/blog/2013/12/16/nupic-commercial-licenses.html\">Commercial Licenses</a>.</p>\n<p>We invite you to join our growing open source community.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n"}
 
 /***/ },
-/* 1150 */
+/* 1152 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"Over the last two years, we have created a series of example applications that illustrate the capabilities of HTM. Grok for IT Analytics, available for download on the Amazon Web Services Marketplace","date":"2015/07/02","featured":false,"image":"../images/image.png","org":"CEO","tags":"htm for stocks monitor stock price volume twitter anomaly outlier detection numenta open source htm app application nupic","title":"July 2015 Newsletter: Announcing HTM for Stocks - Open Source Example HTM App","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>July 02, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>Over the last two years, we have created a series of example applications that\nillustrate the capabilities of HTM.  Grok for IT Analytics, available for\ndownload on the Amazon Web Services Marketplace, uses HTM to detect anomalies in\nAWS server metrics. We have published source code for several other example\napplications that use HTM to detect anomalies in human behavior, and in GPS\ndata. But up until now it hasn’t been easy for an individual to get a sense of\nhow HTM-based anomaly detection works; you either need to bring up an AWS server\ninstance, or put in a reasonable amount of software development effort.</p>\n<p>So we have created a new example application, called HTM for Stocks, which\nmakes it much easier for you to experience how HTM detects anomalies. HTM for\nStocks is available for free here:\n<a href=\"http://numenta.com/htm-for-stocks/#get\">Download HTM for Stocks</a>. At this\npoint, the application is available only for an Android mobile device.</p>\n<p>HTM for Stocks applies HTM modeling and anomaly detection to 200 large\ncapitalization public companies.  The application automatically models three\ndata streams for each stock:  stock volume, stock price, and Twitter volume.  It\nfigures out “normal” for each of these data streams for each company, and then\nlets you know if something abnormal has occurred.</p>\n<p>Here is what we hope you will notice when using HTM for Stocks:</p>\n<ul>\n<li>\n<p>HTM enables automatic modeling of many models here, we are creating 600\nseparate models (3 for each of 200 companies).  No human intervention is\nrequired to adjust parameters or tune models.</p>\n</li>\n<li>\n<p>HTM models learn continuously, with each new data point.  If a company changes\nits fundamentals, taking its stock volume to a new level, at first it will\nshow an anomaly, but after a short period, it will learn the “new normal”.</p>\n</li>\n<li>\n<p>The models are ranked by the most anomalous to the least anomalous.  If you\nscroll down, you will note that many of the stocks show no anomalies.  This\nranking of anomalies allows you to focus on the companies that are the most\ndifferent from the norm.</p>\n</li>\n</ul>\n<p><img src=\"/assets/img/pages/newsletters/2015-07-02/homescreen.png\" alt=\"HTM for Stocks Home Screen\"></p>\n<p>Some of the anomalies detected by HTM for Stocks may appear obvious but others\nare subtle and not easily detected by a human.  For example, if you watch stock\nvolumes, you will see that there often is a spike in the beginning and at the\nend of the trading day.  It will notice if those spikes continue longer than\nnormal for that particular stock.  Such examples demonstrate the power of\nfinding temporal patterns</p>\n<p>When you see an anomaly, it’s very informative to look at the Twitter stream for\nthe corresponding time frame.  There, you often will be able to quickly\ndetermine the reason for the anomaly, such as an earnings announcement, a\ntakeover bid, a lawsuit, or a rapidly growing interest in something the company\ndid.</p>\n<p>In keeping with our focus as a technology provider, we do not intend to build\nHTM for Stocks into a full commercial application, and so we have provided the\nsource code for HTM for Stocks alongside our NuPIC open source project at\n<a href=\"https://github.com/numenta/numenta-apps\">https://github.com/numenta/numenta-apps</a>, available under a AGPL v3 license<sup><a href=\"#agpl\">*</a></sup>.\nDevelopers may find that HTM for Stocks code can be used to create derivative\nproducts that track other data streams.  We also welcome partners who are\ninterested in a commercial license to the HTM for Stocks code; in this case\nplease write to <a href=\"mailto:sales@numenta.com\">sales@numenta.com</a>.</p>\n<p>We hope that you will enjoy using HTM for Stocks.  We welcome your feedback at\n<a href=\"mailto:feedback@numenta.com\">feedback@numenta.com</a>.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n"}
 
 /***/ },
-/* 1151 */
+/* 1153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cdab7706d731991a537d9dc21122f4df.png";
 
 /***/ },
-/* 1152 */
+/* 1154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "abda5eaeb6988ea8400602a45d868cce.png";
 
 /***/ },
-/* 1153 */
+/* 1155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3ca6fed4dbd467a7b83e6e8e33b948be.png";
 
 /***/ },
-/* 1154 */
+/* 1156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a382c402d5750bc0bd75bef85be34422.png";
 
 /***/ },
-/* 1155 */
+/* 1157 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"I am excited to tell you about a new partnership between Numenta and Avik Partners, an IT services and advanced analytics company. Before I tell you more about Avik, I want to remind you of our strategy for","date":"2015/09/01","featured":false,"image":"../images/image.png","org":"CEO","tags":"numenta partnership avik partners grok stream for it analytics","title":"September 2015 Newsletter: Partnership between Numenta and Avik Partners on Grok for IT Analytics","type":"post","body":"<h3>Numenta Newsletter</h3>\n<p><strong>September 01, 2015</strong></p>\n<p>Dear Numenta newsletter subscriber:</p>\n<p>I am excited to tell you about a new partnership between Numenta and Avik\nPartners, an IT services and advanced analytics company.</p>\n<p>Before I tell you more about Avik, I want to remind you of our strategy for\ndeploying HTM technology.  Over the past few years we have made excellent\nprogress in turning HTM cortical theory into a valuable technology, first for\nstreaming analytics, but ultimately as a core component of machine intelligence.\nIn order to demonstrate how HTM technology can be used, we created several\nexample applications.  Our plan is to partner with applications developers to\nbring commercial solutions to the market while we focus on developing the\nscience and technology.  Earlier this year we announced our first such\nrelationship with <a href=\"http://Cortical.io\">Cortical.io</a>, a company using HTM technology for natural\nlanguage applications.</p>\n<p>Avik Partners is our second commercial partnership.  Casey Kindiger, CEO of\nAvik, is a proven entrepreneur with deep experience in IT and developer\noperations.  Casey became intrigued with our Grok for IT Analytics example\napplication, recognizing the substantial commercial potential for our advanced\nanomaly detection capability in the IT environment, and approached us about a\nlicense.</p>\n<p>Our relationship with Avik is structured as a strategic partnership.  Avik will\nassume our Grok for IT product (including the name Grok), enhance the\napplication with the many features that have been requested, and market it to\nenterprise IT organizations.  Avik will be doing business on the\n<a href=\"http://grokstream.com\">http://grokstream.com</a> website, where you can sign up to receive information\nwhen the product is available.  We expect to complete the transition of the Grok\nfor IT Analytics product to Avik within 30 days.  As part of the license,\nNumenta has taken a minority ownership position in Avik.</p>\n<p>We believe that Avik is an ideal partner to apply HTM technology to solve major\nproblems in complex IT organizations.  Given the breadth of potential HTM\napplications, we are excited about our discussions with several other potential\nlicensees who want to apply HTM technology to a wide variety of application\ndomains.  Over time, we hope to establish a constellation of partners building\nintelligent applications using HTM technology.</p>\n<p>In order to facilitate consideration of a license, we have created several\nstandard license options.  We realize that these standard licenses won’t fit\nevery situation, so we also offer custom licenses.  We have just published a new\n<a href=\"/assets/pdf/apps/licensing-guide.pdf\">license guide</a> with details.  If you are\ninterested in becoming a licensee, please review this document, and feel free to\nwrite to us at <a href=\"mailto:sales@numenta.com\">sales@numenta.com</a>.</p>\n<p>Please join me in congratulating Casey and Avik Partners.  We look forward to\nworking together to bring machine intelligence to improve management of IT\ninfrastructure.</p>\n"}
 
 /***/ },
-/* 1156 */
+/* 1158 */
 587,
-/* 1157 */
+/* 1159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "74267284c3a0a1764fde6bcfd45a62cd.png";
 
 /***/ },
-/* 1158 */
+/* 1160 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"To start with, I’m pleased to announce that we have a paper accepted on the Numenta Anomaly Benchmark (NAB).  I’ve written to you about the development of","date":"2015/10/01","featured":false,"image":"../images/image.png","org":"CEO","tags":"numenta anomaly benchmark nab numenta htm challenge nupic onsite november 2015","title":"Numenta Anomaly Benchmark (NAB), and Numenta HTM Challenge","type":"post","body":"<h3>Numenta Newsletter October 2015</h3>\n<h4>Numenta Anomaly Benchmark (NAB), and Numenta HTM Challenge</h4>\n<p>To Numenta newsletter subscribers:</p>\n<p>I’m writing with a few exciting updates from Numenta.</p>\n<p>To start with, I’m pleased to announce that we have a paper accepted on the\nNumenta Anomaly Benchmark (NAB).  I’ve written to you about the development of\nNAB in the past.  NAB is essentially two things.  First, it consists of over 50\nstreaming data files with anomalies that are marked for ground truth.  These\nfiles are a combination of real-world data sets along with some simulated data\nsets.  Second, there is a scoring mechanism that is designed for streaming data.\nNumenta’s HTM algorithms do a great job at finding temporal structure, learning\ncontinuously, and detecting anomalies early.  These are valuable properties for\nreal-time streaming applications but benchmarks designed for batch data don’t\nincorporate them. For example, traditional benchmarks do not give “credit” for\nfinding an anomaly sooner rather than later.  Our development of NAB is an\neffort to create such a benchmark.</p>\n<p>We will be releasing NAB into open source such that the community can add new\ndata sets, propose different scoring mechanisms, and test/compare other\nalgorithms with HTM.  We hope that the developers in the community will get\nbehind NAB and enable a robust comparison of our anomaly detection with other\ntechniques.</p>\n<p>For more information on NAB, <a href=\"https://github.com/numenta/NAB\">go here</a>. We will\nbe presenting NAB at two conferences\n(<a href=\"http://mlconf.com/events/san-francisco-ca/\">MLconf SF</a> on November 13 in\nSan Francisco, and the\n<a href=\"http://www.icmla-conference.org/icmla15/\">IEEE Conference on Machine Learning and Applications</a>\non December 9-11 in Miami), so if you are in the vicinity, we hope you will be\nable to attend. Of course, once the paper is published, we will send you\nthe link.</p>\n<p>My second topic is an update from the NuPIC community.  We recently announced\nthe HTM Challenge.  The idea of the HTM Challenge is to provide a structure to\nencourage members of our open source community to create HTM sample\napplications. And, to add an extra incentive, we’re offering cash prizes of\n$3000 for first place, $2000 for second place and $1000 for third place, along\nwith some fun door prizes.</p>\n<p>The <a href=\"http://htmchallenge.devpost.com/\">Numenta HTM Challenge</a> is an online\ncontest open for submissions now and running until November 14th. Participants\npropose ideas for real-world applications of HTM technology and submit them for\napproval before starting work. We will check that the problem being solved is\napplicable to HTM, and that the data being analyzed is a good fit for HTM.\nOnce a project has been approved, hackers have until November 6th to work on it\nand submit a demo video for judging.</p>\n<p>This Challenge can be completed entirely online, but we encourage you to try to\nattend the <a href=\"http://www.meetup.com/numenta/events/224711586/\">onsite event</a> that\nculminates the Challenge on Saturday, November 14 in Redwood City, California.\nAt this event, all demonstration videos will be viewed by a judging panel and a\nlive audience. Judges will get a chance to comment and ask questions to\nsubmission authors (either live or over the phone). At the end of the event,\nwe’ll announce the winners and cash prizes will be awarded.</p>\n<p>In addition to judging, there will also be at least two educational sessions by\nNumenta team members Subutai Ahmad and Jeff Hawkins. They will be talking about\nthe history and evolution of HTM algorithms, the Numenta Anomaly Benchmark, and\nsome details about new algorithm development.</p>\n<p>You don’t have to participate in the Challenge to attend the onsite event.\nMaybe you just want to come see the latest presentations from Numenta or watch\nthe Challenge demonstration judging. That’s great! We welcome you to mingle with\nus HTM enthusiasts.\n<a href=\"http://www.meetup.com/numenta/events/224711586/\">Register here</a>.</p>\n<p>And as long as you’ll be in the area, there is a community event being planned\non Friday, November 13, the day before the onsite event. I hope you’ll come meet\nthe rest of the HTM community. This event is run by the NuPIC community, for the\nNuPIC community. A schedule is in the works.\n<a href=\"http://www.meetup.com/numenta/events/224711563/\">RSVP here</a>.</p>\n<p>Stay tuned for more information on NAB and on the HTM Challenge.  I’ll update\nyou as both projects develop.</p>\n<p>Lastly, let me remind you that Avik Partners has now taken over the Grok for IT\nproduct.  They have enhanced the product and are now in\n<a href=\"http://grokstream.com/\">beta</a>. If you want to experience breakthrough anomaly\ndetection on IT infrastructure, register to give it a try.</p>\n"}
 
 /***/ },
-/* 1159 */
+/* 1161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "662d816ee2af5ceb8e89c8f86953f183.png";
 
 /***/ },
-/* 1160 */
+/* 1162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1ce690e83fe0b9e7a935c4af2f75e944.png";
 
 /***/ },
-/* 1161 */
+/* 1163 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As I wrote you last month, we have been working hard on creating NAB, the Numenta Anomaly Benchmark, to test the HTM learning algorithms and enable comparison with other algorithms. Now, it’s here!","date":"2015/11/10","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta anomaly benchmark nab released open source streaming data","title":"Numenta Anomaly Benchmark (NAB) is Released, Open Source with White Paper","type":"post","body":"<h3>Numenta Newsletter November 2015</h3>\n<h4>Numenta Anomaly Benchmark (NAB) is Released, Open Source with White Paper</h4>\n<p>To Numenta newsletter subscribers:</p>\n<p>As I wrote you last month, we have been working hard on creating NAB, the\nNumenta Anomaly Benchmark, to test the HTM learning algorithms and enable\ncomparison with other algorithms.  Now, it’s here!</p>\n<p>We have found the need to create a benchmark for many reasons, including:</p>\n<ul>\n<li>\n<p>We sought a benchmark that incorporated time series data, i.e. that gives\n“credit” if you find an anomaly earlier rather than later.</p>\n</li>\n<li>\n<p>We wanted a benchmark that incorporated learning … if something about the\nsituation changes, and there is a “new normal”, does the algorithm keep\nfinding anomalies (false positives), or does it automatically adjust?</p>\n</li>\n<li>\n<p>We wanted real-world data files that have labeled anomalies …. did a machine\nfail?  Was it taken off line?  Knowing “ground truth” is important to evaluate\nwhether an algorithm correctly identifies an anomaly.</p>\n</li>\n<li>\n<p>We wanted an open dataset and code… in order for a benchmark to be accepted by\nthe community, it must be accessible to everyone.</p>\n</li>\n<li>\n<p>We saw the need for a new way of scoring.  Scoring can be tricky because you\nneed to think through questions such as:  if you see the anomaly TOO far in\nadvance, perhaps it is not related, and you didn’t really spot it …. how far\nin advance would that be?</p>\n</li>\n</ul>\n<p>We are now pleased to announce that the <a href=\"http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques\">Numenta Anomaly Benchmark (NAB) is released</a>.\nYou can read the technical paper <t render=\"hbs\"><a href=\"%7B%7Bsite.paths.ext.paper.nab%7D%7D\">here</a></t>.\nThe paper describes our data files, our scoring mechanism, and the test results\nof HTM algorithms along with other, publicly available anomaly detection\nalgorithms.  And, if you want to have a look at the code yourself, it is all in\nopen source.  You can <a href=\"https://github.com/numenta/NAB\">see it here</a>.</p>\n<p>For those readers less interested in technical details, we have created a more\nbusiness focused paper, which you can\n<a href=\"http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf\">download here</a>.</p>\n<p>Our hope is that we can build a community around NAB.  We’d like to collect\nadditional labeled data files that can be used for future versions.  We expect\nthat others will test their algorithms using our data files and scoring, and\ncompare and publish the results.  Since it is open source, companies can test\ntheir internal algorithms without sharing the results as well, although we hope\nthat they will.   We have received positive feedback from the research community\nso far, and we are confident that NAB will grow over time into a very useful\ntool.</p>\n<p>As a reminder, we will be presenting NAB at two conferences\n(<a href=\"http://mlconf.com/events/san-francisco-ca/\">MLconf SF</a> on November 13 in San\nFrancisco, and the\n<a href=\"http://www.icmla-conference.org/icmla15/\">IEEE Conference on Machine Learning and Applications</a>\non December 9-11 in Miami), so if you are in the vicinity, we hope you will be\nable to attend.</p>\n<p>I’m happy to share a couple updates from our strategic partners:\n<a href=\"http://www.grokstream.com/\">Avik Partners</a> and\n<a href=\"http://www.cortical.io/\">Cortical.io</a>. Avik Partners has had a successful beta\nfor Grok for IT and they’re getting ready to launch Grok 2.0.  <a href=\"http://Cortical.io\">Cortical.io</a>\nrecently announced its latest venture capital round of $1.8M and the opening of\nits San Francisco office.  We’re excited to see their progress in next\ngeneration natural language processing.</p>\n<p>Lastly, for any of you that are in the Bay Area, we’d love to see you at our HTM\nChallenge event this weekend.  If you can’t attend in person, you can still help\nchoose the winner.  Public voting for the 12 applications is now open.  Read\nthis blog post to learn more and cast your vote:</p>\n<p><a href=\"http://numenta.org/blog/2015/11/09/vote-for-the-best-htm-challenge-submissions.html\">http://numenta.org/blog/2015/11/09/vote-for-the-best-htm-challenge-submissions.html</a></p>\n"}
 
 /***/ },
-/* 1162 */
+/* 1164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "098825976cc10c5b5fe63583dcdef725.png";
 
 /***/ },
-/* 1163 */
+/* 1165 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"November is shaping up to be a busy and exciting month for Numenta. I wrote you about the release of our Numenta Anomaly Benchmark (NAB). Today I’m pleased to share more good news. Founders Jeff Hawkins and Subutai Ahmad have written a paper that","date":"2015/11/17","featured":false,"image":"../images/image.png","org":"CEO","tags":"numenta machine learning intelligence neurons thousands synapses theory sequence memory neocortex","title":"Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex","type":"post","body":"<h3>Numenta Newsletter — November 17, 2015</h3>\n<h4>Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex</h4>\n<p>To Numenta newsletter subscribers:</p>\n<p>November is shaping up to be a busy and exciting month for Numenta.\n<a href=\"/newsletters/numenta-anomaly-benchmark-nab-open-source-with-white-paper.html\">Earlier this month</a>,\nI wrote you about the release of our Numenta Anomaly Benchmark (NAB). Today I’m\npleased to share more good news.</p>\n<p>Numenta founders Jeff Hawkins and Subutai Ahmad have written a paper that we\nbelieve will become a seminal work in the field of biological and machine\nintelligence. It is titled, “Why Neurons Have Thousands of Synapses, A Theory of\nSequence Memory in Neocortex.”  We posted the paper to an academic archive a\ncouple of weeks ago. This makes it available while it is undergoing the peer\nreview process.</p>\n<p>MIT Technology Review noticed and wrote a thoughtful article about the paper\nthat explains the concepts and their importance in a very understandable way. We\nthought we’d share both the MIT Technology Review article and our paper. If you\nare interested in Numenta, brain theory, and machine intelligence I think you\nwill be interested in reading them.</p>\n<p><strong>MIT Technology Review article:</strong> <br/>\n<a href=\"http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/\">http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/</a></p>\n<p><strong>Numenta paper:</strong> <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.ext.paper.sequence%7D%7D\">{{site.paths.ext.paper.sequence}}</a>\n</t></p>\n"}
 
 /***/ },
-/* 1164 */
+/* 1166 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Donna Dubinsky","brief":"As we look forward to a bright 2016 here at Numenta, I thought I’d pause and review the highlights of 2015.  From advancing our research to expanding our community, we had many accomplishments that laid the groundwork for significant","date":"2016/01/07","featured":false,"image":"../../../../images/numenta.png","org":"CEO","tags":"numenta 2015 review partners cortical.io avik grok nlp semantic folding nab numenta anomaly benchmark","title":"Year in Review for Numenta 2015","type":"post","body":"<h3>Numenta Newsletter — January 07, 2016</h3>\n<p>As we look forward to a bright 2016 here at Numenta, I thought I’d pause and\nreview the highlights of 2015.  From advancing our research to expanding our\ncommunity, we had many accomplishments that laid the groundwork for significant\nprogress going forward. I’d like to share four highlights.</p>\n<ol>\n<li>In 2015, we signed up two key strategic partners:\n<a href=\"http://www.cortical.io/\">Cortical.io</a> and\n<a href=\"http://www.grokstream.com/#home\">Avik Partners</a>.  In May, we\n<a href=\"http://numenta.com/press/numenta-and-cortical-io-form-strategic-partnership.html\">announced our Cortical.io partnership</a>,\nwhich focuses on advancing natural language processing (NLP).  We believe that\nthe combination of our HTM technology and Cortical’s Semantic Folding\ntechnology provides new possibilities to understanding text.  Co-founder\nFrancisco Webber has been a long-time supporter of Numenta. We look forward to\ncontinued collaboration with him and his team.</li>\n</ol>\n<p>In August, we\n<a href=\"http://numenta.com/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced our partnership with Avik Partners</a>,\nan IT services and advanced analytics startup to whom we transferred our Grok\napplication.  In a short time, Avik CEO Casey Kindiger launched a\n<a href=\"http://www.grokstream.com/#home\">commercial application</a> to use Grok to\nmonitor IT infrastructure. This partnership is a great example of our\n“technology transfer” business model where other companies complete and\ncommercialize our example applications.</p>\n<p>We can’t wait to see exciting results from <a href=\"http://Cortical.io\">Cortical.io</a> and Avik Partners, and\nI hope to share news of additional partnerships with you in the coming year.</p>\n<ol start=\"2\">\n<li>\n<p>We also released the\n<a href=\"http://numenta.com/numenta-anomaly-benchmark/\">Numenta Anomaly Benchmark (NAB)</a>,\nwhich was two years in the making.  We believe NAB offers the definitive way\nto assess the performance of algorithms for detecting anomalies in streaming\ndata.  We presented NAB v1.0 at two conferences and continue to get positive\nfeedback supporting the need for this benchmark. The launch was just the\nbeginning for NAB. We are actively working to collect additional data sources\nand publish additional algorithm results to incorporate in the next version.\nStay tuned for details on a NAB competition we are running this year in\nconjunction with the\n<a href=\"http://www.wcci2016.org/programs.php?id=home\">IEEE World Congress on Computational Intelligence</a>.</p>\n</li>\n<li>\n<p>This year also was a great year for our growing <a href=\"http://numenta.org/\">NuPIC</a>\ncommunity, which received a Top 3 ranking in a KDNuggets report on the\n<a href=\"http://www.kdnuggets.com/2015/06/top-20-python-machine-learning-open-source-projects.html\">Top 20 Python Machine Learning Open Source Projects</a>.\nWe increased the number of NuPIC followers by 750, put more of our technology\ninto open source, and had two hackathons that demonstrated the\n<a href=\"http://numenta.com/blog/htm-challenge-2015-results.html\">broad applicability of HTM applications</a>.\nI encourage you to\n<a href=\"https://www.youtube.com/playlist?list=PL3yXMgtrZmDqZc2m7qI3Kkbmxechp2-Zs\">view the videos</a>\nfrom our most recent hackathon.</p>\n</li>\n<li>\n<p>Perhaps one of the most exciting achievements of 2015 was the progress toward\na goal that we set at the beginning of the year: to <a href=\"/papers/\">publish major papers</a> about our work.\nWe have several papers undergoing peer review, which we’ve  made available\npre-publication on arxiv, an academic archive. I hope to be  sharing news of\npublication over the coming months, but in the meantime, you  can find all our\npapers on arxiv, here:</p>\n</li>\n</ol>\n<ul>\n<li>\n<p><a href=\"http://arxiv.org/abs/1511.00083\">Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex</a>\n(Preprint of journal submission) – Foundational paper describing core HTM\ntheory for sequence memory and its relationship to the neocortex. Written\nwith a neuroscience perspective, the paper explains why neurons need so many\nsynapses and how networks of neurons can form a powerful sequence learning\nmechanism.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1512.05463\">Continuous online sequence learning with an unsupervised neural network model</a>\n(Preprint of journal submission) – Analysis of HTM sequence memory applied\nto various sequence learning and prediction problems. Written with a machine\nlearning perspective, the paper contains some comparisons to statistical and\nDeep Learning techniques.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1510.03336\">Evaluating Real-time Anomaly Detection Algorithms</a> -\nthe Numenta Anomaly Benchmark  (Published conference paper) – This paper\ndiscusses how we should think about anomaly detection for streaming\napplications. It introduces a new open-source benchmark for detecting\nanomalies in real-time, time-series data.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1601.00720\">How do neurons operate on sparse distributed representations? A mathematical theory of sparsity, neurons and active dendrites</a>\n(Preprint of journal submission) – This paper describes a mathematical model\nfor quantifying the benefits and limitations of sparse representations in\nneurons and cortical networks.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1503.07469\">Properties of Sparse Distributed Representations and their Application to Hierarchical Temporal Memory</a> –\nAn earlier version of the above submission, this paper applies our\nmathematical model of sparse representations to practical HTM systems.</p>\n</li>\n<li>\n<p><a href=\"http://arxiv.org/abs/1505.02142\">Porting HTM Models to the Heidelberg Neuromorphic Computing Platform</a> –\nRecently there has been much interest in building custom hardware\nimplementations of HTM systems. This paper discusses one such scenario, and\nshows how to port HTM algorithms to analog hardware platforms such as the\none developed by the Human Brain Project.</p>\n</li>\n</ul>\n<p>As we kick off 2016, I am excited for what’s in store.  We are working to make\nNumenta technology even more accessible. We have several events and publications\nplanned. And we will remain dedicated to driving the creation of machine\nintelligence through neocortical principles.</p>\n<p>Best wishes for a Happy New Year.</p>\n"}
 
 /***/ },
-/* 1165 */
+/* 1167 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"This month, I am pleased to announce the Numenta Anomaly Benchmark competition offered in conjunction with the IEEE WCCI (World Congress on Computational Intelligence). This contest follows the release last fall of our","date":"2016/02/10","featured":false,"image":"../../../../images/numenta.png","org":"Director of Marketing","tags":"numenta anomaly benchmark competition research papers strata hadoop world","title":"Announcing the Numenta Anomaly Benchmark Competition","type":"post","body":"<h3>Numenta Newsletter — February 10, 2016</h3>\n<p>I’m excited to update you on what’s happening at Numenta this month, but before\nI do, I want to introduce myself, as some of you may notice a new name at the\nbottom of this newsletter. I joined Numenta as the Director of Marketing last\nfall, and I look forward to keeping you up to date on the latest Numenta news.</p>\n<p>This month, I am pleased to announce the\n<a href=\"http://numenta.org/nab/\">Numenta Anomaly Benchmark competition</a>,\noffered in conjunction with the\n<a href=\"http://www.wcci2016.org/programs.php?id=home\">IEEE WCCI (World Congress on Computational Intelligence)</a>.\nThis contest follows the release last fall of our\n<a href=\"http://numenta.com/numenta-anomaly-benchmark/\">Numenta Anomaly Benchmark</a>,\nwhich is designed to test algorithms that detect anomalies in\nstreaming data and reward early detection.</p>\n<p>The competition provides cash awards for two categories: algorithms and\ndatasets.  In the algorithms category, we’re looking for others to test and\npublish results of running anomaly detection algorithms on NAB.  For the dataset\ncategory, we’re looking for real-world, time-series data with labeled anomalies.\nWinning entrants that are participating in the WCCI contest will be announced\nduring official conference proceedings.  We are offering a parallel contest for\nthose who are not able to attend the conference.  We’ll award cash prizes for\nthe same two categories.  All contest entries are due by July 1, 2016, but we\nencourage you to submit early. For more details on the NAB competition, visit\n<a href=\"http://numenta.org/nab/\">http://numenta.org/nab/</a>. Our intention with NAB is to create a community around\nit and grow it into a widely used tool.  We hope the competition will be a fun\nway to add to the benchmark corpus and to position NAB as the standard benchmark\nfor anomaly detection in streaming data.</p>\n<p>In other news, we recently shared a summary of our published and submitted\nresearch papers.  You can now access all of these papers at\n<a href=\"http://numenta.com/papers/\">http://numenta.com/papers/</a>. I encourage you to bookmark the page as we will be\nupdating it with new material throughout the year.</p>\n<p>Lastly, I want to share that we will be participating in\n<a href=\"http://conferences.oreilly.com/strata/hadoop-big-data-ca\">Strata San Jose</a>,\nMarch 29-31. We’ll have a booth on the expo floor where you can meet our\nengineers and see our demonstration applications. We’ll also preview a new tool\nto enable broader experimentation with HTM, so stay tuned for more details.\nIf you’re planning on attending Strata, please stop by and see us.</p>\n"}
 
 /***/ },
-/* 1166 */
+/* 1168 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"I'm pleased to announce that we have released an iOS version of HTM for Stocks, a demonstration application that enables anybody to experience HTM technology firsthand. Previously available for Android only, HTM for Stocks now can be","date":"2016/02/18","featured":false,"image":"../images/image.png","org":"Director of Marketing","tags":"htm for stocks apple app store hierarchical temporal memory numenta","title":"HTM for Stocks available in the App Store","type":"post","body":"<h3>Numenta Newsletter — February 18, 2016</h3>\n<p>I’m pleased to announce that we have released an iOS version of <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.ext.htmstocks.ios%7D%7D\">HTM for Stocks</a></t>, a demonstration\napplication that enables anybody to experience HTM technology firsthand.\nPreviously available for Android only, HTM for Stocks now can be found in the\nApp Store.</p>\n<div class=\"text-center\">\n  <t render=\"hbs\">\n    [![Download from the App Store](/assets/img/icon/mobile/app-store-button.png)]({{site.paths.ext.htmstocks.ios}})\n  </t>\n</div>\n<p><t render=\"hbs\"><a href=\"%7B%7Bsite.paths.pages.htmstocks%7D%7D\">HTM for Stocks</a></t> continuously\nmonitors stock price, stock volume and Twitter volume for roughly 200 publicly\ntraded companies and alerts you in real time when something unusual is\nhappening. Results are displayed from most to least anomalous, so you can\ndetermine what is important and where to focus.</p>\n<p>This application not only makes detecting securities anomalies easy, but it also\nhighlights the value of HTM.  For example, you don’t have to know what you’re\nlooking for to find these real-time anomalies. HTM starts learning hundreds of\nmodels immediately.  In this case, it creates a model for three data streams per\nstock: stock price, stock volume and Twitter volume.  The application\ncontinuously compares a prediction of the next data point with the actual next\npoint and, if the overall behavior is unexpected, it reports an anomaly.  No\nhuman intervention is required. You don’t have to tune it or define parameters.\nYou don’t need to know anything about the stocks.  Because HTM for Stocks\ncontinuously learns, it adapts well to changes. For example, if a stock price\nspikes but then continues to stay at that level, HTM for Stocks learns the\nhigher price is a new normal.</p>\n<p>Perhaps one of the nicest benefits of this application is that it displays\nstocks from most to least anomalous activity. This ability to cut through vast\namounts of noisy data and surface only the companies where something unusual is\nhappening is extremely valuable and time-saving.   In this application, we’re\nmonitoring stocks, but you could use the same principles to find anomalous\nbehavior in many types of data streams:</p>\n<ul>\n<li>Machine sensor data - to do preventative maintenance and know which machines\nneed repairs</li>\n<li>Human behavior metrics – to identify suspicious activity</li>\n<li>GPS coordinates – to track vehicles and find deviations from an expected route</li>\n</ul>\n<p>Like all of our sample applications, we’ve made the <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.ext.htmstocks.source%7D%7D\">source code available</a></t>, and we hope to\nsee developers create derivative products.  If you are interested in developing\nHTM for Stocks into a commercial product, you can contact us at <t render=\"hbs\">\n<a href=\"mailto:%7B%7Bsite.email.sales%7D%7D\">{{site.email.sales}}</a></t>.</p>\n<p>In the meantime, we hope that our readers who are also iPhone users will\ndownload HTM for Stocks and give it a try.</p>\n"}
 
 /***/ },
-/* 1167 */
+/* 1169 */
 897,
-/* 1168 */
+/* 1170 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"Numenta has an ambitious mission: reverse-engineer the neocortex to understand how it works and apply those principles to software to create intelligent machines.  Because neuroscience is the foundation of everything we do","date":"2016/03/28","featured":false,"image":"../../../../images/numenta.png","org":"Director of Marketing","tags":"numenta neuron paper published peer reviewed neuroscience journal frontiers neural circuits neurons have thousands synapses theory sequence memory","title":"Neuron Paper Published in Peer-reviewed Neuroscience Journal","type":"post","body":"<h3>Numenta Newsletter — March 28, 2016</h3>\n<p>Numenta has an ambitious mission: reverse-engineer the neocortex to understand\nhow it works and apply those principles to software to create intelligent\nmachines.  Because neuroscience is the foundation of everything we do, it’s\nimportant to have our work published and critiqued in peer-reviewed neuroscience\njournals.  I’m excited to announce that Jeff Hawkins and Subutai Ahmad’s recent\nmanuscript, “<a href=\"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract\">Why Neurons Have Thousands of Synapses, A Theory of Sequence\nMemory in Neocortex</a>,”\nhas been accepted to Frontiers in Neural Circuits Journal, a publication devoted\nto research in neural circuits, serving the worldwide neuroscience community.</p>\n<p>We believe this paper will prove to be a significant contribution to brain\ntheory as well as introduce algorithms that will be important for machine\nintelligence.  The paper proposes a model of cortical neurons that explains why\nthey have thousands of synapses, why the synapses are segregated onto different\nparts of the dendrites, and how neurons integrate this input in a functionally\nmeaningful way.  There are many aspects of this neuron model that are novel.\nThe paper also provides a new and detailed theory of how networks of neurons\nthroughout the neocortex learn sequences and make predictions.</p>\n<p>This theory is radically different than the models used in most artificial\nneural networks such as deep learning and LSTM sequence memory. Deep learning\nand LSTM use artificial neurons that are simplistic and not biologically\naccurate.  Many deep learning models do not incorporate sequence memory at all.\nYet sequence memory is a critical component of the brain.  In fact, we believe\nthat learning and recalling sequences of patterns is the basic operation common\nto all brain function.</p>\n<p>Why is sequence memory so important? Because everything we as humans do is\nsequence based. When we hear someone talk, we take in a sequence of words; when\nwe look at something, our eyes saccade, moving quickly over the image, leading\nto a sequence of inputs from the retina; when we move our bodies, we’re\noutputting a sequence of motor commands, which causes changes in our inputs. It\nis this understanding of how sequence memory works in the brain that allows our\nsoftware to perform continuous, unsupervised learning without any training data.</p>\n<p>In case you are not familiar with academic publishing, being published in a\njournal like Frontiers is not as simple as writing and submitting your paper.\nIt involves a meticulous, multi-step review process where independent reviewers\nprovide feedback and request changes before accepting or denying the paper.\nThis paper is ambitious in how many new ideas it introduces, and took over a\nyear from when we first decided to write it to now, when it has been accepted.</p>\n<p>I invite you to read <a href=\"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract\">the paper</a>,\nand for those that want a less technical overview, I encourage you to read\n<a href=\"https://www.technologyreview.com/s/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/\">this article by MIT Tech Review</a>,\nwhich summarizes the findings of our pre-published version.</p>\n<p>Speaking of papers, we also recently completed a new white paper that addresses\none of the most popular topics that we’re asked when people are learning about\nNumenta’s HTM theory: encoders.  The paper, <a href=\"http://arxiv.org/abs/1602.05925\">Encoding Data for HTM Systems</a>,\nwritten by Scott Purdy, our Director of Engineering, describes how to encode\ndata into Sparse Distributed Representations (SDRs) so that the data can be used\nin HTM systems.  Scott reviews several existing encoders, which are available\nthrough our open source project called <a href=\"http://numenta.org\">NuPIC</a>, and explains\nthe requirements for creating encoders for new types of data.</p>\n<p>Lastly, for any of our readers that will be attending <a href=\"/events/strata-hadoop-world-big-data-conference-2016.html\">Strata + Hadoop World\n2016 in San Jose, CA</a>,\nplease stop by and say Hi.  We will be at Booth 540, along with representatives\nfrom our partners <a href=\"http://cortical.io\">Cortical.io</a> and\n<a href=\"http://grokstream.com\">Avik Partners</a>, giving demos and overviews on the\ncompany, our technology and our latest applications.</p>\n"}
 
 /***/ },
-/* 1169 */
+/* 1171 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"We receive many requests for better documentation of our work, and as our research has progressed, we know that some of our most popular papers are now outdated. As a result, we have been working for some time on creating a living","date":"2016/05/11","featured":false,"image":"../../../../images/numenta.png","org":"Director of Marketing","tags":"numenta newsletter may 2016 bami biological and machine intelligence living online book machine intelligence htm hierarchical temporal memory","title":"Announcing BAMI: Biological and Machine Intelligence, a Living Online Book","type":"post","body":"<h3>Numenta Newsletter — May 11, 2016</h3>\n<p>We receive many requests for better documentation of our work, and as our\nresearch has progressed, we know that some of our most popular papers are now\noutdated.  As a result, we have been working for some time on creating a “living\nbook”, a cohesive body of documentation that provides readers with the “A to Z”\nof HTM, and that can be updated as our work progresses.  I am pleased to\nannounce that we have released the first four chapters of this book, called\n<a href=\"/biological-and-machine-intelligence/\">Biological and Machine Intelligence (BAMI)</a>. We\nare calling this release v.4 to represent the 4 chapters available. We include a\nlist of future chapters that we hope to add, as well as links to research papers\nand supporting material. Material that is replaced by BAMI will be moved to the\narchive section of the <a href=\"/learn/\">learning center</a> on our web site.</p>\n<p>In addition to publishing peer reviewed papers, we hope to build on BAMI to\nbecome the principal resource for those who want to learn about HTM.  Over time,\nwe will include problem sets and lecture notes, making it particularly\nappropriate for academics who intend to create courses teaching HTM theory.</p>\n<p>For those who are interested, we’ve created a twitter account called\n<a href=\"https://twitter.com/NumentaBAMI\">@NumentaBAMI</a>, which we will only use for BAMI\nupdates.  If you’d like to be alerted when we add or revise a chapter, I\nencourage you to follow this account. We’ve designed BAMI such that each chapter\nincludes a revision history, so you will always be able to see what has changed.\nWe hope you find BAMI to be a useful resource, and we\n<a href=\"https://numenta.wufoo.com/forms/biological-and-machine-intelligence-bami/\">welcome your feedback and comments</a>.</p>\n<p>In addition to our BAMI news, we have some exciting events coming up this month\nas well. On May 12, Jeff Hawkins will be the featured guest at a\n<strong><a href=\"http://www.meetup.com/NeuroTechSF/events/230385690/\">NeurotechX meetup in San Francisco</a></strong>.\nCo-founded by one of our engineers, <a href=\"mailto:mleborgne@numenta.com\">Marion LeBorgne</a>,\nNeurotechX is a non-profit organization whose mission is to build a strong,\nglobal neurotechnology community by providing key resources and learning\nopportunities.  Jeff will give a talk titled &quot;What is Intelligence, that a\nMachine Might Have Some?”  For those that are not in the Bay Area, you can watch\nthe event live, and ask questions in the chat room.</p>\n<p>On May 19, Subutai Ahmad will be giving a talk titled, “Detecting Anomalies in\nStreaming Data – Real-time Algorithms for Real-world Applications” at\n<strong><a href=\"http://data.bythebay.io/\">Data By the Bay 2016</a></strong>. Spanning 150 talks over\n5 days, Data By The Bay is a by-data engineers, for-data engineers developer and\ndata scientist conference. If you’re interested in attending, you\n<a href=\"https://www.universe.com/embed/listings/BQJX8H/bookings/new?modal=1&amp;discount_code=NUMENTA10\">can get a 10% discount with the code NUMENTA10</a>.</p>\n<p>Also on May 19, I will be speaking at the\n<strong><a href=\"https://theinnovationenterprise.com/summits/business-analytics-innovation-summit-chicago-2016\">Business Analytics Innovation Summit</a></strong>\nin Chicago.  As a sponsor of this event, we will have the opportunity to\nintroduce and demonstrate our technology and its applications to a\nbusiness-focused audience over the course of two days.</p>\n<p>In partner news, <a href=\"http://Cortical.io\">Cortical.io</a> announced new releases to their products, which\ninclude more accurate results in the comparison of text similarity. This\nannouncement comes on the heels of an independent academic study that concluded\n<a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic Folding approach helps improve the prediction of stock\nreturn correlations. Visit <a href=\"http://cortical.io\">their website</a> for more details.</p>\n<p>Lastly, our Open Source Flag Bearer, <a href=\"mailto:mtaylor@numenta.com\">Matt Taylor</a>,\nhas created a new YouTube series called\n<a href=\"https://www.youtube.com/playlist?list=PL3yXMgtrZmDqhsFQzwUC9V8MeeVOQ7eZ9\">HTM School</a>.\nDesigned for the layperson, Matt breaks down the basics of various HTM topics in\nbite-size videos.  If you haven’t been to HTM School, be sure to check it out.</p>\n"}
 
 /***/ },
-/* 1170 */
+/* 1172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b32a2e03ff36e30f0feaedc627b4e034.png";
 
 /***/ },
-/* 1171 */
+/* 1173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8853868184591f8e767415d473e7f30e.png";
 
 /***/ },
-/* 1172 */
+/* 1174 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Christy Maver","brief":"Since I arrived at Numenta 9 months ago, one of the most common requests I’ve heard is that people want an easy way to experiment with HTM without having to dive deep into our code and algorithms","date":"2016/06/28","featured":false,"image":"../images/htm-studio.png","org":"Director of Marketing","tags":"numenta releases htm studio desktop application anomaly detection htm school nupic","title":"Numenta Releases HTM Studio Desktop Application","type":"post","body":"<h3>Numenta Newsletter — June 28, 2016</h3>\n<p>Since I arrived at Numenta 9 months ago, one of the most common requests I’ve\nheard is that people want an easy way to experiment with <a href=\"http://numenta.com/#technology\">HTM</a> without having\nto dive deep into our code and algorithms. Well, I’m happy to share that this\nweek we addressed that request when we announced the <a href=\"http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio\">release of HTM Studio</a>,\na desktop tool that allows you to test whether HTM finds interesting anomalies\nin your own numeric, time-series data.</p>\n<p>The ability to detect anomalies as soon as possible in streaming data has value\nacross a wide variety of applications – from health monitoring to preventative\nmaintenance to geospatial tracking and more. Yet early detection is easier said\nthan done, and traditional methods like thresholds often miss the subtle\nanomalies common within streaming data. Because HTM learns continuously and\nwithout supervision, it finds these types of anomalies very well.</p>\n<p><a href=\"http://numenta.com/htm-studio/\">HTM Studio</a> provides a way for anyone, even non-technical people, to\nexperiment with HTM for anomaly detection on their own data, without having to\nupload anything to the cloud. After downloading HTM Studio, you can import a\nlocal csv file, and with a few clicks, HTM analyzes your data and displays any\nanomalies it finds.  For those who don’t have streaming data sets, HTM Studio\ncomes with pre-loaded sample data.</p>\n<p>We hope that this release encourages broad experimentation with our technology.\nTry it on your home automation data to uncover anomalies in your usage patterns,\nor your sleep data to find abnormalities in your sleep-wake cycles, or your\ncompany’s sensors to see where unusual activity is occurring in the office. All\nyou need is a csv file with one Date/Time column, one header row and at least\n400 rows of numeric data listed in chronological order.  For more on how to\nensure your data is in the right format for HTM Studio, watch this\n<a href=\"http://youtu.be/f80ewxLvgks\">short tutorial video</a>.  HTM Studio provides an easy way to do a proof of\nconcept before fully implementing or deploying HTM. It also removes the\ntechnical hurdle and steep learning curve that typically accompanies HTM\nexperimentation.</p>\n<p>As a company with a scientific mission to understand how the brain learns, it’s\nbeen hard for us to make this technology accessible, which is why we are so\nproud of this release. If you’d like to try it, you can download the Windows or\nMac version, view our tutorials and give us feedback at\n<a href=\"http://numenta.com/htm-studio/\">http://numenta.com/htm-studio/</a>.  Feel free to write us about interesting\nanomalies that you find – we hope to share guest blog posts of the best ones.</p>\n<p>While many of you are likely planning summer trips, Numenta will be traveling\nthe globe this summer as well.  Our Research Engineer, <a href=\"mailto:ycui@numenta.com\">Yuwei Cui</a>, just\nreturned from speaking at two academic conferences in Greece (<a href=\"http://numenta.com/events/dendritic-anatomy-molecules-and-function-heraklion-crete.html\">Dendrite</a> and\n<a href=\"http://numenta.com/events/areadne-2016-research-in-encoding-and-decoding-of-neural-ensembles.html\">Areadne</a>), and will be in Vancouver, BC next month to speak at the\n<a href=\"http://numenta.com/events/ieee-wcci-2016.html\">IEEE World Congress on Computational Intelligence</a>. <a href=\"mailto:sahmad@numenta.com\">Subutai Ahmad</a>, VP\nof Research, is headed to speak at the <a href=\"http://numenta.com/events/the-playfair-ai-summit-2016.html\">Playfair AI Summit</a> in London, before\nreturning to speak in San Francisco at the <a href=\"http://numenta.com/events/data-science-summit.html\">Data Science Summit</a>.  We’ll be\nexhibiting at Data Science Summit as well, so if you’re planning to attend, be\nsure to stop by our table for a demo of HTM Studio.</p>\n<p>For those of you who follow our open source project, you may have seen that we\nmigrated our HTM mailing lists to the <a href=\"https://discourse.numenta.org/\">HTM Forum</a>.  With its clean,\nintuitive design, this new forum provides a better platform for fostering\ndiscussions as the community continues to grow. It categorizes content and\nallows you to choose which topics to follow. Moderated by our open source flag\nbearer, <a href=\"mailto:matt@numenta.org\">Matt Taylor</a>, HTM Forum is open to anyone, so I encourage you to\nread the posts and join the conversation at <a href=\"https://discourse.numenta.org/\">https://discourse.numenta.org/</a>.</p>\n<p>In other news, our partners have some exciting updates to share. <a href=\"http://www.grokstream.com/\">Grok</a> has\nmade several product improvements over the past few months. Grok now supports\nworkflow automation, features improvements to the anomaly dashboard and includes\nmany new design enhancements.  As Grok continues to grow, the company is looking\nto expand as well.  If you know anyone who would make a great community manager\nor full stack developer, particularly in the Southern California area, contact\n<a href=\"mailto:tarun@grokstream.com\">tarun@grokstream.com</a>.</p>\n<p><a href=\"http://Cortical.io\">Cortical.io</a> was recently named an IDC Innovator for the\n<a href=\"http://www.cortical.io/news.html#lead_1\">2016 Machine-Learning based Text Analytics market</a>. Much like Numenta,\n<a href=\"http://Cortical.io\">Cortical.io</a> has been traveling the globe and will be speaking at several\nupcoming <a href=\"http://www.cortical.io/company/events/\">events</a>, including the <a href=\"http://conferences.oreilly.com/artificial-intelligence/ai-deep-learning-bots-ny/public/content/about\">AI O’Reilly Conference</a> in New York\nSeptember 26-27.</p>\n<p>Lastly, we are in the final countdown of our Numenta Anomaly Benchmark (NAB)\ncompetition. This <a href=\"https://youtu.be/Wdr_s9Bdi3I\">short video</a> explains how easy it is to win up to $5,000.</p>\n"}
 
 /***/ },
-/* 1173 */
-755,
-/* 1174 */
-756,
 /* 1175 */
+755,
+/* 1176 */
+756,
+/* 1177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97632,7 +98840,7 @@
 	
 	var _FormLabel2 = _interopRequireDefault(_FormLabel);
 	
-	var _FormRow = __webpack_require__(676);
+	var _FormRow = __webpack_require__(677);
 	
 	var _FormRow2 = _interopRequireDefault(_FormRow);
 	
@@ -97652,7 +98860,7 @@
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
-	var _index = __webpack_require__(1176);
+	var _index = __webpack_require__(1178);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -97734,111 +98942,111 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1176 */
+/* 1178 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"signup":"index_signup_1lt tachyons_fr_2Nn","field":"index_field_2nI tachyons_h2_1bn"};
 
 /***/ },
-/* 1177 */,
-/* 1178 */
-1159,
-/* 1179 */
-1160,
+/* 1179 */,
 /* 1180 */
+1161,
+/* 1181 */
+1162,
+/* 1182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1cc1291c894be6ba5a90f44c1847a392.png";
 
 /***/ },
-/* 1181 */
+/* 1183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3c6b5b0070b0851948eb797d627d48f0.png";
 
 /***/ },
-/* 1182 */
+/* 1184 */
 587,
-/* 1183 */
+/* 1185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3edc9380b660a8bc5b6ce1e92c5dcc2d.png";
 
 /***/ },
-/* 1184 */
+/* 1186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "46689083e0bb2730103c6a0da82beb34.png";
 
 /***/ },
-/* 1185 */
+/* 1187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "31d694f4a88a96f7c4768b371347f526.png";
 
 /***/ },
-/* 1186 */
+/* 1188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b0a4bef758afdc080d6f4110bc9971de.png";
 
 /***/ },
-/* 1187 */
+/* 1189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d66c0791dd3a9cd8aff7aefcd82d00d2.png";
 
 /***/ },
-/* 1188 */
+/* 1190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7ded7cfe8e77e6bb12701348e45fbcdf.png";
 
 /***/ },
-/* 1189 */
+/* 1191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4a4128b63c075ebe51fca8f8e31b4b95.png";
 
 /***/ },
-/* 1190 */
+/* 1192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b985701528494a5f703277f8b48ae04f.png";
 
 /***/ },
-/* 1191 */
+/* 1193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bdec463600c284f9e7587ebf0d8695f6.png";
 
 /***/ },
-/* 1192 */
+/* 1194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b011bbf88a1de74046f862342469b4aa.png";
 
 /***/ },
-/* 1193 */
+/* 1195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "239beb0e8a848984428c3f123cc7c4f1.png";
 
 /***/ },
-/* 1194 */
+/* 1196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4cf895d8321fec60a3a876bb4227acf3.png";
 
 /***/ },
-/* 1195 */
+/* 1197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f85bd1d006e5b31a7674504ecbd30c5a.png";
 
 /***/ },
-/* 1196 */
+/* 1198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97847,19 +99055,19 @@
 	  value: true
 	});
 	
-	var _cloudDownload = __webpack_require__(1197);
+	var _cloudDownload = __webpack_require__(1199);
 	
 	var _cloudDownload2 = _interopRequireDefault(_cloudDownload);
 	
-	var _github = __webpack_require__(716);
+	var _github = __webpack_require__(717);
 	
 	var _github2 = _interopRequireDefault(_github);
 	
-	var _filePdfO = __webpack_require__(722);
+	var _filePdfO = __webpack_require__(723);
 	
 	var _filePdfO2 = _interopRequireDefault(_filePdfO);
 	
-	var _slideshare = __webpack_require__(1198);
+	var _slideshare = __webpack_require__(1200);
 	
 	var _slideshare2 = _interopRequireDefault(_slideshare);
 	
@@ -97907,47 +99115,47 @@
 	
 	var _Video2 = _interopRequireDefault(_Video);
 	
-	var _compare = __webpack_require__(1178);
+	var _compare = __webpack_require__(1180);
 	
 	var _compare2 = _interopRequireDefault(_compare);
 	
-	var _datasheet = __webpack_require__(1180);
+	var _datasheet = __webpack_require__(1182);
 	
 	var _datasheet2 = _interopRequireDefault(_datasheet);
 	
-	var _detail = __webpack_require__(1182);
+	var _detail = __webpack_require__(1184);
 	
 	var _detail2 = _interopRequireDefault(_detail);
 	
-	var _equations = __webpack_require__(1183);
+	var _equations = __webpack_require__(1185);
 	
 	var _equations2 = _interopRequireDefault(_equations);
 	
-	var _heartbeat = __webpack_require__(1187);
+	var _heartbeat = __webpack_require__(1189);
 	
 	var _heartbeat2 = _interopRequireDefault(_heartbeat);
 	
-	var _math = __webpack_require__(1189);
+	var _math = __webpack_require__(1191);
 	
 	var _math2 = _interopRequireDefault(_math);
 	
-	var _github3 = __webpack_require__(1185);
+	var _github3 = __webpack_require__(1187);
 	
 	var _github4 = _interopRequireDefault(_github3);
 	
-	var _scoreboard = __webpack_require__(1191);
+	var _scoreboard = __webpack_require__(1193);
 	
 	var _scoreboard2 = _interopRequireDefault(_scoreboard);
 	
-	var _videoMlconf = __webpack_require__(1192);
+	var _videoMlconf = __webpack_require__(1194);
 	
 	var _videoMlconf2 = _interopRequireDefault(_videoMlconf);
 	
-	var _videoNab = __webpack_require__(1194);
+	var _videoNab = __webpack_require__(1196);
 	
 	var _videoNab2 = _interopRequireDefault(_videoNab);
 	
-	var _index = __webpack_require__(1199);
+	var _index = __webpack_require__(1201);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -98390,7 +99598,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1197 */
+/* 1199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -98443,7 +99651,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1198 */
+/* 1200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -98496,23 +99704,23 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1199 */
+/* 1201 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"columns":"index_columns_3vh theme_layout-columns_32i tachyons_cf_g7R tachyons_mb3_1mV tachyons_w-100_1xC","content":"index_content_3Kz theme_layout-content_3wC tachyons_fl_wJK tachyons_w-100_1xC tachyons_w-60-ns_3x_","aside":"index_aside_ktE tachyons_mt2_3dR tachyons_tc_3ab theme_layout-aside_238 tachyons_fr_2Nn tachyons_pl4-m_kHN tachyons_w-100_1xC tachyons_w-40-ns_2LN"};
 
 /***/ },
-/* 1200 */,
-/* 1201 */
-733,
-/* 1202 */
+/* 1202 */,
+/* 1203 */
+734,
+/* 1204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "30e97fcd7264c3188222fe2a9ee71cad.png";
 
 /***/ },
-/* 1203 */
+/* 1205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -98525,13 +99733,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(715);
+	var _Section = __webpack_require__(716);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -98566,7 +99774,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -98584,13 +99792,13 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1204 */
+/* 1206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ec6c462a94215cefb3daf07b1a9209b8.png";
 
 /***/ },
-/* 1205 */
+/* 1207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -98603,13 +99811,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(719);
+	var _Section = __webpack_require__(720);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -98644,7 +99852,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -98661,115 +99869,115 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1206 */
+/* 1208 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Chetan Surpur","brief":"This video talk on Applications of Hierarchical Temporal Memory (HTM) was delivered at a Numenta workshop.","date":"2014/10/17","image":null,"link":null,"media":"video","org":"Software Engineer","section":"detail","sort":"e","tags":"numenta hierarchical temporal memory htm applications","title":"Applications of Hierarchical Temporal Memory (HTM)","type":"post","body":"<p>This video talk on Applications of Hierarchical Temporal Memory (HTM) was\ndelivered at a Numenta workshop.</p>\n<h4>Talk Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/900nFOfzp2E\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/applications-of-htm-workshop\">Applications of Hierarchical Temporal Memory</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45034552\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/applications-of-htm-workshop\" title=\"Applications of Hierarchical Temporal Memory (HTM)\" target=\"_blank\">Applications of Hierarchical Temporal Memory (HTM)</a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1207 */
+/* 1209 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"This video is replaced by the Numenta License Guide","date":"2014/10/17","image":null,"link":null,"media":"video","org":"Celeste Baranski & Matt Taylor","section":"archive","sort":"a","tags":"numenta getting started hierarchical temporal memory htm technology nupic","title":"Getting Started With Numenta Technology","type":"post","body":"<p>This video is replaced by the\n<a href=\"/assets/pdf/apps/licensing-guide.pdf\">Numenta License Guide</a>.</p>\n<h4>Video</h4>\n<p>Presented by:</p>\n<ul>\n<li>Celeste Baranski, VP of Engineering, Numenta</li>\n<li>Matthew Taylor, Open Source Manager, Numenta</li>\n</ul>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/5HD9NnXpRus\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/getting-started-with-numenta-technology\">Getting Started with Numenta Technology</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45034781\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/getting-started-with-numenta-technology\" title=\"Getting Started with Numenta Technology \" target=\"_blank\">Getting Started with Numenta Technology </a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1208 */
+/* 1210 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Rahul Agarwal","brief":"This video tutorial follows the 2011 HTM whitepaper, and is largely obsolete. The content of this tutorial will be replace by HTM School (over time).","date":"2013/08/03","image":null,"link":null,"media":"video","org":"Software Engineer","section":"archive","sort":"c","tags":"htm hierarchical temporal memory tutorial algorithm basics","title":"HTM Learning Algorithm Tutorial - Algorithm Basics","type":"post","body":"<p>This video tutorial follows the 2011 HTM whitepaper, and is largely obsolete.\nThe content of this tutorial will be replace by\n<a href=\"https://www.youtube.com/watch?v=XMB0ri4qgwc\">HTM School</a> (over time).</p>\n<p><strong>Note:</strong> This video refers to the HTM learning algorithm as the Cortical\nLearning Algorithm, or CLA; we have recently decided to sunset this term.</p>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/z6r3ekreRzY\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"}
 
 /***/ },
-/* 1209 */
+/* 1211 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"There have been changes in our thinking, in algorithm implementation, in terminology and in other areas since this paper was written, rendering part of this paper obsolete. Much of this paper has been replaced by BAMI and the current white papers, and we will continue to provide updated material in subsequent releases of BAMI.","date":"2011/09/12","image":null,"link":"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf","media":"paper","org":"Co-Founder","section":"archive","sort":"b","tags":"hierarchical temporal memory htm jeff hawkins whitepaper pdf","title":"Hierarchical Temporal Memory (HTM) Whitepaper","type":"post","body":"<p>There have been changes in our thinking, in algorithm implementation, in\nterminology and in other areas since this paper was written, rendering part of\nthis paper obsolete. Much of this paper has been replaced by\n<a href=\"/biological-and-machine-intelligence/\">BAMI</a> and the\n<a href=\"/papers/\">current white papers</a>, and we will continue to provide updated\nmaterial in subsequent releases of\n<a href=\"/biological-and-machine-intelligence/\">BAMI</a>.</p>\n<h4>About</h4>\n<p>At the heart of Hierarchical Temporal Memory (HTM), our machine intelligence\ntechnology, are time-based learning algorithms that store and recall spatial and\ntemporal patterns. This paper describes how the learning algorithms work and\ntheir biological mapping.</p>\n<p><strong>Note:</strong> This paper refers to the HTM learning algorithm as the Cortical\nLearning Algorithm, or CLA; we have recently decided to sunset this term as our\ntechnology has evolved.</p>\n<blockquote>\n<p><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf\">Download Whitepaper</a></p>\n</blockquote>\n<h4>Translations Available</h4>\n<table>\n<thead>\n<tr>\n<th>Language</th>\n<th>Code</th>\n<th>Translator</th>\n<th>Link</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Chinese</td>\n<td>CN</td>\n<td>Yu Tianxiang</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-cn.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>French</td>\n<td>FR</td>\n<td>Laurent Julliard</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-fr.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>German</td>\n<td>DE</td>\n<td>Ingmar Baetge</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-de.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Japanese</td>\n<td>JP</td>\n<td>Akihiro Yoshikawa</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-jp.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Korean</td>\n<td>KR</td>\n<td>Jihoon Oh</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-kr.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Portuguese</td>\n<td>PT</td>\n<td>David Ragazzi</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-pt.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Russian</td>\n<td>RU</td>\n<td>Mikhaile Netov</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-ru.pdf\">Download</a></td>\n</tr>\n<tr>\n<td>Spanish</td>\n<td>ES</td>\n<td>Garikoitz Lerma Usabiaga</td>\n<td><a href=\"/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-es.pdf\">Download</a></td>\n</tr>\n</tbody>\n</table>\n"}
 
 /***/ },
-/* 1210 */
+/* 1212 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"These two videos are similar, and provide an overview of HTM and associated topics by Numenta’s founder, Jeff Hawkins. The talks have slightly different emphasis. For instance, the first video has more details on SDRs.","date":"2014/11/22","image":null,"link":null,"media":"video","org":"Co-Founder","section":"overview","sort":"b","tags":"numenta htm videos heirarchical temporal memory brain machine intelligence jeff hawkins","title":"HTM Videos from Jeff Hawkins","type":"post","body":"<p>These two videos are similar, and provide an overview of HTM and associated\ntopics by Numenta’s founder, Jeff Hawkins. The talks have slightly different\nemphasis (for instance, the first video has more details on SDRs). At the time\nof BAMI 0.4 release, we are currently rethinking the role of hierarchy and the\nconnections between the various layers of the neocortex, so the comments on\nthese subjects in the videos are out of date.</p>\n<hr>\n<h2>#1 What The Brain Says About Machine Intelligence</h2>\n<p>Video talk on What The Brain Says About Machine Intelligence by Jeff Hawkins,\nNumenta Co-Founder. Nov 2014 in Redwood City, CA.</p>\n<h4>Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/izO2_mCvFaw\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"//www.slideshare.net/numenta/what-the-brain-says-about-machine-intelligence\">What the Brain says about Machine Intelligence</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/44507410\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen></iframe>\n</div>\n<hr>\n<h2>#2 Principles of HTM - Foundations of Machine Intelligence</h2>\n<p>Video talk on Hierarchical Temporal Memory (HTM) and the Foundations of Machine\nIntelligence by Jeff Hawkins, Numenta Co-Founder. Numenta Workshop Oct 2014 in\nRedwood City, CA.</p>\n<h4>Talk</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/6ufPpZDmPKA\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Q &amp; A Session</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/EU2Vm-VlfEk\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/2014-10-17-numenta-workshop\">Principles of Hierarchical Temporal Memory</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45033943\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/2014-10-17-numenta-workshop\" title=\"Principles of Hierarchical Temporal Memory - Foundations of Machine Intelligence\" target=\"_blank\">Principles of Hierarchical Temporal Memory - Foundations of Machine Intelligence</a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1211 */
+/* 1213 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"This webinar provides an overview of the current state of HTM, with an emphasis on the software implementation and example applications. The Q&A session at the end of the webinar answers some popular user questions.","date":"2016/04/26","image":null,"link":null,"media":"video","org":"Christy Maver & Scott Purdy","section":"overview","sort":"d","tags":"numenta webinar machine intelligence streaming data real time anomaly detection","title":"Machine Intelligence with Streaming Data Webinar","type":"post","body":"<h2>Machine Intelligence with Streaming Data</h2>\n<h3>A new approach for anomaly detection and time-based learning</h3>\n<p>This webinar provides an overview of the current state of HTM, with an emphasis\non the software implementation and example applications. The Q&amp;A session at the\nend of the webinar answers some popular user questions.</p>\n<p>Presented by:</p>\n<ul>\n<li>Christy Maver (Marketing Director, Numenta)</li>\n<li>Scott Purdy (Director of Development, Numenta)</li>\n</ul>\n<h4>Video</h4>\n<iframe src=\"https://player.vimeo.com/video/164320064?title=0&byline=0&portrait=0\" width=\"640\" height=\"481\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"https://vimeo.com/164320064\">Machine Intelligence with Streaming Data</a> from <a href=\"https://vimeo.com/formspider\">ProHuddle</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>\n<h4>About</h4>\n<p>Links:</p>\n<ul>\n<li><a href=\"http://www.prohuddle.com/webinars/ChristyAndScott/Machine_Intelligence_with_Streaming_Data_A_New_Approach.php\">Main Event Website</a></li>\n<li><a href=\"/events/numenta-webinar.html\">Numenta Event Page</a></li>\n</ul>\n<p>Across every industry, we are seeing an exponential increase in the availability\nof streaming, time-series data. The real-time detection of anomalies has\nsignificant practical application. Finding anomalies in such data can be very\ndifficult, given the need to process data in real time, and learn while\nsimultaneously making predictions. With the increasing variety of streaming data\nsources, automated deployment—without manual parameter tuning—is also becoming\nimportant.</p>\n"}
 
 /***/ },
-/* 1212 */
+/* 1214 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins & Sandra Blakeslee","brief":"The core concepts in Hierarchical Temporal Memory (HTM) theory were first described in this book titled On Intelligence, which was written by Jeff Hawkins with the help of Sandra Blakeslee.","date":"2005/07/14","image":null,"link":"http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&qid=1363894040&sr=8-1&keywords=on+intelligence","media":"book","org":"Co-Founder & Co-Author","section":"overview","sort":"a","tags":"on intelligence jeff hawkins htm hierarchical temporal memory","title":"On Intelligence (Book)","type":"post","body":"<p>The core concepts in Hierarchical Temporal Memory (HTM) theory were first\ndescribed in this book titled <strong>On Intelligence</strong>, which was written by Jeff\nHawkins with the help of Sandra Blakeslee. This book still provides background\nand a great introduction to our theory, though many of the ideas in chapter 6\n(“How the Cortex Works”) are currently being revised.</p>\n<p><strong>Buy Book</strong>: <a href=\"http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&amp;qid=1363894040&amp;sr=8-1&amp;keywords=on+intelligence\">Purchase on Amazon</a></p>\n<p><strong>Note:</strong> This book refers to the HTM learning algorithm as the Cortical\nLearning Algorithm, or CLA; we have recently decided to sunset this term as our\ntechnology has evolved.</p>\n<h4>Translations Available</h4>\n<p>Chinese, Finnish, French, German, Hebrew, Indonesian, Italian, Korean, Japanese,\nPolish, <a href=\"/assets/pdf/on-intelligence/on-intelligence-pt.pdf\">Portuguese</a>,\nRussian, <a href=\"/assets/pdf/on-intelligence/on-intelligence-es.pdf\">Spanish</a>,\nVietnamese.</p>\n"}
 
 /***/ },
-/* 1213 */
+/* 1215 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Scott Purdy","brief":"This video talk on the Science of Anomaly Detection was delivered at a Numenta workshop and covers the application of HTM to anomaly detection in streaming data.","date":"2014/10/17","image":null,"link":null,"media":"video","org":"Engineering Manager","section":"detail","sort":"f","tags":"numenta science of anomaly detection","title":"Science of Anomaly Detection","type":"post","body":"<p>This video talk on the Science of Anomaly Detection was delivered at a Numenta\nworkshop and covers the application of HTM to anomaly detection in streaming\ndata.</p>\n<h4>Talk Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/I5lSEHvngaI\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/science-of-anomaly-detection\">Science of Anomaly Detection</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45034949\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen></iframe>\n  <div style=\"margin-bottom:5px\">\n    <strong>\n      <a href=\"//www.slideshare.net/numenta/science-of-anomaly-detection\" title=\"Science of Anomaly Detection\">Science of Anomaly Detection</a>\n    </strong> from\n    <strong>\n      <a href=\"//www.slideshare.net/numenta\">Numenta</a>\n    </strong>\n  </div>\n</div>\n<h4>Whitepaper</h4>\n<p>Numenta PDF Whitepaper:\n<a href=\"/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf\">Science of Anomaly Detection</a></p>\n"}
 
 /***/ },
-/* 1214 */
+/* 1216 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad","brief":"This video talk on Sparse Distributed Representations (SDR) covers a subset of the topics in the BAMI chapter on SDRs.","date":"2014/10/17","image":null,"link":null,"media":"video","org":"VP Research","section":"detail","sort":"g","tags":"numenta sparse distributed representations sdr brain data structure","title":"Sparse Distributed Representations - Our Brain's Data Structure","type":"post","body":"<p>This video talk on Sparse Distributed Representations (SDR) covers a subset of\nthe topics in the <a href=\"/biological-and-machine-intelligence/\">BAMI</a> chapter on SDRs.</p>\n<h4>Talk Video</h4>\n<div class=\"video-container media-border\">\n  <iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/LbZtc_zWBS4\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<h4>Slides</h4>\n<p>Link: <a href=\"http://www.slideshare.net/numenta/sparse-distributed-representations-sdr\">Sparse Distributed Representations</a>\nfrom <a href=\"//www.slideshare.net/numenta\">Numenta</a>.</p>\n<div class=\"video-container media-border\">\n  <iframe src=\"//www.slideshare.net/slideshow/embed_code/45035404\" width=\"425\" height=\"355\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/numenta/sparse-distributed-representations-sdr\" title=\"Sparse Distributed Representations: Our Brain&#x27;s Data Structure \" target=\"_blank\">Sparse Distributed Representations: Our Brain&#x27;s Data Structure </a> </strong> from <strong><a href=\"//www.slideshare.net/numenta\" target=\"_blank\">Numenta</a></strong> </div>\n</div>\n"}
 
 /***/ },
-/* 1215 */
+/* 1217 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Yuwei Cui, Subutai Ahmad, Jeff Hawkins & Chetan Surpur","brief":"Analysis of HTM sequence memory applied to various sequence learning and prediction problems. Written with a machine learning perspective, the paper contains some comparisons to statistical and Deep Learning techniques.","category":"machine-learning","date":"2015/12/17","image":null,"link":"http://arxiv.org/abs/1512.05463","org":"Preprint of journal submission","sort":"d","title":"Continuous Online Sequence Learning with an Unsupervised Neural Network Model","body":""}
 
 /***/ },
-/* 1216 */
+/* 1218 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Scott Purdy","brief":"Hierarchical Temporal Memory (HTM) is a biologically inspired machine intelligence technology that mimics the architecture and processes of the neocortex. In this white paper we describe how to encode data as Sparse Distributed Representations (SDRs) for use in HTM systems. We explain several existing encoders, which are available through the open source project called NuPIC, and we discuss requirements for creating encoders for new types of data.","category":"machine-learning","date":"2016/02/18","link":"http://arxiv.org/abs/1602.05925","org":"Research Paper","sort":"p","title":"Encoding Data for HTM Systems","body":""}
 
 /***/ },
-/* 1217 */
+/* 1219 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alexander Lavin & Subutai Ahmad","brief":"14th IEEE ICMLA 2015 - This paper discusses how we should think about anomaly detection for streaming applications. It introduces a new open-source benchmark for detecting anomalies in real-time, time-series data.","category":"machine-learning","date":"2015/10/12","image":null,"link":"http://arxiv.org/abs/1510.03336","org":"Published conference paper","sort":"g","title":"Evaluating Real-time Anomaly Detection Algorithms - the Numenta Anomaly Benchmark","body":""}
 
 /***/ },
-/* 1218 */
+/* 1220 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad & Jeff Hawkins","brief":"This paper describes a mathematical model for quantifying the benefits and limitations of sparse representations in neurons and cortical networks.","category":"neuroscience","date":"2016/01/05","link":"http://arxiv.org/abs/1601.00720","org":"Preprint of journal submission","sort":"j","title":"How Do Neurons Operate on Sparse Distributed Representations? A Mathematical Theory of Sparsity, Neurons and Active Dendrites","body":""}
 
 /***/ },
-/* 1219 */
+/* 1221 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Sebastian Billaudelle & Subutai Ahmad","brief":"Recently there has been much interest in building custom hardware implementations of HTM systems. This paper discusses one such scenario, and shows how to port HTM algorithms to analog hardware platforms such as the one developed by the Human Brain Project.","category":"neuroscience","date":"2015/05/08","image":null,"link":"http://arxiv.org/abs/1505.02142","org":"Research Paper","sort":"s","title":"Porting HTM Models to the Heidelberg Neuromorphic Computing Platform","body":""}
 
 /***/ },
-/* 1220 */
+/* 1222 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad & Jeff Hawkins","brief":"An earlier version of the above submission, this paper applies our mathematical model of sparse representations to practical HTM systems.","category":"neuroscience","date":"2014/10/28","link":"http://arxiv.org/abs/1503.07469","org":"Research Paper","sort":"m","title":"Properties of Sparse Distributed Representations and their Application To Hierarchical Temporal Memory","body":""}
 
 /***/ },
-/* 1221 */
+/* 1223 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Subutai Ahmad & Scott Purdy","brief":"Much of the worlds data is streaming, time-series data, where anomalies give significant information in critical situations. Yet detecting anomalies in streaming data is a difficult task, requiring detectors to process data in real-time, and learn while simultaneously making predictions.","category":"machine-learning","date":"2016/07/08","link":"https://arxiv.org/abs/1607.02480","org":"Preprint of journal submission","sort":"h","title":"Real-Time Anomaly Detection for Streaming Analytics","body":""}
 
 /***/ },
-/* 1222 */
+/* 1224 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins & Subutai Ahmad","brief":"Foundational paper describing core HTM theory for sequence memory and its relationship to the neocortex. Written with a neuroscience perspective, the paper explains why neurons need so many synapses and how networks of neurons can form a powerful sequence learning mechanism.","category":"neuroscience","date":"2015/10/31","image":null,"link":"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract","org":"Published in Frontiers in Neural Circuits Journal","sort":"a","title":"Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex","body":""}
 
 /***/ },
-/* 1223 */
+/* 1225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ba14ece563e537ddf828f6951b50051b.png";
 
 /***/ },
-/* 1224 */
+/* 1226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -98782,13 +99990,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(727);
+	var _Section = __webpack_require__(728);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -98823,7 +100031,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
@@ -98841,753 +100049,753 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1225 */
-755,
-/* 1226 */
-756,
 /* 1227 */
+755,
+/* 1228 */
+756,
+/* 1229 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Numenta, a breakthrough machine intelligence company, today announced it has been selected as one of the four Big Ideas companies to be featured at the","date":"2013/02/14","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta grok gigaom structure data","title":"Numenta to Present Grok, a Solution for Fast Data, as one of the Big Ideas at the GigaOM Structure:Data Conference on March 20, 2013","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Numenta, a breakthrough machine intelligence company, today announced it has\nbeen selected as one of the four Big Ideas companies to be featured at the\nGigaOM <a href=\"http://event.gigaom.com/structuredata/\">Structure:Data</a>\nconference March 20-21 in New York City.  Numenta CEO\n<a href=\"http://event.gigaom.com/structuredata/speakers/%20\">Rami Branitzky</a>\nwill give an on-stage introduction of Grok, the company’s first product, on\nMarch 20 at 5:20 p.m.</p>\n<p><a href=\"/grok/\">Grok</a> brings together Numenta’s\ntrailblazing R&amp;D in biologically inspired machine intelligence software with\na highly scalable infrastructure for acting on fast data. The Grok platform\ningests data streams and creates actionable predictions in real time. Grok’s\nautomated modeling and continuous learning capability makes it uniquely suited\nfor fast data.</p>\n<p>“Machine generated streaming data is exploding. It has a short half-life and is\nconstantly changing,” said Branitzky. “To date, the focus in the area of Big\nData has been on machines to store and process data, with a short supply of data\nscientists to analyze and act on it. To best leverage fast data, we believe you\nmust have systems that model and learn from data automatically and use the\nresults to drive automated actions. That’s what Grok was designed to do.”</p>\n<p>“The GigaOM editorial team hand picked four companies and speakers who embody\ngreat ideas that are shaping our industry for the Big Ideas session, and our\neditors are excited to have\n<a href=\"http://gigaom.com/2013/01/29/palm-creators-brain-mimicking-software-helps-manage-the-smart-grid/\">Numenta</a>\nas one,” said Surj Patel, GigaOM’s Vice President for Events.</p>\n<p>Grok solutions currently are in private beta with customers in a variety of\nvertical markets, including electric energy, IT management, online advertising\nand finance.  Numenta recently announced EnerNOC, Inc., a leading provider\nof energy management applications, as one of its first\ncustomers - entering a partnership that couples Numenta’s Grok streaming\nanalytics solution with EnerNOC’s cloud-based software to create opportunities\nfor demand response and increased ability to detect energy efficiency faults\nand anomalies.</p>\n<h4>About GigaOM Structure:Data</h4>\n<p>Structure:Data 2013 will explore the technical and business opportunities\ncreated by the rapid growth of big data. Many of the industry’s brightest minds\nwill converge to reveal how they are making the most of the data revolution.\nDiscounted\n<a href=\"http://event.gigaom.com/structuredata/registration/\">supersaver tickets</a>\nare available through February 22.</p>\n<h4>About Numenta</h4>\n<p>Numenta’s mission is to build solutions that help companies automatically and\nintelligently act on the world’s data.  Numenta’s biologically inspired machine\nlearning technology was first described in Numenta’s co-founder Jeff Hawkin’s\nbook, <strong>On Intelligence</strong>.</p>\n<p>Numenta’s Grok platform, based on this technology, ingests data streams and\ncreates actionable predictions in real time. Grok’s automated modeling and\ncontinuous learning capability makes it uniquely suited to drive intelligent\naction from fast data.</p>\n<p>Grok solutions are available directly from Numenta and Numenta partners in a\nvariety of vertical markets, including electric energy, IT management, online\nadvertising and finance. For more information on Numenta and Grok go to\n<a href=\"/\">numenta.com</a>.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
-/* 1228 */
-755,
-/* 1229 */
-756,
 /* 1230 */
+755,
+/* 1231 */
+756,
+/* 1232 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"The proliferation of devices and sensors creating machine-generated data yield enormous opportunity for automated predictive maintenance solutions. According","date":"2013/04/18","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"thingworx numenta partner predictive maintenance connected world","title":"ThingWorx and Numenta Partner to offer Next Generation Predictive Maintenance and Operations for the Connected World","type":"post","body":"<p>Partnership to fully integrate Numenta’s Grok action intelligence platform with\nThingWorx connected application platform</p>\n<p>Exton, Pa. — April 18, 2013 —\n<a href=\"http://www.thingworx.com\">ThingWorx�</a>, the provider of the\nfirst application development platform for the connected world, and\n<a href=\"/\">Numenta</a>, a leading provider of solutions\nthat help companies intelligently act on machine-generated data, today announced\na partnership to create the next generation of tools for predictive maintenance.\nThe companies will work together to deliver advanced maintenance solutions to\nenable organizations to fully leverage the troves of data being generated by\ntheir connected machinery to achieve maximum operational efficiency and reduce\nmaintenance costs.</p>\n<p>The proliferation of devices and sensors creating machine-generated data yield\nenormous opportunity for automated predictive maintenance solutions. According\nto leading device and network companies such as Ericsson and Cisco, the number\nof connected devices and machines is expected to reach\n<a href=\"http://www.ericsson.com/res/docs/whitepapers/wp-50-billions.pdf;\">50\nbillion devices by 2020</a>.  ARC Research estimates that Predictive Maintenance\nis a global\n<a href=\"http://www.arcweb.com/strategy-reports/2012-06-28/leveraging-predictive-maintenance-for-apm-1.aspx\">$20 billion opportunity</a>.\nTo fully capitalize on this opportunity, ThingWorx and Numenta believe that a\nnew generation of maintenance solutions are required that go beyond today’s\nbatch-driven analytics approaches.</p>\n<p>ThingWorx, which provides a powerful and flexible platform to rapidly deliver\ncustomizable applications and connected solutions, is architected for this\nexplosion of devices and data across a range of industries. Numenta’s industry\nleading biologically inspired machine intelligence technology, called\n<a href=\"http://grokstream.com\">Grok</a>, is designed to automatically\nanalyze data generated by these connected devices to drive actionable\npredictions.  Grok ingests data streams and can detect anomalous patterns in\ndata streams that indicate, for example, when a machine is in an unusual state\nand might fail.</p>\n<p>“Our two companies bring a unique combination of assets to tackle problems in\nreal-time predictive maintenance  to help companies minimize or avoid downtime\nof mission critical systems and reduce maintenance costs,” said Rami Branitzky,\nNumenta CEO. “Grok capabilities – especially its continuous learning and\nautomated modeling — are ideal for advanced, proactive monitoring of machinery\nthat needs to have continuous uptime. Working closely with ThingWorx’s industry\nleading connected device platform and rapid development environment we are well\npositioned to help transform the Predictive Maintenance market.”</p>\n<p>“ThingWorx is pleased to be able to offer plug-and-play access to the most\ninnovative analytic framework in the market today,” said Russ Fadel, CEO and Co-\nFounder of ThingWorx.  “Grok provides new capabilities for predictive\nmaintenance applications.  By integrating it into our platform we can eliminate\nthe time-consuming process of data analysis and predictive modeling and provide\ncustomers in asset-intensive industries such as energy, oil and gas, healthcare,\nand manufacturing, and equipment OEMs, with the critical analysis and actions in\norder for them to operate more reliably and efficiently. We are excited to be\noffering a solution that we believe  will allow companies to truly predict\nmachine behavior, which will enable a step change in efficiency.”</p>\n<p>As part of their collaboration, Grok has been certified as ThingWorx\nReady� and will be pre-integrated with the ThingWorx rapid application\ndevelopment platform.  Further information on the combined predictive\nmaintenance solution will be on display at the upcoming\n<a href=\"http://www.wbresearch.com/fieldserviceusa/home.aspx\">Field Service USA</a>\nevent, as well as during a live webcast on April 24, 2013,\n<a href=\"http://theservicecouncil.com/webcast-registration\">Smarter Services:\nThe Future of Connected Products Today</a>.</p>\n<h4>About Numenta</h4>\n<p>Numenta builds solutions that help companies automatically and intelligently act\non their data.  Its Grok technology and product platform are based on\nbiologically inspired machine learning technology first described in co-founder\nJeff Hawkin’s book, <strong>On Intelligence</strong>. Grok ingests data streams and\ncreates actionable predictions in real time. Grok’s automated modeling and\ncontinuous learning capability makes it uniquely suited to drive intelligent\naction from fast data.</p>\n<h4>About ThingWorx</h4>\n<p>ThingWorx� provides the first platform designed to efficiently build and\nrun the applications of today’s connected world. ThingWorx’s model-based design\nand search-based intelligence reduces application development efforts by 10X,\nminimizing cost, risk and time to market. The ThingWorx platform combines the\nkey functionality of Web 2.0, search, and social collaboration, and applies it\nto the world of “things,” including connected products, machines, sensors, and\nindustrial equipment. Businesses use the ThingWorx platform to rapidly deliver\ninnovative applications and connected solutions across markets ranging from\nmanufacturing, energy, and food, to Machine-to-Machine (M2M) remote monitoring\nand service, as well as in emerging Internet of Things applications, including\nsmart cities, smart grid, agriculture, and transportation.  For more\ninformation, please visit our website at\n<a href=\"http://www.thingworx.com\">www.thingworx.com</a> and our blog at\n<a href=\"http://www.thingworx.com/blog\">www.thingworx.com/blog</a> or follow us\non Twitter at <a href=\"https://twitter.com/thingworx\">@ThingWorx</a>.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
-/* 1231 */
-755,
-/* 1232 */
-756,
 /* 1233 */
+755,
+/* 1234 */
+756,
+/* 1235 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Numenta, a leading provider of solutions that help companies intelligently act on machine-generated data, today announced its Grok solution has achieved certified integration","date":"2013/05/17","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"grok sap sybase esp cep complex event processing","title":"Grok’s Action Intelligence Solution Achieves Certified Integration with SAP® Sybase ESP Complex Event Processing Platform","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p><strong>Grok delivers real-time predictions and finds anomalies in streaming data</strong></p>\n<p>Numenta, a leading provider of solutions\nthat help companies intelligently act on machine-generated data, today announced\nits Grok solution has achieved certified integration with the SAP® Sybase® Event\nStream Processor (SAP Sybase ESP). The SAP Integration and Certification Center\n(SAP ICC) has certified that the Grok 2.0 solution integrates with the SAP\nSybase ESP 5.1 to send and receive streaming data, predictions, and anomalies\nfound in data streams.</p>\n<p>Grok’s patented machine intelligence product ingests data streams and creates\nactionable predictions and detects anomalies in real-time. The Grok solution\nfeatures automated pattern discovery and predictive modeling capabilities based\non its unique biologically inspired machine intelligence algorithm. Grok was\nrecently named as one of the Cool Vendors in Analytics for 2013 by Gartner\nResearch.</p>\n<p>“Grok’s ability to learn from streaming data makes it a perfect add-on for\ncustomers who are looking to automatically and intelligently act on their\nmachine-generated data,” said Numenta CEO Rami Branitzky. “The Grok solution is\na natural complement to SAP Real-Time Data Platform. We look forward to working\nclosely with SAP to serve this rapidly expanding market.”</p>\n<p>In addition, Numenta has applied to join the SAP PartnerEdge® program as an SAP\nsoftware solution and technology partner. Through the program, partners work\nclosely with <a href=\"http://www.sap.com/\">SAP AG</a> (NYSE: SAP) to develop and\ncertify the technical integration of their solutions with SAP software.\nIntegrated partner applications extend, complement and add value to SAP\nsolutions, thereby helping mutual customers more successfully meet business\nneeds and drive strong results.</p>\n<h4>About Numenta</h4>\n<p>Numenta builds solutions that help companies automatically and intelligently act\non their data. Grok’s technology and product platform are based on biologically\ninspired machine learning technology first described in co-founder Jeff Hawkins’\nbook, <strong>On Intelligence</strong>. Grok ingests data streams and creates actionable\npredictions in real time. Grok’s automated modeling and continuous learning\ncapabilities make it uniquely suited to drive intelligent action from fast data.</p>\n<p>Grok solutions are available directly from Grok and its partners in a variety of\nvertical markets, including energy, IT management, and finance. For more\ninformation go to\n<a href=\"http://grokstream.com\">http://grokstream.com</a>.</p>\n<p>SAP, PartnerEdge and all SAP logos are trademarks or registered trademarks of\nSAP AG in Germany and in several other countries. Sybase is a trademark or\nregistered trademark of Sybase, Inc. ® indicates registration in the United\nStates. Sybase is an SAP company. All other product and service names mentioned\nherein are the trademarks of their respective owners.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
-/* 1234 */
+/* 1236 */
 854,
-/* 1235 */
+/* 1237 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Numenta.org has been created as the home for the NuPIC (Numenta Platform for Intelligent Computing) open source project and community.  The project was","date":"2013/07/22","featured":false,"image":"../images/nupic.png","link":null,"org":"Press Release","tags":"nupic open source numenta","title":"NuPIC Open Source Project and Community Established at Numenta.org","type":"post","body":"<p><a href=\"http://Numenta.org\">Numenta.org</a> has been created as the home for the NuPIC (Numenta Platform for\nIntelligent Computing) open source project and community.  The project was\nannounced today in a keynote address at the OSCON open source conference.</p>\n<p>“The mission of this project is to build a community interested in machine\nintelligence based on biological principles,” said Jeff Hawkins, co-founder of\nNumenta, Inc. “Developers and scientists told us they wanted to work with our\nlearning algorithms.  There were already several independent implementations\nbased on our publications.  We felt that an open source structure was the best\nway to share knowledge and accelerate progress in machine intelligence.”</p>\n<p>Hawkins, who has studied neuroscience for more than 30 years, wrote a book\ncalled <strong>On Intelligence</strong> (along with Sandra Blakeslee) in 2005 that\ndescribed a theory of the neocortex.  Numenta, Inc. was formed as a company to\npursue the theory for commercial and scientific purposes shortly thereafter.</p>\n<p>NuPIC comprises a set of learning algorithms called the Cortical Learning\nAlgorithm (CLA) first described in a\n<a href=\"http://numenta.org/resources/HTM_CorticalLearningAlgorithms.pdf\">whitepaper</a>\npublished by Numenta in 2009. The CLA algorithms replicate part of the function\nof a region of the neocortex. They can be used for pattern recognition,\nprediction, and anomaly detection in many domains. They have been tested\nextensively and are embedded in a product called Grok, which the company\nreleased last year. <a href=\"/grok/\">Grok</a> is now being\nbranded and commercialized separately from Numenta.</p>\n<p>“Understanding the brain and building fantastically intelligent machines is a\ngrand quest for humanity,” Hawkins continued. “This is not a trivial pursuit,\nand there is a tremendous amount of work to be done, but we believe the CLA is a\nkey building block that provides a path forward. Our hope is that NuPIC\ncontributors will work on these problems, accelerate our progress, and uncover\nfascinating new applications.”</p>\n<p>Anyone can access the NuPIC open source code under the AGPLv3 license<sup><a href=\"#agpl\">*</a></sup>. For more\ninformation see the\n<a href=\"http://numenta.org/news/2013/06/03/introducing-nupic.html\">Introduction to NuPIC</a>\nand go to <a href=\"http://numenta.org\">Numenta.org</a>.</p>\n<p><small id=\"agpl\" class=\"disclaimer\"><sup>*</sup> This content has been updated to reflect our <a href=\"http://numenta.org/blog/2015/08/17/licensing-update.html\">new AGPL license</a>.</small></p>\n<h4>About <a href=\"http://Numenta.org\">Numenta.org</a></h4>\n<p><a href=\"http://Numenta.org\">Numenta.org</a> is the home and community for the NuPIC (Numenta Platform for\nIntelligent Computing) open source project. NuPIC was developed by Numenta Inc.\nbased on the theory of the neocortex first described in co-founder Jeff Hawkins’\n2005 book <strong>On Intelligence.</strong></p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
-/* 1236 */
+/* 1238 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Editor","brief":"Computing Like the Brain - The Path to Machine Intelligence, a video off Jeff Hawkins at the YOW 2013 conference","date":"2013/12/04","featured":false,"image":"../images/yow.png","link":"http://yow.eventer.com/yow-2013-1080/computing-like-the-brain-the-path-to-machine-intelligence-by-jeff-hawkins-1408","org":"YOW","tags":"computing brain machine intelligence jeff hawkins yow 2013","title":"Computing Like the Brain: The Path to Machine Intelligence","type":"link","body":""}
 
 /***/ },
-/* 1237 */
+/* 1239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c9c5b1fe9e530ebfd85314ae87740a39.png";
 
 /***/ },
-/* 1238 */
+/* 1240 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Editor","brief":"Fujitsu NATF Video with Jeff Hawkins","date":"2014/01/22","featured":false,"image":"../images/fujitsu.png","link":"https://www.youtube.com/watch?v=cz-3WDdqbj0&list=PLX9JDz3uBpNCjNfq20KOCvsP6szY94r2e","org":"Fujitsu","tags":"fujitsu natf video jeff hawkins","title":"Brains, Data, and Machine Intelligence","type":"link","body":""}
 
 /***/ },
-/* 1239 */
+/* 1241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "86b1b57cee0360a4a868624b669ff3bb.png";
 
 /***/ },
-/* 1240 */
+/* 1242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "789a17233f0936f0e495f8deed877619.png";
 
 /***/ },
-/* 1241 */
+/* 1243 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Ricardo Hausmann","brief":"In his pathbreaking 2005 book On Intelligence, Jeff Hawkins proposed an alternative paradigm of how the human brain works. In his view, the brain is not a Turing machine that manipulates symbols according to a table of rules, which is the model on which computers and artificial intelligence have been based","date":"2014/01/29","featured":false,"image":"../images/project-syndicate.png","link":"http://www.project-syndicate.org/commentary/ricardo-hausmann-proposes-an-alternative-approach-to-economic-development-based-on-how-the-human-brain-functions","org":"Project Syndicate","tags":"brain view economics alternative","title":"A Brain's View of Economics","type":"link","body":""}
 
 /***/ },
-/* 1242 */
+/* 1244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "eb566664982ac36466f26150c87aac7f.png";
 
 /***/ },
-/* 1243 */
-755,
-/* 1244 */
-756,
 /* 1245 */
+755,
+/* 1246 */
+756,
+/* 1247 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Grok anomaly detection leverages sophisticated machine intelligence algorithms to enable new insights into critical IT systems. Grok automatically learns complex patterns and then","date":"2014/03/25","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"grok it analytics numenta aws","title":"Numenta Releases Grok for IT Analytics on AWS","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>Numenta, Inc. today announced the commercial\navailability of Grok for IT Analytics on Amazon Web Services (AWS) in the\n<a href=\"/grok/#get\">AWS Marketplace</a>. <a href=\"/grok/\">Grok</a> anomaly detection\nleverages sophisticated machine intelligence algorithms to enable new insights\ninto critical IT systems. Grok automatically learns complex patterns and then\nhighlights unusual behavior.  As software topologies and usage patterns change,\nGrok continuously learns and adapts, eliminating the need for frequent resetting\nof thresholds. Visualization of Grok output is displayed on a constantly updated\nmobile device, enabling IT professionals to assess the health of their systems\nanytime, anywhere.  Using Grok, IT operators can better prevent business\ndowntime while reducing false positives.</p>\n<p>Grok is the first commercial application of Numenta’s groundbreaking Cortical Learning Algorithm\n(CLA), biologically inspired algorithms for machine intelligence. The core\nCLA technology is ideal for large-scale analysis of continuously streaming\ndatasets and excels at modeling and predicting patterns in data.</p>\n<p>“Grok provides an early warning system to IT professionals to give them real-\ntime insights into their system performance,” said Numenta CEO Donna Dubinsky.\n“Grok anticipates problems before they happen, reduces false positives, and\nlowers engineering costs through automated modeling and continuous learning.”</p>\n<p>Grok features include:</p>\n<ul>\n<li>Monitoring of performance and health of AWS environments or other systems</li>\n<li>Automatic modeling to determine normal patterns</li>\n<li>Automatic identification and ranking of unusual patterns</li>\n<li>Continuous learning of new patterns as environments evolve – no need for\nmanual threshold setting</li>\n<li>Notification to user when an anomaly occurs</li>\n<li>Output displayed graphically on an Android mobile device</li>\n<li>Simple setup via a web-based or command-line interface</li>\n<li>Support for AWS auto-scaling groups and logical clusters</li>\n</ul>\n<p>Grok is available now:</p>\n<ul>\n<li><a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1391115095261\">Grok Free Edition</a>; supports up to 10 AWS instances or custom metrics</li>\n</ul>\n<p>Grok will be demonstrated in Booth 100 at the\n<a href=\"https://aws.amazon.com/aws-summit-2014/\">AWS Summit</a> on March 26 at the\nMoscone Center in San Francisco.</p>\n<p>In addition to working on the Grok product release, Numenta continues to push\nits biologically-inspired algorithms forward.  “We’ve made some important\nprogress recently and look forward to sharing it with our community over the\ncoming year,” said Jeff Hawkins, Numenta co-founder. “Our open source community,\n<a href=\"http://numenta.org\">NuPIC</a>, is also growing and actively\ncontributing to the advancement of the science.”</p>\n<h4>About Numenta Inc.</h4>\n<p>Numenta, Inc., was founded in 2005 to be a catalyst in the emerging field of\nmachine intelligence. Numenta builds solutions that help companies automatically\nand intelligently act on machine generated data.  Its biologically inspired\nmachine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, <strong>On Intelligence</strong>. Its first\ncommercial product, called Grok, offers a breakthrough solution for anomaly\ndetection for IT Operations. In addition, Numenta has created NuPIC (Numenta\nPlatform for Intelligent Computing) as an open source project.</p>\n<p>Numenta is based in Redwood City, California. It is privately funded.</p>\n<h5>Media Contact</h5>\n<ul>\n<li><strong>Betty Taylor</strong></li>\n<li>Krause Taylor Associates for Numenta</li>\n<li><a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a></li>\n<li>408-981-7551</li>\n</ul>\n"}
 
 /***/ },
-/* 1246 */
+/* 1248 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jack Clark","brief":"Jeff Hawkins has bet his reputation, fortune, and entire intellectual life on one idea: that he understands the brain well enough to create machines with an intelligence we recognize as our own","date":"2014/03/29","featured":false,"image":"../images/the-register.png","link":"http://www.theregister.co.uk/2014/03/29/hawkins_ai_feature/","org":"The Register","tags":"building ai mimic neocortex","title":"Meet the Man Building an AI that Mimics Our Neocortex","type":"link","body":""}
 
 /***/ },
-/* 1247 */
+/* 1249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e3961127a8c23e9d084b507970ab35e6.png";
 
 /***/ },
-/* 1248 */
+/* 1250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4a8752db0788974d1a59a2992c102088.png";
 
 /***/ },
-/* 1249 */
+/* 1251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "589ca4cc59b0a009a86ed0bf0d05e324.png";
 
 /***/ },
-/* 1250 */
+/* 1252 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Leo Laporte","brief":"Jeff Hawkins on Triangulation 146 with Leo Laporte","date":"2014/04/07","featured":false,"image":"../images/twit.png","link":"http://twit.tv/show/triangulation/146","org":"Twit.tv","tags":"jeff hawkins on triangulation 146 with leo laporte","title":"Jeff Hawkins on Triangulation 146 with Leo Laporte","type":"link","body":""}
 
 /***/ },
-/* 1251 */
+/* 1253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "66fe1317baab3fadfca60eb908edb6c6.png";
 
 /***/ },
-/* 1252 */
+/* 1254 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Editor","brief":"Jeff Hawkins, founder of Numenta recently gave a talk highlighting his approach to machine intelligence—an approach that is highly dependent on an understanding of the human neocortex","date":"2014/04/08","featured":false,"image":"../images/33rd-square.png","link":"http://www.33rdsquare.com/2014/04/jeff-hawkins-on-path-to-machine.html","org":"33rd Square","tags":"path to machine intelligence","title":"Jeff Hawkins on the Path to Machine Intelligence","type":"link","body":""}
 
 /***/ },
-/* 1253 */
+/* 1255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b432b1ba51ae2a570cbd32fad8457dcc.png";
 
 /***/ },
-/* 1254 */
+/* 1256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b4bff8bf7efbf862d1562009140f3f63.png";
 
 /***/ },
-/* 1255 */
+/* 1257 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Anthony Wing Kosner","brief":"Does artificial intelligence represent an existential threat to humanity? Some very smart people think so. Technologists are supposed to be rationalists, and yet Musk waxed supernatural about the threat of renegade AI.","date":"2015/04/20","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2015/04/20/what-really-scares-tech-leaders-about-artificial-intelligence/","org":"Forbes","tags":"scares tech leaders artificial intelligence ai numenta htm jeff hawkins","title":"What Really Scares Tech Leaders About Artificial Intelligence?","type":"link","body":""}
 
 /***/ },
-/* 1256 */
-1162,
-/* 1257 */
+/* 1258 */
+1164,
+/* 1259 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Robert D. Hof","brief":"Trying to emulate the brain just by using special software on conventional processors—the way Google did in its cat experiment—is way too inefficient to be the basis of machines with still greater intelligence, says Jeff Hawkins, a leading thinker on AI who created the Palm Pilot before cofounding Numenta, a maker of brain-inspired software","date":"2014/04/23","featured":false,"image":"../images/mit-technology-review.png","link":"http://m.technologyreview.com/featuredstory/526506/neuromorphic-chips/","org":"MIT Technology Review","tags":"neuromorphic chips enhance artificial intelligence","title":"Neuromorphic Chips: Microprocessors Configured Like Brains","type":"link","body":""}
 
 /***/ },
-/* 1258 */
+/* 1260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7d1e954f645f551ffc4b5bf72aadd7dc.png";
 
 /***/ },
-/* 1259 */
+/* 1261 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Editor","brief":"Big data gives you large amounts of data that can provide interesting insights, but typically static. But we live in reality more and more in the direction of data that is constantly moving and changing. We call it streaming data","date":"2014/04/30","featured":false,"image":"../images/nordea-invest.png","link":"http://mag.nordea.dk/invest/2014/04/naar-big-data-bliver-old-news","org":"Nordea Invest","tags":"big data old news","title":"As Big Data Becomes Old News","type":"link","body":""}
 
 /***/ },
-/* 1260 */
+/* 1262 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Kevin Maney","brief":"Numenta, run by PalmPilot inventor Jeff Hawkins, developed technology called Grok that learns by recognizing patterns over time, the way brains do. It’s being used, for instance, by Amazon to spot unusual activity on its computers.","date":"2014/05/29","featured":false,"image":"../images/newsweek.png","link":"http://www.newsweek.com/2014/06/06/computer-programming-dying-art-252618.html","org":"Newsweek","tags":"computer programming dying art","title":"Computer Programming is a Dying Art","type":"link","body":""}
 
 /***/ },
-/* 1261 */
+/* 1263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "dcaadf8f4c139cf49ebd2bc75abfb74d.png";
 
 /***/ },
-/* 1262 */
+/* 1264 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jordan Robertson","brief":"Last year, ImportIO began using software made by Numenta, a Redwood City, California-based company founded by Palm's founder Jeff Hawkins and former CEO Donna Dubinsky. Their approach: Instead of focusing on data collection and retrospective looks at information piling up in a warehouse, focus on analyzing data streams in real time to spot anomalies.","date":"2014/06/03","featured":false,"image":"../images/bloomberg.png","link":"http://www.bloomberg.com/news/2014-06-03/big-data-s-dumping-grounds-how-hoarding-hinders-startups-to-spy-agencies.html","org":"Bloomberg","tags":"big data overwhelm spy agencies","title":"The Big Data Dump: How Info-Hoarding Can Overwhelm Startups and Spy Agencies","type":"link","body":""}
 
 /***/ },
-/* 1263 */
+/* 1265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "2aa0de5f3f073ef96915415a6d13b651.png";
 
 /***/ },
-/* 1264 */
+/* 1266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b2d19f90850730b15446ad75dd7a8b20.png";
 
 /***/ },
-/* 1265 */
+/* 1267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "65041c6ad3ad1b1ff815e498d9f5752b.png";
 
 /***/ },
-/* 1266 */
+/* 1268 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Dean Takahashi","brief":"Numenta founders Jeff Hawkins and Donna Dubinsky sit down with VentureBeat to talk about Numenta’s breakthrough progress in machine intelligence","date":"2014/07/09","featured":false,"image":"../images/venture-beat.png","link":"http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long-nine-years-but-it-starting-to-pay-off-interview/","org":"Venture Beat","tags":"numenta apps mimic brain","title":"After Nine Years of Research Numenta Finally Has Apps That Mimic the Way the Brain Works","type":"link","body":""}
 
 /***/ },
-/* 1267 */
+/* 1269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "6ddb267ba48a74cff217a8046db850ef.png";
 
 /***/ },
-/* 1268 */
+/* 1270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "2fcfda406645f4bc59888c20cabbe9d9.png";
 
 /***/ },
-/* 1269 */
+/* 1271 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Dan Sullivan","brief":"Cloud monitoring can collect a range of performance data, but a crucial piece of the puzzle, networking, often falls short. A third-party network monitoring tool is essential to keep your cloud running up to par.","date":"2014/08/13","featured":false,"image":"../images/search-cloud-computing.png","link":"http://searchcloudcomputing.techtarget.com/tip/Network-monitoring-tools-for-when-cloud-monitoring-falls-short","org":"Search Cloud Computing","tags":"network monitoring tools cloud monitoring numenta grok","title":"Network Monitoring Tools For When Cloud Monitoring Falls Short","type":"link","body":""}
 
 /***/ },
-/* 1270 */
+/* 1272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "241f15fce1dd3238bc4a2f2937b6796f.png";
 
 /***/ },
-/* 1271 */
+/* 1273 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Eileen McNulty","brief":"We’ve seen huge improvements in the way algorithms can detect our language and dialogue. IBM have continued to pour money and resources into the development of Watson; Apple have moved","date":"2014/09/02","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/how-an-austrian-startup-is-mimicking-brain-function-to-revolutionise-nlp/","org":"Dataconomy","tags":"mimicking brain function revolutionising nlp natural language processing numenta nupic cortical.io","title":"How Mimicking Brain Function is Revolutionising NLP","type":"link","body":""}
 
 /***/ },
-/* 1272 */
+/* 1274 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Janet Wagner","brief":"Cognitive computing is a relatively new area of computer science that has been growing fairly rapidly in recent years. While artificial intelligence, a field of study that has been around since","date":"2014/09/05","featured":false,"image":"../images/programmableweb.png","link":"http://www.programmableweb.com/news/cognitive-computing-makes-it-possible-to-build-truly-amazing-apps/analysis/2014/09/05","org":"ProgrammableWeb","tags":"cognitive computing numenta grok htm hierarchical temporal memory","title":"Cognitive Computing Makes It Possible To Build Truly Amazing Apps","type":"link","body":""}
 
 /***/ },
-/* 1273 */
+/* 1275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4b15f86f525fc954d0f94fb7cecea737.png";
 
 /***/ },
-/* 1274 */
-1270,
-/* 1275 */
+/* 1276 */
+1272,
+/* 1277 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Eileen McNulty","brief":"Machine learning, to put it mildly, is an incredibly broad and varied field, with multitudes of applications. Thus, this list of Ten Machine Learning Experts You Need to Know","date":"2014/09/16","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/10-machine-learning-experts-you-need-to-know/","org":"Dataconomy","tags":"machine learning experts jeff hawkins numenta grok","title":"Ten Machine Learning Experts You Need to Know","type":"link","body":""}
 
 /***/ },
-/* 1276 */
+/* 1278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "06d0b1e1a4509fc8efa994cfe7773b64.png";
 
 /***/ },
-/* 1277 */
+/* 1279 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Derrick Harris","brief":"Jeff Hawkins is best known for bringing us the Palm Pilot, but he’s working on something that could be much, much bigger. For the past several years, Hawkins has been studying how the human brain functions with the hope of replicating it in software.","date":"2014/09/24","featured":false,"image":"../images/gigaom.png","link":"https://gigaom.com/2014/09/24/the-gigaom-interview-jeff-hawkins-on-why-his-approach-to-ai-will-become-the-approach-to-ai/","org":"Gigaom","tags":"jeff hawkins numenta gigaom ai artificial intelligence machine nupic htm","title":"Jeff Hawkins on why his approach to AI will become the approach to AI","type":"link","body":""}
 
 /***/ },
-/* 1278 */
+/* 1280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "169dac90c5c88faa02e28a27d2dc5ad3.png";
 
 /***/ },
-/* 1279 */
+/* 1281 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Augustus Van Dusen","brief":"The media hype surrounding artificial neural networks (ANN) is becoming absurd. These articles tend to be uncritical summaries of company press releases. The most over the top articles","date":"2014/10/22","featured":false,"image":"../images/thinkingmachine.png","link":"http://thinkingmachineblog.net/jeff-hawkins-on-the-limitations-of-artificial-neural-networks/","org":"Thinking Machine","tags":"jeff hawkins numenta limitations of artificial nerual networks","title":"Jeff Hawkins on the Limitations of Artificial Neural Networks","type":"link","body":""}
 
 /***/ },
-/* 1280 */
-755,
-/* 1281 */
-756,
 /* 1282 */
+755,
+/* 1283 */
+756,
+/* 1284 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Grok enables IT professionals to easily spot unusual activity and to gain immediate insights into the health of their critical IT systems. Now, with annotations, they can more easily share","date":"2014/11/05","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta grok it analytics aws reinvent amazon web services","title":"Numenta to Showcase New Version of Grok at AWS reInvent 2014","type":"post","body":"<p><strong>NOTE:</strong> Numenta has <a href=\"/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html\">announced a strategic partnership with Avik Partners</a>,\nplease read more about the future of\n<a href=\"http://grokstream.com\">Grok for IT Analytics</a>.</p>\n<p>AWS re:Invent 2014</p>\n<p>REDWOOD CITY, Calif. --(<a href=\"http://www.businesswire.com/\">BUSINESS WIRE</a>)–\n<a href=\"/\">Numenta Inc.</a>, a leader in machine intelligence technology,\ntoday announced the newest release of\n<a href=\"/assets/pdf/grok/resources/1.6/Grok-1.6-DataSheet.pdf\">Grok IT for Analytics</a>.\nThe application, which runs on Amazon Web Services, will be featured\nat the <a href=\"https://reinvent.awsevents.com/\">upcoming AWS re:Invent 2014</a>,\nNovember 11-14 in Las Vegas. Visit Numenta and see Grok in action at\nAWS Booth 648.</p>\n<p>Based on Numenta’s breakthrough Hierarchical Temporal Memory technology, Grok\nmonitors servers running on AWS and enables complex pattern detection, automatic\nmodel building, and continuous learning. Grok output is displayed on a\nconstantly updated mobile device, enabling IT professionals to assess the health\nof their systems anytime, anywhere.</p>\n<p>The latest Grok 1.6 release features:</p>\n<ul>\n<li>A major new feature called “Annotations,” which allows sharing of information\nand collaboration among users</li>\n<li>Increased ability to support additional sources and formats of data</li>\n<li>Enhanced performance</li>\n</ul>\n<p>“Grok enables IT professionals to easily spot unusual activity and to gain\nimmediate insights into the health of their critical IT systems. Now, with\nannotations, they can more easily share these insights with colleagues, enabling\nthe organization to get ahead of problems before they become serious,” noted\nNumenta CEO Donna Dubinsky.</p>\n<p>Unlike other tools that rely on static thresholds or simple statistics, Grok\nautomatically learns complex patterns in the AWS environment, and then\nidentifies unusual behavior in those systems.</p>\n<p>Key features of Grok IT for Analytics include:</p>\n<ul>\n<li>Very easy configuration and set-up</li>\n<li>Automatically models each metric to determine normal patterns</li>\n<li>Automatically identifies and ranks unusual patterns</li>\n<li>Continuously learns new patterns as environments evolve</li>\n<li>Does not require any manual threshold setting</li>\n<li>Notifies the user when something curious is happening</li>\n<li>Displays output graphically on a mobile Android device</li>\n</ul>\n<p>To learn more about use cases for IT operators, go to\n<a href=\"/grok/\">http://numenta.com/grok</a>.</p>\n<p>Grok is available for free on the <a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&amp;sr=0-3&amp;qid=1390942511618\">AWS Marketplace</a>.</p>\n<h4>About Numenta</h4>\n<p><a href=\"/\">Numenta, Inc.</a> was founded in 2005 to be a catalyst in the\nnew era of machine intelligence. Its biologically inspired machine learning\ntechnology is based on a theory of the neocortex first described in co-founder\nJeff Hawkins’ book, On Intelligence. The technology can be applied to anomaly\ndetection in servers and applications, human behavior, and geo-spatial tracking\ndata, and to the predication and classification of natural language. In\naddition, Numenta has created NuPIC (Numenta Platform for Intelligent Computing)\nas an open source project. Based in Redwood City, CA, the company is privately\nfunded. For more information go to <a href=\"/\">numenta.com</a>.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<h4>Media Contact</h4>\n<div>Krause Taylor Associates</div>\n<div>**Betty Taylor**</div>\n<div>[408-981-7551](tel:+1-408-981-7551)</div>\n<div>[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)</div>\n"}
 
 /***/ },
-/* 1283 */
-1261,
-/* 1284 */
+/* 1285 */
+1263,
+/* 1286 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Kevin Maney","brief":"Technology is stuck. It’s stuck while an overcrowding, polluting, beheading, virus-spreading planet needs the kind of breakthroughs that reorganize life and create a clear before and after.","date":"2014/11/10","featured":false,"image":"../images/newsweek.png","link":"http://www.newsweek.com/innovation-lite-modern-day-technology-stuck-283338","org":"Newsweek","tags":"modern day technology stuck newsweek numenta hierarchical temporal memory htm jeff hawkins","title":"Innovation Lite - Modern-Day Technology is Stuck","type":"link","body":""}
 
 /***/ },
-/* 1285 */
+/* 1287 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Eileen McNulty","brief":"Cortical.io, an Austrian startup whose tech mimics brain function to process language more accurately and natively, have just announced an impressive new funding round. Reventon (NL) is a venture capital firm responsible","date":"2014/11/12","featured":false,"image":"../images/dataconomy.png","link":"http://dataconomy.com/cortical-io-gain-1-25-million-in-new-venture-capital-share-grand-plans-for-the-future/","org":"Dataconomy","tags":"cortical.io million venture capital grand plans for future numenta semantic machine intelligence","title":"Cortical.io Gain $1.25 Million in New Venture Capital, Share Grand Plans for The Future","type":"link","body":""}
 
 /***/ },
-/* 1286 */
-1270,
-/* 1287 */
+/* 1288 */
+1272,
+/* 1289 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Dan Hartveld","brief":"Ever since IBM Watson won the hugely popular US quiz show ‘Jeopardy’ back in 2011, cognitive computing has been a hot topic for discussion. Those who have had a glimpse of this new technology recognise its importance","date":"2014/11/21","featured":false,"image":"../images/techworld.png","link":"http://www.techworld.com/blogs/talking-shop/cognitive-computing-explained-3588242/","org":"Techworld","tags":"cognitive computing numenta grok nupic techworld nlp natural language processing","title":"Cognitive Computing - What It Means To You","type":"link","body":""}
 
 /***/ },
-/* 1288 */
+/* 1290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8eb1e39b1f4b7320e170be348fc2801d.png";
 
 /***/ },
-/* 1289 */
+/* 1291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "60c90fad6d02e99c8ddae2ab9c4d1119.png";
 
 /***/ },
-/* 1290 */
+/* 1292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "818cdf44c0fb7bfe59bf3ac5ebfcf4f2.png";
 
 /***/ },
-/* 1291 */
+/* 1293 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jessica Lipsky","brief":"At a conference hosted by Silicon Valley Forum last week, industry experts projected the future of AI, machine learning, and deep learning. Jeff Hawkins, CEO and co-founder of Numenta, a firm that has developed a computational framework for AI,","date":"2014/12/09","featured":false,"image":"../images/eetimes.png","link":"http://www.eetimes.com/document.asp?doc_id=1324910&_mc=sm_eet_editor_rickmerritt","org":"EE Times","tags":"artificial intelligence future smart panel silicon valley forum jeff hawkins numenta","title":"Smart Panel Ponders AI's Future","type":"link","body":""}
 
 /***/ },
-/* 1292 */
+/* 1294 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Anthony Wing Kosner","brief":"Despite what Stephen Hawking or Elon Musk say, hostile Artificial Intelligence is not going to destroy the world anytime soon. What is certain to happen, however, is the continued ascent of the practical applications of AI","date":"2014/12/29","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2014/12/29/tech-2015-deep-learning-and-machine-intelligence-will-eat-the-world/","org":"Forbes","tags":"2015 deep learning machine intelligence numenta grok forbes","title":"Tech 2015 Deep Learning And Machine Intelligence Will Eat The World","type":"link","body":""}
 
 /***/ },
-/* 1293 */
-1253,
-/* 1294 */
-1254,
 /* 1295 */
+1255,
+/* 1296 */
+1256,
+/* 1297 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Derrick Harris","brief":"Artificial intelligence is already very real. Not conscious machines, omnipotent machines or even reasoning machines (yet), but statistical machines that automate and increasingly can outperform humans at certain","date":"2015/01/09","featured":false,"image":"../images/gigaom.png","link":"https://gigaom.com/2015/01/09/artificial-intelligence-is-real-now-and-its-just-getting-started/?utm_medium=content&utm_campaign=syndication&utm_source=googlemustreads&utm_content=artificial-intelligence-is-real-now-and-its-just-getting-started_905416&google_editors_picks=true","org":"GigaOm","tags":"artificial intelligence real just getting started numenta machine intelligence","title":"Artificial Intelligence Is Real Now and It’s Just Getting Started","type":"link","body":""}
 
 /***/ },
-/* 1296 */
-1276,
-/* 1297 */
+/* 1298 */
+1278,
+/* 1299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c9abdea7e95f2be8244f9723c65010c5.png";
 
 /***/ },
-/* 1298 */
+/* 1300 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alex Alaniz","brief":"Before pressing to Numenta’s remarkable (and likely correct) approach to general AI an IBM talk, let’s consider the question of how much you and I are already uploaded and super intelligent","date":"2015/02/19","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/life_happens_ai_will_happen_probably_at_ibmnumenta-153354","org":"Science2.0","tags":"general ai artificial intelligence ibm numenta hierarchical temporal memory science 2.0","title":"Life happens, AI will happen, probably at IBM/Numenta","type":"link","body":""}
 
 /***/ },
-/* 1299 */
+/* 1301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bdcbc7433ee574a8f7cf09be97e0d027.png";
 
 /***/ },
-/* 1300 */
+/* 1302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "398f50162f5618f3e3e5aaa88cc2c634.png";
 
 /***/ },
-/* 1301 */
+/* 1303 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Jeff Hawkins","brief":"Stephen Hawking and Elon Musk are worried. Could machine intelligence really lead to the extinction of humans?","date":"2015/03/02","featured":false,"image":"../images/recode.png","link":"http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/","org":"Re/Code","tags":"general ai artificial intelligence machine recode terminator","title":"The Terminator Is Not Coming. The Future Will Thank Us.","type":"link","body":""}
 
 /***/ },
-/* 1302 */
+/* 1304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8b39c03294d11a98ee4bb129d9bcf4de.png";
 
 /***/ },
-/* 1303 */
+/* 1305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7fc6f8461f741be8dc6b9dc25f2f22f8.png";
 
 /***/ },
-/* 1304 */
+/* 1306 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Erik Sherman","brief":"These leading scientists dismiss the doomsday predictions and say artificial intelligence, automation and robotics will bring a better world. Here’s why.","date":"2015/03/05","featured":false,"image":"../images/fortune.png","link":"http://fortune.com/2015/03/05/forget-the-naysayers-robots-pose-no-threat-to-humanity-these-experts-say/","org":"Fortune","tags":"fortune scientists dismiss fear of robots ai artificial machine intelligence jeff hawkins numenta","title":"Many Scientists Dismiss the Fear of Robots — Here's Why","type":"link","body":""}
 
 /***/ },
-/* 1305 */
+/* 1307 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Anthony Wing Kosner","brief":"I thought of this story as the news unfolded from the Alps. We are so concerned, it seems, about giving machines too much power that we appear to miss the fact that the largest existential threat to humans is other humans.","date":"2015/03/26","featured":false,"image":"../images/forbes.png","link":"http://www.forbes.com/sites/anthonykosner/2015/03/26/artificial-intelligence-could-have-prevented-the-germanwings-crash/","org":"Forbes","tags":"artificial machine general intelligence ai could have prevented germanwings crash jeff hawkins numenta nupic","title":"Artificial Intelligence Could Have Prevented The Germanwings Crash","type":"link","body":""}
 
 /***/ },
-/* 1306 */
-1253,
-/* 1307 */
-1254,
 /* 1308 */
+1255,
+/* 1309 */
+1256,
+/* 1310 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Wired","brief":"A sharp dichotomy has emerged in the big debate about where technology is taking us (or vice versa). In one high-profile camp are technologists and scientists sounding the alarm about the perils of artificial intelligence.","date":"2015/04/02","featured":false,"image":"../images/wired.png","link":"http://www.wired.com/2015/04/learn-stop-worrying-love-bots/","org":"Wired","tags":"artificial general machine intelligence ai stop worrying love the bots numenta nupic jeff hawkins","title":"How We Learn to Stop Worrying and Love the Bots","type":"link","body":""}
 
 /***/ },
-/* 1309 */
+/* 1311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "8873abdc9a7894129201e4a40f0e1239.png";
 
 /***/ },
-/* 1310 */
+/* 1312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "dd72979816c79e7076cf346c2f79dcc6.png";
 
 /***/ },
-/* 1311 */
+/* 1313 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Tom Simonite","brief":"For more than a decade Jeff Hawkins, founder of mobile computing company Palm, has dedicated his time and fortune to a theory meant to explain the workings of the human brain, and provide a blueprint for a powerful new kind of artificial intelligence software.","date":"2015/04/08","featured":false,"image":"../images/mit-technology-review.png","link":"http://www.technologyreview.com/news/536326/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms/","org":"MIT Technology Review","tags":"ibm mobile pioneer brain algorithms jeff hawkins numenta htm hierarchical temporal memory","title":"IBM Tests Mobile Computing Pioneer’s Controversial Brain Algorithms","type":"link","body":""}
 
 /***/ },
-/* 1312 */
-1162,
-/* 1313 */
-1297,
 /* 1314 */
+1164,
+/* 1315 */
+1299,
+/* 1316 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alex Alaniz","brief":"Growing new connections in your brain is more essential to learning than strengthening established connections. You may know how to be a tax lawyer because you've spent years strengthening your old tax law connections, but these are utterly useless when you take up ballroom dancing to find yourself a mate.","date":"2015/04/14","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/numenta_the_bruce_lee_of_ai_and_deep_learning-154801","tags":"numenta ai artificial intelligence deep learning jeff hawkins htm hierarchical temporal memory","title":"Numenta, The Bruce Lee of AI and Deep Learning","type":"link","body":""}
 
 /***/ },
-/* 1315 */
-1309,
-/* 1316 */
-1310,
 /* 1317 */
+1311,
+/* 1318 */
+1312,
+/* 1319 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Caleb Garling","brief":"Along with other researchers, Hawkins believes that the brain’s structure holds the keys for the next generation of computers that will interpret our world with far more insight than our eyes and ears ever could.","date":"2015/05/07","featured":false,"image":"../images/wired.png","link":"http://www.wired.com/2015/05/jeff-hawkins-firing-silicon-brain/","org":"Wired","tags":"jeff hawkins firing up silicion brain wired neocortex htm hierarchical temporal memory nupic numenta","title":"Jeff Hawkins on Firing Up the Silicon Brain","type":"link","body":""}
 
 /***/ },
-/* 1318 */
-755,
-/* 1319 */
-756,
 /* 1320 */
+755,
+/* 1321 */
+756,
+/* 1322 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Numenta, Inc., a leader in machine intelligence, and Cortical.io, an innovator in natural language processing (NLP), are pleased to announce a strategic partnership to create a new computing approach to understanding text. As part of the strategic relationship,","date":"2015/05/14","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta cortical.io form strategic partnership htm hierarchical temporal memory sdr sparse distributed memory retina wikipedia natural lanuage learning","title":"Numenta and Cortical.io Form Strategic Partnership","type":"post","body":"<p>Numenta and <a href=\"http://Cortical.io\">Cortical.io</a> Form Strategic Partnership</p>\n<p>Redwood City, CA –May 14, 2015— <a href=\"/\">Numenta, Inc.</a>, a leader in machine\nintelligence, and <a href=\"http://cortical.io\">Cortical.io</a>, an innovator in natural\nlanguage processing (NLP), are pleased to announce a strategic partnership to\ncreate a new computing approach to understanding text.  As part of the strategic\nrelationship, <a href=\"http://Cortical.io\">Cortical.io</a> has taken a broad general license to Numenta’s\nHierarchical Temporal Memory (HTM) technology, and Numenta has taken an\nownership position in <a href=\"http://Cortical.io\">Cortical.io</a>.  The combination of <a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic\nFolding technology and Numenta’s HTM technology enables a host of exciting\napplications that have challenged computer scientists for decades, including\nsentiment analysis, automatic summarization, semantic search, and conversational\ndialogue systems.</p>\n<p>“<a href=\"http://Cortical.io\">Cortical.io</a>’s Semantic Folding technology is a clever and elegant way to feed\nnatural language into our HTM technology“, said Jeff Hawkins, founder of\nNumenta.  “<a href=\"http://Cortical.io\">Cortical.io</a> takes advantage of the semantic encoding and predictive\nmodeling of HTM systems in a way that will lead to significant advances in\nnatural language processing.”</p>\n<p>“Natural language understanding is one of the central problems of artificial\nintelligence,” said Francisco Webber, founder and CEO of <a href=\"http://Cortical.io\">Cortical.io</a>.  “We aim\nto build the next generation of NLP, Language Intelligence, and in so doing,\nshow the path to broadly applied machine intelligence.”</p>\n<p>Building on their existing commercial product, the Retina API, <a href=\"http://Cortical.io\">Cortical.io</a> will\nmake the combined technologies available through their industrial-grade cloud\nservice for customers ranging from innovative startups to international\ncorporations.</p>\n<h4>About Numenta</h4>\n<p><a href=\"/\">Numenta, Inc.</a>, was founded in 2005 to be a leader in the emerging field of\nmachine intelligence. Numenta builds technology that helps companies\nautomatically and intelligently act on machine generated data.  Its biologically\ninspired machine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book,\n<a href=\"/learn/on-intelligence.html\">On Intelligence</a>. Its first commercial product,\ncalled <a href=\"/grok/\">Grok</a>, offers a breakthrough solution for\nanomaly detection for IT Operations. In addition, Numenta has created\n<a href=\"http://numenta.org\">NuPIC</a> (Numenta Platform for Intelligent Computing) as an\nopen source project (<a href=\"http://numenta.org\">http://numenta.org</a>). Numenta is based in Redwood City,\nCalifornia.</p>\n<p>Numenta Media Contact: <br/>\nBetty Taylor,\nKrause Taylor Associates:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Connect with Numenta: <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>\n</t></p>\n<h4>About <a href=\"http://Cortical.io\">Cortical.io</a></h4>\n<p>Headquartered in Vienna, Austria, <a href=\"http://cortical.io\">Cortical.io</a> is a\nscience-based start-up that has developed a fundamentally new approach to\nNatural Language Processing (NLP), Semantic Folding, inspired by the latest\nfindings on the way the human neocortex processes information.  By representing\nlanguage with highly efficient semantic fingerprints, the Retina API is the\nfirst semantic engine that painlessly handles the avalanche of text data\nexperienced by global business today –in any language and in real-time. A US\nsubsidiary has been incorporated recently.</p>\n<p><a href=\"http://Cortical.io\">Cortical.io</a> Media Contact: <br/>\nMarie-Pierre Garnier,\n<a href=\"http://Cortical.io\">Cortical.io</a>:\n<a href=\"mailto:mp.garnier@Cortical.io\">mp.garnier@Cortical.io</a></p>\n"}
 
 /***/ },
-/* 1321 */
+/* 1323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e4493dd67f0129d21e81645cefdf309d.png";
 
 /***/ },
-/* 1322 */
+/* 1324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d551f71134455a8dfc47a63264e7102a.png";
 
 /***/ },
-/* 1323 */
-1297,
-/* 1324 */
+/* 1325 */
+1299,
+/* 1326 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Alex Alaniz","brief":"When we catch balls, Jeff Hawkins, cofounder of Numenta and author of “On Intelligence,” tells us we aren’t solving differential equations. A robot, on the other hand, does solve differential equations, requiring roughly 3-trillion calculations for a 1s toss","date":"2015/05/22","featured":false,"image":"../images/science20.png","link":"http://www.science20.com/physics_foundations/blog/numenta_and_ibm_to_build_biologically_inspired_intelligent_machines-155769","org":"Science 2.0","tags":"numenta ibm build biologically inspired intelligent machines neocortex","title":"Numenta And IBM To Build Biologically Inspired Intelligent Machines","type":"link","body":""}
 
 /***/ },
-/* 1325 */
+/* 1327 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Fareed Zakaria, GPS","brief":"Fareed asks Jeff Hawkins about artificial intelligence -- could robots one day rise up against humans?","date":"2015/05/22","featured":false,"image":"../images/cnn.png","link":"http://www.cnn.com/videos/tv/2015/05/22/exp-gps-0524-hawkins-artificial-intelligence.cnn","org":"CNN","tags":"cnn on gps fareed zakaria jeff hawkins threat intelligent machines numenta nupic brain neocortex","title":"On GPS: The Threat of Intelligent Machines","type":"link","body":""}
 
 /***/ },
-/* 1326 */
+/* 1328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9813db4647115c47d95e4b4e393999aa.png";
 
 /***/ },
-/* 1327 */
+/* 1329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3d12354c6b9b77c3f2f818cd7e5226b7.png";
 
 /***/ },
-/* 1328 */
-1265,
-/* 1329 */
+/* 1330 */
+1267,
+/* 1331 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Dean Takahashi","brief":"Numenta today released HTM for Stocks, a new mobile application that tracks the trading patterns of companies in the stock market. The new Google Play app can monitor stock price, stock volume, and Twitter activity for hundreds of publicly traded companies","date":"2015/07/08","featured":false,"image":"../images/venture-beat.png","link":"http://venturebeat.com/2015/07/08/numentas-grok-for-stocks-app-uses-a-i-to-decipher-stock-market-patterns/","org":"VentureBeat","tags":"numenta htm for stocks app ai htm stock market patterns venturebeat","title":"Numenta’s HTM for Stocks app uses A.I. to decipher stock market patterns","type":"link","body":""}
 
 /***/ },
-/* 1330 */
+/* 1332 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"Redwood City, CA –July 8, 2015— Numenta, Inc., today announced the availability of HTM for Stocks, the newest example application showing how Hierarchical Temporal Memory (HTM) technology can be applied to streaming data","date":"2015/07/08","featured":false,"image":"../images/image.png","link":null,"org":"Press Release","tags":"numenta new htm example application htm for stocks monitor stock price volume twitter activity public companies anomaly detection unusual notifications","title":"Numenta Ships New HTM Example App: HTM for Stocks","type":"post","body":"<h3>An Easy Way to Experience HTM Machine Learning Technology</h3>\n<p>Redwood City, CA –July 8, 2015— <a href=\"/\">Numenta</a>, Inc., today announced the\navailability of HTM for Stocks, the newest example application showing how\n<a href=\"/#technology\">Hierarchical Temporal Memory</a> (HTM) technology can be applied to\nstreaming data and the Internet of Things.</p>\n<p>HTM for Stocks is a mobile application that continually monitors stock price,\nstock volume, and Twitter activity for hundreds of publicly traded companies.\nHTM for Stocks learns the normal patterns for each company and notifies you if\nsomething unusual is happening to any of the companies.</p>\n<p>During the past two years, Numenta has created a series of example applications\nto illustrate the capabilities of HTM.  The first application, Grok for IT\nAnalytics, uses HTM to detect anomalies in AWS server metrics and is available\non the <a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6\">Amazon Web Services Marketplace</a>.\nNumenta also published example source code that uses HTM to detect anomalies in\nhuman behavior and in GPS tracking data.</p>\n<p>“HTM for Stocks is our most accessible demonstration of Numenta HTM\ntechnology,” said Numenta CEO Donna Dubinsky. “Until now, it has required\nprogramming expertise to experience HTM-based anomaly detection. With HTM for\nStocks, it is as simple as downloading the app to your smartphone from the\n<a href=\"https://play.google.com/store/apps/details?id=com.numenta.taurus\">Google Play store</a>.”</p>\n<p>In keeping with its mission to be a technology provider, Numenta is providing\nthe source code for HTM for Stocks under an open source license at:\n<a href=\"https://github.com/numenta/numenta-apps\">https://github.com/numenta/numenta-apps</a>.  Said Dubinsky, “We encourage\ndevelopers to use the HTM for Stocks code to create derivative products that\ntrack a variety of data streams. HTM for Stocks shows how thousands of data\nstreams can be made useful in a mobile application using HTM technology.”</p>\n<h3>How HTM for Stocks Works</h3>\n<p>HTM for Stocks applies Numenta’s HTM modeling and anomaly detection to 200\nlarge capitalization public companies.  It automatically models three data\nstreams for each company:  stock volume, stock price, and Twitter volume.  The\nHTM models learn continuously, receiving new data every five minutes.  HTM\nlearns what is “normal” for each of the data streams for each company.  The\ncompanies are ranked from the most anomalous to the least anomalous over the\nprevious hour. HTM for Stocks lets you see the text of the Tweets as well,\noften explaining why the company is showing an anomaly.</p>\n<p><img src=\"../images/screen.png\" alt=\"HTM for Stocks Screenshot\"></p>\n<h3>About Numenta</h3>\n<p><a href=\"/\">Numenta</a>, Inc., is a leader in the field of machine intelligence.  Numenta\nbuilds technology that helps companies automatically act on streaming data. Its\nmachine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, <em>On Intelligence</em>. In\naddition, Numenta has created <a href=\"http://numenta.org\">NuPIC</a> (Numenta Platform for\nIntelligent Computing) as an open source project (<a href=\"http://numenta.org\">http://numenta.org</a>). Numenta\nis based in Redwood City, California.</p>\n<p>To obtain more info about partnering and licenses write to\n<a href=\"mailto:sales@numenta.com\">sales@numenta.com</a>.</p>\n<p>Numenta Media Contact: <br/>\nBetty Taylor,\nKrause Taylor Associates:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Connect with Numenta: <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>\n</t></p>\n"}
 
 /***/ },
-/* 1331 */
-755,
-/* 1332 */
-756,
 /* 1333 */
+755,
+/* 1334 */
+756,
+/* 1335 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, CA –August 19, 2015— Numenta, Inc., a leader in machine intelligence, today announced a strategic partnership with Avik Partners, a new IT services and advanced analytics company, for its Grok for IT Analytics on AWS technology.","date":"2015/08/19","featured":false,"image":"../images/numenta.png","link":null,"org":"Press Release","tags":"numenta license grok for it analytics to avik partners smart data conference 2015 dataversity","title":"Numenta Announces Licensing of Grok for IT Analytics to Avik Partners","type":"post","body":"<p>REDWOOD CITY, CA –August 19, 2015— <a href=\"/\">Numenta, Inc.</a>, a leader in machine\nintelligence, today announced a strategic partnership with\n<a href=\"http://www.grokstream.com/\">Avik Partners</a>, a new IT services and advanced\nanalytics company, for its Grok for IT Analytics on AWS technology. The\nannouncement was made during the\n<a href=\"http://smartdata2015.dataversity.net\">Smart Data Conference</a> being held in\nSan Jose, CA. (See Numenta at Booth #406).</p>\n<p>Grok for IT Analytics on AWS detects anomalies in Amazon Web Services server\nmetrics and is currently available on the\n<a href=\"https://aws.amazon.com/marketplace/pp/B00I18SNQ6\">Amazon Web Services Marketplace</a>.<br>\nAs part of this strategic relationship, Numenta will transfer the Grok\napplication and the Grok brand to Avik under a broad general licensing agreement\nfor Numenta’s <a href=\"http://numenta.com/learn/hierarchical-temporal-memory-white-paper.html\">Hierarchical Temporal Memory (HTM)</a>\ntechnology. Numenta also will take a minority ownership position in Avik.</p>\n<p>“Our core HTM technology can be applied to such a broad array of machine\nintelligence solutions, it would be impossible for us to pursue\ncommercialization in all of these verticals. We decided that the best approach\nfor us, like that taken by premier research institutions, is a licensing and\ntechnology transfer model. It is an exciting way for us to see our HTM\napplications built out for commercial use,” said Numenta CEO Donna Dubinsky.</p>\n<p>She added, “In Casey Kindiger, the CEO of Avik, we found the perfect match to\ntake Grok for IT Analytics and run with it. He is a proven entrepreneur who is\nstarting this new venture to apply HTM technology to solve problems in IT\nanalytics.”</p>\n<p>Kindiger, a veteran enterprise software solutions provider and consultant,\nfounded Avik after more than a decade of designing and developing process\nautomation solutions for companies like JP Morgan Chase, T-Mobile, Allstate\nInsurance, and others.</p>\n<p>“HTM offers substantially better technology for finding anomalies and is well\nsuited to the needs of today’s streaming data in IT and dev ops environments,”\nsaid Kindiger. “We are very excited to be able to take the Grok technology and\nbrand, move it forward and build on it.”</p>\n<p>During the past two years, Numenta has created a series of example applications\nto illustrate the capabilities of HTM, beginning with Grok for IT Analytics on\nAWS. The HTM technology also has been applied to anomaly detection in stock\nprices and volumes\n(<a href=\"http://numenta.com/press/numenta-ships-new-htm-example-app-htm-for-stocks.html\">HTM for Stocks</a>),\nhuman behavior, geo-spatial tracking data, and to the predication and\nclassification of natural language. For the latter application, Numenta recently\nannounced a partnership and licensing agreement with\n<a href=\"http://numenta.com/press/numenta-and-cortical-io-form-strategic-partnership.html\">Cortical.io</a>,\nan innovator in natural language processing (NLP), to license HTM and use the\ntechnology for the development of language intelligence products.</p>\n<p>“We will continue to create example applications to inspire others, and hope to\ncreate a constellation of partnerships like Avik and <a href=\"http://Cortical.io\">Cortical.io</a> going forward\nto enable broad commercialization of HTM technology,” Dubinsky concluded.</p>\n<p>Numenta, Inc. was founded in 2005 to be a leader in the emerging field of\nmachine intelligence. Numenta builds technology that helps companies\nautomatically and intelligently act on machine generated data.  Its biologically\ninspired machine learning technology is based on a theory of the neocortex first\ndescribed in co-founder Jeff Hawkins’ book, On Intelligence. In addition,\nNumenta has created NuPIC (Numenta Platform for Intelligent Computing) as an\nopen source project (<a href=\"http://numenta.org\">http://numenta.org</a>).  Numenta is based in Redwood City,\nCalifornia.</p>\n<p>To contact Avik Partners and for further information about Grok for IT\nAnalytics, go to <a href=\"http://grokstream.com\">http://grokstream.com</a>.</p>\n<p>Numenta Media Contact: <br/>\nBetty Taylor,\nKrause Taylor Associates:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Avik Partners Media Contact: <br/>\nPaula Johns:\n<a href=\"mailto:paula@paulajohnscommunications.com\">paula@paulajohnscommunications.com</a>\n<a href=\"tel:+1-760-522-0941\">760-522-0941</a></p>\n"}
 
 /***/ },
-/* 1334 */
+/* 1336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "063725e3b5730c0407452e01fbf5f3a8.png";
 
 /***/ },
-/* 1335 */
+/* 1337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "61fa382703455b6d39531055bc115827.png";
 
 /***/ },
-/* 1336 */
+/* 1338 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Mark Gibbs","brief":"Anomalies in data are everywhere. They appear in the performance of just about anything you can measure. Sometimes, if you’re lucky, they’re rare. Other times they aren’t. The problem in both cases, however, is figuring out what is truly an anomaly","date":"2015/09/05","featured":false,"image":"../images/network-world.png","link":"http://www.networkworld.com/article/2980746/infrastructure-management/numentas-grok-for-it-artificial-intelligence-meets-network-performance-analysis.html","org":"Network World","tags":"numenta grok for it artifical intelligence network performance analysis htm hierarchical temporal memory","title":"Numenta's Grok for IT: Artificial Intelligence Meets Network Performance Analysis","type":"link","body":""}
 
 /***/ },
-/* 1337 */
+/* 1339 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Mike Vizard","brief":"Machine learning has the potential to transform the way IT is managed by applying automation at an unprecedented level of scale, so it was only a matter of time before an IT management","date":"2015/10/06","featured":false,"image":"../images/it-business-edge.png","link":"http://www.itbusinessedge.com/blogs/it-unmasked/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.html","org":"IT Business Edge","tags":"numenta avik partners grok stream machine learning service optimize it operations htm hierarchical temporal memory","title":"Avik Partners Unfurls Machine Learning Service to Optimize IT Operations","type":"link","body":""}
 
 /***/ },
-/* 1338 */
+/* 1340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "186d232dd31d4657c46a38c0aa362040.png";
 
 /***/ },
-/* 1339 */
+/* 1341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "602de983f8c5115d7d9fabe22966c6f3.png";
 
 /***/ },
-/* 1340 */
+/* 1342 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Cortical.io","brief":"Cortical.io, an innovator in Natural Language Processing (NLP), announces its next venture capital round. In this third round, Cortical.io opens its capital to a new investor from the US, a fund affiliated with Open Field Capital","date":"2015/10/29","featured":false,"image":"../images/prweb.png","link":"http://www.prweb.com/releases/corticalio/3rdcapitalround/prweb13038027.htm","org":"PRWeb","tags":"cortical.io numenta nupic htm hierarchical temporal memory nlp natural language processing machine intelligence","title":"USD 1.8 Million for Cortical.io Brain-Inspired Algorithm Made in Austria","type":"link","body":""}
 
 /***/ },
-/* 1341 */
+/* 1343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "140b07ce6927f9bc6e2916a8030feda6.png";
 
 /***/ },
-/* 1342 */
+/* 1344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "100523f46754d36d9483b933e4fc99b2.png";
 
 /***/ },
-/* 1343 */
+/* 1345 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, CA –November 10, 2015— Numenta, Inc., a leader in machine intelligence, today launched the Numenta Anomaly Benchmark (NAB), an open-source benchmark and tool designed to help data","date":"2015/11/10","featured":false,"image":"../images/image.png","link":null,"org":"Press Release","tags":"numenta anomaly benchmark nab evaluate anomaly detection techniques on real-time streaming data","title":"Numenta Anomaly Benchmark Evaluates Anomaly Detection Techniques for Real-time, Streaming Data","type":"post","body":"<h3>Open Source Tool Tests Effectiveness of Algorithms on IoT Data</h3>\n<p>REDWOOD CITY, CA –November 10, 2015— <a href=\"/\">Numenta</a>, Inc., a leader in machine\nintelligence, today launched the\n<a href=\"/numenta-anomaly-benchmark/\">Numenta Anomaly Benchmark (NAB)</a>, an\nopen-source benchmark and tool designed to help data researchers evaluate the\neffectiveness of algorithms for anomaly detection in streaming,\nreal-time applications.</p>\n<p>Anomalies in streaming data are patterns that do not conform to past patterns of\nbehavior for a given data stream. Until now, no benchmark has existed to\nevaluate anomaly detection in real-time streaming data.</p>\n<p>NAB will be publicly unveiled on November 13 during\n<a href=\"http://mlconf.com/events/san-francisco-ca/\">MLconf</a> in San Francisco in a\npresentation by Numenta Research VP Subutai Ahmad, “Real-time Anomaly Detection\nfor Real-time Data Needs.” A peer-reviewed paper on NAB also was accepted by the\n<a href=\"http://www.icmla-conference.org/icmla15/\">IEEE Conference on Machine Learning and Applications</a>\nand will be presented during the conference on December 9-11 in Miami.</p>\n<h4>The Need for Anomaly Detection in Time-Series Data</h4>\n<p>Explosive growth in streaming data is happening across industries, largely\ndriven by the rise of the Internet of Things (IoT) and the proliferation of\nconnected real-time data sources and applications with sensors producing waves\nof data. Voluminous amounts of this data are being stored for later analysis,\nthough it often isn’t necessary or practical to capture and store all the\ninformation. Instead, data analysts need a way to analyze time-series data in\nreal time, identify when something is different and act upon that insight.</p>\n<p>Different approaches are being pursued to solve this problem, in the form of\nanomaly detection algorithms. But until now, a measurement to gauge the\neffectiveness of real-time anomaly detection algorithms has been lacking. With\nthis goal in mind, Numenta created NAB.</p>\n<p>“There is an explosion in real-time streaming data sources.  Data owners want to\nbe able to model this data and figure out if anything has changed,” commented\nNumenta CEO Donna Dubinsky.  “We created this open benchmark as a tool to help\ndata scientists evaluate the effectiveness of different algorithms in finding\nanomalous behavior in these data streams.”</p>\n<p>Early anomaly detection in streaming data has practical and significant\napplications across many industries – from monitoring critical IT infrastructure\nto detecting potential fraudulent financial transactions, from understanding\nenergy consumption to geo-tracking of vehicles in logistics networks.</p>\n<h4>The Numenta Anomaly Benchmark</h4>\n<p>NAB is an open source framework that was created to help data professionals\ntest, score and evaluate anomaly detection algorithms on time-series data and to\ncompare their internal anomaly detection techniques to published algorithms.</p>\n<p>NAB also allows people to test their algorithms against Numenta’s HTM detector,\nwhich is based on Numenta’s Hierarchical Temporal Memory technology. It uses a\nbiologically inspired memory prediction algorithm to model real-time data\nstreams and continuously learns.</p>\n<p>The major components to the NAB framework include:</p>\n<ul>\n<li>Real-world data. Includes 58 labeled streaming data files that are a\ncombination of real-world data sets along with some simulated datasets. All\nanomalies are marked.</li>\n<li>Anomaly windows. These are defined ranges of data points that surround a known\nanomaly label. NAB uses these windows to decide whether, and how early, an\nalgorithm detected each anomaly.</li>\n<li>A scoring mechanism. Scoring is specifically designed for streaming data and\nrewards early detection.</li>\n</ul>\n<p>“NAB’s emphasis on anomaly windows and early detection is pioneering. In\naddition the research community stands to benefit greatly from an open dataset\ncontaining real world data, and an open source tool for measuring the\neffectiveness of real-time anomaly detection algorithms,” said Varun Chandola,\nAssistant Professor in Computer Science and Engineering, SUNY Buffalo.</p>\n<p>“Having a standard benchmark could spur innovation in real-time anomaly\ndetection algorithms. Our hope is the open source community will add new data\nsets, propose different scoring mechanisms, and test and compare other\nalgorithms with our HTM algorithms,” said Dubinsky.</p>\n<p>For more detailed information on NAB, go to:</p>\n<p><strong>NAB Peer-Reviewed Research Paper</strong> <br/> <t render=\"hbs\">\n{{site.paths.ext.paper.nab}}\n</t></p>\n<p><strong>NAB Business White Paper</strong> <br/>\n<a href=\"http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf\">http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf</a></p>\n<p><strong>Numenta Anomaly Benchmark Repository</strong> <br/>\n<a href=\"https://github.com/numenta/NAB\">https://github.com/numenta/NAB</a></p>\n<p><strong>Algorithm &amp; product code</strong> <br/>\n<a href=\"http://numenta.org\">http://numenta.org</a></p>\n<h4>About Numenta</h4>\n<p>Founded in 2005, Numenta has developed a cohesive theory, core software\ntechnology, and numerous applications all based on principles of the neocortex.\nLaying the groundwork for the new era of machine intelligence, this technology\nis ideal for large-scale analysis of continuously streaming data sets and excels\nat modeling and predicting patterns in data. Numenta has also developed a suite\nof products and demonstration applications that utilize its flexible and\ngeneralizable HTM learning algorithms to provide solutions that encompass the\nfields of machine generated data, human behavioral modeling, geo-location\nprocessing, semantic understanding and sensory-motor control. In addition,\nNumenta has created\n<a href=\"http://numenta.org\">NuPIC (Numenta Platform for Intelligent Computing)</a> as an\nopen source project. <a href=\"/\">Numenta</a> is based in Redwood City, California.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<p><strong>Numenta Media Contact:</strong> <br/>\nBetty Taylor <br/>\nKrause Taylor Associates <br/>\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a> <br/>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p><a href=\"http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques\">http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques</a></p>\n"}
 
 /***/ },
-/* 1344 */
-1162,
-/* 1345 */
+/* 1346 */
+1164,
+/* 1347 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Emerging Technology","brief":"Biologists have long puzzled over why neurons have thousands of synapses. Now neuroscientists have shown they are crucial not just for recognizing patterns but for learning the sequence in which they appear.","date":"2015/11/12","featured":false,"image":"../images/mit-technology-review.png","link":"http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/","org":"MIT Technology Review","tags":"numenta artificial neuron taught to recognize patterns htm neuron synapse dendrite axon proximal distal","title":"Single Artificial Neuron Taught to Recognize Hundreds of Patterns","type":"link","body":""}
 
 /***/ },
-/* 1346 */
+/* 1348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "025f642657586a08e95252b873f7ddcd.png";
 
 /***/ },
-/* 1347 */
+/* 1349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b2bd405c3d3d483eceffb3efa161147e.png";
 
 /***/ },
-/* 1348 */
+/* 1350 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"U.S. & Politics Retro Report","brief":"(VIDEO) What the legendary matches between supercomputer Deep Blue and chess grandmaster Garry Kasparov reveal about today’s artificial intelligence and machine learning fears.","date":"2016/03/07","featured":false,"image":"../images/the-new-york-times.png","link":"http://www.nytimes.com/video/us/100000004255656/the-terminator-and-the-washing-machine.html?action=click&gtype=vhs&version=vhs-heading&module=vhs&region=title-area","org":"The New York Times","tags":"numenta jeff hawkins terminator and the washing machine the new york times us politics retro report video supercomputer","title":"The Terminator and the Washing Machine","type":"link","body":""}
 
 /***/ },
-/* 1349 */
+/* 1351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ce5b6e9e95b8aceb1ab2b52ba4b0c143.jpg";
 
 /***/ },
-/* 1350 */
+/* 1352 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, CA –April 12, 2016— How do our brains learn and understand the world? That question is of paramount importance to both neuroscientists and technologists who want to build intelligent machines.","date":"2016/04/12","featured":false,"hideImage":true,"image":"../images/image.jpg","link":null,"org":"Press Release","tags":"numenta neuron research paper published discover brain learns sequences key machine intelligence systems pattern theory","title":"Numenta Researchers Discover How The Brain Learns Sequences, A Key to Intelligent Systems","type":"post","body":"<blockquote>\n<p>Numenta’s theory of how the brain learns and understands sequences of patterns\nmay be an essential component for creating intelligent machines</p>\n</blockquote>\n<p>REDWOOD CITY, CA –April 12, 2016— How do our brains learn and understand the\nworld? That question is of paramount importance to both neuroscientists and\ntechnologists who want to build intelligent machines.</p>\n<p>It has been understood for over a hundred years that the inputs and outputs of\nthe brain are constantly changing sequences of patterns and therefore learning\nand recalling sequences must be a fundamental operation of neurons. Numerous\nproposals have been made for how neural networks might learn sequences. However,\nthese proposals did not match the anatomy and function observed in the brain.</p>\n<p>Now, researchers at <a href=\"/\">Numenta Inc.</a> have published a new theory that\nrepresents a breakthrough in understanding how networks of neurons in the\nneocortex learn sequences. A paper, authored by Numenta co-founder Jeff Hawkins\nand VP of Research Subutai Ahmad, <a href=\"http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full\">“Why Neurons Have Thousands of Synapses, A\nTheory of Sequence Memory in Neocortex,”</a>*\nhas been published in the Frontiers in Neural Circuits Journal, a publication\ndevoted to research in neural circuits, serving the worldwide neuroscience\ncommunity.</p>\n<p>“This study is a key milestone on the path to achieving that long-sought goal of\ncreating truly intelligent machines that simulate human cerebral cortex and\nforebrain system operations,” commented Michael Merzenich, PhD, Professor\nEmeritus UCSF, Chief Scientific Officer for Posit Science.</p>\n<p>The Numenta paper introduces two advances. First, it provides an explanation of\nwhy neurons in the neocortex have thousands of synapses, and why the synapses\nare segregated onto different parts of the cell, called dendrites. The authors\npropose that the majority of these synapses are used to learn transitions of\npatterns, a feature missing from most artificial neural networks. Second, the\nauthors show that neurons with these properties, arranged in layers and\ncolumns - a structure observed throughout the neocortex - form a powerful\nsequence memory. This suggests the new sequence memory algorithm could be a\nunifying principle for understanding how the neocortex works. Through\nsimulations, the authors show the new sequence memory exhibits a number of\nimportant properties such as the ability to learn complex sequences, continuous\nunsupervised learning, and extremely high fault tolerance.</p>\n<img src=\"../images/image.jpg\" class=\"center-block img-responsive media-border\" alt=\"Neuron image\" />\n<div class=\"caption\">\n  **Comparison of Biological and Artificial Neuron Models:**\n  The Hawkins-Ahmad paper on the theory of sequence memory in the neocortex\n  proposes a model of cortical neurons that explains why they have thousands of\n  synapses, why the synapses are segregated onto different parts of the\n  dendrites, and how neurons integrate this input in a functionally meaningful\n  way. This diagram draws a comparison between the human neocortical pyramidal\n  neuron, the HTM biologically-inspired neuron model, and the model used in most\n  mathematically-inspired artificial neural networks and Deep Learning models\n  today.\n</div>\n<p>“Our paper makes contributions in both neuroscience and machine learning,”\nHawkins noted. “From a neuroscience perspective, it offers a computational model\nof pyramidal neurons, explaining how a neuron can effectively use thousands of\nsynapses and computationally active dendrites to learn sequences. From a machine\nlearning and computer science perspective, it introduces a new sequence memory\nalgorithm that we believe will be important in building intelligent machines.”</p>\n<p>“This research extends the work Jeff first outlined in his 2004 book On\nIntelligence and encompasses many years of research we have undertaken here at\nNumenta,” said Ahmad, “It explains the neuroscience behind our HTM (Hierarchical\nTemporal Memory) technology and makes several detailed predictions that can be\nexperimentally verified. The software we have created proves that the theory\nactually works in real world applications.”</p>\n<p>Numenta’s primary goal is to reverse engineer the neocortex, to understand the\ndetailed biology underlying intelligence. The Numenta team also believes this is\nthe quickest route to creating machine intelligence. As a result of this\napproach, the neuron and network models described in the new paper are\nstrikingly different than the neuron and network models being used in today’s\ndeep learning and other artificial neural networks. Functionally, the new theory\naddresses several of the biggest challenges confronting deep learning today,\nsuch as the lack of continuous and unsupervised learning.</p>\n<div class=\"caption\">\n  * Hawkins, J., and Ahmad, S. (2016). Why Neurons Have Thousands of Synapses, A\n  Theory of Sequence Memory in Neocortex. Front. Neural Circuits 10.\n  doi:10.3389/fncir.2016.00023\n</div>\n<h4>About Frontiers in Neural Circuits</h4>\n<p>Frontiers is a leading open-access publisher. Established in 2007, Frontiers\ndrives innovations in peer review, post-publication review, impact metrics, and\nan ecosystem of open-science tools. Frontiers has published over 43,000 articles\nacross 55 journals and over 400 disciplines, which receive 4 million monthly\nviews, and are supported by over 210,000 researchers.</p>\n<h4>About Numenta</h4>\n<p>Founded in 2005, Numenta develops theory, software technology, and applications\nall based on reverse engineering the neocortex. Laying the groundwork for the\nnew era of machine intelligence, this technology is ideal for analysis of\ncontinuously streaming data sets and excels at modeling and predicting patterns\nin data. Numenta has also developed a suite of products and demonstration\napplications that utilize its flexible and generalizable\n<a href=\"/#technology\">Hierarchical Temporal Memory (HTM)</a> learning algorithms to\nprovide solutions that encompass the fields of machine generated data, human\nbehavioral modeling, geo-location processing, semantic understanding and\nsensory-motor control.</p>\n<p>In addition, Numenta has created\n<a href=\"http://numenta.org\">NuPIC (Numenta Platform for Intelligent Computing)</a>\nas an open source project. <a href=\"/\">Numenta</a> is based in Redwood City, California.</p>\n<p>Connect with Numenta on <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>.\n</t></p>\n<p><strong>Numenta Media Contact:</strong> <br/>\nBetty Taylor <br/>\nKrause Taylor Associates <br/>\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a> <br/>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n"}
 
 /***/ },
-/* 1351 */
+/* 1353 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Tiejun Huang","brief":"The IEEE Computer Society’s 2022 Report, which was released through the Computing Now site in 2014, presents insights from tech leaders to explore what our world might look like in 2022. Among its findings, the report predicts an integrated network of smart devices, which it calls “seamless intelligence,” that will be able to directly interface with our brain waves.","date":"2016/05/01","featured":false,"image":"../images/computing-now.png","link":"https://www.computer.org/web/computingnow/archive/brain-like-computing-may-2016","org":"Computing Now","tags":"numenta brain-like computing ieee computer society 2022 report computing now smart devices seamless intelligence brain waves","title":"Brian-Like Computing","type":"link","body":""}
 
 /***/ },
-/* 1352 */
+/* 1354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "3d047a5ecde4d6056a4954e530cfa520.png";
 
 /***/ },
-/* 1353 */
+/* 1355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "4c092ea422e4f175c78cda88100500ae.png";
 
 /***/ },
-/* 1354 */
+/* 1356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "5ebcc93c1102e7f487854ba4c496803f.png";
 
 /***/ },
-/* 1355 */
+/* 1357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "144caaf043afff669e387a058fed108f.png";
 
 /***/ },
-/* 1356 */
+/* 1358 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Don Clark","brief":"Massachusetts General Hospital recently established a center in Boston that plans to use Nvidia chips to help an artificial-intelligence system spot anomalies on CT scans and other medical images, jobs now carried out by human radiologists. The project, drawing on a database of 10 billion existing images","date":"2016/05/22","featured":false,"image":"../images/wall-street-journal.png","link":"http://www.wsj.com/articles/new-chips-propel-machine-learning-1463957238","org":"Wall Street Journal","tags":"nvidia microchip ct scan numenta machine learning","title":"New Chips Propel Machine Learning","type":"link","body":""}
 
 /***/ },
-/* 1357 */
+/* 1359 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Ryan Hawk","brief":"Donna Dubinsky was made famous by the Harvard Business School study about the time when she disagreed with Steve Jobs (when he decided that Apple should eliminate their distribution warehouses).  She ultimately prevailed and we discussed what happened next in her incredible career.  We had a fascinating conversation on this episode of The Learning Leader Show.","date":"2016/05/29","featured":false,"image":"../images/learning-leader.png","link":"http://learningleader.com/episode-128-donna-dubinsky-standing-up-to-steve-jobs-and-being-right/","org":"Learning Leader","tags":"learning leader donna dubinsky standing up to steve jobs being right ryan hawk numenta","title":"Donna Dubinsky – Standing Up To Steve Jobs And Being Right","type":"link","body":""}
 
 /***/ },
-/* 1358 */
+/* 1360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9ca8ab49304b7313fb9b6592cbbe7a70.png";
 
 /***/ },
-/* 1359 */
+/* 1361 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Charlotte Jee","brief":"Thanks to its role underpinning many of the recent advances in artificial intelligence, machine learning has become of mainstream interest to many technologists and developers. Here we’ll explain what it is, how you can get started plus the best tools and languages you need to develop machine learning technology.","date":"2016/06/16","featured":false,"image":"../images/techworld.png","link":"http://www.techworld.com/tutorial/apps/everything-uk-developers-need-know-about-machine-learning-3641971/","org":"Techworld","tags":"developers machine learning numenta htm hierarchical temporal memory machine intelligence","title":"Here's what UK Developers Need to Know about Machine Learning","type":"post","body":""}
 
 /***/ },
-/* 1360 */
-1288,
-/* 1361 */
-1289,
 /* 1362 */
+1290,
+/* 1363 */
+1291,
+/* 1364 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Tom Standage","brief":"How has artificial intelligence, associated with hubris and disappointment since its earliest days, suddenly become the hottest field in technology? The term was coined in a research proposal written in 1956 which suggested that significant progress could be made in getting machines to “solve the kinds of problems now reserved for humans","date":"2016/06/25","featured":false,"image":"../images/economist.png","link":"http://www.economist.com/news/special-report/21700756-artificial-intelligence-boom-based-old-idea-modern-twist-not","org":"Economist","tags":"from not working neural networking economist numenta artificial machine intelligence","title":"From Not Working to Neural Networking","type":"link","body":""}
 
 /***/ },
-/* 1363 */
+/* 1365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "79d9bef821ae98be0f12058e61db321b.png";
 
 /***/ },
-/* 1364 */
+/* 1366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9ef01d113c890608327015be131199d9.png";
 
 /***/ },
-/* 1365 */
-1170,
-/* 1366 */
-1171,
 /* 1367 */
+1172,
+/* 1368 */
+1173,
+/* 1369 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Numenta","brief":"REDWOOD CITY, Calif. --(BUSINESS WIRE)-- Numenta, Inc., a leader in machine intelligence, today announced the release of HTM Studio for anomaly detection, a desktop tool that makes it easy for businesses to experiment with advanced machine intelligence algorithms to uncover anomalies in their streaming data.","date":"2016/06/26","featured":false,"image":"../images/htm-studio.png","link":null,"org":"Press Release","tags":"numenta releases htm studio business wire machine intelligence find anomalies streaming data","title":"Numenta Releases HTM Studio","type":"post","body":"<h3>HTM Studio - Uncover anomalies in your streaming data</h3>\n<p>REDWOOD CITY, Calif.–(BUSINESS WIRE)-- <a href=\"/\">Numenta</a>, Inc., a leader in machine\nintelligence, today announced the release of HTM Studio for anomaly detection, a\ndesktop tool that makes it easy for businesses to experiment with advanced\nmachine intelligence algorithms to uncover anomalies in their streaming data.\nSimply add numeric, time-series data files to HTM Studio and with the click of a\nbutton, discover and visualize within minutes what anomalies can be found.</p>\n<blockquote>\n<p>#Numenta #HTMStudio for anomaly detection makes it easy to experiment with\nadvanced machine intelligence</p>\n</blockquote>\n<p>HTM Studio is based on Numenta’s HTM (Hierarchical Temporal Memory) biologically\ninspired machine intelligence technology. HTM learns time-based patterns in\nunlabeled streaming data, making it ideal for prediction, classification and\nanomaly detection. Because of its ability to perform continuous, unsupervised\nlearning, HTM can find subtle, temporal anomalies that other techniques cannot\nfind.</p>\n<p>&quot;I was impressed with the ease of use and how quickly it is to iterate on\ntesting a variety of data streams. The HTM was able to pick out and forecast the\nneedle I was interested in, within a haystack of needles,” commented early beta\ntester Vaughn DiMarco, Lead Data Science Consultant at Montreal-based\nVONALYTICS.</p>\n<p>HTM Studio provides an easy way for businesses interested in using Numenta’s\ntechnology for anomaly detection to undertake a proof of concept securely using\ntheir own data. If HTM Studio finds interesting anomalies, then a user can do a\nfull implementation or deployment of HTM.</p>\n<p>“Detecting anomalies early in streaming data can have significant value, but\nit’s difficult to do. We wanted to make it easy to try HTM on your own streaming\ndata,” said Donna Dubinsky, CEO of Numenta. “With HTM Studio, no coding skills\nare required. Parameters are automatically set. In a matter of minutes, you can\nvisualize anomalies in your datasets.”</p>\n<p>For those who don’t have streaming data readily available, HTM Studio includes\npre-loaded datasets for experimentation. Sample datasets include a variety of\nuse cases: IoT sensors, preventative maintenance, tracking vehicles and network\nservers.</p>\n<p>The tool is available at no charge for Mac and Windows desktop systems. Go to\n<a href=\"http://numenta.com/htm-studio/\">http://numenta.com/htm-studio/</a> for details and to get started with HTM Studio.</p>\n<p>To learn more about HTM go to <a href=\"http://numenta.com\">http://numenta.com</a>.</p>\n<h3>About Numenta</h3>\n<p>Founded in 2005, Numenta has developed a cohesive theory, core software\ntechnology, and numerous applications all based on principles of the neocortex.\nLaying the groundwork for the new era of machine intelligence, this technology\nis ideal for large-scale analysis of continuously streaming data sets and excels\nat modeling and predicting patterns in data. Numenta has also developed a suite\nof demonstration applications that utilize its flexible and generalizable HTM\nlearning algorithms to provide solutions that encompass the fields of machine\ngenerated data, human behavioral modeling, geo-location processing, semantic\nunderstanding and sensory-motor control. In addition, Numenta has created\n<a href=\"http://numenta.org\">NuPIC</a> (Platform for Intelligent Computing) as an open\nsource project. <a href=\"/\">Numenta</a> is based in Redwood City, California.</p>\n<p>Numenta Media Contact: <br/>\nKrause Taylor Associates,\nBetty Taylor:\n<a href=\"mailto:bettyt@krause-taylor.com\">bettyt@krause-taylor.com</a>\n<a href=\"tel:+1-408-981-7551\">408-981-7551</a></p>\n<p>Connect with Numenta: <br/> <t render=\"hbs\">\n<a href=\"%7B%7Bsite.paths.social.twitter%7D%7D\">Twitter</a>,\n<a href=\"%7B%7Bsite.paths.social.facebook%7D%7D\">Facebook</a>,\n<a href=\"%7B%7Bsite.paths.social.googleplus%7D%7D\">Google+</a> and\n<a href=\"%7B%7Bsite.paths.social.linkedin%7D%7D\">LinkedIn</a>\n</t></p>\n<p><a href=\"http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio\">http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio</a></p>\n"}
 
 /***/ },
-/* 1368 */
-1299,
-/* 1369 */
-1300,
 /* 1370 */
+1301,
+/* 1371 */
+1302,
+/* 1372 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Kara Swisher","brief":"On the latest episode of Recode Decode, hosted by Kara Swisher, the co-founders of Numenta (who previously co-founded Palm and Handspring) predicted AI will indeed drive technological advances for the rest of the century","date":"2016/06/27","featured":false,"image":"../images/recode.png","link":"http://www.recode.net/2016/6/27/12037248/artificial-intelligence-machine-learning-numenta-jeff-hawkins-donna-dubinsky-podcast","org":"Re/Code","tags":"your fears about artificial intelligence are wrong recode podcast kara swisher jeff hawkins donna dubinsky numenta machine intelligence","title":"This Is Why Your Fears About Artificial Intelligence Are Wrong","type":"link","body":""}
 
 /***/ },
-/* 1371 */
+/* 1373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d074d6ca361e92237d809c07c90b2cbc.png";
 
 /***/ },
-/* 1372 */
+/* 1374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d03e106a2ce9bce7f7021ad06d449045.png";
 
 /***/ },
-/* 1373 */
+/* 1375 */
 /***/ function(module, exports) {
 
 	module.exports = {"author":"Kypriani Sinaris","brief":"Note: original article published in German. Machine Learning is the new formula for what we once called Artificial Intelligence. In our Thematic Dossier we feel the new trend and introduce current ML solutions, including the Numenta platform for intelligent computing, ...and, the Natural Language Processing Project Cortical.io.","date":"2016/07/26","featured":false,"image":"../images/jaxenter.png","link":"https://jaxenter.de/machine-learning-experten-check-43830","org":"Jaxenter","tags":"machine learning expore check six tips getting started machine learning numenta htm hierarchical temporal memory cortical","title":"Machine Learning Expert Check: 6 Tips for Getting Started in the Machine Learning","type":"link","body":""}
 
 /***/ },
-/* 1374 */
+/* 1376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -99655,7 +100863,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1375 */
+/* 1377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -99716,9 +100924,9 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1376 */
-1202,
-/* 1377 */
+/* 1378 */
+1204,
+/* 1379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -99731,13 +100939,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sections = __webpack_require__(737);
+	var _client = __webpack_require__(625);
 	
 	var _MainSections = __webpack_require__(573);
 	
 	var _MainSections2 = _interopRequireDefault(_MainSections);
 	
-	var _Section = __webpack_require__(732);
+	var _Section = __webpack_require__(733);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
@@ -99772,7 +100980,7 @@
 	  }
 	
 	  componentDidUpdate() {
-	    (0, _sections.scrollTo)(Default);
+	    (0, _client.scrollToSection)(Default);
 	  }
 	
 	  componentWillUnmount() {
