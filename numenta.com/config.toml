@@ -5,10 +5,6 @@ siteHost = 'Numenta.com'
 siteTitle = 'Numenta'
 description = 'Leading the New Era of Machine Intelligence'
 
-[moments]
-  post = 'YYYY/MM/DD'
-  human = 'ddd, MMM DD, YYYY'
-
 [contact]
   [contact.email]
     feedback = 'feedback@numenta.com'
@@ -19,6 +15,9 @@ description = 'Leading the New Era of Machine Intelligence'
   [contact.phone]
     fax = '650-369-8283'
     tel = '650-369-8282'
+
+[analytics]
+  google = 'UA-48460134-1'
 
 [links]
   [links.out]  # external links
@@ -101,3 +100,7 @@ description = 'Leading the New Era of Machine Intelligence'
     # other pages
     get = '#get'  # htmstocks, etc.
     links = '#links'  # press links
+
+[moments]
+  post = 'YYYY/MM/DD'
+  human = 'ddd, MMM DD, YYYY'

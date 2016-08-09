@@ -11,15 +11,6 @@ import {repository, version} from '../package'
 /**
  *
  */
-export function capitalize(text) {
-  const first = text.charAt(0).toUpperCase()
-  const rest = text.slice(1)
-  return `${first}${rest}`
-}
-
-/**
- *
- */
 export function getConfig() {
   return config
 }

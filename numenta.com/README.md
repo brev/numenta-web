@@ -193,3 +193,5 @@ npm run build
   * Static assets don't load from /static/assets on dev, but do on staging
     and prod after static build
 * Papers/Videos/More _Section.jsx => Refactor learn item (video/more) components
+* put copyright notice at top of source files
+* Section/index.jsx line 48 = google-analtyics manual record url changes!!!

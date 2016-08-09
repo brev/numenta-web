@@ -44,13 +44,21 @@ class Section extends React.Component {
 
     // Handle dynamic url changes as sections are opened/closed.
     if (open) {
+      // manual
+      // @TODO google-analtyics manual record url changes!!!
       global.window.history.pushState({}, '', prefixLink(url))
+
+      // auto
       // router.push(url)
     }
     else {
       // @TODO set URL based on what's visible, and/or
       //    localStorage section open flag
+
+      // manual
       // global.window.history.back()
+
+      // auto
       // router.goBack()
     }
 

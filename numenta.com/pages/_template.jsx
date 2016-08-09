@@ -1,3 +1,4 @@
+import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import moment from 'moment'
@@ -41,7 +42,7 @@ class Template extends React.Component {
 
   render() {
     const {children} = this.props
-    const {description, siteHost, siteTitle} = config
+    const {analytics, description, siteHost, siteTitle} = config
     const lang = 'en'  // @TODO i18n l10n
     const now = moment().toString()
     const title = `${siteTitle} — ${description}`
@@ -69,6 +70,7 @@ class Template extends React.Component {
 
     return (
       <Layout>
+        <GoogleAnalytics id={analytics.google} />
         <Helmet
           defaultTitle={title}
           htmlAttributes={attrs}

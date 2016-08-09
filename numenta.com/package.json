@@ -57,6 +57,7 @@
     "react": "15.3.0",
     "react-addons-pure-render-mixin": "15.3.0",
     "react-dom": "15.3.0",
+    "react-g-analytics": "0.2.6",
     "react-headroom": "2.1.2",
     "react-helmet": "3.1.0",
     "react-icons": "2.2.1",

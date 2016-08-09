@@ -1,9 +1,10 @@
+import {capitalize} from 'lodash'
 import IconBook from 'react-icons/lib/fa/book'
 import IconPaper from 'react-icons/lib/fa/file-pdf-o'
 import IconVideo from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import {capitalize, sortDateDescend} from '../../utils/shared'
+import {sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import List from '../../components/List'
