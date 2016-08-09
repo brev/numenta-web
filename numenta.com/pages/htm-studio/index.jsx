@@ -1,4 +1,5 @@
 import browserSize from 'browser-size'
+import {camelCase} from 'lodash'
 import classNames from 'classnames'
 import IconBarChart from 'react-icons/lib/fa/bar-chart'
 import IconBullseye from 'react-icons/lib/fa/bullseye'
@@ -7,6 +8,7 @@ import IconFolder from 'react-icons/lib/fa/folder-open'
 import IconLock from 'react-icons/lib/fa/lock'
 import IconQuestion from 'react-icons/lib/fa/question-circle'
 import Modal from 'react-modal'
+import platform from 'platform'
 import React from 'react'
 
 import {getModalAspect} from '../../utils/shared'
@@ -65,35 +67,29 @@ class HtmStudioPage extends React.Component {
     warning: false,   // is the user seeing check-acceptance-checkbox warning?
   }
 
-  _startDownload() {
+  _startDownload(event) {
     const {accepted} = this.state
-    console.log('_startDownload', this.state)
-
     if (!accepted) {
+      event.preventDefault()
+      event.stopPropagation()
       this.setState({warning: true})
-      return false
     }
-
-    return true
   }
 
   _toggleAcceptance() {
     const {accepted} = this.state
     const newState = {accepted: !accepted}
-    console.log('_toggleAcceptance', this.state)
-
     if (newState.accepted) {
       newState.warning = false
     }
-
     this.setState(newState)
   }
 
   _toggleTerms(event) {
     const {terms} = this.state
-    if (event) {
-      event.stopPropagation()
+    if (event && !terms) {
       event.preventDefault()
+      event.stopPropagation()
     }
     this.setState({terms: !terms})
   }
@@ -103,7 +99,12 @@ class HtmStudioPage extends React.Component {
     const {accepted, terms, warning} = this.state
     const {links} = config
     const {pages} = route
+    const {os} = platform
     const warningClasses = [styles.row, styles.error]
+    const family = camelCase(os.family).toLowerCase()
+    const downloadLink = ((family && family.match(/win/)) ?
+      links.out.htmstudio.win : links.out.htmstudio.osx
+    )
     const faqs = pages.filter(({file}) => (
       (file.path.match(/^htm\-studio\/faq\/.*\.md/))
     ))
@@ -128,10 +129,6 @@ class HtmStudioPage extends React.Component {
     )
     let termsModal
 
-    if (!warning) {
-      warningClasses.push(styles.hide)
-    }
-
     modalStyles.content.width = getModalAspect(browserSize().width - 100)
     termsModal = (
       <Modal
@@ -148,6 +145,10 @@ class HtmStudioPage extends React.Component {
         </div>
       </Modal>
     )
+
+    if (!warning) {
+      warningClasses.push(styles.hide)
+    }
 
     return (
       <div>
@@ -184,14 +185,14 @@ class HtmStudioPage extends React.Component {
                   <div className={classNames(...warningClasses)}>
                     Please agree to the {' '}
                     {TermsLink} {' '}
-                    before downloading.
+                    above before downloading.
                   </div>
                   <div>
                     <ButtonLink
                       disabled={!accepted}
-                      onClick={() => this._startDownload()}
+                      onClick={(event) => this._startDownload(event)}
                       theme="primary"
-                      to={links.out.htmstudio.macos}
+                      to={downloadLink}
                     >
                       Download HTM Studio
                     </ButtonLink>

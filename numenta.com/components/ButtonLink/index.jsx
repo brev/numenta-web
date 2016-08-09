@@ -11,12 +11,13 @@ const ButtonLink = ({children, disabled, onClick, theme, to}) => {
   const classes = [styles.buttonLink, styles[theme]]
 
   if (disabled) classes.push(styles.disabled)
+  else classes.push(styles.enabled)
 
   return (
     <a
       className={classNames(...classes)}
       href={to}
-      onClick={!disabled ? onClick : null}
+      onClick={onClick}
     >
       {children}
     </a>

@@ -4,7 +4,6 @@ import fs from 'fs'
 import {ncp} from 'ncp'
 import toml from 'toml'
 
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -12,6 +11,11 @@ const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
+
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
+
+// Default max of 10 EventEmitters is not enough for our MainSections, bump up.
+require('events').EventEmitter.prototype._maxListeners = 33  // eslint-disable-line max-len, no-underscore-dangle
 
 /* eslint-disable no-console */
 

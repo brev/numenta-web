@@ -180,8 +180,19 @@ npm run build
 
 ## @TODO
 
+Tasks organized by priority below. This is a temporary section, these should be
+moved into GitHub Issues ASAP.
+
+### High
+
+* Markdown Styling content wrapper component - and use.
+* Section/index.jsx line 48 = google-analtyics manual record url changes!!!
 * Migrate: `healthchecks/` `conf/` ... `out/`
+
+### Medium
+
 * document the code, build docs
+* put copyright notice at top of source files
 * document this file
   * add links to stuff
   * explain react `contexts` available: **config**, etc.
@@ -192,6 +203,3 @@ npm run build
   * special custom npm modules: tachyons,etc. - howto, updating, etc.
   * Static assets don't load from /static/assets on dev, but do on staging
     and prod after static build
-* Papers/Videos/More _Section.jsx => Refactor learn item (video/more) components
-* put copyright notice at top of source files
-* Section/index.jsx line 48 = google-analtyics manual record url changes!!!
