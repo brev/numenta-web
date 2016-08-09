@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {scrollTo} from '../../utils/client/sections'
+import {scrollToSection} from '../../utils/client'
 
 import MainSections from '../_MainSections'
 import SectionBusiness from './_Section'
@@ -29,7 +29,7 @@ class BusinessPage extends React.Component {
   }
 
   componentDidUpdate() {
-    scrollTo(Default)
+    scrollToSection(Default)
   }
 
   componentWillUnmount() {

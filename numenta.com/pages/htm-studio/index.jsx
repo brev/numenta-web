@@ -1,4 +1,3 @@
-import browserSize from 'browser-size'
 import {camelCase} from 'lodash'
 import classNames from 'classnames'
 import IconBarChart from 'react-icons/lib/fa/bar-chart'
@@ -11,6 +10,7 @@ import Modal from 'react-modal'
 import platform from 'platform'
 import React from 'react'
 
+import {getBrowserWidth} from '../../utils/client'
 import {getModalAspect} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
@@ -129,7 +129,7 @@ class HtmStudioPage extends React.Component {
     )
     let termsModal
 
-    modalStyles.content.width = getModalAspect(browserSize().width - 100)
+    modalStyles.content.width = getModalAspect(getBrowserWidth() - 100)
     termsModal = (
       <Modal
         isOpen={terms}

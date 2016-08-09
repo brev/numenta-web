@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {scrollTo} from '../../utils/client/sections'
+import {scrollToSection} from '../../utils/client'
 
 import MainSections from '../_MainSections'
 import SectionPartners from './_Section'
@@ -29,7 +29,7 @@ class PartnersPage extends React.Component {
   }
 
   componentDidUpdate() {
-    scrollTo(Default)
+    scrollToSection(Default)
   }
 
   componentWillUnmount() {

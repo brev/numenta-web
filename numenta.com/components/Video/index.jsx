@@ -1,8 +1,8 @@
-import browserSize from 'browser-size'
 import Modal from 'react-modal'
 import React from 'react'
 import YouTube from 'react-youtube'
 
+import {getBrowserWidth} from '../../utils/client'
 import {getModalAspect} from '../../utils/shared'
 import Image from '../Image'
 
@@ -45,7 +45,7 @@ class Video extends React.Component {
     const {image, respond, time, title, type, videoId} = this.props
     const {open} = this.state
     const isOpen = open === true
-    const width = getModalAspect(browserSize().width)
+    const width = getModalAspect(getBrowserWidth())
     const playerOptions = {
       width: width.toString(),
       height: (width * (360 / 640)).toString(),  // ~640x360
