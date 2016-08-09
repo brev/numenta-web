@@ -4,7 +4,7 @@
 
 
 .default {
-  composes: bg-white from 'tachyons';
+  composes: bg-near-white from 'tachyons';
   composes: ba from 'tachyons';
   composes: f4 from 'tachyons';
   composes: f5-ns from 'tachyons';

@@ -9,8 +9,6 @@ import Image from '../Image'
 import styles from './index.css'
 import modalStyles from './style-modal'
 
-const DefaultWidth = 640
-
 
 class Video extends React.Component {
 
@@ -33,22 +31,6 @@ class Video extends React.Component {
     this.state = {
       open: false,
     }
-
-    this._sizer = null
-    this._width = DefaultWidth
-  }
-
-  componentDidMount() {
-    this._sizer = browserSize()
-    this._width = this._sizer.width
-    this._sizer.on('resize', () => {
-      if (this._sizer) this._width = this._sizer.width
-    })
-  }
-
-  componentWillUnmount() {
-    this._sizer = null
-    this._width = DefaultWidth
   }
 
   _playerClose() {
@@ -63,7 +45,7 @@ class Video extends React.Component {
     const {image, respond, time, title, type, videoId} = this.props
     const {open} = this.state
     const isOpen = open === true
-    const width = getModalAspect(this._width)
+    const width = getModalAspect(browserSize().width)
     const playerOptions = {
       width: width.toString(),
       height: (width * (360 / 640)).toString(),  // ~640x360

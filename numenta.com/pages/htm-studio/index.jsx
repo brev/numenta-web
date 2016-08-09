@@ -1,3 +1,4 @@
+import browserSize from 'browser-size'
 import classNames from 'classnames'
 import IconBarChart from 'react-icons/lib/fa/bar-chart'
 import IconBullseye from 'react-icons/lib/fa/bullseye'
@@ -7,6 +8,8 @@ import IconLock from 'react-icons/lib/fa/lock'
 import IconQuestion from 'react-icons/lib/fa/question-circle'
 import Modal from 'react-modal'
 import React from 'react'
+
+import {getModalAspect} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import Button from '../../components/Button'
@@ -37,6 +40,7 @@ import ImageVideoDatetime from './images/video-datetime.png'
 import ImageVideoIntro from './images/video-intro.png'
 import ImageVideoWalkthru from './images/video-walkthru.png'
 import styles from './index.css'
+import modalStyles from './style-modal'
 
 const sortFaqs = (a, b) => {
   if (a.data.sort > b.data.sort) return 1
@@ -114,18 +118,36 @@ class HtmStudioPage extends React.Component {
         </Paragraph>
       </div>
     ))
-    const termsModal = (
-      <Modal
-        isOpen={terms}
-        onRequestClose={() => this._toggleTerms()}
+    const TermsLink = (
+      <TextLink
+        onClick={(event) => this._toggleTerms(event)}
+        to={`${links.in.htmstudio}terms/`}
       >
-        <span dangerouslySetInnerHTML={{__html: Terms.body}} />
-      </Modal>
+        Terms and Conditions
+      </TextLink>
     )
+    let termsModal
 
     if (!warning) {
       warningClasses.push(styles.hide)
     }
+
+    modalStyles.content.width = getModalAspect(browserSize().width - 100)
+    termsModal = (
+      <Modal
+        isOpen={terms}
+        onRequestClose={() => this._toggleTerms()}
+        style={modalStyles}
+      >
+        <SubTitle>{Terms.title}</SubTitle>
+        <div dangerouslySetInnerHTML={{__html: Terms.body}} />
+        <div className={styles.close}>
+          <Button onClick={() => this._toggleTerms()}>
+            Close
+          </Button>
+        </div>
+      </Modal>
+    )
 
     return (
       <div>
@@ -156,19 +178,12 @@ class HtmStudioPage extends React.Component {
                     />
                     <span className={styles.agree}>
                       I agree to the {' '}
-                      <TextLink
-                        onClick={(event) => this._toggleTerms(event)}
-                        to={`${links.in.htmstudio}terms/`}
-                      >
-                        Terms and Conditions
-                      </TextLink>
+                      {TermsLink}
                     </span>
                   </div>
                   <div className={classNames(...warningClasses)}>
                     Please agree to the {' '}
-                    <TextLink to={`${links.in.htmstudio}terms/`}>
-                      Terms and Conditions
-                    </TextLink> {' '}
+                    {TermsLink} {' '}
                     before downloading.
                   </div>
                   <div>
@@ -500,12 +515,7 @@ class HtmStudioPage extends React.Component {
                   </Paragraph>
                 </ListItem>
                 <ListItem>
-                  <TextLink
-                    onClick={() => this._toggleTerms()}
-                    to={`${links.in.htmstudio}terms/`}
-                  >
-                    Terms and Conditions
-                  </TextLink>
+                  {TermsLink}
                   <Paragraph>
                     Terms and Conditions for HTM Studio.
                   </Paragraph>

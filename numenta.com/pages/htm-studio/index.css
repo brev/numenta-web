@@ -46,6 +46,10 @@
   composes: tc from 'tachyons';
 }
 
+.close {
+  composes: fr from 'tachyons';
+}
+
 .agree {
   composes: ml2 from 'tachyons';
 }
