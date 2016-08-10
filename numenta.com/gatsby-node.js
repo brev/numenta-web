@@ -4,6 +4,10 @@ import fs from 'fs'
 import {ncp} from 'ncp'
 import toml from 'toml'
 
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
+
+// Default max of 10 EventEmitters is not enough for our MainSections, bump up.
+require('events').EventEmitter.prototype._maxListeners = 33  // eslint-disable-line max-len, no-underscore-dangle
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -11,11 +15,6 @@ import toml from 'toml'
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
-
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
-
-// Default max of 10 EventEmitters is not enough for our MainSections, bump up.
-require('events').EventEmitter.prototype._maxListeners = 33  // eslint-disable-line max-len, no-underscore-dangle
 
 /* eslint-disable no-console */
 
@@ -96,8 +95,12 @@ export function modifyWebpackConfig(webpack, env) {
  * @see https://github.com/gatsbyjs/gatsby#perform-additional-post-build-step
  */
 export function postBuild(pages, callback) {
-  const urls = pages.map((page) => ({
-    url: page.path,
+  const searches = pages.map(({data, path}) => {
+    if (data && path) return {data, path}
+    return false
+  })
+  const urls = pages.map(({path}) => ({
+    url: path,
     changefreq: 'daily', // 'monthly'
     priority: 0.3, // 0.7
   }))
@@ -105,6 +108,9 @@ export function postBuild(pages, callback) {
     hostname: 'http://numenta.com',
     urls,
   })
+
+  console.log('postBuild generate search index')
+  fs.writeFileSync('public/search.json', JSON.stringify(searches))
 
   console.log('postBuild generate sitemap')
   fs.writeFileSync('public/sitemap.xml', sitemap.toString())
