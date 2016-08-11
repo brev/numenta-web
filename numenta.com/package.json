@@ -51,6 +51,7 @@
     "front-matter": "2.1.0",
     "gatsby": "0.11.7",
     "history": "2.1.1",
+    "js-worker-search": "1.0.2",
     "js-yaml": "3.6.1",
     "moment": "2.14.1",
     "ncp": "2.0.0",
@@ -67,6 +68,7 @@
     "react-tap-event-plugin": "1.0.0",
     "react-youtube": "7.0.1",
     "sitemap": "1.8.1",
+    "superagent": "2.1.0",
     "tachyons": "github:numenta/tachyons#d8e73dec47cb1c868bde3e4e4d5fd60fa5483fe2",
     "tachyons-base": "1.2.3"
   },

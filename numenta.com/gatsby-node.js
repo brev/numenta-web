@@ -110,7 +110,7 @@ export function postBuild(pages, callback) {
   })
 
   console.log('postBuild generate search index')
-  fs.writeFileSync('public/search.json', JSON.stringify(searches))
+  fs.writeFileSync('public/search-index.json', JSON.stringify(searches))
 
   console.log('postBuild generate sitemap')
   fs.writeFileSync('public/sitemap.xml', sitemap.toString())
