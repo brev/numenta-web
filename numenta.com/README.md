@@ -191,6 +191,7 @@ moved into GitHub Issues ASAP.
 
 ### Medium
 
+* search on dev? build index. copy public/_searchIndex.json to pages/ after dev `npm run build`
 * document the code, build docs
 * put copyright notice at top of source files
 * document this file

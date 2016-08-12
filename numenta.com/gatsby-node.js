@@ -1,13 +1,14 @@
 import {createSitemap} from 'sitemap'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import fs from 'fs'
+import htmlToText from 'html-to-text'
 import {ncp} from 'ncp'
 import toml from 'toml'
 
 const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
-require('events').EventEmitter.prototype._maxListeners = 33  // eslint-disable-line max-len, no-underscore-dangle
+require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -95,22 +96,34 @@ export function modifyWebpackConfig(webpack, env) {
  * @see https://github.com/gatsbyjs/gatsby#perform-additional-post-build-step
  */
 export function postBuild(pages, callback) {
-  const searches = pages.map(({data, path}) => {
-    if (data && path) return {data, path}
-    return false
-  })
-  const urls = pages.map(({path}) => ({
-    url: path,
-    changefreq: 'daily', // 'monthly'
-    priority: 0.3, // 0.7
-  }))
+  const searches = pages
+    .filter((page) => page.path)
+    .map(({path}) => {
+      const html = fs.readFileSync(`./public/${path}/index.html`)
+      const text = htmlToText.fromString(html, {
+        baseElement: 'main',
+        ignoreHref: true,
+        ignoreImages: true,
+        preserveNewlines: false,
+        uppercaseHeadings: false,
+        wordwrap: null,
+      }).replace(/\n+/, ' ')
+      return {path, text}
+    })
+  const urls = pages
+    .filter((page) => page.path)
+    .map(({path}) => ({
+      url: path,
+      changefreq: 'daily', // 'monthly'
+      priority: 0.3, // 0.7
+    }))
   const sitemap = createSitemap({
     hostname: 'http://numenta.com',
     urls,
   })
 
   console.log('postBuild generate search index')
-  fs.writeFileSync('public/search-index.json', JSON.stringify(searches))
+  fs.writeFileSync('public/_searchIndex.json', JSON.stringify(searches))
 
   console.log('postBuild generate sitemap')
   fs.writeFileSync('public/sitemap.xml', sitemap.toString())

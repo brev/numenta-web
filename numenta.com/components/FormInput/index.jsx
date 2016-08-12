@@ -4,7 +4,7 @@ import React from 'react'
 import styles from './index.css'
 
 
-const FormInput = ({name, placeholder, stretch, type, value}) => {
+const FormInput = ({name, onChange, placeholder, stretch, type, value}) => {
   const classes = [styles.formInput]
 
   if (stretch) classes.push(styles[stretch])
@@ -14,6 +14,7 @@ const FormInput = ({name, placeholder, stretch, type, value}) => {
       className={classNames(...classes)}
       id={name}
       name={name}
+      onChange={onChange}
       placeholder={placeholder}
       type={type}
       value={value}
@@ -23,6 +24,7 @@ const FormInput = ({name, placeholder, stretch, type, value}) => {
 
 FormInput.propTypes = {
   name: React.PropTypes.string.isRequired,
+  onChange: React.PropTypes.func,
   placeholder: React.PropTypes.string,
   stretch: React.PropTypes.oneOf(['small', 'medium', 'large']),
   type: React.PropTypes.string.isRequired,
