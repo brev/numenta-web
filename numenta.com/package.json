@@ -94,7 +94,7 @@
     "clean": "npm run clean:build",
     "clean:build": "rm -Rf public/",
     "clean:npm": "rm -Rf node_modules/ && npm cache clean",
-    "deploy:gh-pages": "gh-pages --dist public/",
+    "deploy:gh-pages": "gh-pages --dotfiles --dist public/",
     "predev": "npm run lint",
     "dev": "gatsby develop",
     "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
