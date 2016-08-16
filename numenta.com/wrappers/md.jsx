@@ -31,12 +31,7 @@ const MarkdownWrapper = ({route}, {config}) => {
   const keys = file.dir.split('/')
   let key = keys[0]
   let url = `/${key}/`
-  let author
-  let back
-  let date
-  let event
-  let photo
-  let type
+  let author, back, date, event, photo, type
 
   if (key === 'papers-videos-and-more') {
     key = keys[1]  // 'learn'

@@ -99,16 +99,22 @@ export function postBuild(pages, callback) {
   const searches = pages
     .filter((page) => page.path)
     .map(({path}) => {
-      const html = fs.readFileSync(`./public/${path}/index.html`)
-      const text = htmlToText.fromString(html, {
-        baseElement: 'main',
-        ignoreHref: true,
-        ignoreImages: true,
-        preserveNewlines: false,
-        uppercaseHeadings: false,
-        wordwrap: null,
-      }).replace(/\n+/, ' ')
-      return {path, text}
+      const html = fs.readFileSync(`./public/${path}/index.html`).toString()
+      const title = html.match(/<title>(.+)<\/title>/)
+      console.log(title)
+      const text = htmlToText
+        .fromString(html, {
+          baseElement: ['title', 'main'],
+          hideLinkHrefIfSameAsText: true,
+          ignoreHref: true,
+          ignoreImages: true,
+          preserveNewlines: true,
+          uppercaseHeadings: false,
+          wordwrap: null,
+        })
+        .replace(/\n/g, ' ')
+        .replace(/\[.+\]/, ' ')
+      return {path, text, title}
     })
   const urls = pages
     .filter((page) => page.path)

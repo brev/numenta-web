@@ -1,26 +1,17 @@
 import IconFaSearch from 'react-icons/lib/fa/search'
-import Modal from 'react-modal'
+import {inHTMLData} from 'xss-filters'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 import request from 'superagent'
 import SearchApi from 'js-search'
 
-import {getBrowserWidth} from '../../utils/client'
-import {getModalAspect} from '../../utils/shared'
-
 import Button from '../Button'
 import Form from '../Form'
 import FormInput from '../FormInput'
 import FormLabel from '../FormLabel'
-import List from '../List'
-import ListItem from '../ListItem'
-import Paragraph from '../Paragraph'
-import Strong from '../Strong'
-import SubTitle from '../SubTitle'
-import TextLink from '../TextLink'
+import SearchResult from '../SearchResult'
 
 import styles from './index.css'
-import modalStyles from './style-modal'
 
 
 /**
@@ -32,6 +23,7 @@ class Search extends React.Component {
 
     this._api = new SearchApi.Search('path')
     this._api.addIndex('text')
+    this._api.addIndex('title')
 
     this.state = {query: ''}
   }
@@ -49,48 +41,25 @@ class Search extends React.Component {
     this._api = null
   }
 
-  _perform(event) {
+  _performSearch(query) {
+    // ??? would event.preventDefault here help the inital box focus problem???
     this.setState({
-      query: event.target.value,
+      query: inHTMLData(query.toLowerCase()),
     })
   }
 
   render() {
     const {query} = this.state
-    let resultsModal
+    let matches, results
 
-    if (query) {
-      const empty = {target: {value: ''}}
-      const matches = this._api.search(query).slice(0, 10)
-      const results = matches.map(({path, text}) => (
-        <ListItem key={path}>
-          <TextLink
-            onClick={() => this._perform(empty)}
-            to={path}
-          >
-            <Strong>
-              {path}
-            </Strong>
-          </TextLink>
-          <Paragraph>
-            {text}
-          </Paragraph>
-        </ListItem>
-      ))
-      modalStyles.content.width = getModalAspect(getBrowserWidth() - 100)
-      resultsModal = (
-        <Modal
-          isOpen={true}
-          onRequestClose={() => this._perform(empty)}
-          style={modalStyles}
-        >
-          <SubTitle>
-            Search Results
-          </SubTitle>
-          <List>
-            {results}
-          </List>
-        </Modal>
+    if (query && query.length > 2) {
+      matches = this._api.search(query).slice(0, 10)
+      results = (
+        <SearchResult
+          onClose={() => this._performSearch('')}
+          query={query}
+          results={matches}
+        />
       )
     }
 
@@ -102,7 +71,7 @@ class Search extends React.Component {
         <span className={styles.query}>
           <FormInput
             name="q"
-            onChange={(event) => this._perform(event)}
+            onChange={(event) => this._performSearch(event.target.value)}
             placeholder="Search..."
             type="search"
             value={query}
@@ -111,7 +80,7 @@ class Search extends React.Component {
         <Button theme="light" type="submit">
           <IconFaSearch color="inherit" />
         </Button>
-        {resultsModal}
+        {results}
       </Form>
     )
   }
