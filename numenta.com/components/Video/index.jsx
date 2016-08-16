@@ -62,6 +62,7 @@ class Video extends React.Component {
       <div className={styles.video}>
         <Image
           alt={alternate}
+          border={true}
           onClick={() => this._playerOpen()}
           respond={respond}
           src={image}
