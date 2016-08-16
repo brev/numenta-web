@@ -9,7 +9,7 @@ import FormLabel from '../../components/FormLabel'
 import FormRow from '../../components/FormRow'
 import ListItem from '../../components/ListItem'
 import ListOrder from '../../components/ListOrder'
-import PostListItem from '../../components/PostListItem'
+import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
 
 import styles from './index.css'
@@ -25,7 +25,7 @@ const NewsletterPage = (props, {route}) => {
   ))
   const items = posts.sort(sortDateDescend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostListItem post={post} />
+      <PostListRow post={post} />
     </ListItem>
   ))
 

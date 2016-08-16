@@ -1,9 +1,11 @@
 import {createSitemap} from 'sitemap'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import fs from 'fs'
-import htmlToText from 'html-to-text'
+import htmlToText from 'html2plaintext'
 import {ncp} from 'ncp'
 import toml from 'toml'
+
+/* eslint-disable no-console */
 
 const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
@@ -16,8 +18,6 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
-
-/* eslint-disable no-console */
 
 
 /**
@@ -90,32 +90,38 @@ export function modifyWebpackConfig(webpack, env) {
 
 /**
  * Gatsby post-build callback.
+ *  1. Build client-side search index
+ *  2. Build XML sitemap for search crawlers
+ *  3. Copy static assets to build output dir
  * @param {Array} pages - List of built pages
  * @param {Function} [callback] - Node-style async function(error, result) {}
  * @returns {Function} - Executed async callback function
  * @see https://github.com/gatsbyjs/gatsby#perform-additional-post-build-step
  */
 export function postBuild(pages, callback) {
+  // prep search index
+  const searchSkip = [
+    '/blog/',
+    '/events/',
+    '/newsletter/',
+    '/papers/',
+    '/press/',
+  ]
   const searches = pages
-    .filter((page) => page.path)
+    .filter((page) => (page.path && !searchSkip.includes(page.path)))
     .map(({path}) => {
       const html = fs.readFileSync(`./public/${path}/index.html`).toString()
-      const title = html.match(/<title>(.+)<\/title>/)
+      const title = html
+        .match(/<title[\s\S]*>([\s\S]*)<\/title>/)[1]
+        .replace(/ \| Numenta.com$/, '')
       console.log(title)
-      const text = htmlToText
-        .fromString(html, {
-          baseElement: ['title', 'main'],
-          hideLinkHrefIfSameAsText: true,
-          ignoreHref: true,
-          ignoreImages: true,
-          preserveNewlines: true,
-          uppercaseHeadings: false,
-          wordwrap: null,
-        })
-        .replace(/\n/g, ' ')
-        .replace(/\[.+\]/, ' ')
+      const main = html.match(/<main[\s\S]*>([\s\S]*)<\/main>/)[1]
+      console.log(main)
+      const text = htmlToText(main)
+      console.log(text)
       return {path, text, title}
     })
+  // prep sitemap
   const urls = pages
     .filter((page) => page.path)
     .map(({path}) => ({

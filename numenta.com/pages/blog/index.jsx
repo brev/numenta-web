@@ -4,7 +4,7 @@ import {sortDateDescend} from '../../utils/shared'
 
 import ListItem from '../../components/ListItem'
 import ListOrder from '../../components/List'
-import PostListItem from '../../components/PostListItem'
+import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
 
 
@@ -16,7 +16,7 @@ const BlogPage = (props, {route}) => {
   const posts = pages.filter(({file}) => (file.path.match(/^blog\/.*\.md/)))
   const items = posts.sort(sortDateDescend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostListItem post={post} />
+      <PostListRow post={post} />
     </ListItem>
   ))
 

@@ -2,11 +2,15 @@ import React from 'react'
 
 import {sortDateDescend} from '../../utils/shared'
 
+import Anchor from '../../components/Anchor'
 import ListItem from '../../components/ListItem'
 import ListOrder from '../../components/ListOrder'
 import PostListItem from '../../components/PostListItem'
 import Section from '../../components/Section'
 import SubTitle from '../../components/SubTitle'
+import TextLink from '../../components/TextLink'
+
+import styles from './index.css'
 
 
 /**
@@ -17,9 +21,11 @@ const PressPage = (props, {route}) => {
   const posts = pages.filter(({file}) => (file.path.match(/^press\/.*\.md/)))
   const pressLinks = posts
     .filter(({data}) => (data.type === 'link'))
-    .sort(sortDateDescend).map((post) => (
-      <ListItem key={post.file.stem}>
-        <PostListItem post={post} />
+    .sort(sortDateDescend).map(({data, file, path}) => (
+      <ListItem key={file.stem}>
+        <TextLink to={path}>
+          {data.title}
+        </TextLink>
       </ListItem>
     ))
   const pressReleases = posts
@@ -32,18 +38,25 @@ const PressPage = (props, {route}) => {
 
   return (
     <div>
-      <Section headline={true} open={true} title="Press">
+      <Section headline={true} open={true} title="Press Releases">
+        <div className={styles.columns}>
+          <div className={styles.content}>
 
-        <SubTitle>Press Releases</SubTitle>
-        <ListOrder copy={false}>
-          {pressReleases}
-        </ListOrder>
+            <ListOrder copy={false}>
+              {pressReleases}
+            </ListOrder>
 
-        <SubTitle>Press Links</SubTitle>
-        <ListOrder copy={false}>
-          {pressLinks}
-        </ListOrder>
+          </div>
+          <div className={styles.aside}>
 
+            <Anchor name="links" />
+            <SubTitle level={3}>Press Links</SubTitle>
+            <ListOrder copy={false}>
+              {pressLinks}
+            </ListOrder>
+
+          </div>
+        </div>
       </Section>
     </div>
   )

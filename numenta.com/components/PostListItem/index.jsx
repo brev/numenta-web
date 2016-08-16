@@ -2,8 +2,6 @@ import moment from 'moment'
 import React from 'react'
 
 import Avatar from '../Avatar'
-import Image from '../Image'
-import ImageLink from '../ImageLink'
 import Paragraph from '../Paragraph'
 import Spacer from '../Spacer'
 import Strong from '../Strong'
@@ -58,41 +56,25 @@ const PostListItem = ({post}, {config}) => {
   }
 
   return (
-    <article className={styles.postListItem}>
-      <div className={styles.columns}>
-        <div className={styles.content}>
-          <div className={styles.date}>
-            <Time moment={datetime}>{when}</Time>
-          </div>
-          <TextLink to={target}>
-            <span className={styles.title}>
-              {data.title}
-            </span>
-          </TextLink>
-          {brief}
-          <div className={styles.author}>
-            <Subtle>
-              <Avatar name={data.author} />
-              {data.author}
-              <Spacer />
-              {data.org}
-            </Subtle>
-          </div>
-        </div>
-        <div className={styles.aside}>
-          <div className={styles.image}>
-            <ImageLink to={target}>
-              <Image
-                alt={data.title}
-                respond="mw"
-                shadow={true}
-                src={`${path}${data.image}`}
-              />
-            </ImageLink>
-          </div>
-        </div>
+    <div className={styles.item}>
+      <div className={styles.date}>
+        <Time moment={datetime}>{when}</Time>
       </div>
-    </article>
+      <TextLink to={target}>
+        <span className={styles.title}>
+          {data.title}
+        </span>
+      </TextLink>
+      {brief}
+      <div className={styles.author}>
+        <Subtle>
+          <Avatar name={data.author} />
+          {data.author}
+          <Spacer />
+          {data.org}
+        </Subtle>
+      </div>
+    </div>
   )
 }
 

@@ -6,7 +6,7 @@ import {sortDateAscend, sortDateDescend} from '../../utils/shared'
 import Anchor from '../../components/Anchor'
 import ListItem from '../../components/ListItem'
 import ListOrder from '../../components/List'
-import PostListItem from '../../components/PostListItem'
+import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
 import SubTitle from '../../components/SubTitle'
 
@@ -26,12 +26,12 @@ const EventsPage = (props, {config, route}) => {
   ))
   const itemsPast = past.sort(sortDateDescend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostListItem post={post} />
+      <PostListRow post={post} />
     </ListItem>
   ))
   const itemsUp = upcoming.sort(sortDateAscend).map((post) => (
     <ListItem key={post.file.stem}>
-      <PostListItem post={post} />
+      <PostListRow post={post} />
     </ListItem>
   ))
 

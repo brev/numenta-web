@@ -1,23 +1,5 @@
-.columns {
-  composes: layout-columns from '../../static/assets/css/theme.css';
-}
-
-.content {
-  composes: layout-content from '../../static/assets/css/theme.css';
-}
-
-.aside {
-  composes: mt1 from 'tachyons';
-  composes: tc from 'tachyons';
-  composes: layout-aside from '../../static/assets/css/theme.css';
-}
-
-
-.postListItem {
-  composes: b--light-gray from 'tachyons';
-  composes: bt from 'tachyons';
-  composes: pb1 from 'tachyons';
-  composes: pt3 from 'tachyons';
+.item {
+  /* */
 }
 
 .date {
