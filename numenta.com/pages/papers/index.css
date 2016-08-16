@@ -1,0 +1,13 @@
+.papers {
+  composes: center from 'tachyons';
+  composes: lh-copy from 'tachyons';
+  composes: measure from 'tachyons';
+  composes: measure-wide-l from 'tachyons';
+}
+
+.paper {
+  composes: b--light-gray from 'tachyons';
+  composes: bt from 'tachyons';
+  composes: pb1 from 'tachyons';
+  composes: pt3 from 'tachyons';
+}

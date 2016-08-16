@@ -6,8 +6,8 @@ import React from 'react'
 import {getBrowserWidth} from '../../utils/client'
 import {getModalAspect} from '../../utils/shared'
 
-import List from '../List'
 import ListItem from '../ListItem'
+import ListOrder from '../ListOrder'
 import Paragraph from '../Paragraph'
 import Strong from '../Strong'
 import SubTitle from '../SubTitle'
@@ -80,9 +80,9 @@ const SearchResult = ({onClose, query, results}) => {
         <SubTitle>
           Search Results for <Strong>{query}:</Strong>
         </SubTitle>
-        <List>
+        <ListOrder>
           {items}
-        </List>
+        </ListOrder>
       </div>
     </Modal>
   )

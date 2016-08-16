@@ -506,7 +506,7 @@ class HtmStudioPage extends React.Component {
                 </ListItem>
                 <ListItem>
                   {/* eslint-disable max-len */}
-                  <TextLink to="/papers-videos-and-more/learn/science-of-anomaly-detection/">
+                  <TextLink to={`${links.in.resources}science-of-anomaly-detection/`}>
                     Science of Anomaly Detection Video
                   </TextLink>
                   {/* eslint-enable max-len */}

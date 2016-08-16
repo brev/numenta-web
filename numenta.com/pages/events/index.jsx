@@ -4,8 +4,8 @@ import React from 'react'
 import {sortDateAscend, sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
-import List from '../../components/List'
 import ListItem from '../../components/ListItem'
+import ListOrder from '../../components/List'
 import PostListItem from '../../components/PostListItem'
 import Section from '../../components/Section'
 import SubTitle from '../../components/SubTitle'
@@ -40,15 +40,15 @@ const EventsPage = (props, {config, route}) => {
       <Section headline={true} open={true} title="Events">
         <Anchor name="upcoming" />
         <SubTitle>Upcoming Events</SubTitle>
-        <List copy={false}>
+        <ListOrder copy={false}>
           {itemsUp}
-        </List>
+        </ListOrder>
 
         <Anchor name="past" />
         <SubTitle>Past Events</SubTitle>
-        <List copy={false}>
+        <ListOrder copy={false}>
           {itemsPast}
-        </List>
+        </ListOrder>
       </Section>
     </div>
   )

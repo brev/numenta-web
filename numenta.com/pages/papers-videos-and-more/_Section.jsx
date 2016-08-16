@@ -1,14 +1,13 @@
-import {capitalize} from 'lodash'
 import IconBook from 'react-icons/lib/fa/book'
 import IconPaper from 'react-icons/lib/fa/file-pdf-o'
 import IconVideo from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
+import {sortDateDescend, sortOrderAscend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
-import List from '../../components/List'
 import ListItem from '../../components/ListItem'
+import ListOrder from '../../components/ListOrder'
 import Paragraph from '../../components/Paragraph'
 import Spacer from '../../components/Spacer'
 import SubTitle from '../../components/SubTitle'
@@ -25,12 +24,6 @@ const learnIcons = {
   video: (<IconVideo />),
 }
 
-function sortOrderAscend(a, b) {
-  if (a.data.sort > b.data.sort) return 1
-  if (a.data.sort < b.data.sort) return -1
-  return 0
-}
-
 
 /**
  *
@@ -39,16 +32,13 @@ const SectionPapers = (props, {config, route}) => {
   const {links} = config
   const {pages} = route
   const postsLearn = pages.filter(({file}) => (
-    (file.path.match(/^papers\-videos.*\/learn\/.*\.md/))
+    (file.path.match(/^papers\-videos\-and\-more\/.*\.md/))
   ))
   const postsMore = postsLearn.filter(({data}) => (
     (data.media !== 'video')
   ))
   const postsVideos = postsLearn.filter(({data}) => (
     (data.media === 'video')
-  ))
-  const postsPapers = pages.filter(({file}) => (
-    (file.path.match(/^papers\-videos.*\/papers\/.*\.md/))
   ))
   const mores = postsMore.sort(sortDateDescend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
@@ -96,29 +86,6 @@ const SectionPapers = (props, {config, route}) => {
       </div>
     </ListItem>
   ))
-  const papers = postsPapers.sort(sortOrderAscend).map(({data, file}) => {
-    const categoryNice = capitalize(data.category.replace(/-/, ' '))
-    return (
-      <ListItem key={file.stem}>
-        <TextLink to={data.link}>
-          {data.title}
-        </TextLink>
-        <Paragraph>
-          {data.brief}
-        </Paragraph>
-        <Subtle>
-          {data.author}
-          <div>
-            {categoryNice}
-            <Spacer />
-            {data.org}
-            <Spacer />
-            {data.date}
-          </div>
-        </Subtle>
-      </ListItem>
-    )
-  })
 
   return (
     <div className={styles.columns}>
@@ -130,7 +97,18 @@ const SectionPapers = (props, {config, route}) => {
           learn about HTM cortical theory and its applications for machine
           intelligence.
         </Paragraph>
-        <List marker="disc">
+        <ListOrder marker="disc">
+          <ListItem>
+            <TextLink to={links.in.papers}>
+              Research Papers
+            </TextLink>
+            <Spacer />
+            Here you’ll find a collection of recent Numenta Research papers.
+            Some of them are currently under review at journals/conferences but
+            we have made all manuscripts available on {' '}
+            <TextLink to="http://arxiv.org">arXiv,</TextLink> {' '}
+            an online repository of self-archived scientific papers.
+          </ListItem>
           <ListItem>
             <TextLink to={links.in.bami}>
               Biological and Machine Intelligence (BaMI)
@@ -151,22 +129,15 @@ const SectionPapers = (props, {config, route}) => {
             Hierarchical Temporal Memory (HTM). Each 10-15 minute episode dives
             into a particular topic of HTM theory.
           </ListItem>
-        </List>
+        </ListOrder>
 
-        <Anchor name="papers" />
+        <Anchor name="videos" />
         <SubTitle>
-          Research Papers
+          Videos
         </SubTitle>
-        <Paragraph>
-          Here you’ll find a collection of recent Numenta Research papers. Some
-          of them are currently under review at journals/conferences but we have
-          made all manuscripts available on {' '}
-          <TextLink to="http://arxiv.org">arXiv,</TextLink> {' '}
-          an online repository of self-archived scientific papers.
-        </Paragraph>
-        <List marker="disc">
-          {papers}
-        </List>
+        <ListOrder>
+          {videos}
+        </ListOrder>
 
       </div>
       <div className={styles.aside}>
@@ -182,21 +153,13 @@ const SectionPapers = (props, {config, route}) => {
           />
         </div>
 
-        <Anchor name="videos" />
-        <SubTitle>
-          Videos
-        </SubTitle>
-        <List>
-          {videos}
-        </List>
-
         <Anchor name="more" />
         <SubTitle>
           More
         </SubTitle>
-        <List>
+        <ListOrder>
           {mores}
-        </List>
+        </ListOrder>
 
       </div>
     </div>

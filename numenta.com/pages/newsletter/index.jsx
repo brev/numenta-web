@@ -7,8 +7,8 @@ import Form from '../../components/Form'
 import FormInput from '../../components/FormInput'
 import FormLabel from '../../components/FormLabel'
 import FormRow from '../../components/FormRow'
-import List from '../../components/List'
 import ListItem from '../../components/ListItem'
+import ListOrder from '../../components/ListOrder'
 import PostListItem from '../../components/PostListItem'
 import Section from '../../components/Section'
 
@@ -60,9 +60,9 @@ const NewsletterPage = (props, {route}) => {
       </div>
 
       <Section headline={true} open={true} title="Newsletter">
-        <List copy={false}>
+        <ListOrder copy={false}>
           {items}
-        </List>
+        </ListOrder>
       </Section>
     </div>
   )

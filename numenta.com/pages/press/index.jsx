@@ -2,8 +2,8 @@ import React from 'react'
 
 import {sortDateDescend} from '../../utils/shared'
 
-import List from '../../components/List'
 import ListItem from '../../components/ListItem'
+import ListOrder from '../../components/ListOrder'
 import PostListItem from '../../components/PostListItem'
 import Section from '../../components/Section'
 
@@ -23,9 +23,9 @@ const PressPage = (props, {route}) => {
   return (
     <div>
       <Section headline={true} open={true} title="Press">
-        <List copy={false}>
+        <ListOrder copy={false}>
           {items}
-        </List>
+        </ListOrder>
       </Section>
     </div>
   )

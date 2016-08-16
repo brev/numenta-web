@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import IconDownload from 'react-icons/lib/fa/cloud-download'
 import IconGithub from 'react-icons/lib/fa/github'
 import IconPdf from 'react-icons/lib/fa/file-pdf-o'
@@ -27,17 +28,16 @@ import ImageVideoEval from './images/video-mlconf.png'
 import ImageVideoNab from './images/video-nab.png'
 import styles from './index.css'
 
+const title = 'Numenta Anomaly Benchmark (NAB)'
+
 
 /**
  *
  */
 const NabPage = () => (
   <div>
-    <Section
-      headline={true}
-      open={true}
-      title="Numenta Anomaly Benchmark (NAB)"
-    >
+    <Helmet title={title} />
+    <Section headline={true} open={true} title={title}>
       <div className={styles.columns}>
         <div className={styles.content}>
 

@@ -71,6 +71,15 @@ export function sortDateDescend(a, b) {
 /**
  *
  */
+export function sortOrderAscend(a, b) {
+  if (a.data.sort > b.data.sort) return 1
+  if (a.data.sort < b.data.sort) return -1
+  return 0
+}
+
+/**
+ *
+ */
 export function stamp(text) {
   return `${text}?v=${getVersion()}`
 }
