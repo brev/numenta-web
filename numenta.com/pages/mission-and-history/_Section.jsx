@@ -10,7 +10,6 @@ import SubTitle from '../../components/SubTitle'
 import TextLink from '../../components/TextLink'
 import Video from '../../components/Video'
 
-import ImageBrain from './images/brain.svg'
 import ImageTimeline from './images/timeline.png'
 import ImageVideoStory from './images/video-ourstory.png'
 import styles from './index.css'
@@ -64,14 +63,6 @@ const SectionMission = (props, {config}) => {
             type="youtube"
             videoId="f1tYXv6ST_U"
           />
-          <div className={styles.brain}>
-            <Image
-              alt="Stylized Brain Artwork"
-              respond="mw"
-              shadow={false}
-              src={ImageBrain}
-            />
-          </div>
         </div>
       </div>
 

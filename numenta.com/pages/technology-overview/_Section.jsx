@@ -1,10 +1,12 @@
 import React from 'react'
 
+import Image from '../../components/Image'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
 import Paragraph from '../../components/Paragraph'
 import Video from '../../components/Video'
 
+import ImageBrain from './images/brain.svg'
 import ImageVideoTech from './images/video-tech.png'
 import styles from './index.css'
 
@@ -66,6 +68,14 @@ const SectionTechnology = () => (
         type="youtube"
         videoId="v-VvFRar5TY"
       />
+      <div className={styles.brain}>
+        <Image
+          alt="Stylized Brain Artwork"
+          respond="mw"
+          shadow={false}
+          src={ImageBrain}
+        />
+      </div>
     </div>
   </div>
 )

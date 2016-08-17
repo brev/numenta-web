@@ -19,8 +19,7 @@
 
 .logo {
   composes: center from 'tachyons';
-  composes: mb3 from 'tachyons';
-  composes: mt2 from 'tachyons';
+  composes: mv2 from 'tachyons';
   composes: w5 from 'tachyons';
   composes: w4-m from 'tachyons';
 }
