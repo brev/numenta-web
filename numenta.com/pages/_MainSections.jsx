@@ -6,7 +6,7 @@ import SectionBusiness from './business-strategy-and-ip/_Section'
 import SectionCareers from './careers-team-and-contact/_Section'
 import SectionIndex from './_Section'
 import SectionMission from './mission-and-history/_Section'
-import SectionOpensource from './open-source-project/_Section'
+import SectionOpensource from './open-source-community/_Section'
 import SectionPapers from './papers-videos-and-more/_Section'
 import SectionPartners from './partners/_Section'
 import SectionTechnology from './technology-overview/_Section'
@@ -31,8 +31,8 @@ const mainSectionList = [
   },
   {
     component: <SectionOpensource />,
-    title: 'Open Source Project',
-    url: '/open-source-project/',
+    title: 'Open Source Community',
+    url: '/open-source-community/',
   },
   {
     component: <SectionApplications />,
