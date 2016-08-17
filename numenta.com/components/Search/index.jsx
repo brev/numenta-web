@@ -52,7 +52,7 @@ class Search extends React.Component {
     const {query} = this.state
     let matches, results
 
-    if (query && query.length > 2) {
+    if (query) {
       matches = this._api.search(query).slice(0, 10)
       results = (
         <SearchResult
@@ -65,7 +65,7 @@ class Search extends React.Component {
     }
 
     return (
-      <Form onSubmit={null}>
+      <Form onSubmit={(event) => event.preventDefault()}>
         <span className={styles.label}>
           <FormLabel htmlFor="q">Search</FormLabel>
         </span>
@@ -78,7 +78,11 @@ class Search extends React.Component {
             value={query}
           />
         </span>
-        <Button onClick={null} theme="light" type="submit">
+        <Button
+          onClick={(event) => event.preventDefault()}
+          theme="light"
+          type="submit"
+        >
           <IconFaSearch color="inherit" />
         </Button>
         {results}
