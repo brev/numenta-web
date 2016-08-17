@@ -34,29 +34,22 @@ const SectionMission = (props, {config}) => {
             intelligent system, providing a roadmap for building intelligent
             machines. The brain’s center of intelligence, the neocortex,
             controls a wide range of functions using a common set of
-            principles. We have made significant progress discovering these
-            principles and using them to create the Hierarchical Temporal
-            Memory (HTM) learning algorithms.
+            principles.
           </Paragraph>
           <Paragraph>
             Because today’s computers are programmed, they can only do
             exactly as they are told. In stark contrast, intelligent
             machines continuously and automatically learn patterns in their
             environment without being programmed, enabling them to tackle
-            problems in entirely new ways. Intelligent machines that learn
-            and act will have an enormous beneficial impact in the coming
-            decades.
+            problems in entirely new ways. Intelligent machines that learn will
+            have an enormous beneficial impact in the coming decades.
           </Paragraph>
           <Paragraph>
             We have made significant progress in understanding the neocortex
-            and building software based on those principles. We have
-            demonstrated in multiple applications across many industries
-            that the HTM learning algorithms can automatically model data
-            streams, make predictions, find anomalies and classify results.
-            We have a strong roadmap that continues to advance the
-            technology, enabling broader uses over time. We remain committed
-            to our open source project and encourage others to join us in
-            building a community. From a commercial point of view, we {' '}
+            and building software based on those principles. We put all of our
+            research and software implementations into open source and encourage
+            others to join us in building a community. From a commercial point
+            of view, we {' '}
             <TextLink to={links.out.license}>
               license our technology and intellectual property.
             </TextLink>

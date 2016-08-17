@@ -65,7 +65,7 @@ class Search extends React.Component {
     }
 
     return (
-      <Form>
+      <Form onSubmit={null}>
         <span className={styles.label}>
           <FormLabel htmlFor="q">Search</FormLabel>
         </span>
@@ -78,7 +78,7 @@ class Search extends React.Component {
             value={query}
           />
         </span>
-        <Button theme="light" type="submit">
+        <Button onClick={null} theme="light" type="submit">
           <IconFaSearch color="inherit" />
         </Button>
         {results}

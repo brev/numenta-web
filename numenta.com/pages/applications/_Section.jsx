@@ -31,11 +31,13 @@ const SectionApplications = (props, {config}) => {
       <div className={styles.columns}>
         <div className={styles.content}>
           <Paragraph lead={true}>
-            We have created demonstration HTM applications in several fields
-            such as IT monitoring, detecting unusual human behavior,
-            geospatial tracking, and understanding natural language and we are
-            confident that many additional applications will be created in the
-            future.
+            While Numenta does not build commercial applications, we have
+            created example HTM applications in several fields such as
+            monitoring stock performance, detecting unusual human behavior, and
+            finding patterns in geospatial data. Additionally, our partners have
+            created commercial applications in the field of monitoring IT
+            infrastructure and understanding natural language. We are confident
+            that many additional applications will be created in the future.
           </Paragraph>
 
           <Paragraph>
@@ -70,20 +72,20 @@ const SectionApplications = (props, {config}) => {
           </Paragraph>
           <List marker="disc">
             <ListItem>
+              Highlighting anomalies in the behavior of moving objects, such as
+              tracking a fleet’s movements on a truck by truck basis
+            </ListItem>
+            <ListItem>
+              Understanding if human behavior it normal or abnormal on a
+              securities trading floor
+            </ListItem>
+            <ListItem>
               Predicting energy usage for a utility on a customer by customer
               basis
             </ListItem>
             <ListItem>
               Predicting failure in a complex machine based on data from many
               sensors
-            </ListItem>
-            <ListItem>
-              Highlighting anomalies in the behavior of moving objects, such
-              as tracking a fleet’s movements on a truck by truck basis
-            </ListItem>
-            <ListItem>
-              Understanding if human behavior it normal or abnormal on a
-              securities trading floor
             </ListItem>
           </List>
           <Paragraph>
@@ -111,9 +113,8 @@ const SectionApplications = (props, {config}) => {
             HTM Studio for Anomaly Detection is a tool that makes it easy to
             experiment with using HTM to detect anomalies in your own scalar
             data. Designed for the business-focused user, this tool makes it
-            easy to develop a proof of concept with HTM technology. No coding
-            skills are required to test it, and HTM parameters are determined
-            automatically.
+            easy to develop a proof of concept with HTM technology without
+            doing any coding.
           </Paragraph>
           <List marker="disc">
             <ListItem>
@@ -183,18 +184,20 @@ const SectionApplications = (props, {config}) => {
       </div>
 
       <Anchor name="grokit" />
-      <SubTitle>Grok for IT Analytics</SubTitle>
+      <SubTitle>Grok</SubTitle>
       <div className={styles.columns}>
         <div className={styles.content}>
           <Paragraph>
-            Grok for IT Analytics is a commercial application that detects
-            anomalies in servers and applications. It learns continuously,
-            automatically discovers time-based patterns in data, and
-            generalizes from experience.
+            Grok is a commercial application offered by one of our strategic
+            partners that detects anomalies in servers and applications. It
+            learns continuously, automatically discovers time-based patterns in
+            data, and generalizes from experience.
           </Paragraph>
           <Paragraph>
-            Grok for IT Analytics 2.0 is now available at {' '}
-            <TextLink to={links.out.grok}>{links.out.grok}.</TextLink>
+            Grok is now available at {' '}
+            <TextLink to={links.out.grok}>
+              {links.out.grok}.
+            </TextLink>
           </Paragraph>
           <List marker="disc">
             <ListItem>

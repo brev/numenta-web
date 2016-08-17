@@ -392,7 +392,7 @@ const SectionCareers = (props, {config, route}) => {
 
           <SubTitle level={4}>Harry Saal</SubTitle>
           <SubTitle level={5}>
-            Chairman of ZERO1, The Arts & Technology Network
+            Chairman, Retrotope, Inc.
           </SubTitle>
           <div className={styles.columns}>
             <div className={styles.content}>

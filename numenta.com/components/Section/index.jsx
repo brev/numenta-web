@@ -54,8 +54,8 @@ class Section extends React.Component {
       // auto
       // router.push(url)
 
-      // mark section state as Open in browser localstorage
-      global.window.localStorage.setItem(url, 'open')
+      // mark section state as Open in browser sessionStorage
+      global.window.sessionStorage.setItem(url, 'open')
     }
     else {
       // manual
@@ -63,8 +63,8 @@ class Section extends React.Component {
       // auto
       // router.goBack()
 
-      // mark section state as Closed in browser localstorage
-      global.window.localStorage.removeItem(url)
+      // mark section state as Closed in browser sessionStorage
+      global.window.sessionStorage.removeItem(url)
     }
 
     this.setState({open})

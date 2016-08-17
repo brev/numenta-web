@@ -101,7 +101,7 @@ const SectionBusiness = (props, {config}) => {
             Given the uniqueness of our work and our early focus on temporal
             data, we have been issued over thirty U.S. and international
             patents. The list of issued patents {' '}
-            <TextLink to={links.out.license}>
+            <TextLink to={links.out.patents}>
               can be found here.
             </TextLink> {' '}
             We believe these patents cover some of the foundational principles
@@ -221,14 +221,14 @@ const SectionBusiness = (props, {config}) => {
               <Strong>Commercial use</Strong>
             </TableCell>
             <TableCell>
-              Do not distribute software: AGPLv3 (no cost)
+              Use internally only: AGPLv3 (no cost)
             </TableCell>
             <TableCell>
-              Distribute software, distribute source code: AGPLv3 (no cost)
+              Able to offer to others under the terms of the AGPLv3, including
+              making source code available: AGPLv3 (no cost)
             </TableCell>
             <TableCell>
-              Distribute software, keep source code proprietary: Commercial
-              license (fee)
+              Prefer to keep code proprietary: Commercial license (fee)
             </TableCell>
             <TableCell>
               Patent license (under development – fee TBD)

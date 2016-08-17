@@ -41,7 +41,7 @@ const SectionAnomaly = (props, {config}) => {
         </Paragraph>
         <List marker="disc">
           <ListItem>
-            A dataset with 58 real-world, labeled data files
+            A dataset with real-world, labeled data files
           </ListItem>
           <ListItem>
             A scoring mechanism that rewards early detection and
@@ -66,7 +66,9 @@ const SectionAnomaly = (props, {config}) => {
             </TextLink>
           </ListItem>
           <ListItem>
-            <TextLink to={links.in.nab}>More Information</TextLink>
+            <TextLink to={links.in.nab}>
+              More Information
+            </TextLink>
           </ListItem>
         </List>
         {/* eslint-disable max-len */}

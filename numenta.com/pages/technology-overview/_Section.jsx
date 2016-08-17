@@ -16,19 +16,18 @@ const SectionTechnology = () => (
   <div className={styles.columns}>
     <div className={styles.content}>
       <Paragraph lead={true}>
-        Based on a wealth of neuroscience evidence we have created a
-        technology called HTM (Hierarchical Temporal Memory) that models key
-        aspects of neocortical learning. HTM is well suited for prediction,
-        anomaly detection, classification and ultimately sensori-motor
-        applications.
+        Based on a wealth of neuroscience evidence we have created HTM
+        (Hierarchical Temporal Memory), a theoretical framework for both
+        biological and machine intelligence. When applied to computers, HTM is
+        well suited for prediction, anomaly detection, classification and
+        ultimately sensori-motor applications.
       </Paragraph>
       <Paragraph>
-        At the core of HTM are time-based learning algorithms that can
-        store, learn, infer and recall high-order sequences. Unlike most
-        other machine learning methods, HTM learns time-based patterns in
-        data on a continuous basis. HTM is extremely high capacity, meaning
-        that it can learn multiple patterns simultaneously.  It is also
-        robust to noise and can learn continuously from unlabeled data.
+        At the core of HTM are learning algorithms that can store, learn, infer
+        and recall high-order sequences. Unlike most other machine learning
+        methods, HTM learns time-based patterns in unlabeled data on a
+        continuous basis. HTM is robust to noise, and high capacity, meaning
+        that it can learn multiple patterns simultaneously.
       </Paragraph>
       <Paragraph>
         HTM works best with data that meets the following characteristics:
@@ -38,7 +37,7 @@ const SectionTechnology = () => (
           Streaming data rather than batch data files
         </ListItem>
         <ListItem>
-          Underlying patterns in the data that change over time
+          Data with time-based patterns
         </ListItem>
         <ListItem>
           Many individual data sources where hand crafting separate models
@@ -46,9 +45,6 @@ const SectionTechnology = () => (
         </ListItem>
         <ListItem>
           Subtle patterns that can’t always be seen by humans
-        </ListItem>
-        <ListItem>
-          Data with time-based patterns
         </ListItem>
         <ListItem>
           Data for which simple techniques such as thresholds yield

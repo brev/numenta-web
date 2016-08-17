@@ -8,7 +8,7 @@ import SectionOpensource from './_Section'
 import Section from '../../components/Section'
 
 const Default = (<SectionOpensource />)
-const title = 'Open Source Project'
+const title = 'Open Source Community'
 
 
 /**
