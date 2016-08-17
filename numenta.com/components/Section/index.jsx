@@ -8,6 +8,9 @@ import SectionTitle from '../SectionTitle'
 import styles from './index.css'
 
 
+/**
+ *
+ */
 class Section extends React.Component {
 
   static contextTypes = {
@@ -48,19 +51,20 @@ class Section extends React.Component {
       global.window.history.pushState({}, '', prefixLink(url))
       global.window.ga('set', 'page', prefixLink(url))
       global.window.ga('send', 'pageview')
-
       // auto
       // router.push(url)
+
+      // mark section state as Open in browser localstorage
+      global.window.localStorage.setItem(url, 'open')
     }
     else {
-      // @TODO set URL based on what's visible, and/or
-      //    localStorage section open flag
-
       // manual
       // global.window.history.back()
-
       // auto
       // router.goBack()
+
+      // mark section state as Closed in browser localstorage
+      global.window.localStorage.removeItem(url)
     }
 
     this.setState({open})

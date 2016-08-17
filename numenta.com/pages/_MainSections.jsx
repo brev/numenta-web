@@ -84,7 +84,8 @@ const MainSections = ({current}) => {
   const childrenWithProps = React.Children.map(mainComponents, (Component) => {
     const key = Component.type.name
     const {title, url} = details[key]
-    const open = (key === current.type.name)
+    const isStored = (global.window.localStorage.getItem(url) === 'open')
+    const open = (key === current.type.name) || isStored
     const headline = open && (url === '/')
     return (
       <Section
