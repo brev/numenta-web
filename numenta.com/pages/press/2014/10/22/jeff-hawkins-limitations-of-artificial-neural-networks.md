@@ -1,12 +1,12 @@
 ---
 author: Augustus Van Dusen
-brief: The media hype surrounding artificial neural networks (ANN) is becoming absurd. These articles tend to be uncritical summaries of company press releases. The most over the top articles
+brief:
 date: 2014/10/22
 featured: false
-image: ../images/thinkingmachine.png
+image:
 link: http://thinkingmachineblog.net/jeff-hawkins-on-the-limitations-of-artificial-neural-networks/
 org: Thinking Machine
-tags: jeff hawkins numenta limitations of artificial nerual networks
+tags:
 title: Jeff Hawkins on the Limitations of Artificial Neural Networks
 type: link
 ---

@@ -1,12 +1,12 @@
 ---
 author: Fareed Zakaria, GPS
-brief: Fareed asks Jeff Hawkins about artificial intelligence -- could robots one day rise up against humans?
+brief:
 date: 2015/05/22
 featured: false
-image: ../images/cnn.png
+image:
 link: http://www.cnn.com/videos/tv/2015/05/22/exp-gps-0524-hawkins-artificial-intelligence.cnn
 org: CNN
-tags: cnn on gps fareed zakaria jeff hawkins threat intelligent machines numenta nupic brain neocortex
+tags:
 title: "On GPS: The Threat of Intelligent Machines"
 type: link
 ---

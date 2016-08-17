@@ -112,10 +112,10 @@ export function postBuild(pages, callback) {
     .map(({path}) => {
       const html = fs.readFileSync(`./public/${path}/index.html`).toString()
       const title = html
-        .match(/<title[\s\S]*>([\s\S]*)<\/title>/)[1]
+        .match(/<title[\s\S]*?>([\s\S]*?)<\/title>/)[1]
         .replace(/ \| Numenta.com$/, '')
       console.log(title)
-      const main = html.match(/<main[\s\S]*>([\s\S]*)<\/main>/)[1]
+      const main = html.match(/<main[\s\S]*?>([\s\S]*?)<\/main>/)[1]
       console.log(main)
       const text = htmlToText(main)
       console.log(text)

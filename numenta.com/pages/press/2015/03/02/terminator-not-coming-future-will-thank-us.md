@@ -1,12 +1,12 @@
 ---
 author: Jeff Hawkins
-brief: Stephen Hawking and Elon Musk are worried. Could machine intelligence really lead to the extinction of humans?
+brief:
 date: 2015/03/02
 featured: false
-image: ../images/recode.png
+image:
 link: http://recode.net/2015/03/02/the-terminator-is-not-coming-the-future-will-thank-us/
 org: Re/Code
-tags: general ai artificial intelligence machine recode terminator
+tags:
 title: The Terminator Is Not Coming. The Future Will Thank Us.
 type: link
 ---

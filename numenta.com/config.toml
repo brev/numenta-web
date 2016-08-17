@@ -72,33 +72,6 @@ description = 'Leading the New Era of Machine Intelligence'
     terms = '/legal/terms/'
 
   [links.anchor]  # internal path anchor hashes
-    # mission
-    mission = '#mission'
-    history = '#history'
-    # applications
-    htmstudio = '#htmstudio'
-    htmstocks = '#htmstocks'
-    grokit = '#grokit'
-    rogue = '#rogue'
-    geo = '#geo'
-    nlp = '#nlp'
-    # partners
-    cortical = '#cortical'
-    grok = '#grok'
-    # business
-    transparency = '#transparency'
-    science = '#science'
-    deployment = '#deployment'
-    licenses = '#licenses'
-    faq = '#faq'
-    # careers
-    careers = '#careers'
-    team = '#team'
-    board = '#board'
-    contact = '#contact'
-    office = '#office'
-    follow = '#follow'
-    # other pages
     get = '#get'  # htmstocks, etc.
     links = '#links'  # press links
 

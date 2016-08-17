@@ -1,6 +1,6 @@
 {
   "name": "Numenta.com",
-  "version": "0.2.45",
+  "version": "0.2.46",
   "description": "Numenta.com company website content, source code, and static generator tooling.",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "main": false,
@@ -18,7 +18,7 @@
     "x64"
   ],
   "engines": {
-    "node": ">=6.3.1",
+    "node": ">=6.4.0",
     "npm": ">=3.10.3"
   },
   "repository": {

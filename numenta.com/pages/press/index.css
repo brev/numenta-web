@@ -3,11 +3,24 @@
 }
 
 .content {
-  composes: pr4 from 'tachyons';
+  composes: pr4-l from 'tachyons';
   composes: layout-content from '../../static/assets/css/theme.css';
+  margin-top: -0.5rem;
 }
 
 .aside {
-  composes: mt1 from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
+  margin-top: -2rem;
+}
+
+
+.release {
+  composes: b--light-gray from 'tachyons';
+  composes: bt from 'tachyons';
+  composes: pb1 from 'tachyons';
+  composes: pt3 from 'tachyons';
+}
+
+.link {
+  composes: lh-copy from 'tachyons';
 }
