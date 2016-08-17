@@ -1,5 +1,6 @@
 import {camelCase} from 'lodash'
 import classNames from 'classnames'
+import Helmet from 'react-helmet'
 import IconBarChart from 'react-icons/lib/fa/bar-chart'
 import IconBullseye from 'react-icons/lib/fa/bullseye'
 import IconCubes from 'react-icons/lib/fa/cubes'
@@ -44,6 +45,7 @@ import ImageVideoWalkthru from './images/video-walkthru.png'
 import styles from './index.css'
 import modalStyles from './style-modal'
 
+const title = 'HTM Studio'
 const sortFaqs = (a, b) => {
   if (a.data.sort > b.data.sort) return 1
   if (a.data.sort < b.data.sort) return -1
@@ -152,10 +154,11 @@ class HtmStudioPage extends React.Component {
 
     return (
       <div>
+        <Helmet title={title} />
         <Section
           headline={true}
           open={true}
-          title="HTM Studio"
+          title={title}
         >
           <div className={styles.columns}>
             <div className={styles.content}>

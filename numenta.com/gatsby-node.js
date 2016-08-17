@@ -114,11 +114,12 @@ export function postBuild(pages, callback) {
       const title = html
         .match(/<title[\s\S]*?>([\s\S]*?)<\/title>/)[1]
         .replace(/ \| Numenta.com$/, '')
-      console.log(title)
-      const main = html.match(/<main[\s\S]*?>([\s\S]*?)<\/main>/)[1]
-      console.log(main)
+      const main = html
+        .match(/<main[\s\S]*?>([\s\S]*?)<\/main>/)[1]
+        .replace(/<!--.*?-->/, ' ')
       const text = htmlToText(main)
-      console.log(text)
+        .replace(/\n+/, ' ')
+        .replace(/\s+/, ' ')
       return {path, text, title}
     })
   // prep sitemap

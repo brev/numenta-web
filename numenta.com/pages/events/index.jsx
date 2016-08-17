@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import moment from 'moment'
 import React from 'react'
 
@@ -9,6 +10,8 @@ import ListOrder from '../../components/List'
 import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
 import SubTitle from '../../components/SubTitle'
+
+const title = 'Events'
 
 
 /**
@@ -37,7 +40,8 @@ const EventsPage = (props, {config, route}) => {
 
   return (
     <div>
-      <Section headline={true} open={true} title="Events">
+      <Helmet title={title} />
+      <Section headline={true} open={true} title={title}>
         <Anchor name="upcoming" />
         <SubTitle>Upcoming Events</SubTitle>
         <ListOrder copy={false}>

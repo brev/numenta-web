@@ -57,6 +57,7 @@ class Search extends React.Component {
       results = (
         <SearchResult
           onClose={() => this._performSearch('')}
+          onOpen={() => global.document.getElementById('q').focus()}
           query={query}
           results={matches}
         />

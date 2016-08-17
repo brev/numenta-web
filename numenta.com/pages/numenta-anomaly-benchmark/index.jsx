@@ -74,7 +74,7 @@ const NabPage = () => (
             image={ImageVideoNab}
             respond="mw"
             time="02:23"
-            title="Numenta Anomaly Benchmark (NAB)"
+            title={title}
             type="youtube"
             videoId="b0GS_Fbsvzw"
           />
@@ -141,7 +141,7 @@ const NabPage = () => (
         <div className={styles.content}>
           <SubTitle level={3}>
             Evaluating Real-Time Anomaly Detection:
-            The Numenta Anomaly Benchmark
+            The {title}
           </SubTitle>
           <Paragraph>
             Subutai Ahmad, VP Research presenting NAB and discussing the need
@@ -171,7 +171,7 @@ const NabPage = () => (
       <div className={styles.columns}>
         <div className={styles.content}>
           <SubTitle level={3}>
-            White Paper: The Numenta Anomaly Benchmark
+            White Paper: The {title}
           </SubTitle>
           <Paragraph>
             Why did we create this benchmark? Why is anomaly detection so hard
@@ -201,7 +201,7 @@ const NabPage = () => (
         <div className={styles.content}>
           <SubTitle level={3}>
             Research Paper: Evaluating Real-time Anomaly Detection
-            Algorithms – the Numenta Anomaly Benchmark
+            Algorithms – the {title}
           </SubTitle>
           <Paragraph>
             This peer-reviewed paper was accepted to the {' '}
@@ -255,7 +255,7 @@ const NabPage = () => (
       <div className={styles.columns}>
         <div className={styles.content}>
           <SubTitle level={3}>
-            Data Sheet: Numenta Anomaly Benchmark
+            Data Sheet: {title}
           </SubTitle>
           <Paragraph>
             Download this two-page data sheet to learn more about the key
@@ -289,7 +289,7 @@ const NabPage = () => (
       <div className={styles.columns}>
         <div className={styles.content}>
           <SubTitle level={3}>
-            Try the Numenta Anomaly Benchmark
+            Try the {title}
           </SubTitle>
           <Paragraph>
             We’ve made it easy for you to try NAB. {' '}

@@ -1,4 +1,5 @@
 import IconQuote from 'react-icons/lib/fa/quote-left'
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
@@ -13,6 +14,8 @@ import TextLink from '../../components/TextLink'
 
 import styles from './index.css'
 
+const title = 'Biological and Machine Intelligence (BAMI)'
+
 
 /**
  *
@@ -22,11 +25,8 @@ const BamiPage = (props, {config}) => {
 
   return (
     <div>
-      <Section
-        headline={true}
-        open={true}
-        title="Biological and Machine Intelligence (BaMI)"
-      >
+      <Helmet title={title} />
+      <Section headline={true} open={true} title={title}>
         <div className={styles.columns}>
           <div className={styles.aside}>
 

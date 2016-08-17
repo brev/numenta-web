@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import {sortDateDescend} from '../../utils/shared'
@@ -6,6 +7,8 @@ import ListItem from '../../components/ListItem'
 import ListOrder from '../../components/List'
 import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
+
+const title = 'Blog'
 
 
 /**
@@ -22,7 +25,8 @@ const BlogPage = (props, {route}) => {
 
   return (
     <div>
-      <Section headline={true} open={true} title="Blog">
+      <Helmet title={title} />
+      <Section headline={true} open={true} title={title}>
         <ListOrder copy={false}>
           {items}
         </ListOrder>

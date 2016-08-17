@@ -1,4 +1,5 @@
 import {capitalize} from 'lodash'
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import {sortOrderAscend} from '../../utils/shared'
@@ -12,6 +13,8 @@ import Subtle from '../../components/Subtle'
 import TextLink from '../../components/TextLink'
 
 import styles from './index.css'
+
+const title = 'Research Papers'
 
 
 /**
@@ -51,7 +54,8 @@ const PapersPage = (props, {route}) => {
 
   return (
     <div className={styles.papers}>
-      <Section headline={true} open={true} title="Research Papers">
+      <Helmet title={title} />
+      <Section headline={true} open={true} title={title}>
         <ListOrder copy={false}>
           {items}
         </ListOrder>

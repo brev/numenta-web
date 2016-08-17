@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import {scrollToSection} from '../../utils/client'
@@ -7,6 +8,7 @@ import SectionMission from './_Section'
 import Section from '../../components/Section'
 
 const Default = (<SectionMission />)
+const title = 'Mission & History'
 
 
 /**
@@ -16,7 +18,7 @@ class MissionPage extends React.Component {
 
   state = {
     sections: (
-      <Section headline={true} open={true} title="Mission & History">
+      <Section headline={true} open={true} title={title}>
         {Default}
       </Section>
     ),
@@ -38,7 +40,12 @@ class MissionPage extends React.Component {
 
   render() {
     const {sections} = this.state
-    return sections
+    return (
+      <div>
+        <Helmet title={title} />
+        {sections}
+      </div>
+    )
   }
 
 }

@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import {sortDateDescend} from '../../utils/shared'
@@ -53,6 +54,7 @@ const PressPage = (props, {route}) => {
 
   return (
     <div>
+      <Helmet title="Press" />
       <Section headline={true} open={true} title="Press Releases">
         <div className={styles.columns}>
           <div className={styles.content}>

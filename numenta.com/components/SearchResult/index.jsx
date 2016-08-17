@@ -21,7 +21,7 @@ import modalStyles from './style-modal'
 /**
  *
  */
-const SearchResult = ({onClose, query, results}) => {
+const SearchResult = ({onClose, onOpen, query, results}) => {
   const quoteRadius = 12
   const isOpen = (query.length > 0)
   let items = (
@@ -38,6 +38,7 @@ const SearchResult = ({onClose, query, results}) => {
       const quotes = finds.map(([index]) => (
         words.slice(index - quoteRadius, index + quoteRadius).join(' ')
       ))
+      const quoted = capitalize(quotes.slice(0, 2).join(' ... '))
 
       return (
         <ListItem key={path}>
@@ -59,7 +60,7 @@ const SearchResult = ({onClose, query, results}) => {
           <Paragraph>
             “
             <Highlight search={query}>
-              {capitalize(quotes.join(' ... '))}
+              {quoted}
             </Highlight>
             ...”
           </Paragraph>
@@ -73,6 +74,7 @@ const SearchResult = ({onClose, query, results}) => {
   return (
     <Modal
       isOpen={isOpen}
+      onAfterOpen={onOpen}
       onRequestClose={onClose}
       style={modalStyles}
     >
@@ -90,6 +92,7 @@ const SearchResult = ({onClose, query, results}) => {
 
 SearchResult.propTypes = {
   onClose: React.PropTypes.func,
+  onOpen: React.PropTypes.func,
   query: React.PropTypes.string,
   results: React.PropTypes.array,
 }

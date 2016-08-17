@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
@@ -28,6 +29,8 @@ import ImageUse3 from './images/use3.png'
 import ImageUse4 from './images/use4.png'
 import styles from './index.css'
 
+const title = 'HTM for Stocks'
+
 
 /**
  *
@@ -37,10 +40,11 @@ const HtmStocksPage = (props, {config}) => {
 
   return (
     <div>
+      <Helmet title={title} />
       <Section
         headline={true}
         open={true}
-        title="HTM for Stocks"
+        title={title}
       >
         <div className={styles.columns}>
           <div className={styles.content}>

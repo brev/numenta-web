@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import React from 'react'
 
 import {sortDateDescend} from '../../utils/shared'
@@ -13,6 +14,8 @@ import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
 
 import styles from './index.css'
+
+const title = 'Newsletter'
 
 
 /**
@@ -31,6 +34,7 @@ const NewsletterPage = (props, {route}) => {
 
   return (
     <div>
+      <Helmet title={title} />
       <div className={styles.signup}>
         {/* eslint-disable max-len */}
         <Form
@@ -59,7 +63,7 @@ const NewsletterPage = (props, {route}) => {
         {/* eslint-enable max-len */}
       </div>
 
-      <Section headline={true} open={true} title="Newsletter">
+      <Section headline={true} open={true} title={title}>
         <ListOrder copy={false}>
           {items}
         </ListOrder>
