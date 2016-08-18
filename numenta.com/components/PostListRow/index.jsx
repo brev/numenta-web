@@ -17,11 +17,6 @@ const PostListRow = ({post}) => {
   return (
     <article className={styles.row}>
       <div className={styles.columns}>
-        <div className={styles.content}>
-
-          <PostListItem post={post} />
-
-        </div>
         <div className={styles.aside}>
 
           <div className={styles.image}>
@@ -34,6 +29,11 @@ const PostListRow = ({post}) => {
               />
             </ImageLink>
           </div>
+
+        </div>
+        <div className={styles.content}>
+
+          <PostListItem post={post} />
 
         </div>
       </div>

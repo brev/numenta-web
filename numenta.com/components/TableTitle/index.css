@@ -1,7 +1,9 @@
-.tableTitle {
+.border {
   composes: b--black-10 from 'tachyons';
+  composes: ba from 'tachyons';
+}
+
+.tableTitle {
   composes: bg-near-white from 'tachyons';
-  composes: bl from 'tachyons';
-  composes: bt from 'tachyons';
   composes: pa2 from 'tachyons';
 }

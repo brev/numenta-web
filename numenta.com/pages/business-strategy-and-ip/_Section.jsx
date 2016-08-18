@@ -190,7 +190,7 @@ const SectionBusiness = (props, {config}) => {
       <SubTitle level={3}>
         Summary of Numenta Licenses
       </SubTitle>
-      <Table>
+      <Table border={true}>
         <TableHead>
           <TableRow>
             <TableTitle />

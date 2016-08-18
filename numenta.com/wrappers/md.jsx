@@ -3,6 +3,8 @@ import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
 import React from 'react'
 
+import {getEventTimeDisplay} from '../utils/shared'
+
 import Avatar from '../components/Avatar'
 import IconMarker from '../components/IconMarker'
 import Image from '../components/Image'
@@ -11,6 +13,7 @@ import Spacer from '../components/Spacer'
 import Strong from '../components/Strong'
 import Subtle from '../components/Subtle'
 import Table from '../components/Table'
+import TableBody from '../components/TableBody'
 import TableCell from '../components/TableCell'
 import TableRow from '../components/TableRow'
 import TextLink from '../components/TextLink'
@@ -18,7 +21,7 @@ import Time from '../components/Time'
 
 import styles from './md.css'
 
-const postTypes = ['blog', 'events', 'learn', 'newsletter', 'press']
+const postTypes = ['blog', 'events', 'newsletter', 'press', 'resources']
 
 
 /**
@@ -27,14 +30,13 @@ const postTypes = ['blog', 'events', 'learn', 'newsletter', 'press']
 const MarkdownWrapper = ({route}, {config}) => {
   const {data, file, path} = route.page
   const datetime = moment(data.date, config.moments.post)
-  const when = datetime.format(config.moments.human)
-  const keys = file.dir.split('/')
-  let key = keys[0]
+  const occur = datetime.format(config.moments.human)
+  let key = file.dir.split('/')[0]
   let url = `/${key}/`
   let author, back, date, event, photo, type
 
   if (key === 'papers-videos-and-more') {
-    key = keys[1]  // 'learn'
+    key = 'resources'
   }
 
   if (data.type === 'post') {
@@ -70,22 +72,22 @@ const MarkdownWrapper = ({route}, {config}) => {
     }
 
     if (key === 'events') {
-      const {where} = data.event
+      const {when, where} = data.event
       const {desc, city, state, country, web, what, who, why} = where
       const details = [(
-        <TableRow>
+        <TableRow key="when">
           <TableCell>
             <Strong>When</Strong>
           </TableCell>
           <TableCell>
-            {when}
+            {getEventTimeDisplay(when)}
           </TableCell>
         </TableRow>
       )]
 
       if (city) {
         details.push((
-          <TableRow>
+          <TableRow key="where">
             <TableCell>
               <Strong>Where</Strong>
             </TableCell>
@@ -100,7 +102,7 @@ const MarkdownWrapper = ({route}, {config}) => {
       }
       if (web) {
         details.push((
-          <TableRow>
+          <TableRow key="web">
             <TableCell>
               <Strong>Web</Strong>
             </TableCell>
@@ -112,7 +114,7 @@ const MarkdownWrapper = ({route}, {config}) => {
       }
       if (what) {
         details.push((
-          <TableRow>
+          <TableRow key="topic">
             <TableCell>
               <Strong>Topic</Strong>
             </TableCell>
@@ -124,7 +126,7 @@ const MarkdownWrapper = ({route}, {config}) => {
       }
       if (why && who) {
         details.push((
-          <TableRow>
+          <TableRow key="why">
             <TableCell>
               <Strong>{why}</Strong>
             </TableCell>
@@ -137,7 +139,9 @@ const MarkdownWrapper = ({route}, {config}) => {
 
       event = (
         <Table direction="horizontal">
-          {details}
+          <TableBody>
+            {details}
+          </TableBody>
         </Table>
       )
     }
@@ -146,7 +150,7 @@ const MarkdownWrapper = ({route}, {config}) => {
   if (data.date) {
     date = (
       <div className={styles.date}>
-        <Time moment={datetime}>{when}</Time>
+        <Time moment={datetime}>{occur}</Time>
         {type}
       </div>
     )

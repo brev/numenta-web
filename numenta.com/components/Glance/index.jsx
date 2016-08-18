@@ -42,7 +42,9 @@ const Glance = (props, context) => {
         </TextLink>
       </span>
     ),
-    Events: (<TextLink to={links.in.events}>Upcoming</TextLink>),
+    Events: (
+      <TextLink to={links.in.events}>Events</TextLink>
+    ),
     Latest: (
       <TextLink to={links.in.htmstudio}>
         Numenta releases HTM Studio! <Tag>New</Tag>

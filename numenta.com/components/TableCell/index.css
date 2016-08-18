@@ -1,7 +1,10 @@
-.tableCell {
+.border {
   composes: b--black-10 from 'tachyons';
-  composes: bl from 'tachyons';
-  composes: bt from 'tachyons';
+  composes: ba from 'tachyons';
+}
+
+.tableCell {
+  composes: lh-title from 'tachyons';
   composes: pa2 from 'tachyons';
   composes: v-top from 'tachyons';
 }

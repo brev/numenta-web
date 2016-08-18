@@ -18,6 +18,48 @@ export function getConfig() {
 /**
  *
  */
+export function getEventTimeDisplay(when) {
+  const formatDate = config.moments.human
+  const formatTime = 'h:mm A'
+  const formatBegin = [formatDate]
+  const formatEnd = [formatDate]
+  const out = []
+  let begin = null
+  let end = null
+
+  if (!when || !('begin' in when)) {
+    return null
+  }
+
+  // discovery
+  if (when.begin.match(' ')) {
+    formatBegin.push(formatTime)
+  }
+  begin = moment(new Date(when.begin))
+
+  if ('end' in when) {
+    if (when.end.match(' ')) {
+      formatEnd.push(formatTime)
+    }
+    end = moment(new Date(when.end))
+  }
+
+  // format output string
+  out.push(begin.format(formatBegin.join(' ')))
+  if (when.begin !== when.end) {
+    if (begin.format(formatDate) === end.format(formatDate)) {
+      formatEnd.shift()  // don't repeat Date twice
+    }
+    out.push('—')
+    out.push(end.format(formatEnd.join(' ')))
+  }
+
+  return out.join(' ')
+}
+
+/**
+ *
+ */
 export function getModalAspect(width) {
   const pad = 20
   let long

@@ -11,6 +11,8 @@ import PostListRow from '../../components/PostListRow'
 import Section from '../../components/Section'
 import SubTitle from '../../components/SubTitle'
 
+import styles from './index.css'
+
 const title = 'Events'
 
 
@@ -39,7 +41,7 @@ const EventsPage = (props, {config, route}) => {
   ))
 
   return (
-    <div>
+    <div className={styles.events}>
       <Helmet title={title} />
       <Section headline={true} open={true} title={title}>
         <Anchor name="upcoming" />

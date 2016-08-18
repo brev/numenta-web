@@ -1,15 +1,23 @@
+import classNames from 'classnames'
 import React from 'react'
 
 import styles from './index.css'
 
 
-const TableCell = ({children, colSpan}) => (
-  <td className={styles.tableCell} colSpan={colSpan}>
-    {children}
-  </td>
-)
+const TableCell = ({border, children, colSpan}) => {
+  const classes = [styles.tableCell]
+
+  if (border) classes.push(styles.border)
+
+  return (
+    <td className={classNames(...classes)} colSpan={colSpan}>
+      {children}
+    </td>
+  )
+}
 
 TableCell.propTypes = {
+  border: React.PropTypes.bool,
   children: React.PropTypes.any,
   colSpan: React.PropTypes.number.isRequired,
 }

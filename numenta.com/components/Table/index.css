@@ -1,8 +1,8 @@
-.table {
-  composes: b--black-10 from 'tachyons';
-  composes: bb from 'tachyons';
-  composes: br from 'tachyons';
+.border {
   composes: br2 from 'tachyons';
   composes: collapse from 'tachyons';
+}
+
+.table {
   composes: mb4 from 'tachyons';
 }
