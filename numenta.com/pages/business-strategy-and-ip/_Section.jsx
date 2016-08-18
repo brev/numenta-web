@@ -36,9 +36,16 @@ const SectionBusiness = (props, {config}) => {
   return (
     <div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Image
+            alt="Numenta Business Office"
+            respond="mw"
+            src={ImageBusiness}
+          />
+        </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
-            At Numenta we believe that the coming era of machine intelligence
+            Numenta believes that the coming era of machine intelligence
             will be based on biological principles. Our mission is to lead the
             emerging field of machine intelligence by understanding the
             neocortex and by building technology that reflects that
@@ -68,13 +75,6 @@ const SectionBusiness = (props, {config}) => {
             </ListItem>
           </ListOrder>
         </div>
-        <div className={styles.aside}>
-          <Image
-            alt="Numenta Business Office"
-            respond="mw"
-            src={ImageBusiness}
-          />
-        </div>
       </div>
 
       <Anchor name="transparency" />
@@ -82,6 +82,9 @@ const SectionBusiness = (props, {config}) => {
         1. Transparency
       </SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <IconDiamond className={styles.icon} />
+        </div>
         <div className={styles.content}>
           <Paragraph>
             We have enabled a community of researchers and developers working
@@ -108,9 +111,6 @@ const SectionBusiness = (props, {config}) => {
             of machine intelligence.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <IconDiamond className={styles.icon} />
-        </div>
       </div>
 
       <Anchor name="science" />
@@ -118,6 +118,9 @@ const SectionBusiness = (props, {config}) => {
         2. Scientific Use
       </SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <IconShuttle className={styles.icon} />
+        </div>
         <div className={styles.content}>
           <Paragraph>
             Our software, along with its associated IP, is available at {' '}
@@ -137,9 +140,6 @@ const SectionBusiness = (props, {config}) => {
             will not assert our patents.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <IconShuttle className={styles.icon} />
-        </div>
       </div>
 
       <Anchor name="deployment" />
@@ -147,6 +147,9 @@ const SectionBusiness = (props, {config}) => {
         3. Commercial Deployment
       </SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <IconCloud className={styles.icon} />
+        </div>
         <div className={styles.content}>
           <Paragraph>
             In our terminology, commercial use means using the technology or
@@ -180,9 +183,6 @@ const SectionBusiness = (props, {config}) => {
             </TextLink> {' '}
             if you are interested in this license.
           </Paragraph>
-        </div>
-        <div className={styles.aside}>
-          <IconCloud className={styles.icon} />
         </div>
       </div>
 
@@ -242,6 +242,9 @@ const SectionBusiness = (props, {config}) => {
         Numenta Licensing FAQ
       </SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <IconQuestion className={styles.icon} />
+        </div>
         <div className={styles.content}>
           <div className={styles.faq}>
             <DefineList>
@@ -315,9 +318,6 @@ const SectionBusiness = (props, {config}) => {
               </DefineItem>
             </DefineList>
           </div>
-        </div>
-        <div className={styles.aside}>
-          <IconQuestion className={styles.icon} />
         </div>
       </div>
     </div>

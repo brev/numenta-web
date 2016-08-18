@@ -24,6 +24,11 @@ const SectionPartners = (props, {config}) => {
   return (
     <div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <div className={styles.logomark}>
+            <LogoMark />
+          </div>
+        </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
             Numenta works with strategic partners to bring the power of HTM
@@ -45,16 +50,21 @@ const SectionPartners = (props, {config}) => {
             </TextLink>
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <div className={styles.logomark}>
-            <LogoMark />
-          </div>
-        </div>
       </div>
 
       <Anchor name="cortical" />
       <SubTitle>Cortical.io</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.cortical}>
+            <Image
+              alt="Cortical.io logo"
+              respond="mw"
+              shadow={false}
+              src={ImageCortical}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             Cortical.io is leading the next generation of natural language
@@ -90,21 +100,21 @@ const SectionPartners = (props, {config}) => {
           </List>
           {/* eslint-enable max-len */}
         </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.cortical}>
-            <Image
-              alt="Cortical.io logo"
-              respond="mw"
-              shadow={false}
-              src={ImageCortical}
-            />
-          </ImageLink>
-        </div>
       </div>
 
       <Anchor name="grok" />
       <SubTitle>Grok</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.grok}>
+            <Image
+              alt="Grok Stream logo"
+              respond="mw"
+              shadow={false}
+              src={ImageGrokstream}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             Grok is using HTM technology for advanced IT anomaly detection.
@@ -132,16 +142,6 @@ const SectionPartners = (props, {config}) => {
             </ListItem>
           </List>
           {/* eslint-enable max-len */}
-        </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.grok}>
-            <Image
-              alt="Grok Stream logo"
-              respond="mw"
-              shadow={false}
-              src={ImageGrokstream}
-            />
-          </ImageLink>
         </div>
       </div>
     </div>

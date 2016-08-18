@@ -26,6 +26,16 @@ const SectionMission = (props, {config}) => {
       <Anchor name="mission" />
       <SubTitle>Mission</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Video
+            image={ImageVideoStory}
+            respond="mw"
+            time="02:32"
+            title="Our Story"
+            type="youtube"
+            videoId="f1tYXv6ST_U"
+          />
+        </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
             Numenta’s mission is to be a leader in the new era of machine
@@ -53,16 +63,6 @@ const SectionMission = (props, {config}) => {
               license our technology and intellectual property.
             </TextLink>
           </Paragraph>
-        </div>
-        <div className={styles.aside}>
-          <Video
-            image={ImageVideoStory}
-            respond="mw"
-            time="02:32"
-            title="Our Story"
-            type="youtube"
-            videoId="f1tYXv6ST_U"
-          />
         </div>
       </div>
 

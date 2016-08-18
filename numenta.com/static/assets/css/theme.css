@@ -87,12 +87,12 @@
 
 .layout-columns {
   composes: cf from 'tachyons';
-  composes: mb3 from 'tachyons';
   composes: w-100 from 'tachyons';
 }
 
 .layout-content {
   composes: fl from 'tachyons';
+  composes: mb3 from 'tachyons';
   composes: w-100 from 'tachyons';
   composes: w-60-ns from 'tachyons';
 }
@@ -103,6 +103,7 @@
 
 .layout-aside {
   composes: fr from 'tachyons';
+  composes: mb3 from 'tachyons';
   composes: pl4-m from 'tachyons';
   composes: w-100 from 'tachyons';
   composes: w-40-ns from 'tachyons';

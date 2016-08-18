@@ -8,7 +8,7 @@ import Title from '../Title'
 import styles from './index.css'
 
 
-const SectionTitle = ({children, clickHandle, headline, open}) => {
+const SectionTitle = ({children, clickHandle, headline, open, title}) => {
   const isHeadline = headline === true
   const isOpen = open === true && !isHeadline
   const IconAngle = isOpen ? IconAngleUp : IconAngleDown
@@ -19,7 +19,11 @@ const SectionTitle = ({children, clickHandle, headline, open}) => {
     if (isOpen) titleClasses.push(styles.open)
 
     sectionTitle = (
-      <nav className={classNames(...titleClasses)} onClick={clickHandle}>
+      <nav
+        className={classNames(...titleClasses)}
+        onClick={clickHandle}
+        title={title}
+      >
         <IconAngle className={styles.toggle} />
         {sectionTitle}
       </nav>
@@ -33,6 +37,7 @@ SectionTitle.propTypes = {
   children: React.PropTypes.any.isRequired,
   clickHandle: React.PropTypes.func.isRequired,
   headline: React.PropTypes.bool.isRequired,
+  title: React.PropTypes.string,
 }
 
 SectionTitle.defaultProps = {

@@ -21,6 +21,16 @@ const SectionAnomaly = (props, {config}) => {
 
   return (
     <div className={styles.columns}>
+      <div className={styles.aside}>
+        <ImageLink to={links.in.nab}>
+          <Image
+            alt="Numenta Anomaly Benchmark (NAB) screenshot"
+            border={true}
+            respond="mw"
+            src={ImageBenchmark}
+          />
+        </ImageLink>
+      </div>
       <div className={styles.content}>
         <Paragraph lead={true}>
           Sensors and data streams are proliferating as the Internet of
@@ -72,16 +82,6 @@ const SectionAnomaly = (props, {config}) => {
           </ListItem>
         </List>
         {/* eslint-disable max-len */}
-      </div>
-      <div className={styles.aside}>
-        <ImageLink to={links.in.nab}>
-          <Image
-            alt="Numenta Anomaly Benchmark (NAB) screenshot"
-            border={true}
-            respond="mw"
-            src={ImageBenchmark}
-          />
-        </ImageLink>
       </div>
     </div>
   )

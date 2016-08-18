@@ -1,12 +1,10 @@
 import React from 'react'
 
-import Image from '../../components/Image'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
 import Paragraph from '../../components/Paragraph'
 import Video from '../../components/Video'
 
-import ImageBrain from './images/brain.svg'
 import ImageVideoTech from './images/video-tech.png'
 import styles from './index.css'
 
@@ -16,6 +14,16 @@ import styles from './index.css'
  */
 const SectionTechnology = () => (
   <div className={styles.columns}>
+    <div className={styles.aside}>
+      <Video
+        image={ImageVideoTech}
+        respond="mw"
+        time="02:23"
+        title="Intro to our Technology"
+        type="youtube"
+        videoId="v-VvFRar5TY"
+      />
+    </div>
     <div className={styles.content}>
       <Paragraph lead={true}>
         Based on a wealth of neuroscience evidence we have created HTM
@@ -58,24 +66,6 @@ const SectionTechnology = () => (
         which is developed with best practices and suitable for deploying in
         commercial applications.
       </Paragraph>
-    </div>
-    <div className={styles.aside}>
-      <Video
-        image={ImageVideoTech}
-        respond="mw"
-        time="02:23"
-        title="Intro to our Technology"
-        type="youtube"
-        videoId="v-VvFRar5TY"
-      />
-      <div className={styles.brain}>
-        <Image
-          alt="Stylized Brain Artwork"
-          respond="mw"
-          shadow={false}
-          src={ImageBrain}
-        />
-      </div>
     </div>
   </div>
 )

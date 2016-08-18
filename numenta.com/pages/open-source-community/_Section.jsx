@@ -1,9 +1,10 @@
-import IconGithub from 'react-icons/lib/fa/github'
 import React from 'react'
 
+import Image from '../../components/Image'
 import Paragraph from '../../components/Paragraph'
 import TextLink from '../../components/TextLink'
 
+import ImageBrain from './images/brain.svg'
 import styles from './index.css'
 
 
@@ -15,6 +16,14 @@ const SectionOpensource = (props, {config}) => {
 
   return (
     <div className={styles.columns}>
+      <div className={styles.aside}>
+        <Image
+          alt="Stylized Brain Artwork"
+          respond="mw"
+          shadow={false}
+          src={ImageBrain}
+        />
+      </div>
       <div className={styles.content}>
         <Paragraph lead={true}>
           Because we want our technology to be broadly adopted, we make it
@@ -49,9 +58,6 @@ const SectionOpensource = (props, {config}) => {
           </TextLink> {' '}
           section.
         </Paragraph>
-      </div>
-      <div className={styles.aside}>
-        <IconGithub className={styles.icon} />
       </div>
     </div>
   )

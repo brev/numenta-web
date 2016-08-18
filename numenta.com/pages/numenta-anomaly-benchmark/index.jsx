@@ -76,7 +76,7 @@ const NabPage = () => (
             time="02:23"
             title={title}
             type="youtube"
-            videoId="b0GS_Fbsvzw"
+            videoId="u_ENXLIlu8s"
           />
         </div>
       </div>

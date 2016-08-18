@@ -31,16 +31,18 @@ const Glance = (props, context) => {
         <TextLink to={links.in.newsletter}>Newsletter</TextLink>
       </span>
     ),
-    Media: (
+    Press: (
       <span>
-        <TextLink to={links.in.press}>Press Releases</TextLink>
+        <TextLink to={links.in.press}>
+          Releases
+        </TextLink>
         <Spacer />
         <TextLink to={`${links.in.press}${links.anchor.links}`}>
-          Press Links
+          Links
         </TextLink>
       </span>
     ),
-    Events: (<TextLink to={links.in.events}>Events</TextLink>),
+    Events: (<TextLink to={links.in.events}>Upcoming</TextLink>),
     Latest: (
       <TextLink to={links.in.htmstudio}>
         Numenta releases HTM Studio! <Tag>New</Tag>

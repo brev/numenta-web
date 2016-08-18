@@ -85,6 +85,7 @@ class Section extends React.Component {
         <div
           className={styles.closeButton}
           onClick={() => this._toggleSection()}
+          title={`Close Section: ${title}`}
         >
           <IconAngleUp className={styles.closeIcon} color="inherit" />
           Close Section
@@ -98,6 +99,7 @@ class Section extends React.Component {
           clickHandle={() => this._toggleSection()}
           headline={headline}
           open={open}
+          title={`${open ? 'Close' : 'Open'} Section: ${title}`}
         >
           {title}
         </SectionTitle>

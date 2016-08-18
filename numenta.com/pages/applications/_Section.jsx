@@ -29,6 +29,16 @@ const SectionApplications = (props, {config}) => {
   return (
     <div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Video
+            image={ImageVideoApps}
+            respond="mw"
+            time="02:32"
+            title="Intro to our Applications"
+            type="youtube"
+            videoId="9jWmS62MWx8"
+          />
+        </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
             While Numenta does not build commercial applications, we have
@@ -93,21 +103,21 @@ const SectionApplications = (props, {config}) => {
             several tools and example applications.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <Video
-            image={ImageVideoApps}
-            respond="mw"
-            time="02:32"
-            title="Intro to our Applications"
-            type="youtube"
-            videoId="9jWmS62MWx8"
-          />
-        </div>
       </div>
 
       <Anchor name="htmstudio" />
       <SubTitle>HTM Studio for Anomaly Detection</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.in.htmstudio}>
+            <Image
+              alt="HTM Studio screenshot"
+              border={true}
+              respond="mw"
+              src={ImageHtmStudio}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             HTM Studio for Anomaly Detection is a tool that makes it easy to
@@ -129,21 +139,20 @@ const SectionApplications = (props, {config}) => {
             </ListItem>
           </List>
         </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.in.htmstudio}>
-            <Image
-              alt="HTM Studio screenshot"
-              border={true}
-              respond="mw"
-              src={ImageHtmStudio}
-            />
-          </ImageLink>
-        </div>
       </div>
 
       <Anchor name="htmstocks" />
       <SubTitle>HTM for Stocks</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.in.htmstocks}>
+            <Image
+              alt="HTM for Stocks screenshot"
+              respond="mw"
+              src={ImageHtmStocks}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             HTM for Stocks is an example application that detects anomalies in
@@ -172,20 +181,20 @@ const SectionApplications = (props, {config}) => {
             </ListItem>
           </List>
         </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.in.htmstocks}>
-            <Image
-              alt="HTM for Stocks screenshot"
-              respond="mw"
-              src={ImageHtmStocks}
-            />
-          </ImageLink>
-        </div>
       </div>
 
       <Anchor name="grokit" />
       <SubTitle>Grok</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.grok}>
+            <Image
+              alt="Grok for IT Analytics screenshot"
+              respond="mw"
+              src={ImageGrokIt}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             Grok is a commercial application offered by one of our strategic
@@ -212,20 +221,20 @@ const SectionApplications = (props, {config}) => {
             </ListItem>
           </List>
         </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.grok}>
-            <Image
-              alt="Grok for IT Analytics screenshot"
-              respond="mw"
-              src={ImageGrokIt}
-            />
-          </ImageLink>
-        </div>
       </div>
 
       <Anchor name="rogue" />
       <SubTitle>Rogue Behavior Detection</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.rogue}>
+            <Image
+              alt="Rogue Behavior Detection screenshot"
+              respond="mw"
+              src={ImageRogue}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             This example application models normal behavior of individuals by
@@ -248,20 +257,21 @@ const SectionApplications = (props, {config}) => {
           </List>
           {/* eslint-disable max-len */}
         </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.rogue}>
-            <Image
-              alt="Rogue Behavior Detection screenshot"
-              respond="mw"
-              src={ImageRogue}
-            />
-          </ImageLink>
-        </div>
       </div>
 
       <Anchor name="geo" />
       <SubTitle>Geospatial Tracking</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.geo}>
+            <Image
+              alt="Geospatial Tracking screenshot"
+              border={true}
+              respond="mw"
+              src={ImageGeo}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             The example geospatial tracking application detects anomalies in
@@ -285,21 +295,20 @@ const SectionApplications = (props, {config}) => {
           </List>
           {/* eslint-enable max-len */}
         </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.geo}>
-            <Image
-              alt="Geospatial Tracking screenshot"
-              border={true}
-              respond="mw"
-              src={ImageGeo}
-            />
-          </ImageLink>
-        </div>
       </div>
 
       <Anchor name="nlp" />
       <SubTitle>Natural Language Processing</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.cortical}>
+            <Image
+              alt="Natural Language Processing screenshot"
+              respond="mw"
+              src={ImageNlp}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
           <Paragraph>
             One of our partners, Cortical.io, has used Numenta’s technology
@@ -317,15 +326,6 @@ const SectionApplications = (props, {config}) => {
               </TextLink>
             </ListItem>
           </List>
-        </div>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.cortical}>
-            <Image
-              alt="Natural Language Processing screenshot"
-              respond="mw"
-              src={ImageNlp}
-            />
-          </ImageLink>
         </div>
       </div>
     </div>

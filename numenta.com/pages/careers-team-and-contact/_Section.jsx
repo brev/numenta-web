@@ -71,6 +71,13 @@ const SectionCareers = (props, {config, route}) => {
       <Anchor name="careers" />
       <SubTitle>Careers</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.asideCenter}>
+          <Image
+            alt="Numenta Office Interior"
+            respond="mw"
+            src={ImageCareers}
+          />
+        </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
             Company culture is important to us, so why not join a startup that
@@ -92,13 +99,6 @@ const SectionCareers = (props, {config, route}) => {
             {careers}
           </List>
         </div>
-        <div className={styles.asideCenter}>
-          <Image
-            alt="Numenta Office Interior"
-            respond="mw"
-            src={ImageCareers}
-          />
-        </div>
       </div>
 
       <Anchor name="team" />
@@ -109,6 +109,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Donna Dubinsky</SubTitle>
           <SubTitle level={5}>CEO & Co-Founder</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Donna Dubinsky"
+                respond="mw"
+                src={ImageDonna}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Donna first partnered with Jeff Hawkins at Palm, Inc. in 1992,
@@ -128,13 +135,6 @@ const SectionCareers = (props, {config, route}) => {
                 University.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Donna Dubinsky"
-                respond="mw"
-                src={ImageDonna}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -143,6 +143,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Jeff Hawkins</SubTitle>
           <SubTitle level={5}>Co-Founder</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Jeff Hawkins"
+                respond="mw"
+                src={ImageJeff}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Jeff is an engineer, serial entrepreneur, scientist, inventor
@@ -164,13 +171,6 @@ const SectionCareers = (props, {config, route}) => {
                 Engineering in 2003.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Jeff Hawkins"
-                respond="mw"
-                src={ImageJeff}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -179,6 +179,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Subutai Ahmad</SubTitle>
           <SubTitle level={5}>VP of Research</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Subutai Ahmad"
+                respond="mw"
+                src={ImageSubutai}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Subutai brings experience across real time systems, computer
@@ -199,13 +206,6 @@ const SectionCareers = (props, {config, route}) => {
                 of visual attention.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Subutai Ahmad"
-                respond="mw"
-                src={ImageSubutai}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -214,6 +214,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Celeste Baranski</SubTitle>
           <SubTitle level={5}>VP of Engineering</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Celeste Baranski"
+                respond="mw"
+                src={ImageCeleste}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Celeste has vast experience in high tech engineering, design and
@@ -232,13 +239,6 @@ const SectionCareers = (props, {config, route}) => {
                 from Stanford University.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Celeste Baranski"
-                respond="mw"
-                src={ImageCeleste}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -252,6 +252,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Ed Colligan</SubTitle>
           <SubTitle level={5}>Former President & CEO, Palm, Inc.</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Ed Colligan"
+                respond="mw"
+                src={ImageEd}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Ed has been a part of the core team of five Silicon Valley
@@ -277,13 +284,6 @@ const SectionCareers = (props, {config, route}) => {
                 the University of Oregon.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Ed Colligan"
-                respond="mw"
-                src={ImageEd}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -292,6 +292,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Donna Dubinsky</SubTitle>
           <SubTitle level={5}>CEO & Co-Founder</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Donna Dubinsky"
+                respond="mw"
+                src={ImageDonna}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Donna first partnered with Jeff Hawkins at Palm, Inc. in 1992,
@@ -311,13 +318,6 @@ const SectionCareers = (props, {config, route}) => {
                 University.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Donna Dubinsky"
-                respond="mw"
-                src={ImageDonna}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -326,6 +326,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Mike Farmwald</SubTitle>
           <SubTitle level={5}>General Partner, Skymoon Ventures</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Mike Farmwald"
+                respond="mw"
+                src={ImageMike}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Mike Farmwald is a successful serial entrepreneur. He has
@@ -342,13 +349,6 @@ const SectionCareers = (props, {config, route}) => {
                 Computer Science from Stanford University.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Mike Farmwald"
-                respond="mw"
-                src={ImageMike}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -357,6 +357,13 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Jeff Hawkins</SubTitle>
           <SubTitle level={5}>Co-Founder</SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Jeff Hawkins"
+                respond="mw"
+                src={ImageJeff}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 Jeff is an engineer, serial entrepreneur, scientist, inventor
@@ -378,13 +385,6 @@ const SectionCareers = (props, {config, route}) => {
                 Engineering in 2003.
               </Paragraph>
             </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Jeff Hawkins"
-                respond="mw"
-                src={ImageJeff}
-              />
-            </div>
           </div>
 
         </ListItem>
@@ -395,6 +395,13 @@ const SectionCareers = (props, {config, route}) => {
             Chairman, Retrotope, Inc.
           </SubTitle>
           <div className={styles.columns}>
+            <div className={styles.asideCenter}>
+              <Image
+                alt="Harry Saal"
+                respond="mw"
+                src={ImageHarry}
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 In 2002, Dr. Harry J. Saal was chosen by the US Department of
@@ -419,13 +426,6 @@ const SectionCareers = (props, {config, route}) => {
                 among others. Harry holds a B.A., M.A. and Ph.D. in Physics from
                 Columbia University.
               </Paragraph>
-            </div>
-            <div className={styles.asideCenter}>
-              <Image
-                alt="Harry Saal"
-                respond="mw"
-                src={ImageHarry}
-              />
             </div>
           </div>
 
