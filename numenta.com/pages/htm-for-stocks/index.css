@@ -10,7 +10,7 @@
 }
 
 .aside {
-  composes: mv1 from 'tachyons';
+  composes: mv2 from 'tachyons';
   composes: ph3 from 'tachyons';
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
@@ -25,7 +25,8 @@
   composes: pb2 from 'tachyons';
   composes: ph4 from 'tachyons';
   composes: tc from 'tachyons';
-  composes: w-50 from 'tachyons';
+  composes: w-100 from 'tachyons';
+  composes: w-50-ns from 'tachyons';
 }
 
 .download {

@@ -32,6 +32,7 @@
 }
 .icon {
   composes: fl from 'tachyons';
+  composes: ml1 from 'tachyons';
   composes: mr3 from 'tachyons';
   composes: mr2-ns from 'tachyons';
   composes: relative from 'tachyons';

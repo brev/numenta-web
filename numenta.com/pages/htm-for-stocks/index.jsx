@@ -47,6 +47,14 @@ const HtmStocksPage = (props, {config}) => {
         title={title}
       >
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="Hand using mobile device"
+              respond="mw"
+              shadow={false}
+              src={ImageHandheld}
+            />
+          </div>
           <div className={styles.content}>
             <SubTitle level={3}>
               Find anomalies in publicly traded stocks using trading and
@@ -90,14 +98,6 @@ const HtmStocksPage = (props, {config}) => {
               </TextLink>
             </Paragraph>
           </div>
-          <div className={styles.aside}>
-            <Image
-              alt="Hand using mobile device"
-              respond="mw"
-              shadow={false}
-              src={ImageHandheld}
-            />
-          </div>
         </div>
 
         <Anchor name="features" />
@@ -105,6 +105,13 @@ const HtmStocksPage = (props, {config}) => {
           Features
         </SubTitle>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="HTM for Stocks feature #1"
+              respond="mw"
+              src={ImageFeature1}
+            />
+          </div>
           <div className={styles.content}>
             <SubTitle level={3}>
               Time-based Pattern Detection
@@ -125,15 +132,15 @@ const HtmStocksPage = (props, {config}) => {
               one page.
             </Paragraph>
           </div>
-          <div className={styles.aside}>
-            <Image
-              alt="HTM for Stocks feature #1"
-              respond="mw"
-              src={ImageFeature1}
-            />
-          </div>
         </div>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="HTM for Stocks feature #2"
+              respond="mw"
+              src={ImageFeature2}
+            />
+          </div>
           <div className={styles.content}>
             <SubTitle level={3}>
               Continuous Learning
@@ -150,15 +157,15 @@ const HtmStocksPage = (props, {config}) => {
               happening.
             </Paragraph>
           </div>
-          <div className={styles.aside}>
-            <Image
-              alt="HTM for Stocks feature #2"
-              respond="mw"
-              src={ImageFeature2}
-            />
-          </div>
         </div>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="HTM for Stocks feature #3"
+              respond="mw"
+              src={ImageFeature3}
+            />
+          </div>
           <div className={styles.content}>
             <SubTitle level={3}>
               Notifications
@@ -173,13 +180,6 @@ const HtmStocksPage = (props, {config}) => {
               Presents output in a friendly, mobile user interface.
             </Paragraph>
           </div>
-          <div className={styles.aside}>
-            <Image
-              alt="HTM for Stocks feature #3"
-              respond="mw"
-              src={ImageFeature3}
-            />
-          </div>
         </div>
 
         <Anchor name="how" />
@@ -187,6 +187,13 @@ const HtmStocksPage = (props, {config}) => {
           How Does It Work?
         </SubTitle>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="HTM for Stocks app screenshot #1"
+              respond="mw"
+              src={ImageRaw1}
+            />
+          </div>
           <div className={styles.content}>
             <SubTitle level={3}>
               Ingests real-time stock and Twitter data
@@ -204,15 +211,15 @@ const HtmStocksPage = (props, {config}) => {
               No data scientists are required!
             </Paragraph>
           </div>
-          <div className={styles.aside}>
-            <Image
-              alt="HTM for Stocks app screenshot #1"
-              respond="mw"
-              src={ImageRaw1}
-            />
-          </div>
         </div>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="HTM for Stocks app screenshot #2"
+              respond="mw"
+              src={ImageRaw2}
+            />
+          </div>
           <div className={styles.content}>
             <SubTitle level={3}>
               Anomalies are based on deviation from recent performance
@@ -221,13 +228,6 @@ const HtmStocksPage = (props, {config}) => {
               Each company is different. HTM models report anomalies when
               current behavior deviates from recent behavior.
             </Paragraph>
-          </div>
-          <div className={styles.aside}>
-            <Image
-              alt="HTM for Stocks app screenshot #2"
-              respond="mw"
-              src={ImageRaw2}
-            />
           </div>
         </div>
 
@@ -288,6 +288,36 @@ const HtmStocksPage = (props, {config}) => {
           Get App and Register
         </SubTitle>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <div className={styles.download}>
+              <ImageLink to={links.out.htmstocks.app}>
+                <Image
+                  alt="HTM for Stocks on Apple iOS App Store"
+                  center={true}
+                  respond="mw"
+                  shadow={false}
+                  src={ImageStoreApp}
+                />
+              </ImageLink>
+              <div>
+                iOS (version 8.0 or higher)
+              </div>
+            </div>
+            <div className={styles.download}>
+              <ImageLink to={links.out.htmstocks.play}>
+                <Image
+                  alt="HTM for Stocks on Google Android Play Store"
+                  center={true}
+                  respond="mw"
+                  shadow={false}
+                  src={ImageStorePlay}
+                />
+              </ImageLink>
+              <div>
+                Android phone (version 4.1 or higher)
+              </div>
+            </div>
+          </div>
           <div className={styles.content}>
             <Paragraph>
               We value your participation and encourage you to register and
@@ -344,36 +374,6 @@ const HtmStocksPage = (props, {config}) => {
             </Form>
             {/* eslint-enable max-len */}
 
-          </div>
-          <div className={styles.aside}>
-            <div className={styles.download}>
-              <ImageLink to={links.out.htmstocks.app}>
-                <Image
-                  alt="HTM for Stocks on Apple iOS App Store"
-                  center={true}
-                  respond="mw"
-                  shadow={false}
-                  src={ImageStoreApp}
-                />
-              </ImageLink>
-              <div>
-                iOS (version 8.0 or higher)
-              </div>
-            </div>
-            <div className={styles.download}>
-              <ImageLink to={links.out.htmstocks.play}>
-                <Image
-                  alt="HTM for Stocks on Google Android Play Store"
-                  center={true}
-                  respond="mw"
-                  shadow={false}
-                  src={ImageStorePlay}
-                />
-              </ImageLink>
-              <div>
-                Android phone (version 4.1 or higher)
-              </div>
-            </div>
           </div>
         </div>
       </Section>

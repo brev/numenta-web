@@ -161,6 +161,16 @@ class HtmStudioPage extends React.Component {
           title={title}
         >
           <div className={styles.columns}>
+            <div className={styles.aside}>
+              <Video
+                image={ImageVideoIntro}
+                respond="mw"
+                time="01:37"
+                title="HTM Studio Introduction"
+                type="youtube"
+                videoId="Nqoruj4eCb8"
+              />
+            </div>
             <div className={styles.content}>
               <div className={styles.tagline}>
                 <SubTitle level={3}>
@@ -221,16 +231,6 @@ class HtmStudioPage extends React.Component {
                 </List>
               </div>
             </div>
-            <div className={styles.aside}>
-              <Video
-                image={ImageVideoIntro}
-                respond="mw"
-                time="01:37"
-                title="HTM Studio Introduction"
-                type="youtube"
-                videoId="Nqoruj4eCb8"
-              />
-            </div>
           </div>
 
           <Anchor name="features" />
@@ -238,6 +238,9 @@ class HtmStudioPage extends React.Component {
             Features
           </SubTitle>
           <div className={styles.columns}>
+            <div className={classNames(styles.aside, styles.iconSmall)}>
+              <IconBullseye />
+            </div>
             <div className={styles.content}>
               <SubTitle level={3}>
                 No Coding Skills Required
@@ -247,11 +250,11 @@ class HtmStudioPage extends React.Component {
                 one click.
               </Paragraph>
             </div>
-            <div className={classNames(styles.aside, styles.iconSmall)}>
-              <IconBullseye />
-            </div>
           </div>
           <div className={styles.columns}>
+            <div className={classNames(styles.aside, styles.iconSmall)}>
+              <IconLock />
+            </div>
             <div className={styles.content}>
               <SubTitle level={3}>
                 Data Privacy
@@ -261,11 +264,11 @@ class HtmStudioPage extends React.Component {
                 upload or privacy issues.
               </Paragraph>
             </div>
-            <div className={classNames(styles.aside, styles.iconSmall)}>
-              <IconLock />
-            </div>
           </div>
           <div className={styles.columns}>
+            <div className={classNames(styles.aside, styles.iconSmall)}>
+              <IconCubes />
+            </div>
             <div className={styles.content}>
               <SubTitle level={3}>
                 Run Simultaneous Models
@@ -275,11 +278,11 @@ class HtmStudioPage extends React.Component {
                 anomalies.
               </Paragraph>
             </div>
-            <div className={classNames(styles.aside, styles.iconSmall)}>
-              <IconCubes />
-            </div>
           </div>
           <div className={styles.columns}>
+            <div className={classNames(styles.aside, styles.iconSmall)}>
+              <IconBarChart />
+            </div>
             <div className={styles.content}>
               <SubTitle level={3}>
                 Summarized Results
@@ -288,11 +291,11 @@ class HtmStudioPage extends React.Component {
                 Visualize and export your results.
               </Paragraph>
             </div>
-            <div className={classNames(styles.aside, styles.iconSmall)}>
-              <IconBarChart />
-            </div>
           </div>
           <div className={styles.columns}>
+            <div className={classNames(styles.aside, styles.iconSmall)}>
+              <IconFolder />
+            </div>
             <div className={styles.content}>
               <SubTitle level={3}>
                 Pre-Loaded Datasets
@@ -302,9 +305,6 @@ class HtmStudioPage extends React.Component {
                 pre-loaded datasets, and see how HTM can be applied to a variety
                 of use cases.
               </Paragraph>
-            </div>
-            <div className={classNames(styles.aside, styles.iconSmall)}>
-              <IconFolder />
             </div>
           </div>
 
@@ -375,6 +375,16 @@ class HtmStudioPage extends React.Component {
             Get Started
           </SubTitle>
           <div className={styles.columns}>
+            <div className={styles.aside}>
+              <Video
+                image={ImageVideoWalkthru}
+                respond="mw"
+                time="04:41"
+                title="HTM Studio Walk-through"
+                type="youtube"
+                videoId="a2hshyznLEE"
+              />
+            </div>
             <div className={styles.content}>
               <Paragraph>
                 To get the full HTM Studio experience, watch our short
@@ -386,28 +396,8 @@ class HtmStudioPage extends React.Component {
                 videos to learn how to prepare your data.
               </Paragraph>
             </div>
-            <div className={styles.aside}>
-              <Video
-                image={ImageVideoWalkthru}
-                respond="mw"
-                time="04:41"
-                title="HTM Studio Walk-through"
-                type="youtube"
-                videoId="a2hshyznLEE"
-              />
-            </div>
           </div>
           <div className={styles.columns}>
-            <div className={styles.content}>
-              <SubTitle level={3}>
-                Isolating Data Sources
-              </SubTitle>
-              <Paragraph>
-                CSV files must contain data that has only been generated from
-                one source. If you have multiple sources, you will need to split
-                your data by source and into separate CSV files.
-              </Paragraph>
-            </div>
             <div className={styles.aside}>
               <Video
                 image={ImageVideoDatasource}
@@ -418,8 +408,28 @@ class HtmStudioPage extends React.Component {
                 videoId="CRzWS52EdM0"
               />
             </div>
+            <div className={styles.content}>
+              <SubTitle level={3}>
+                Isolating Data Sources
+              </SubTitle>
+              <Paragraph>
+                CSV files must contain data that has only been generated from
+                one source. If you have multiple sources, you will need to split
+                your data by source and into separate CSV files.
+              </Paragraph>
+            </div>
           </div>
           <div className={styles.columns}>
+            <div className={styles.aside}>
+              <Video
+                image={ImageVideoDatetime}
+                respond="mw"
+                time="04:28"
+                title="Date/Time Format Tutorial"
+                type="youtube"
+                videoId="f80ewxLvgks"
+              />
+            </div>
             <div className={styles.content}>
               <SubTitle level={3}>
                 Date/Time Format
@@ -462,16 +472,6 @@ class HtmStudioPage extends React.Component {
                 </ListItem>
               </List>
             </div>
-            <div className={styles.aside}>
-              <Video
-                image={ImageVideoDatetime}
-                respond="mw"
-                time="04:28"
-                title="Date/Time Format Tutorial"
-                type="youtube"
-                videoId="f80ewxLvgks"
-              />
-            </div>
           </div>
 
           <Anchor name="faq" />
@@ -479,13 +479,13 @@ class HtmStudioPage extends React.Component {
             Frequently Asked Questions
           </SubTitle>
           <div className={styles.columns}>
+            <div className={classNames(styles.aside, styles.iconLarge)}>
+              <IconQuestion />
+            </div>
             <div className={styles.content}>
               <div className={styles.faq}>
                 {faq}
               </div>
-            </div>
-            <div className={classNames(styles.aside, styles.iconLarge)}>
-              <IconQuestion />
             </div>
           </div>
 

@@ -1,3 +1,4 @@
+import {capitalize} from 'lodash'
 import Helmet from 'react-helmet'
 import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
@@ -56,7 +57,7 @@ const MarkdownWrapper = ({route}, {config}) => {
         <span>
           <Spacer />
           <TextLink to={url}>
-            {key}
+            {capitalize(key)}
           </TextLink>
         </span>
       )
@@ -64,7 +65,7 @@ const MarkdownWrapper = ({route}, {config}) => {
         <div className={styles.back}>
           <IconMarker icon={<IconArrow />}>
             <TextLink to={url}>
-              All {key} Posts
+              All {capitalize(key)} Posts
             </TextLink>
           </IconMarker>
         </div>
@@ -156,7 +157,7 @@ const MarkdownWrapper = ({route}, {config}) => {
     )
   }
 
-  if (data.image) {
+  if (data.image && !data.hideImage) {
     photo = (
       <Image
         alt={data.title}

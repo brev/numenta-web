@@ -39,8 +39,17 @@ const NabPage = () => (
     <Helmet title={title} />
     <Section headline={true} open={true} title={title}>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Video
+            image={ImageVideoNab}
+            respond="mw"
+            time="02:23"
+            title={title}
+            type="youtube"
+            videoId="u_ENXLIlu8s"
+          />
+        </div>
         <div className={styles.content}>
-
           <SubTitle level={3}>
             The First Benchmark For Evaluating Anomaly Detection In Streaming
             Data
@@ -69,21 +78,18 @@ const NabPage = () => (
             finding anomalies earlier and adjusting to changed patterns.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <Video
-            image={ImageVideoNab}
-            respond="mw"
-            time="02:23"
-            title={title}
-            type="youtube"
-            videoId="u_ENXLIlu8s"
-          />
-        </div>
       </div>
 
       <Anchor name="features" />
       <SubTitle>Features</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Image
+            alt="Heartbeat monitor"
+            respond="mw"
+            src={ImageHeartbeat}
+          />
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>Real-World Dataset</SubTitle>
           <Paragraph>
@@ -92,15 +98,15 @@ const NabPage = () => (
             of working with customers to address their anomaly problems.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <Image
-            alt="Heartbeat monitor"
-            respond="mw"
-            src={ImageHeartbeat}
-          />
-        </div>
       </div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Image
+            alt="mathematical equations"
+            respond="mw"
+            src={ImageEquations}
+          />
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>Scoring Mechanism</SubTitle>
           <Paragraph>
@@ -109,15 +115,15 @@ const NabPage = () => (
             on-line learning.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <Image
-            alt="mathematical equations"
-            respond="mw"
-            src={ImageEquations}
-          />
-        </div>
       </div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Image
+            alt="Geometric and math blueprints"
+            respond="mw"
+            src={ImageMath}
+          />
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>Open Source Code Library</SubTitle>
           <Paragraph>
@@ -126,18 +132,21 @@ const NabPage = () => (
             additional algorithms.
           </Paragraph>
         </div>
-        <div className={styles.aside}>
-          <Image
-            alt="Geometric and math blueprints"
-            respond="mw"
-            src={ImageMath}
-          />
-        </div>
       </div>
 
       <Anchor name="resources" />
       <SubTitle>Resources</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Video
+            image={ImageVideoEval}
+            respond="mw"
+            time="19:23"
+            title="Evaluating Real-Time Anomaly Detection"
+            type="youtube"
+            videoId="SxtsCrTHz-4"
+          />
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>
             Evaluating Real-Time Anomaly Detection:
@@ -157,18 +166,19 @@ const NabPage = () => (
             {/* eslint-enable max-len */}
           </IconMarker>
         </div>
-        <div className={styles.aside}>
-          <Video
-            image={ImageVideoEval}
-            respond="mw"
-            time="19:23"
-            title="Evaluating Real-Time Anomaly Detection"
-            type="youtube"
-            videoId="SxtsCrTHz-4"
-          />
-        </div>
       </div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          {/* eslint-disable max-len */}
+          <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
+            <Image
+              alt="NAB White Paper chart figure"
+              respond="mw"
+              src={ImageCompare}
+            />
+          </TextLink>
+          {/* eslint-enable max-len */}
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>
             White Paper: The {title}
@@ -186,18 +196,17 @@ const NabPage = () => (
             </TextLink>
           </IconMarker>
         </div>
-        <div className={styles.aside}>
-          <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
-            <Image
-              alt="NAB White Paper chart figure"
-              respond="mw"
-              src={ImageCompare}
-            />
-          </TextLink>
-          {/* eslint-enable max-len */}
-        </div>
       </div>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <TextLink to="http://arxiv.org/abs/1510.03336">
+            <Image
+              alt="NAB Scoreboard"
+              respond="mw"
+              src={ImageScoreboard}
+            />
+          </TextLink>
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>
             Research Paper: Evaluating Real-time Anomaly Detection
@@ -217,17 +226,17 @@ const NabPage = () => (
             </TextLink>
           </IconMarker>
         </div>
+      </div>
+      <div className={styles.columns}>
         <div className={styles.aside}>
-          <TextLink to="http://arxiv.org/abs/1510.03336">
+          <TextLink to="https://github.com/numenta/NAB">
             <Image
-              alt="NAB Scoreboard"
+              alt="NAB Github Repo"
               respond="mw"
-              src={ImageScoreboard}
+              src={ImageRepo}
             />
           </TextLink>
         </div>
-      </div>
-      <div className={styles.columns}>
         <div className={styles.content}>
           <SubTitle level={3}>NAB Repository</SubTitle>
           <Paragraph>
@@ -242,17 +251,19 @@ const NabPage = () => (
             </TextLink>
           </IconMarker>
         </div>
+      </div>
+      <div className={styles.columns}>
         <div className={styles.aside}>
-          <TextLink to="https://github.com/numenta/NAB">
+          <TextLink
+            to="/assets/pdf/numenta-anomaly-benchmark/NAB-Data-Sheet.pdf"
+          >
             <Image
-              alt="NAB Github Repo"
+              alt="NAB Datasheet"
               respond="mw"
-              src={ImageRepo}
+              src={ImageDatasheet}
             />
           </TextLink>
         </div>
-      </div>
-      <div className={styles.columns}>
         <div className={styles.content}>
           <SubTitle level={3}>
             Data Sheet: {title}
@@ -269,17 +280,6 @@ const NabPage = () => (
             {/* eslint-enable max-len */}
           </IconMarker>
         </div>
-        <div className={styles.aside}>
-          <TextLink
-            to="/assets/pdf/numenta-anomaly-benchmark/NAB-Data-Sheet.pdf"
-          >
-            <Image
-              alt="NAB Datasheet"
-              respond="mw"
-              src={ImageDatasheet}
-            />
-          </TextLink>
-        </div>
       </div>
 
       <Anchor name="try" />
@@ -287,6 +287,13 @@ const NabPage = () => (
         Try NAB for Yourself
       </SubTitle>
       <div className={styles.columns}>
+        <div className={styles.aside}>
+          <Image
+            alt="NAB Chart Detail"
+            respond="mw"
+            src={ImageDetail}
+          />
+        </div>
         <div className={styles.content}>
           <SubTitle level={3}>
             Try the {title}
@@ -310,13 +317,6 @@ const NabPage = () => (
             {' '} to see if we can incorporate your data into a future
             version of NAB.
           </Paragraph>
-        </div>
-        <div className={styles.aside}>
-          <Image
-            alt="NAB Chart Detail"
-            respond="mw"
-            src={ImageDetail}
-          />
         </div>
       </div>
     </Section>

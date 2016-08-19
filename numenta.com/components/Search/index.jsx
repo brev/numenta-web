@@ -16,14 +16,18 @@ import styles from './index.css'
 
 /**
  *
+ * @requires js-search
+ * @see https://github.com/bvaughn/js-search
  */
 class Search extends React.Component {
   constructor(props) {
     super(props)
 
+    // init client-side search indexing
     this._api = new SearchApi.Search('path')
-    this._api.addIndex('text')
+    this._api.searchIndex = new SearchApi.UnorderedSearchIndex()
     this._api.addIndex('title')
+    this._api.addIndex('text')
 
     this.state = {query: ''}
   }
@@ -33,7 +37,9 @@ class Search extends React.Component {
       .get(prefixLink('/_searchIndex.json'))
       .end((error, {body}) => {
         if (error) throw new Error(error)
-        return this._api.addDocuments(body)
+        return body.forEach((item) => {
+          this._api.addDocument(item)
+        })
       })
   }
 
@@ -42,7 +48,6 @@ class Search extends React.Component {
   }
 
   _performSearch(query) {
-    // ??? would event.preventDefault here help the inital box focus problem???
     this.setState({
       query: inHTMLData(query.toLowerCase()),
     })

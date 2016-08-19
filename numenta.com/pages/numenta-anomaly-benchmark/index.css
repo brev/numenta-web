@@ -3,11 +3,14 @@
 }
 
 .content {
+  composes: pb4 from 'tachyons';
+  composes: pb0-l from 'tachyons';
   composes: layout-content from '../../static/assets/css/theme.css';
 }
 
 .aside {
   composes: mt2 from 'tachyons';
+  composes: pb3 from 'tachyons';
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
 }

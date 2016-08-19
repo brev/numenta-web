@@ -48,6 +48,7 @@
 
 .close {
   composes: fr from 'tachyons';
+  composes: mb4 from 'tachyons';
 }
 
 .agree {

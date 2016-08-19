@@ -1,4 +1,4 @@
-import {capitalize} from 'lodash'
+import {capitalize, unescape} from 'lodash'
 import Highlight from 'react-highlighter'
 import Modal from 'react-modal'
 import React from 'react'
@@ -16,6 +16,8 @@ import TextLink from '../TextLink'
 
 import styles from './index.css'
 import modalStyles from './style-modal'
+
+const filterText = (text) => unescape(text).replace(/&#x27;/g, "'")
 
 
 /**
@@ -46,7 +48,7 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
             onClick={onClose}
             to={path}
           >
-            {title || path}
+            {filterText(title) || path}
           </TextLink>
           <br />
           <TextLink
@@ -60,7 +62,7 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
           <Paragraph>
             “
             <Highlight search={query}>
-              {quoted}
+              {filterText(quoted)}
             </Highlight>
             ...”
           </Paragraph>

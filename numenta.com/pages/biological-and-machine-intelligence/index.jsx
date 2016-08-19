@@ -29,7 +29,6 @@ const BamiPage = (props, {config}) => {
       <Section headline={true} open={true} title={title}>
         <div className={styles.columns}>
           <div className={styles.aside}>
-
             <div className={styles.book}>
               <SubTitle level={3}>Book Sections</SubTitle>
               {/* eslint-disable max-len */}
@@ -72,10 +71,8 @@ const BamiPage = (props, {config}) => {
               </ListOrder>
               {/* eslint-enable max-len */}
             </div>
-
           </div>
           <div className={styles.content}>
-
             <Paragraph lead={true}>
               <Strong>Biological and Machine Intelligence (BAMI)</Strong> is a
               living book authored by Numenta researchers and engineers. Its
@@ -122,15 +119,18 @@ const BamiPage = (props, {config}) => {
                 @NumentaBAMI.
               </TextLink>
             </Paragraph>
-
           </div>
         </div>
 
         <Anchor name="citation" />
         <SubTitle>Citing the Book</SubTitle>
         <div className={styles.columns}>
+          <div className={styles.aside}>
+            <div className={styles.icon}>
+              <IconQuote />
+            </div>
+          </div>
           <div className={styles.content}>
-
             <Paragraph>
               This release of Biological and Machine Intelligence is not close
               to being complete, so the book is not formally “published”.
@@ -173,12 +173,6 @@ const BamiPage = (props, {config}) => {
               <TextLink to={links.in.papers}>papers</TextLink> to get the
               appropriate citations.
             </Paragraph>
-
-          </div>
-          <div className={styles.aside}>
-            <div className={styles.icon}>
-              <IconQuote />
-            </div>
           </div>
         </div>
       </Section>

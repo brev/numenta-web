@@ -119,7 +119,6 @@ export function postBuild(pages, callback) {
         .replace(/<!--.*?-->/g, ' ')
         .replace(/\n+/g, ' ')
       const text = htmlToText(main)
-        .replace(/&#x27;/g, "'")
         .replace(/\\n/g, ' ')
         .replace(/\s+/g, ' ')
       return {path, text, title}

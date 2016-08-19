@@ -547,10 +547,20 @@ const SectionCareers = (props, {config, route}) => {
         </div>
       </div>
 
+      <Anchor name="office" />
+      <SubTitle level={3}>Office</SubTitle>
       <div className={styles.columns}>
+        <div className={styles.asideCenter}>
+          <ImageLink to={links.out.map}>
+            <Image
+              alt="Map to Numenta Office"
+              shadow={false}
+              respond="mw"
+              src={ImageMap}
+            />
+          </ImageLink>
+        </div>
         <div className={styles.content}>
-          <Anchor name="office" />
-          <SubTitle level={3}>Office</SubTitle>
           <Table>
             <TableBody>
               <TableRow>
@@ -609,16 +619,6 @@ const SectionCareers = (props, {config, route}) => {
           <Anchor name="follow" />
           <SubTitle level={3}>Follow</SubTitle>
           <SocialMedia />
-        </div>
-        <div className={styles.asideCenter}>
-          <ImageLink to={links.out.map}>
-            <Image
-              alt="Map to Numenta Office"
-              shadow={false}
-              respond="mw"
-              src={ImageMap}
-            />
-          </ImageLink>
         </div>
       </div>
     </div>

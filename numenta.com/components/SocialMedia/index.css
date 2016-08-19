@@ -6,4 +6,6 @@
   composes: f2 from 'tachyons';
   composes: mb4 from 'tachyons';
   composes: mt3 from 'tachyons';
+  composes: tc from 'tachyons';
+  composes: tl-ns from 'tachyons';
 }
