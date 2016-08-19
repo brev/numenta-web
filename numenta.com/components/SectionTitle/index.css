@@ -11,8 +11,9 @@
   composes: hover-bg-near-white from 'tachyons';
   composes: ma0 from 'tachyons';
   composes: pb1 from 'tachyons';
-  composes: pointer from 'tachyons';
+  composes: pl1 from 'tachyons';
   composes: pt2 from 'tachyons';
+  composes: pointer from 'tachyons';
 }
 
 .toggle {
