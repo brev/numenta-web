@@ -22,7 +22,7 @@ const SocialMedia = (props, {config}) => {
   for (let site in sites) {
     if ({}.hasOwnProperty.call(sites, site)) {
       const Component = sites[site]
-      const title = Component.name.replace(/^Fa/, '')
+      const title = Component.toString().match(/function Fa(\w+)\(/)[1]
       socials.push(
         <span className={styles.spread} key={title}>
           <ImageLink title={title} to={site}>

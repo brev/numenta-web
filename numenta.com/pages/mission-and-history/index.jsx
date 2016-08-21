@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionMission from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionMission />)
+const Default = (<SectionMission key="sectionMission" />)
 const title = 'Mission & History'
 
 

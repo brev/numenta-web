@@ -24,7 +24,6 @@ const filterText = (text) => unescape(text).replace(/&#x27;/g, "'")
  *
  */
 const SearchResult = ({onClose, onOpen, query, results}) => {
-  const quoteRadius = 12
   const isOpen = (query.length > 0)
   let items = (
     <ListItem>No search results found.</ListItem>
@@ -32,15 +31,11 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
 
   if (isOpen && results && (results.length > 0)) {
     items = results.map(({path, text, title}) => {
-      const words = text.split(/ +/)
-      const entries = Array.from(words.entries())
-      const finds = entries.filter(([, value]) => (
-        (value.includes(query) || (value.length > 2 && query.includes(value)))
-      ))
-      const quotes = finds.map(([index]) => (
-        words.slice(index - quoteRadius, index + quoteRadius).join(' ')
-      ))
-      const quoted = capitalize(quotes.slice(0, 2).join(' ... '))
+      const finds = text.match(new RegExp(`.{0,20}(${query}).{0,20}`, 'g'))
+      let quoted = ''
+      if (finds) {
+        quoted = finds.join('...')
+      }
 
       return (
         <ListItem key={path}>
@@ -60,7 +55,7 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
             </Subtle>
           </TextLink>
           <Paragraph>
-            “
+            “...
             <Highlight search={query}>
               {filterText(quoted)}
             </Highlight>

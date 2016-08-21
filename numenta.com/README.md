@@ -204,3 +204,4 @@ moved into GitHub Issues ASAP.
   * special custom npm modules: tachyons,etc. - howto, updating, etc.
   * Static assets don't load from /static/assets on dev, but do on staging
     and prod after static build
+npm run dev -- --host 192.168.1.112

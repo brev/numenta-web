@@ -20,7 +20,7 @@ export function getBrowserWidth() {
  *
  */
 export function scrollToSection(current, pad = -60) {
-  const element = global.document.getElementById(current.type.name)
+  const element = global.document.getElementById(current.key)
   const {top} = element.getBoundingClientRect()
   if (top) global.window.scroll(0, top + pad)
 }

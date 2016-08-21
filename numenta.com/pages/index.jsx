@@ -1,12 +1,12 @@
 import React from 'react'
 
 import MainSections from './_MainSections'
-import SectionIndex from './_Section'
+import SectionHome from './_Section'
 import Section from '../components/Section'
 
 import styles from './index.css'
 
-const Default = (<SectionIndex />)
+const Default = (<SectionHome key="sectionHome" />)
 
 
 /**

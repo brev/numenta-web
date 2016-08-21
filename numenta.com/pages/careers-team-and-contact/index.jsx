@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionCareers from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionCareers />)
+const Default = (<SectionCareers key="sectionCareers" />)
 const title = 'Careers, Team & Contact'
 
 

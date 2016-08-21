@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionAnomaly from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionAnomaly />)
+const Default = (<SectionAnomaly key="sectionAnomaly" />)
 const title = 'Anomaly Detection Benchmark'
 
 

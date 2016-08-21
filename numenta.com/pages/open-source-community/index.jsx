@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionOpensource from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionOpensource />)
+const Default = (<SectionOpensource key="sectionOpensource" />)
 const title = 'Open Source Community'
 
 

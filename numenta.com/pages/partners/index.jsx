@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionPartners from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionPartners />)
+const Default = (<SectionPartners key="sectionPartners" />)
 const title = 'Partners'
 
 

@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionBusiness from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionBusiness />)
+const Default = (<SectionBusiness key="sectionBusiness" />)
 const title = 'Business Strategy & IP'
 
 

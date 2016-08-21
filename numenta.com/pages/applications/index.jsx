@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionApplications from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionApplications />)
+const Default = (<SectionApplications key="sectionApplications" />)
 const title = 'Applications'
 
 

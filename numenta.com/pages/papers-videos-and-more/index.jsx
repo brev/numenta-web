@@ -4,10 +4,10 @@ import React from 'react'
 import {scrollToSection} from '../../utils/client'
 
 import MainSections from '../_MainSections'
-import SectionPapers from './_Section'
+import SectionResources from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionPapers />)
+const Default = (<SectionResources key="sectionResources" />)
 const title = 'Papers, Videos & More'
 
 

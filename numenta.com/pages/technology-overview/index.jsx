@@ -7,7 +7,7 @@ import MainSections from '../_MainSections'
 import SectionTechnology from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionTechnology />)
+const Default = (<SectionTechnology key="sectionTechnology" />)
 const title = 'Technology Overview'
 
 
