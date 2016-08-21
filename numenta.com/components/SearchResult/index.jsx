@@ -1,4 +1,4 @@
-import {capitalize, unescape} from 'lodash'
+import {unescape} from 'lodash'
 import Highlight from 'react-highlighter'
 import Modal from 'react-modal'
 import React from 'react'
