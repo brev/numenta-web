@@ -26,6 +26,7 @@ import FormTextArea from '../../components/FormTextArea'
 import Image from '../../components/Image'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
+import Markdown from '../../components/Markdown'
 import Paragraph from '../../components/Paragraph'
 import Section from '../../components/Section'
 import Strong from '../../components/Strong'
@@ -116,9 +117,9 @@ class HtmStudioPage extends React.Component {
         <Strong>
           {data.title}
         </Strong>
-        <Paragraph>
+        <Markdown>
           <span dangerouslySetInnerHTML={{__html: data.body}} />
-        </Paragraph>
+        </Markdown>
       </div>
     ))
     const TermsLink = (
@@ -139,7 +140,9 @@ class HtmStudioPage extends React.Component {
         style={modalStyles}
       >
         <SubTitle>{Terms.title}</SubTitle>
-        <div dangerouslySetInnerHTML={{__html: Terms.body}} />
+        <Markdown>
+          <span dangerouslySetInnerHTML={{__html: Terms.body}} />
+        </Markdown>
         <div className={styles.close}>
           <Button onClick={() => this._toggleTerms()}>
             Close

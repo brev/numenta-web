@@ -122,4 +122,4 @@ Please report any violations of the Terms to
 
 ### 12. PRIVACY
 
-Our Privacy Policy is located at http://numenta.com/legal/privacy/.
+Our Privacy Policy is located at: http://numenta.com/legal/privacy/.

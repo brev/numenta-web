@@ -9,6 +9,7 @@ import {getEventTimeDisplay} from '../utils/shared'
 import Avatar from '../components/Avatar'
 import IconMarker from '../components/IconMarker'
 import Image from '../components/Image'
+import Markdown from '../components/Markdown'
 import Section from '../components/Section'
 import Spacer from '../components/Spacer'
 import Strong from '../components/Strong'
@@ -182,7 +183,7 @@ const MarkdownWrapper = ({route}, {config}) => {
 
 
   return (
-    <div className={styles.markdown}>
+    <div className={styles.md}>
       <Helmet title={data.title} />
       {date}
       <Section
@@ -193,10 +194,9 @@ const MarkdownWrapper = ({route}, {config}) => {
         {author}
         {photo}
         {event}
-        <div
-          dangerouslySetInnerHTML={{__html: data.body}}
-          className={styles.content}
-        />
+        <Markdown>
+          <span dangerouslySetInnerHTML={{__html: data.body}} />
+        </Markdown>
         {author}
         {back}
       </Section>
