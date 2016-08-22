@@ -4,5 +4,8 @@
 }
 
 .table {
+  composes: db from 'tachyons';
   composes: mb4 from 'tachyons';
+  composes: mr3 from 'tachyons';
+  composes: mr0-ns from 'tachyons';
 }

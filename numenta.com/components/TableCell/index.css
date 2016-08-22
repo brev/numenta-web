@@ -4,7 +4,11 @@
 }
 
 .tableCell {
+  composes: dib from 'tachyons';
+  composes: dtc-ns from 'tachyons';
   composes: lh-title from 'tachyons';
   composes: pa2 from 'tachyons';
   composes: v-top from 'tachyons';
+  composes: w-100 from 'tachyons';
+  composes: w-auto-ns from 'tachyons';
 }

@@ -70,28 +70,30 @@ class Search extends React.Component {
     }
 
     return (
-      <Form onSubmit={(event) => event.preventDefault()}>
-        <span className={styles.label}>
-          <FormLabel htmlFor="q">Search</FormLabel>
-        </span>
-        <span className={styles.query}>
-          <FormInput
-            name="q"
-            onChange={(event) => this._performSearch(event.target.value)}
-            placeholder="Search..."
-            type="search"
-            value={query}
-          />
-        </span>
-        <Button
-          onClick={(event) => event.preventDefault()}
-          theme="light"
-          type="submit"
-        >
-          <IconFaSearch color="inherit" />
-        </Button>
-        {results}
-      </Form>
+      <div className={styles.search}>
+        <Form onSubmit={(event) => event.preventDefault()}>
+          <span className={styles.label}>
+            <FormLabel htmlFor="q">Search</FormLabel>
+          </span>
+          <span className={styles.query}>
+            <FormInput
+              name="q"
+              onChange={(event) => this._performSearch(event.target.value)}
+              placeholder="Search..."
+              type="search"
+              value={query}
+            />
+          </span>
+          <Button
+            onClick={(event) => event.preventDefault()}
+            theme="light"
+            type="submit"
+          >
+            <IconFaSearch color="inherit" />
+          </Button>
+          {results}
+        </Form>
+      </div>
     )
   }
 }
