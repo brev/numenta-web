@@ -10,18 +10,18 @@ title: Grok 1.6 Released - Showcasing at AWS ReInvent in Las Vegas, Nov 11-14
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 ### Newsletter - November 11, 2014
 
 **Grok 1.6 Released - Showcasing at AWS Re:invent in Las Vegas, Nov 11-14**
 
 We are pleased to report that Numenta has released version 1.6 of
-[Grok for IT Analytics](/grok/), which is available for no
-license charge on the
-[AWS Marketplace](https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1415482679002).
+[Grok for IT Analytics](http://grokstream.com), which is available for no
+license charge on the AWS Marketplace.
 
 This version offers several new important features:
 
@@ -33,21 +33,20 @@ This version offers several new important features:
 * Enhanced performance
 
 Based on Numenta’s breakthrough
-[Hierarchical Temporal Memory](/#technology)
+[Hierarchical Temporal Memory](/technology-overview/)
 technology, Grok monitors servers running on AWS and enables complex pattern
 detection, automatic model building, and continuous learning. Grok output is
 displayed on a constantly updated mobile device, enabling IT professionals to
 assess the health of their systems anytime, anywhere.
 
-We will be showcasing this new version of Grok at the
-[AWS re:Invent conference](/events/AWS-reInvent.html)
+We will be showcasing this new version of Grok at the AWS re:Invent conference
 in Las Vegas, November 11-14.  If you are attending, please visit us and see
 Grok 1.6 in action at Booth #648.
 
 I’m also happy to announce that the videos from our Numenta Training Workshop
 held Friday, October 17th, are now available on our web site.  You can access
-these videos on the [Learning Center](/learn/)
-page of our website. This new material offers a great way to get up to speed on
+these videos on the [Resources section](/papers-videos-and-more/)
+of our website. This new material offers a great way to get up to speed on
 our work. Please check back on this page over the coming months as we plan to
 add more content shortly.
 

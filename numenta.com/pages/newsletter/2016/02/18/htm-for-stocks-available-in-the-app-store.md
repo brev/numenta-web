@@ -12,23 +12,16 @@ type: post
 
 ### Numenta Newsletter &mdash; February 18, 2016
 
-I’m pleased to announce that we have released an iOS version of <t render="hbs">
-[HTM for Stocks]({{site.paths.ext.htmstocks.ios}})</t>, a demonstration
-application that enables anybody to experience HTM technology firsthand.
-Previously available for Android only, HTM for Stocks now can be found in the
-App Store.
+I’m pleased to announce that we have released an iOS version of
+[HTM for Stocks](/htm-for-stocks/), a demonstration application that enables
+anybody to experience HTM technology firsthand. Previously available for Android
+only, HTM for Stocks now can be found in the App Store.
 
-<div class="text-center">
-  <t render="hbs">
-    [![Download from the App Store](/assets/img/icon/mobile/app-store-button.png)]({{site.paths.ext.htmstocks.ios}})
-  </t>
-</div>
-
-<t render="hbs">[HTM for Stocks]({{site.paths.pages.htmstocks}})</t> continuously
-monitors stock price, stock volume and Twitter volume for roughly 200 publicly
-traded companies and alerts you in real time when something unusual is
-happening. Results are displayed from most to least anomalous, so you can
-determine what is important and where to focus.
+[HTM for Stocks](/htm-for-stocks/) continuously monitors stock price, stock
+volume and Twitter volume for roughly 200 publicly traded companies and alerts
+you in real time when something unusual is happening. Results are displayed from
+most to least anomalous, so you can determine what is important and where to
+focus.
 
 This application not only makes detecting securities anomalies easy, but it also
 highlights the value of HTM.  For example, you don’t have to know what you’re
@@ -55,11 +48,11 @@ behavior in many types of data streams:
 *	Human behavior metrics – to identify suspicious activity
 *	GPS coordinates – to track vehicles and find deviations from an expected route
 
-Like all of our sample applications, we’ve made the <t render="hbs">
-[source code available]({{site.paths.ext.htmstocks.source}})</t>, and we hope to
+Like all of our sample applications, we’ve made the
+[source code available](https://github.com/numenta/numenta-apps), and we hope to
 see developers create derivative products.  If you are interested in developing
-HTM for Stocks into a commercial product, you can contact us at <t render="hbs">
-[{{site.email.sales}}](mailto:{{site.email.sales}})</t>.
+HTM for Stocks into a commercial product, you can contact us at
+[sales@numenta.com](mailto:sales@numenta.com).
 
 In the meantime, we hope that our readers who are also iPhone users will
 download HTM for Stocks and give it a try.

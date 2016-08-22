@@ -21,7 +21,6 @@ people under 18 or outside of the U.S. cannot win prizes … but they still can
 play for the glory of winning!).  Participating is a fun way to learn more about
 Sparse Distributed Representations. Subutai explains here the details of the
 pool:
-[Super Bowl Sparse Football](/blog/introducing-sparse-football-pool-ii-super-bowl-xlix.html).
 
 In early January, we delivered **NuPIC version 0.1**, our
 [first formal release](http://numenta.org/news/2015/01/22/nupic-0.1-released.html)
@@ -35,26 +34,22 @@ the hard work of publishing more information on our algorithms, including
 submissions for peer reviewed papers.  We are progressing in the science with a
 lot of focus on sensory-motor integration.  For those interested in the details,
 the concepts are often discussed in the
-[NuPIC Theory Mailing List](http://lists.numenta.org/mailman/listinfo/nupic-theory_lists.numenta.org)
-and in [NuPIC office hours](http://numenta.org/events.html). We are continuing
-to support our product, [Grok for AWS](http://numenta.com/grok/), and have an
-additional demonstration application in the works to announce later this year.
-We also will be speaking or exhibiting at a number of events this year,
-including:
+[HTM Community](https://discourse.numenta.org) and in
+[NuPIC office hours](http://numenta.org/events.html). We are continuing to
+support our product, [Grok](http://grokstream.com), and have an additional
+demonstration application in the works to announce later this year. We also
+will be speaking or exhibiting at a number of events this year, including:
 
-* [Strata + Hadoop World](/events/strata-hadoop-world.html),
+* [Strata + Hadoop World](/events/2015/02/17/strata-hadoop-world/),
   2/20, Subutai (VP of Research) will give a talk on streaming analytics
 
 We are also planning a **Spring NuPIC Hackathon**, which we expect to be on the
 U.S. East Coast.  Be sure to follow us on
-[Twitter](https://twitter.com/Numenta?lang=en)
-and check our
+[Twitter](https://twitter.com/Numenta?lang=en) and check our
 [events page](/events/) as more speaking appearances or events are announced.
 
-You might enjoy seeing a
-[short video](https://www.youtube.com/watch?v=f1tYXv6ST_U&feature=youtu.be)
-featuring Jeff that describes our mission.
-In an effort to communicate more about our work, you can expect to see more
-material like this over the coming year.
+You might enjoy seeing a [short video](http://youtu.be/f1tYXv6ST_U) featuring
+Jeff that describes our mission. In an effort to communicate more about our
+work, you can expect to see more material like this over the coming year.
 
 Best wishes for a happy new year!

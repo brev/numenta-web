@@ -10,14 +10,13 @@ title: Announcing Grok for IT Analytics on AWS
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 Today is an important day for Numenta.  We are pleased to announce the general
-availability of Grok on the
-[Amazon Web Services Marketplace](https://aws.amazon.com/marketplace/search/results/ref=gtw_navgno_search_box?page=1&searchTerms=grok)
-We will be showcasing Grok at the
+availability of [Grok](http://grokstream.com). We will be showcasing Grok at the
 [AWS Summit](https://aws.amazon.com/aws-summit-2014/san-francisco/)
 at the San Francisco Moscone Convention Center on March 26th.  If you are
 attending, please join us in booth 100 to see a demo - and experience our
@@ -48,21 +47,17 @@ based on customer feedback:
 * Ability to ingest any streaming data source via custom metrics
 
 If you are an IT professional or just wanted to explore Grok, we have several
-options to make it easy to get started.  Grok is available in the AWS
-Marketplace in two editions:
+options to make it easy to get started.  Grok is available here:
 
-* [Grok Free Edition](https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1395708910993):
-supports up to 10 instances or custom metrics
-* [Grok Standard Edition](https://aws.amazon.com/marketplace/pp/B00HJAA5MM/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1395708888644):
-supports up to 200 AWS instances or custom metrics
+> http://grokstream.com
 
-We also invite you to [provide your feedback](/contact/). Be
+We also invite you to [provide your feedback](/careers-team-and-contact/). Be
 sure to send us details on anomalies that Grok found that you would otherwise
 not have seen!  And let us know about features you’d like to have us implement
 in order to make Grok more useful.
 
 To support our launch, we have upgraded our website and made a number of helpful
-[resources](/grok/#resources) available.
+[resources](http://grokstream.com) available.
 
 Thanks for your continued interest and support.  We look forward to hearing how
 you like Grok.

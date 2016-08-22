@@ -87,17 +87,17 @@ September 26-27.
 Lastly, we are in the final countdown of our Numenta Anomaly Benchmark (NAB)
 competition. This [short video][19] explains how easy it is to win up to $5,000.
 
-[1]: http://numenta.com/#technology
+[1]: /technology-overview/
 [2]: http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio
-[3]: http://numenta.com/htm-studio/
+[3]: /htm-studio/
 [4]: http://youtu.be/f80ewxLvgks
 [5]: mailto:ycui@numenta.com
-[6]: http://numenta.com/events/dendritic-anatomy-molecules-and-function-heraklion-crete.html
-[7]: http://numenta.com/events/areadne-2016-research-in-encoding-and-decoding-of-neural-ensembles.html
-[8]: http://numenta.com/events/ieee-wcci-2016.html
+[6]: /events/2016/06/18/dendritic-anatomy-molecules-and-function-heraklion-crete/
+[7]: /events/2016/06/22/areadne-2016-research-in-encoding-and-decoding-of-neural-ensembles/
+[8]: /events/2016/07/26/ieee-wcci-2016/
 [9]: mailto:sahmad@numenta.com
-[10]: http://numenta.com/events/the-playfair-ai-summit-2016.html
-[11]: http://numenta.com/events/data-science-summit.html
+[10]: /events/2016/07/01/the-playfair-ai-summit-2016/
+[11]: /events/2016/07/13/data-science-summit/
 [12]: https://discourse.numenta.org/
 [13]: mailto:matt@numenta.org
 [14]: http://www.grokstream.com/

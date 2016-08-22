@@ -10,14 +10,11 @@ title: "September 2015 Newsletter: Partnership between Numenta and Avik Partners
 type: post
 ---
 
-### Numenta Newsletter
+### Numenta Newsletter - Sep 01, 2015
 
-**September 01, 2015**
-
-Dear Numenta newsletter subscriber:
-
-I am excited to tell you about a new partnership between Numenta and Avik
-Partners, an IT services and advanced analytics company.
+Dear Numenta newsletter subscriber: I am excited to tell you about a new
+partnership between Numenta and Avik Partners, an IT services and advanced
+analytics company.
 
 Before I tell you more about Avik, I want to remind you of our strategy for
 deploying HTM technology.  Over the past few years we have made excellent
@@ -56,7 +53,7 @@ intelligent applications using HTM technology.
 In order to facilitate consideration of a license, we have created several
 standard license options.  We realize that these standard licenses won’t fit
 every situation, so we also offer custom licenses.  We have just published a new
-[license guide](/assets/pdf/apps/licensing-guide.pdf) with details.  If you are
+[license guide](http://numenta.org/licenses/) with details.  If you are
 interested in becoming a licensee, please review this document, and feel free to
 write to us at [sales@numenta.com](mailto:sales@numenta.com).
 

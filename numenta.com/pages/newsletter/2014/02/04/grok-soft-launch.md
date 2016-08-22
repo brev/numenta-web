@@ -10,17 +10,17 @@ title: Announcing Grok 1.0 Soft Launch
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
-I am pleased to share with our newsletter subscribers the availability of Grok
-1.0 in "soft launch" on the
-<a href="/grok/#get">Amazon Web Services (AWS) Marketplace</a>.
-Grok monitors complex networks running on AWS and is the first commercial
-application of our groundbreaking Cortical Learning Algorithm (CLA).
-Grok enables IT professionals to easily spot unusual activity, thus staying
-ahead of problems and preventing downtime. Grok includes the following features:
+I am pleased to share with our newsletter subscribers the availability
+of [Grok](http://grokstream.com) 1.0 in "soft launch". Grok monitors complex
+networks running on AWS and is the first commercial application of our
+groundbreaking Hierarchical Temporal Memory (HTM). Grok enables IT professionals
+to easily spot unusual activity, thus staying ahead of problems and preventing
+downtime. Grok includes the following features:  
 
 * Very easy configuration and set-up
 * Using the CLA, automatically models each metric to determine normal patterns
@@ -36,10 +36,9 @@ Since everything happens automatically, using Grok can reduce costs of system
 monitoring by requiring less work from engineers. And, given the mobile
 interface, IT professionals can get this information anytime, anywhere.
 
-Grok 1.0 is available in two editions:
+Grok 1.0 is available here:
 
-* <a href="https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1391115095261">Grok Free Edition</a>; supports up to 10 AWS instances or custom metrics
-* <a href="https://aws.amazon.com/marketplace/pp/B00HJAA5MM/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1391115112131">Grok Standard Edition</a>; supports up to 200 AWS instances or custom metrics (fee based)
+> http://grokstream.com/
 
 We plan to formally announce and exhibit at the AWS Summit on March 25-26 at the
 Moscone Center in San Francisco; please stop by and say hello. And be sure

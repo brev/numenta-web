@@ -14,11 +14,9 @@ type: post
 
 #### Numenta Anomaly Benchmark (NAB) is Released, Open Source with White Paper
 
-To Numenta newsletter subscribers:
-
-As I wrote you last month, we have been working hard on creating NAB, the
-Numenta Anomaly Benchmark, to test the HTM learning algorithms and enable
-comparison with other algorithms.  Now, it’s here!
+To Numenta newsletter subscribers: As I wrote you last month, we have been
+working hard on creating NAB, the Numenta Anomaly Benchmark, to test the HTM
+learning algorithms and enable comparison with other algorithms. Now, it’s here!
 
 We have found the need to create a benchmark for many reasons, including:
 
@@ -42,7 +40,7 @@ We have found the need to create a benchmark for many reasons, including:
   in advance would that be?
 
 We are now pleased to announce that the [Numenta Anomaly Benchmark (NAB) is released](http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques).
-You can read the technical paper <t render="hbs">[here]({{site.paths.ext.paper.nab}})</t>.
+You can read the technical paper [here](http://arxiv.org/abs/1510.03336).
 The paper describes our data files, our scoring mechanism, and the test results
 of HTM algorithms along with other, publicly available anomaly detection
 algorithms.  And, if you want to have a look at the code yourself, it is all in
@@ -50,7 +48,7 @@ open source.  You can [see it here](https://github.com/numenta/NAB).
 
 For those readers less interested in technical details, we have created a more
 business focused paper, which you can
-[download here](http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf).
+[download here](/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf).
 
 Our hope is that we can build a community around NAB.  We’d like to collect
 additional labeled data files that can be used for future versions.  We expect

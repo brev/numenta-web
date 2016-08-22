@@ -10,9 +10,10 @@ title: Announcing Grok for IT
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 Over the past year, we have tested our Grok technology on a variety of
 enterprise applications. Customers show substantial interest in our

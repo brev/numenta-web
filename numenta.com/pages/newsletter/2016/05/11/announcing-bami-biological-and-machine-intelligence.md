@@ -22,7 +22,8 @@ announce that we have released the first four chapters of this book, called
 are calling this release v.4 to represent the 4 chapters available. We include a
 list of future chapters that we hope to add, as well as links to research papers
 and supporting material. Material that is replaced by BAMI will be moved to the
-archive section of the [learning center](/learn/) on our web site.
+archive section of the [resources section](/papers-videos-and-more/) on our
+web site.
 
 In addition to publishing peer reviewed papers, we hope to build on BAMI to
 become the principal resource for those who want to learn about HTM.  Over time,

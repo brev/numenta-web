@@ -17,12 +17,11 @@ Hierarchical Temporal Memory (HTM) technology.  We’ve also restructured our we
 site to highlight these new applications.
 
 First, let me give you an update on our product, Grok.  We recently released
-[version 1.5](https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1406131482540),
-which incorporates a great new web charting feature.  In addition,
-we decided to eliminate the paid version of Grok in order to make it super easy
-for customers to try and to deploy Grok.  If you are running an AWS installation
-but haven’t tried out Grok, you can do so
-[here](https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-2&qid=1406131482540).
+[version 1.5](http://grokstream.com) which incorporates a great new web charting
+feature.  In addition, we decided to eliminate the paid version of Grok in order
+to make it super easy for customers to try and to deploy Grok.  If you are
+running an AWS installation but haven’t tried out Grok, you can do so
+[here](http://grokstream.com).
 
 Then, in addition to Grok, we’ve created a group of demonstration applications
 to show the potential use of our core technology in a variety of areas. We’ve
@@ -40,7 +39,7 @@ published white papers on two of the demonstrations:
 An additional demonstration application looks at anomalies in stock volume
 tracking.  We are in our initial exploration of this application, but you can
 read more about it in this
-[blog entry](/blog/detecting-anomalies-in-stock-volumes.html).
+[blog entry](/blog/2014/07/15/detecting-anomalies-in-stock-volumes/).
 
 Finally, we are doing some very exciting research with our partner
 [Cortical IO](http://www.cortical.io/)
@@ -52,7 +51,7 @@ applications.  You may want to read Dean Takahashi of VentureBeat’s article
 
 On August 20, Subutai Ahmad, our VP of Research will present “Understanding
 Cortical Principles and Building Intelligent Machines” at the
-[Cognitive Computing Forum](/events/cognitive-computing-forum.html)
+[Cognitive Computing Forum](/events/2014/08/20/cognitive-computing-forum/)
 in San Jose. If you’re interested, register using the discount code NUMENTA.
 
 I’d like to add a welcome to Celeste Baranski, who has joined us as VP

@@ -52,8 +52,6 @@ Here is what we hope you will notice when using HTM for Stocks:
   ranking of anomalies allows you to focus on the companies that are the most
   different from the norm.
 
-![HTM for Stocks Home Screen](/assets/img/pages/newsletters/2015-07-02/homescreen.png)
-
 Some of the anomalies detected by HTM for Stocks may appear obvious but others
 are subtle and not easily detected by a human.  For example, if you watch stock
 volumes, you will see that there often is a spike in the beginning and at the
@@ -70,13 +68,14 @@ did.
 In keeping with our focus as a technology provider, we do not intend to build
 HTM for Stocks into a full commercial application, and so we have provided the
 source code for HTM for Stocks alongside our NuPIC open source project at
-https://github.com/numenta/numenta-apps, available under a AGPL v3 license<sup><a href="#agpl">*</a></sup>.
-Developers may find that HTM for Stocks code can be used to create derivative
-products that track other data streams.  We also welcome partners who are
-interested in a commercial license to the HTM for Stocks code; in this case
-please write to [sales@numenta.com](mailto:sales@numenta.com).
+https://github.com/numenta/numenta-apps, available under a AGPL v3
+license<sup>\*</sup>. Developers may find that HTM for Stocks code can be used to
+create derivative products that track other data streams.  We also welcome
+partners who are interested in a commercial license to the HTM for Stocks code;
+in this case please write to [sales@numenta.com](mailto:sales@numenta.com).
 
 We hope that you will enjoy using HTM for Stocks.  We welcome your feedback at
 [feedback@numenta.com](mailto:feedback@numenta.com).
 
-<small id="agpl" class="disclaimer"><sup>*</sup> This content has been updated to reflect our <a href="http://numenta.org/blog/2015/08/17/licensing-update.html">new AGPL license</a>.</small>
+<sup>\*</sup>*This content has been updated to reflect our
+  [new AGPL license](http://numenta.org/blog/2015/08/17/licensing-update.html).*

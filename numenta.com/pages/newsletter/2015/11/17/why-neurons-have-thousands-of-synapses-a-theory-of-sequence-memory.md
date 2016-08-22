@@ -14,10 +14,9 @@ type: post
 
 #### Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex
 
-To Numenta newsletter subscribers:
-
-November is shaping up to be a busy and exciting month for Numenta.
-[Earlier this month](/newsletters/numenta-anomaly-benchmark-nab-open-source-with-white-paper.html),
+Hello Numenta newsletter subscribers! November is shaping up to be a busy and
+exciting month for Numenta.
+[Earlier this month](/newsletter/2015/11/10/numenta-anomaly-benchmark-nab-open-source-with-white-paper/),
 I wrote you about the release of our Numenta Anomaly Benchmark (NAB). Today I’m
 pleased to share more good news.
 
@@ -37,6 +36,5 @@ will be interested in reading them.
 **MIT Technology Review article:** <br/>
 http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/
 
-**Numenta paper:** <br/> <t render="hbs">
-[{{site.paths.ext.paper.sequence}}]({{site.paths.ext.paper.sequence}})
-</t>
+**Numenta paper:** <br/>
+http://arxiv.org/abs/1511.00083

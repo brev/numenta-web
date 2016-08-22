@@ -33,15 +33,13 @@ the east coast as well as from international locations.
 * Cornell Tech Campus in NYC
 
 Congratulations to the winners of our Sparse Football Pool (including me!)!
-[See the results](/legal/results/sparse-football-pool-ii-2015.html)
-and learn about the connection between football, HTM
-learning algorithms and the brain in our
-[blog post](/blog/super-bowl-neuroscience-sparse-pool-ii-2015-results.html).
+Learn about the connection between football, HTM learning algorithms and the
+brain in our [blog post](/blog/2015/01/22/introducing-sparse-football-pool-ii-super-bowl-xlix/).
 
 We also have two additional short videos about Numenta that I would like to
 share:
-[Intro to Technology](/?video=youtube:v-VvFRar5TY) and
-[Intro to Applications](/?video=youtube:9jWmS62MWx8).
+[Intro to Technology](http://youtu.be/v-VvFRar5TY) and
+[Intro to Applications](http://youtu.be/9jWmS62MWx8).
 These videos are a quick way to learn more about Numenta’s machine intelligence
 technology and its broad applicability, and are especially appropriate as
 introductory videos for those new to our work.  Again, we hope you will share

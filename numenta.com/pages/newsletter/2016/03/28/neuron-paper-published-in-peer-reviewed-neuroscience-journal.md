@@ -68,9 +68,9 @@ in HTM systems.  Scott reviews several existing encoders, which are available
 through our open source project called [NuPIC](http://numenta.org), and explains
 the requirements for creating encoders for new types of data.
 
-Lastly, for any of our readers that will be attending [Strata + Hadoop World
-2016 in San Jose, CA](/events/strata-hadoop-world-big-data-conference-2016.html),
+Lastly, for any of our readers that will be attending
+[Strata + Hadoop World 2016 in San Jose, CA](/events/2016/03/29/strata-hadoop-world-big-data-conference-2016/),
 please stop by and say Hi.  We will be at Booth 540, along with representatives
 from our partners [Cortical.io](http://cortical.io) and
-[Avik Partners](http://grokstream.com), giving demos and overviews on the
+[Grok](http://grokstream.com), giving demos and overviews on the
 company, our technology and our latest applications.

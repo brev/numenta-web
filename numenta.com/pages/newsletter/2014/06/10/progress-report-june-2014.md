@@ -38,7 +38,7 @@ Grok, the first commercial product using Numenta’s Cortical Learning Algorithm
 (CLA), is marking its first quarter in market. Grok learns patterns from its
 temporal data stream, makes predictions, and identifies anomalies.
 Simultaneously with the product’s release, Numenta issued a
-[Science of Anomaly Detection Whitepaper](/blog/science-of-anomaly-detection.html)
+[Science of Anomaly Detection Whitepaper](/blog/2014/03/20/science-of-anomaly-detection/)
 that explains how it applied the science of the CLA to the technology of anomaly
 detection. Here’s what some of our first customers have to say:
 
