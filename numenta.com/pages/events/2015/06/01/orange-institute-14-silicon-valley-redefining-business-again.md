@@ -7,7 +7,7 @@ event:
     begin: 2015/06/01
     end: 2015/06/04
   where:
-    desc: TBD
+    desc:
     city: Silicon Valley
     state: CA
     country: USA

@@ -23,7 +23,7 @@ title: OC Meetup - Deriving Machine Intelligence from Neuroscience
 type: post
 ---
 
-**Hosted by: OC Deep Learning, HTM, ANN, NLP & AI Meetup.**
+#### Hosted by: OC Deep Learning, HTM, ANN, NLP & AI Meetup.
 
 Alex will be presenting via webinar and his company Numenta who's a leader in
 this new era of machine intelligence is kind enough to be sending us some

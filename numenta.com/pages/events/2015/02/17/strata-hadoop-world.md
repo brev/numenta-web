@@ -23,19 +23,9 @@ title: Strata + Hadoop World 2015
 type: post
 ---
 
-**Streaming Analytics: It’s Not The Same Game**
+## Streaming Analytics: It’s Not The Same Game
 
-#### Slides
-
-Link:
-[Streaming Analytics: It's Not The Same Game](http://www.slideshare.net/numenta/streaming-analytics-its-not-the-same-game)
-from [Numenta](//www.slideshare.net/numenta).
-
-<div class="video-container media-border">
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45044014" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/numenta/streaming-analytics-its-not-the-same-game" title="Streaming Analytics: It&#x27;s Not the Same Game" target="_blank">Streaming Analytics: It&#x27;s Not the Same Game</a> </strong> from <strong><a href="//www.slideshare.net/numenta" target="_blank">Numenta</a></strong> </div>
-</div>
-
-#### Talk Abstract
+## Talk Abstract
 
 We are witnessing an explosion of sensors and machine generated data. Every
 server, every building, and every device generates a continuous stream of
@@ -54,3 +44,10 @@ implemented in the open source project NuPIC, and validated in commercial
 applications.  Given the massive increase in the number of data sources, a
 general-purpose automated approach is the only scalable way to effectively
 analyze and act on continuously streaming information.
+
+#### Slides
+
+* [Streaming Analytics: It's Not The Same Game](http://www.slideshare.net/numenta/streaming-analytics-its-not-the-same-game)
+  from [Numenta](//www.slideshare.net/numenta).
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/45044014" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/numenta/streaming-analytics-its-not-the-same-game" title="Streaming Analytics: It&#x27;s Not the Same Game" target="\_blank">Streaming Analytics: It&#x27;s Not the Same Game</a> </strong> from <strong><a href="//www.slideshare.net/numenta" target="\_blank">Numenta</a></strong> </div>

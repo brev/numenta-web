@@ -23,9 +23,9 @@ title: AI with the Best
 type: post
 ---
 
-### Talk Abstract
+## Talk Abstract
 
-**Hierarchical Temporal Memory: Computing Like the Brain**
+### Hierarchical Temporal Memory: Computing Like the Brain
 
 Most of today's AI technologies are extensions of ANN models that were
 envisioned twenty years ago. While they have some amazing capabilities, they are

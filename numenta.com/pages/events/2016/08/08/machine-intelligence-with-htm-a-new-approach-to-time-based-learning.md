@@ -23,13 +23,11 @@ title: "Machine Intelligence with HTM - A New Approach to Time-Based Learning"
 type: post
 ---
 
-**Updated:** *Aug 04, 2016, 5:00pm PST*
+## Event Details
 
-
-### Details
+#### **Updated:** *Aug 04, 2016, 5:00pm PST*
 
 Welcome to the 3rd community-hosted HTM (Hierarchical Temporal Memory) Meetup.
-
 Meet HTM hackers, AI researchers, Entrepreneurs and enthusiasts working in the
 field of Artificial Intelligence. See below for a brief agenda.
 
@@ -76,7 +74,7 @@ To sign-up for a demo/lighting talk email:
   [chandan.maruthi@gmail.com](mailto:chandan.maruthi@gmail.com).
 
 
-### What is HTM?
+## What is HTM?
 
 Hierarchical Temporal Memory (HTM) is an online machine learning model developed
 by Numenta, Inc. that models some of the structural and algorithmic properties
@@ -87,3 +85,4 @@ input patterns and sequences, thus building an increasingly complex model of the
 world.
 
 More information about HTMs: <br />
+http://numenta.com/technology-overivew/

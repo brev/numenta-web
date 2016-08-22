@@ -23,8 +23,6 @@ title: NeuroTechX meetup featuring Jeff Hawkins
 type: post
 ---
 
-> What is Intelligence, that a Machine Might Have Some?
-
 ### Event Details
 
 On May 12, NeuroTechX and Indiegogo are proud to host Jeff Hawkins, co-founder
@@ -38,6 +36,9 @@ Led by Hawkins, the company’s mission is to reverse engineer the neocortex to
 build intelligent machines. This approach, which is not just biologically
 inspired, but biologically constrained, is based on the understanding that the
 brain is the only example we have of an intelligent system.
+
+> *What is Intelligence, that a Machine Might Have Some?*
+
 
 While there’s more work to be done, Numenta has made great progress toward a
 computational theory of the neocortex called HTM. At the core of HTM are

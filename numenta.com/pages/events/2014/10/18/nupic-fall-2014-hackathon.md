@@ -20,6 +20,6 @@ title: NuPIC Fall 2014 Hackathon
 type: post
 ---
 
-Please RSVP!
+#### Please RSVP!
 
-http://www.meetup.com/numenta/events/202402962/
+* http://www.meetup.com/numenta/events/202402962/

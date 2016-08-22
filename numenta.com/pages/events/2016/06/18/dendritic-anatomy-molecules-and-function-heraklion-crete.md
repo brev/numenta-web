@@ -23,9 +23,9 @@ title: Dendritic Anatomy, Molecules and Function
 type: post
 ---
 
-### Event Details
+## Event Details
 
-Spotlight on molecules, structure, and function
+#### Spotlight on molecules, structure, and function
 
 Dendrites are thin processes extending from the cell bodies of multiple neuron
 types. Since the majority of synaptic connections take place on dendrites, they

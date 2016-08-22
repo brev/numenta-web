@@ -24,10 +24,7 @@ type: post
 ---
 
 A conference about Cognitive Computing, Internet of Things, and other current
-hot topics in Silicon Valley.
-
-Register with our discount code: **NUMENTA**
-
+hot topics in Silicon Valley. Register with our discount code: **NUMENTA**.
 
 ### Opening Keynote
 
@@ -38,23 +35,27 @@ computing will drive the future of analytics.
 * 09:00 AM - 09:30 AM
 * Level: 	Business/Strategic
 
-> We are witnessing an explosion of sensors and machine generated data. Every
-> server, every building, and every device generates a continuous stream of
-> information that is ever changing and potentially valuable. The existing big
-> data paradigm requires storing data for batch analysis, and extensive modeling
-> by a human expert, prior to deployment. This is incredibly inefficient and
-> cannot scale. Instead there is a growing need to rapidly create adaptive
-> models that accept streaming data sources and can take instant action.
->
-> In this talk I will describe a new paradigm for streaming data algorithms,
-> based on recent neuroscience findings and on the computational properties of
-> the neocortex. These systems are highly automated, adapt to changing
-> statistics, and naturally deal with temporal data streams. They require no
-> batch training and custom models can be deployed on the fly. Many of the core
-> ideas have been implemented in the open source project NuPIC, and validated in
-> commercial applications. Given the massive increase in the number of data
-> sources, a general-purpose automated approach is the only scalable way to
-> effectively analyze and act on continuously streaming information.
+### Topic
+
+> *We are witnessing an explosion of sensors and machine generated data. Every
+  server, every building, and every device generates a continuous stream of
+  information that is ever changing and potentially valuable. The existing big
+  data paradigm requires storing data for batch analysis, and extensive modeling
+  by a human expert, prior to deployment. This is incredibly inefficient and
+  cannot scale. Instead there is a growing need to rapidly create adaptive
+  models that accept streaming data sources and can take instant action.*
+
+> *In this talk I will describe a new paradigm for streaming data algorithms,
+  based on recent neuroscience findings and on the computational properties of
+  the neocortex. These systems are highly automated, adapt to changing
+  statistics, and naturally deal with temporal data streams. They require no
+  batch training and custom models can be deployed on the fly. Many of the core
+  ideas have been implemented in the open source project NuPIC, and validated in
+  commercial applications. Given the massive increase in the number of data
+  sources, a general-purpose automated approach is the only scalable way to
+  effectively analyze and act on continuously streaming information.*
+
+### About the Speaker
 
 Subutai Ahmad is the VP of Research at Numenta, a company focused on Machine
 Intelligence. Our technology, Hierarchical Temporal Memory (HTM), is a detailed
@@ -73,7 +74,6 @@ developed for consumers.
 Subutai holds a B.S. in Computer Science from Cornell, and a Ph.D in Computer
 Science from the University of Illinois at Urbana-Champaign.
 
-
 ### Meet Numenta
 
 The Numenta team would love to meet you, answer any questions about our HTM
@@ -84,7 +84,8 @@ Open Hours:
 * Tue Aug 18: 4:00pm - 6:30pm
 * Wed Aug 19: 2:15pm - 8:00pm
 
-App Demos:
+### Application Demos
+
 * [Grok](http://grokstream.com)
 * [HTM for Stocks](/htm-for-stocks/)
 * Rogue Behavior detection:

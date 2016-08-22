@@ -23,9 +23,9 @@ title: COSYNE 2016 Computational and Systems Neuroscience Meeting
 type: post
 ---
 
-#### Abstract
+## Abstract
 
-**A Theory of Sequence Memory in the Neocortex**
+#### A Theory of Sequence Memory in the Neocortex
 
 Neocortical neurons have thousands of excitatory synapses. It is a mystery how
 neurons integrate the input from so many synapses and what kind of large-scale
@@ -53,10 +53,10 @@ each neuron. Thus neurons need thousands of synapses to learn the many temporal
 patterns in sensory stimuli and motor sequences.
 
 Related links:
-* [Blog Post](http://numenta.com/learn/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex.html)
-* <t render="hbs">[PDF Whitepaper]({{site.paths.ext.paper.sequence}})</t>
+* [More Resources](/papers-videos-and-more/)
+* [PDF Whitepaper](/papers/)
 
-#### About Cosyne
+## About Cosyne
 
 The annual Cosyne meeting provides an inclusive forum for the exchange of
 experimental and theoretical/computational approaches to problems in systems

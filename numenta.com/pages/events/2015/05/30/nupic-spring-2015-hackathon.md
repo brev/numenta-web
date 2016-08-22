@@ -20,11 +20,9 @@ title: NuPIC Spring 2015 Hackathon NYC
 type: post
 ---
 
-### Please RSVP
+### Please RSVP on our Meetup.com page
 
-Please RSVP on our Meetup.com info page:
-
-* Meetup: http://www.meetup.com/numenta/events/220422020/
+* http://www.meetup.com/numenta/events/220422020/
 
 ### More Info
 

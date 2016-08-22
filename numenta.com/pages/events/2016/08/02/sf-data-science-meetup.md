@@ -23,9 +23,9 @@ title: SF Data Science Meetup
 type: post
 ---
 
-### Talk Abstract
+## Talk Abstract
 
-**Predictive Analytics with Numenta Machine Intelligence**
+#### Predictive Analytics with Numenta Machine Intelligence
 
 As sensors integrate with our daily lives, driven largely by the internet of
 things (IoT), there is demand for streaming analytics algorithms to provide
@@ -43,7 +43,7 @@ classification on streaming data. HTM can run on wide variety of data streams,
 from IT server metrics to GPS coordinates. In this talk, Alex will discuss HTM
 in the context of predictive analytics, presenting real-world use cases.
 
-### Schedule
+## Schedule
 
 * **6:00pm** - Doors open & food/drinks
 * **6:50pm** - Announcements

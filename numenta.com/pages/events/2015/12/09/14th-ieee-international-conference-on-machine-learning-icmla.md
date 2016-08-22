@@ -8,7 +8,7 @@ event:
     begin: 2015/12/09
     end: 2015/12/11
   where:
-    desc: TBD
+    desc:
     city: Miami
     state: FL
     country: USA

@@ -73,8 +73,8 @@ const MarkdownWrapper = ({route}, {config}) => {
     }
 
     if (key === 'events') {
-      const {when, where} = data.event
-      const {desc, city, state, country, web, what, who, why} = where
+      const {what, when, where, who, why} = data.event
+      const {desc, city, state, country, web} = where
       const details = [(
         <TableRow key="when">
           <TableCell>

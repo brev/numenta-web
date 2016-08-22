@@ -23,9 +23,9 @@ title: Playfair AI Summit 2016
 type: post
 ---
 
-### About the Event
+## About the Event
 
-Artificial intelligence is transforming our world. **Fast.**
+#### Artificial intelligence is transforming our world. FAST.
 
 In its second edition, the Playfair AI Summit 2016 will explore the frontiers of
 AI research and how these technologies are leveraged by companies to extend the

@@ -23,11 +23,9 @@ title: Computational and Systems Neuroscience (Cosyne) 2015
 type: post
 ---
 
-#### Title
+## Abstract
 
-**Maintaining Stable Perception During Active Exploration**
-
-#### Abstract
+#### Maintaining Stable Perception During Active Exploration
 
 Our sensory input changes dramatically as the result of our own behavior,
 including eye movements, head turns, and body movements. Despite these rapid

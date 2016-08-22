@@ -23,6 +23,6 @@ title: AI Startups Conference
 type: post
 ---
 
-### Event Details
+## Event Details
 
-Conference open from 9:00am - 5:00pm (PST).
+#### Conference open from 9:00am - 5:00pm (PST)
