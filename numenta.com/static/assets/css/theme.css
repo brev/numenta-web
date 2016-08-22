@@ -106,8 +106,7 @@
   composes: fr from 'tachyons';
   composes: mb3 from 'tachyons';
   composes: mb1-ns from 'tachyons';
-  composes: pl3-m from 'tachyons';
-  composes: pl4-l from 'tachyons';
+  composes: pl3-ns from 'tachyons';
   composes: w-100 from 'tachyons';
   composes: w-40-ns from 'tachyons';
 }

@@ -2,6 +2,8 @@ import {IndexLink, Link} from 'react-router'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
+import {triggerGAnalyticsEvent} from '../../utils/client'
+
 import styles from './index.css'
 
 
@@ -9,9 +11,14 @@ import styles from './index.css'
  *
  */
 const ImageLink = ({children, title, to}) => {
+  const onClick = (event) => (
+    // send ga event for asset link/download
+    triggerGAnalyticsEvent(event.target.getAttribute('href'))
+  )
   const attrs = {
     // default internal non-index link
     className: styles.imagelink,
+    onClick,
     title,
     to: prefixLink(to),
   }
