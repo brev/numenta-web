@@ -12,7 +12,7 @@ type: post
 
 ### Numenta Licensing Update
 
-In this post, I’d like to tell you about some changes and updates to our open
+Today I’d like to tell you about some changes and updates to our open
 source and commercial licensing strategy.
 
 First, effective today, we will be using the

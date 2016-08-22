@@ -58,7 +58,7 @@ class Search extends React.Component {
     let matches, results
 
     if (query) {
-      matches = this._api.search(query).slice(0, 10)
+      matches = this._api.search(query).slice(0, 25)
       results = (
         <SearchResult
           onClose={() => this._performSearch('')}

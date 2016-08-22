@@ -10,12 +10,13 @@ title: How is Grok's algorithm different?
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 A question we get all the time from machine learning fans is: "How does
-Numenta's [Cortical Learning Algorithm](http://numenta.org/cla.html) (the CLA)
+Numenta's [Hierarchical Temporal Memory](/technology-overview/) (the HTM)
 compare to traditional machine learning algorithms?" There are many ways to
 answer this question. In this blog entry, I will focus on one specific
 difference, perhaps the most fundamental one.
@@ -48,18 +49,18 @@ GPS coordinates from 5 minutes ago are an excellent predictor of your current
 location. The list is endless. Streaming temporal patterns are the very
 antithesis of i.i.d.
 
-The CLA is an inherently temporal learning algorithm, and doesn't care about
+The HTM is an inherently temporal learning algorithm, and doesn't care about
 i.i.d. It greedily constructs sequences and does not assume independence. If you
 saw a particular revenue pattern the last two weeks, it assumes you are more
 likely to see it this week. If you haven't seen a pattern for several years, it
-will likely forget it. Also, CLA assumes that the underlying distribution can
+will likely forget it. Also, HTM assumes that the underlying distribution can
 change. This is what makes it online or adaptive. If your revenue jumps because
 you just added an important customer, it will adapt. It inherently assumes your
-data stream contains sequences and is constantly changing. We didn't invent this
-- the core ideas are inherent in the neocortex of the brain and lend themselves
-well to streaming data analytics.
+data stream contains sequences and is constantly changing. We didn't invent
+this - the core ideas are inherent in the neocortex of the brain and lend
+themselves well to streaming data analytics.
 
-CLA is not the only technique to break the i.i.d. assumption. Other algorithms,
+HTM is not the only technique to break the i.i.d. assumption. Other algorithms,
 such as Hidden Markov Models and many time series algorithms, also relax that
-assumption. So, how is CLA different from HMMs? Good question. I guess we'll
+assumption. So, how is HTM different from HMMs? Good question. I guess we'll
 just have to tackle that in another blog entry...stay tuned!

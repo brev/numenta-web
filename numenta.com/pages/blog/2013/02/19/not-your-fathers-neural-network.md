@@ -1,6 +1,6 @@
 ---
 author: Jeff Hawkins
-brief: I am often asked, "Is Numenta’s Cortical Learning Algorithm a neural network?" The short answer to this question is "Yes," but the problem with this short
+brief: I am often asked, "Is Numenta’s Hierarchical Temporal Memory a neural network?" The short answer to this question is "Yes," but the problem with this short
 date: 2013/02/19
 featured: false
 image: ../images/main.jpg
@@ -10,16 +10,14 @@ title: Not Your Father's Neural Network
 type: post
 ---
 
-![Image](../images/main.jpg "CLA Neuron")
-
 I am often asked, "Is Numenta’s
-[Cortical Learning Algorithm](http://numenta.org/cla.html) a
+[Hierarchical Temporal Memory](/technology-overview/) a
 [neural network](http://en.wikipedia.org/wiki/Neural_network)?"
-(For those who don’t know, the Cortical Learning Algorithm, or CLA, is the
+(For those who don’t know, the Hierarchical Temporal Memory, or HTM, is the
 heart of Grok our streaming data product.)
 
 The short answer to this question is "Yes," but the problem with this short
-answer is that the Cortical Learning Algorithm is quite different than what most
+answer is that the Hierarchical Temporal Memory is quite different than what most
 people think of as a neural network.
 
 The history of artificial neural networks starts with
@@ -59,25 +57,23 @@ just a few synapses on a cell body and ignored dendrite properties.  Biological
 neural networks have detailed prototypical architectures; artificial neural
 networks ignored these architectures. Neuroscience was starting to develop
 overall theories of brain function but artificial neural networks were simple
-classifiers that didn’t fit within an overall theory.  Basically, for many years
+HTMssifiers that didn’t fit within an overall theory.  Basically, for many years
 most artificial neural network research ignored neurobiology and their
-applications remained limited to simple classification.  When most people think
+applications remained limited to simple HTMssification.  When most people think
 of artificial neural networks they think about the type of neural networks
 explored in the 1980s.
 
 Today the term "artificial neural network" can refer to many different types of
 networks.  Some strive for biological realism and some don’t.  So when I am
-asked if Numenta’s Cortical Learning Algorithm is a neural network, I reply
-"Yes, but there many types of neural networks.  If you want to compare the CLA
+asked if Numenta’s Hierarchical Temporal Memory is a neural network, I reply
+"Yes, but there many types of neural networks.  If you want to compare the HTM
 to other neural networks, ask do those other networks learn sequences, do they
 learn in an on-line fashion, do they incorporate neurons that have non-linear
 dendrites, do they form thousands of connections, does the architecture of the
 network reflect the known architecture of any part of the brain, and does the
 network fit within a larger theory of brain function?"  The number of artificial
-neural networks that fit these criteria is small.  The CLA is one of them.
+neural networks that fit these criteria is small.  The HTM is one of them.
 
 BTW, there is one type of early artificial neural network that was applied to
 sequences.  These are called auto-associative memories.  In another blog post I
-will describe how the CLA and auto-associative memories are related.
-
-> Jeff Hawkins
+will describe how the HTM and auto-associative memories are related.

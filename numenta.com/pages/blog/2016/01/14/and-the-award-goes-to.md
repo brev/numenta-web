@@ -6,15 +6,16 @@ featured: false
 image: ../images/image.png
 org: Director of Marketing
 tags: numenta AI awards artificial machine intelligence learning deep htm brain neurons nupic
-title: And the award goes to...
+title: "And the award goes to..."
 type: post
 ---
 
 This morning, as Hollywood anxiously awaited to hear the nominees for this
 year’s Academy Awards, another set of winners was recognized – not for motion
-pictures, but for artificial intelligence. [The Global Annual Achievement Awards
-for Artificial Intelligence](http://awards.ai/) were announced today by
-http://Awards.AI.
+pictures, but for artificial intelligence.
+
+[The Global Annual Achievement Awards for Artificial Intelligence](http://awards.ai/)
+were announced today by http://Awards.AI.
 
 Awards.AI is part of the [Informed.AI Network](http://informed.ai/), which
 provides a range of information resources for Artificial Intelligence and
@@ -24,20 +25,21 @@ services across a number of different categories and industries, as well as the
 work of startups and individuals whose focus on AI is advancing the field.
 
 There’s no question that interest, activity and progress in the field of
-artificial intelligence, (or [machine intelligence, as we would say here at
-Numenta](http://numenta.com/blog/machine-intelligence-machine-learning-deep-learning-artificial-intelligence.html))
+artificial intelligence, (or [machine intelligence, as we would say here at Numenta](/blog/2016/01/11/machine-intelligence-machine-learning-deep-learning-artificial-intelligence/))
 is increasing every day.  The existence of these awards is a testament to the
 growing enthusiasm for this space. We were honored to see the community
 recognize our work, along with our strategic partner,
 [Cortical.io](http://www.cortical.io/), in several of the 10 categories of
 achievement in 2015:
 
-*	AI Company of the Year: **Numenta**
-*	AI Person of the Year: **Jeff Hawkins**
-*	AI Application of the Year: **NuPIC**
-*	AI Startup of the Year: **Cortical.io**
+| Award | Winner |
+| ----- | ------ |
+| AI Company of the Year | Numenta |
+|	AI Person of the Year | Jeff Hawkins |
+|	AI Application of the Year | NuPIC |
+|	AI Startup of the Year | Cortical.io |
 
-Our [most recent newsletter](http://numenta.com/newsletters/year-in-review-numenta-2015.html)
+Our [most recent newsletter](/newsletter/2016/01/07/year-in-review-numenta-2015/)
 shared what we thought to be highlights of our achievements in 2015.
 
 Cortical.io was recognized for developing a new approach for handling Big Text

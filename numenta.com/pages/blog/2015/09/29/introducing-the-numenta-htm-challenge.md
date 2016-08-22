@@ -58,7 +58,7 @@ new algorithm development, respectively.
 
 ##### Temporal Pooling (Jeff Hawkins)
 
-> Temporal pooling is an important aspect of HTM theory. It refers to how
+Temporal pooling is an important aspect of HTM theory. It refers to how
 representations get more stable as sensory data moves from region to region
 ascending the cortical hierarchy.  It plays an important role in inference,
 feedback, and motor control. Our understanding of how temporal works has been
@@ -70,7 +70,7 @@ implemented in neurons in the neocortex.
 
 ##### Temporal Memory of HTM: A Retrospective (Subutai Ahmad)
 
-> Did you realize that the development of HTM algorithms at Numenta has been
+Did you realize that the development of HTM algorithms at Numenta has been
 going on for over 10 years? Subutai (who has seen it all) will step you through
 the sequence of HTM developments, from our very first demos, algorithms and
 products, to our current research on cortical algorithms. Come and see what we

@@ -15,7 +15,7 @@ did you ever think the Super Bowl could help you understand how your brain
 works? Well, it can!  Enter the Sparse Football Pool.
 
 Numenta's theory of the cortex,
-[Hierarchical Temporal Memory](/#technology),
+[Hierarchical Temporal Memory](/technology-overview/),
 relies on the properties of Sparse Distributed Representations. SDRs are the
 fundamental way our brain represents information. The concepts behind SDR are
 deep and thought provoking. We get a lot of questions around this and were
@@ -57,18 +57,15 @@ a point for question 3. Note that since you can only put down 11 TRUE's, the
 maximum overlap score you can get is 11.
 
 In case of ties, the earlier entries will win. (Also, if you submit more than
-one entry, only the last entry will count.) Full details are explained in the
-[contest rules page](/legal/rules/sparse-football-pool-ii-2015.html).
-Or feel free to post questions in the comment section below this blog post.
+one entry, only the last entry will count.)
 
 #### AND NOW, THE QUESTIONS
 
-To enter, go to our
-[online submission form](https://numenta.wufoo.com/forms/entry-form-for-numenta-sparse-football-quiz-ii/).
-You will be asked to answer the following questions. They are repeated here for
-reference to help you plan out your answers ahead of time (responses will only
-be accepted through the online submission form). Note that all entries must be
-received by 12 PM Pacific Standard Time on January 31, 2015.
+To enter, go to our online submission form. You will be asked to answer the
+following questions. They are repeated here for reference to help you plan out
+your answers ahead of time (responses will only be accepted through the online
+submission form). Note that all entries must be received by 12 PM Pacific
+Standard Time on January 31, 2015.
 
 * The New England Patriots will score first
 * The Seattle Seahawks will score first
@@ -107,5 +104,3 @@ received by 12 PM Pacific Standard Time on January 31, 2015.
 * The winner will win by 10 or more points
 * The Seattle Seahawks will claim their 2nd Superbowl Trophy!
 * The New England Patriots will claim their 4th Superbowl Trophy!
-
-[Online Contest Submission Form](https://numenta.wufoo.com/forms/entry-form-for-numenta-sparse-football-quiz-ii/).

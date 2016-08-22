@@ -10,7 +10,7 @@ title: Super Bowl Neuroscience
 type: post
 ---
 
-I'm slowly recovering from the disappointing 49er loss to the Ravens in the
+We are slowly recovering from the disappointing 49er loss to the Ravens in the
 Superbowl. For those who watched it, it was a tremendously exciting game. In
 fact the events of the last few minutes had a significant effect on our Sparse
 Pool result!
@@ -121,9 +121,6 @@ brains represent information. Most importantly, I hope you had fun with this as
 I did. Next time your spouse complains you are watching too much football, let
 them know you are actually involved in the greatest possible scientific quest:
 understanding human intelligence. Go Niners!
-
-Check out all of the questions and answers
-[here](/legal/results/sparse-football-pool-i-2013.html).
 
 #### Question Group 1 - Overall Game Excitement
 

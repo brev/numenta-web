@@ -19,18 +19,15 @@ In fact, there were two entries with the highest score. But given the rules of
 the contest, the first entry wins the Kindle and copy of *On Intelligence*.  And
 that winner is:
 
-Ryan McCall!
+**Ryan McCall**!
 
 Congratulations!  Ryan also beat the best entry from Numenta (we were not
 allowed to win the public prize but wanted to see how we'd do, since our
 participation wouldn't affect the public winner's chances). The top two Numenta
 entries had 6 correct answers.
 
-To see how you did, you can
-[check out the results page](/legal/results/sparse-football-pool-i-2013.html).
-
 We will follow up with a blog post describing how this pool relates to the way
 the brain stores data. But in the meantime, thank to everyone for participating,
 and congratulations again Ryan!
 
-If only the Niners had won the game… ;^)
+If only the Niners had won the game… :)

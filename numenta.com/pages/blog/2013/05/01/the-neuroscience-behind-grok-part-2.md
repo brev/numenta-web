@@ -10,20 +10,21 @@ title: The Neuroscience Behind Grok, Part 2
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 **This is the second post in a series describing how the brain works, and how
 this benefits Grok. The content is based on lectures given by Jeff Hawkins
 describing Grok’s detailed model of a layer of cells in the neocortex, called
 the Cortical Learning Algorithm (CLA).**
 
-[Previously](./the-neuroscience-behind-grok.html)  we quoted an AI expert who
-said, "one of biggest problems in AI&#8212;no, the  only problem in AI&#8212;is
-the problem of representation."   What exactly are "representations," and why do
-we say that "Sparse Distributed Representations" (SDRs) are critical to modeling
-human intelligence?
+[Previously](/blog/2013/01/03/the-neuroscience-behind-grok/) we quoted an AI
+expert who said, "one of biggest problems in AI&#8212;no, the  only problem in
+AI&#8212;is the problem of representation." What exactly are "representations,"
+and why do we say that "Sparse Distributed Representations" (SDRs) are critical
+to modeling human intelligence?
 
 Representations are patterns in a computer or a brain that represent something
 in the real world. They are building blocks to understanding our world, that
@@ -100,7 +101,12 @@ without SDRs. The next post in this series will discuss how SDRs are used to
 learn patterns.
 
 Further information:
-* [CLA white paper](http://numenta.org/cla-white-paper.html). This paper discusses the Cortical Learning Algorithm in detail. It precedes Grok and therefore does not describe how CLA applies to Grok.
-* [Video on SDRs](http://youtu.be/t6NcTdXxVeo).  This talk by Jeff Hawkins goes into more detail, including the SDR property of "union," which makes it easy to determine if a new pattern has been seen before. This, in turn, forms the basis of Grok's anomaly detection algorithms.
-* [Introducing the first ever Sparse Football Pool!](./introducing-the-first-ever-sparse-football-pool.html) and [Super Bowl Neuroscience](./super-bowl-neuroscience.html). These blog posts describe a fun example of the principles of sparsity applied to a poll on a football game.
-* [The Neuroscience Behind Grok, Part 1](./the-neuroscience-behind-grok.html). This is the first part of this series, providing an overview of how the brain is a predictive modeling memory system.
+
+* [Video on SDRs](http://youtu.be/t6NcTdXxVeo) - This talk by Jeff Hawkins goes
+  into more detail, including the SDR property of "union," which makes it easy
+  to determine if a new pattern has been seen before. This, in turn, forms the
+  basis of Grok's anomaly detection algorithms.
+
+* [The Neuroscience Behind Grok, Part 1](/blog/2013/01/03/the-neuroscience-behind-grok/) -
+  This is the first part of this series, providing an overview of how the brain is a
+  predictive modeling memory system.

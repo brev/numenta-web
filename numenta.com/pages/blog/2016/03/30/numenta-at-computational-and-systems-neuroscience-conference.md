@@ -47,16 +47,13 @@ the biophysical mechanism underlying dendritic spikes. Nevertheless, the
 function of dendritic spikes remains unclear and it is not incorporated in most
 neural network models.
 
-<img src="../images/2.png" class="center-block img-responsive media-border" alt="Image of Active Dendrite Firing Timing" />
+![Image of Active Dendrite Firing Timing](../images/2.png)
 
-<div class="caption">
-  **Left:** A pyramidal neuron in the cortex (Spruston 2008, Nat Rev Neurosci).
-  <br/>
-  **Right:** Researchers stimulated individual synapses optically and measured
-  voltage responses at the soma. Simultaneous stimulation of enough synapses
-  (8 in this case) caused a large and sustained depolarization at the cell body
-  (Major et al., 2013, Annu Rev Neurosci).
-</div>
+> **Left:** *A pyramidal neuron in the cortex (Spruston 2008, Nat Rev
+  Neurosci).* **Right:** *Researchers stimulated individual synapses optically
+  and measured voltage responses at the soma. Simultaneous stimulation of enough
+  synapses (8 in this case) caused a large and sustained depolarization at the
+  cell body (Major et al., 2013, Annu Rev Neurosci).*
 
 The HTM sequence memory model utilizes the active dendrites of cortical neurons
 to learn sequences from data streams. Temporal sequences are learned via growth
@@ -68,11 +65,10 @@ only achieves comparable performance to state-of-the-art machine learning
 algorithms, but also exhibits many desirable attributes for real-world sequence
 learning with streaming data.
 
-<img src="../images/3.png" class="center-block img-responsive media-border" alt="Prediction graph image" />
-<div class="caption">
-  HTM sequence memory model makes accurate 2.5 hour ahead-predictions of taxi
-  demand in the New York City.
-</div>
+![Prediction graph image](../images/3.png)
+
+> *HTM sequence memory model makes accurate 2.5 hour ahead-predictions of taxi
+  demand in the New York City.*
 
 ### Interactions with other neuroscientists
 
@@ -105,10 +101,6 @@ to learn about the HTM theory.  Let me know what you think of it by contacting
 [ycui@numenta.com](mailto:ycui@numenta.com) and join the discussion of HTM in
 the [NuPIC community](http://numenta.org).
 
-<a href="../images/cosyne-poster.pdf">
-  <img src="../images/image.png" class="center-block img-responsive media-border" alt="Numenta conference poster image" />
-</a>
-<div class="caption">
-  Numenta Cosyne Poster.
-  [Click to enlarge](../images/cosyne-poster.pdf).
-</div>
+[![Numenta conference poster image](../images/image.png)](../images/cosyne-poster.pdf)
+
+> *Numenta Cosyne Poster. [Click to enlarge](../images/cosyne-poster.pdf).*

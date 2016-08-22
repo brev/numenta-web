@@ -53,7 +53,7 @@ At the heart of our product Grok is a novel learning algorithm that is
 inherently online and variable order.  This isn't surprising because it models a
 slice of the neocortex, which is also online and variable order.  Although much
 of the detail in how these algorithms work is explained in the
-[white paper](http://numenta.org/cla-white-paper.html) on our website, my
+[white paper](/papers-videos-and-more/) on our website, my
 25-minute talk at Berkeley covered the essentials, yet is simpler and easier to
 understand.  The workshop organizers recorded my talk and
 [posted it online,](http://www.youtube.com/watch?v=nfUT3UbYhjM) but the audio is

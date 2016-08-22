@@ -16,13 +16,11 @@ This year’s Super Bowl between the New England Patriots and the Seattle Seahaw
 was a cliffhanger. In fact, the twists and turns in the last few minutes had a
 significant effect on our result, with some of the answers determined in the
 last five minutes of the game. (To read the original blog post,
-[click here](/blog/introducing-sparse-football-pool-ii-super-bowl-xlix.html)).
+[click here](/blog/2015/01/22/introducing-sparse-football-pool-ii-super-bowl-xlix/)).
 Congratulations to our winner Glen Speckert who, out of 95 contest
 entries, tied for the top score with 8 correct answers. The other top scorer was
 our own CEO, Donna Dubinsky, who also had a score of 8 (but is ineligible to win
-a prize – sorry Donna!). Check out all of the
-[results here](/legal/results/sparse-football-pool-ii-2015.html)
-and see where you ranked.
+a prize – sorry Donna!).
 
 So, how does the Sparse Football Pool relate to the brain, the HTM Learning
 Algorithms and intelligence? The remainder of this blog post will explain.
@@ -60,7 +58,7 @@ be True, so there was some room for error. Specifically, there are 9,405 answers
 that could get the maximum score of 9, so again, if everything was random, the
 chance of getting a perfect score is about 9,405/54,627,300, or about 1 in
 5,808. (For more details on the math behind SDRs, see
-[this talk](/learn/sparse-distributed-representations.html).)
+[this talk](/papers-videos-and-more/sparse-distributed-representations/).)
 
 What is a good score? The chance of getting a score of 8 is 1 in 322, and the
 chance of getting a 7 is 1 in 37. Now, here's a puzzler: we had less than 100
@@ -127,10 +125,6 @@ represent information. Most importantly, we hope you had fun with this unusual
 pool! Next time your spouse complains you are watching too much football, let
 them know you are actually involved in the greatest possible scientific quest:
 understanding human intelligence.
-
-Check out all of the
-[results here](/legal/results/sparse-football-pool-ii-2015.html)
-and see where you ranked.
 
 
 ### STATEMENT GROUPS:

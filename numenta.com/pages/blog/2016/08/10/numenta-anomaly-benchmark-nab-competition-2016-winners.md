@@ -37,14 +37,18 @@ competition categories:
 
 ### Dataset Category Winners
 
-1. First prize: **Samya Bagchi**
-1. Second prize: **BK Ramesh**
+| Prize | Name |
+|:-----:|:---- |
+| #1 | Samya Bagchi |
+| #2 | BK Ramesh |
 
 ### Algorithms Category Winners
 
-1. First prize: **Mikhail Smirnov**
-1. Second prize: **Felix Andrews**
-1. Third prize: **Vladislav Ishimtsev** & **Evgeny Burnaev**
+| Prize | Name(s) |
+|:-----:|:------- |
+| #1 | Mikhail Smirnov |
+| #2 | Felix Andrews |
+| #3 | Vladislav Ishimtsev & Evgeny Burnaev
 
 All winning entries demonstrated creativity and a good sense of the problem
 definition. In the dataset category, the entry bagging first prize provided
@@ -54,30 +58,20 @@ from a car engine motor system with annotated anomalies for voltage and current
 metrics. Here are some interesting examples of anomalies from our winning
 datasets, shown with red dots.
 
-<img
-  alt="NAB chart 1"
-  class="center-block img-responsive media-border"
-  src="../images/image2.png"
-/>
-<div class="caption">
-  The graph above shows a patient’s blood pressure readings every 5 milliseconds
-  as the pressure drops steadily from diastole to systole. Every small
-  oscillatory pattern represents a heartbeat. The first anomaly indicates
-  pressure noise and the second anomaly indicates an irregular heartbeat, given
-  by subtle temporal pattern changes.
-</div>
+![NAB chart 1](../images/image2.png)
 
-<img
-  alt="NAB chart 2"
-  class="center-block img-responsive media-border"
-  src="../images/image.png"
-/>
-<div class="caption">
-  This graph shows current sensor data of a motor engine.  The first anomaly is
+> *The graph above shows a patient’s blood pressure readings every 5
+  milliseconds as the pressure drops steadily from diastole to systole. Every
+  small oscillatory pattern represents a heartbeat. The first anomaly indicates
+  pressure noise and the second anomaly indicates an irregular heartbeat, given
+  by subtle temporal pattern changes.*
+
+![NAB chart 2](../images/image.png)
+
+> *This graph shows current sensor data of a motor engine.  The first anomaly is
   an increase in maximum amplitude of a cycle, followed by another anomaly that
   shows a lag in starting the engine and the last anomaly resulting in engine
-  failure.  
-</div>
+  failure.*
 
 In the algorithms category, winning submissions also achieved very impressive
 scores on the benchmark. The entry securing first place worked with a novel

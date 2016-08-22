@@ -206,3 +206,5 @@ moved into GitHub Issues ASAP.
     and prod after static build
   * `npm run dev -- --host 192.168.1.112`
 * browser support table
+* search - keyword in title/result should rank to top above current content ranks
+* markdown content image no hover effect

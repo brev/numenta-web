@@ -10,9 +10,10 @@ title: Grok for Managing AWS Cost Anomalies
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> **NOTE:** *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 While the forefront issue in an engineer's mind might be that builds are
 consistently running and production servers aren't experiencing unexpected
@@ -38,11 +39,13 @@ marketplace candidates. Since Grok had learned the regular pattern of nightly
 AMI tests, when all of a sudden an instance was manually created, Grok quickly
 notified me.
 
-##### Grok Web UI showing Normal Pattern
 ![Grok Screenshot](../images/1.png)
 
-##### Grok Web UI showing anomaly due to launch of AMI tests
+> *Grok Web UI showing Normal Pattern*
+
 ![Grok Screenshot](../images/2.png)
+
+> *Grok Web UI showing anomaly due to launch of AMI tests*
 
 In this case because I knew the QA team was starting a new cycle of testing, I
 was able to easily identify the cause of the anomaly.  Nevertheless, it was
@@ -69,8 +72,9 @@ error in the configuration of our auto-scaling group, causing it to grow
 unnecessarily large.  Despite a more noisy usage pattern for this AWS region,
 Grok was able to identify it.
 
-##### Grok Web UI showing anomaly due to error in auto-scaling group configuration
 ![Grok Screenshot](../images/3.png)
+
+> *Grok Web UI showing anomaly due to error in auto-scaling group configuration*
 
 Grok can also learn new behaviors. When we began to spin up several more costly
 instances for testing, Grok first detected this behavior as anomalous, but as we
@@ -80,5 +84,6 @@ Amazon continually announcing new instance sizes and costs, unexpected changes
 to server burnrate are inevitable, and it’s necessarily important to be able to
 learn the new burnrate patterns.
 
-##### Grok Web UI showing learning of new pattern
 ![Grok Screenshot](../images/4.png)
+
+> *Grok Web UI showing learning of new pattern*

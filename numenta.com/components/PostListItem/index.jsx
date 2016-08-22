@@ -27,7 +27,7 @@ const PostListItem = ({post}, {config}) => {
   const occur = datetime.format(config.moments.human)
   const target = (data.type === 'link') ? data.link : path
   const key = file.dir.split('/')[0]
-  let brief = (<Paragraph>{data.brief}</Paragraph>)
+  let brief = (<Paragraph>{data.brief}...</Paragraph>)
 
   // modifications for: events
   if (key === 'events') {

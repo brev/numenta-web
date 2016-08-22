@@ -159,13 +159,15 @@ const MarkdownWrapper = ({route}, {config}) => {
 
   if (data.image && !data.hideImage) {
     photo = (
-      <Image
-        alt={data.title}
-        border={true}
-        respond="mw"
-        shadow={true}
-        src={`${path}${data.image}`}
-      />
+      <div className={styles.image}>
+        <Image
+          alt={data.title}
+          border={true}
+          respond="mw"
+          shadow={true}
+          src={`${path}${data.image}`}
+        />
+      </div>
     )
   }
 

@@ -16,7 +16,7 @@ type: post
 #### IEEE WCCI (World Congress on Computational Intelligence) 2016
 
 We are excited to announce the Numenta Anomaly Benchmark (NAB) Competition! Last
-year, we [released NAB](/press/numenta-anomaly-benchmark-nab-evaluates-anomaly-detection-techniques.html),
+year, we [released NAB](/press/2015/11/10/numenta-anomaly-benchmark-nab-evaluates-anomaly-detection-techniques/),
 the first ever open-source benchmark for evaluating real-time anomaly detection
 algorithms. This year, we want to further expand NAB by including more
 real-world datasets and benchmarked algorithms, through a fun competition - with
@@ -31,15 +31,10 @@ performs? Have a dataset with labeled anomalies? Then this contest is for you.
 Entries can be submitted to either category, or both. All entries should be sent
 to [nab@numenta.org](mailto:nab@numenta.org).
 
-<t render="hbs">
-  <a href="http://numenta.org/nab/#what-are-some-example-entries">
-    <img src="{{document.image}}" class="center-block img-responsive media-border" alt="{{document.title}} Image" />
-  </a>
-</t>
-<div class="caption">
-  Example entry of satellite data with labeled anomalies. See
-  [more examples](http://numenta.org/nab/#what-are-some-example-entries).
-</div>
+[![Numenta Anomaly Benchmark screenshot](../images/image.png)](http://numenta.org/nab/#what-are-some-example-entries)
+
+> *Example entry of satellite data with labeled anomalies. See
+  [more examples](http://numenta.org/nab/#what-are-some-example-entries).*
 
 
 ### Entry Categories

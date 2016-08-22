@@ -163,16 +163,16 @@ In summary, below are the characteristics of the three different approaches:
 
 |   | *Classic AI* | *Simple Neural Network* | *Biological Neural Network* |
 | - |------------| --------------------- | ------------------------- |
-| Examples | Watson |	Deep Learning	| Hierarchical Temporal Memory (HTM) |
-| Associated terms | Expert systems	| Artificial Neural Nets (ANN) <br/> Machine learning | Machine intelligence |
-| Data sources | Rules from experts	| Large datasets	| Data streams |
-| Training | Programmed by experts | Derived from labeled databases	| Derived from unlabeled data streams |
-| Outputs	| Answers to questions | Classification	| Prediction <br/> Anomaly detection <br/> Classification |
-| Batch vs. continuous learning	| Batch	| Batch	| Continuous |
-| Need to know what you are looking for	| Yes |	Requires labeled data	| No |
-| Many individual models | Hard |	Hard | Easy |
-| Biological basis | None | Simple | Realistic |
-| Provides roadmap to machine intelligence | No |	No | Yes |
+| **Examples** | Watson |	Deep Learning	| Hierarchical Temporal Memory (HTM) |
+| **Associated terms** | Expert systems	| Artificial Neural Nets (ANN) <br/> Machine learning | Machine intelligence |
+| **Data sources** | Rules from experts	| Large datasets	| Data streams |
+| **Training** | Programmed by experts | Derived from labeled databases	| Derived from unlabeled data streams |
+| **Outputs**	| Answers to questions | Classification	| Prediction <br/> Anomaly detection <br/> Classification |
+| **Batch vs. continuous learning**	| Batch	| Batch	| Continuous |
+| **Need to know what you are looking for**	| Yes |	Requires labeled data	| No |
+| **Many individual models** | Hard |	Hard | Easy |
+| **Biological basis** | None | Simple | Realistic |
+| **Provides roadmap to machine intelligence** | No |	No | Yes |
 
 ### Summary
 

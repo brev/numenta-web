@@ -65,7 +65,8 @@ doing it. It’s all in the spirit of research!
 P.S. There is some fine print. This code is all temporary and experimental. We
 can’t make any guarantees about it. Currently we are not accepting pull
 requests, though this might change down the road. However you are free to copy
-and use it under the terms of the AGPL license<sup><a href="#agpl">*</a></sup>. Please see the README file on
-GitHub for more fine print and details.
+and use it under the terms of the AGPL license<sup>*</sup>. Please see the
+README file on GitHub for more fine print and details.
 
-<small id="agpl" class="disclaimer"><sup>*</sup> This content has been updated to reflect our <a href="http://numenta.org/blog/2015/08/17/licensing-update.html">new AGPL license</a>.</small>
+<sup>\*</sup>*This content has been updated to reflect our
+[new AGPL license](http://numenta.org/blog/2015/08/17/licensing-update.html).*

@@ -10,9 +10,10 @@ title: The Neuroscience Behind Grok, Part 1
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 We modeled Grok after the human brain because the brain is a *predictive
 modeling system*.  This is the first post in a series describing what this
@@ -62,5 +63,4 @@ Distributed Representations (SDRs), sequence memory and adaptive learning. For
 further reading: the basic principles of intelligence are described in Jeff
 Hawkins' book, *On Intelligence*. His theories of sparse distributed
 representations were developed after the book was published, and are described
-in a
-[white paper about the Cortical Learning Algorithm](http://numenta.org/cla-white-paper.html).
+further in our [resources section](/papers-videos-and-more/).

@@ -40,12 +40,12 @@ can predict you will burn your hand and avoid putting it on the stovetop
 altogether.
 
 This is where the nervous system metaphor enters the realm of the literal. As
-[posted previously](./the-problem-of-representation.html), Grok's algorithms are
-designed to replicate the learning and memory processes conducted by the
-neocortex.  Grok learns patterns and makes predictions to drive action in the
-same way that your brain does. Modeling the neocortex may not be the only way of
-creating a learning and adaptive prediction engine, but the requirements of the
-“digital nervous system” referred to by Dumbill match perfectly with the
+[posted previously](/blog/2012/08/27/the-problem-of-representation/), Grok's
+algorithms are designed to replicate the learning and memory processes conducted
+by the neocortex.  Grok learns patterns and makes predictions to drive action in
+the same way that your brain does. Modeling the neocortex may not be the only
+way of creating a learning and adaptive prediction engine, but the requirements
+of the “digital nervous system” referred to by Dumbill match perfectly with the
 capabilities of the neocortex.
 
 As the age of the digital nervous system dawns, Grok represents the type of

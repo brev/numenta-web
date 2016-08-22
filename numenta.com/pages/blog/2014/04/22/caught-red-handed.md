@@ -20,7 +20,7 @@ not just once, but twice this week!
 ![Grok Screenshot](../images/2.png "Grok Screenshot")
 
 This first example was when I upgraded one of our QA servers to Grok 1.3
-(shameless plug – that’s available now in the [AWS marketplace](/grok/#get) !)
+(shameless plug – it’s [available now](http://grokstream.com)!)
 In this example, you can see a very slight increase in the number of bytes
 received by the server, which was flagged very quickly.  At the same time, the
 CPU utilization starts to drop slightly, which Grok marked as yellow. Notice

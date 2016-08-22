@@ -11,6 +11,13 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+:global .anchor {  /* see: components/Anchor */
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;  /* (tachyons h3) */
+  visibility: hidden;
+  z-index: -9999;
+}
 
 
 /**

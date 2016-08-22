@@ -16,7 +16,7 @@ Did you ever think the Super Bowl could help you understand how your brain
 works? Well, it can!
 
 Numenta's core algorithm, the
-[Cortical Learning Algorithmm](http://numenta.org/cla.html) (CLA),
+[Hierarchical Temporal Memory (HTM)](/technology-overview/),
 relies on the properties of Sparse Distributed Representations. SDRs are the
 fundamental way our brain represents information. The concepts behind SDR are
 deep and thought provoking. We get a lot of questions around this and were
@@ -61,79 +61,44 @@ get a point for question 3. Note that since you can only put down 9 TRUE's, the
 maximum overlap score you can get is 9.
 
 In case of ties, the earliest entry will win.  (Also, if you submit more than
-one entry, only the last entry will count.) Full details are explained in the
-[contest rules page](/legal/rules/sparse-football-pool-i-2013.html).
-Or feel free to post questions in the comment section below this blog post.
+one entry, only the last entry will count.)
 
 
 ####  And Now, The Questions
 
-To enter, go to our
-[online submission form](http://numenta.wufoo.com/forms/s7x2z7/).
-You will be asked to answer the following questions. They are repeated here for
-reference to help you plan out your answers ahead of time (responses will only
-be accepted through the online submission form).
+To enter, go to our online submission form. You will be asked to answer the
+following questions. They are repeated here for reference to help you plan out
+your answers ahead of time (responses will only be accepted through the online
+submission form).
 
-The Baltimore Ravens will win the coin toss
-
-There will be a lead change in the first half
-
-There will be three lead changes in the game
-
-There will be no lead changes in the game
-
-The team leading at the end of the first half will lose the game
-
-Colin Kaepernick will have at least one run greater than 20 yards
-
-Joe Flacco will have at least one pass greater than 40 yards
-
-Ray Lewis will get more tackles than Patrick Willis (solo + assisted)
-
-Patric Willis will get more tackles than Ray Lewis (solo + assisted)
-
-Aldon Smith will finally get a sack in the playoffs
-
-Frank Gore will rush for more yards than Ray Rice
-
-Ray Rice will rush for more yards than Frank Gore
-
-There will be a scoreless quarter
-
-There will be more than 10 total points in the first half
-
-Baltimore will score first
-
-San Francisco will score first
-
-There will be a punt or kickoff return that is greater than 40 yards
-
-Joe Flacco will have a higher QB Rating than Colin Kaepernick
-
-Colin Kaepernick will have a higher QB Rating than Joe Flacco
-
-The longest field goal will be more yards than the longest offensive play
-
-There will be a score in the final 2 minutes of the first half
-
-There will be a score in the final 2 minutes of regulation
-
-Frank Gore will score the first touchdown
-
-Vernon Davis will score a touchdown
-
-Ray Rice will score a touchdown
-
-The San Francisco Forty Niners claim their 6th Superbowl Trophy!
-
-The Baltimore Ravens claim their 2nd Superbowl Trophy!
-
-The color of the Gatorade dumped on the winning coach will be orange
-
-JZ will join Beyonce on stage at some point during the halftime show
-
-There will be a Beyonce lip-sync controversy reported on ESPN.com within an hour
-after the game ends.
-
-Once again, here's the link to the [online submission
-form](http://numenta.wufoo.com/forms/s7x2z7/).
+* The Baltimore Ravens will win the coin toss
+* There will be a lead change in the first half
+* There will be three lead changes in the game
+* There will be no lead changes in the game
+* The team leading at the end of the first half will lose the game
+* Colin Kaepernick will have at least one run greater than 20 yards
+* Joe Flacco will have at least one pass greater than 40 yards
+* Ray Lewis will get more tackles than Patrick Willis (solo + assisted)
+* Patric Willis will get more tackles than Ray Lewis (solo + assisted)
+* Aldon Smith will finally get a sack in the playoffs
+* Frank Gore will rush for more yards than Ray Rice
+* Ray Rice will rush for more yards than Frank Gore
+* There will be a scoreless quarter
+* There will be more than 10 total points in the first half
+* Baltimore will score first
+* San Francisco will score first
+* There will be a punt or kickoff return that is greater than 40 yards
+* Joe Flacco will have a higher QB Rating than Colin Kaepernick
+* Colin Kaepernick will have a higher QB Rating than Joe Flacco
+* The longest field goal will be more yards than the longest offensive play
+* There will be a score in the final 2 minutes of the first half
+* There will be a score in the final 2 minutes of regulation
+* Frank Gore will score the first touchdown
+* Vernon Davis will score a touchdown
+* Ray Rice will score a touchdown
+* The San Francisco Forty Niners claim their 6th Superbowl Trophy!
+* The Baltimore Ravens claim their 2nd Superbowl Trophy!
+* The color of the Gatorade dumped on the winning coach will be orange
+* JZ will join Beyonce on stage at some point during the halftime show
+* There will be a Beyonce lip-sync controversy reported on ESPN.com within an
+  hour after the game ends.

@@ -63,10 +63,11 @@ to see additional anomalies detected around 8:40 and 9:05 that day.
 
 I’m writing this post a week after this event, and the press has had some time
 to catch up. There are a few speculative reasons for this price spike, including
-a change in management [1], the launch of a new 3d scanner for the iPad [2], and
-news of recent advancements in medical-grade 3D printing which will allow for
-antibiotic-infused implants [3]. This is pretty exciting news, all of which I likely
-wouldn’t have noticed if it weren’t for Grok.
+a change in management<sup>[1]</sup>, the launch of a new 3d scanner for the
+iPad<sup>[2]</sup>, and news of recent advancements in medical-grade 3D printing
+which will allow for antibiotic-infused implants<sup>[3]</sup>. This is pretty
+exciting news, all of which I likely wouldn’t have noticed if it weren’t for
+Grok.
 
 [1] http://www.marketnewscall.com/volume-buzzers-3d-systems-corporation-nyseddd-ezchip-semiconductor-ltd-nasdaqezch/1231261/
 

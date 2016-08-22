@@ -24,12 +24,12 @@ though they can't tell you for sure if an input has been seen before. (See this
 SDRs, core to Numenta's Cortical Learning Algorithm, are the way we represent
 and recognize inputs in a system like Grok:
 
-"The concept of SDRs comes from neuroscience, where sometimes it is called
-"sparse coding. SDRs are the language of brains in the same way that bytes and
-"words are the language of digital computers.  Sparse distributed
-"representations have several desirable properties including high capacity,
-"graceful degradation, tolerance to errors, and the ability to simultaneously
-"represent multiple values in one representation.
+> The concept of SDRs comes from neuroscience, where sometimes it is called
+  sparse coding. SDRs are the language of brains in the same way that bytes and
+  words are the language of digital computers.  Sparse distributed
+  representations have several desirable properties including high capacity,
+  graceful degradation, tolerance to errors, and the ability to simultaneously
+  represent multiple values in one representation.
 
 Both Bloom filters and SDRs store information in data structures called bit
 arrays (or vectors), long strings where each character is either a one or a
@@ -44,8 +44,6 @@ We need a bit more detail about Bloom filters to understand how they differ
 fundamentally from SDRs.
 
 ![Bloom Filter](../images/bloom-thumb.jpg "Bloom filter image")
-
-(Click image to enlarge.)
 
 To create a Bloom filter, you select one or more hashes. These are functions
 that take an input and select which small set of bits to turn on in the bit

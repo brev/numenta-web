@@ -93,7 +93,6 @@ learning, we believe that Grok is an ideal match for CEP applications in
 finance, energy, and telecommunications.
 
 I should mention that there are a number of excellent CEP system on the market,
-products like [Oracle OEP](http://bit.ly/13P4QF6),
-[Sybase ESP](http://bit.ly/14CJutu),
-[IBM InfoSphere Streams](http://ibm.co/12dbr7a), and others.  We'll be talking
-more about Grok's fit with these and other products in the coming weeks.
+products like Oracle OEP, Sybase ESP, IBM InfoSphere Streams, and others. We'll
+be talking more about Grok's fit with these and other products in the coming
+weeks.

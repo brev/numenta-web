@@ -30,7 +30,7 @@ leaders on their opinions and findings. The documentary series is set to air in
 China at the end of this year and will be seen by upwards of a billion people;
 there will be an English version afterwards as well.
 
-*\*We’ll update this blog when the interview becomes available, with instructions
+*We’ll update this blog when the interview becomes available, with instructions
 on how to access it.*
 
 ## The View Behind the Scenes
@@ -50,10 +50,9 @@ large film crew, as the staff members who were present were displaced from their
 desks to various locations around the office.  
 
 ![Yang Lan interview crew at Numenta office](../images/image2.png)
-<div class="caption">
-  *This photo only shows half of the production crew. Other members were busy in
+
+> *This photo only shows half of the production crew. Other members were busy in
   one of our conference rooms.*
-</div>
 
 Yang Lan arrived once the cameras were setup, and was greeted by our eager staff
 and her production crew. After a few introductions, sound checks and lighting
@@ -76,9 +75,8 @@ creation of intelligent machines, a highly debated topic in artificial
 intelligence.
 
 ![Yang Lan interviewing Jeff Hawkins at Numenta](../images/image.png)
-<div class="caption">
-  *Yang Lan interviews Jeff Hawkins at our office.*
-</div>
+
+> *Yang Lan interviews Jeff Hawkins at our office.*
 
 The interview went smoothly, with the exception of an interruption from a
 deliveryman at our door. After the interview, Jeff showed Yang Lan several of

@@ -90,11 +90,11 @@ not brain mapping.  We should set goals for brain theory and goals for machine
 intelligence tasks based on those theories.  That is what we do at Numenta.  For
 example, we set goals to understand how neurons in the neocortex form sparse
 distributed representations and then how they learn to predict future events.
-This resulted in
-[Cortical Learning Algorithm (CLA)](http://numenta.org/cla.html) which is the
-heart of our Grok streaming prediction engine.  The next big theoretical
-challenge we are working on is how the cortex generates behaviors from
-predictions, what is sometimes called the sensory-motor integration problem.
+This resulted in [Hierarchical Temporal Memory (HTM)](/technology-overview/)
+which is the heart of our Grok streaming prediction engine.  The next big
+theoretical challenge we are working on is how the cortex generates behaviors
+from predictions, what is sometimes called the sensory-motor integration
+problem.
 
 Those of us who are interested in brain theory and machine intelligence should
 be happy about BAM regardless of how it plays out.  But we shouldn’t rely on it
