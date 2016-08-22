@@ -21,20 +21,20 @@ this paper obsolete. Much of this paper has been replaced by
 material in subsequent releases of
 [BAMI](/biological-and-machine-intelligence/).
 
-#### About
+## About
 
 At the heart of Hierarchical Temporal Memory (HTM), our machine intelligence
 technology, are time-based learning algorithms that store and recall spatial and
 temporal patterns. This paper describes how the learning algorithms work and
 their biological mapping.
 
+> **[Download Whitepaper](/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf)**
+
 **Note:** This paper refers to the HTM learning algorithm as the Cortical
 Learning Algorithm, or CLA; we have recently decided to sunset this term as our
 technology has evolved.
 
-> [Download Whitepaper](/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf)
-
-#### Translations Available
+## Translations Available
 
 | Language | Code | Translator | Link |
 | -------- | ---- | ---------- | ---- |

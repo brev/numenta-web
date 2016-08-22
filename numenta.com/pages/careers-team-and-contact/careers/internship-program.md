@@ -9,9 +9,9 @@ title: Internship Program
 type: post
 ---
 
-***IMPORTANT NOTE:*** *Numenta is unable to consider internship applications
-from international students unless they are currently enrolled in a
-US University, are US Citizens, or hold a Green Card.*
+> **IMPORTANT NOTE:** *Numenta is unable to consider internship applications
+  from international students unless they are currently enrolled in a
+  US University, are US Citizens, or hold a Green Card.*
 
 We have filled our technical intern positions for Summer 2016, and are no longer
 accepting applications. We do have one open intern position for Fall-Winter
@@ -23,7 +23,7 @@ algorithms and our streaming analytics platform. The commitment is for 3 to 4
 months, full time. We have internship positions in the following areas:
 
 
-#### Algorithms Internships
+### Algorithms Internships
 
 What you can expect to learn:
 
@@ -49,7 +49,7 @@ Desired qualifications:
 * Experience with data analytics
 
 
-#### Software Engineering Internships
+### Software Engineering Internships
 
 Our innovative real time streaming data prediction service runs locally and in
 the cloud, and includes both web and mobile applications. A developer API allows
@@ -85,7 +85,7 @@ Desired qualifications:
 * Experience with NuPIC
 
 
-#### How to Apply
+### How to Apply
 
 Qualified applicants should send the following:
 
@@ -98,7 +98,9 @@ Qualified applicants should send the following:
 
 * Which area of internship you would like to be considered for.
 
+* Please email resume and cover letter to
+  [interns@numenta.com](mailto:interns@numenta.com). Numenta is an equal
+  opportunity employer supporting workforce diversity.
 
-Please email resume and cover letter to
-[interns@numenta.com](mailto:interns@numenta.com). Numenta is an equal
-opportunity employer supporting workforce diversity.
+
+## **[APPLY NOW ▸](mailto:interns@numenta.com)**

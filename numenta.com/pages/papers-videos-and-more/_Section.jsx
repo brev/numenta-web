@@ -4,7 +4,7 @@ import IconPaper from 'react-icons/lib/fa/file-pdf-o'
 import IconVideo from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import {sortDateDescend, sortOrderAscend} from '../../utils/shared'
+import {sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import ListItem from '../../components/ListItem'
@@ -64,7 +64,7 @@ const SectionPapers = (props, {config, route}) => {
       </div>
     </ListItem>
   ))
-  const videos = postsVideos.sort(sortOrderAscend).map(({data, file, path}) => (
+  const videos = postsVideos.sort(sortDateDescend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
       <div className={classNames(styles.columns, styles.row)}>
         <div className={styles.icon}>

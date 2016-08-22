@@ -9,10 +9,12 @@ title: Research Internship
 type: post
 ---
 
-***IMPORTANT NOTE:*** *Numenta is unable to consider internship applications
-from international applicants unless they currently enrolled in a US University,
-are US Citizens, or hold a Green Card or are NAFTA (Mexican or Canadian)
-citizens.*
+> **IMPORTANT NOTE:** *Numenta is unable to consider internship applications
+  from international applicants unless they currently enrolled in a US
+  University, are US Citizens, or hold a Green Card or are NAFTA (Mexican or
+  Canadian) citizens.*
+
+### About Opening
 
 The Research Group at Numenta is looking for outstanding PhD students or other
 research scientists for internship opportunities during the Fall - Winter
@@ -30,7 +32,7 @@ in leading edge research in computational neuroscience, and get full clearance
 to publish their work.
 
 
-#### What you can expect to learn and how you might contribute
+### What you can expect to learn and how you might contribute
 
 * The challenges of designing and implementing detailed models of cortical
   function that can be applied to real-world problems
@@ -47,7 +49,7 @@ to publish their work.
 * Obtain a detailed understanding of Hierarchical Temporal Memory
 
 
-#### Desired qualifications
+### Desired qualifications
 
 * Currently enrolled in a MS or PhD program, or a recent graduate, or equivalent
   research experience
@@ -71,7 +73,7 @@ to publish their work.
   cortex
 
 
-#### How To Apply – Research Internship
+### How To Apply
 
 Qualified applicants should send the following:
 
@@ -81,6 +83,9 @@ Qualified applicants should send the following:
 
 * Period of the internship (typically 3 to 4 months fulltime.)
 
-* Please email resume and cover letter to <t render="hbs">
-  [{{document.email}}](mailto:{{document.email}})</t>. Numenta is an equal
+* Please email resume and cover letter to
+  [interns@numenta.com](mailto:interns@numenta.com). Numenta is an equal
   opportunity employer supporting workforce diversity.
+
+
+## **[APPLY NOW ▸](mailto:interns@numenta.com)**

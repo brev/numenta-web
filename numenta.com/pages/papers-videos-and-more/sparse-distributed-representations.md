@@ -13,20 +13,14 @@ title: Sparse Distributed Representations - Our Brain's Data Structure
 type: post
 ---
 
-This video talk on Sparse Distributed Representations (SDR) covers a subset of
-the topics in the [BAMI](/biological-and-machine-intelligence/) chapter on SDRs.
+## Talk Video
 
-#### Talk Video
+<iframe width="560" height="315" src="//www.youtube.com/embed/LbZtc_zWBS4" frameborder="0" allowfullscreen></iframe>
 
-<div class="video-container media-border">
-  <iframe width="560" height="315" src="//www.youtube.com/embed/LbZtc_zWBS4" frameborder="0" allowfullscreen></iframe>
-</div>
+* This video talk on Sparse Distributed Representations (SDR) covers a subset
+  of the topics in the [BAMI](/biological-and-machine-intelligence/) chapter
+  on SDRs.
 
-#### Slides
+## Slides
 
-Link: [Sparse Distributed Representations](http://www.slideshare.net/numenta/sparse-distributed-representations-sdr)
-from [Numenta](//www.slideshare.net/numenta).
-
-<div class="video-container media-border">
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45035404" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/numenta/sparse-distributed-representations-sdr" title="Sparse Distributed Representations: Our Brain&#x27;s Data Structure " target="_blank">Sparse Distributed Representations: Our Brain&#x27;s Data Structure </a> </strong> from <strong><a href="//www.slideshare.net/numenta" target="_blank">Numenta</a></strong> </div>
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/45035404" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/numenta/sparse-distributed-representations-sdr" title="Sparse Distributed Representations: Our Brain&#x27;s Data Structure " target="_blank">Sparse Distributed Representations: Our Brain&#x27;s Data Structure </a> </strong> from <strong><a href="//www.slideshare.net/numenta" target="_blank">Numenta</a></strong> </div>

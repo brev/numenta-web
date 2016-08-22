@@ -59,7 +59,8 @@
   composes: mb4 from 'tachyons';
   composes: _layout-dropcap;
 }
-.content a:link {
+.content a:link,
+.content a:visited {
   color: #0277bd;  /* color-blue-dark from '...theme' */
   text-decoration: none;
   transition: opacity 0.15s ease-in;

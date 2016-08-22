@@ -13,20 +13,13 @@ title: Applications of Hierarchical Temporal Memory (HTM)
 type: post
 ---
 
-This video talk on Applications of Hierarchical Temporal Memory (HTM) was
-delivered at a Numenta workshop.
+## Talk Video
 
-#### Talk Video
+<iframe width="560" height="315" src="//www.youtube.com/embed/900nFOfzp2E" frameborder="0" allowfullscreen></iframe>
 
-<div class="video-container media-border">
-  <iframe width="560" height="315" src="//www.youtube.com/embed/900nFOfzp2E" frameborder="0" allowfullscreen></iframe>
-</div>
+* This video talk on Applications of Hierarchical Temporal Memory (HTM) was
+  delivered at a Numenta workshop.
 
-#### Slides
+## Slides
 
-Link: [Applications of Hierarchical Temporal Memory](http://www.slideshare.net/numenta/applications-of-htm-workshop)
-from [Numenta](//www.slideshare.net/numenta).
-
-<div class="video-container media-border">
-  <iframe src="//www.slideshare.net/slideshow/embed_code/45034552" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/numenta/applications-of-htm-workshop" title="Applications of Hierarchical Temporal Memory (HTM)" target="_blank">Applications of Hierarchical Temporal Memory (HTM)</a> </strong> from <strong><a href="//www.slideshare.net/numenta" target="_blank">Numenta</a></strong> </div>
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/45034552" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/numenta/applications-of-htm-workshop" title="Applications of Hierarchical Temporal Memory (HTM)" target="\_blank">Applications of Hierarchical Temporal Memory (HTM)</a> </strong> from <strong><a href="//www.slideshare.net/numenta" target="\_blank">Numenta</a></strong> </div>
