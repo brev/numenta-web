@@ -15,8 +15,8 @@ type: post
 
 Redwood City, CA –July 8, 2015— [Numenta](/), Inc., today announced the
 availability of HTM for Stocks, the newest example application showing how
-[Hierarchical Temporal Memory](/#technology) (HTM) technology can be applied to
-streaming data and the Internet of Things.  
+[Hierarchical Temporal Memory](/technology-overview/) (HTM) technology can be
+applied to streaming data and the Internet of Things.  
 
 HTM for Stocks is a mobile application that continually monitors stock price,
 stock volume, and Twitter activity for hundreds of publicly traded companies.
@@ -26,9 +26,8 @@ something unusual is happening to any of the companies.
 During the past two years, Numenta has created a series of example applications
 to illustrate the capabilities of HTM.  The first application, Grok for IT
 Analytics, uses HTM to detect anomalies in AWS server metrics and is available
-on the [Amazon Web Services Marketplace](https://aws.amazon.com/marketplace/pp/B00I18SNQ6).
-Numenta also published example source code that uses HTM to detect anomalies in
-human behavior and in GPS tracking data.  
+at http://grokstream.com. Numenta also published example source code that uses
+HTM to detect anomalies in human behavior and in GPS tracking data.  
 
 “HTM for Stocks is our most accessible demonstration of Numenta HTM
 technology,” said Numenta CEO Donna Dubinsky. “Until now, it has required
@@ -69,15 +68,14 @@ is based in Redwood City, California.
 To obtain more info about partnering and licenses write to
 [sales@numenta.com](mailto:sales@numenta.com).
 
-Numenta Media Contact: <br/>
-Betty Taylor,
-Krause Taylor Associates:
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
 [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
 [408-981-7551](tel:+1-408-981-7551)
 
-Connect with Numenta: <br/> <t render="hbs">
-  [Twitter]({{site.paths.social.twitter}}),
-  [Facebook]({{site.paths.social.facebook}}),
-  [Google+]({{site.paths.social.googleplus}}) and
-  [LinkedIn]({{site.paths.social.linkedin}})
-</t>
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

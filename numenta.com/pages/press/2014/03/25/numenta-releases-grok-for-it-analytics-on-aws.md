@@ -11,26 +11,28 @@ title: Numenta Releases Grok for IT Analytics on AWS
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 Numenta, Inc. today announced the commercial
-availability of Grok for IT Analytics on Amazon Web Services (AWS) in the
-[AWS Marketplace](/grok/#get). [Grok](/grok/) anomaly detection
-leverages sophisticated machine intelligence algorithms to enable new insights
-into critical IT systems. Grok automatically learns complex patterns and then
-highlights unusual behavior.  As software topologies and usage patterns change,
-Grok continuously learns and adapts, eliminating the need for frequent resetting
-of thresholds. Visualization of Grok output is displayed on a constantly updated
-mobile device, enabling IT professionals to assess the health of their systems
-anytime, anywhere.  Using Grok, IT operators can better prevent business
-downtime while reducing false positives.
+availability of Grok for IT Analytics on Amazon Web Services (AWS).
+[Grok](http://grokstream.com) anomaly detection leverages sophisticated machine
+intelligence algorithms to enable new insights into critical IT systems. Grok
+automatically learns complex patterns and then highlights unusual behavior.  As
+software topologies and usage patterns change, Grok continuously learns and
+adapts, eliminating the need for frequent resetting of thresholds. Visualization
+of Grok output is displayed on a constantly updated mobile device, enabling IT
+professionals to assess the health of their systems anytime, anywhere.  Using
+Grok, IT operators can better prevent business downtime while reducing false
+positives.
 
-Grok is the first commercial application of Numenta’s groundbreaking Cortical Learning Algorithm
-(CLA), biologically inspired algorithms for machine intelligence. The core
-CLA technology is ideal for large-scale analysis of continuously streaming
-datasets and excels at modeling and predicting patterns in data.
+Grok is the first commercial application of Numenta’s groundbreaking
+Hierarchical Temporal Memory (HTM), biologically inspired algorithms for machine
+intelligence. The core HTM technology is ideal for large-scale analysis of
+continuously streaming datasets and excels at modeling and predicting patterns
+in data.
 
 “Grok provides an early warning system to IT professionals to give them real-
 time insights into their system performance,” said Numenta CEO Donna Dubinsky.
@@ -51,7 +53,7 @@ manual threshold setting
 
 Grok is available now:
 
-* [Grok Free Edition](https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1391115095261); supports up to 10 AWS instances or custom metrics
+> http://grokstream.com
 
 Grok will be demonstrated in Booth 100 at the
 [AWS Summit](https://aws.amazon.com/aws-summit-2014/) on March 26 at the
@@ -78,8 +80,14 @@ Platform for Intelligent Computing) as an open source project.
 
 Numenta is based in Redwood City, California. It is privately funded.
 
-##### Media Contact
-* **Betty Taylor**
-* Krause Taylor Associates for Numenta
-* [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
-* 408-981-7551
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
+[408-981-7551](tel:+1-408-981-7551)
+
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

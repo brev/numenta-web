@@ -21,7 +21,7 @@ Simply add numeric, time-series data files to HTM Studio and with the click of a
 button, discover and visualize within minutes what anomalies can be found.
 
 > #Numenta #HTMStudio for anomaly detection makes it easy to experiment with
-> advanced machine intelligence
+  advanced machine intelligence
 
 HTM Studio is based on Numenta’s HTM (Hierarchical Temporal Memory) biologically
 inspired machine intelligence technology. HTM learns time-based patterns in
@@ -71,17 +71,16 @@ understanding and sensory-motor control. In addition, Numenta has created
 [NuPIC](http://numenta.org) (Platform for Intelligent Computing) as an open
 source project. [Numenta](/) is based in Redwood City, California.
 
-Numenta Media Contact: <br/>
+**Numenta Media Contact:** <br/>
 Krause Taylor Associates,
 Betty Taylor:
 [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
 [408-981-7551](tel:+1-408-981-7551)
 
-Connect with Numenta: <br/> <t render="hbs">
-  [Twitter]({{site.paths.social.twitter}}),
-  [Facebook]({{site.paths.social.facebook}}),
-  [Google+]({{site.paths.social.googleplus}}) and
-  [LinkedIn]({{site.paths.social.linkedin}})
-</t>
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)
 
-http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio
+[BusinessWire](http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio)

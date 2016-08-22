@@ -11,7 +11,7 @@ title: Numenta Anomaly Benchmark Evaluates Anomaly Detection Techniques for Real
 type: post
 ---
 
-### Open Source Tool Tests Effectiveness of Algorithms on IoT Data
+## Open Source Tool Tests Effectiveness of Algorithms on IoT Data
 
 REDWOOD CITY, CA –November 10, 2015— [Numenta](/), Inc., a leader in machine
 intelligence, today launched the
@@ -31,7 +31,7 @@ for Real-time Data Needs.” A peer-reviewed paper on NAB also was accepted by t
 [IEEE Conference on Machine Learning and Applications](http://www.icmla-conference.org/icmla15/)
 and will be presented during the conference on December 9-11 in Miami.
 
-#### The Need for Anomaly Detection in Time-Series Data
+### The Need for Anomaly Detection in Time-Series Data
 
 Explosive growth in streaming data is happening across industries, largely
 driven by the rise of the Internet of Things (IoT) and the proliferation of
@@ -57,7 +57,7 @@ applications across many industries – from monitoring critical IT infrastructu
 to detecting potential fraudulent financial transactions, from understanding
 energy consumption to geo-tracking of vehicles in logistics networks.
 
-#### The Numenta Anomaly Benchmark
+### The Numenta Anomaly Benchmark
 
 NAB is an open source framework that was created to help data professionals
 test, score and evaluate anomaly detection algorithms on time-series data and to
@@ -92,8 +92,8 @@ algorithms with our HTM algorithms,” said Dubinsky.
 
 For more detailed information on NAB, go to:
 
-**NAB Peer-Reviewed Research Paper** <br/> <t render="hbs">
-{{site.paths.ext.paper.nab}}
+**NAB Peer-Reviewed Research Paper** <br/>
+http://arxiv.org/abs/1510.03336
 </t>
 
 **NAB Business White Paper** <br/>
@@ -105,7 +105,7 @@ https://github.com/numenta/NAB
 **Algorithm &amp; product code** <br/>
 http://numenta.org
 
-#### About Numenta
+## About Numenta
 
 Founded in 2005, Numenta has developed a cohesive theory, core software
 technology, and numerous applications all based on principles of the neocortex.
@@ -120,17 +120,16 @@ Numenta has created
 [NuPIC (Numenta Platform for Intelligent Computing)](http://numenta.org) as an
 open source project. [Numenta](/) is based in Redwood City, California.
 
-Connect with Numenta on <t render="hbs">
-  [Twitter]({{site.paths.social.twitter}}),
-  [Facebook]({{site.paths.social.facebook}}),
-  [Google+]({{site.paths.social.googleplus}}) and
-  [LinkedIn]({{site.paths.social.linkedin}}).
-</t>
-
 **Numenta Media Contact:** <br/>
-Betty Taylor <br/>
-Krause Taylor Associates <br/>
-[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com) <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
 [408-981-7551](tel:+1-408-981-7551)
 
-http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)
+
+[BusinessWire](http://www.businesswire.com/news/home/20151110006297/en/Numenta-Anomaly-Benchmark-Evaluates-Anomaly-Detection-Techniques)

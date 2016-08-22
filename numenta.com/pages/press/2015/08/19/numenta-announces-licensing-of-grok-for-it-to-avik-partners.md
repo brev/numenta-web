@@ -20,11 +20,10 @@ announcement was made during the
 San Jose, CA. (See Numenta at Booth #406).
 
 Grok for IT Analytics on AWS detects anomalies in Amazon Web Services server
-metrics and is currently available on the
-[Amazon Web Services Marketplace](https://aws.amazon.com/marketplace/pp/B00I18SNQ6).  
+metrics and is currently available at http://grokstream.com.
 As part of this strategic relationship, Numenta will transfer the Grok
 application and the Grok brand to Avik under a broad general licensing agreement
-for Numenta’s [Hierarchical Temporal Memory (HTM)](http://numenta.com/learn/hierarchical-temporal-memory-white-paper.html)
+for Numenta’s [Hierarchical Temporal Memory (HTM)](/papers-videos-and-more/)
 technology. Numenta also will take a minority ownership position in Avik.
 
 “Our core HTM technology can be applied to such a broad array of machine
@@ -53,11 +52,11 @@ During the past two years, Numenta has created a series of example applications
 to illustrate the capabilities of HTM, beginning with Grok for IT Analytics on
 AWS. The HTM technology also has been applied to anomaly detection in stock
 prices and volumes
-([HTM for Stocks](http://numenta.com/press/numenta-ships-new-htm-example-app-htm-for-stocks.html)),
+([HTM for Stocks](/htm-for-stocks/)),
 human behavior, geo-spatial tracking data, and to the predication and
 classification of natural language. For the latter application, Numenta recently
 announced a partnership and licensing agreement with
-[Cortical.io](http://numenta.com/press/numenta-and-cortical-io-form-strategic-partnership.html),
+[Cortical.io](/press/2015/05/14/numenta-and-cortical-io-form-strategic-partnership/),
 an innovator in natural language processing (NLP), to license HTM and use the
 technology for the development of language intelligence products.
 
@@ -77,13 +76,18 @@ California.
 To contact Avik Partners and for further information about Grok for IT
 Analytics, go to http://grokstream.com.
 
-Numenta Media Contact: <br/>
-Betty Taylor,
-Krause Taylor Associates:
+**Avik Partners Media Contact:** <br/>
+Paula Johns:
+[paula@paulajohnscommunications.com](mailto:paula@paulajohnscommunications.com)
+
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
 [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
 [408-981-7551](tel:+1-408-981-7551)
 
-Avik Partners Media Contact: <br/>
-Paula Johns:
-[paula@paulajohnscommunications.com](mailto:paula@paulajohnscommunications.com)
-[760-522-0941](tel:+1-760-522-0941)
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

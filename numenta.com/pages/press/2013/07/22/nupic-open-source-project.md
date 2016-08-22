@@ -27,15 +27,14 @@ called **On Intelligence** (along with Sandra Blakeslee) in 2005 that
 described a theory of the neocortex.  Numenta, Inc. was formed as a company to
 pursue the theory for commercial and scientific purposes shortly thereafter.
 
-NuPIC comprises a set of learning algorithms called the Cortical Learning
-Algorithm (CLA) first described in a
-<a href="http://numenta.org/resources/HTM_CorticalLearningAlgorithms.pdf">whitepaper</a>
-published by Numenta in 2009. The CLA algorithms replicate part of the function
-of a region of the neocortex. They can be used for pattern recognition,
-prediction, and anomaly detection in many domains. They have been tested
-extensively and are embedded in a product called Grok, which the company
-released last year. [Grok](/grok/) is now being
-branded and commercialized separately from Numenta.
+NuPIC comprises a set of learning algorithms called the
+[Hierarchical Temporal Memory (HTM)](/technology-overview/) first described in a
+whitepaper published by Numenta in 2009. The CLA algorithms replicate part of
+the function of a region of the neocortex. They can be used for pattern
+recognition, prediction, and anomaly detection in many domains. They have been
+tested extensively and are embedded in a product called Grok, which the company
+released last year. [Grok](http://grokstream.com) is now being branded and
+commercialized separately from Numenta.
 
 “Understanding the brain and building fantastically intelligent machines is a
 grand quest for humanity,” Hawkins continued. “This is not a trivial pursuit,
@@ -44,22 +43,29 @@ key building block that provides a path forward. Our hope is that NuPIC
 contributors will work on these problems, accelerate our progress, and uncover
 fascinating new applications.”
 
-Anyone can access the NuPIC open source code under the AGPLv3 license<sup><a href="#agpl">*</a></sup>. For more
-information see the
-<a href="http://numenta.org/news/2013/06/03/introducing-nupic.html">Introduction to NuPIC</a>
-and go to <a href="http://numenta.org">Numenta.org</a>.
+Anyone can access the NuPIC open source code under the AGPLv3 license<sup>\*</sup>.
+For more information see the
+[Introduction to NuPIC](http://numenta.org/news/2013/06/03/introducing-nupic.html)
+and go to http://numenta.org.
 
-<small id="agpl" class="disclaimer"><sup>*</sup> This content has been updated to reflect our <a href="http://numenta.org/blog/2015/08/17/licensing-update.html">new AGPL license</a>.</small>
+<sup>\*</sup> *This content has been updated to reflect our
+  [new AGPL license](http://numenta.org/blog/2015/08/17/licensing-update.html).*
 
-#### About Numenta.org
+### About Numenta.org
 
 Numenta.org is the home and community for the NuPIC (Numenta Platform for
 Intelligent Computing) open source project. NuPIC was developed by Numenta Inc.
 based on the theory of the neocortex first described in co-founder Jeff Hawkins’
 2005 book **On Intelligence.**
 
-##### Media Contact
-* **Betty Taylor**
-* Krause Taylor Associates for Numenta
-* [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
-* 408-981-7551
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
+[408-981-7551](tel:+1-408-981-7551)
+
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

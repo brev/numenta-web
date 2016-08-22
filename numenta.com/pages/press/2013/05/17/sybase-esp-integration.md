@@ -11,11 +11,10 @@ title: Grok’s Action Intelligence Solution Achieves Certified Integration with
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
-
-**Grok delivers real-time predictions and finds anomalies in streaming data**
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 Numenta, a leading provider of solutions
 that help companies intelligently act on machine-generated data, today announced
@@ -32,6 +31,8 @@ on its unique biologically inspired machine intelligence algorithm. Grok was
 recently named as one of the Cool Vendors in Analytics for 2013 by Gartner
 Research.
 
+> **Grok delivers real-time predictions and finds anomalies in streaming data.**
+
 “Grok’s ability to learn from streaming data makes it a perfect add-on for
 customers who are looking to automatically and intelligently act on their
 machine-generated data,” said Numenta CEO Rami Branitzky. “The Grok solution is
@@ -40,7 +41,7 @@ closely with SAP to serve this rapidly expanding market.”
 
 In addition, Numenta has applied to join the SAP PartnerEdge® program as an SAP
 software solution and technology partner. Through the program, partners work
-closely with <a href="http://www.sap.com/">SAP AG</a> (NYSE: SAP) to develop and
+closely with [SAP AG](http://sap.com) (NYSE: SAP) to develop and
 certify the technical integration of their solutions with SAP software.
 Integrated partner applications extend, complement and add value to SAP
 solutions, thereby helping mutual customers more successfully meet business
@@ -57,8 +58,7 @@ capabilities make it uniquely suited to drive intelligent action from fast data.
 
 Grok solutions are available directly from Grok and its partners in a variety of
 vertical markets, including energy, IT management, and finance. For more
-information go to
-<a href="http://grokstream.com">http://grokstream.com</a>.
+information go to http://grokstream.com.
 
 SAP, PartnerEdge and all SAP logos are trademarks or registered trademarks of
 SAP AG in Germany and in several other countries. Sybase is a trademark or
@@ -66,8 +66,14 @@ registered trademark of Sybase, Inc. ® indicates registration in the United
 States. Sybase is an SAP company. All other product and service names mentioned
 herein are the trademarks of their respective owners.
 
-##### Media Contact
-* **Betty Taylor**
-* Krause Taylor Associates for Numenta
-* [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
-* 408-981-7551
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
+[408-981-7551](tel:+1-408-981-7551)
+
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

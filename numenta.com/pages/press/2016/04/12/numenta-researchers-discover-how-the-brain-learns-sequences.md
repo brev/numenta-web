@@ -12,9 +12,6 @@ title: Numenta Researchers Discover How The Brain Learns Sequences, A Key to Int
 type: post
 ---
 
-> Numenta’s theory of how the brain learns and understands sequences of patterns
-> may be an essential component for creating intelligent machines
-
 REDWOOD CITY, CA –April 12, 2016— How do our brains learn and understand the
 world? That question is of paramount importance to both neuroscientists and
 technologists who want to build intelligent machines.
@@ -25,11 +22,14 @@ and recalling sequences must be a fundamental operation of neurons. Numerous
 proposals have been made for how neural networks might learn sequences. However,
 these proposals did not match the anatomy and function observed in the brain.
 
+> **Numenta’s theory of how the brain learns and understands sequences of
+  patterns may be an essential component for creating intelligent machines**
+
 Now, researchers at [Numenta Inc.](/) have published a new theory that
 represents a breakthrough in understanding how networks of neurons in the
 neocortex learn sequences. A paper, authored by Numenta co-founder Jeff Hawkins
 and VP of Research Subutai Ahmad, [“Why Neurons Have Thousands of Synapses, A
-Theory of Sequence Memory in Neocortex,”](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)*
+Theory of Sequence Memory in Neocortex,”](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)<sup>\*</sup>
 has been published in the Frontiers in Neural Circuits Journal, a publication
 devoted to research in neural circuits, serving the worldwide neuroscience
 community.  
@@ -52,18 +52,17 @@ simulations, the authors show the new sequence memory exhibits a number of
 important properties such as the ability to learn complex sequences, continuous
 unsupervised learning, and extremely high fault tolerance.
 
-<img src="../images/image.jpg" class="center-block img-responsive media-border" alt="Neuron image" />
-<div class="caption">
-  **Comparison of Biological and Artificial Neuron Models:**
-  The Hawkins-Ahmad paper on the theory of sequence memory in the neocortex
+![Neuron](../images/image.jpg)
+
+> **Comparison of Biological and Artificial Neuron Models** <br />
+  *The Hawkins-Ahmad paper on the theory of sequence memory in the neocortex
   proposes a model of cortical neurons that explains why they have thousands of
   synapses, why the synapses are segregated onto different parts of the
   dendrites, and how neurons integrate this input in a functionally meaningful
   way. This diagram draws a comparison between the human neocortical pyramidal
   neuron, the HTM biologically-inspired neuron model, and the model used in most
   mathematically-inspired artificial neural networks and Deep Learning models
-  today.
-</div>
+  today.*
 
 “Our paper makes contributions in both neuroscience and machine learning,”
 Hawkins noted. “From a neuroscience perspective, it offers a computational model
@@ -88,11 +87,9 @@ deep learning and other artificial neural networks. Functionally, the new theory
 addresses several of the biggest challenges confronting deep learning today,
 such as the lack of continuous and unsupervised learning.
 
-<div class="caption">
-  * Hawkins, J., and Ahmad, S. (2016). Why Neurons Have Thousands of Synapses, A
-  Theory of Sequence Memory in Neocortex. Front. Neural Circuits 10.
+<sup>\*</sup>Hawkins, J., and Ahmad, S. (2016). Why Neurons Have Thousands of
+  Synapses, A Theory of Sequence Memory in Neocortex. Front. Neural Circuits 10.
   doi:10.3389/fncir.2016.00023
-</div>
 
 #### About Frontiers in Neural Circuits
 
@@ -110,8 +107,8 @@ new era of machine intelligence, this technology is ideal for analysis of
 continuously streaming data sets and excels at modeling and predicting patterns
 in data. Numenta has also developed a suite of products and demonstration
 applications that utilize its flexible and generalizable
-[Hierarchical Temporal Memory (HTM)](/#technology) learning algorithms to
-provide solutions that encompass the fields of machine generated data, human
+[Hierarchical Temporal Memory (HTM)](/technology-overview/) learning algorithms
+to provide solutions that encompass the fields of machine generated data, human
 behavioral modeling, geo-location processing, semantic understanding and
 sensory-motor control.
 
@@ -119,15 +116,14 @@ In addition, Numenta has created
 [NuPIC (Numenta Platform for Intelligent Computing)](http://numenta.org)
 as an open source project. [Numenta](/) is based in Redwood City, California.
 
-Connect with Numenta on <t render="hbs">
-  [Twitter]({{site.paths.social.twitter}}),
-  [Facebook]({{site.paths.social.facebook}}),
-  [Google+]({{site.paths.social.googleplus}}) and
-  [LinkedIn]({{site.paths.social.linkedin}}).
-</t>
-
 **Numenta Media Contact:** <br/>
-Betty Taylor <br/>
-Krause Taylor Associates <br/>
-[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com) <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
 [408-981-7551](tel:+1-408-981-7551)
+
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

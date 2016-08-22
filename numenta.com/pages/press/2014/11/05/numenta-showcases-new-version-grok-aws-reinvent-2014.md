@@ -11,11 +11,10 @@ title: Numenta to Showcase New Version of Grok at AWS reInvent 2014
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
-
-AWS re:Invent 2014
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 REDWOOD CITY, Calif. --([BUSINESS WIRE](http://www.businesswire.com/))--
 [Numenta Inc.](/), a leader in machine intelligence technology,
@@ -59,10 +58,8 @@ Key features of Grok IT for Analytics include:
 * Notifies the user when something curious is happening
 * Displays output graphically on a mobile Android device
 
-To learn more about use cases for IT operators, go to
-[http://numenta.com/grok](/grok/).
-
-Grok is available for free on the [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B00I18SNQ6/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1390942511618).
+To learn more about use cases for IT operators, and to download Grok, please
+visit http://grokstream.com.
 
 #### About Numenta
 
@@ -76,16 +73,14 @@ addition, Numenta has created NuPIC (Numenta Platform for Intelligent Computing)
 as an open source project. Based in Redwood City, CA, the company is privately
 funded. For more information go to [numenta.com](/).
 
-Connect with Numenta on <t render="hbs">
-  [Twitter]({{site.paths.social.twitter}}),
-  [Facebook]({{site.paths.social.facebook}}),
-  [Google+]({{site.paths.social.googleplus}}) and
-  [LinkedIn]({{site.paths.social.linkedin}}).
-</t>
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
+[408-981-7551](tel:+1-408-981-7551)
 
-#### Media Contact
-
-<div>Krause Taylor Associates</div>
-<div>**Betty Taylor**</div>
-<div>[408-981-7551](tel:+1-408-981-7551)</div>
-<div>[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)</div>
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)

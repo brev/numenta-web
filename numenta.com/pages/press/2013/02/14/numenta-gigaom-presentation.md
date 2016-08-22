@@ -11,24 +11,22 @@ title: "Numenta to Present Grok, a Solution for Fast Data, as one of the Big Ide
 type: post
 ---
 
-**NOTE:** Numenta has [announced a strategic partnership with Avik Partners](/press/numenta-announces-licensing-of-grok-for-it-to-avik-partners.html),
-please read more about the future of
-[Grok for IT Analytics](http://grokstream.com).
+> *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
 Numenta, a breakthrough machine intelligence company, today announced it has
 been selected as one of the four Big Ideas companies to be featured at the
-GigaOM <a href="http://event.gigaom.com/structuredata/">Structure:Data</a>
-conference March 20-21 in New York City.  Numenta CEO
-<a href="http://event.gigaom.com/structuredata/speakers/%20">Rami Branitzky</a>
-will give an on-stage introduction of Grok, the company’s first product, on
-March 20 at 5:20 p.m.
+GigaOM [Structure:Data](http://event.gigaom.com/structuredata/) conference
+March 20-21 in New York City.  Numenta CEO Rami Branitzky will give an on-stage
+introduction of Grok, the company’s first product, on March 20 at 5:20 p.m.
 
-[Grok](/grok/) brings together Numenta’s
-trailblazing R&amp;D in biologically inspired machine intelligence software with
-a highly scalable infrastructure for acting on fast data. The Grok platform
-ingests data streams and creates actionable predictions in real time. Grok’s
-automated modeling and continuous learning capability makes it uniquely suited
-for fast data.
+[Grok](http://grokstream.com) brings together Numenta’s trailblazing R&amp;D in
+biologically inspired machine intelligence software with a highly scalable
+infrastructure for acting on fast data. The Grok platform ingests data streams
+and creates actionable predictions in real time. Grok’s automated modeling and
+continuous learning capability makes it uniquely suited for fast data.
 
 "Machine generated streaming data is exploding. It has a short half-life and is
 constantly changing," said Branitzky. "To date, the focus in the area of Big
@@ -40,27 +38,23 @@ results to drive automated actions. That’s what Grok was designed to do."
 "The GigaOM editorial team hand picked four companies and speakers who embody
 great ideas that are shaping our industry for the Big Ideas session, and our
 editors are excited to have
-<a href="http://gigaom.com/2013/01/29/palm-creators-brain-mimicking-software-helps-manage-the-smart-grid/">Numenta</a>
+[Numenta](http://gigaom.com/2013/01/29/palm-creators-brain-mimicking-software-helps-manage-the-smart-grid/)
 as one," said Surj Patel, GigaOM's Vice President for Events.
 
 Grok solutions currently are in private beta with customers in a variety of
 vertical markets, including electric energy, IT management, online advertising
-and finance.  Numenta recently announced EnerNOC, Inc., a leading provider
-of energy management applications, as one of its first
-customers - entering a partnership that couples Numenta’s Grok streaming
-analytics solution with EnerNOC’s cloud-based software to create opportunities
-for demand response and increased ability to detect energy efficiency faults
-and anomalies.
+and finance.  Numenta recently announced EnerNOC, Inc., a leading provider of
+energy management applications, as one of its first customers - entering a
+partnership that couples Numenta’s Grok streaming analytics solution with
+EnerNOC’s cloud-based software to create opportunities for demand response and
+increased ability to detect energy efficiency faults and anomalies.
 
 #### About GigaOM Structure:Data
 
 Structure:Data 2013 will explore the technical and business opportunities
 created by the rapid growth of big data. Many of the industry's brightest minds
 will converge to reveal how they are making the most of the data revolution.
-Discounted
-<a href="http://event.gigaom.com/structuredata/registration/">supersaver tickets</a>
-are available through February 22.
-
+Discounted supersaver tickets are available through February 22.
 
 #### About Numenta
 
@@ -76,11 +70,17 @@ action from fast data.
 
 Grok solutions are available directly from Numenta and Numenta partners in a
 variety of vertical markets, including electric energy, IT management, online
-advertising and finance. For more information on Numenta and Grok go to
-[numenta.com](/).
+advertising and finance. For more information on Numenta and Grok go
+to http://numenta.com.
 
-##### Media Contact
-* **Betty Taylor**
-* Krause Taylor Associates for Numenta
-* [bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
-* 408-981-7551
+**Numenta Media Contact:** <br/>
+Krause Taylor Associates,
+Betty Taylor:
+[bettyt@krause-taylor.com](mailto:bettyt@krause-taylor.com)
+[408-981-7551](tel:+1-408-981-7551)
+
+**Connect with Numenta:** <br/>
+[Twitter](https://twitter.com/numenta),
+[Facebook](https://www.facebook.com/pages/Numenta/321559142118),
+[YouTube](https://www.youtube.com/user/numenta) and
+[LinkedIn](https://www.linkedin.com/company/numenta)
