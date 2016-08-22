@@ -33,30 +33,41 @@ const PostListItem = ({post}, {config}) => {
   if (key === 'events') {
     const {when, where} = data.event
     const {desc, city, state, country} = where
+    let location = city
+
+    if (state) {
+      location = `${location}, ${state}`
+    }
+    if (country) {
+      location = `${location} ${country}`
+    }
+
     brief = (
-      <Table direction="horizontal">
-        <TableBody>
-          <TableRow>
-            <TableCell>
-              <Strong>When</Strong>
-            </TableCell>
-            <TableCell>
-              {getEventTimeDisplay(when)}
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>
-              <Strong>Where</Strong>
-            </TableCell>
-            <TableCell>
-              <div>{desc}</div>
-              <div>
-                {city}, {state} {country}
-              </div>
-            </TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
+      <div className={styles.event}>
+        <Table direction="horizontal">
+          <TableBody>
+            <TableRow>
+              <TableCell>
+                <Strong>When</Strong>
+              </TableCell>
+              <TableCell>
+                {getEventTimeDisplay(when)}
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>
+                <Strong>Where</Strong>
+              </TableCell>
+              <TableCell>
+                <div>{desc}</div>
+                <div>
+                  {location}
+                </div>
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
     )
   }
 

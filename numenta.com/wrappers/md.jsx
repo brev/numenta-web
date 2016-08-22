@@ -85,22 +85,29 @@ const MarkdownWrapper = ({route}, {config}) => {
           </TableCell>
         </TableRow>
       )]
+      let location = city
 
-      if (city) {
-        details.push((
-          <TableRow key="where">
-            <TableCell>
-              <Strong>Where</Strong>
-            </TableCell>
-            <TableCell>
-              <div>{desc}</div>
-              <div>
-                {city}, {state} {country}
-              </div>
-            </TableCell>
-          </TableRow>
-        ))
+      if (state) {
+        location = `${location}, ${state}`
       }
+      if (country) {
+        location = `${location} ${country}`
+      }
+
+      details.push((
+        <TableRow key="where">
+          <TableCell>
+            <Strong>Where</Strong>
+          </TableCell>
+          <TableCell>
+            <div>{desc}</div>
+            <div>
+              {location}
+            </div>
+          </TableCell>
+        </TableRow>
+      ))
+
       if (web) {
         details.push((
           <TableRow key="web">
@@ -139,11 +146,13 @@ const MarkdownWrapper = ({route}, {config}) => {
       }
 
       event = (
-        <Table direction="horizontal">
-          <TableBody>
-            {details}
-          </TableBody>
-        </Table>
+        <div className={styles.event}>
+          <Table direction="horizontal">
+            <TableBody>
+              {details}
+            </TableBody>
+          </Table>
+        </div>
       )
     }
   }
