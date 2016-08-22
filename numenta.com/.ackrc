@@ -1,7 +1,7 @@
 --ignore-dir=public/
 --ignore-dir=node_modules/
 
---ignore-file=is:pages/_searchIndex.json
+--ignore-file=is:_searchIndex.json
 
 --type-set=js=javascript=.js,.jsx,.json
 --type-set=json=.json
