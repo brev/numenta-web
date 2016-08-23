@@ -9,6 +9,7 @@
 .query {
   composes: fl from 'tachyons';
   composes: flex from 'tachyons';
+  composes: h2 from 'tachyons';
   composes: mb2 from 'tachyons';
   composes: relative from 'tachyons';
   composes: w4 from 'tachyons';

@@ -12,6 +12,8 @@
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
 
-.icon {
-  composes: layout-aside-icon from '../../static/assets/css/theme.css';
+.brain {
+  composes: center from 'tachyons';
+  composes: h5 m from 'tachyons';
+  composes: w5 m from 'tachyons';
 }

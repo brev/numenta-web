@@ -132,7 +132,7 @@ class HtmStudioPage extends React.Component {
     )
     let termsModal
 
-    modalStyles.content.width = getModalAspect(getBrowserWidth() - 100)
+    modalStyles.content.width = getModalAspect(getBrowserWidth() - 100) - 100
     termsModal = (
       <Modal
         isOpen={terms}

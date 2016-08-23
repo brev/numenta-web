@@ -86,6 +86,7 @@ const NabPage = () => (
         <div className={styles.aside}>
           <Image
             alt="Heartbeat monitor"
+            border={true}
             respond="mw"
             src={ImageHeartbeat}
           />
@@ -103,6 +104,7 @@ const NabPage = () => (
         <div className={styles.aside}>
           <Image
             alt="mathematical equations"
+            border={true}
             respond="mw"
             src={ImageEquations}
           />
@@ -120,6 +122,7 @@ const NabPage = () => (
         <div className={styles.aside}>
           <Image
             alt="Geometric and math blueprints"
+            border={true}
             respond="mw"
             src={ImageMath}
           />
@@ -173,6 +176,7 @@ const NabPage = () => (
           <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
             <Image
               alt="NAB White Paper chart figure"
+              border={true}
               respond="mw"
               src={ImageCompare}
             />
@@ -202,6 +206,7 @@ const NabPage = () => (
           <TextLink to="http://arxiv.org/abs/1510.03336">
             <Image
               alt="NAB Scoreboard"
+              border={true}
               respond="mw"
               src={ImageScoreboard}
             />
@@ -232,6 +237,7 @@ const NabPage = () => (
           <TextLink to="https://github.com/numenta/NAB">
             <Image
               alt="NAB Github Repo"
+              border={true}
               respond="mw"
               src={ImageRepo}
             />
@@ -259,6 +265,7 @@ const NabPage = () => (
           >
             <Image
               alt="NAB Datasheet"
+              border={true}
               respond="mw"
               src={ImageDatasheet}
             />
@@ -290,6 +297,7 @@ const NabPage = () => (
         <div className={styles.aside}>
           <Image
             alt="NAB Chart Detail"
+            border={true}
             respond="mw"
             src={ImageDetail}
           />

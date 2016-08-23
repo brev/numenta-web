@@ -120,6 +120,7 @@ export function postBuild(pages, callback) {
         .replace(/\n+/g, ' ')
       const text = htmlToText(main)
         .replace(/\\n/g, ' ')
+        .replace(/[^\x00-\x7F]/g, ' ')
         .replace(/\s+/g, ' ')
       return {path, text, title}
     })

@@ -21,7 +21,7 @@
   composes: fl from 'tachyons';
   composes: relative from 'tachyons';
   composes: top-1 from 'tachyons';
-  height: 45px;
+  height: 33px;
   width: 145px;
 }
 

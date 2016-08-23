@@ -1,5 +1,20 @@
 .signup {
+  composes: bg-near-white from 'tachyons';
+  composes: br2 from 'tachyons';
+  composes: cf from 'tachyons';
   composes: fr from 'tachyons';
+  composes: mb3 from 'tachyons';
+  composes: mb0-ns from 'tachyons';
+  composes: pb0 from 'tachyons';
+  composes: pl3 from 'tachyons';
+  composes: pt3 from 'tachyons';
+  composes: pr0 from 'tachyons';
+  composes: relative from 'tachyons';
+  composes: top--1 from 'tachyons';
+}
+
+.newsletter {
+  composes: mt3 from 'tachyons';
 }
 
 .field {

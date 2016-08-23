@@ -74,6 +74,7 @@ const SectionCareers = (props, {config, route}) => {
         <div className={styles.asideCenter}>
           <Image
             alt="Numenta Office Interior"
+            border={true}
             respond="mw"
             src={ImageCareers}
           />
@@ -112,6 +113,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Donna Dubinsky"
+                border={true}
                 respond="mw"
                 src={ImageDonna}
               />
@@ -146,6 +148,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Jeff Hawkins"
+                border={true}
                 respond="mw"
                 src={ImageJeff}
               />
@@ -182,6 +185,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Subutai Ahmad"
+                border={true}
                 respond="mw"
                 src={ImageSubutai}
               />
@@ -217,6 +221,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Celeste Baranski"
+                border={true}
                 respond="mw"
                 src={ImageCeleste}
               />
@@ -255,6 +260,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Ed Colligan"
+                border={true}
                 respond="mw"
                 src={ImageEd}
               />
@@ -295,6 +301,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Donna Dubinsky"
+                border={true}
                 respond="mw"
                 src={ImageDonna}
               />
@@ -329,6 +336,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Mike Farmwald"
+                border={true}
                 respond="mw"
                 src={ImageMike}
               />
@@ -360,6 +368,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Jeff Hawkins"
+                border={true}
                 respond="mw"
                 src={ImageJeff}
               />
@@ -398,6 +407,7 @@ const SectionCareers = (props, {config, route}) => {
             <div className={styles.asideCenter}>
               <Image
                 alt="Harry Saal"
+                border={true}
                 respond="mw"
                 src={ImageHarry}
               />

@@ -23,6 +23,7 @@ const PostListRow = ({post}) => {
             <ImageLink to={target}>
               <Image
                 alt={data.title}
+                border={true}
                 respond="mw"
                 shadow={true}
                 src={`${path}${data.image}`}

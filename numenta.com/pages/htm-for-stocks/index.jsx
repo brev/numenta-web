@@ -108,6 +108,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.aside}>
             <Image
               alt="HTM for Stocks feature #1"
+              border={true}
               respond="mw"
               src={ImageFeature1}
             />
@@ -137,6 +138,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.aside}>
             <Image
               alt="HTM for Stocks feature #2"
+              border={true}
               respond="mw"
               src={ImageFeature2}
             />
@@ -162,6 +164,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.aside}>
             <Image
               alt="HTM for Stocks feature #3"
+              border={true}
               respond="mw"
               src={ImageFeature3}
             />
@@ -190,6 +193,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.aside}>
             <Image
               alt="HTM for Stocks app screenshot #1"
+              border={true}
               respond="mw"
               src={ImageRaw1}
             />
@@ -216,6 +220,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.aside}>
             <Image
               alt="HTM for Stocks app screenshot #2"
+              border={true}
               respond="mw"
               src={ImageRaw2}
             />
@@ -239,6 +244,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.column}>
             <Image
               alt="HTM for Stocks use case #1"
+              border={true}
               respond="w"
               src={ImageUse1}
             />
@@ -249,6 +255,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.column}>
             <Image
               alt="HTM for Stocks use case #2"
+              border={true}
               respond="w"
               src={ImageUse2}
             />
@@ -262,6 +269,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.column}>
             <Image
               alt="HTM for Stocks use case #3"
+              border={true}
               respond="w"
               src={ImageUse3}
             />
@@ -273,6 +281,7 @@ const HtmStocksPage = (props, {config}) => {
           <div className={styles.column}>
             <Image
               alt="HTM for Stocks use case #4"
+              border={true}
               respond="w"
               src={ImageUse4}
             />

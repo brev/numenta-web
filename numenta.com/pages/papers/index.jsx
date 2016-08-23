@@ -36,10 +36,10 @@ const PapersPage = (props, {route}) => {
           <div className={styles.meta}>
             <Subtle>
               {data.author}
-              <br />
-              {data.org}
               <Spacer />
               {categoryNice}
+              <br />
+              {data.org}
               <Spacer />
               {data.date}
             </Subtle>

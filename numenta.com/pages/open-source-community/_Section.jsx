@@ -17,12 +17,14 @@ const SectionOpensource = (props, {config}) => {
   return (
     <div className={styles.columns}>
       <div className={styles.aside}>
-        <Image
-          alt="Stylized Brain Artwork"
-          respond="mw"
-          shadow={false}
-          src={ImageBrain}
-        />
+        <div className={styles.brain}>
+          <Image
+            alt="Stylized Brain Artwork"
+            respond="mw"
+            shadow={false}
+            src={ImageBrain}
+          />
+        </div>
       </div>
       <div className={styles.content}>
         <Paragraph lead={true}>

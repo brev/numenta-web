@@ -88,7 +88,7 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
       })
   }
 
-  modalStyles.content.width = getModalAspect(getBrowserWidth() - 100)
+  modalStyles.content.width = getModalAspect(getBrowserWidth() - 100) - 100
 
   return (
     <Modal

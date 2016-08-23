@@ -62,12 +62,13 @@ const NewsletterPage = (props, {route}) => {
         </Form>
         {/* eslint-enable max-len */}
       </div>
-
-      <Section headline={true} open={true} title={title}>
-        <ListOrder copy={false}>
-          {items}
-        </ListOrder>
-      </Section>
+      <div className={styles.newsletter}>
+        <Section headline={true} open={true} title={title}>
+          <ListOrder copy={false}>
+            {items}
+          </ListOrder>
+        </Section>
+      </div>
     </div>
   )
 }
