@@ -15,5 +15,6 @@
 
 .logomark {
   composes: center from 'tachyons';
+  composes: h4 from 'tachyons';
   composes: w4 from 'tachyons';
 }
