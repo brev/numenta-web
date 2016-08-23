@@ -118,7 +118,7 @@ class HtmStudioPage extends React.Component {
           {data.title}
         </Strong>
         <Markdown>
-          <span dangerouslySetInnerHTML={{__html: data.body}} />
+          <div dangerouslySetInnerHTML={{__html: data.body}} />
         </Markdown>
       </div>
     ))
@@ -141,7 +141,7 @@ class HtmStudioPage extends React.Component {
       >
         <SubTitle>{Terms.title}</SubTitle>
         <Markdown>
-          <span dangerouslySetInnerHTML={{__html: Terms.body}} />
+          <div dangerouslySetInnerHTML={{__html: Terms.body}} />
         </Markdown>
         <div className={styles.close}>
           <Button onClick={() => this._toggleTerms()}>
@@ -156,7 +156,7 @@ class HtmStudioPage extends React.Component {
     }
 
     return (
-      <div>
+      <article>
         <Helmet title={title} />
         <Section
           headline={true}
@@ -601,7 +601,7 @@ class HtmStudioPage extends React.Component {
           </div>
         </Section>
         {termsModal}
-      </div>
+      </article>
     )
   }
 }

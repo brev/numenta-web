@@ -22,7 +22,7 @@ const SectionMission = (props, {config}) => {
   const {links} = config
 
   return (
-    <div>
+    <article>
       <Anchor name="mission" />
       <SubTitle>Mission</SubTitle>
       <div className={styles.columns}>
@@ -101,7 +101,7 @@ const SectionMission = (props, {config}) => {
           We are currently focusing on sensorimotor integration.
         </ListItem>
       </ListOrder>
-    </div>
+    </article>
   )
 }
 

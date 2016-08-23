@@ -35,7 +35,7 @@ const title = 'Numenta Anomaly Benchmark (NAB)'
  *
  */
 const NabPage = () => (
-  <div>
+  <article>
     <Helmet title={title} />
     <Section headline={true} open={true} title={title}>
       <div className={styles.columns}>
@@ -328,7 +328,7 @@ const NabPage = () => (
         </div>
       </div>
     </Section>
-  </div>
+  </article>
 )
 
 export default NabPage

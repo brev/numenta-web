@@ -89,7 +89,7 @@ const SectionPapers = (props, {config, route}) => {
   ))
 
   return (
-    <div>
+    <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
           <div className={styles.video}>
@@ -165,7 +165,7 @@ const SectionPapers = (props, {config, route}) => {
           </ListOrder>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

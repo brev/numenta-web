@@ -53,14 +53,14 @@ const PapersPage = (props, {route}) => {
   })
 
   return (
-    <div className={styles.papers}>
+    <article className={styles.papers}>
       <Helmet title={title} />
       <Section headline={true} open={true} title={title}>
         <ListOrder copy={false}>
           {items}
         </ListOrder>
       </Section>
-    </div>
+    </article>
   )
 }
 

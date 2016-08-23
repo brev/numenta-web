@@ -67,7 +67,7 @@ const SectionCareers = (props, {config, route}) => {
   ))
 
   return (
-    <div>
+    <article>
       <Anchor name="careers" />
       <SubTitle>Careers</SubTitle>
       <div className={styles.columns}>
@@ -631,7 +631,7 @@ const SectionCareers = (props, {config, route}) => {
           <SocialMedia />
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

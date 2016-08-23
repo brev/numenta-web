@@ -15,7 +15,7 @@ const SectionIndex = (props, {config}) => {
   const {links} = config
 
   return (
-    <div className={styles.columns}>
+    <article className={styles.columns}>
       <div className={styles.aside}>
         <Glance />
       </div>
@@ -43,7 +43,7 @@ const SectionIndex = (props, {config}) => {
           <TextLink to={links.out.org}>{links.out.org}.</TextLink>
         </Paragraph>
       </div>
-    </div>
+    </article>
   )
 }
 

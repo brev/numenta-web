@@ -13,7 +13,7 @@ import styles from './index.css'
  *
  */
 const SectionTechnology = () => (
-  <div className={styles.columns}>
+  <article className={styles.columns}>
     <div className={styles.aside}>
       <Video
         image={ImageVideoTech}
@@ -24,7 +24,7 @@ const SectionTechnology = () => (
         videoId="v-VvFRar5TY"
       />
     </div>
-    <div className={styles.content}>
+    <article className={styles.content}>
       <Paragraph lead={true}>
         Based on a wealth of neuroscience evidence we have created HTM
         (Hierarchical Temporal Memory), a theoretical framework for both
@@ -66,8 +66,8 @@ const SectionTechnology = () => (
         which is developed with best practices and suitable for deploying in
         commercial applications.
       </Paragraph>
-    </div>
-  </div>
+    </article>
+  </article>
 )
 
 export default SectionTechnology

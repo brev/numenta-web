@@ -53,29 +53,25 @@ const PressPage = (props, {route}) => {
     ))
 
   return (
-    <div>
+    <article>
       <Helmet title="Press" />
       <Section headline={true} open={true} title="Press Releases">
         <div className={styles.columns}>
           <div className={styles.content}>
-
             <ListOrder copy={false}>
               {pressReleases}
             </ListOrder>
-
           </div>
           <div className={styles.aside}>
-
             <Anchor name="links" />
             <SubTitle>Press Links</SubTitle>
             <ListOrder copy={false} marker="disc">
               {pressLinks}
             </ListOrder>
-
           </div>
         </div>
       </Section>
-    </div>
+    </article>
   )
 }
 

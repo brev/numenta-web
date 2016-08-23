@@ -183,7 +183,7 @@ const MarkdownWrapper = ({route}, {config}) => {
 
 
   return (
-    <div className={styles.md}>
+    <article className={styles.md}>
       <Helmet title={data.title} />
       {date}
       <Section
@@ -196,13 +196,13 @@ const MarkdownWrapper = ({route}, {config}) => {
         {event}
         <div className={styles.content}>
           <Markdown>
-            <span dangerouslySetInnerHTML={{__html: data.body}} />
+            <div dangerouslySetInnerHTML={{__html: data.body}} />
           </Markdown>
         </div>
         {author}
         {back}
       </Section>
-    </div>
+    </article>
   )
 }
 

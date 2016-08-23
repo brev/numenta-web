@@ -14,14 +14,14 @@ const SitemapPage = (props, {config}) => {
   const {links} = config
 
   return (
-    <div>
+    <article>
       <Helmet title={title} />
       <Section headline={true} open={true} title={title}>
         <Paragraph>
           Coming Soon. {links.in.nab}
         </Paragraph>
       </Section>
-    </div>
+    </article>
   )
 }
 

@@ -24,7 +24,7 @@ const BamiPage = (props, {config}) => {
   const {links} = config
 
   return (
-    <div>
+    <article>
       <Helmet title={title} />
       <Section headline={true} open={true} title={title}>
         <div className={styles.columns}>
@@ -176,7 +176,7 @@ const BamiPage = (props, {config}) => {
           </div>
         </div>
       </Section>
-    </div>
+    </article>
   )
 }
 

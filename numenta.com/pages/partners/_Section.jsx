@@ -22,7 +22,7 @@ const SectionPartners = (props, {config}) => {
   const {contact, links} = config
 
   return (
-    <div>
+    <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
           <div className={styles.logomark}>
@@ -118,7 +118,7 @@ const SectionPartners = (props, {config}) => {
         <div className={styles.content}>
           <Paragraph>
             Grok is using HTM technology for advanced IT anomaly detection.
-            Grok applies Numenta's breakthrough technology to solving the IT
+            Grok applies Numenta&#39;s breakthrough technology to solving the IT
             department’s hardest problems, with a complete enterprise
             solution. Its modern user interface makes it easy to drill down to
             important anomalies and take action before a problem worsens.
@@ -144,7 +144,7 @@ const SectionPartners = (props, {config}) => {
           {/* eslint-enable max-len */}
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

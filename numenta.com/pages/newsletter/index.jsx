@@ -33,7 +33,7 @@ const NewsletterPage = (props, {route}) => {
   ))
 
   return (
-    <div>
+    <article>
       <Helmet title={title} />
       <div className={styles.signup}>
         {/* eslint-disable max-len */}
@@ -69,7 +69,7 @@ const NewsletterPage = (props, {route}) => {
           </ListOrder>
         </Section>
       </div>
-    </div>
+    </article>
   )
 }
 

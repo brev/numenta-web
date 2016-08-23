@@ -20,7 +20,7 @@ const SectionAnomaly = (props, {config}) => {
   const {links} = config
 
   return (
-    <div className={styles.columns}>
+    <article className={styles.columns}>
       <div className={styles.aside}>
         <ImageLink to={links.in.nab}>
           <Image
@@ -83,7 +83,7 @@ const SectionAnomaly = (props, {config}) => {
         </List>
         {/* eslint-disable max-len */}
       </div>
-    </div>
+    </article>
   )
 }
 

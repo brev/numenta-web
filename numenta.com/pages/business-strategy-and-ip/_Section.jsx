@@ -33,7 +33,7 @@ const SectionBusiness = (props, {config}) => {
   const {contact, links} = config
 
   return (
-    <div>
+    <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
           <Image
@@ -305,7 +305,7 @@ const SectionBusiness = (props, {config}) => {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

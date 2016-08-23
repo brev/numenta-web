@@ -27,7 +27,7 @@ const SectionApplications = (props, {config}) => {
   const {links} = config
 
   return (
-    <div>
+    <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
           <Video
@@ -328,7 +328,7 @@ const SectionApplications = (props, {config}) => {
           </List>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

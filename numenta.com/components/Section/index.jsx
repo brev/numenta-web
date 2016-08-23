@@ -103,10 +103,10 @@ class Section extends React.Component {
         >
           {title}
         </SectionTitle>
-        <article className={classNames(...articleClasses)}>
+        <div className={classNames(...articleClasses)}>
           {children}
           {close}
-        </article>
+        </div>
       </section>
     )
   }

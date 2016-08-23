@@ -39,7 +39,7 @@ const HtmStocksPage = (props, {config}) => {
   const {contact, links} = config
 
   return (
-    <div>
+    <article>
       <Helmet title={title} />
       <Section
         headline={true}
@@ -386,7 +386,7 @@ const HtmStocksPage = (props, {config}) => {
           </div>
         </div>
       </Section>
-    </div>
+    </article>
   )
 }
 

@@ -15,7 +15,7 @@ const SectionOpensource = (props, {config}) => {
   const {links} = config
 
   return (
-    <div className={styles.columns}>
+    <article className={styles.columns}>
       <div className={styles.aside}>
         <div className={styles.brain}>
           <Image
@@ -61,7 +61,7 @@ const SectionOpensource = (props, {config}) => {
           section.
         </Paragraph>
       </div>
-    </div>
+    </article>
   )
 }
 

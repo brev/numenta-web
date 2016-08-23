@@ -41,7 +41,7 @@ const EventsPage = (props, {config, route}) => {
   ))
 
   return (
-    <div className={styles.events}>
+    <article className={styles.events}>
       <Helmet title={title} />
       <Section headline={true} open={true} title={title}>
         <Anchor name="upcoming" />
@@ -56,7 +56,7 @@ const EventsPage = (props, {config, route}) => {
           {itemsPast}
         </ListOrder>
       </Section>
-    </div>
+    </article>
   )
 }
 

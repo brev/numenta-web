@@ -1,5 +1,5 @@
 /* dropcap - sync with component/Paragraph/index.css */
-._dropcap > div > span > p:first-of-type::first-letter {
+._dropcap > div > div > p:first-of-type::first-letter {
   background-color: #fff;
   color: #1aa0db;
   float: left;
@@ -12,7 +12,7 @@
   padding: 0.5rem 0.3rem 0.3rem 0;
 }
 @media screen and (min-width: 48em) {
-  ._dropcap > div > span > p:first-of-type::first-letter {
+  ._dropcap > div > div > p:first-of-type::first-letter {
     /* -ns (> mobile) */
     font-size: 5.4rem;
     padding: 0.4rem 0.3rem 0.3rem 0;
