@@ -13,7 +13,7 @@ const Image = (props) => {
   const prefix = prefixLink('')
   let source = src
 
-  if (prefix && source && !source.includes(prefix)) {
+  if (prefix && source && (source.indexOf(prefix) === -1)) {
     source = prefixLink(source)
   }
 

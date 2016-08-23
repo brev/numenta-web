@@ -108,7 +108,7 @@ export function postBuild(pages, callback) {
     '/press/',
   ]
   const searches = pages
-    .filter((page) => (page.path && !searchSkip.includes(page.path)))
+    .filter((page) => (page.path && searchSkip.indexOf(page.path) === -1))
     .map(({path}) => {
       const html = fs.readFileSync(`./public/${path}/index.html`).toString()
       const title = html
