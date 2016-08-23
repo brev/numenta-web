@@ -11,3 +11,15 @@
   composes: pb1 from 'tachyons';
   composes: pt3 from 'tachyons';
 }
+
+.title {
+  composes: f4 from 'tachyons';
+  composes: fw4 from 'tachyons';
+  composes: lh-title from 'tachyons';
+  composes: mb1 from 'tachyons';
+}
+
+.meta {
+  composes: lh-title from 'tachyons';
+  composes: mb1 from 'tachyons';
+}

@@ -28,12 +28,12 @@ const PapersPage = (props, {route}) => {
     return (
       <ListItem key={file.stem}>
         <div className={styles.paper}>
-          <div>
+          <div className={styles.title}>
             <TextLink to={data.link}>
               {data.title}
             </TextLink>
           </div>
-          <div>
+          <div className={styles.meta}>
             <Subtle>
               {data.author}
               <br />

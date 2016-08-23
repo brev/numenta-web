@@ -194,9 +194,11 @@ const MarkdownWrapper = ({route}, {config}) => {
         {author}
         {photo}
         {event}
-        <Markdown>
-          <span dangerouslySetInnerHTML={{__html: data.body}} />
-        </Markdown>
+        <div className={styles.content}>
+          <Markdown>
+            <span dangerouslySetInnerHTML={{__html: data.body}} />
+          </Markdown>
+        </div>
         {author}
         {back}
       </Section>

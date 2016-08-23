@@ -5,7 +5,6 @@ import IconShuttle from 'react-icons/lib/fa/space-shuttle'
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
-import Code from '../../components/Code'
 import DefineItem from '../../components/DefineItem'
 import DefineList from '../../components/DefineList'
 import DefineTitle from '../../components/DefineTitle'
@@ -38,7 +37,7 @@ const SectionBusiness = (props, {config}) => {
       <div className={styles.columns}>
         <div className={styles.aside}>
           <Image
-            alt="Numenta Business Office"
+            alt="Numenta Office"
             respond="mw"
             src={ImageBusiness}
           />
@@ -103,12 +102,13 @@ const SectionBusiness = (props, {config}) => {
           <Paragraph>
             Given the uniqueness of our work and our early focus on temporal
             data, we have been issued over thirty U.S. and international
-            patents. The list of issued patents {' '}
+            patents. Please view our {' '}
             <TextLink to={links.out.patents}>
-              can be found here.
-            </TextLink> {' '}
-            We believe these patents cover some of the foundational principles
-            of machine intelligence.
+              list of issued U.S. patents
+            </TextLink> online.
+            In addition, we have international patents filed that are not
+            included in this list. We believe these patents cover some of the
+            foundational principles of machine intelligence.
           </Paragraph>
         </div>
       </div>
@@ -294,27 +294,12 @@ const SectionBusiness = (props, {config}) => {
                 patents, we have promised to not assert our patents for any
                 non-commercial use including publications, teaching, and
                 experimentation. We do ask that you provide appropriate
-                citations of our work.
-                <SubTitle level={4}>
-                  End Reference Example
-                </SubTitle>
-                <Code>
-                  Hawkins, J. et al. 2016. Biological and Machine
-                  Intelligence.
-                  <br />
-                  &nbsp;&nbsp;
-                  Release 0.4. Accessed at
-                  <br />
-                  &nbsp;&nbsp;
-                  http://numenta.com/biological-and-machine-intelligence/.
-                </Code>
-                <Paragraph>
-                  If you are a corporate researcher who is applying this
-                  technology to commercial use, then you will need to evaluate
-                  the Numenta patent portfolio to see if our patents cover
-                  your work. If so, you should contact us to explore a patent
-                  license.
-                </Paragraph>
+                citations of our work. Make sure to visit our current repository
+                of <TextLink to={links.in.papers}>research papers.</TextLink>
+                {' '} If you are a corporate researcher who is applying this
+                technology to commercial use, then you will need to evaluate the
+                Numenta patent portfolio to see if our patents cover your work.
+                If so, you should contact us to explore a patent license.
               </DefineItem>
             </DefineList>
           </div>

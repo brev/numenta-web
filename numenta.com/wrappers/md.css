@@ -1,23 +1,24 @@
-._layout-dropcap > p:first-of-type::first-letter {
+/* dropcap - sync with component/Paragraph/index.css */
+._dropcap > div > span > p:first-of-type::first-letter {
   background-color: #fff;
   color: #1aa0db;
   float: left;
   font-weight: 500;
-  margin: 0;
+  line-height: 0.85;
+  margin: 0 0 -1rem 0;
   padding: 0;
   /* -s (<= mobile) */
   font-size: 6.8rem;
-  line-height: 4rem;
-  margin: 1.35rem 0.333rem 0 -0.1rem;
+  padding: 0.5rem 0.3rem 0.3rem 0;
 }
 @media screen and (min-width: 48em) {
-  ._layout-dropcap > p:first-of-type::first-letter {
+  ._dropcap > div > span > p:first-of-type::first-letter {
     /* -ns (> mobile) */
-    font-size: 5.38rem;
-    line-height: 2.666rem;
-    margin: 1.375rem 0.333rem 0 -0.1rem;
+    font-size: 5.4rem;
+    padding: 0.4rem 0.3rem 0.3rem 0;
   }
 }
+
 
 .md {
   composes: center from 'tachyons';
@@ -52,6 +53,10 @@
 .event table {
   margin: 0;
   padding: 0;
+}
+
+.content {
+  composes: _dropcap;
 }
 
 .back {
