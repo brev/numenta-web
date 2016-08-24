@@ -35,7 +35,7 @@ submissions for peer reviewed papers.  We are progressing in the science with a
 lot of focus on sensory-motor integration.  For those interested in the details,
 the concepts are often discussed in the
 [HTM Community](https://discourse.numenta.org) and in
-[NuPIC office hours](http://numenta.org/events.html). We are continuing to
+[NuPIC office hours](http://numenta.org/events/). We are continuing to
 support our product, [Grok](http://grokstream.com), and have an additional
 demonstration application in the works to announce later this year. We also
 will be speaking or exhibiting at a number of events this year, including:

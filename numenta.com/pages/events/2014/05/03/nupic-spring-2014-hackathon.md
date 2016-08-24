@@ -11,7 +11,7 @@ event:
     city: San Jose
     state: CA
     country: USA
-    web: http://numenta.org/events.html#nupic_spring_2014_hackathon
+    web: http://numenta.org/events/#nupic_spring_2014_hackathon
 featured: false
 image: ../images/image.png
 org: Open Source Manager
