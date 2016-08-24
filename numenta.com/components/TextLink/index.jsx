@@ -26,11 +26,11 @@ const TextLink = ({children, onClick, target, to}) => {
   }
   let Node = Link
 
-  // Internal links get react-router Link component, external get A html tag
-  if (to && to.match(/^.+:/)) {
+  if (to && (to.match(/^.+:/) || to.match(/^\/assets\//))) {
     // external link (browser location)
     Node = 'a'
-    attrs.href = to
+    if (to.match(/^.*:/)) attrs.href = to  // = mailto:etc@blah.com
+    if (to.match(/^\/assets\//)) attrs.href = prefixLink(to)  // = /assets/etc/
     delete attrs.to
   }
   else if (to === '/') {
