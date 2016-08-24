@@ -403,28 +403,6 @@ class HtmStudioPage extends React.Component {
           <div className={styles.columns}>
             <div className={styles.aside}>
               <Video
-                image={ImageVideoDatasource}
-                respond="mw"
-                time="02:47"
-                title="Isolating Data Sources Tutorial"
-                type="youtube"
-                videoId="CRzWS52EdM0"
-              />
-            </div>
-            <div className={styles.content}>
-              <SubTitle level={3}>
-                Isolating Data Sources
-              </SubTitle>
-              <Paragraph>
-                CSV files must contain data that has only been generated from
-                one source. If you have multiple sources, you will need to split
-                your data by source and into separate CSV files.
-              </Paragraph>
-            </div>
-          </div>
-          <div className={styles.columns}>
-            <div className={styles.aside}>
-              <Video
                 image={ImageVideoDatetime}
                 respond="mw"
                 time="04:28"
@@ -474,6 +452,28 @@ class HtmStudioPage extends React.Component {
                   insensitive)
                 </ListItem>
               </List>
+            </div>
+          </div>
+          <div className={styles.columns}>
+            <div className={styles.aside}>
+              <Video
+                image={ImageVideoDatasource}
+                respond="mw"
+                time="02:47"
+                title="Isolating Data Sources Tutorial"
+                type="youtube"
+                videoId="CRzWS52EdM0"
+              />
+            </div>
+            <div className={styles.content}>
+              <SubTitle level={3}>
+                Isolating Data Sources
+              </SubTitle>
+              <Paragraph>
+                CSV files must contain data that has only been generated from
+                one source. If you have multiple sources, you will need to split
+                your data by source and into separate CSV files.
+              </Paragraph>
             </div>
           </div>
 
