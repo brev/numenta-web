@@ -1,6 +1,8 @@
 import {capitalize} from 'lodash'
+import catchLinks from 'catch-links'
 import Helmet from 'react-helmet'
 import IconArrow from 'react-icons/lib/fa/caret-left'
+import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import moment from 'moment'
 import React from 'react'
 
@@ -29,189 +31,205 @@ const postTypes = ['blog', 'events', 'newsletter', 'press', 'resources']
 /**
  *
  */
-const MarkdownWrapper = ({route}, {config}) => {
-  const {data, file, path} = route.page
-  const datetime = moment(data.date, config.moments.post)
-  const occur = datetime.format(config.moments.human)
-  let key = file.dir.split('/')[0]
-  let url = `/${key}/`
-  let author, back, date, event, photo, type
+class MarkdownWrapper extends React.Component {
 
-  if (key === 'papers-videos-and-more') {
-    key = 'resources'
+  static propTypes = {
+    route: React.PropTypes.object,
   }
 
-  if (data.type === 'post') {
-    author = (
-      <div className={styles.author}>
-        <Subtle>
-          <Avatar name={data.author} />
-          {data.author}
-          <Spacer />
-          {data.org}
-        </Subtle>
-      </div>
-    )
+  static contextTypes = {
+    config: React.PropTypes.object,
+    router: React.PropTypes.object,
+  }
 
-    if (postTypes.indexOf(key) > -1) {
-      type = (
-        <span>
-          <Spacer />
-          <TextLink to={url}>
-            {capitalize(key)}
-          </TextLink>
-        </span>
+  componentDidMount() {
+    const {router} = this.context
+
+    // take over markdown local content links
+    catchLinks(this._markdown, (href) => router.push(prefixLink(href)))
+  }
+
+  render() {
+    const {route} = this.props
+    const {config} = this.context
+    const {data, file, path} = route.page
+    const datetime = moment(data.date, config.moments.post)
+    const occur = datetime.format(config.moments.human)
+    let key = file.dir.split('/')[0]
+    let url = `/${key}/`
+    let author, back, date, event, photo, type
+
+    if (key === 'papers-videos-and-more') {
+      key = 'resources'
+    }
+
+    if (data.type === 'post') {
+      author = (
+        <div className={styles.author}>
+          <Subtle>
+            <Avatar name={data.author} />
+            {data.author}
+            <Spacer />
+            {data.org}
+          </Subtle>
+        </div>
       )
-      back = (
-        <div className={styles.back}>
-          <IconMarker icon={<IconArrow />}>
+
+      if (postTypes.indexOf(key) > -1) {
+        type = (
+          <span>
+            <Spacer />
             <TextLink to={url}>
-              All {capitalize(key)} Posts
+              {capitalize(key)}
             </TextLink>
-          </IconMarker>
+          </span>
+        )
+        back = (
+          <div className={styles.back}>
+            <IconMarker icon={<IconArrow />}>
+              <TextLink to={url}>
+                All {capitalize(key)} Posts
+              </TextLink>
+            </IconMarker>
+          </div>
+        )
+      }
+
+      if (key === 'events') {
+        const {what, when, where, who, why} = data.event
+        const {desc, city, state, country, web} = where
+        const details = [(
+          <TableRow key="when">
+            <TableCell>
+              <Strong>When</Strong>
+            </TableCell>
+            <TableCell>
+              {getEventTimeDisplay(when)}
+            </TableCell>
+          </TableRow>
+        )]
+        let location = city
+
+        if (state) {
+          location = `${location}, ${state}`
+        }
+        if (country) {
+          location = `${location} ${country}`
+        }
+
+        details.push((
+          <TableRow key="where">
+            <TableCell>
+              <Strong>Where</Strong>
+            </TableCell>
+            <TableCell>
+              <div>{desc}</div>
+              <div>
+                {location}
+              </div>
+            </TableCell>
+          </TableRow>
+        ))
+
+        if (web) {
+          details.push((
+            <TableRow key="web">
+              <TableCell>
+                <Strong>Web</Strong>
+              </TableCell>
+              <TableCell>
+                <TextLink to={web}>Event Website</TextLink>
+              </TableCell>
+            </TableRow>
+          ))
+        }
+        if (what) {
+          details.push((
+            <TableRow key="topic">
+              <TableCell>
+                <Strong>Topic</Strong>
+              </TableCell>
+              <TableCell>
+                {what}
+              </TableCell>
+            </TableRow>
+          ))
+        }
+        if (why && who) {
+          details.push((
+            <TableRow key="why">
+              <TableCell>
+                <Strong>{why}</Strong>
+              </TableCell>
+              <TableCell>
+                {who}
+              </TableCell>
+            </TableRow>
+          ))
+        }
+
+        event = (
+          <div className={styles.event}>
+            <Table direction="horizontal">
+              <TableBody>
+                {details}
+              </TableBody>
+            </Table>
+          </div>
+        )
+      }
+    }
+
+    if (data.date) {
+      date = (
+        <div className={styles.date}>
+          <Time moment={datetime}>{occur}</Time>
+          {type}
         </div>
       )
     }
 
-    if (key === 'events') {
-      const {what, when, where, who, why} = data.event
-      const {desc, city, state, country, web} = where
-      const details = [(
-        <TableRow key="when">
-          <TableCell>
-            <Strong>When</Strong>
-          </TableCell>
-          <TableCell>
-            {getEventTimeDisplay(when)}
-          </TableCell>
-        </TableRow>
-      )]
-      let location = city
-
-      if (state) {
-        location = `${location}, ${state}`
-      }
-      if (country) {
-        location = `${location} ${country}`
-      }
-
-      details.push((
-        <TableRow key="where">
-          <TableCell>
-            <Strong>Where</Strong>
-          </TableCell>
-          <TableCell>
-            <div>{desc}</div>
-            <div>
-              {location}
-            </div>
-          </TableCell>
-        </TableRow>
-      ))
-
-      if (web) {
-        details.push((
-          <TableRow key="web">
-            <TableCell>
-              <Strong>Web</Strong>
-            </TableCell>
-            <TableCell>
-              <TextLink to={web}>Event Website</TextLink>
-            </TableCell>
-          </TableRow>
-        ))
-      }
-      if (what) {
-        details.push((
-          <TableRow key="topic">
-            <TableCell>
-              <Strong>Topic</Strong>
-            </TableCell>
-            <TableCell>
-              {what}
-            </TableCell>
-          </TableRow>
-        ))
-      }
-      if (why && who) {
-        details.push((
-          <TableRow key="why">
-            <TableCell>
-              <Strong>{why}</Strong>
-            </TableCell>
-            <TableCell>
-              {who}
-            </TableCell>
-          </TableRow>
-        ))
-      }
-
-      event = (
-        <div className={styles.event}>
-          <Table direction="horizontal">
-            <TableBody>
-              {details}
-            </TableBody>
-          </Table>
+    if (data.image && !data.hideImage) {
+      photo = (
+        <div className={styles.image}>
+          <Image
+            alt={data.title}
+            border={true}
+            respond="mw"
+            shadow={true}
+            src={`${path}${data.image}`}
+          />
         </div>
       )
     }
-  }
 
-  if (data.date) {
-    date = (
-      <div className={styles.date}>
-        <Time moment={datetime}>{occur}</Time>
-        {type}
-      </div>
+    return (
+      <article className={styles.md}>
+        <Helmet title={data.title} />
+        {date}
+        <Section
+          headline={true}
+          open={true}
+          title={data.title}
+        >
+          {author}
+          {photo}
+          {event}
+          <div className={styles.content}>
+            <Markdown>
+              <div
+                dangerouslySetInnerHTML={{__html: data.body}}
+                ref={(ref) => this._markdown = ref}
+              />
+            </Markdown>
+          </div>
+          {author}
+          {back}
+        </Section>
+      </article>
     )
   }
 
-  if (data.image && !data.hideImage) {
-    photo = (
-      <div className={styles.image}>
-        <Image
-          alt={data.title}
-          border={true}
-          respond="mw"
-          shadow={true}
-          src={`${path}${data.image}`}
-        />
-      </div>
-    )
-  }
-
-
-  return (
-    <article className={styles.md}>
-      <Helmet title={data.title} />
-      {date}
-      <Section
-        headline={true}
-        open={true}
-        title={data.title}
-      >
-        {author}
-        {photo}
-        {event}
-        <div className={styles.content}>
-          <Markdown>
-            <div dangerouslySetInnerHTML={{__html: data.body}} />
-          </Markdown>
-        </div>
-        {author}
-        {back}
-      </Section>
-    </article>
-  )
-}
-
-MarkdownWrapper.contextTypes = {
-  config: React.PropTypes.object,
-}
-
-MarkdownWrapper.propTypes = {
-  route: React.PropTypes.object,
 }
 
 export default MarkdownWrapper

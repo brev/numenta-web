@@ -7,6 +7,9 @@ import {triggerGAnalyticsEvent} from '../../utils/client'
 import styles from './index.css'
 
 
+/**
+ *
+ */
 const TextLink = ({children, onClick, target, to}) => {
   const instrumentOnClick = (event) => {
     // send ga event for asset link/download
