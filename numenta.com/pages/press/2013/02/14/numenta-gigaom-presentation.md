@@ -71,7 +71,7 @@ action from fast data.
 Grok solutions are available directly from Numenta and Numenta partners in a
 variety of vertical markets, including electric energy, IT management, online
 advertising and finance. For more information on Numenta and Grok go
-to http://numenta.com.
+to [http://numenta.com](/).
 
 **Numenta Media Contact:** <br/>
 Krause Taylor Associates,

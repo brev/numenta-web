@@ -173,7 +173,7 @@ const NabPage = () => (
       <div className={styles.columns}>
         <div className={styles.aside}>
           {/* eslint-disable max-len */}
-          <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
+          <TextLink to="/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
             <Image
               alt="NAB White Paper chart figure"
               border={true}
@@ -195,7 +195,7 @@ const NabPage = () => (
           </Paragraph>
           {/* eslint-disable max-len */}
           <IconMarker icon={<IconPdf />}>
-            <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
+            <TextLink to="/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
               Read Whitepaper
             </TextLink>
           </IconMarker>
@@ -281,7 +281,7 @@ const NabPage = () => (
           </Paragraph>
           <IconMarker icon={<IconDownload />}>
             {/* eslint-disable max-len */}
-            <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Data-Sheet.pdf">
+            <TextLink to="/assets/pdf/numenta-anomaly-benchmark/NAB-Data-Sheet.pdf">
               Download Datasheet
             </TextLink>
             {/* eslint-enable max-len */}

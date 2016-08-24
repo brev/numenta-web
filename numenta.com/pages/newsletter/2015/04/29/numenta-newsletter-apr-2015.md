@@ -51,7 +51,7 @@ so be sure to view some of the commentary:
 Lastly, we have an opening in marketing at Numenta.  If HTM and machine
 intelligence is a passion of yours, and you have a strong marketing
 communications background, please consider
-[applying for our position](http://numenta.com/careers-team-and-contact/).
+[applying for our position](/careers-team-and-contact/).
 
 We are excited about the momentum growing behind HTM technology and hope you’ll
 have a chance to review some of these developments.  

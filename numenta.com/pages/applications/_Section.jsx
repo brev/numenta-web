@@ -245,7 +245,7 @@ const SectionApplications = (props, {config}) => {
           {/* eslint-disable max-len */}
           <List marker="disc">
             <ListItem>
-              <TextLink to="http://numenta.com/assets/pdf/whitepapers/Rogue%20Behavior%20Detection%20White%20Paper.pdf">
+              <TextLink to="/assets/pdf/whitepapers/Rogue%20Behavior%20Detection%20White%20Paper.pdf">
                 Whitepaper: HTM for Rogue Behavior
               </TextLink>
             </ListItem>
@@ -283,7 +283,7 @@ const SectionApplications = (props, {config}) => {
           {/* eslint-disable max-len */}
           <List marker="disc">
             <ListItem>
-              <TextLink to="http://numenta.com/assets/pdf/whitepapers/Geospatial%20Tracking%20White%20Paper.pdf">
+              <TextLink to="/assets/pdf/whitepapers/Geospatial%20Tracking%20White%20Paper.pdf">
                 Whitepaper: HTM for Geospatial Tracking
               </TextLink>
             </ListItem>

@@ -96,4 +96,4 @@ exciting to be a part of this documentary series.
 [1]: http://www.npr.org/templates/story/story.php?storyId=130401381
 [2]: http://www.chinasunmedia.com/en/?page_id=2468
 [3]: http://www.forbes.com/pictures/fjed45ed/yang-lan/#66b8dfc972ef
-[4]: http://numenta.com
+[4]: /

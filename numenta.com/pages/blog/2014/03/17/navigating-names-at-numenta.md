@@ -56,7 +56,7 @@ So, that’s all there is to it! In brief:
 | Hierarchical Temporal Memory (HTM) | Theory of neocortex described by Jeff Hawkins in On Intelligence.  Includes learning algorithms that find patterns in streaming data, predict next steps, and find anomalies; a core building block for HTM. |
 | NuPIC (Numenta Platform for Intelligent Computing) | Open source project where HTM is being explored and advanced by the developer community |
 | http://numenta.org | The home for NuPIC, the open source project |
-| http://numenta.com | The home for Numenta, the company, and the Grok product |
+| [http://numenta.com](/) | The home for Numenta, the company, and the Grok product |
 
 As I said up front, Numenta is an unusual company. We work with scientists who
 are mainly interested in the HTM theory. We work with developers who are mainly

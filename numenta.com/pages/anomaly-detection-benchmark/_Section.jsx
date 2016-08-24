@@ -64,7 +64,7 @@ const SectionAnomaly = (props, {config}) => {
         <List marker="disc">
           <ListItem>
             Business Paper: {' '}
-            <TextLink to="http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
+            <TextLink to="/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf">
               The Numenta Anomaly Benchmark
             </TextLink>
           </ListItem>

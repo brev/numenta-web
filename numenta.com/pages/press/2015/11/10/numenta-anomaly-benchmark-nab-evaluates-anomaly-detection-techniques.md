@@ -92,18 +92,10 @@ algorithms with our HTM algorithms,” said Dubinsky.
 
 For more detailed information on NAB, go to:
 
-**NAB Peer-Reviewed Research Paper** <br/>
-http://arxiv.org/abs/1510.03336
-</t>
-
-**NAB Business White Paper** <br/>
-http://numenta.com/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf
-
-**Numenta Anomaly Benchmark Repository** <br/>
-https://github.com/numenta/NAB
-
-**Algorithm &amp; product code** <br/>
-http://numenta.org
+* [NAB Peer-Reviewed Research Paper](http://arxiv.org/abs/1510.03336)
+* [NAB Business White Paper](/assets/pdf/numenta-anomaly-benchmark/NAB-Business-Paper.pdf)
+* [Numenta Anomaly Benchmark Repository](https://github.com/numenta/NAB)
+* [Algorithm &amp; product code](http://numenta.org)
 
 ## About Numenta
 

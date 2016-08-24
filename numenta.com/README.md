@@ -208,3 +208,6 @@ moved into GitHub Issues ASAP.
 * browser support table
 * search - keyword in title/result should rank to top above current content ranks
 * markdown content image no hover effect
+* markdown links - no bare internals i.e. http://numenta.com/htm-studio/ -
+  need to wrap as square brackets link so it'll get prefixed correctly to Work
+  on staging.

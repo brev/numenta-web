@@ -34,37 +34,37 @@ const BamiPage = (props, {config}) => {
               {/* eslint-disable max-len */}
               <ListOrder marker="disc">
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Introduction.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Introduction.pdf" target="_new">
                     Introduction
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-HTM-Overview.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-HTM-Overview.pdf" target="_new">
                     HTM Overview
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-SDR.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-SDR.pdf" target="_new">
                     Sparse Distributed Representations
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Encoders.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Encoders.pdf" target="_new">
                     Encoders
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Other-Content.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Other-Content.pdf" target="_new">
                     Content to be Incorporated
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Problem-Sets.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Problem-Sets.pdf" target="_new">
                     Problem Sets
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Glossary.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Glossary.pdf" target="_new">
                     Glossary
                   </TextLink>
                 </ListItem>

@@ -22,7 +22,7 @@ This month, I am pleased to announce the
 offered in conjunction with the
 [IEEE WCCI (World Congress on Computational Intelligence)](http://www.wcci2016.org/programs.php?id=home).
 This contest follows the release last fall of our
-[Numenta Anomaly Benchmark](http://numenta.com/numenta-anomaly-benchmark/),
+[Numenta Anomaly Benchmark](/numenta-anomaly-benchmark/),
 which is designed to test algorithms that detect anomalies in
 streaming data and reward early detection.
 
@@ -42,8 +42,8 @@ for anomaly detection in streaming data.
 
 In other news, we recently shared a summary of our published and submitted
 research papers.  You can now access all of these papers at
-http://numenta.com/papers/. I encourage you to bookmark the page as we will be
-updating it with new material throughout the year.
+[http://numenta.com/papers/](/papers/). I encourage you to bookmark the page as
+we will be updating it with new material throughout the year.
 
 Lastly, I want to share that we will be participating in
 [Strata San Jose](http://conferences.oreilly.com/strata/hadoop-big-data-ca),

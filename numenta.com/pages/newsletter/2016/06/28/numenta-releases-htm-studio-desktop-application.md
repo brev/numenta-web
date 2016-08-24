@@ -49,8 +49,9 @@ As a company with a scientific mission to understand how the brain learns, it’
 been hard for us to make this technology accessible, which is why we are so
 proud of this release. If you’d like to try it, you can download the Windows or
 Mac version, view our tutorials and give us feedback at
-http://numenta.com/htm-studio/.  Feel free to write us about interesting
-anomalies that you find – we hope to share guest blog posts of the best ones.
+[http://numenta.com/htm-studio/](/htm-studio/). Feel free to write us about
+interesting anomalies that you find – we hope to share guest blog posts of the
+best ones.
 
 While many of you are likely planning summer trips, Numenta will be traveling
 the globe this summer as well.  Our Research Engineer, [Yuwei Cui][5], just

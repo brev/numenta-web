@@ -75,7 +75,7 @@ a goal that we set at the beginning of the year: to
 undergoing peer review, which we’ve  made available pre-publication on arxiv, an
 academic archive. I hope to be  sharing news of publication over the coming
 months, but in the meantime, you can find all our papers
-here: http://numenta.com/papers/
+here: [http://numenta.com/papers/](/papers/)
 
 ---
 
