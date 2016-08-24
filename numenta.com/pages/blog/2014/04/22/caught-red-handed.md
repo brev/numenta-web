@@ -10,6 +10,11 @@ title: Caught Red Handed
 type: post
 ---
 
+> *Numenta has
+  [announced a strategic partnership with Avik Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
+
 Like most engineering managers, I like to know when someone is manually touching
 one of our servers.  That’s especially true for production systems, but also
 applies to QA servers.  So, imagine my chagrin when Grok caught me red handed,

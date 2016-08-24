@@ -10,17 +10,15 @@ tags: Machine Learning, Data, Neuroscience
 type: post
 ---
 
-Two weeks ago I attended a workshop at U.C. Berkeley titled, ["From Data to
-Knowledge: Machine-Learning with Real-time and Streaming
-Applications."](http://lyra.berkeley.edu/CDIConf/)
-
-This was a remarkable workshop, not just because of who presented or its
-location, but simply because it was a workshop on streaming analytics.  Today we
-hear so much about "big data" and the database tools you can use to sort through
-large amounts of data.  However at Numenta we see a different future.  The
-future we see is one with billions of data sources streaming data.  Every
-building, server, machine, and windmill will be equipped with multiple sensors.
-Data from these sensors will flow directly to predictive models, which will make
+Two weeks ago I attended a workshop at U.C. Berkeley titled, "From Data to
+Knowledge: Machine-Learning with Real-time and Streaming Applications." This
+was a remarkable workshop, not just because of who presented or its location,
+but simply because it was a workshop on streaming analytics.  Today we hear so
+much about "big data" and the database tools you can use to sort through large
+amounts of data.  However at Numenta we see a different future.  The future we
+see is one with billions of data sources streaming data.  Every building,
+server, machine, and windmill will be equipped with multiple sensors. Data from
+these sensors will flow directly to predictive models, which will make
 predictions and detect anomalies.  Through these models we will take immediate
 action.  This future is about billions of data streams flowing to hundreds of
 millions of predictive models, not petabytes of data sitting in hard drives to
@@ -61,8 +59,6 @@ separate from the visuals.  We decided to re-record it as a
 [screencast.](http://youtu.be/iNMbsvK8Q8Y)
 
 By the way, I believe the algorithms we use in Grok are key components of
-machine intelligence.  I will be talking about that during my
-[keynote speech](http://isca2012.ittc.ku.edu/index.php?option=com_content&view=article&id=65&Itemid=57)
-on June 11 at the
-[International Symposium on Computer Architecture.](http://isca2012.ittc.ku.edu/)
-More on that in a later blog post.
+machine intelligence.  I will be talking about that during my keynote speech on
+June 11 at the International Symposium on Computer Architecture. More on that in
+a later blog post.

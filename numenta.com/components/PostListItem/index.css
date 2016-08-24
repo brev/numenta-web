@@ -10,6 +10,8 @@
 
 .title {
   composes: db from 'tachyons';
+  composes: dim from 'tachyons';
+  composes: link from 'tachyons';
   composes: f4 from 'tachyons';
   composes: lh-title from 'tachyons';
   composes: mb1 from 'tachyons';

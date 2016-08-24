@@ -16,20 +16,20 @@ conference on diverse
 topics like emerging languages, alternative databases, concurrency and
 distributed systems.
 
-This talk was similar to the keynote speech Jeff gave at the recent
-[ISCA Conference](http://isca2012.ittc.ku.edu/), providing a good overview of
-the neuroscience and technology behind Grok (e.g.,sparse distributed
-representations and sequence memory). In this version, Jeff shows an example of
-how Grok adapts to unexpected change when predicting energy consumption in a
-building. At first, Grok learns a weekly pattern: energy usage climbs during the
-day, but drops at night and on weekends, when the building is closed. One week,
-however, Thursday and Friday are holidays, so the building is closed. Grok
-predicts that energy will rise on Thursday morning, only to see that its
-predictions are inaccurate, because energy consumption remains flat in the empty
-building. Instead of blindly forging ahead with the rest of the regular Thursday
-pattern, however, Grok adapts automatically and shifts its forecast to predict
-flat levels.  Grok was not trained with data for holidays, but it recognizes
-that the pattern has changed and adapts accordingly.
+This talk was similar to the keynote speech Jeff gave at the recent ISCA
+Conference, providing a good overview of the neuroscience and technology behind
+Grok (e.g.,sparse distributed representations and sequence memory). In this
+version, Jeff shows an example of how Grok adapts to unexpected change when
+predicting energy consumption in a building. At first, Grok learns a weekly
+pattern: energy usage climbs during the day, but drops at night and on weekends,
+when the building is closed. One week, however, Thursday and Friday are
+holidays, so the building is closed. Grok predicts that energy will rise on
+Thursday morning, only to see that its predictions are inaccurate, because
+energy consumption remains flat in the empty building. Instead of blindly
+forging ahead with the rest of the regular Thursday pattern, however, Grok
+adapts automatically and shifts its forecast to predict flat levels.  Grok was
+not trained with data for holidays, but it recognizes that the pattern has
+changed and adapts accordingly.
 
 Jeff also spends a little more time talking about the future of the technology,
 including the somewhat contrarian opinion that "The goal here is not to build

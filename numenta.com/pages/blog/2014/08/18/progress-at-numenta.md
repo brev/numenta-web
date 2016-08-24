@@ -10,12 +10,16 @@ title: Progress at Numenta
 type: post
 ---
 
-You will notice some substantial changes in our web site this week.  I’d like to
-take a moment to explain what’s going on.
+> *Numenta has
+  [announced a strategic partnership with Avik Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
 
-Late last year we shipped our first product, [Grok for IT Analytics](http://grokstream.com)
-on AWS. Since then, we’ve released several enhancements for the product,
-including the recent version 1.5 with a new web charting feature.
+You will notice some substantial changes in our web site this week.  I’d like to
+take a moment to explain what’s going on. Late last year we shipped our first
+product, [Grok for IT Analytics](http://grokstream.com) on AWS. Since then,
+we’ve released several enhancements for the product, including the recent
+version 1.5 with a new web charting feature.
 
 Some customers using our product have told us that they have found problems in
 their AWS environments that other methods haven’t caught, while others have
@@ -24,10 +28,9 @@ demonstrated that our HTM (Hierarchical Temporal Memory) learning algorithms are
 performing as we had hoped.  We are automatically learning the patterns in the
 streaming data of each individual server, and then finding when the input
 differs from that expected, thus detecting an anomaly.  Other customers are also
-using Grok to analyze non-IT data using our
-[custom metrics feature](/assets/pdf/grok/resources/1.3/Grok-Custom-Metrics.pdf) -
-with interesting results.  We encourage you to explore this option and would
-love to hear about your results.
+using Grok to analyze non-IT data using our custom metrics feature - with
+interesting results.  We encourage you to explore this option and would love to
+hear about your results.
 
 While we will continue to evolve the Grok for IT Analytics product, we are
 equally excited about myriad opportunities to apply this technology to other
@@ -36,7 +39,7 @@ towards creating demonstration applications that show how to potentially apply
 our HTM technology to a variety of other problems.
 
 We have restructured our web site to better communicate the breadth of our
-technology.  Detailed information on [Grok for IT Analytics](http://grokstream.com)
+technology. Detailed information on [Grok for IT Analytics](http://grokstream.com)
 is still available, but now if you come to visit Numenta, you first will see
 information on Numenta technology, before diving deeper to learn more about Grok
 and other applications.

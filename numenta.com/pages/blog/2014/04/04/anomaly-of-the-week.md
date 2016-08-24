@@ -10,6 +10,11 @@ title: Anomaly of the Week
 type: post
 ---
 
+> *Numenta has
+  [announced a strategic partnership with Avik Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
+
 It was Thursday night, March 20th, at 8pm. I was cleaning up the kitchen and
 getting ready to wind down when my smartphone buzzed: Grok had sent an alert.
 I know that with Grok it just takes a few seconds to check things out, kind of
