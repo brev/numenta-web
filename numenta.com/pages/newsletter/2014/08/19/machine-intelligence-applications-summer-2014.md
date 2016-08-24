@@ -10,6 +10,11 @@ title: Machine Intelligence Applications 2014
 type: post
 ---
 
+> *Numenta has
+  [announced a strategic partnership with Avik Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+  please read more about the future of
+  [Grok for IT Analytics](http://grokstream.com).*
+
 We’ve had a busy summer at Numenta. Since the launch of our first product, Grok
 for IT Analytics on Amazon Web Services (AWS), we’ve created a variety of
 demonstration applications to showcase the breadth of the underlying

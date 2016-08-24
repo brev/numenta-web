@@ -39,8 +39,8 @@ Amazon Web Services (AWS).
 We have a few openings left for our private beta program, which will start
 shortly. If you have a current AWS environment (small or large) and would
 like to participate in the private beta, please send an email to
-<a href="mailto:grokbeta@numenta.com">grokbeta@numenta.com</a>. We welcome
-your input and your help in finalizing this exciting new product.
+[grokbeta@numenta.com](mailto:grokbeta@numenta.com). We welcome your input and
+your help in finalizing this exciting new product.
 
 In other news, the NuPIC open source project we created in June is off to a
 great start. NuPIC contains the source code to our cortical learning
@@ -48,9 +48,8 @@ algorithms, the same code used in our product Grok. We are pleased with
 the number of contributors, the email discussions, and overall
 interest. We are holding our second NuPIC Hackathon in San Francisco
 on November 2 &ndash; 3. To sign up for the Hackathon, go to
-<a href="http://www.numenta.org/events.html">www.numenta.org/events.html</a>.
-To learn more about the open source project, visit
-<a href="http://www.numenta.org">www.numenta.org</a>.
+http://numenta.org/events/. To learn more about the open source project,
+visit http://numenta.org/.
 
 Thank you for your interest in Grok and in Numenta.org. We look forward to
 meeting some of you in our beta program or at the NuPIC Hackathon.
