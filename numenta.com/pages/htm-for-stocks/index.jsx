@@ -91,8 +91,10 @@ const HtmStocksPage = (props, {config}) => {
                 NuPIC open source project
               </TextLink> {' '}
               to encourage others to create new and derivative products. {' '}
-              <TextLink to={links.in.careers}>Contact us</TextLink> with
-              questions or interest. {' '}
+              <TextLink to={`${links.in.careers}#contact`}>
+                Contact us
+              </TextLink> {' '}
+              with questions or interest. {' '}
               <TextLink to="https://github.com/numenta/numenta-apps">
                 Review the source code.
               </TextLink>
