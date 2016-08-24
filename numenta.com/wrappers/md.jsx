@@ -23,7 +23,9 @@ import Time from '../components/Time'
 
 import styles from './md.css'
 
-const postTypes = ['blog', 'events', 'newsletter', 'press', 'resources']
+const postTypes = [
+  'blog', 'careers', 'events', 'newsletter', 'press', 'resources',
+]
 
 
 /**
@@ -37,6 +39,9 @@ const MarkdownWrapper = ({route}, {config}) => {
   let url = `/${key}/`
   let author, back, date, event, photo, type
 
+  if (key === 'careers-team-and-contact') {
+    key = 'careers'
+  }
   if (key === 'papers-videos-and-more') {
     key = 'resources'
   }
