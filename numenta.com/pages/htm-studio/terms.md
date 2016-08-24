@@ -49,7 +49,7 @@ information about HTM Studio users (names, IP addresses, etc.) or users’ data
   * (a) **License**. Numenta hereby grants you a non-exclusive,
     non-transferable, royalty-free license during the term of this Agreement to
     install and use HTM Studio for the permitted uses detailed in section 2(b)
-    subject to the restrictions detailed in section 2(c).  Any technology that
+    subject to the restrictions detailed in section 2&#40;c).  Any technology that
     does not exist at http://github.com/numenta with an AGPL license is not
     included in this License.
 
@@ -60,7 +60,7 @@ information about HTM Studio users (names, IP addresses, etc.) or users’ data
     of your research as long as you include an appropriate citation. You may
     modify and create derivative works of HTM Studio.
 
-  * (c) **Restrictions**. You may not offer for sale, distribute, or permit
+  * &#40;c) **Restrictions**. You may not offer for sale, distribute, or permit
     others to use any technology that includes the HTM Studio or NuPIC software
     or intellectual property, either free or for a fee, unless you have entered
     into an appropriate Numenta commercial license agreement.
