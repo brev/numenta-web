@@ -102,10 +102,8 @@ const SectionBusiness = (props, {config}) => {
           <Paragraph>
             Given the uniqueness of our work and our early focus on temporal
             data, we have been issued over thirty U.S. and international
-            patents. Please view our {' '}
-            <TextLink to={links.out.patents}>
-              list of issued U.S. patents
-            </TextLink> online.
+            patents. The list of issued U.S. patents can be {' '}
+            <TextLink to={links.out.patents}>found here.</TextLink> {' '}
             In addition, we have international patents filed that are not
             included in this list. We believe these patents cover some of the
             foundational principles of machine intelligence.
