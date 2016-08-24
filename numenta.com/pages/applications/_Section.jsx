@@ -133,7 +133,7 @@ const SectionApplications = (props, {config}) => {
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to={[links.in.htmstudio, links.anchor.get].join('')}>
+              <TextLink to={`${links.in.htmstudio}#feedback`}>
                 Register to Give Feedback
               </TextLink>
             </ListItem>
@@ -175,7 +175,7 @@ const SectionApplications = (props, {config}) => {
               </TextLink>
             </ListItem>
             <ListItem>
-              <TextLink to={[links.in.htmstocks, links.anchor.get].join('')}>
+              <TextLink to={`${links.in.htmstocks}#get`}>
                 Register to Give Feedback
               </TextLink>
             </ListItem>

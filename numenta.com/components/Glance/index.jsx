@@ -37,7 +37,7 @@ const Glance = (props, context) => {
           Releases
         </TextLink>
         <Spacer />
-        <TextLink to={`${links.in.press}${links.anchor.links}`}>
+        <TextLink to={`${links.in.press}#links`}>
           Links
         </TextLink>
       </span>

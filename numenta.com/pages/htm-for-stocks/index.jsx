@@ -76,7 +76,7 @@ const HtmStocksPage = (props, {config}) => {
             <Paragraph>
               HTM for Stocks is an example application and is available for
               free. We invite you to {' '}
-              <TextLink to={`${links.in.htmstocks}${links.anchor.get}`}>
+              <TextLink to={`${links.in.htmstocks}#get`}>
                 register to give feedback
               </TextLink> {' '}
               or {' '}

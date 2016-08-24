@@ -72,10 +72,6 @@ description = 'Leading the New Era of Machine Intelligence'
     sitemap = '/sitemap/'
     terms = '/legal/terms/'
 
-  [links.anchor]  # internal path anchor hashes
-    get = '#get'  # htmstocks, etc.
-    links = '#links'  # press links
-
 [moments]
   post = 'YYYY/MM/DD'
   human = 'ddd, MMM DD, YYYY'
