@@ -25,6 +25,7 @@ class Search extends React.Component {
 
     // init client-side search indexing
     this._api = new SearchApi.Search('path')
+    this._api.sanitizer = new SearchApi.LowerCaseSanitizer()
     this._api.searchIndex = new SearchApi.UnorderedSearchIndex()
     this._api.addIndex('title')
     this._api.addIndex('text')
@@ -37,9 +38,7 @@ class Search extends React.Component {
       .get(prefixLink('/_searchIndex.json'))
       .end((error, {body}) => {
         if (error) throw new Error(error)
-        return body.forEach((item) => {
-          this._api.addDocument(item)
-        })
+        return this._api.addDocuments(body)
       })
   }
 

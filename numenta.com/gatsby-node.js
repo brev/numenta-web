@@ -126,7 +126,7 @@ export function postBuild(pages, callback) {
         .keys(data)
         .filter((key) => typeof data[key] === 'string' && data[key].length)
         .map((key) => data[key])
-      const text = [title, content, details.join(' '), path].join(' ')
+      const text = [title, content, details.join(' ')].join(' ')
       return {path, text, title}
     })
   // prep sitemap
