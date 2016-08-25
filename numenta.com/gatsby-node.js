@@ -109,19 +109,24 @@ export function postBuild(pages, callback) {
   ]
   const searches = pages
     .filter((page) => (page.path && searchSkip.indexOf(page.path) === -1))
-    .map(({path}) => {
+    .map(({data, path}) => {
       const html = fs.readFileSync(`./public/${path}/index.html`).toString()
       const title = html
         .match(/<title[\s\S]*?>([\s\S]*?)<\/title>/)[1]
         .replace(/ \| Numenta.com$/, '')
-      const main = html
+      const markup = html
         .match(/<main[\s\S]*?>([\s\S]*?)<\/main>/)[1]
         .replace(/<!--.*?-->/g, ' ')
         .replace(/\n+/g, ' ')
-      const text = htmlToText(main)
+      const content = htmlToText(markup)
         .replace(/\\n/g, ' ')
         .replace(/[^\x00-\x7F]/g, ' ')
         .replace(/\s+/g, ' ')
+      const details = Object
+        .keys(data)
+        .filter((key) => typeof data[key] === 'string' && data[key].length)
+        .map((key) => data[key])
+      const text = [title, path, details.join(' '), content].join(' ')
       return {path, text, title}
     })
   // prep sitemap

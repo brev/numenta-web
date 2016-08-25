@@ -49,7 +49,7 @@ class Search extends React.Component {
 
   _performSearch(query) {
     this.setState({
-      query: inHTMLData(query.toLowerCase()),
+      query: inHTMLData(query),
     })
   }
 

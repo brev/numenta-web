@@ -45,11 +45,14 @@ const Glance = (props, context) => {
     Events: (
       <TextLink to={links.in.events}>Events</TextLink>
     ),
+    /* eslint-disable max-len */
     Latest: (
-      <TextLink to={links.in.htmstudio}>
-        Numenta releases HTM Studio! <Tag>New</Tag>
+      <TextLink to="/blog/2016/09/02/why-did-we-completely-change-our-website-design-the-story-behind-our-new-look/">
+        Why did we overhaul our web design? The story behind our new look. {' '}
+        <Tag>New</Tag>
       </TextLink>
     ),
+    /* eslint-ensable max-len */
   }
   let defs = []
 
