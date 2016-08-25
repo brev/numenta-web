@@ -23,7 +23,7 @@ end of the webinar answers some popular user questions.
 
 ### Presented by
 
-* Christy Maver (Marketing Director, Numenta)
+* Christy Maver (Director of Marketing, Numenta)
 * Scott Purdy (Director of Development, Numenta)
 
 ### Video
