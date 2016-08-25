@@ -107,6 +107,8 @@ export function postBuild(pages, callback) {
     '/papers/',
     '/press/',
   ]
+  const dataSkip = ['author', 'date', 'org', 'title']
+  const eventSkip = ['what', 'who', 'why']
   const searches = pages
     .filter((page) => (page.path && searchSkip.indexOf(page.path) === -1))
     .map(({data, path}) => {
@@ -124,8 +126,38 @@ export function postBuild(pages, callback) {
         .replace(/\s+/g, ' ')
       const details = Object
         .keys(data)
-        .filter((key) => typeof data[key] === 'string' && data[key].length)
+        .filter((key) => (
+          typeof data[key] === 'string' &&
+          data[key].length &&
+          dataSkip.indexOf(key) !== -1
+        ))
         .map((key) => data[key])
+
+      if ('event' in data) {
+        details.push(
+          Object
+            .keys(data.event)
+            .filter((key) => (
+              typeof data[key] === 'string' &&
+              data[key].length &&
+              eventSkip.indexOf(key) !== -1
+            ))
+            .join(' ')
+        )
+
+        if ('where' in data.event) {
+          details.push(
+            Object
+              .keys(data.event.where)
+              .filter((key) => (
+                typeof data[key] === 'string' &&
+                data[key].length
+              ))
+              .join(' ')
+          )
+        }
+      }
+
       const text = [title, content, details.join(' ')].join(' ')
       return {path, text, title}
     })
