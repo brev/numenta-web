@@ -3,6 +3,8 @@ import IconAngleUp from 'react-icons/lib/fa/angle-up'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
+import {hasSessionStorage} from '../../utils/client'
+
 import SectionTitle from '../SectionTitle'
 
 import styles from './index.css'
@@ -41,30 +43,32 @@ class Section extends React.Component {
   }
 
   _toggleSection() {
+    const {ga, history, sessionStorage} = global.window
     const {url} = this.props
     const open = !this.state.open
     // const {router} = this.context
+    const hasStorage = hasSessionStorage()
 
     // Handle dynamic url changes as sections are opened/closed.
     if (open) {
       // manual
-      global.window.history.pushState({}, '', prefixLink(url))
-      global.window.ga('set', 'page', prefixLink(url))
-      global.window.ga('send', 'pageview')
+      history.pushState({}, '', prefixLink(url))
+      ga('set', 'page', prefixLink(url))
+      ga('send', 'pageview')
       // auto
       // router.push(url)
 
       // mark section state as Open in browser sessionStorage
-      global.window.sessionStorage.setItem(url, 'open')
+      if (hasStorage) sessionStorage.setItem(url, 'open')
     }
     else {
       // manual
-      // global.window.history.back()
+      // history.back()
       // auto
       // router.goBack()
 
       // mark section state as Closed in browser sessionStorage
-      global.window.sessionStorage.removeItem(url)
+      if (hasStorage) sessionStorage.removeItem(url)  // eslint-disable-line
     }
 
     this.setState({open})

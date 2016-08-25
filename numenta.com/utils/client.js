@@ -20,6 +20,22 @@ export function getBrowserWidth() {
 /**
  *
  */
+export function hasSessionStorage() {
+  const {sessionStorage} = global.window
+  const mod = '_'
+  try {
+    sessionStorage.setItem(mod, mod)
+    sessionStorage.removeItem(mod)
+    return true
+  }
+  catch (error) {
+    return false
+  }
+}
+
+/**
+ *
+ */
 export function scrollToSection(current, pad = -60) {
   const element = global.document.getElementById(current.key)
   const {top} = element.getBoundingClientRect()
