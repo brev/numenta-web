@@ -8,6 +8,7 @@
   },
   "rules": {
     "brace-style": [2, "stroustrup"],
+    "func-names": [0],
     "import/extensions": [2],
     "import/no-extraneous-dependencies": [0],
     "import/prefer-default-export": [0],

@@ -1,9 +1,9 @@
 import IconFaSearch from 'react-icons/lib/fa/search'
 import {inHTMLData} from 'xss-filters'
+import lunr from 'lunr'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 import request from 'superagent'
-import SearchApi from 'js-search'
 
 import Button from '../Button'
 import Form from '../Form'
@@ -15,7 +15,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Search Query Component
  * @requires js-search
  * @see https://github.com/bvaughn/js-search
  */
@@ -24,26 +24,33 @@ class Search extends React.Component {
     super(props)
 
     // init client-side search indexing
-    this._api = new SearchApi.Search('path')
-    this._api.sanitizer = new SearchApi.LowerCaseSanitizer()
-    this._api.searchIndex = new SearchApi.UnorderedSearchIndex()
-    this._api.addIndex('title')
-    this._api.addIndex('text')
+    this._documents = new Map()
+    this._index = lunr(function () {
+      this.ref('path')
+      this.field('title', {boost: 10})
+      this.field('text')
+      this.pipeline.remove(lunr.stopWordFilter)
+    })
 
     this.state = {query: ''}
   }
 
   componentDidMount() {
     request
-      .get(prefixLink('/_searchIndex.json'))
+      .get(prefixLink('/_searchIndex.json'))  // load index
       .end((error, {body}) => {
         if (error) throw new Error(error)
-        return this._api.addDocuments(body)
+        return body.forEach((doc) => {
+          const {path, text, title} = doc
+          this._documents.set(path, {text, title})  // save
+          this._index.add(doc)  // index
+        })
       })
   }
 
   componentWillUnmount() {
-    this._api = null
+    this._documents.clear()
+    this._index = null
   }
 
   _performSearch(query) {
@@ -57,7 +64,13 @@ class Search extends React.Component {
     let matches, results
 
     if (query) {
-      matches = this._api.search(query).slice(0, 25)
+      matches = this._index
+        .search(query)
+        .slice(0, 30)
+        .map(({ref}) => {
+          const {title, text} = this._documents.get(ref)
+          return {path: ref, title, text}
+        })
       results = (
         <SearchResult
           onClose={() => this._performSearch('')}
