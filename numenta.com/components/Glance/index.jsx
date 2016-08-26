@@ -54,9 +54,9 @@ const Glance = (props, context) => {
     ),
     /* eslint-ensable max-len */
   }
-  let defs = []
+  const defs = []
 
-  for (let key in data) {
+  for (const key in data) {
     if ({}.hasOwnProperty.call(data, key)) {
       defs.push(
         <DefineTitle key={`DefineTitle-${key}`}>

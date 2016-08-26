@@ -19,7 +19,7 @@ const SocialMedia = (props, {config}) => {
   }
   const socials = []
 
-  for (let site in sites) {
+  for (const site in sites) {
     if ({}.hasOwnProperty.call(sites, site)) {
       const Component = sites[site]
       const title = site.match(/(\w+)\.com/)[1]

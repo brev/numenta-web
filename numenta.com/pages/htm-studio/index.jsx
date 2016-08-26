@@ -130,7 +130,7 @@ class HtmStudioPage extends React.Component {
         Terms and Conditions
       </TextLink>
     )
-    let termsModal
+    let termsModal = null
 
     modalStyles.content.width = getModalAspect(getBrowserWidth() - 100) - 100
     termsModal = (

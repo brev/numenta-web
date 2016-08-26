@@ -36,7 +36,7 @@ const MarkdownWrapper = ({route}, {config}) => {
   const datetime = moment(data.date, config.moments.post)
   const occur = datetime.format(config.moments.human)
   let key = file.dir.split('/')[0]
-  let url = `/${key}/`
+  const url = `/${key}/`
   let author, back, date, event, photo, type
 
   if (key === 'careers-team-and-contact') {

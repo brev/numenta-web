@@ -61,7 +61,7 @@ const avatars = {
  */
 const Avatar = ({name}) => {
   let person = name
-  let photo
+  let photo = null
 
   if (name && name.length > 0) {
     person = name.replace(/\s/g, '')
