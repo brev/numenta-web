@@ -11,10 +11,12 @@ import styles from './index.css'
  *
  */
 const ImageLink = ({children, title, to}) => {
-  const onClick = (event) => (
+  const onClick = (event) => {
+    // get focus off clicked image
+    event.target.parentNode.blur()
     // send ga event for asset link/download
-    triggerGAnalyticsEvent(event.target.getAttribute('href'))
-  )
+    return triggerGAnalyticsEvent(event.target.getAttribute('href'))
+  }
   const attrs = {
     // default internal non-index link
     className: styles.imagelink,

@@ -24,8 +24,17 @@ class Markdown extends React.Component {
     // take over markdown local content links
     catchLinks(this._markdown, (href) => {
       const url = prefixLink(href)
-      if (href.match(/^\/assets\//)) global.window.location = url
-      else router.push(url)
+
+      if (href.match(/^\/assets\//)) {
+        global.window.location = url  // go to external asset
+      }
+      else if (href.match(/^#/)) {
+        router.push(href)  // go to same page anchor
+      }
+      else {
+        router.push(url)  // go to same site react-routed single-page mount
+      }
+
       return
     })
   }
