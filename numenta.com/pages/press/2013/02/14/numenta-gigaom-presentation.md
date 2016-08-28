@@ -11,7 +11,7 @@ title: "Numenta to Present Grok, a Solution for Fast Data, as one of the Big Ide
 type: post
 ---
 
-> *Numenta has [announced a strategic partnership with Avik
+> **NOTE:** *Numenta has [announced a strategic partnership with Avik
   Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
   please read more about the future of
   [Grok for IT Analytics](http://grokstream.com).*

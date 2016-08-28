@@ -10,8 +10,8 @@ title: Monitoring AWS EC2 Burnrate with Grok
 type: post
 ---
 
-> *Numenta has
-  [announced a strategic partnership with Avik Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
+> **NOTE:** *Numenta has [announced a strategic partnership with Avik
+  Partners](/press/2015/08/19/numenta-announces-licensing-of-grok-for-it-to-avik-partners/),
   please read more about the future of
   [Grok for IT Analytics](http://grokstream.com).*
 
