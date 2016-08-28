@@ -15,7 +15,7 @@ import Subtle from '../Subtle'
 import TextLink from '../TextLink'
 
 import styles from './index.css'
-import modalStyles from './style-modal'
+import modalStyles from './_style-modal'
 
 const filterText = (text) => unescape(text)
   .replace(/&#x27;/g, '')

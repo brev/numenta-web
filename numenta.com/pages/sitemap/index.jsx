@@ -1,8 +1,10 @@
 import Helmet from 'react-helmet'
+import {zipObject} from 'lodash'
 import React from 'react'
 
 import {sortDateDescend} from '../../utils/shared'
 
+import Anchor from '../../components/Anchor'
 import ListItem from '../../components/ListItem'
 import ListOrder from '../../components/ListOrder'
 import Section from '../../components/Section'
@@ -15,15 +17,22 @@ import styles from './index.css'
 
 const title = 'Sitemap'
 
-const item = ({data, file, path}) => (
-  <ListItem key={file.stem}>
-    <TextLink to={path}>
-      {data.title}
-    </TextLink> {' '}
-    <Spacer />
-    <Subtle>{data.date}</Subtle>
-  </ListItem>
-)
+const SitemapItem = (props) => {
+  const {data, path} = props
+  return (
+    <ListItem {...props}>
+      <TextLink to={path}>
+        {data.title}
+      </TextLink> {' '}
+      <Spacer />
+      <Subtle>{data.date}</Subtle>
+    </ListItem>
+  )
+}
+SitemapItem.propTypes = {
+  data: React.PropTypes.object.isRequired,
+  path: React.PropTypes.string.isRequired,
+}
 
 
 /**
@@ -32,30 +41,27 @@ const item = ({data, file, path}) => (
 const SitemapPage = (props, {config, route}) => {
   const {links} = config
   const {pages} = route
-
-  const posts = {
-    blog: pages
-      .filter(({file}) => (file.path.match(/^blog\/.*\.md/)))
-      .sort(sortDateDescend),
-    events: pages
-      .filter(({file}) => (file.path.match(/^events\/.*\.md/)))
-      .sort(sortDateDescend),
-    newsletter: pages
-      .filter(({file}) => (file.path.match(/^newsletter\/.*\.md/)))
-      .sort(sortDateDescend),
-    press: pages
-      .filter(({data, file}) => (
-        file.path.match(/^press\/.*\.md/) &&
-        data.type !== 'link'
-      ))
-      .sort(sortDateDescend),
-  }
-  const items = {
-    blog: posts.blog.map((post) => item(post)),
-    events: posts.events.map((post) => item(post)),
-    newsletter: posts.newsletter.map((post) => item(post)),
-    press: posts.press.map((post) => item(post)),
-  }
+  const categories = [
+    'blog',
+    'careers',
+    'events',
+    'newsletter',
+    'press',
+    'resources',
+  ]
+  const posts = categories
+    .map((category) => pages
+      .filter(({data, file}) => {
+        const matcher = new RegExp(`.*${category}\/.*\.md`)
+        return (data.type === 'post') && file.path.match(matcher)
+      })
+      .sort(sortDateDescend)
+      .map((post) => {
+        post.key = post.file.stem
+        return React.createElement(SitemapItem, post)
+      })
+    )
+  const items = zipObject(categories, posts)
 
   return (
     <article>
@@ -65,6 +71,7 @@ const SitemapPage = (props, {config, route}) => {
         <div className={styles.columns}>
           <div className={styles.content}>
 
+            <Anchor name="main" />
             <SubTitle>Main</SubTitle>
             <ListOrder marker="disc">
               <ListItem>
@@ -119,9 +126,40 @@ const SitemapPage = (props, {config, route}) => {
               </ListItem>
             </ListOrder>
 
+            <Anchor name="careers" />
+            <SubTitle>
+              <TextLink to={links.in.careers}>
+                Careers
+              </TextLink>
+            </SubTitle>
+            <ListOrder marker="disc">
+              {items.careers}
+            </ListOrder>
+
+            <Anchor name="other" />
+            <SubTitle>Other</SubTitle>
+            <ListOrder marker="disc">
+              <ListItem>
+                <TextLink to={links.in.privacy}>
+                  Privacy Policy
+                </TextLink>
+              </ListItem>
+              <ListItem>
+                <TextLink to={links.in.terms}>
+                  Terms of Service
+                </TextLink>
+              </ListItem>
+              <ListItem>
+                <TextLink to={links.in.sitemap}>
+                  Sitemap
+                </TextLink>
+              </ListItem>
+            </ListOrder>
+
           </div>
           <div className={styles.aside}>
 
+            <Anchor name="our-work" />
             <SubTitle>Our Work</SubTitle>
             <ListOrder marker="disc">
               <ListItem>
@@ -151,23 +189,14 @@ const SitemapPage = (props, {config, route}) => {
               </ListItem>
             </ListOrder>
 
-            <SubTitle>Other</SubTitle>
+            <Anchor name="resources" />
+            <SubTitle>
+              <TextLink to={links.in.resources}>
+                Resources
+              </TextLink>
+            </SubTitle>
             <ListOrder marker="disc">
-              <ListItem>
-                <TextLink to={links.in.privacy}>
-                  Privacy Policy
-                </TextLink>
-              </ListItem>
-              <ListItem>
-                <TextLink to={links.in.terms}>
-                  Terms of Service
-                </TextLink>
-              </ListItem>
-              <ListItem>
-                <TextLink to={links.in.sitemap}>
-                  Sitemap
-                </TextLink>
-              </ListItem>
+              {items.resources}
             </ListOrder>
 
           </div>
@@ -175,18 +204,20 @@ const SitemapPage = (props, {config, route}) => {
         <div className={styles.columns}>
           <div className={styles.content}>
 
+            <Anchor name="newsletter" />
             <SubTitle>
-              <TextLink to={links.in.blog}>
-                Blog
+              <TextLink to={links.in.newsletter}>
+                Newsletter
               </TextLink>
             </SubTitle>
             <ListOrder marker="disc">
-              {items.blog}
+              {items.newsletter}
             </ListOrder>
 
           </div>
           <div className={styles.aside}>
 
+            <Anchor name="press" />
             <SubTitle>
               <TextLink to={links.in.press}>
                 Press Releases
@@ -201,6 +232,7 @@ const SitemapPage = (props, {config, route}) => {
         <div className={styles.columns}>
           <div className={styles.content}>
 
+            <Anchor name="events" />
             <SubTitle>
               <TextLink to={links.in.events}>
                 Events
@@ -213,13 +245,14 @@ const SitemapPage = (props, {config, route}) => {
           </div>
           <div className={styles.aside}>
 
+            <Anchor name="blog" />
             <SubTitle>
-              <TextLink to={links.in.newsletter}>
-                Newsletter
+              <TextLink to={links.in.blog}>
+                Blog
               </TextLink>
             </SubTitle>
             <ListOrder marker="disc">
-              {items.newsletter}
+              {items.blog}
             </ListOrder>
 
           </div>

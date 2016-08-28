@@ -44,9 +44,10 @@ import ImageVideoDatetime from './images/video-datetime.png'
 import ImageVideoIntro from './images/charts.png'
 import ImageVideoWalkthru from './images/video-walkthru.png'
 import styles from './index.css'
-import modalStyles from './style-modal'
+import modalStyles from './_style-modal'
 
 const title = 'HTM Studio'
+
 const sortFaqs = (a, b) => {
   if (a.data.sort > b.data.sort) return 1
   if (a.data.sort < b.data.sort) return -1

@@ -106,6 +106,7 @@ export function postBuild(pages, callback) {
     '/newsletter/',
     '/papers/',
     '/press/',
+    '/sitemap/',
   ]
   const dataSkip = ['author', 'date', 'org', 'title']
   const eventSkip = ['what', 'who', 'why']
@@ -163,14 +164,16 @@ export function postBuild(pages, callback) {
     })
   // prep sitemap
   const urls = pages
-    .filter((page) => page.path)
+    .filter((page) => (
+      page.path && !page.path.match(/htm-studio\/faq/)
+    ))
     .map(({path}) => ({
       url: path,
-      changefreq: 'daily', // 'monthly'
-      priority: 0.3, // 0.7
+      changefreq: 'monthly',  // 'daily' @TODO dynamic per file dates, etc
+      priority: 0.5,  // @TODO dynamic per url length (shorter=higher)
     }))
   const sitemap = createSitemap({
-    hostname: 'http://numenta.com',
+    hostname: 'http://numenta.com',  // @TODO stringify hostname in config
     urls,
   })
 

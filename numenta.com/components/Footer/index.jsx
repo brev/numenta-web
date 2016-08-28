@@ -30,9 +30,9 @@ const Footer = (props, {config}) => {
           <Spacer />
           <TextLink to={links.in.privacy}>Privacy</TextLink>
           <Spacer />
-          <TextLink to={repo}>Source</TextLink>
-          <Spacer />
           <TextLink to={links.in.sitemap}>Sitemap</TextLink>
+          <Spacer />
+          <TextLink to={repo}>Source</TextLink>
         </span>
       </footer>
     </div>

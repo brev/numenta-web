@@ -7,7 +7,7 @@ import {getModalAspect} from '../../utils/shared'
 import Image from '../Image'
 
 import styles from './index.css'
-import modalStyles from './style-modal'
+import modalStyles from './_style-modal'
 
 
 class Video extends React.Component {
