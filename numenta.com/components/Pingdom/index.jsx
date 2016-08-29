@@ -4,20 +4,21 @@ import {trims} from '../../utils/shared'
 
 
 /**
- *
+ * Pingdom monitoring and analytics instrumentation.
+ *  NOTE: Do not remove semi-colons from the JS code block below!
  */
 const Pingdom = ({id}) => (
   <script
     dangerouslySetInnerHTML={{__html: trims`
       var _prum = [['id', '${id}'],
-                   ['mark', 'firstbyte', (new Date()).getTime()]]
+                   ['mark', 'firstbyte', (new Date()).getTime()]];
       (function() {
         var s = document.getElementsByTagName('script')[0],
-            p = document.createElement('script')
-        p.async = 'async'
-        p.src = '//rum-static.pingdom.net/prum.min.js'
-        s.parentNode.insertBefore(p, s)
-      })()
+            p = document.createElement('script');
+        p.async = 'async';
+        p.src = '//rum-static.pingdom.net/prum.min.js';
+        s.parentNode.insertBefore(p, s);
+      })();
     `}}
   />
 )
