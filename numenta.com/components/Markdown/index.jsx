@@ -35,7 +35,11 @@ class Markdown extends React.Component {
       ) {
         location = prefixLink(href)  // go to external asset
       }
-      else if (!target.host && target.hash) {
+      else if (
+        !target.host &&
+        target.hash &&
+        target.pathname === location.pathname
+      ) {
         location.hash = target.hash  // go to anchor on same page / browser
       }
       else {
