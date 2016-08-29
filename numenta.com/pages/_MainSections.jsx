@@ -83,12 +83,12 @@ const MainSections = ({current}, {config}) => {
   const childrenWithProps = React.Children.map(mainComponents, (Component) => {
     const {key} = Component
     const {title, url} = details[key]
+    const isHome = (key === 'sectionHome')
     const isStored = (global.window.sessionStorage.getItem(url) === 'open')
-    const open = (key === current.key) || isStored
-    const headline = open && (url === '/')
+    const open = (key === current.key) || isHome || isStored
     return (
       <Section
-        headline={headline}
+        headline={isHome}
         id={key}
         key={key}
         open={open}
