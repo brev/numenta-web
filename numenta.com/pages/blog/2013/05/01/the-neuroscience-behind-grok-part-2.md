@@ -102,7 +102,7 @@ learn patterns.
 
 Further information:
 
-* [Sparse Distributed Representations - Our Brain's Data Structure](/papers-videos-and-more/sparse-distributed-representations/) -
+* [Sparse Distributed Representations - Our Brain's Data Structure](/papers-videos-and-more/resources/sparse-distributed-representations/) -
   This talk by Subutai Ahmad goes into more detail, including the SDR property
   of "union," which makes it easy to determine if a new pattern has been seen
   before. This, in turn, forms the basis of Grok's anomaly detection algorithms.

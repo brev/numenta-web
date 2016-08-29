@@ -58,7 +58,7 @@ be True, so there was some room for error. Specifically, there are 9,405 answers
 that could get the maximum score of 9, so again, if everything was random, the
 chance of getting a perfect score is about 9,405/54,627,300, or about 1 in
 5,808. (For more details on the math behind SDRs, see
-[this talk](/papers-videos-and-more/sparse-distributed-representations/).)
+[this talk](/papers-videos-and-more/resources/sparse-distributed-representations/).)
 
 What is a good score? The chance of getting a score of 8 is 1 in 322, and the
 chance of getting a 7 is 1 in 37. Now, here's a puzzler: we had less than 100
