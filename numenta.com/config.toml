@@ -18,6 +18,7 @@ description = 'Leading the New Era of Machine Intelligence'
 
 [analytics]
   google = 'UA-48460134-1'
+  pingdom = '569029d1abe53daf465fa724'
 
 [links]
   [links.out]  # external links

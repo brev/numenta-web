@@ -49,6 +49,7 @@ class Template extends React.Component {
     const titleForm = `%s | ${siteHost}`
     const ver = getVersion()
 
+    // react-helmet / head
     const attrs = {lang, amp: undefined}
     const links = [{
       rel: 'shortcut icon',

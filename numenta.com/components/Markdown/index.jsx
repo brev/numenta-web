@@ -1,6 +1,7 @@
 import catchLinks from 'catch-links'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
+import url from 'url'
 
 import styles from './index.css'
 
@@ -15,26 +16,31 @@ class Markdown extends React.Component {
   }
 
   static contextTypes = {
+    route: React.PropTypes.object,
     router: React.PropTypes.object,
   }
 
   componentDidMount() {
     const {router} = this.context
+    let {location} = global.window
 
-    // take over markdown local content links
+    // Take over markdown local content links, local links now in Single-page
+    //  app mode - also handling staging prefixLinks.
     catchLinks(this._markdown, (href) => {
-      const url = prefixLink(href)
-
-      if (href.match(/^\/assets\//)) {
-        global.window.location = url  // go to external asset
+      const target = url.parse(href)
+      if (
+        !target.host &&
+        !target.hash &&
+        target.pathname.match(/^\/assets\//)
+      ) {
+        location = prefixLink(href)  // go to external asset
       }
-      else if (href.match(/^#/)) {
-        router.push(href)  // go to same page anchor
+      else if (!target.host && target.hash) {
+        location.hash = target.hash  // go to anchor on same page / browser
       }
       else {
-        router.push(url)  // go to same site react-routed single-page mount
+        router.push(prefixLink(href))  // same site react-routed single-page
       }
-
       return
     })
   }
