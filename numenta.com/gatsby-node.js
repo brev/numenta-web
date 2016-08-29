@@ -104,14 +104,17 @@ export function postBuild(pages, callback) {
     '/blog/',
     '/events/',
     '/newsletter/',
-    '/papers/',
     '/press/',
     '/sitemap/',
   ]
   const dataSkip = ['author', 'date', 'org', 'title']
   const eventSkip = ['what', 'who', 'why']
   const searches = pages
-    .filter((page) => (page.path && searchSkip.indexOf(page.path) === -1))
+    .filter((page) => (
+      page.path &&
+      !page.path.matches(/\/papers\/.*\//) &&
+      searchSkip.indexOf(page.path) === -1
+    ))
     .map(({data, path}) => {
       const html = fs.readFileSync(`./public/${path}/index.html`).toString()
       const title = html
