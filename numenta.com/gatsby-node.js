@@ -112,7 +112,7 @@ export function postBuild(pages, callback) {
   const searches = pages
     .filter((page) => (
       page.path &&
-      !page.path.matches(/\/papers\/.*\//) &&
+      !page.path.match(/\/papers\/.*\//) &&
       searchSkip.indexOf(page.path) === -1
     ))
     .map(({data, path}) => {
