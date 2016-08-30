@@ -24,7 +24,7 @@ class Search extends React.Component {
     super(props)
 
     // init client-side search indexing
-    this._documents = new Map()
+    this._documents = {}
     this._index = lunr(function () {
       this.ref('path')
       this.field('title', {boost: 10})
@@ -42,14 +42,14 @@ class Search extends React.Component {
         if (error) throw new Error(error)
         return body.forEach((doc) => {
           const {path, text, title} = doc
-          this._documents.set(path, {text, title})  // save
+          this._documents[path] = {text, title}  // save
           this._index.add(doc)  // index
         })
       })
   }
 
   componentWillUnmount() {
-    this._documents.clear()
+    this._documents = {}
     this._index = null
   }
 
@@ -68,7 +68,7 @@ class Search extends React.Component {
         .search(query)
         .slice(0, 30)
         .map(({ref}) => {
-          const {title, text} = this._documents.get(ref)
+          const {title, text} = this._documents[ref]
           return {path: ref, title, text}
         })
       results = (
