@@ -13,92 +13,107 @@ import SectionTechnology from './technology-overview/_Section'
 
 import Section from '../components/Section'
 
+const mainSectionList = [
+  {
+    component: <SectionHome key="sectionHome" />,
+    title: 'Leading the New Era of Machine Intelligence',
+    url: '/',
+  },
+  {
+    component: <SectionMission key="sectionMission" />,
+    title: 'Mission & History',
+    url: '/mission-and-history/',
+  },
+  {
+    component: <SectionTechnology key="sectionTechnology" />,
+    title: 'Technology Overview',
+    url: '/technology-overview/',
+  },
+  {
+    component: <SectionOpensource key="sectionOpensource" />,
+    title: 'Open Source Community',
+    url: '/open-source-community/',
+  },
+  {
+    component: <SectionApplications key="sectionApplications" />,
+    title: 'Applications',
+    url: '/applications/',
+  },
+  {
+    component: <SectionPartners key="sectionPartners" />,
+    title: 'Partners',
+    url: '/partners/',
+  },
+  {
+    component: <SectionBusiness key="sectionBusiness" />,
+    title: 'Business Strategy & IP',
+    url: '/business-strategy-and-ip/',
+  },
+  {
+    component: <SectionAnomaly key="sectionAnomaly" />,
+    title: 'Anomaly Detection Benchmark',
+    url: '/anomaly-detection-benchmark/',
+  },
+  {
+    component: <SectionPapers key="sectionResources" />,
+    title: 'Papers, Videos & More',
+    url: '/papers-videos-and-more/',
+  },
+  {
+    component: <SectionCareers key="sectionCareers" />,
+    title: 'Careers, Team & Contact',
+    url: '/careers-team-and-contact/',
+  },
+]
 
 /**
- * List of Homepage/Mainpage Section/Page's in order
- * @param {Object} [current] - Current React Element, to alternate section
- *  title display.
- * @returns {Array} - Array of React Component node objects.
+ *
+ * @public
  */
-const MainSections = ({current}, {config}) => {
-  const {links} = config
+function getNextSection(current) {
+  const nextIndex = mainSectionList.findIndex((item) => (
+    current.key === item.component.key
+  ))
+
+  if (nextIndex >= 0) {
+    return mainSectionList[nextIndex + 1]
+  }
+  return null
+}
+
+
+/**
+ *
+ */
+const MainSections = ({current}) => {
   const details = {}
-  const mainSectionList = [
-    {
-      component: <SectionHome key="sectionHome" />,
-      title: 'Leading the New Era of Machine Intelligence',
-      url: links.in.home,
-    },
-    {
-      component: <SectionMission key="sectionMission" />,
-      title: 'Mission & History',
-      url: links.in.mission,
-    },
-    {
-      component: <SectionTechnology key="sectionTechnology" />,
-      title: 'Technology Overview',
-      url: links.in.technology,
-    },
-    {
-      component: <SectionOpensource key="sectionOpensource" />,
-      title: 'Open Source Community',
-      url: links.in.opensource,
-    },
-    {
-      component: <SectionApplications key="sectionApplications" />,
-      title: 'Applications',
-      url: links.in.applications,
-    },
-    {
-      component: <SectionPartners key="sectionPartners" />,
-      title: 'Partners',
-      url: links.in.partners,
-    },
-    {
-      component: <SectionBusiness key="sectionBusiness" />,
-      title: 'Business Strategy & IP',
-      url: links.in.business,
-    },
-    {
-      component: <SectionAnomaly key="sectionAnomaly" />,
-      title: 'Anomaly Detection Benchmark',
-      url: links.in.anomaly,
-    },
-    {
-      component: <SectionPapers key="sectionResources" />,
-      title: 'Papers, Videos & More',
-      url: links.in.resources,
-    },
-    {
-      component: <SectionCareers key="sectionCareers" />,
-      title: 'Careers, Team & Contact',
-      url: links.in.careers,
-    },
-  ]
   const mainComponents = mainSectionList.map(({component, title, url}) => {
     const {key} = component
     details[key] = {title, url}
     return component
   })
-  const childrenWithProps = React.Children.map(mainComponents, (Component) => {
-    const {key} = Component
-    const {title, url} = details[key]
-    const isHome = (key === 'sectionHome')
-    const isStored = (global.window.sessionStorage.getItem(url) === 'open')
-    const open = (key === current.key) || isHome || isStored
-    return (
-      <Section
-        headline={isHome}
-        id={key}
-        key={key}
-        open={open}
-        title={title}
-        url={url}
-      >
-        {Component}
-      </Section>
-    )
-  })
+  const childrenWithProps = React.Children.map(
+    mainComponents,
+    (Component) => {
+      const {key} = Component
+      const {title, url} = details[key]
+      const isHome = (key === 'sectionHome')
+      const isStored = (global.window.sessionStorage.getItem(url) === 'open')
+      const open = (key === current.key) || isHome || isStored
+      return (
+        <Section
+          headline={isHome}
+          id={key}
+          key={key}
+          open={open}
+          title={title}
+          url={url}
+        >
+          {Component}
+        </Section>
+      )
+    }
+  )
 
   return (
     <div>
@@ -111,8 +126,4 @@ MainSections.propTypes = {
   current: React.PropTypes.element.isRequired,
 }
 
-MainSections.contextTypes = {
-  config: React.PropTypes.object,
-}
-
-export default MainSections
+export {getNextSection, MainSections as default}

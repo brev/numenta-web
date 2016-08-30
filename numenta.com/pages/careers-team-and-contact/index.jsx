@@ -4,6 +4,7 @@ import React from 'react'
 import {scrollToSection} from '../../utils/client'
 
 import MainSections from '../_MainSections'
+import NextSection from '../../components/NextSection'
 import SectionCareers from './_Section'
 import Section from '../../components/Section'
 
@@ -20,6 +21,7 @@ class CareersPage extends React.Component {
     sections: (
       <Section headline={true} open={true} title={title}>
         {Default}
+        <NextSection title="Back to Home" url="/" />
       </Section>
     ),
   }

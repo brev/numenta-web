@@ -3,7 +3,8 @@ import React from 'react'
 
 import {scrollToSection} from '../../utils/client'
 
-import MainSections from '../_MainSections'
+import MainSections, {getNextSection} from '../_MainSections'
+import NextSection from '../../components/NextSection'
 import SectionTechnology from './_Section'
 import Section from '../../components/Section'
 
@@ -16,12 +17,18 @@ const title = 'Technology Overview'
  */
 class TechPage extends React.Component {
 
-  state = {
-    sections: (
-      <Section headline={true} open={true} title={title}>
-        {Default}
-      </Section>
-    ),
+  constructor(props) {
+    super(props)
+    const next = getNextSection(Default)
+
+    this.state = {
+      sections: (
+        <Section headline={true} open={true} title={title}>
+          {Default}
+          <NextSection {...next} />
+        </Section>
+      ),
+    }
   }
 
   componentDidMount() {
