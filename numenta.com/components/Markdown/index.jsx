@@ -22,7 +22,7 @@ class Markdown extends React.Component {
 
   componentDidMount() {
     const {router} = this.context
-    let {location} = global.window
+    const {location} = global.window
 
     // Take over markdown local content links, local links now in Single-page
     //  app mode - also handling staging prefixLinks.
@@ -33,8 +33,7 @@ class Markdown extends React.Component {
         !target.hash &&
         target.pathname.match(/^\/assets\//)
       ) {
-        console.log('should go to: ', prefixLink(href))
-        location = prefixLink(href)  // go to external asset
+        location.href = prefixLink(href)  // go to external asset
       }
       else if (
         !target.host &&
