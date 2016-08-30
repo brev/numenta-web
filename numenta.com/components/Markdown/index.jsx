@@ -33,6 +33,7 @@ class Markdown extends React.Component {
         !target.hash &&
         target.pathname.match(/^\/assets\//)
       ) {
+        console.log('should go to: ', prefixLink(href))
         location = prefixLink(href)  // go to external asset
       }
       else if (
@@ -45,7 +46,6 @@ class Markdown extends React.Component {
       else {
         router.push(prefixLink(href))  // same site react-routed single-page
       }
-      return
     })
   }
 

@@ -1,3 +1,4 @@
+import {findIndex} from 'lodash'
 import React from 'react'
 
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
@@ -71,7 +72,7 @@ const mainSectionList = [
  * @public
  */
 function getNextSection(current) {
-  const nextIndex = mainSectionList.findIndex((item) => (
+  const nextIndex = findIndex(mainSectionList, (item) => (
     current.key === item.component.key
   ))
 
