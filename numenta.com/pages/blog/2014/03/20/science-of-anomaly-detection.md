@@ -10,9 +10,8 @@ title: The Science of Anomaly Detection
 type: post
 ---
 
-I just finished writing a new
-[whitepaper](/assets/pdf/whitepapers/Numenta White Paper - Science of Anomaly Detection.pdf).
-It is about the science of detecting anomalies.
+I just finished writing a new [whitepaper]. It is about the science of
+detecting anomalies.
 
 As followers of Numenta know, we have worked for many years to understand how
 the neocortex works.  As I described in *On Intelligence*, the brain is a
@@ -58,3 +57,5 @@ I hope you’ll read it and see why I’m so excited.  In my view, this is one o
 the first products based on neocortical principles, a system that learns
 patterns from its temporal data stream, makes predictions, and identifies
 anomalies.  Just what your brain does every moment of every day.
+
+[whitepaper]: /assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf

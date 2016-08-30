@@ -181,28 +181,45 @@ npm run build
 
 ## Browser and Platform Support
 
-|            | Chrome | Firefox | Safari | Edge | IE 11 | IE 10 | Android |
-| ---------- | ------ | ------- | ------ | ---- | ----- | ----- | ------- |
-| Mac OS/X   |    ✓   |    ✓    |    ✓   |      |       |       |         |
-| Windows 10 |    ✓   |    ✓    |        |   ✓  |       |       |         |
-| Windows 8  |        |         |        |      |   ✓   |       |         |
-| Windows 7  |        |         |        |      |       |   ✓   |         |
-| Linux      |    ✓   |    ✓    |        |      |       |       |         |
-| iOS        |        |         |    ✓   |      |       |       |         |
-| Android    |    ✓   |         |        |      |       |       |    ✓    |
+|             | Chrome | Firefox | Safari | Edge | IE/11 | IE/10 | Android |
+| ----------- |:------:|:-------:|:------:|:----:|:-----:|:-----:|:-------:|
+| **Mac/OSX** |    ✓   |    ✓    |    ✓   |      |       |       |         |
+| **iOS**     |        |         |    ✓   |      |       |       |         |
+| **Android** |    ✓   |         |        |      |       |       |    ✓    |
+| **Win/10**  |    ✓   |    ✓    |        |   ✓  |       |       |         |
+| **Win/8**   |        |         |        |      |   ✓   |       |         |
+| **Win/7**   |        |         |        |      |       |   ✓   |         |
+| **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
 
-\* All versions are "Latest Stable" unless otherwise noted.
+**Note:** *All versions are "Latest Stable" unless otherwise noted.*
 
 
-## Link Types and Sources
+## Link Types and Examples
 
-| File | Internal | Internal | Internal  | External     | External   |
-|      | Hashtag  | Routed   | Asset     | Location     | Mailto     |
-| ---- | -------- | -------- | --------- | ------------ | ---------- |
-| JSX  |          |          |           |              |            |
-| MD   |          |          |           |              |            |
+| Host     | Type     | .jsx Source   | .md Source     |
+| -------- | -------- | ------------- | -------------- |
+| Internal | Path     | [View][link1] | [View][link7]  |
+| Internal | Anchor   | [View][link2] | [View][link8]  |
+| Internal | Asset    | [View][link3] | [View][link9]  |
+| External | Path     | [View][link4] | [View][link10] |
+| External | Anchor   | [View][link5] | [View][link11] |
+| External | Protocol | [View][link6] | [View][link12] |
 
-\* Make sure Google Analtyics is tracking `pages` and `events` for all below.
+[link1]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/open-source-community/_Section.jsx#L58
+[link2]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L178
+[link3]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L248
+[link4]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L207
+[link5]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L213
+[link6]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/partners/_Section.jsx#L48
+[link7]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md
+[link8]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/06/16/can-neuroscientists-understand-the-brain.md
+[link9]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/08/18/progress-at-numenta.md
+[link10]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/09/17/increasing-research-transparency.md
+[link11]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2013/02/11/super-bowl-neuroscience.md
+[link12]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md#numenta-anomaly-benchmark-nab-competition
+
+**Note:** *Make sure Google Analtyics is tracking `pages` and `events` for
+  the above.*
 
 
 ## @TODO
@@ -229,3 +246,4 @@ moved into GitHub Issues ASAP.
     need to wrap as square brackets link so it'll get prefixed correctly to Work
     on staging.
   * `npm run dev -- --host 192.168.1.112`
+  * markdown links like \[this]("spaces in filename")

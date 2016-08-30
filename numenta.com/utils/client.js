@@ -36,11 +36,13 @@ export function hasSessionStorage() {
 /**
  *
  */
-export function scrollToSection(current, pad = -60) {
-  const element = global.document.getElementById(current.key)
+export function scrollToSection(element, pad = -60) {
+  const {scroll, setTimeout} = global.window
   if (element && 'getBoundingClientRect' in element) {
     const {top} = element.getBoundingClientRect()
-    if (top) global.window.scroll(0, top + pad)
+    if (top) {
+      setTimeout(() => scroll(0, top + pad), 0)
+    }
   }
 }
 

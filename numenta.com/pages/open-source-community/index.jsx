@@ -38,7 +38,7 @@ class OpenSourcePage extends React.Component {
   }
 
   componentDidUpdate() {
-    scrollToSection(Default)
+    scrollToSection(global.document.getElementById(Default.key))
   }
 
   componentWillUnmount() {
