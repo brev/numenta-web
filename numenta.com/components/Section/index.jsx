@@ -46,27 +46,18 @@ class Section extends React.Component {
     const {ga, history, sessionStorage} = global.window
     const {url} = this.props
     const open = !this.state.open
-    // const {router} = this.context
     const hasStorage = hasSessionStorage()
 
     // Handle dynamic url changes as sections are opened/closed.
     if (open) {
-      // manual
       history.pushState({}, '', prefixLink(url))
       ga('set', 'page', prefixLink(url))
       ga('send', 'pageview')
-      // auto
-      // router.push(url)
 
       // mark section state as Open in browser sessionStorage
       if (hasStorage) sessionStorage.setItem(url, 'open')
     }
     else {
-      // manual
-      // history.back()
-      // auto
-      // router.goBack()
-
       // mark section state as Closed in browser sessionStorage
       if (hasStorage) sessionStorage.removeItem(url)  // eslint-disable-line
     }
