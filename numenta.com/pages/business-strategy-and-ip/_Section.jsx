@@ -173,7 +173,7 @@ const SectionBusiness = (props, {config}) => {
             For those who do not want to license our software but want to
             license our patents, we will offer a patent-only license. Our
             intention is to offer low-cost ways for partners to commercialize
-            this technology. We believe that a broad- based strategy is
+            this technology. We believe that a broad-based strategy is
             compelling for a technology that is likely to be widely deployed
             in time. Please contact us at {' '}
             <TextLink to={`mailto:${contact.email.sales}`}>
