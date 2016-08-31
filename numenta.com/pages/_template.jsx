@@ -62,7 +62,7 @@ class Template extends React.Component {
       {name: 'author', content: `${siteTitle}`},
       {name: 'description', content: title},
       {name: 'generator', content: `© ${siteHost} v${ver} ${now} Gatsby.js`},
-      {name: 'keywords', content: '@TODO,TODO,TODO'},
+      {name: 'keywords', content: title.split(' ').join(',')},
     ]
 
     if (process.env.NODE_ENV === 'production') {
