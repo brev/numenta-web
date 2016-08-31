@@ -3,6 +3,8 @@ import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unre
 import React from 'react'
 import url from 'url'
 
+import {triggerGAnalyticsEvent} from '../../utils/client'
+
 import styles from './index.css'
 
 
@@ -28,12 +30,14 @@ class Markdown extends React.Component {
     //  app mode - also handling staging prefixLinks.
     catchLinks(this._markdown, (href) => {
       const target = url.parse(href)
+      const newHref = prefixLink(href)
       if (
         !target.host &&
         !target.hash &&
         target.pathname.match(/^\/assets\//)
       ) {
-        location.href = prefixLink(href)  // go to external asset
+        triggerGAnalyticsEvent(newHref)
+        location.href = newHref  // go to internal asset
       }
       else if (
         !target.host &&
@@ -43,7 +47,7 @@ class Markdown extends React.Component {
         location.hash = target.hash  // go to anchor on same page / browser
       }
       else {
-        router.push(prefixLink(href))  // same site react-routed single-page
+        router.push(newHref)  // same site react-routed single-page
       }
     })
   }
