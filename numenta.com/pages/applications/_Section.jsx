@@ -56,7 +56,7 @@ const SectionApplications = (props, {config}) => {
           </Paragraph>
           <List marker="disc">
             <ListItem>
-              Data flowing through time… the data can be in the form of
+              Data flowing through time: the data can be in the form of
               numbers, dates, text, or GPS points
             </ListItem>
             <ListItem>
