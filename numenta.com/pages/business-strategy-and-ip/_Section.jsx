@@ -94,7 +94,7 @@ const SectionBusiness = (props, {config}) => {
             <TextLink to={links.in.papers}>publish our work</TextLink> {' '}
             in peer-reviewed journals and submit pre-publication manuscripts
             to arXiv. We also speak at a variety of forums, such as machine
-            learning, data science, neuroscience, and application specific
+            learning, data science, neuroscience, and application-specific
             events. Other than confidential information relating to partner
             relationships, products or data, we work as much in the open as
             possible.
