@@ -12,7 +12,7 @@ import platform from 'platform'
 import React from 'react'
 
 import {getBrowserWidth} from '../../utils/client'
-import {getModalAspect} from '../../utils/shared'
+import {getModalWidth} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
 import Button from '../../components/Button'
@@ -104,6 +104,7 @@ class HtmStudioPage extends React.Component {
     const {links} = config
     const {pages} = route
     const {os} = platform
+    const modalWidth = getModalWidth(getBrowserWidth(), {copy: true})
     const warningClasses = [styles.row, styles.error]
     const family = camelCase(os.family).toLowerCase()
     const downloadLink = ((family && family.match(/win/)) ?
@@ -133,21 +134,24 @@ class HtmStudioPage extends React.Component {
     )
     let termsModal = null
 
-    modalStyles.content.width = getModalAspect(getBrowserWidth() - 100) - 100
+    modalStyles.content.width = modalWidth
+
     termsModal = (
       <Modal
         isOpen={terms}
         onRequestClose={() => this._toggleTerms()}
         style={modalStyles}
       >
-        <SubTitle>{Terms.title}</SubTitle>
-        <Markdown>
-          <div dangerouslySetInnerHTML={{__html: Terms.body}} />
-        </Markdown>
-        <div className={styles.close}>
-          <Button onClick={() => this._toggleTerms()}>
-            Close
-          </Button>
+        <div className={styles.modal}>
+          <Markdown>
+            <SubTitle>{Terms.title}</SubTitle>
+            <div dangerouslySetInnerHTML={{__html: Terms.body}} />
+            <div className={styles.close}>
+              <Button onClick={() => this._toggleTerms()}>
+                Close
+              </Button>
+            </div>
+          </Markdown>
         </div>
       </Modal>
     )

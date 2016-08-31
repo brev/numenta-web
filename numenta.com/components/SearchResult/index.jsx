@@ -4,7 +4,7 @@ import Modal from 'react-modal'
 import React from 'react'
 
 import {getBrowserWidth} from '../../utils/client'
-import {getModalAspect} from '../../utils/shared'
+import {getModalWidth} from '../../utils/shared'
 
 import ListItem from '../ListItem'
 import ListOrder from '../ListOrder'
@@ -27,11 +27,13 @@ const filterText = (text) => unescape(text)
  *
  */
 const SearchResult = ({onClose, onOpen, query, results}) => {
-  const radius = 45
   const isOpen = (query.length > 0)
+  const radius = 45
+  const modalWidth = getModalWidth(getBrowserWidth(), {copy: true})
   let items = (
     <ListItem>No search results found.</ListItem>
   )
+
   if (isOpen && results && (results.length > 0)) {
     items = results.map(({path, text, title}) => {
       const matcher = new RegExp(
@@ -76,7 +78,7 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
     })
   }
 
-  modalStyles.content.width = getModalAspect(getBrowserWidth() - 100) - 100
+  modalStyles.content.width = modalWidth
 
   return (
     <Modal

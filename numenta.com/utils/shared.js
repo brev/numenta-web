@@ -60,15 +60,22 @@ export function getEventTimeDisplay(when) {
 /**
  *
  */
-export function getModalAspect(width) {
-  const pad = 20
+export function getModalWidth(width, options) {
+  const copy = (options && 'copy' in options) ? options.copy : false
+  const pad = (options && 'pad' in options) ? options.pad : 120
   let long
 
-  if (width >= (1280 - pad)) long = 1024
-  else if (width >= (1024 - pad)) long = 720
-  else if (width >= (720 - pad)) long = 640
-  else long = (480 - pad)
+  if (width > 1280) long = 1280
+  else if (width > 1024) long = 1024
+  else if (width > 720) long = 720
+  else if (width > 640) long = 640
+  else long = 480
 
+  long -= pad
+
+  if (copy && (long > 640)) long = 640
+
+  console.log(width, copy, long)
   return long
 }
 

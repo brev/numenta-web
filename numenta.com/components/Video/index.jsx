@@ -3,7 +3,7 @@ import React from 'react'
 import YouTube from 'react-youtube'
 
 import {getBrowserWidth} from '../../utils/client'
-import {getModalAspect} from '../../utils/shared'
+import {getModalWidth} from '../../utils/shared'
 import Image from '../Image'
 
 import styles from './index.css'
@@ -45,10 +45,10 @@ class Video extends React.Component {
     const {image, respond, time, title, type, videoId} = this.props
     const {open} = this.state
     const isOpen = open === true
-    const width = getModalAspect(getBrowserWidth())
+    const modalWidth = getModalWidth(getBrowserWidth())
     const playerOptions = {
-      width: width.toString(),
-      height: (width * (360 / 640)).toString(),  // ~640x360
+      width: modalWidth.toString(),
+      height: (modalWidth * (360 / 640)).toString(),  // ~640x360
       playerVars: {autoplay: 1},
     }
     const alternate = `${title} ${type} video screenshot`
