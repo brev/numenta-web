@@ -1,5 +1,6 @@
 import {createSitemap} from 'sitemap'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
 import {ncp} from 'ncp'
@@ -37,6 +38,7 @@ export function modifyWebpackConfig(webpack, env) {
 
   // dev source maps
   if (env === 'develop') {
+    console.log(env, 'Enabling dev sourcemaps...')
     webpack.merge({devtool: 'source-map'})
   }
 
@@ -76,6 +78,14 @@ export function modifyWebpackConfig(webpack, env) {
     test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
     loaders: ['file-loader'],
   })
+
+  // favicons-webpack-plugin
+  if (env !== 'develop') {
+    console.log(env, 'Auto-generating Icons...')
+    webpack.merge({
+      plugins: [new FaviconsPlugin('static/assets/icons/mark.png')],
+    })
+  }
 
   // webpack path: static asset build + config:linkPrefix (gh-pages, etc)
   if (env !== 'develop') {
@@ -136,7 +146,6 @@ export function postBuild(pages, callback) {
           dataSkip.indexOf(key) !== -1
         ))
         .map((key) => data[key])
-
       if ('event' in data) {
         details.push(
           Object
@@ -148,7 +157,6 @@ export function postBuild(pages, callback) {
             ))
             .join(' ')
         )
-
         if ('where' in data.event) {
           details.push(
             Object
@@ -161,7 +169,6 @@ export function postBuild(pages, callback) {
           )
         }
       }
-
       const text = [title, content, details.join(' ')].join(' ')
       return {path, text, title}
     })
