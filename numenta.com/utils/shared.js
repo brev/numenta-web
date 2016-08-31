@@ -75,7 +75,6 @@ export function getModalWidth(width, options) {
 
   if (copy && (long > 640)) long = 640
 
-  console.log(width, copy, long)
   return long
 }
 
