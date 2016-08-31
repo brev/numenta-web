@@ -124,7 +124,7 @@ const SectionPapers = (props, {config, route}) => {
             </ListItem>
             <ListItem>
               <TextLink to={links.in.bami}>
-                Biological and Machine Intelligence (BaMI)
+                Biological and Machine Intelligence (BAMI)
               </TextLink>
               <Spacer />
               This living book (Biological And Machine Intelligence) documents

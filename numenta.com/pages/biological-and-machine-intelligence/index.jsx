@@ -150,7 +150,7 @@ const BamiPage = (props, {config}) => {
               @unpublished&#123;Hawkins-et-al-2016-Book,
                 <br />
                 &nbsp;&nbsp;
-                title=&#123;Biological and Machine Intelligence (BaMI)&#125;,
+                title=&#123;Biological and Machine Intelligence (BAMI)&#125;,
                 <br />
                 &nbsp;&nbsp;
                 author=&#123;Hawkins, J. and Ahmad, S. and Purdy, S. and Lavin, A.&#125;,
