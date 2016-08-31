@@ -1,6 +1,3 @@
 .tableRow {
-  composes: db from 'tachyons';
-  composes: dtc-ns from 'tachyons';
-  composes: w-100 from 'tachyons';
-  composes: w-auto-ns from 'tachyons';
+  /* */
 }

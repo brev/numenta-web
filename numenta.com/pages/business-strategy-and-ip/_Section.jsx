@@ -190,52 +190,54 @@ const SectionBusiness = (props, {config}) => {
       </SubTitle>
       <div className={styles.columns}>
         <div className={styles.content}>
-          <Table border={true}>
-            <TableHead>
-              <TableRow>
-                <TableTitle />
-                <TableTitle colSpan={3}>
-                  Software (includes IP)
-                </TableTitle>
-                <TableTitle>
-                  Patents Only
-                </TableTitle>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              <TableRow>
-                <TableCell>
-                  <Strong>
-                    Scientists, Researchers, or any Non-commercial use
-                  </Strong>
-                </TableCell>
-                <TableCell colSpan={3}>
-                  AGPLv3 or trial license (both no cost)
-                </TableCell>
-                <TableCell>
-                  Non-assert statement for non-commercial purposes
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>
-                  <Strong>Commercial use</Strong>
-                </TableCell>
-                <TableCell>
-                  Use internally only: AGPLv3 (no cost)
-                </TableCell>
-                <TableCell>
-                  Able to offer to others under the terms of the AGPLv3,
-                  including making source code available: AGPLv3 (no cost)
-                </TableCell>
-                <TableCell>
-                  Prefer to keep code proprietary: Commercial license (fee)
-                </TableCell>
-                <TableCell>
-                  Patent license (under development – fee TBD)
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <div className={styles.licenses}>
+            <Table border={true}>
+              <TableHead>
+                <TableRow>
+                  <TableTitle />
+                  <TableTitle colSpan={3}>
+                    Software (includes IP)
+                  </TableTitle>
+                  <TableTitle>
+                    Patents Only
+                  </TableTitle>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                <TableRow>
+                  <TableCell>
+                    <Strong>
+                      Scientists, Researchers, or any Non-commercial use
+                    </Strong>
+                  </TableCell>
+                  <TableCell colSpan={3}>
+                    AGPLv3 or trial license (both no cost)
+                  </TableCell>
+                  <TableCell>
+                    Non-assert statement for non-commercial purposes
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <Strong>Commercial use</Strong>
+                  </TableCell>
+                  <TableCell>
+                    Use internally only: AGPLv3 (no cost)
+                  </TableCell>
+                  <TableCell>
+                    Able to offer to others under the terms of the AGPLv3,
+                    including making source code available: AGPLv3 (no cost)
+                  </TableCell>
+                  <TableCell>
+                    Prefer to keep code proprietary: Commercial license (fee)
+                  </TableCell>
+                  <TableCell>
+                    Patent license (under development – fee TBD)
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
         </div>
       </div>
 

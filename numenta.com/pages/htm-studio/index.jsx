@@ -120,7 +120,10 @@ class HtmStudioPage extends React.Component {
           {data.title}
         </Strong>
         <Markdown>
-          <div dangerouslySetInnerHTML={{__html: data.body}} />
+          <div
+            className={styles.faqItem}
+            dangerouslySetInnerHTML={{__html: data.body}}
+          />
         </Markdown>
       </div>
     ))
