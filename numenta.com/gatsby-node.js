@@ -83,7 +83,25 @@ export function modifyWebpackConfig(webpack, env) {
   if (env !== 'develop') {
     console.log(env, 'Auto-generating Icons...')
     webpack.merge({
-      plugins: [new FaviconsPlugin('static/assets/icons/mark.png')],
+      plugins: [new FaviconsPlugin({
+        background: '#fff',
+        emitStats: false,
+        inject: false,
+        logo: 'components/LogoMark/images/mark.png',
+        persistentCache: true,
+        prefix: '',
+        title: config.siteHost,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: true,
+          favicons: true,
+          firefox: true,
+          windows: true,
+          yandex: true,
+        },
+      })],
     })
   }
 

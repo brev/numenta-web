@@ -1,3 +1,5 @@
+import favicons from 'favicons/config/html'
+import {flatten, keys, mapValues, values} from 'lodash'
 import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -48,13 +50,11 @@ class Template extends React.Component {
     const title = `${siteTitle} — ${description}`
     const titleForm = `%s | ${siteHost}`
     const ver = getVersion()
+    const icons = flatten(values(mapValues(favicons, (value) => keys(value))))
 
     // react-helmet / head
     const attrs = {lang, amp: undefined}
-    const links = [{
-      rel: 'shortcut icon',
-      href: prefixLink(stamp('/assets/icons/favicon.ico')),
-    }]
+    const links = []
     const meta = [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
@@ -65,9 +65,25 @@ class Template extends React.Component {
       {name: 'keywords', content: title.split(' ').join(',')},
     ]
 
+    // production stylesheet bundle
     if (process.env.NODE_ENV === 'production') {
       links.push({rel: 'stylesheet', href: prefixLink(stamp('/styles.css'))})
     }
+
+    // push auto-generated favicons into react-helmet header link and meta
+    icons.forEach((icon) => {
+      const type = icon.match(/^(\w+)\[/).pop()
+      const target = (type === 'link') ? links : meta
+      const details = {}
+      icon.match(/\[.+?\]/g)
+        .forEach((detail) => {
+          const line = detail.replace(/[\[\]]/g, '')
+          const [key, value] = line.split(/\$?=/)
+          const clean = value.replace(/'/g, '')
+          details[key] = clean
+        })
+      target.push(details)
+    })
 
     return (
       <Layout>
