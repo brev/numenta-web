@@ -89,7 +89,7 @@ export function modifyWebpackConfig(webpack, env) {
         inject: false,
         logo: 'components/LogoMark/images/mark.png',
         persistentCache: true,
-        prefix: '',
+        prefix: '/',
         title: config.siteHost,
         icons: {
           android: true,

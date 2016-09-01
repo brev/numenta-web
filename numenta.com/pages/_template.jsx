@@ -80,7 +80,7 @@ class Template extends React.Component {
           const line = detail.replace(/[\[\]]/g, '')
           const [key, value] = line.split(/\$?=/)
           const clean = value.replace(/'/g, '')
-          details[key] = prefixLink(clean)
+          details[key] = prefixLink(`/${clean}`)
         })
       target.push(details)
     })
