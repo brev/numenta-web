@@ -44,17 +44,10 @@ const SectionBusiness = (props, {config}) => {
         </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
-            Numenta believes that the coming era of machine intelligence
-            will be based on biological principles. Our mission is to lead the
-            emerging field of machine intelligence by understanding the
-            neocortex and by building technology that reflects that
-            understanding. To serve this mission, we strive both to create an
-            active research community as well as to enable strong commercial
-            opportunities.
-          </Paragraph>
-          <Paragraph>
-            In creating a business strategy and our approach to intellectual
-            property, we follow these general principles:
+            Numenta’s business strategy and approach to intellectual property
+            (IP) is to create an active research community as well as to enable
+            strong commercial opportunities. To that end, we follow these
+            general principles:
           </Paragraph>
           <ListOrder marker="decimal">
             <ListItem>
