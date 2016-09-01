@@ -80,7 +80,7 @@ export function modifyWebpackConfig(webpack, env) {
   })
 
   // favicons-webpack-plugin
-  if (env !== 'develop') {
+  if (env === 'build-html') {
     console.log(env, 'Auto-generating Icons...')
     webpack.merge({
       plugins: [new FaviconsPlugin({
