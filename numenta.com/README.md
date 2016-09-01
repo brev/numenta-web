@@ -228,6 +228,7 @@ Tasks organized by priority below. This is a temporary section, these should be
 moved into GitHub Issues ASAP.
 
 * Migrate: `healthchecks/` `conf/` ... `out/`
+* SHOW search after index loads, X clear button? no server-side search actually allowed!
 * search on dev? build index. copy public/_searchIndex.json to pages/ after dev `npm run build`
 * document the code, build docs
 * put copyright notice at top of source files
