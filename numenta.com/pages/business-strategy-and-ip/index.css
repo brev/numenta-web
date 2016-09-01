@@ -15,7 +15,7 @@
 
 .licenses {
   composes: mb4 from 'tachyons';
-  composes: overflow-x-auto from 'tachyons';
+  composes: overflow-x-scroll from 'tachyons';
   composes: overflow-x-visible-ns from 'tachyons';
 }
 .licenses table {

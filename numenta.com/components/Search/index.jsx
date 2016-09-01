@@ -40,7 +40,8 @@ class Search extends React.Component {
       .get(prefixLink('/_searchIndex.json'))  // load index
       .end((error, {body}) => {
         if (error) throw new Error(error)
-        return body.forEach((doc) => {
+        const results = (typeof body === 'string') ? JSON.parse(body) : body
+        return results.forEach((doc) => {
           const {path, text, title} = doc
           this._documents[path] = {text, title}  // save
           this._index.add(doc)  // index
