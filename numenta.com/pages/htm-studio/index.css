@@ -98,6 +98,6 @@
   margin-bottom: -0.75rem;
 }
 .faqItem {
-  composes: left--1 from 'tachyons';
-  composes: relative from 'tachyons';
+  /*composes: left--1 from 'tachyons';*/
+  /*composes: relative from 'tachyons';*/
 }
