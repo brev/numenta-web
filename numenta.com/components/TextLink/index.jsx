@@ -26,11 +26,15 @@ const TextLink = ({children, onClick, target, to}) => {
   }
   let Node = Link
 
-  if (to && (to.match(/^.+:/) || to.match(/^\/assets\//))) {
+  if (to && (
+    to.match(/^.+:/) || to.match(/^\/assets\//) || to.match(/\.pdf$/)
+  )) {
     // external link (browser location)
     Node = 'a'
     if (to.match(/^.*:/)) attrs.href = to  // = mailto:etc@blah.com
-    if (to.match(/^\/assets\//)) attrs.href = prefixLink(to)  // = /assets/etc/
+    if (to.match(/^\/assets\//) || to.match(/\.pdf$/)) {
+      attrs.href = prefixLink(to)  // = /assets/etc/
+    }
     delete attrs.to
   }
   else if (to === '/') {

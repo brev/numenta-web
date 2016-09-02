@@ -196,14 +196,15 @@ npm run build
 
 ## Link Types and Examples
 
-| Host     | Type     | .jsx Source   | .md Source     |
-| -------- | -------- | ------------- | -------------- |
-| Internal | Path     | [View][link1] | [View][link7]  |
-| Internal | Anchor   | [View][link2] | [View][link8]  |
-| Internal | Asset    | [View][link3] | [View][link9]  |
-| External | Path     | [View][link4] | [View][link10] |
-| External | Anchor   | [View][link5] | [View][link11] |
-| External | Protocol | [View][link6] | [View][link12] |
+| Host     | Type              | .jsx Source    | .md Source     |
+| -------- | ----------------- | -------------- | -------------- |
+| Internal | Path              | [View][link1]  | [View][link7]  |
+| Internal | Anchor            | [View][link2]  | [View][link8]  |
+| Internal | Asset (/assets/*) | [View][link3]  | [View][link9]  |
+| Internal | Asset (*/.pdf)    | N/A            | [View][link13] |
+| External | Path              | [View][link4]  | [View][link10] |
+| External | Anchor            | [View][link5]  | [View][link11] |
+| External | Protocol          | [View][link6]  | [View][link12] |
 
 [link1]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/open-source-community/_Section.jsx#L58
 [link2]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L178
@@ -217,6 +218,7 @@ npm run build
 [link10]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/09/17/increasing-research-transparency.md
 [link11]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2013/02/11/super-bowl-neuroscience.md
 [link12]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md#numenta-anomaly-benchmark-nab-competition
+[link13]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/03/30/numenta-at-computational-and-systems-neuroscience-conference.md
 
 **Note:** *Make sure Google Analtyics is tracking `pages` and `events` for
   the above.*
