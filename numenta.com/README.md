@@ -1,28 +1,44 @@
 # Numenta Company Website (https://numenta.com)
 
-Content, Source Code, and Static Generator Tooling.
+Source code, generator and tooling, and content.
 
 
 ## Environment
 
-* ECMAscript 6 (ES6 aka ES2015 aka New Javascript) and a bit of ES7
-  * Node 6 + Npm 3
-  * Transpiled with Babel to cross-browser ES5/3 (@TODO which?) for:
-    * Mobile & Tablet: Chrome, iOS Safari, Android
-    * Desktop: Chrome, Firefox, Safari, Internet Explorer
-  * Lint code checking by Babel ESLint
-* Gatsby static site generator, a wrapper around:
-  * Webpack module loader and static generator plugin
-  * React + JSX
-  * Composable CSS-Modules component library: Tachyons
-    * Icons: react-icons
+* Javascript ES6
+  * [Node 6](https://nodejs.org) + Npm 3
+  * Transpiled with [Babel](https://babeljs.io/) to cross-browser Javascript
+  * Lint code checking by Babel [ESLint](http://eslint.org/)
+* [Gatsby](https://github.com/gatsbyjs/gatsby) static site generator, a wrapper
+  around:
+  * [Webpack](https://webpack.github.io/) module loader and
+    [Static Generator Plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
+  * [React](https://facebook.github.io/react/) + JSX view components
+  * [Tachyons](http://tachyons.io/) style library, composed via
+    [CSS Modules](https://github.com/css-modules/css-modules)
+  * CSS Lint by [stylelint](https://github.com/stylelint/stylelint)
+  * [React Icon Library](http://gorangajic.github.io/react-icons/)
+
+### Browser and Platform Support
+
+|             | Chrome | Firefox | Safari | Edge | IE/11 | IE/10 | Android |
+| ----------- |:------:|:-------:|:------:|:----:|:-----:|:-----:|:-------:|
+| **Mac/OSX** |    ✓   |    ✓    |    ✓   |      |       |       |         |
+| **iOS**     |        |         |    ✓   |      |       |       |         |
+| **Android** |    ✓   |         |        |      |       |       |    ✓    |
+| **Win/10**  |    ✓   |    ✓    |        |   ✓  |       |       |         |
+| **Win/8**   |        |         |        |      |   ✓   |       |         |
+| **Win/7**   |        |         |        |      |       |   ✓   |         |
+| **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
+
+**Note:** *All versions are "Latest Stable" unless otherwise noted.*
 
 
 ## Code
 
 ### Packages
 
-* Bump version number before each release: `npm version patch -m "%s"`  
+* Bump version number before each release: `npm version patch`
 * Keep packages as up-to-date as possible
 * Update and test 1 package at a time
 
@@ -100,10 +116,7 @@ cd numenta-web/numenta.com
 npm install
 ```
 
-### Builds
-
-@TODO better define remotes and branches below (upstream/origin,
-  master/gh-pages, etc).
+### Build
 
 Unless otherwise stated below, the `config.toml` file should have the default
 empty `linkPrefix` setting:
@@ -115,15 +128,24 @@ linkPrefix = ""
 
 #### Development
 
+##### Dynamic
+
 ```shell
 npm run dev
+# Visit http://localhost:8000
+```
+
+##### Static
+
+```shell
+npm run serve
 # Visit http://localhost:8000
 ```
 
 #### Integration
 
 Update Gatsby config for GitHub Pages (gh-pages) integration targets. Modify
-`config.toml` and set: (not for commit, would break dev/prod.)
+`config.toml` and set (but DO NOT commit):
 
 ```shell
 # config.toml
@@ -165,7 +187,8 @@ npm run deploy:gh-pages -- --remote upstream
 
 ```shell
 npm run build
-# @TODO something. Push to certain branch (`upstream/master`?).
+# Push output to `master` branch of `NumentaCorp/numenta.com:out/` repo-path.
+# Wait a few minutes for build to happen.
 # Visit https://staging.numenta.com
 ```
 
@@ -173,25 +196,10 @@ npm run build
 
 ```shell
 npm run build
-# @TODO something. Push to certain branch (like `upstream/production` etc).
+# Push output to `production` branch of `NumentaCorp/numenta.com:out/` repopath.
+# Wait a few minutes for build to happen.
 # Visit https://numenta.com
 ```
-
-
-
-## Browser and Platform Support
-
-|             | Chrome | Firefox | Safari | Edge | IE/11 | IE/10 | Android |
-| ----------- |:------:|:-------:|:------:|:----:|:-----:|:-----:|:-------:|
-| **Mac/OSX** |    ✓   |    ✓    |    ✓   |      |       |       |         |
-| **iOS**     |        |         |    ✓   |      |       |       |         |
-| **Android** |    ✓   |         |        |      |       |       |    ✓    |
-| **Win/10**  |    ✓   |    ✓    |        |   ✓  |       |       |         |
-| **Win/8**   |        |         |        |      |   ✓   |       |         |
-| **Win/7**   |        |         |        |      |       |   ✓   |         |
-| **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
-
-**Note:** *All versions are "Latest Stable" unless otherwise noted.*
 
 
 ## Link Types and Examples
@@ -226,27 +234,22 @@ npm run build
 
 ## @TODO
 
-Tasks organized by priority below. This is a temporary section, these should be
-moved into GitHub Issues ASAP.
-
-* Migrate: `healthchecks/` `conf/` ... `out/`
 * SHOW search after index loads, X clear button? no server-side search actually allowed!
 * search on dev? build index. copy public/_searchIndex.json to pages/ after dev `npm run build`
 * document the code, build docs
 * put copyright notice at top of source files
 * markdown content image no hover effect
-* document this file
-  * add links to stuff
-  * explain react `contexts` available: **config**, etc.
-  * watch out for jsx spaces {' '}
-  * JSX file order (import external, import internal lib, intenral components,
-      image/css)
-  * yaml headmatter, quotes, escaping, etc
-  * special custom npm modules: tachyons,etc. - howto, updating, etc.
-  * Static assets don't load from /static/assets on dev, but do on staging
-    and prod after static build
-  * markdown links - no bare internals i.e. http://numenta.com/htm-studio/ -
-    need to wrap as square brackets link so it'll get prefixed correctly to Work
-    on staging.
-  * `npm run dev -- --host 192.168.1.112`
-  * markdown links like \[this]("spaces in filename")
+
+* explain react `contexts` available: **config**, etc.
+* watch out for jsx spaces {' '}
+* JSX file order (import external, import internal lib, intenral components,
+    image/css)
+* yaml headmatter, quotes, escaping, etc
+* special custom npm modules: tachyons,etc. - howto, updating, etc.
+* Static assets don't load from /static/assets on dev, but do on staging
+  and prod after static build
+* markdown links - no bare internals i.e. http://numenta.com/htm-studio/ -
+  need to wrap as square brackets link so it'll get prefixed correctly to Work
+  on staging.
+* `npm run dev -- --host 192.168.1.112`
+* markdown links like \[this]("spaces in filename")
