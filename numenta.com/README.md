@@ -124,6 +124,10 @@ page transitions, a full client-side text search system, etc.
 These instructions assume latest Mac OS/X with [homebrew](http://brew.sh/)
 package manager installed. Other platforms should come up just as easily.
 
+**If you want to contribute:** Please make your own fork of our repo, and
+work from branches in your own fork. Pull Requests will be between your fork,
+and our main repo. This will keep our main repo clean of working branches.
+
 ```shell
 brew install git node
 git clone git@github.com:numenta/numenta-web.git

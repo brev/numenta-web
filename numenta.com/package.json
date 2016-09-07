@@ -70,7 +70,7 @@
     "react-modal": "1.4.0",
     "react-router": "2.7.0",
     "react-tap-event-plugin": "1.0.0",
-    "react-youtube": "7.0.1",
+    "react-youtube": "7.1.1",
     "sitemap": "1.8.1",
     "superagent": "2.2.0",
     "tachyons": "github:numenta/tachyons#d8e73dec47cb1c868bde3e4e4d5fd60fa5483fe2",
