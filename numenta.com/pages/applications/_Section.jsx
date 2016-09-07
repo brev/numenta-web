@@ -86,7 +86,7 @@ const SectionApplications = (props, {config}) => {
               tracking a fleet’s movements on a truck by truck basis
             </ListItem>
             <ListItem>
-              Understanding if human behavior it normal or abnormal on a
+              Understanding if human behavior is normal or abnormal on a
               securities trading floor
             </ListItem>
             <ListItem>

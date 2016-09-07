@@ -347,3 +347,5 @@ Code standards are handled by their respective linters and lint configs.
 * put copyright notice at top of source files
 * markdown content image no hover effect
 * special custom npm modules: tachyons,etc. - howto, updating, etc.
+* describe main sections, _mainSections.jsx, and each _section.jsx
+* describe pages, components, sections, etc, etc.
