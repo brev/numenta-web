@@ -39,7 +39,7 @@
   top: -0.6rem;
 }
 
-.image {
+.media {
   composes: tc from 'tachyons';
 }
 

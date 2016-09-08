@@ -4,7 +4,7 @@ import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
 import React from 'react'
 
-import {getEventTimeDisplay} from '../utils/shared'
+import {getEventTimeDisplay, getVideoIdFromUrl} from '../utils/shared'
 
 import Avatar from '../components/Avatar'
 import IconMarker from '../components/IconMarker'
@@ -20,6 +20,7 @@ import TableCell from '../components/TableCell'
 import TableRow from '../components/TableRow'
 import TextLink from '../components/TextLink'
 import Time from '../components/Time'
+import Video from '../components/Video'
 
 import styles from './md.css'
 
@@ -37,7 +38,7 @@ const MarkdownWrapper = ({route}, {config}) => {
   const occur = datetime.format(config.moments.human)
   let key = file.dir.split('/')[0]
   const url = `/${key}/`
-  let author, back, date, event, photo, type
+  let author, back, date, event, media, type
 
   if (key === 'careers-team-and-contact') {
     key = 'careers'
@@ -173,8 +174,23 @@ const MarkdownWrapper = ({route}, {config}) => {
   }
 
   if (data.image && !data.hideImage) {
-    photo = (
-      <div className={styles.image}>
+    if (data.video) {
+      // media video
+      media = (
+        <Video
+          border={true}
+          image={`${path}${data.image}`}
+          respond="mw"
+          shadow={true}
+          title={data.title}
+          type="youtube"
+          videoId={getVideoIdFromUrl(data.video)}
+        />
+      )
+    }
+    else {
+      // media image
+      media = (
         <Image
           alt={data.title}
           border={true}
@@ -182,7 +198,11 @@ const MarkdownWrapper = ({route}, {config}) => {
           shadow={true}
           src={`${path}${data.image}`}
         />
-      </div>
+      )
+    }
+
+    media = (
+      <div className={styles.media}>{media}</div>
     )
   }
 
@@ -196,7 +216,7 @@ const MarkdownWrapper = ({route}, {config}) => {
         title={data.title}
       >
         {author}
-        {photo}
+        {media}
         {event}
         <div className={styles.content}>
           <Markdown>

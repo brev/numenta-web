@@ -93,6 +93,15 @@ export function getVersion() {
 }
 
 /**
+ * Parse Video ID from URL, currently YouTube format http://youtu.be/VIDEO_ID
+ * @param {String} url - Video URL to get Video ID from, as http://youtu.be/ID
+ * @returns {String} - Video ID as parsed from URL
+ */
+export function getVideoIdFromUrl(url) {
+  return url.match(/.*\/(.*)$/).pop()
+}
+
+/**
  *
  */
 export function sortDateAscend(a, b) {

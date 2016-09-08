@@ -15,7 +15,7 @@ class Video extends React.Component {
   static propTypes = {
     image: React.PropTypes.string.isRequired,
     respond: React.PropTypes.oneOf(['mw', 'w']),
-    time: React.PropTypes.string.isRequired,
+    time: React.PropTypes.string,
     title: React.PropTypes.string.isRequired,
     type: React.PropTypes.oneOf(['youtube']).isRequired,
     videoId: React.PropTypes.string.isRequired,
@@ -51,6 +51,7 @@ class Video extends React.Component {
       height: (modalWidth * (360 / 640)).toString(),  // ~640x360
       playerVars: {autoplay: 1},
     }
+    const titleLine = time ? `${title} (${time})` : title
     const alternate = `${title} ${type} video screenshot`
     let player
 
@@ -68,7 +69,7 @@ class Video extends React.Component {
           src={image}
         />
         <div className={styles.caption}>
-          Video: {title} ({time})
+          Video: {titleLine}
         </div>
         <Modal
           isOpen={open}
