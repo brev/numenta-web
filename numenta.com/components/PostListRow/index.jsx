@@ -1,8 +1,11 @@
 import React from 'react'
 
+import {getVideoIdFromUrl} from '../../utils/shared'
+
 import Image from '../Image'
 import ImageLink from '../ImageLink'
 import PostListItem from '../PostListItem'
+import Video from '../Video'
 
 import styles from './index.css'
 
@@ -13,29 +16,41 @@ import styles from './index.css'
 const PostListRow = ({post}) => {
   const {data, path} = post
   const target = (data.type === 'link') ? data.link : path
+  let media = (  // media image (default)
+    <ImageLink to={target}>
+      <Image
+        alt={data.title}
+        border={true}
+        respond="mw"
+        shadow={true}
+        src={`${path}${data.image}`}
+      />
+    </ImageLink>
+  )
+
+  if (data.video) {
+    // media video
+    media = (
+      <Video
+        border={true}
+        image={`${path}${data.image}`}
+        respond="mw"
+        shadow={true}
+        title={data.title}
+        type="youtube"
+        videoId={getVideoIdFromUrl(data.video)}
+      />
+    )
+  }
 
   return (
     <article className={styles.row}>
       <div className={styles.columns}>
         <div className={styles.aside}>
-
-          <div className={styles.image}>
-            <ImageLink to={target}>
-              <Image
-                alt={data.title}
-                border={true}
-                respond="mw"
-                shadow={true}
-                src={`${path}${data.image}`}
-              />
-            </ImageLink>
-          </div>
-
+          {media}
         </div>
         <div className={styles.content}>
-
           <PostListItem post={post} />
-
         </div>
       </div>
     </article>

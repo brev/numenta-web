@@ -6,7 +6,7 @@
 }
 
 .paper {
-  composes: b--black-20 from 'tachyons';
+  composes: b--black-10 from 'tachyons';
   composes: bt from 'tachyons';
   composes: pb1 from 'tachyons';
   composes: pt3 from 'tachyons';
