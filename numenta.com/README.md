@@ -11,8 +11,10 @@ Numenta's educational and HTM [Community](http://numenta.org) website.
 
 ```
 Numenta.com website source code. Copyright © 2016 Numenta.
+
 Full license in LICENSE.txt or at <https://www.gnu.org/licenses/agpl.html>.
 Contact Numenta at <http://numenta.com/careers-team-and-contact/#contact>.
+
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU Affero General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option) any
