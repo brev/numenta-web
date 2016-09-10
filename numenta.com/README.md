@@ -7,38 +7,6 @@ This company website is focused on our business and strategy, and is sibling to
 Numenta's educational and HTM [Community](http://numenta.org) website.
 
 
-## License
-
-```
-Numenta.com website source code. Copyright © 2016 Numenta.
-
-Full license in LICENSE.txt or at <https://www.gnu.org/licenses/agpl.html>.
-Contact Numenta at <http://numenta.com/careers-team-and-contact/#contact>.
-
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU Affero General Public License as published by the Free
-Software Foundation, either version 3 of the License, or (at your option) any
-later version. This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
-for more details. You should have received a copy of the GNU Affero General
-Public License along with this program. If not, see
-<https://www.gnu.org/licenses/agpl.html>.
-```
-
-
-## Contributing
-
-This project is open source, and
-[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
-welcome. Contributors, please sign and submit our
-[Contributor License](http://numenta.org/licenses/cl/).
-
-If you'd like to help, please make your own fork of this repo, and work from
-branches in your fork. Pull Requests should be between your fork, and our main
-repo. This will keep our main repo clean of working branches.
-
-
 ## Goals
 
 This site is an attempt to get back to the roots of a web page: *reading*.
@@ -62,6 +30,36 @@ clients will be augmented with the single-page app. This is accomplished with
 the magic of ["universal" or "isomorphic" javascript](http://isomorphic.net/):
 the exact same code is used to generate the static site on the server, and then
 is loaded on the client to continue the app live.
+
+
+## License
+
+```
+Numenta company website source code. Copyright © 2016 Numenta.
+Full details in LICENSE.txt, or contact us at <http://numenta.com>.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version. This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
+for more details. You should have received a copy of the GNU Affero General
+Public License along with this program. If not, see
+<https://www.gnu.org/licenses/agpl.html>.
+```
+
+
+## Contributing
+
+This project is open source, and
+[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
+welcome. Contributors, please sign and submit our
+[Contributor License](http://numenta.org/licenses/cl/).
+
+If you'd like to help, please make your own fork of this repo, and work from
+branches in your fork. Pull Requests should be between your fork, and our main
+repo. This will keep our main repo clean of working branches.
 
 
 ## Environments
