@@ -7,6 +7,36 @@ This company website is focused on our business and strategy, and is sibling to
 Numenta's educational and HTM [Community](http://numenta.org) website.
 
 
+## License
+
+```
+Numenta.com website source code. Copyright © 2016 Numenta.
+Full license in LICENSE.txt or at <https://www.gnu.org/licenses/agpl.html>.
+Contact Numenta at <http://numenta.com/careers-team-and-contact/#contact>.
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version. This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
+for more details. You should have received a copy of the GNU Affero General
+Public License along with this program. If not, see
+<https://www.gnu.org/licenses/agpl.html>.
+```
+
+
+## Contributing
+
+This project is open source, and
+[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
+welcome. Contributors, please sign and submit our
+[Contributor License](http://numenta.org/licenses/cl/).
+
+If you'd like to help, please make your own fork of this repo, and work from
+branches in your fork. Pull Requests should be between your fork, and our main
+repo. This will keep our main repo clean of working branches.
+
+
 ## Goals
 
 This site is an attempt to get back to the roots of a web page: *reading*.
@@ -124,9 +154,8 @@ page transitions, a full client-side text search system, etc.
 These instructions assume latest Mac OS/X with [homebrew](http://brew.sh/)
 package manager installed. Other platforms should come up just as easily.
 
-**If you want to contribute:** Please make your own fork of our repo, and
-work from branches in your own fork. Pull Requests will be between your fork,
-and our main repo. This will keep our main repo clean of working branches.
+(If you want to contribute to our project, please fork this repo, and work from
+branches in that fork.)
 
 ```shell
 brew install git node
@@ -279,6 +308,45 @@ Code standards are handled by their respective linters and lint configs.
   on staging servers, use markdown style instead:
   `[http://numenta.com/htm-studio/](/htm-studio/)`
 
+### Links and URLs
+
+#### URL Format
+
+* URLs should end with `/` (slash)
+* Examples of ideal URLs detailed below:
+  * `http://numenta.com/`
+  * `http://numenta.com/technology-overview/`
+  * etc..
+
+#### Possible Link Situations
+
+* Google Analytics should be tracking `pages` and `events` for all Situations
+  in the matrix below.
+
+| Host     | Type              | .jsx Source    | .md Source     |
+| -------- | ----------------- | -------------- | -------------- |
+| Internal | Path              | [View][link1]  | [View][link7]  |
+| Internal | Anchor            | [View][link2]  | [View][link8]  |
+| Internal | Asset (/assets/*) | [View][link3]  | [View][link9]  |
+| Internal | Asset (*/.pdf)    | N/A            | [View][link13] |
+| External | Path              | [View][link4]  | [View][link10] |
+| External | Anchor            | [View][link5]  | [View][link11] |
+| External | Protocol          | [View][link6]  | [View][link12] |
+
+[link1]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/open-source-community/_Section.jsx#L58
+[link2]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L178
+[link3]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L248
+[link4]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L207
+[link5]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L213
+[link6]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/partners/_Section.jsx#L48
+[link7]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md
+[link8]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/06/16/can-neuroscientists-understand-the-brain.md
+[link9]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/08/18/progress-at-numenta.md
+[link10]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/09/17/increasing-research-transparency.md
+[link11]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2013/02/11/super-bowl-neuroscience.md
+[link12]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md#numenta-anomaly-benchmark-nab-competition
+[link13]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/03/30/numenta-at-computational-and-systems-neuroscience-conference.md
+
 ### Packages
 
 * Bump version number with each changeset: `npm version patch`
@@ -310,41 +378,10 @@ Code standards are handled by their respective linters and lint configs.
   ```
 
 
-## Link Types
-
-| Host     | Type              | .jsx Source    | .md Source     |
-| -------- | ----------------- | -------------- | -------------- |
-| Internal | Path              | [View][link1]  | [View][link7]  |
-| Internal | Anchor            | [View][link2]  | [View][link8]  |
-| Internal | Asset (/assets/*) | [View][link3]  | [View][link9]  |
-| Internal | Asset (*/.pdf)    | N/A            | [View][link13] |
-| External | Path              | [View][link4]  | [View][link10] |
-| External | Anchor            | [View][link5]  | [View][link11] |
-| External | Protocol          | [View][link6]  | [View][link12] |
-
-[link1]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/open-source-community/_Section.jsx#L58
-[link2]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L178
-[link3]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L248
-[link4]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L207
-[link5]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/applications/_Section.jsx#L213
-[link6]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/partners/_Section.jsx#L48
-[link7]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md
-[link8]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/06/16/can-neuroscientists-understand-the-brain.md
-[link9]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/08/18/progress-at-numenta.md
-[link10]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2014/09/17/increasing-research-transparency.md
-[link11]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2013/02/11/super-bowl-neuroscience.md
-[link12]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md#numenta-anomaly-benchmark-nab-competition
-[link13]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/03/30/numenta-at-computational-and-systems-neuroscience-conference.md
-
-**Note:** *Make sure Google Analtyics is tracking `pages` and `events` for all
-  the above.*
-
-
 ## @TODO
 
 * SHOW search after index loads, X clear button? no server-side search actually allowed!
 * document the code, build docs
-* put copyright notice at top of source files
 * markdown content image no hover effect
 * special custom npm modules: tachyons,etc. - howto, updating, etc.
 * describe main sections, _mainSections.jsx, and each _section.jsx
