@@ -4,7 +4,8 @@ import React from 'react'
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
 import SectionApplications from './applications/_Section'
 import SectionBusiness from './business-strategy-and-ip/_Section'
-import SectionCareers from './careers-team-and-contact/_Section'
+import SectionCareers from './careers-and-team/_Section'
+import SectionContact from './contact/_Section'
 import SectionHome from './_Section'
 import SectionMission from './mission-and-history/_Section'
 import SectionOpensource from './open-source-community/_Section'
@@ -62,8 +63,13 @@ const mainSectionList = [
   },
   {
     component: <SectionCareers key="sectionCareers" />,
-    title: 'Careers, Team & Contact',
-    url: '/careers-team-and-contact/',
+    title: 'Careers & Team',
+    url: '/careers-and-team/',
+  },
+  {
+    component: <SectionContact key="sectionContact" />,
+    title: 'Contact',
+    url: '/contact/',
   },
 ]
 

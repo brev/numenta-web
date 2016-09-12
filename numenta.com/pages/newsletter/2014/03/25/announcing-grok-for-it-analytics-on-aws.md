@@ -51,10 +51,10 @@ options to make it easy to get started.  Grok is available here:
 
 > http://grokstream.com
 
-We also invite you to [provide your feedback](/careers-team-and-contact/). Be
-sure to send us details on anomalies that Grok found that you would otherwise
-not have seen!  And let us know about features you’d like to have us implement
-in order to make Grok more useful.
+We also invite you to [provide your feedback](/contact/). Be sure to send us
+details on anomalies that Grok found that you would otherwise not have seen!  
+And let us know about features you’d like to have us implement in order to make
+Grok more useful.
 
 To support our launch, we have upgraded our website and made a number of helpful
 [resources](http://grokstream.com) available.
