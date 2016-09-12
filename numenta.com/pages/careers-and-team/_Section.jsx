@@ -3,27 +3,11 @@ import React from 'react'
 import {sortDateDescend} from '../../utils/shared'
 
 import Anchor from '../../components/Anchor'
-import Button from '../../components/Button'
-import DefineItem from '../../components/DefineItem'
-import DefineList from '../../components/DefineList'
-import DefineTitle from '../../components/DefineTitle'
-import Form from '../../components/Form'
-import FormInput from '../../components/FormInput'
-import FormLabel from '../../components/FormLabel'
-import FormRow from '../../components/FormRow'
-import FormTextArea from '../../components/FormTextArea'
 import Image from '../../components/Image'
-import ImageLink from '../../components/ImageLink'
 import List from '../../components/List'
 import ListItem from '../../components/ListItem'
 import Paragraph from '../../components/Paragraph'
-import SocialMedia from '../../components/SocialMedia'
-import Strong from '../../components/Strong'
 import SubTitle from '../../components/SubTitle'
-import Table from '../../components/Table'
-import TableBody from '../../components/TableBody'
-import TableCell from '../../components/TableCell'
-import TableRow from '../../components/TableRow'
 import TextLink from '../../components/TextLink'
 
 import ImageCareers from './images/careers.png'
@@ -32,29 +16,16 @@ import ImageDonna from './images/team/donna-dubinsky.jpg'
 import ImageEd from './images/team/ed-colligan.jpg'
 import ImageHarry from './images/team/harry-saal.jpg'
 import ImageJeff from './images/team/jeff-hawkins.jpg'
-import ImageMap from './images/map.png'
 import ImageMike from './images/team/mike-farmwald.jpg'
 import ImageSubutai from './images/team/subutai-ahmad.jpg'
 import styles from './index.css'
-
-const fields = {  // wufoo ids
-  first: 'Field861',
-  last: 'Field862',
-  title: 'Field757',
-  company: 'Field114',
-  email: 'Field9',
-  phone: 'Field244',
-  content: 'Field858',
-  idstamp: 'idstamp',
-}
 
 
 /**
  *
  */
-const SectionCareers = (props, {config, route}) => {
+const SectionCareers = (props, {route}) => {
   const {pages} = route
-  const {contact, links} = config
   const posts = pages.filter(({file}) => (
     (file.path.match(/^.*\/careers\/.*\.md/))
   ))
@@ -71,7 +42,7 @@ const SectionCareers = (props, {config, route}) => {
       <Anchor name="careers" />
       <SubTitle>Careers</SubTitle>
       <div className={styles.columns}>
-        <div className={styles.asideCenter}>
+        <div className={styles.aside}>
           <Image
             alt="Numenta Office Interior"
             border={true}
@@ -110,7 +81,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Donna Dubinsky</SubTitle>
           <SubTitle level={5}>CEO & Co-Founder</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Donna Dubinsky"
                 border={true}
@@ -145,7 +116,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Jeff Hawkins</SubTitle>
           <SubTitle level={5}>Co-Founder</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Jeff Hawkins"
                 border={true}
@@ -182,7 +153,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Subutai Ahmad</SubTitle>
           <SubTitle level={5}>VP of Research</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Subutai Ahmad"
                 border={true}
@@ -218,7 +189,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Celeste Baranski</SubTitle>
           <SubTitle level={5}>VP of Engineering</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Celeste Baranski"
                 border={true}
@@ -257,7 +228,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Ed Colligan</SubTitle>
           <SubTitle level={5}>Former President & CEO, Palm, Inc.</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Ed Colligan"
                 border={true}
@@ -298,7 +269,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Donna Dubinsky</SubTitle>
           <SubTitle level={5}>CEO & Co-Founder</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Donna Dubinsky"
                 border={true}
@@ -333,7 +304,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Mike Farmwald</SubTitle>
           <SubTitle level={5}>General Partner, Skymoon Ventures</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Mike Farmwald"
                 border={true}
@@ -365,7 +336,7 @@ const SectionCareers = (props, {config, route}) => {
           <SubTitle level={4}>Jeff Hawkins</SubTitle>
           <SubTitle level={5}>Co-Founder</SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Jeff Hawkins"
                 border={true}
@@ -404,7 +375,7 @@ const SectionCareers = (props, {config, route}) => {
             Chairman, Retrotope, Inc.
           </SubTitle>
           <div className={styles.columns}>
-            <div className={styles.asideCenter}>
+            <div className={styles.aside}>
               <Image
                 alt="Harry Saal"
                 border={true}
@@ -441,202 +412,11 @@ const SectionCareers = (props, {config, route}) => {
 
         </ListItem>
       </List>
-
-      <Anchor name="contact" />
-      <SubTitle>Contact</SubTitle>
-      <div className={styles.columns}>
-        <div className={styles.content}>
-          <Paragraph>
-            Want to get in contact with us? Send us a message by filling out
-            this form or use the appropriate email.
-          </Paragraph>
-          <Form
-            action="https://numenta.wufoo.com/forms/kcp312j1iehcj2/#public"
-            name="form9"
-          >
-            <FormRow>
-              <FormLabel htmlFor={fields.first}>First Name</FormLabel>
-              <FormInput
-                name={fields.first}
-                stretch="medium"
-                type="text"
-                placeholder="Firstname"
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel htmlFor={fields.last}>Last Name</FormLabel>
-              <FormInput
-                name={fields.last}
-                type="text"
-                placeholder="Lastname"
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel htmlFor={fields.title}>Job Title</FormLabel>
-              <FormInput
-                name={fields.title}
-                placeholder="Role"
-                stretch="medium"
-                type="text"
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel htmlFor={fields.company}>Company</FormLabel>
-              <FormInput
-                name={fields.company}
-                placeholder="Company"
-                stretch="small"
-                type="text"
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel htmlFor={fields.email}>Email</FormLabel>
-              <FormInput
-                name={fields.email}
-                placeholder="name@company.com"
-                stretch="medium"
-                type="email"
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel htmlFor={fields.phone}>Phone</FormLabel>
-              <FormInput
-                name={fields.phone}
-                placeholder="+1-555-555-5555"
-                stretch="small"
-                type="tel"
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel htmlFor={fields.content}>How can we help?</FormLabel>
-              <FormTextArea
-                name={fields.content}
-                placeholder="Comment here."
-              />
-            </FormRow>
-            <FormRow>
-              <FormLabel>&nbsp;</FormLabel>
-              <Button theme="primary" type="submit">Send</Button>
-            </FormRow>
-            <FormInput
-              name={fields.idstamp}
-              type="hidden"
-              value="hwFr746QGPGzzbeOEbIcrXFmpScleWw61VTW0cdscY4="
-            />
-          </Form>
-        </div>
-        <div className={styles.aside}>
-          <div className={styles.emails}>
-            <DefineList direction="vertical">
-              <DefineTitle>
-                Product Support:
-              </DefineTitle>
-              <DefineItem>
-                <TextLink to={`mailto:${contact.email.support}`}>
-                  {contact.email.support}
-                </TextLink>
-              </DefineItem>
-              <DefineTitle>
-                Press Contact:
-              </DefineTitle>
-              <DefineItem>
-                <TextLink to={`mailto:${contact.email.press}`}>
-                  {contact.email.press}
-                </TextLink>
-              </DefineItem>
-              <DefineTitle>
-                Licensing Inquiries:
-              </DefineTitle>
-              <DefineItem>
-                <TextLink to={`mailto:${contact.email.sales}`}>
-                  {contact.email.sales}
-                </TextLink>
-              </DefineItem>
-            </DefineList>
-          </div>
-        </div>
-      </div>
-
-      <Anchor name="office" />
-      <SubTitle level={3}>Office</SubTitle>
-      <div className={styles.columns}>
-        <div className={styles.asideCenter}>
-          <ImageLink to={links.out.map}>
-            <Image
-              alt="Map to Numenta Office"
-              shadow={false}
-              respond="mw"
-              src={ImageMap}
-            />
-          </ImageLink>
-        </div>
-        <div className={styles.content}>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell>
-                  <Strong>Phone</Strong>
-                </TableCell>
-                <TableCell>
-                  <TextLink to={`tel:${contact.phone.tel}`}>
-                    {contact.phone.tel}
-                  </TextLink>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>
-                  <Strong>Fax</Strong>
-                </TableCell>
-                <TableCell>{contact.phone.fax}</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>
-                  <Strong>Address</Strong>
-                </TableCell>
-                <TableCell>
-                  <address className={styles.address}>
-                    791 Middlefield Road <br />
-                    Redwood City, CA 94063
-                  </address>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>
-                  <Strong>Map</Strong>
-                </TableCell>
-                <TableCell>
-                  <TextLink to={links.out.map}>
-                    Google Maps Link
-                  </TextLink>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-          <div className={styles.office}>
-            <List marker="disc">
-              <ListItem>
-                Reception is on the second floor on the left
-              </ListItem>
-              <ListItem>
-                Street parking is available on surrounding streets
-              </ListItem>
-              <ListItem>
-                The Jefferson Avenue Garage is the nearest parking structure
-              </ListItem>
-            </List>
-          </div>
-
-          <Anchor name="follow" />
-          <SubTitle level={3}>Follow</SubTitle>
-          <SocialMedia />
-        </div>
-      </div>
     </article>
   )
 }
 
 SectionCareers.contextTypes = {
-  config: React.PropTypes.object,
   route: React.PropTypes.object,
 }
 

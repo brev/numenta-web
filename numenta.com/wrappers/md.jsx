@@ -40,7 +40,7 @@ const MarkdownWrapper = ({route}, {config}) => {
   const url = `/${key}/`
   let author, back, date, event, media, type
 
-  if (key === 'careers-team-and-contact') {
+  if (key === 'careers-and-team') {
     key = 'careers'
   }
   if (key === 'papers-videos-and-more') {

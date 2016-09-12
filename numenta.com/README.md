@@ -175,6 +175,13 @@ empty `linkPrefix` setting:
 linkPrefix = ""
 ```
 
+This is how long you may wait sometimes:
+
+| Environment | Duration |
+| ----- | -------- |
+| Dynamic Development | ~20s |
+| Static (Any) | ~3m |
+
 ### Development
 
 #### Dynamic
@@ -285,17 +292,27 @@ npm run build
 | Serve | `npm run serve` | Builds, then Serves static output |
 
 
-## Standards
+## Guidance
 
 Code standards are handled by their respective linters and lint configs.
 
 ### Components
 
+* Pages and Main Sections:
+  * Main Sections (pages grouped on our Wikipedia-like single-page app
+    homepage) have their actual content in each pages' `pages/*/_Section.jsx`
+    file
+    * These main Sections are exposed as individual Pages via each pages'
+      default `pages/*/index.jsx` component
+  * Regular Pages (non-Main Sections) are fully contained in the usual default
+    `pages/*/index.jsx` location
 * Each `React` Component should return 1 small element
 * Include spaces manually around React Elements in JSX with: `{' '}`
-* `config` is available in components via
-  [context](https://facebook.github.io/react/docs/context.html)
 * Make sure to use the `prefixLink()` helper function on all internal links
+* Custom [React context](https://facebook.github.io/react/docs/context.html)
+  which is available:
+  * `config` = Site config (mostly `config.toml`)
+
 
 ### Content
 
@@ -349,6 +366,13 @@ Code standards are handled by their respective linters and lint configs.
 
 ### Packages
 
+* Use exact versions for dependencies in `package.json`, no version RegExps
+  please. All package changes need be exact and on purpose for build
+  reproducibility. `npm` has a `--save-exact` parameter for this:
+  ```
+  npm install package@1.2.34 --save --save-exact
+  npm install other@5.6.7 --save-dev --save-exact
+  ```
 * Bump version number with each changeset: `npm version patch`
 * Keep packages as up-to-date as possible. Check with: `npm outdated -depth 0`
 * Update and test 1 package at a time
@@ -376,13 +400,3 @@ Code standards are handled by their respective linters and lint configs.
     opacity: 0.5;
   }
   ```
-
-
-## @TODO
-
-* SHOW search after index loads, X clear button? no server-side search actually allowed!
-* document the code, build docs
-* markdown content image no hover effect
-* special custom npm modules: tachyons,etc. - howto, updating, etc.
-* describe main sections, _mainSections.jsx, and each _section.jsx
-* describe pages, components, sections, etc, etc.

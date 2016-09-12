@@ -121,7 +121,12 @@ const SitemapPage = (props, {config, route}) => {
               </ListItem>
               <ListItem>
                 <TextLink to={links.in.careers}>
-                  Careers, Team &amp; Contact
+                  Careers &amp; Team
+                </TextLink>
+              </ListItem>
+              <ListItem>
+                <TextLink to={links.in.contact}>
+                  Contact
                 </TextLink>
               </ListItem>
             </ListOrder>
