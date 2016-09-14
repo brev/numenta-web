@@ -6,8 +6,6 @@ Source code, generators, tooling, and content for Numenta company website.
 This company website is focused on our business and strategy, and is sibling to
 Numenta's educational and HTM [Community](http://numenta.org) website.
 
-Generated with [Gatsby.js](https://github.com/gatsbyjs/gatsby).
-
 
 ## Goals
 
@@ -32,6 +30,8 @@ clients will be augmented with the single-page app. This is accomplished with
 the magic of ["universal" or "isomorphic" javascript](http://isomorphic.net/):
 the exact same code is used to generate the static site on the server, and then
 is loaded on the client to continue the app live.
+
+[Gatsby.js](https://github.com/gatsbyjs/gatsby) helps us accomplish all of this.
 
 
 ## License
@@ -350,6 +350,7 @@ example, see the local file `.eslintrc.json`).
 * Examples of ideal URLs detailed below:
   * `http://numenta.com/`
   * `http://numenta.com/technology-overview/`
+  * `http://numenta.com/business-strategy-and-ip/#licenses`
   * etc..
 
 #### Possible Link Situations
