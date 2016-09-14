@@ -30,6 +30,7 @@ const SectionTitle = ({children, clickHandle, headline, open, title}) => {
   if (!isHeadline) {
     if (isOpen) titleClasses.push(styles.open)
 
+    /* eslint-disable jsx-a11y/no-static-element-interactions */
     sectionTitle = (
       <nav
         className={classNames(...titleClasses)}
@@ -40,6 +41,7 @@ const SectionTitle = ({children, clickHandle, headline, open, title}) => {
         {sectionTitle}
       </nav>
     )
+    /* eslint-enable jsx-a11y/no-static-element-interactions */
   }
 
   return sectionTitle

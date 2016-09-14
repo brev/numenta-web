@@ -30,7 +30,7 @@ const TableCell = ({border, children, colSpan}) => {
 
 TableCell.propTypes = {
   border: React.PropTypes.bool,
-  children: React.PropTypes.any,
+  children: React.PropTypes.node,
   colSpan: React.PropTypes.number.isRequired,
 }
 

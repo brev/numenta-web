@@ -35,6 +35,7 @@ const Image = (props) => {
   if (round) classes.push(styles.round)
   if (shadow) classes.push(styles.shadow)
 
+  /* eslint-disable jsx-a11y/no-static-element-interactions */
   return (
     <img
       alt={alt}
@@ -44,6 +45,7 @@ const Image = (props) => {
       title={title}
     />
   )
+  /* eslint-enable jsx-a11y/no-static-element-interactions */
 }
 
 Image.propTypes = {

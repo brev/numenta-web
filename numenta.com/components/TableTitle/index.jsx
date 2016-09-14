@@ -33,7 +33,7 @@ const TableTitle = ({border, children, colSpan}) => {
 
 TableTitle.propTypes = {
   border: React.PropTypes.bool,
-  children: React.PropTypes.any,
+  children: React.PropTypes.node,
   colSpan: React.PropTypes.number.isRequired,
 }
 

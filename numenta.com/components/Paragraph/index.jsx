@@ -29,7 +29,7 @@ const Paragraph = ({children, lead}) => {
 }
 
 Paragraph.propTypes = {
-  children: React.PropTypes.any,
+  children: React.PropTypes.node,
   lead: React.PropTypes.bool,
 }
 

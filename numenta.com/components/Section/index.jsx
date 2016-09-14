@@ -88,6 +88,7 @@ class Section extends React.Component {
     if (isOpen) articleClasses.pop()
 
     if (!isHeadline) {
+      /* eslint-disable jsx-a11y/no-static-element-interactions */
       close = (
         <div
           className={styles.closeButton}

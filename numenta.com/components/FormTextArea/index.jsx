@@ -27,7 +27,7 @@ const FormTextArea = ({children, name, placeholder}) => (
 )
 
 FormTextArea.propTypes = {
-  children: React.PropTypes.any,
+  children: React.PropTypes.node,
   name: React.PropTypes.string.isRequired,
   placeholder: React.PropTypes.string.isRequired,
 }
