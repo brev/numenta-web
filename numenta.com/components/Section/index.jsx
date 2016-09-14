@@ -99,6 +99,7 @@ class Section extends React.Component {
           Close Section
         </div>
       )
+      /* eslint-enable jsx-a11y/no-static-element-interactions */
     }
 
     return (
