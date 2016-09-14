@@ -25,7 +25,7 @@ const Subtle = ({children}) => (
 )
 
 Subtle.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default Subtle

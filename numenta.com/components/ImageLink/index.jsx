@@ -57,7 +57,7 @@ const ImageLink = ({children, title, to}) => {
 }
 
 ImageLink.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   title: React.PropTypes.string,
   to: React.PropTypes.string.isRequired,
 }

@@ -22,7 +22,7 @@ const FormLabel = ({children, htmlFor}) => (
 )
 
 FormLabel.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   htmlFor: React.PropTypes.string,
 }
 

@@ -27,7 +27,7 @@ const Title = ({children, headline}) => {
 }
 
 Title.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   headline: React.PropTypes.bool.isRequired,
 }
 

@@ -25,7 +25,7 @@ const Main = ({children}) => (
 )
 
 Main.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default Main

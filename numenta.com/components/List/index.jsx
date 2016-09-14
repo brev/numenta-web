@@ -28,7 +28,7 @@ const List = ({children, copy, marker}) => {
 }
 
 List.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   copy: React.PropTypes.bool,
   marker: React.PropTypes.oneOf(['circle', 'disc', 'icon', 'square']),
 }

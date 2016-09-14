@@ -6,6 +6,8 @@ Source code, generators, tooling, and content for Numenta company website.
 This company website is focused on our business and strategy, and is sibling to
 Numenta's educational and HTM [Community](http://numenta.org) website.
 
+Generated with [Gatsby.js](https://github.com/gatsbyjs/gatsby).
+
 
 ## Goals
 
@@ -64,7 +66,7 @@ repo. This will keep our main repo clean of working branches.
 
 ## Environments
 
-### Server
+### Stack
 
 * Script
   * ECMAscript [ES6](https://github.com/lukehoban/es6features) (Javascript)
@@ -94,38 +96,9 @@ repo. This will keep our main repo clean of working branches.
     [Favicons](https://github.com/jantimon/favicons-webpack-plugin)
     webpack plugin
 
-### Clients
+### Server
 
-#### Baseline
-
-All browsers and clients will start by loading a classic, simple,
-statically-generated, multi-page site. This guarantees that all users will
-receive a decent baseline experience, especially on older, accessible, or unique
-browsers. This also gives robots and search engine crawlers to have many
-internal pages to link and index.
-
-#### Advanced
-
-After loading the baseline experience, modern clients (listed in the support
-table below) will then be augmented with an advanced single-page style web
-application. This lets us simulate a large single main page, with many
-collapsable sections, much like Wikipedia. This also provides fast "no-refresh"
-page transitions, a full client-side text search system, etc.
-
-|             | Chrome | Firefox | Safari | Edge | IE/11 | IE/10 | Android |
-| ----------- |:------:|:-------:|:------:|:----:|:-----:|:-----:|:-------:|
-| **Mac/OSX** |    ✓   |    ✓    |    ✓   |      |       |       |         |
-| **iOS**     |        |         |    ✓   |      |       |       |         |
-| **Android** |    ✓   |         |        |      |       |       |    ✓    |
-| **Win/10**  |    ✓   |    ✓    |        |   ✓  |       |       |         |
-| **Win/8**   |        |         |        |      |   ✓   |       |         |
-| **Win/7**   |        |         |        |      |       |   ✓   |         |
-| **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
-
-**Note:** *All versions are "Latest Stable" unless otherwise noted.*
-
-
-## Filesystem
+#### Filesystem
 
 ```shell
 .                       # https://github.com/numenta/numenta-web/numenta.com/
@@ -147,6 +120,45 @@ page transitions, a full client-side text search system, etc.
 ├── utils/              # Local Helpers, utils, client, and misc code
 └── wrappers/           # Document-type (.html, .md, etc.) wrapper Components
 ```
+
+#### Lifecycle
+
+@TODO - talk about how dynamic dev works, how builds work, trace how content
+works it's way through components, pages, \_templates, html.jsx, webpack,
+gatsby, etc, etc. Gatsby's docs have some of this to build on (and maybe we can
+contribute back).
+
+### Client
+
+#### Lifecycle
+
+##### Baseline
+
+All browsers and clients will start by loading a classic, simple,
+statically-generated, multi-page site. This guarantees that all users will
+receive a decent baseline experience, especially on older, accessible, or unique
+browsers. This also gives robots and search engine crawlers to have many
+internal pages to link and index.
+
+##### Advanced / Targets
+
+After loading the baseline experience, modern clients (listed in the support
+table below) will then be augmented with an advanced single-page style web
+application. This lets us simulate a large single main page, with many
+collapsable sections, much like Wikipedia. This also provides fast "no-refresh"
+page transitions, a full client-side text search system, etc.
+
+**Note:** *All versions are "Latest Stable" unless otherwise noted.*
+
+|             | Chrome | Firefox | Safari | Edge | IE/11 | IE/10 | Android |
+| ----------- |:------:|:-------:|:------:|:----:|:-----:|:-----:|:-------:|
+| **Mac/OSX** |    ✓   |    ✓    |    ✓   |      |       |       |         |
+| **iOS**     |        |         |    ✓   |      |       |       |         |
+| **Android** |    ✓   |         |        |      |       |       |    ✓    |
+| **Win/10**  |    ✓   |    ✓    |        |   ✓  |       |       |         |
+| **Win/8**   |        |         |        |      |   ✓   |       |         |
+| **Win/7**   |        |         |        |      |       |   ✓   |         |
+| **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
 
 
 ## Setup
@@ -294,7 +306,8 @@ npm run build
 
 ## Guidance
 
-Code standards are handled by their respective linters and lint configs.
+Code standards are handled by their respective linters and lint configs (for
+example, see the local file `.eslintrc.json`).
 
 ### Components
 
@@ -308,11 +321,12 @@ Code standards are handled by their respective linters and lint configs.
     `pages/*/index.jsx` location
 * Each `React` Component should return 1 small element
 * Include spaces manually around React Elements in JSX with: `{' '}`
-* Make sure to use the `prefixLink()` helper function on all internal links
 * Custom [React context](https://facebook.github.io/react/docs/context.html)
   which is available:
-  * `config` = Site config (mostly `config.toml`)
-
+  * `config` = Site config (see: `config.toml`)
+* Make sure to use the `prefixLink()` helper function on all internal links.
+  This should be handled auto-magically for you already, but if you have trouble
+  with links on staging, this may be the problem.
 
 ### Content
 
@@ -324,6 +338,9 @@ Code standards are handled by their respective linters and lint configs.
 * Internal flat markdown auto-links (`http://numenta.com/htm-studio/`) may break
   on staging servers, use markdown style instead:
   `[http://numenta.com/htm-studio/](/htm-studio/)`
+* Search Engine Optimization (SEO) notes:
+  * @TODO more basics here.
+  * Make sure to follow the **URL Format** notes further below.
 
 ### Links and URLs
 
@@ -337,6 +354,7 @@ Code standards are handled by their respective linters and lint configs.
 
 #### Possible Link Situations
 
+* @TODO list files here with lots of link/href/URL-related code. And Refactor.
 * Google Analytics should be tracking `pages` and `events` for all Situations
   in the matrix below.
 

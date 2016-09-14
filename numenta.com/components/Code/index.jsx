@@ -25,7 +25,7 @@ const Code = ({children}) => (
 )
 
 Code.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default Code

@@ -26,7 +26,7 @@ const IconMarker = ({children, icon}) => (
 )
 
 IconMarker.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   icon: React.PropTypes.element,
 }
 

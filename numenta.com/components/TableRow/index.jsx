@@ -29,7 +29,7 @@ const TableRow = ({border, children}) => {
 
 TableRow.propTypes = {
   border: React.PropTypes.bool,
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default TableRow

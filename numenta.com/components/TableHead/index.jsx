@@ -32,7 +32,7 @@ const TableHeader = ({border, children}) => {
 
 TableHeader.propTypes = {
   border: React.PropTypes.bool,
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default TableHeader

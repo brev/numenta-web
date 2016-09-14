@@ -25,7 +25,7 @@ const Strong = ({children}) => (
 )
 
 Strong.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default Strong

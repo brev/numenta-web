@@ -25,7 +25,7 @@ const Time = ({children, moment}) => (
 )
 
 Time.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   moment: React.PropTypes.object,
 }
 

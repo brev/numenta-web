@@ -26,7 +26,7 @@ import styles from './index.css'
 class Markdown extends React.Component {
 
   static propTypes = {
-    children: React.PropTypes.any.isRequired,
+    children: React.PropTypes.node.isRequired,
   }
 
   static contextTypes = {

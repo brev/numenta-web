@@ -41,7 +41,7 @@ const ListItem = ({children, copy, marker}) => {
 }
 
 ListItem.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   copy: React.PropTypes.bool,
   marker: React.PropTypes.oneOf(Object.keys(markers)),
 }

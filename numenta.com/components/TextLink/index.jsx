@@ -62,7 +62,7 @@ const TextLink = ({children, onClick, target, to}) => {
 }
 
 TextLink.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   onClick: React.PropTypes.func,
   target: React.PropTypes.string,
   to: React.PropTypes.string.isRequired,

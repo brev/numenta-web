@@ -171,7 +171,7 @@ export function trims(strings, ...values) {
     result += tmp
 
     if (i < values.length) result += values[i]
-    i++
+    i += 1
   }
 
   return result

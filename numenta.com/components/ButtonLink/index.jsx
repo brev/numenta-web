@@ -37,7 +37,7 @@ const ButtonLink = ({children, disabled, onClick, theme, to}) => {
 }
 
 ButtonLink.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   disabled: React.PropTypes.bool,
   onClick: React.PropTypes.func,
   theme: React.PropTypes.string,

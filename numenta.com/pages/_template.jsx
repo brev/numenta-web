@@ -35,8 +35,7 @@ const config = getConfig()
 class Template extends React.Component {
 
   static propTypes = {
-    children: React.PropTypes.any.isRequired,
-    location: React.PropTypes.object.isRequired,
+    children: React.PropTypes.node.isRequired,
     route: React.PropTypes.object.isRequired,
   }
 

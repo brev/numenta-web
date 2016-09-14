@@ -38,7 +38,7 @@ class Section extends React.Component {
   }
 
   static propTypes = {
-    children: React.PropTypes.any.isRequired,
+    children: React.PropTypes.node.isRequired,
     headline: React.PropTypes.bool.isRequired,
     id: React.PropTypes.string,
     open: React.PropTypes.bool.isRequired,

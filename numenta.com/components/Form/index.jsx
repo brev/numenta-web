@@ -33,7 +33,7 @@ const Form = ({action, children, name, onSubmit}) => (
 
 Form.propTypes = {
   action: React.PropTypes.string,
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   name: React.PropTypes.string,
   onSubmit: React.PropTypes.func,
 }

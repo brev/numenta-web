@@ -46,7 +46,7 @@ const SectionTitle = ({children, clickHandle, headline, open, title}) => {
 }
 
 SectionTitle.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   clickHandle: React.PropTypes.func.isRequired,
   headline: React.PropTypes.bool.isRequired,
   title: React.PropTypes.string,

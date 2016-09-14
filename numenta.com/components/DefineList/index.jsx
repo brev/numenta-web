@@ -30,7 +30,7 @@ const DefineList = ({children, direction}) => {
 }
 
 DefineList.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   direction: React.PropTypes.oneOf(['horizontal', 'vertical']),
 }
 

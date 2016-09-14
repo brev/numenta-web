@@ -30,7 +30,7 @@ const Layout = ({children}) => (
 )
 
 Layout.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
 }
 
 export default Layout

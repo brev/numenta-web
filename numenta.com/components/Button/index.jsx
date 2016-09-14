@@ -34,7 +34,7 @@ const Button = ({children, disabled, onClick, theme, type}) => {
 }
 
 Button.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   disabled: React.PropTypes.bool,
   onClick: React.PropTypes.func,
   theme: React.PropTypes.oneOf(['default', 'light', 'primary', 'short']),

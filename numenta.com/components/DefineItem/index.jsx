@@ -29,7 +29,7 @@ const DefineItem = ({children, direction}) => {
 }
 
 DefineItem.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   direction: React.PropTypes.oneOf(['horizontal', 'vertical']),
 }
 

@@ -26,7 +26,7 @@ const SubTitle = ({children, level}) => {
 }
 
 SubTitle.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   level: React.PropTypes.number,
 }
 

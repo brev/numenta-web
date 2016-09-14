@@ -28,7 +28,7 @@ const ListOrder = ({children, copy, marker}) => {
 }
 
 ListOrder.propTypes = {
-  children: React.PropTypes.any.isRequired,
+  children: React.PropTypes.node.isRequired,
   copy: React.PropTypes.bool,
   marker: React.PropTypes.oneOf(['decimal', 'disc']),
 }
