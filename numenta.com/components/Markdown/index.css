@@ -50,7 +50,9 @@
 .markdown table th {
   background-color: #eee;
   padding: 0.5rem 0.666rem;
+  vertical-align: top;
 }
 .markdown table td {
   padding: 0.5rem 0.666rem;
+  vertical-align: top;
 }

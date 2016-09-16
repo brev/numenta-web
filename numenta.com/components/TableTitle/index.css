@@ -18,4 +18,5 @@
 .tableTitle {
   composes: bg-near-white from 'tachyons';
   composes: pa2 from 'tachyons';
+  composes: v-top from 'tachyons';
 }
