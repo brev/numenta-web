@@ -19,6 +19,7 @@ import React from 'react'
 import {getEventTimeDisplay, getVideoIdFromUrl} from '../utils/shared'
 
 import Avatar from '../components/Avatar'
+import Disqus from '../components/Disqus'
 import IconMarker from '../components/IconMarker'
 import Image from '../components/Image'
 import Markdown from '../components/Markdown'
@@ -236,6 +237,11 @@ const MarkdownWrapper = ({route}, {config}) => {
           </Markdown>
         </div>
         {author}
+        <Disqus
+          shortname={config.siteTitle.toLowerCase()}
+          title={data.title}
+          url={global.window.location.href}
+        />
         {back}
       </Section>
     </article>
