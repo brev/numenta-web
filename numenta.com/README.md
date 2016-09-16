@@ -192,7 +192,7 @@ This is how long you may wait sometimes:
 | Environment | Duration |
 | ----- | -------- |
 | Dynamic Development | ~20s |
-| Static (Any) | ~3m |
+| Static (Any) | ~6m |
 
 ### Development
 
