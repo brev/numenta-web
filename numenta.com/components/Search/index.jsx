@@ -17,7 +17,7 @@ import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unre
 import React from 'react'
 import request from 'superagent'
 
-import {stamp} from '../utils/shared'
+import {stamp} from '../../utils/shared'
 
 import Button from '../Button'
 import Form from '../Form'
