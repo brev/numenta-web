@@ -42,6 +42,10 @@
   margin-right: auto;
   max-width: 100%;
 }
+.markdown a img:hover{
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
 
 .markdown table {
   border: 1px solid #eee;
