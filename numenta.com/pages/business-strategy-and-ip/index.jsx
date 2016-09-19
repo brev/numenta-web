@@ -44,7 +44,7 @@ class BusinessPage extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({  // eslint-disable-line react/no-did-mount-set-state
+    this.setState({
       sections: (<MainSections current={Default} />),
     })
   }

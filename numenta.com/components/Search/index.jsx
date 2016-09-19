@@ -17,6 +17,8 @@ import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unre
 import React from 'react'
 import request from 'superagent'
 
+import {stamp} from '../utils/shared'
+
 import Button from '../Button'
 import Form from '../Form'
 import FormInput from '../FormInput'
@@ -49,7 +51,7 @@ class Search extends React.Component {
 
   componentDidMount() {
     request
-      .get(prefixLink('/_searchIndex.json'))  // load index
+      .get(prefixLink(stamp('/_searchIndex.json')))  // load index
       .set('Accept', 'application/json')
       .end((error, {body}) => {
         if (error) throw new Error(error)
