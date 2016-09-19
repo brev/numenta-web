@@ -179,20 +179,25 @@ npm install
 
 ## Build
 
-Unless otherwise stated below, the `config.toml` file should have the default
-empty `linkPrefix` setting:
-
-```shell
-# config.toml
-linkPrefix = ""
-```
-
-This is how long you may wait sometimes:
-
-| Environment | Duration |
+| Environment | Time  |
 | ----- | -------- |
 | Dynamic Development | ~20s |
 | Static (Any) | ~6m |
+
+Additional Notes:
+
+* **Config:** Unless otherwise stated below, the `config.toml` file should have
+  the default empty `linkPrefix` setting:
+
+  ```shell
+  # config.toml
+  linkPrefix = ""
+  ```
+
+* **Disqus Comments:** Disqus Comments only work on Production by default, not
+  under Development, Staging, etc. You can test/verify outside Prod by sending
+  an override production Post URL to Disqus
+  [via the component, here](https://github.com/numenta/numenta-web/blob/master/numenta.com/components/Disqus/index.jsx#L34-L40).
 
 ### Development
 
@@ -203,27 +208,29 @@ npm run dev
 # Visit http://localhost:8000
 ```
 
-Static assets won't load correctly from `static/assets` during dynamic dev, but
-they will be fine later on staging and production after static build. Try the
-static dev (next section below) if you need the static asset links to work
-during development.
+Additional Notes:
 
-If you need to host via a specific local IP (testing on a VM, etc.), `gatsby`
-options can be passed to `npm run` like this:
+* **Static Assets:** Static assets won't load correctly from `static/assets`
+  during dynamic dev, but they will be fine later on staging and production
+  after static build. Try the static dev (next section below) if you need the
+  static asset links to work during development.
 
-```shell
-npm run dev -- --host 192.168.1.112 --port 8765
-# Visit http://192.168.1.112:8765
-```
+* **Specific Local IP:** If you need to host via a specific local IP (testing on
+  a VM, etc.), `gatsby` options can be passed to `npm run` like this:
 
-To get search working under local dynamic development mode, you first need to
-build the search index, and then copy the index over to where it will be
-accessible by the dev webserver:
+  ```shell
+  npm run dev -- --host 192.168.1.112 --port 8765
+  # Visit http://192.168.1.112:8765
+  ```
 
-```shell
-npm run build
-cp public/_searchIndex.json pages/.
-```
+* **Search:** To get search working under local dynamic development mode, you
+  first need to build the search index, and then copy the index over to where it
+  will be accessible by the dev webserver:
+
+  ```shell
+  npm run build
+  cp public/_searchIndex.json pages/.
+  ```
 
 #### Static
 
