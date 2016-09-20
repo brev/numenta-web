@@ -1,0 +1,4 @@
+exports[`<ListOrder /> React component unit test suite Renders correctly 1`] = `
+<ol
+  className="ol" />
+`;

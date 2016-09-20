@@ -1,0 +1,7 @@
+exports[`<ImageLink /> React component unit test suite Renders correctly 1`] = `
+<a
+  className="imagelink"
+  onClick={[Function bound handleClick]}
+  style={Object {}}
+  title={undefined} />
+`;

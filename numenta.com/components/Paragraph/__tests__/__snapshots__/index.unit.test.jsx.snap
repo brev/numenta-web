@@ -1,0 +1,4 @@
+exports[`<Paragraph /> React component unit test suite Renders correctly 1`] = `
+<p
+  className="paragraph" />
+`;
