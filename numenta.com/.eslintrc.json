@@ -1,11 +1,20 @@
 {
-  "extends": "airbnb",
-  "parser": "babel-eslint",
-  "plugins": ["react"],
   "ecmaFeatures": {
     "classes": true,
     "jsx": true
   },
+  "env": {
+    "jasmine": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:jasmine/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "jasmine",
+    "react"
+  ],
   "rules": {
     "arrow-parens": [2, "always"],
     "brace-style": [2, "stroustrup"],
@@ -27,6 +36,7 @@
     "object-curly-spacing": [2, "never"],
     "one-var": [2, {"uninitialized": "always", "initialized": "never"}],
     "one-var-declaration-per-line": [0],
+    "padded-blocks": [0],
     "react/jsx-boolean-value": [2, "always"],
     "react/jsx-filename-extension": [1],
     "react/forbid-prop-types": [2, {"forbid": ["any"]}],

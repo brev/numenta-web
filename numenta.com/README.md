@@ -31,7 +31,8 @@ the magic of ["universal" or "isomorphic" javascript](http://isomorphic.net/):
 the exact same code is used to generate the static site on the server, and then
 is loaded on the client to continue the app live.
 
-[Gatsby.js](https://github.com/gatsbyjs/gatsby) helps us accomplish all of this.
+[Gatsby.js](https://github.com/gatsbyjs/gatsby) is the amazing tool that helps
+us accomplish all of this.
 
 
 ## License
@@ -73,6 +74,11 @@ repo. This will keep our main repo clean of working branches.
     * [Node.js 6](https://nodejs.org) + [Npm 3](https://www.npmjs.com/)
     * [Babel](https://babeljs.io/) Transpiler down to older cross-browser JS
     * Babel [ESLint](http://eslint.org/) code style checking ("linting")
+    * Testing via [Jest](https://facebook.github.io/jest/). This supports our
+      complex Babel, [Webpack](https://facebook.github.io/jest/docs/tutorial-webpack.html),
+      and [React](https://facebook.github.io/jest/docs/tutorial-react.html)
+      needs with it's [moduleNameMapper](https://facebook.github.io/jest/docs/configuration.html#modulenamemapper-object-string-string)
+      stubbing feature.
   * [Gatsby](https://github.com/gatsbyjs/gatsby) static site generator, wrapping:
     * [Webpack](https://webpack.github.io/) module loader/bundler, and
       [Static Generator Plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
@@ -104,11 +110,13 @@ repo. This will keep our main repo clean of working branches.
 .                       # https://github.com/numenta/numenta-web/numenta.com/
 ├── .babelrc            # Babel ES6 transpiler configuration file
 ├── .eslintrc.json      # ES lint rules, mostly AirBnB defaults + few tweaks
+├── .jestrc.json        # Jest testing framework config, assets under test/
 ├── .stylelintrc        # CSS style lint rules
 ├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
 ├── README.md           # This file, welcome docs.
 ├── components/         # React.js View Components and UI modules (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
+├── coverage/           # Test Code Coverage generated reports (not in git)
 ├── gatsby-browser.js   # Browser-specific code, tied to React Router by Gatsby
 ├── gatsby-node.js      # Build-time, Node.js, Webpack & Server specific code
 ├── html.jsx            # Main HTML Document Component
@@ -117,6 +125,7 @@ repo. This will keep our main repo clean of working branches.
 ├── pages/              # Webpage Documents and URL Tree Structure
 ├── public/             # STATIC OUTPUT. Static website generated built files
 ├── static/             # Static html, styles, assets, etc. Copied after build.
+├── test/               # Test support files (stubs, mocks, etc.)
 ├── utils/              # Local Helpers, utils, client, and misc code
 └── wrappers/           # Document-type (.html, .md, etc.) wrapper Components
 ```
@@ -175,6 +184,34 @@ git clone git@github.com:numenta/numenta-web.git
 cd numenta-web/numenta.com
 npm install
 ```
+
+
+## Scripts
+
+| Function | `<command>` | Notes |
+| -------- | ----------- | ----- |
+| Build | `npm run build` | Generate static production files |
+| Clean | `npm run clean` | Clean build |
+| Clean NPM | `npm run clean:npm` | Reset npm packaging |
+| Deploy | `npm run deploy:gh-pages` | Deploy branch `public/` build to `origin:gh-pages` |
+| Develop | `npm run dev` | Develop site interactively on http://localhost:8000 |
+| Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
+| Serve | `npm run serve` | Builds, then Serves static output |
+| Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
+| Test Unit | `npm run test:unit` | Runs just Unit Tests |
+
+
+## Testing
+
+```shell
+npm run test
+```
+
+* Unit tests take and use snapshots in order to perform. To update these
+  snapshots, try running: `npm run test:unit -- -u`. Make sure the new snapshots
+  are correct before committing!
+* A code coverage report is generated on each run and saved in `./coverage`.
+  There is a nice HTML report you can view in your browser in here.
 
 
 ## Build
@@ -297,18 +334,6 @@ npm run build
 # Wait a few minutes for build to happen. THIS WILL CHANGE SOON.
 # Visit https://numenta.com
 ```
-
-
-## Scripts
-
-| Function | `<command>` | Notes |
-| -------- | ----------- | ----- |
-| Build | `npm run build` | Generate static production files |
-| Clean | `npm run clean` | Clean build |
-| Deploy | `npm run deploy:gh-pages` | Deploy branch `public/` build to `origin:gh-pages` |
-| Develop | `npm run dev` | Develop site interactively on http://localhost:8000 |
-| Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
-| Serve | `npm run serve` | Builds, then Serves static output |
 
 
 ## Guidance

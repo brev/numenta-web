@@ -1,0 +1,19 @@
+{
+  "bail": true,
+  "moduleDirectories": [
+    ".",
+    "components",
+    "node_modules",
+    "pages",
+    "utils",
+    "wrappers"
+  ],
+  "moduleFileExtensions": ["js", "json", "jsx"],
+  "moduleNameMapper": {
+    "^gatsby-helpers$": "<rootDir>/node_modules/gatsby/dist/isomorphic/gatsby-helpers.js",
+    "^config$": "<rootDir>/test/configMock.js",
+    "^.+\\.(css)$": "<rootDir>/test/styleMock.js",
+    "^.+\\.(eot|gif|jpe?g|png|svg|ttf|woff2?)$": "<rootDir>/test/fileMock.js"
+  },
+  "testRegex": ".*/__tests__/.*\\.test\\.(js|jsx)$"
+}
