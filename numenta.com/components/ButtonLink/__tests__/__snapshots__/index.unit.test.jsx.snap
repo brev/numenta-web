@@ -1,0 +1,8 @@
+exports[`<ButtonLink /> React component unit test suite Renders correctly 1`] = `
+<a
+  className="buttonLink primary enabled"
+  href="http://numenta.com"
+  onClick={undefined}>
+  Visit Numenta
+</a>
+`;

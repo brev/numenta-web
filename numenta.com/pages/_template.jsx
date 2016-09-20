@@ -64,7 +64,7 @@ class Template extends React.Component {
     const icons = flatten(values(mapValues(favicons, (value) => keys(value))))
 
     // react-helmet / head
-    const attrs = {lang, amp: undefined}
+    const attrs = {lang}
     const links = []
     const meta = [
       {charset: 'utf-8'},

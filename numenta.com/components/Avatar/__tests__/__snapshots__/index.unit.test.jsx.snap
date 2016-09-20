@@ -1,4 +1,4 @@
-exports[`Avatar React component unit test suite Renders correctly 1`] = `
+exports[`<Avatar /> React component unit test suite Renders correctly 1`] = `
 <span
   className="avatar">
   <img

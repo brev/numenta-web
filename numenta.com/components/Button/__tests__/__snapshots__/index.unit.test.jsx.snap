@@ -1,0 +1,9 @@
+exports[`<Button /> React component unit test suite Renders correctly 1`] = `
+<button
+  className="button default"
+  disabled={false}
+  onClick={undefined}
+  type="submit">
+  Submit
+</button>
+`;
