@@ -8,7 +8,7 @@ describe('<Pingdom /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <Pingdom />
+      <Pingdom id="abcd1234" />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

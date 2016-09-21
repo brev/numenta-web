@@ -109,14 +109,16 @@ repo. This will keep our main repo clean of working branches.
 ```shell
 .                       # https://github.com/numenta/numenta-web/numenta.com/
 ├── .babelrc            # Babel ES6 transpiler configuration file
+├── .eslintignore       # ES lint files and paths to ignore during run
 ├── .eslintrc.json      # ES lint rules, mostly AirBnB defaults + few tweaks
 ├── .jestrc.json        # Jest testing framework config, assets under test/
+├── .stylelintignore    # CSS style lint files to ignore
 ├── .stylelintrc        # CSS style lint rules
 ├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
 ├── README.md           # This file, welcome docs.
 ├── components/         # React.js View Components and UI modules (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
-├── coverage/           # Test Code Coverage generated reports (not in git)
+├── coverage/           # Target for Test Code Coverage reports (not in git)
 ├── gatsby-browser.js   # Browser-specific code, tied to React Router by Gatsby
 ├── gatsby-node.js      # Build-time, Node.js, Webpack & Server specific code
 ├── html.jsx            # Main HTML Document Component
@@ -198,20 +200,45 @@ npm install
 | Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
+| Test Coverage | `npm run test:cover` | Runs tests and generates coverage report in `coverage/` directory |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
 
 
 ## Testing
 
+Run all tests (unit, etc):
+
 ```shell
 npm run test
 ```
 
-* Unit tests take and use snapshots in order to perform. To update these
-  snapshots, try running: `npm run test:unit -- -u`. Make sure the new snapshots
-  are correct before committing!
-* A code coverage report is generated on each run and saved in `./coverage`.
-  There is a nice HTML report you can view in your browser in here.
+### Coverage
+
+Run the command below to generate a Test Code Coverage report, which will be
+saved in your local `./coverage` directory. There is a nice HTML report in there
+which you can view in your web browser.
+
+This is the same as running all tests, with the additional coverage report built
+at the end.
+
+```shell
+npm run test:coverage
+```
+
+### Unit
+
+Run only unit tests:
+
+```shell
+npm run test:unit
+```
+
+Unit tests take and use snapshots in order to perform. Make sure new or updated
+snapshots are correct before committing! To update these snapshots, try running:
+
+```shell
+npm run test:unit -- -u
+```
 
 
 ## Build

@@ -8,7 +8,9 @@ describe('<Markdown /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <Markdown />
+      <Markdown>
+        ## Heading Level 2
+      </Markdown>
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

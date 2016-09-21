@@ -2,10 +2,6 @@
   "extends": [
     "stylelint-config-standard"
   ],
-  "ignoreFiles": [
-    "node_modules/*",
-    "public/*"
-  ],
   "rules": {
     "at-rule-empty-line-before": null,
     "comment-empty-line-before": null,
