@@ -1,0 +1,12 @@
+exports[`<Form /> React component unit test suite Renders correctly 1`] = `
+<form
+  acceptCharset="UTF-8"
+  action={undefined}
+  autoComplete="off"
+  className="form"
+  encType="multipart/form-data"
+  id={undefined}
+  method="post"
+  name={undefined}
+  onSubmit={undefined} />
+`;

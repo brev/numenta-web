@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import TestUtils from 'react-addons-test-utils'
 
 import Markdown from '../../Markdown'
 
@@ -7,13 +7,22 @@ import Markdown from '../../Markdown'
 describe('<Markdown /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
-    const component = renderer.create(
+    const component = TestUtils.renderIntoDocument(
       <Markdown>
-        ## Heading Level 2
+        Marked Down Text
       </Markdown>
     )
-    const tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
+    const element = component._markdown  // get ref
+    expect(element.textContent).toEqual('Marked Down Text')
   })
+
+  // @TODO more in depth testing below...
+  //
+  // it('Mounts correctly', () => {
+  //   TestUtils.Simulate.change(
+  //     TestUtils.findRenderedDOMComponentWithTag(component, 'input')
+  //   )
+  //   expect(checkboxNode.textContent).toEqual('On')
+  // })
 
 })

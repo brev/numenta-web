@@ -1,0 +1,18 @@
+exports[`<TableHead /> React component unit test suite Renders correctly 1`] = `
+<thead
+  className="tableHeader">
+  <tr
+    className="tableRow">
+    <th
+      className="tableTitle"
+      colSpan={1}>
+      Table Title 1
+    </th>
+    <th
+      className="tableTitle"
+      colSpan={1}>
+      Table Title 2
+    </th>
+  </tr>
+</thead>
+`;

@@ -1,0 +1,8 @@
+exports[`<FormCheckbox /> React component unit test suite Renders correctly 1`] = `
+<input
+  className="checkbox"
+  id={undefined}
+  name={undefined}
+  onClick={undefined}
+  type="checkbox" />
+`;

@@ -1,0 +1,4 @@
+exports[`<DefineTitle /> React component unit test suite Renders correctly 1`] = `
+<dt
+  className="defineTitle" />
+`;

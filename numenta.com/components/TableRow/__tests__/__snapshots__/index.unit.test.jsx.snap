@@ -1,0 +1,20 @@
+exports[`<TableRow /> React component unit test suite Renders correctly 1`] = `
+<tr
+  className="tableRow">
+  <td
+    className="tableCell"
+    colSpan={1}>
+    Cell 1
+  </td>
+  <td
+    className="tableCell"
+    colSpan={1}>
+    Cell 2
+  </td>
+  <td
+    className="tableCell"
+    colSpan={1}>
+    Cell 3
+  </td>
+</tr>
+`;

@@ -1,0 +1,6 @@
+exports[`<Subtle /> React component unit test suite Renders correctly 1`] = `
+<span
+  className="subtle">
+  Quiet Text
+</span>
+`;

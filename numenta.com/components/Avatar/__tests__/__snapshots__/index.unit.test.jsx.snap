@@ -5,7 +5,7 @@ exports[`<Avatar /> React component unit test suite Renders correctly 1`] = `
     alt="Jeff Hawkins"
     className="image border round"
     onClick={undefined}
-    src="mockfile.ext"
+    src="filename.ext"
     title="Jeff Hawkins" />
 </span>
 `;

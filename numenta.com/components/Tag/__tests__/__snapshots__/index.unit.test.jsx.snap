@@ -1,0 +1,6 @@
+exports[`<Tag /> React component unit test suite Renders correctly 1`] = `
+<span
+  className="tag">
+  New!
+</span>
+`;
