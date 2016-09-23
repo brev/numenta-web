@@ -109,7 +109,7 @@
     "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "echo",
-    "lint:js": "eslint --ext=js --ext=jsx --ignore-pattern public .",
+    "lint:js": "eslint --ext=js --ext=jsx .",
     "preserve": "npm run build",
     "serve": "gatsby serve-build",
     "test": "npm run test:unit",

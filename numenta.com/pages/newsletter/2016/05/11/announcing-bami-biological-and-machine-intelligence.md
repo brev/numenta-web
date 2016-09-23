@@ -41,7 +41,7 @@ We hope you find BAMI to be a useful resource, and we
 In addition to our BAMI news, we have some exciting events coming up this month
 as well. On May 12, Jeff Hawkins will be the featured guest at a
 **[NeurotechX meetup in San Francisco](http://www.meetup.com/NeuroTechSF/events/230385690/)**.
-Co-founded by one of our engineers, [Marion LeBorgne](mailto:mleborgne@numenta.com),
+Co-founded by one of our engineers, [Marion Le Borgne](mailto:mleborgne@numenta.com),
 NeurotechX is a non-profit organization whose mission is to build a strong,
 global neurotechnology community by providing key resources and learning
 opportunities.  Jeff will give a talk titled "What is Intelligence, that a
