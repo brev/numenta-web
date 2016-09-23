@@ -116,6 +116,7 @@ repo. This will keep our main repo clean of working branches.
 ├── .stylelintrc        # CSS style lint rules
 ├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
 ├── README.md           # This file, welcome docs.
+├── __mocks__/          # Mocks and stubs for unit testing suite
 ├── components/         # React.js View Components and UI modules (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
 ├── coverage/           # Target for Test Code Coverage reports (not in git)
@@ -127,7 +128,6 @@ repo. This will keep our main repo clean of working branches.
 ├── pages/              # Webpage Documents and URL Tree Structure
 ├── public/             # STATIC OUTPUT. Static website generated built files
 ├── static/             # Static html, styles, assets, etc. Copied after build.
-├── test/               # Test support files (stubs, mocks, etc.)
 ├── utils/              # Local Helpers, utils, client, and misc code
 └── wrappers/           # Document-type (.html, .md, etc.) wrapper Components
 ```
