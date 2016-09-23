@@ -11,7 +11,7 @@ type: post
 ---
 
 I am often asked, "Is Numenta’s
-[Hierarchical Temporal Memory](/technology-overview/) a
+[Hierarchical Temporal Memory](/machine-intelligence-technology/) a
 [neural network](http://en.wikipedia.org/wiki/Neural_network)?"
 (For those who don’t know, the Hierarchical Temporal Memory, or HTM, is the
 heart of Grok our streaming data product.)

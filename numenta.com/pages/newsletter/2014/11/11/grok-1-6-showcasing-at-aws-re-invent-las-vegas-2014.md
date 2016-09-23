@@ -33,7 +33,7 @@ This version offers several new important features:
 * Enhanced performance
 
 Based on Numenta’s breakthrough
-[Hierarchical Temporal Memory](/technology-overview/)
+[Hierarchical Temporal Memory](/machine-intelligence-technology/)
 technology, Grok monitors servers running on AWS and enables complex pattern
 detection, automatic model building, and continuous learning. Grok output is
 displayed on a constantly updated mobile device, enabling IT professionals to

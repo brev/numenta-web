@@ -28,7 +28,7 @@ described a theory of the neocortex.  Numenta, Inc. was formed as a company to
 pursue the theory for commercial and scientific purposes shortly thereafter.
 
 NuPIC comprises a set of learning algorithms called the
-[Hierarchical Temporal Memory (HTM)](/technology-overview/) first described in a
+[Hierarchical Temporal Memory (HTM)](/machine-intelligence-technology/) first described in a
 whitepaper published by Numenta in 2009. The CLA algorithms replicate part of
 the function of a region of the neocortex. They can be used for pattern
 recognition, prediction, and anomaly detection in many domains. They have been

@@ -15,7 +15,7 @@ did you ever think the Super Bowl could help you understand how your brain
 works? Well, it can!  Enter the Sparse Football Pool.
 
 Numenta's theory of the cortex,
-[Hierarchical Temporal Memory](/technology-overview/),
+[Hierarchical Temporal Memory](/machine-intelligence-technology/),
 relies on the properties of Sparse Distributed Representations. SDRs are the
 fundamental way our brain represents information. The concepts behind SDR are
 deep and thought provoking. We get a lot of questions around this and were

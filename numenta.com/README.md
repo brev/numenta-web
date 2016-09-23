@@ -381,7 +381,7 @@ example, see the local file `.eslintrc.json`).
 * URLs should end with `/` (slash)
 * Examples of ideal URLs detailed below:
   * `http://numenta.com/`
-  * `http://numenta.com/technology-overview/`
+  * `http://numenta.com/machine-intelligence-technology/`
   * `http://numenta.com/business-strategy-and-ip/#licenses`
   * etc..
 

@@ -16,7 +16,7 @@ type: post
   [Grok for IT Analytics](http://grokstream.com).*
 
 A question we get all the time from machine learning fans is: "How does
-Numenta's [Hierarchical Temporal Memory](/technology-overview/) (the HTM)
+Numenta's [Hierarchical Temporal Memory](/machine-intelligence-technology/) (the HTM)
 compare to traditional machine learning algorithms?" There are many ways to
 answer this question. In this blog entry, I will focus on one specific
 difference, perhaps the most fundamental one.

@@ -16,7 +16,7 @@ Did you ever think the Super Bowl could help you understand how your brain
 works? Well, it can!
 
 Numenta's core algorithm, the
-[Hierarchical Temporal Memory (HTM)](/technology-overview/),
+[Hierarchical Temporal Memory (HTM)](/machine-intelligence-technology/),
 relies on the properties of Sparse Distributed Representations. SDRs are the
 fundamental way our brain represents information. The concepts behind SDR are
 deep and thought provoking. We get a lot of questions around this and were
