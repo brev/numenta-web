@@ -571,12 +571,10 @@ class HtmStudioPage extends React.Component {
                 </TextLink> {' '}
                 for further information on HTM.
               </Paragraph>
-              {/* eslint-disable max-len */}
               <Form
                 action="https://numenta.wufoo.com/forms/z3mk1q016cylq6/#public"
                 name="form17"
               >
-              {/* eslint-enable max-len */}
                 <FormRow>
                   <FormLabel for="Field4">
                     Name

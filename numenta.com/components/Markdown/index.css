@@ -42,7 +42,7 @@
   margin-right: auto;
   max-width: 100%;
 }
-.markdown a img:hover{
+.markdown a img:hover {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
 }
