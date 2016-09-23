@@ -62,18 +62,21 @@ class MarkdownWrapper extends React.Component {
   componentDidMount() {
     const {route} = this.props
     const {config} = this.context
-    const {data} = route.page
+    const {data, file} = route.page
+    const key = file.dir.split('/')[0]
 
-    // add clientside disqus comments below post
-    this.setState({
-      comments: (
-        <Disqus
-          shortname={config.siteTitle.toLowerCase()}
-          title={data.title}
-          url={global.window.location.href}
-        />
-      ),
-    })
+    // add clientside disqus comments below posts
+    if (postTypes.indexOf(key) > -1) {
+      this.setState({
+        comments: (
+          <Disqus
+            shortname={config.siteTitle.toLowerCase()}
+            title={data.title}
+            url={global.window.location.href}
+          />
+        ),
+      })
+    }
   }
 
   render() {
