@@ -105,10 +105,10 @@ const SectionCareers = (props, {route}) => {
               <Paragraph>
                 Donna first partnered with Jeff Hawkins at Palm, Inc. in 1992,
                 where she served as president and CEO. She held this position
-                throughout Palm’s acquisition by U.S Robotics and subsequently
+                throughout Palm's acquisition by U.S Robotics and subsequently
                 3Com Corporation. In 1998, Donna and Jeff co-founded Handspring,
                 creator of the category-defining Treo smartphone. Handspring
-                merged with Palm in 2003, and Donna continued to serve on Palm’s
+                merged with Palm in 2003, and Donna continued to serve on Palm's
                 board until 2009. Previously, Donna spent 10 years at Apple Inc.
                 in a multitude of sales, sales support, and logistics
                 functions—both at Apple and at Claris, an Apple software
@@ -260,7 +260,7 @@ const SectionCareers = (props, {route}) => {
                 all future smartphones; the Handspring Treo. Ed drove the
                 transaction that reunited Palm and Handspring into a single Palm
                 again. He established relationships with wireless carriers
-                globally and drove Palm’s annual smartphone business to more
+                globally and drove Palm's annual smartphone business to more
                 than $2 billion. As the CEO of Palm, Ed spearheaded the
                 transformation that created the WebOS platform and Palm Pre line
                 of smartphones.
@@ -293,10 +293,10 @@ const SectionCareers = (props, {route}) => {
               <Paragraph>
                 Donna first partnered with Jeff Hawkins at Palm, Inc. in 1992,
                 where she served as president and CEO. She held this position
-                throughout Palm’s acquisition by U.S Robotics and subsequently
+                throughout Palm's acquisition by U.S Robotics and subsequently
                 3Com Corporation. In 1998, Donna and Jeff co-founded Handspring,
                 creator of the category-defining Treo smartphone. Handspring
-                merged with Palm in 2003, and Donna continued to serve on Palm’s
+                merged with Palm in 2003, and Donna continued to serve on Palm's
                 board until 2009. Previously, Donna spent 10 years at Apple Inc.
                 in a multitude of sales, sales support, and logistics
                 functions—both at Apple and at Claris, an Apple software
