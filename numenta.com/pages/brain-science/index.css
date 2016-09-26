@@ -23,3 +23,9 @@
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
+
+.brain {
+  composes: center from 'tachyons';
+  composes: h5 m from 'tachyons';
+  composes: w5 m from 'tachyons';
+}

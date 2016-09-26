@@ -20,12 +20,12 @@ import NextSection from '../../components/NextSection'
 import SectionBrain from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionBrain key="sectionBrian" />)
+const Default = (<SectionBrain key="sectionBrain" />)
 const title = 'Brain Science'
 
 
 /**
- *
+ * Brain Science page, wrapper for associated Main Section - React component.
  */
 class BrainPage extends React.Component {
 

@@ -24,4 +24,5 @@
   composes: ph3 from 'tachyons';
   composes: ph4-l from 'tachyons';
   composes: pt3 from 'tachyons';
+  composes: shadow-4 from 'tachyons';
 }
