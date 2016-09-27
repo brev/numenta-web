@@ -8,7 +8,7 @@ describe('<Disqus /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <Disqus />
+      <Disqus shortname="disqus" />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

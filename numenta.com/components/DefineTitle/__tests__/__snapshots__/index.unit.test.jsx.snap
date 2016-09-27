@@ -1,4 +1,21 @@
 exports[`<DefineTitle /> React component unit test suite Renders correctly 1`] = `
-<dt
-  className="defineTitle" />
+<dl
+  className="defineList vertical">
+  <dt
+    className="defineTitle vertical">
+    Title 1
+  </dt>
+  <dd
+    className="defineItem vertical">
+    Item 1
+  </dd>
+  <dt
+    className="defineTitle vertical">
+    Title 2
+  </dt>
+  <dd
+    className="defineItem vertical">
+    Item 2
+  </dd>
+</dl>
 `;

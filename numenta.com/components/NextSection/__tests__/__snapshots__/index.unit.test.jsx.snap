@@ -12,6 +12,7 @@ exports[`<NextSection /> React component unit test suite Renders correctly 1`] =
     onClick={[Function bound handleClick]}
     style={Object {}}
     target={undefined}>
+    Mission & History
      
     <svg
       fill="currentColor"

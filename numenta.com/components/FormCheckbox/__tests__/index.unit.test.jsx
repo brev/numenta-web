@@ -8,7 +8,7 @@ describe('<FormCheckbox /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <FormCheckbox />
+      <FormCheckbox name="field" />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

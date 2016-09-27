@@ -8,7 +8,9 @@ describe('<FormLabel /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <FormLabel />
+      <FormLabel htmlFor="field">
+        Label
+      </FormLabel>
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

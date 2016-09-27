@@ -1,9 +1,13 @@
+import {parse} from 'toml'
+import {readFileSync} from 'fs'
+
+const file = readFileSync('config.toml')
+const config = parse(file)
+
+
 /**
  * Jest test Config mock. Return contents of ../config.toml file.
  * @requires jest webpack
  */
 
-
-import {getConfig} from '../utils/shared'
-
-export default getConfig()
+export default config

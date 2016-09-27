@@ -8,7 +8,9 @@ describe('<FormTextArea /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <FormTextArea />
+      <FormTextArea name="field" placeholder="Default">
+        Contents
+      </FormTextArea>
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

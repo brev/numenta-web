@@ -8,7 +8,10 @@ describe('<NextSection /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <NextSection />
+      <NextSection
+        title="Mission & History"
+        url="/mission-and-history/"
+      />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

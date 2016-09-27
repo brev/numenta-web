@@ -1,5 +1,7 @@
 exports[`<Time /> React component unit test suite Renders correctly 1`] = `
 <time
   className="time"
-  dateTime="2016-09-21T11:10:32-07:00" />
+  dateTime="2016-09-21T11:10:32-07:00">
+  2016-09-21T18:10:32
+</time>
 `;

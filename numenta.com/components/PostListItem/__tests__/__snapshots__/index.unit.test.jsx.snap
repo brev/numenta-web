@@ -1,0 +1,45 @@
+exports[`<PostListItem /> React component unit test suite Renders correctly 1`] = `
+<div
+  className="item">
+  <div
+    className="date">
+    <time
+      className="time"
+      dateTime="Invalid date">
+      Invalid date
+    </time>
+  </div>
+  <a
+    className="textlink"
+    href={undefined}
+    onClick={[Function bound handleClick]}
+    style={Object {}}
+    target={undefined}>
+    <span
+      className="title" />
+  </a>
+  <p
+    className="paragraph">
+    ...
+  </p>
+  <div
+    className="author">
+    <span
+      className="subtle">
+      <span
+        className="avatar">
+        <img
+          alt={undefined}
+          className="image border round"
+          onClick={undefined}
+          src="filename.ext"
+          title={undefined} />
+      </span>
+      <span
+        className="spacer">
+        •
+      </span>
+    </span>
+  </div>
+</div>
+`;

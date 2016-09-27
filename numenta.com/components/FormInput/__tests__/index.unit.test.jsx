@@ -8,7 +8,7 @@ describe('<FormInput /> React component unit test suite', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <FormInput />
+      <FormInput name="field" type="text" value="contents" />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()
