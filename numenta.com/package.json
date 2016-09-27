@@ -114,7 +114,7 @@
     "lint:js": "eslint --ext=js --ext=jsx --ignore-pattern public .",
     "preserve": "npm run build",
     "serve": "gatsby serve-build",
-    "test": "npm run test:unit:cover",
+    "test": "npm run test:unit",
     "test:unit": "jest --bail --config .jestrc.json \"unit.test\"",
     "test:unit:cover": "npm run test:unit -- --coverage",
     "test:unit:update": "npm run test:unit -- -u",
