@@ -43,24 +43,23 @@ const SectionBrain = (props, {config}) => {
           <Paragraph lead={true}>
             Reverse engineering the neocortex to figure out how the brain works
             is a problem that many people think cannot be solved. We disagree.
-            Solving any scientific challenge requires matching empirical
-            evidence with theory. Our team of researchers are constantly reading
-            neuroscience papers and studies that focus on various aspects of the
-            brain. While there is no shortage of neuroscientists that specialize
-            in particular areas, Numenta takes the unique approach of looking
-            across these studies and putting the pieces together to make a
-            working theory of the neocortex.
+            Solving any scientific challenge is possible when you match
+            empirical evidence with theory. Our team of researchers are
+            constantly reading neuroscience papers and studies that focus on
+            various aspects of the brain. While there is no shortage of
+            neuroscientists that specialize in particular areas, Numenta takes
+            the unique approach of looking across these studies and putting the
+            pieces together to make a working theory of the neocortex.
           </Paragraph>
           <Paragraph>
             We call this theory {' '}
             <TextLink to={links.in.technology}>
               Hierarchical Temporal Memory, (HTM),
             </TextLink> {' '}
-            a framework
-            for both biological and machine intelligence. This framework applies
-            to everything the neocortex does – from vision to language to motor
-            and more.  Nothing is task-specific. Everything operates on the same
-            universal algorithms.
+            a framework for both biological and machine intelligence. This
+            framework applies to everything the neocortex does – from vision to
+            language to motor and more.  Nothing is task-specific. Everything
+            operates on the same universal algorithms.
           </Paragraph>
         </div>
       </div>
