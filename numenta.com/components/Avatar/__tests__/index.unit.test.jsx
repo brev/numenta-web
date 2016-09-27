@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Avatar from '../../Avatar'
 
 
-describe('<Avatar /> React component unit test suite', () => {
+describe('Avatar React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

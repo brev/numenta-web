@@ -1,4 +1,4 @@
-exports[`<Section /> React component unit test suite Renders Closed with Headline correctly 1`] = `
+exports[`Section React component Renders Closed with Headline correctly 1`] = `
 <section
   className="section"
   id={undefined}>
@@ -13,7 +13,7 @@ exports[`<Section /> React component unit test suite Renders Closed with Headlin
 </section>
 `;
 
-exports[`<Section /> React component unit test suite Renders Closed with No Headline correctly 1`] = `
+exports[`Section React component Renders Closed with No Headline correctly 1`] = `
 <section
   className="section"
   id={undefined}>
@@ -75,7 +75,7 @@ exports[`<Section /> React component unit test suite Renders Closed with No Head
 </section>
 `;
 
-exports[`<Section /> React component unit test suite Renders Open with Headline correctly 1`] = `
+exports[`Section React component Renders Open with Headline correctly 1`] = `
 <section
   className="section"
   id={undefined}>
@@ -90,7 +90,7 @@ exports[`<Section /> React component unit test suite Renders Open with Headline 
 </section>
 `;
 
-exports[`<Section /> React component unit test suite Renders Open with No Headline correctly 1`] = `
+exports[`Section React component Renders Open with No Headline correctly 1`] = `
 <section
   className="section"
   id={undefined}>

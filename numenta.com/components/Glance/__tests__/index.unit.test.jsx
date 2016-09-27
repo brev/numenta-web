@@ -7,7 +7,7 @@ import context from '../../../__mocks__/reactContextMock'
 import Glance from '../../Glance'
 
 
-describe('<Glance /> React component unit test suite', () => {
+describe('Glance React component', () => {
 
   it('Renders correctly', () => {
     const GlanceStubbed = stubContext(Glance, context)

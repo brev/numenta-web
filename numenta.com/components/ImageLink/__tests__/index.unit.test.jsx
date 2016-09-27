@@ -5,12 +5,12 @@ import Image from '../../Image'
 import ImageLink from '../../ImageLink'
 
 
-describe('<ImageLink /> React component unit test suite', () => {
+describe('ImageLink React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
       <ImageLink to="http://numenta.com">
-        <Image src="zebra.png" title="Zebra Image" />
+        <Image alt="Zebra" src="zebra.png" />
       </ImageLink>
     )
     const tree = component.toJSON()

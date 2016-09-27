@@ -6,7 +6,7 @@ import TableCell from '../../TableCell'
 import TableRow from '../../TableRow'
 
 
-describe('<TableBody /> React component unit test suite', () => {
+describe('TableBody React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

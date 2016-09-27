@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import FormLabel from '../../FormLabel'
 
 
-describe('<FormLabel /> React component unit test suite', () => {
+describe('FormLabel React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

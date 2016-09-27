@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Button from '../../Button'
 
 
-describe('<Button /> React component unit test suite', () => {
+describe('Button React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

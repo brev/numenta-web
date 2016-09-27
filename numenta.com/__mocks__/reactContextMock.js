@@ -13,8 +13,11 @@ const context = {
     createHref() {},
     go() {},
     goBack() {},
+    goForward() {},
+    isActive() {},
     push() {},
     replace() {},
+    setRouteLeaveHook() {},
   },
 }
 

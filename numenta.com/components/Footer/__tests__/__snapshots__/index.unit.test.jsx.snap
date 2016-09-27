@@ -1,4 +1,4 @@
-exports[`<Footer /> React component unit test suite Renders correctly 1`] = `
+exports[`Footer React component Renders correctly 1`] = `
 <div
   className="footbar">
   <footer

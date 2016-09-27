@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Disqus from '../../Disqus'
 
 
-describe('<Disqus /> React component unit test suite', () => {
+describe('Disqus React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

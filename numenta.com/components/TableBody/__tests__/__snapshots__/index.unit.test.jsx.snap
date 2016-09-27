@@ -1,4 +1,4 @@
-exports[`<TableBody /> React component unit test suite Renders correctly 1`] = `
+exports[`TableBody React component Renders correctly 1`] = `
 <tbody
   className="tableBody">
   <tr

@@ -5,7 +5,7 @@ import ListItem from '../../ListItem'
 import ListOrder from '../../ListOrder'
 
 
-describe('<ListOrder /> React component unit test suite', () => {
+describe('ListOrder React component', () => {
 
   it('Renders correctly with default props', () => {
     const component = renderer.create(

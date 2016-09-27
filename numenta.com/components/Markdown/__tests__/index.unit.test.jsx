@@ -4,7 +4,7 @@ import TestUtils from 'react-addons-test-utils'
 import Markdown from '../../Markdown'
 
 
-describe('<Markdown /> React component unit test suite', () => {
+describe('Markdown React component', () => {
 
   it('Renders correctly', () => {
     const component = TestUtils.renderIntoDocument(

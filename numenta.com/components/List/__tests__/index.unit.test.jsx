@@ -5,7 +5,7 @@ import List from '../../List'
 import ListItem from '../../ListItem'
 
 
-describe('<List /> React component unit test suite', () => {
+describe('List React component', () => {
 
   it('Renders correctly with default props', () => {
     const component = renderer.create(

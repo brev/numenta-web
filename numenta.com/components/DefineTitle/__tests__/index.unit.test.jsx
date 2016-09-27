@@ -6,7 +6,7 @@ import DefineList from '../../DefineList'
 import DefineTitle from '../../DefineTitle'
 
 
-describe('<DefineTitle /> React component unit test suite', () => {
+describe('DefineTitle React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

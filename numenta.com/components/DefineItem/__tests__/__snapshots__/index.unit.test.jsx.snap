@@ -1,4 +1,4 @@
-exports[`<DefineItem /> React component unit test suite Renders correctly 1`] = `
+exports[`DefineItem React component Renders correctly 1`] = `
 <dd
   className="defineItem">
   Item

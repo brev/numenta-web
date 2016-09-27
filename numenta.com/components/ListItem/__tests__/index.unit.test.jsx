@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import ListItem from '../../ListItem'
 
 
-describe('<ListItem /> React component unit test suite', () => {
+describe('ListItem React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

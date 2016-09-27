@@ -1,4 +1,4 @@
-exports[`<DefineList /> React component unit test suite Renders correctly 1`] = `
+exports[`DefineList React component Renders correctly 1`] = `
 <dl
   className="defineList vertical">
   <dt

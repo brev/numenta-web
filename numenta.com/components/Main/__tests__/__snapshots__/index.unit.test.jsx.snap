@@ -1,4 +1,4 @@
-exports[`<Main /> React component unit test suite Renders correctly 1`] = `
+exports[`Main React component Renders correctly 1`] = `
 <main
   className="main">
   <div>

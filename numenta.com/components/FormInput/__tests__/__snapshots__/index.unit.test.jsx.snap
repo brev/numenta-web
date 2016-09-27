@@ -1,4 +1,4 @@
-exports[`<FormInput /> React component unit test suite Renders correctly 1`] = `
+exports[`FormInput React component Renders correctly 1`] = `
 <input
   className="formInput large"
   id="field"

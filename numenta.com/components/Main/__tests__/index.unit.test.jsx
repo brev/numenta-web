@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Main from '../../Main'
 
 
-describe('<Main /> React component unit test suite', () => {
+describe('Main React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

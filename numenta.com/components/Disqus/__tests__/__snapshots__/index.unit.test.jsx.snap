@@ -1,4 +1,4 @@
-exports[`<Disqus /> React component unit test suite Renders correctly 1`] = `
+exports[`Disqus React component Renders correctly 1`] = `
 <div
   id="disqus_thread" />
 `;

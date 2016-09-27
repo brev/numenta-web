@@ -1,7 +1,7 @@
-exports[`<SectionTitle /> React component unit test suite Renders correctly 1`] = `
+exports[`SectionTitle React component Renders correctly 1`] = `
 <nav
   className="title"
-  onClick={undefined}
+  onClick={[Function clickHandle]}
   title={undefined}>
   <svg
     className="toggle"

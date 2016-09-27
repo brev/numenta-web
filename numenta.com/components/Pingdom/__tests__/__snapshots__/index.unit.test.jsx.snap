@@ -1,4 +1,4 @@
-exports[`<Pingdom /> React component unit test suite Renders correctly 1`] = `
+exports[`Pingdom React component Renders correctly 1`] = `
 <script
   dangerouslySetInnerHTML={
     Object {

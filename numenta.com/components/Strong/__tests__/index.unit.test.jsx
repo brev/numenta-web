@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Strong from '../../Strong'
 
 
-describe('<Strong /> React component unit test suite', () => {
+describe('Strong React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

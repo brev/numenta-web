@@ -1,8 +1,8 @@
-exports[`<TextLink /> React component unit test suite Renders correctly 1`] = `
+exports[`TextLink React component Renders correctly 1`] = `
 <a
   className="textlink"
-  onClick={[Function bound handleClick]}
-  style={Object {}}
+  href="http://numenta.com"
+  onClick={[Function instrumentOnClick]}
   target={undefined}>
   Numenta Homepage
 </a>

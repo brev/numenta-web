@@ -200,8 +200,9 @@ npm install
 | Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
-| Test Coverage | `npm run test:cover` | Runs tests and generates coverage report in `coverage/` directory |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
+| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests and generates coverage report in `coverage/` directory |
+| Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
 
 
 ## Testing
@@ -212,32 +213,28 @@ Run all tests (unit, etc):
 npm run test
 ```
 
-### Coverage
-
-Run the command below to generate a Test Code Coverage report, which will be
-saved in your local `./coverage` directory. There is a nice HTML report in there
-which you can view in your web browser.
-
-This is the same as running all tests, with the additional coverage report built
-at the end.
-
-```shell
-npm run test:coverage
-```
-
 ### Unit
 
 Run only unit tests:
 
 ```shell
 npm run test:unit
+npm run test:unit:watch  # auto re-run on changes to test files
 ```
 
 Unit tests take and use snapshots in order to perform. Make sure new or updated
 snapshots are correct before committing! To update these snapshots, try running:
 
 ```shell
-npm run test:unit -- -u
+npm run test:unit:update
+```
+
+Run the command below to generate a Unit Test Code Coverage report, which will
+be saved in your local `./coverage` directory. There is a nice HTML report in
+there which you can open in a web browser.
+
+```shell
+npm run test:unit:coverage
 ```
 
 

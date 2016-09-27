@@ -1,4 +1,4 @@
-exports[`<PostListItem /> React component unit test suite Renders correctly 1`] = `
+exports[`PostListItem React component Renders correctly 1`] = `
 <div
   className="item">
   <div
@@ -29,12 +29,13 @@ exports[`<PostListItem /> React component unit test suite Renders correctly 1`] 
       <span
         className="avatar">
         <img
-          alt={undefined}
+          alt="Ada Lovelace"
           className="image border round"
           onClick={undefined}
           src="filename.ext"
-          title={undefined} />
+          title="Ada Lovelace" />
       </span>
+      Ada Lovelace
       <span
         className="spacer">
         •

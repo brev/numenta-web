@@ -4,11 +4,11 @@ import renderer from 'react-test-renderer'
 import TextLink from '../../TextLink'
 
 
-describe('<TextLink /> React component unit test suite', () => {
+describe('TextLink React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <TextLink href="http://numenta.com">
+      <TextLink to="http://numenta.com">
         Numenta Homepage
       </TextLink>
     )

@@ -7,7 +7,7 @@ import FormLabel from '../../FormLabel'
 import FormRow from '../../FormRow'
 
 
-describe('<FormRow /> React component unit test suite', () => {
+describe('FormRow React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

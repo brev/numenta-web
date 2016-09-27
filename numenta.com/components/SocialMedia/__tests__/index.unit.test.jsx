@@ -7,7 +7,7 @@ import context from '../../../__mocks__/reactContextMock'
 import SocialMedia from '../../SocialMedia'
 
 
-describe('<SocialMedia /> React component unit test suite', () => {
+describe('SocialMedia React component', () => {
 
   it('Renders correctly', () => {
     const SocialMediaStubbed = stubContext(SocialMedia, context)

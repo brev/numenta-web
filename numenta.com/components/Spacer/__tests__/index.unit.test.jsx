@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Spacer from '../../Spacer'
 
 
-describe('<Spacer /> React component unit test suite', () => {
+describe('Spacer React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

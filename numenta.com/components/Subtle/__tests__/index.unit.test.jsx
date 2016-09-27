@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Subtle from '../../Subtle'
 
 
-describe('<Subtle /> React component unit test suite', () => {
+describe('Subtle React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

@@ -4,11 +4,13 @@ import renderer from 'react-test-renderer'
 import SectionTitle from '../../SectionTitle'
 
 
-describe('<SectionTitle /> React component unit test suite', () => {
+describe('SectionTitle React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <SectionTitle>
+      <SectionTitle
+        clickHandle={() => {}}
+      >
         Section Title
       </SectionTitle>
     )

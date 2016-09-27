@@ -1,4 +1,4 @@
-exports[`<TableTitle /> React component unit test suite Renders correctly 1`] = `
+exports[`TableTitle React component Renders correctly 1`] = `
 <th
   className="tableTitle"
   colSpan={1}>

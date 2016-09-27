@@ -1,4 +1,4 @@
-exports[`<TableHead /> React component unit test suite Renders correctly 1`] = `
+exports[`TableHead React component Renders correctly 1`] = `
 <thead
   className="tableHeader">
   <tr

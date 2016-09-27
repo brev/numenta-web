@@ -7,7 +7,7 @@ import context from '../../../__mocks__/reactContextMock'
 import Pingdom from '../../Pingdom'
 
 
-describe('<Pingdom /> React component unit test suite', () => {
+describe('Pingdom React component', () => {
 
   it('Renders correctly', () => {
     const PingdomStubbed = stubContext(Pingdom, context)

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import SubTitle from '../../SubTitle'
 
 
-describe('<SubTitle /> React component unit test suite', () => {
+describe('SubTitle React component', () => {
 
   it('Renders Heading Level 2 correctly', () => {
     const component = renderer.create(

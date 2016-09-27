@@ -7,7 +7,7 @@ import context from '../../../__mocks__/reactContextMock'
 import Footer from '../../Footer'
 
 
-describe('<Footer /> React component unit test suite', () => {
+describe('Footer React component', () => {
 
   it('Renders correctly', () => {
     const FooterStubbed = stubContext(Footer, context)

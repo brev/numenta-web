@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import DefineItem from '../../DefineItem'
 
 
-describe('<DefineItem /> React component unit test suite', () => {
+describe('DefineItem React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

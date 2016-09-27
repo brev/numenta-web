@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import NextSection from '../../NextSection'
 
 
-describe('<NextSection /> React component unit test suite', () => {
+describe('NextSection React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

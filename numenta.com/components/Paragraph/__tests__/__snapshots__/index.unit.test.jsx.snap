@@ -1,4 +1,4 @@
-exports[`<Paragraph /> React component unit test suite Renders correctly 1`] = `
+exports[`Paragraph React component Renders correctly 1`] = `
 <p
   className="paragraph" />
 `;

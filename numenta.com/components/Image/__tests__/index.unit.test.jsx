@@ -4,11 +4,11 @@ import renderer from 'react-test-renderer'
 import Image from '../../Image'
 
 
-describe('<Image /> React component unit test suite', () => {
+describe('Image React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <Image />
+      <Image alt="Clown" src="clown.png" />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

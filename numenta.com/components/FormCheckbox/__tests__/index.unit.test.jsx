@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import FormCheckbox from '../../FormCheckbox'
 
 
-describe('<FormCheckbox /> React component unit test suite', () => {
+describe('FormCheckbox React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

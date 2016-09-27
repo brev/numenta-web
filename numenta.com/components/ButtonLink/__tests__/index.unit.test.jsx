@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import ButtonLink from '../../ButtonLink'
 
 
-describe('<ButtonLink /> React component unit test suite', () => {
+describe('ButtonLink React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

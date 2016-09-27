@@ -114,9 +114,11 @@
     "lint:js": "eslint --ext=js --ext=jsx --ignore-pattern public .",
     "preserve": "npm run build",
     "serve": "gatsby serve-build",
-    "test": "npm run test:unit",
-    "test:cover": "npm run test:unit -- --coverage",
-    "test:unit": "jest --config .jestrc.json",
+    "test": "npm run test:unit:cover",
+    "test:unit": "jest --bail --config .jestrc.json \"unit.test\"",
+    "test:unit:cover": "npm run test:unit -- --coverage",
+    "test:unit:update": "npm run test:unit -- -u",
+    "test:unit:watch": "npm run test:unit -- --watch",
     "validate": "npm run validate:html",
     "validate:html": "echo"
   }

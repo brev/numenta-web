@@ -1,8 +1,8 @@
-exports[`<Image /> React component unit test suite Renders correctly 1`] = `
+exports[`Image React component Renders correctly 1`] = `
 <img
-  alt={undefined}
+  alt="Clown"
   className="image shadow"
   onClick={undefined}
-  src={undefined}
+  src="clown.png"
   title={undefined} />
 `;

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import TableTitle from '../../TableTitle'
 
 
-describe('<TableTitle /> React component unit test suite', () => {
+describe('TableTitle React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

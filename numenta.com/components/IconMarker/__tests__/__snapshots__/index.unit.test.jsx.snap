@@ -1,4 +1,4 @@
-exports[`<IconMarker /> React component unit test suite Renders correctly 1`] = `
+exports[`IconMarker React component Renders correctly 1`] = `
 <span
   className="iconMarker">
   <span
@@ -21,5 +21,6 @@ exports[`<IconMarker /> React component unit test suite Renders correctly 1`] = 
       </g>
     </svg>
   </span>
+  Hello
 </span>
 `;

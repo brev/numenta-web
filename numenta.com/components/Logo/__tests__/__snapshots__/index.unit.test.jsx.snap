@@ -1,4 +1,4 @@
-exports[`<Logo /> React component unit test suite Renders correctly 1`] = `
+exports[`Logo React component Renders correctly 1`] = `
 <img
   alt="Numenta Logo"
   className="image"

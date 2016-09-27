@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Section from '../../Section'
 
 
-describe('<Section /> React component unit test suite', () => {
+describe('Section React component', () => {
 
   it('Renders Closed with No Headline correctly', () => {
     const component = renderer.create(

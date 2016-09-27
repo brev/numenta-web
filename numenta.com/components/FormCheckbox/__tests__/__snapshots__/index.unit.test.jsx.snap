@@ -1,4 +1,4 @@
-exports[`<FormCheckbox /> React component unit test suite Renders correctly 1`] = `
+exports[`FormCheckbox React component Renders correctly 1`] = `
 <input
   className="checkbox"
   id="field"

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Paragraph from '../../Paragraph'
 
 
-describe('<Paragraph /> React component unit test suite', () => {
+describe('Paragraph React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

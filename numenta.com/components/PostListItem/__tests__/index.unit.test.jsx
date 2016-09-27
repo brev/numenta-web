@@ -10,12 +10,14 @@ const _post = {
   file: {
     dir: '/path/to/file/',
   },
-  data: {},
+  data: {
+    author: 'Ada Lovelace',
+  },
   path: '',
 }
 
 
-describe('<PostListItem /> React component unit test suite', () => {
+describe('PostListItem React component', () => {
 
   it('Renders correctly', () => {
     const PostListItemStubbed = stubContext(PostListItem, context)

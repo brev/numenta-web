@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Tag from '../../Tag'
 
 
-describe('<Tag /> React component unit test suite', () => {
+describe('Tag React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

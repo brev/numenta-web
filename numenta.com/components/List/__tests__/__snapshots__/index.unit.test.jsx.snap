@@ -1,4 +1,4 @@
-exports[`<List /> React component unit test suite Renders correctly with circle marker 1`] = `
+exports[`List React component Renders correctly with circle marker 1`] = `
 <ul
   className="ul">
   <li
@@ -16,7 +16,7 @@ exports[`<List /> React component unit test suite Renders correctly with circle 
 </ul>
 `;
 
-exports[`<List /> React component unit test suite Renders correctly with default props 1`] = `
+exports[`List React component Renders correctly with default props 1`] = `
 <ul
   className="ul">
   <li
@@ -34,7 +34,7 @@ exports[`<List /> React component unit test suite Renders correctly with default
 </ul>
 `;
 
-exports[`<List /> React component unit test suite Renders correctly with disc marker 1`] = `
+exports[`List React component Renders correctly with disc marker 1`] = `
 <ul
   className="ul">
   <li
@@ -52,7 +52,7 @@ exports[`<List /> React component unit test suite Renders correctly with disc ma
 </ul>
 `;
 
-exports[`<List /> React component unit test suite Renders correctly with text-copy prop 1`] = `
+exports[`List React component Renders correctly with text-copy prop 1`] = `
 <ul
   className="ul">
   <li
@@ -70,7 +70,7 @@ exports[`<List /> React component unit test suite Renders correctly with text-co
 </ul>
 `;
 
-exports[`<List /> React component unit test suite Renders correctly without text-copy prop 1`] = `
+exports[`List React component Renders correctly without text-copy prop 1`] = `
 <ul
   className="ul">
   <li

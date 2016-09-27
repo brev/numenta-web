@@ -6,7 +6,7 @@ import TableRow from '../../TableRow'
 import TableTitle from '../../TableTitle'
 
 
-describe('<TableHead /> React component unit test suite', () => {
+describe('TableHead React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

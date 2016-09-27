@@ -1,14 +1,14 @@
-exports[`<ImageLink /> React component unit test suite Renders correctly 1`] = `
+exports[`ImageLink React component Renders correctly 1`] = `
 <a
   className="imagelink"
   href="http://numenta.com"
   onClick={[Function onClick]}
   title={undefined}>
   <img
-    alt={undefined}
+    alt="Zebra"
     className="image shadow"
     onClick={undefined}
     src="zebra.png"
-    title="Zebra Image" />
+    title={undefined} />
 </a>
 `;

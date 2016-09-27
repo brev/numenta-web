@@ -1,4 +1,4 @@
-exports[`<Button /> React component unit test suite Renders correctly 1`] = `
+exports[`Button React component Renders correctly 1`] = `
 <button
   className="button default"
   disabled={false}
