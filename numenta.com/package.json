@@ -1,6 +1,6 @@
 {
   "name": "Numenta.com",
-  "version": "0.2.94",
+  "version": "0.2.95",
   "description": "Numenta.com company website content, source code, and static generator tooling.",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "main": false,
