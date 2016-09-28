@@ -1,4 +1,4 @@
-import {getBrowserWidth} from '../client'
+import {getBrowserWidth} from '../../utils/client'
 
 
 describe('Client helper utils', () => {

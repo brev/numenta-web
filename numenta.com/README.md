@@ -64,6 +64,12 @@ If you'd like to help, please make your own fork of this repo, and work from
 branches in your fork. Pull Requests should be between your fork, and our main
 repo. This will keep our main repo clean of working branches.
 
+**Before** submitting Pull Requsts, please make sure you have successfully run
+the following scripts against your change branch:
+
+* `npm run lint`
+* `npm run test`
+
 
 ## Environments
 
@@ -116,8 +122,9 @@ repo. This will keep our main repo clean of working branches.
 ├── .stylelintrc        # CSS style lint rules
 ├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
 ├── README.md           # This file, welcome docs.
-├── __mocks__/          # Mocks and stubs for unit testing suite
-├── components/         # React.js View Components and UI modules (HTML/CSS/JS)
+├── __mocks__/          # Mocks and stubs for tests and testing suite
+├── __tests__/          # Sitewide and site-specific (non-Component) Tests
+├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
 ├── coverage/           # Target for Test Code Coverage reports (not in git)
 ├── gatsby-browser.js   # Browser-specific code, tied to React Router by Gatsby
@@ -202,12 +209,19 @@ npm install
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
 | Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests and generates coverage report in `coverage/` directory |
+| Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
 | Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
 
 
 ## Testing
 
-Run all tests (unit, etc):
+Each React component (which might be shared between sites) has it's own internal
+`__tests__` subdirectory, with it's own tests.
+
+Sitewide Non-component tests, for pages, utils, wrappers, etc., exist in the
+root `__tests__` directory.
+
+To run All Tests (unit, etc):
 
 ```shell
 npm run test

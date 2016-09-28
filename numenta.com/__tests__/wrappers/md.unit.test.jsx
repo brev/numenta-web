@@ -4,7 +4,7 @@
 //
 // import context from '../../__mocks__/reactContextMock'
 //
-// import Md from '../md'
+// import Md from '../../wrappers/md'
 //
 // const route = {
 //   page: {

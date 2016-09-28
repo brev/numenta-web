@@ -4,7 +4,7 @@ import stubContext from 'react-stub-context'
 
 import context from '../../__mocks__/reactContextMock'
 
-import Html from '../html'
+import Html from '../../wrappers/html'
 
 const route = {
   page: {

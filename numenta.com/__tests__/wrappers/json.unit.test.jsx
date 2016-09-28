@@ -4,7 +4,7 @@ import stubContext from 'react-stub-context'
 
 import context from '../../__mocks__/reactContextMock'
 
-import Json from '../json'
+import Json from '../../wrappers/json'
 
 const route = {
   page: {

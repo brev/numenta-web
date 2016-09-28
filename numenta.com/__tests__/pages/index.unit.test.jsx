@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import Blog from '../index'
+// import Index from '../../pages/index'
 
 
-describe('Blog Page React component', () => {
+describe('Index Page React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <Blog />
+    //   <Index />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()

@@ -1,4 +1,4 @@
-import {getVersion} from '../shared'
+import {getVersion} from '../../utils/shared'
 
 
 describe('Shared Client+Server helper utils', () => {
