@@ -51,11 +51,13 @@ SectionTitle.propTypes = {
   children: React.PropTypes.node.isRequired,
   clickHandle: React.PropTypes.func.isRequired,
   headline: React.PropTypes.bool.isRequired,
+  open: React.PropTypes.bool.isRequired,
   title: React.PropTypes.string,
 }
 
 SectionTitle.defaultProps = {
   headline: false,
+  open: false,
 }
 
 export default SectionTitle

@@ -1,8 +1,15 @@
-exports[`SectionTitle React component Renders correctly 1`] = `
+exports[`SectionTitle React component Headline version Renders Headline correctly 1`] = `
+<h1
+  className="headline">
+  Section Content
+</h1>
+`;
+
+exports[`SectionTitle React component Regular version Renders Regular Closed correctly 1`] = `
 <nav
   className="title"
   onClick={[Function clickHandle]}
-  title={undefined}>
+  title="Section Title">
   <svg
     className="toggle"
     fill="currentColor"
@@ -23,7 +30,37 @@ exports[`SectionTitle React component Renders correctly 1`] = `
   </svg>
   <h1
     className="title">
-    Section Title
+    Section Content
+  </h1>
+</nav>
+`;
+
+exports[`SectionTitle React component Regular version Renders Regular Opened correctly 1`] = `
+<nav
+  className="title open"
+  onClick={[Function clickHandle]}
+  title="Section Title">
+  <svg
+    className="toggle"
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    style={
+      Object {
+        "color": undefined,
+        "verticalAlign": "middle"
+      }
+    }
+    viewBox="0 0 40 40"
+    width="1em">
+    <g>
+      <path
+        d="m31 26.4q0 0.3-0.2 0.5l-1.1 1.2q-0.3 0.2-0.6 0.2t-0.5-0.2l-8.7-8.8-8.8 8.8q-0.2 0.2-0.5 0.2t-0.5-0.2l-1.2-1.2q-0.2-0.2-0.2-0.5t0.2-0.5l10.4-10.4q0.3-0.2 0.6-0.2t0.5 0.2l10.4 10.4q0.2 0.2 0.2 0.5z" />
+    </g>
+  </svg>
+  <h1
+    className="title">
+    Section Content
   </h1>
 </nav>
 `;
