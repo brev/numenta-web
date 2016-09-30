@@ -1,4 +1,48 @@
-exports[`DefineList React component Renders correctly 1`] = `
+exports[`DefineList React component Renders Default correctly 1`] = `
+<dl
+  className="defineList vertical">
+  <dt
+    className="defineTitle vertical">
+    Title 1
+  </dt>
+  <dd
+    className="defineItem vertical">
+    Item 1
+  </dd>
+  <dt
+    className="defineTitle vertical">
+    Title 2
+  </dt>
+  <dd
+    className="defineItem vertical">
+    Item 2
+  </dd>
+</dl>
+`;
+
+exports[`DefineList React component Renders Horizontally correctly 1`] = `
+<dl
+  className="defineList horizontal">
+  <dt
+    className="defineTitle horizontal">
+    Title 1
+  </dt>
+  <dd
+    className="defineItem horizontal">
+    Item 1
+  </dd>
+  <dt
+    className="defineTitle horizontal">
+    Title 2
+  </dt>
+  <dd
+    className="defineItem horizontal">
+    Item 2
+  </dd>
+</dl>
+`;
+
+exports[`DefineList React component Renders Vertically correctly 1`] = `
 <dl
   className="defineList vertical">
   <dt
