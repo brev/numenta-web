@@ -61,6 +61,16 @@ const SectionBrain = (props, {config}) => {
             language to motor and more.  Nothing is task-specific. Everything
             operates on the same universal algorithms.
           </Paragraph>
+          <Paragraph>
+            We document our theory in the form of {' '}
+            <TextLink to={links.in.papers}>
+              research papers
+            </TextLink> {' '}
+            and a living book called {' '}
+            <TextLink to={links.in.bami}>
+              BAMI (Biological and Machine Intelligence).
+            </TextLink>
+          </Paragraph>
         </div>
       </div>
     </article>
