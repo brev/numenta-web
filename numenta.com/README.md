@@ -122,8 +122,7 @@ the following scripts against your change branch:
 ├── .stylelintrc        # CSS style lint rules
 ├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
 ├── README.md           # This file, welcome docs.
-├── __mocks__/          # Mocks and stubs for tests and testing suite
-├── __tests__/          # Sitewide and site-specific (non-Component) Tests
+├── __tests__/          # Shared and Site-specific Component Tests & Mocks, etc.
 ├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
 ├── coverage/           # Target for Test Code Coverage reports (not in git)
