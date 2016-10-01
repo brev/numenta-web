@@ -1,4 +1,28 @@
-exports[`TableBody React component Renders correctly 1`] = `
+exports[`TableBody React component Renders Bordered correctly 1`] = `
+<tbody
+  className="tableBody">
+  <tr
+    className="tableRow">
+    <td
+      className="tableCell border"
+      colSpan={1}>
+      Cell 1
+    </td>
+    <td
+      className="tableCell border"
+      colSpan={1}>
+      Cell 2
+    </td>
+    <td
+      className="tableCell border"
+      colSpan={1}>
+      Cell 3
+    </td>
+  </tr>
+</tbody>
+`;
+
+exports[`TableBody React component Renders Un-bordered correctly 1`] = `
 <tbody
   className="tableBody">
   <tr

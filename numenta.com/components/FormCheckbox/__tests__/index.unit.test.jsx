@@ -8,7 +8,10 @@ describe('FormCheckbox React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <FormCheckbox name="field" />
+      <FormCheckbox
+        name="field"
+        onClick={() => {}}
+      />
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

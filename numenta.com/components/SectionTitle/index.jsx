@@ -25,7 +25,11 @@ const SectionTitle = ({children, clickHandle, headline, open, title}) => {
   const isOpen = open === true && !isHeadline
   const IconAngle = isOpen ? IconAngleUp : IconAngleDown
   const titleClasses = [styles.title]
-  let sectionTitle = (<Title headline={headline}>{children}</Title>)
+  let sectionTitle = (
+    <Title headline={headline}>
+      {children}
+    </Title>
+  )
 
   if (!isHeadline) {
     if (isOpen) titleClasses.push(styles.open)

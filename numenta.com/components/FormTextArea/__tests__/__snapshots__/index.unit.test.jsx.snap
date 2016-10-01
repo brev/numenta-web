@@ -1,14 +1,14 @@
 exports[`FormTextArea React component Renders correctly 1`] = `
 <form
   acceptCharset="UTF-8"
-  action={undefined}
+  action="http://numenta.com"
   autoComplete="off"
   className="form"
   encType="multipart/form-data"
-  id={undefined}
+  id="form"
   method="post"
-  name={undefined}
-  onSubmit={undefined}>
+  name="form"
+  onSubmit={[Function onSubmit]}>
   <div
     className="formRow">
     <label

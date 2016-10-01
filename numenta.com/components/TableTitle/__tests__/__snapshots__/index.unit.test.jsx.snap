@@ -1,7 +1,23 @@
-exports[`TableTitle React component Renders correctly 1`] = `
+exports[`TableTitle React component Renders Bordered correctly 1`] = `
+<th
+  className="tableTitle border"
+  colSpan={1}>
+  Some Statistics
+</th>
+`;
+
+exports[`TableTitle React component Renders Un-bordered correctly 1`] = `
 <th
   className="tableTitle"
   colSpan={1}>
+  Some Statistics
+</th>
+`;
+
+exports[`TableTitle React component Renders with Expanded Column Span correctly 1`] = `
+<th
+  className="tableTitle"
+  colSpan={2}>
   Some Statistics
 </th>
 `;

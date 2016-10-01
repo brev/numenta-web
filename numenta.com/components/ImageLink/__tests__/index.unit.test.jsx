@@ -9,12 +9,14 @@ describe('ImageLink React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <ImageLink to="http://numenta.com">
-        <Image alt="Zebra" src="zebra.png" />
+      <ImageLink title="Brain" to="http://numenta.com">
+        <Image alt="Brain" src="brain.png" />
       </ImageLink>
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  // @TODO test different link types (see README)
 
 })

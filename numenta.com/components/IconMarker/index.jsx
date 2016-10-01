@@ -10,7 +10,7 @@
 // the GNU Affero General Public License along with this program. If not, see
 // <https://www.gnu.org/licenses/agpl.html>.
 
-import IconArrowCircleRight from 'react-icons/lib/fa/arrow-circle-o-right'
+import IconArrowRight from 'react-icons/lib/fa/arrow-circle-o-right'
 import React from 'react'
 
 import styles from './index.css'
@@ -31,7 +31,7 @@ IconMarker.propTypes = {
 }
 
 IconMarker.defaultProps = {
-  icon: (<IconArrowCircleRight />),
+  icon: (<IconArrowRight />),
 }
 
 export default IconMarker

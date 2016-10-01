@@ -1,4 +1,13 @@
-exports[`Paragraph React component Renders correctly 1`] = `
+exports[`Paragraph React component Renders Default correctly 1`] = `
 <p
-  className="paragraph" />
+  className="paragraph">
+  Contents
+</p>
+`;
+
+exports[`Paragraph React component Renders Lead correctly 1`] = `
+<p
+  className="paragraph lead">
+  Headline
+</p>
 `;

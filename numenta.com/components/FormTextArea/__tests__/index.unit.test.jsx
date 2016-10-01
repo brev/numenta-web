@@ -11,7 +11,11 @@ describe('FormTextArea React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <Form>
+      <Form
+        action="http://numenta.com"
+        name="form"
+        onSubmit={() => {}}
+      >
         <FormRow>
           <FormLabel for="field">
             Label

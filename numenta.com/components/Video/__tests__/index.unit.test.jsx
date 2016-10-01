@@ -14,11 +14,13 @@ describe('Video React view component', () => {
     //     time="02:23"
     //     title="Video Title"
     //     type="youtube"
-    //     videoid="abcd1234"
+    //     videoId="abcd1234"
     //   />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()
   })
+
+  // @TODO test interaction
 
 })

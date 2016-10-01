@@ -1,4 +1,11 @@
-exports[`Title React component Renders correctly 1`] = `
+exports[`Title React component Renders Headline correctly 1`] = `
+<h1
+  className="headline">
+  Important Text
+</h1>
+`;
+
+exports[`Title React component Renders Normal correctly 1`] = `
 <h1
   className="title">
   Important Text

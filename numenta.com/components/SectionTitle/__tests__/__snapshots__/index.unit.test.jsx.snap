@@ -1,7 +1,7 @@
 exports[`SectionTitle React component Headline version Renders Headline correctly 1`] = `
 <h1
   className="headline">
-  Section Content
+  Section Title
 </h1>
 `;
 
@@ -9,7 +9,7 @@ exports[`SectionTitle React component Regular version Renders Regular Closed cor
 <nav
   className="title"
   onClick={[Function clickHandle]}
-  title="Section Title">
+  title="Hover Hint">
   <svg
     className="toggle"
     fill="currentColor"
@@ -30,7 +30,7 @@ exports[`SectionTitle React component Regular version Renders Regular Closed cor
   </svg>
   <h1
     className="title">
-    Section Content
+    Section Title
   </h1>
 </nav>
 `;
@@ -39,7 +39,7 @@ exports[`SectionTitle React component Regular version Renders Regular Opened cor
 <nav
   className="title open"
   onClick={[Function clickHandle]}
-  title="Section Title">
+  title="Hover Hint">
   <svg
     className="toggle"
     fill="currentColor"
@@ -60,7 +60,7 @@ exports[`SectionTitle React component Regular version Renders Regular Opened cor
   </svg>
   <h1
     className="title">
-    Section Content
+    Section Title
   </h1>
 </nav>
 `;

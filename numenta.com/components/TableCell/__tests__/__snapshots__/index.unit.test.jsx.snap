@@ -1,7 +1,23 @@
-exports[`TableCell React component Renders correctly 1`] = `
+exports[`TableCell React component Renders Bordered correctly 1`] = `
+<td
+  className="tableCell border"
+  colSpan={1}>
+  Cell
+</td>
+`;
+
+exports[`TableCell React component Renders Un-bordered correctly 1`] = `
 <td
   className="tableCell"
   colSpan={1}>
-  Cell 1
+  Cell
+</td>
+`;
+
+exports[`TableCell React component Renders with Expanded Column Span correctly 1`] = `
+<td
+  className="tableCell"
+  colSpan={2}>
+  Cell
 </td>
 `;

@@ -6,9 +6,23 @@ import TextLink from '../../TextLink'
 
 describe('TextLink React component', () => {
 
-  it('Renders correctly', () => {
+  it('Renders Default correctly', () => {
     const component = renderer.create(
       <TextLink to="http://numenta.com">
+        Numenta Homepage
+      </TextLink>
+    )
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it('Renders Augmented correctly', () => {
+    const component = renderer.create(
+      <TextLink
+        onClick={() => {}}
+        target="_blank"
+        to="http://numenta.com"
+      >
         Numenta Homepage
       </TextLink>
     )

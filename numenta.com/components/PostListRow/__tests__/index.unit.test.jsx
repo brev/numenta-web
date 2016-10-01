@@ -5,6 +5,8 @@
 // import context from '../../../__mocks__/reactContextMock'
 //
 // import PostListRow from '../../PostListRow'
+//
+// const post = {}
 
 
 describe('PostListRow React component', () => {
@@ -12,10 +14,12 @@ describe('PostListRow React component', () => {
   it('Renders correctly', () => {
     // const PostListRowStubbed = stubContext(PostListRow, context)
     // const component = renderer.create(
-    //   <PostListRowStubbed />
+    //   <PostListRowStubbed post={post} />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()
   })
+
+  // @TODO test Image vs. Video on right side
 
 })

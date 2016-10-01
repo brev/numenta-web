@@ -12,9 +12,9 @@ describe('SectionTitle React component', () => {
         <SectionTitle
           clickHandle={() => {}}
           headline={true}
-          title="Section Title"
+          title="Hover Hint"
         >
-          Section Content
+          Section Title
         </SectionTitle>
       )
       const tree = component.toJSON()
@@ -29,9 +29,9 @@ describe('SectionTitle React component', () => {
           clickHandle={() => {}}
           headline={false}
           open={true}
-          title="Section Title"
+          title="Hover Hint"
         >
-          Section Content
+          Section Title
         </SectionTitle>
       )
       const tree = component.toJSON()
@@ -44,9 +44,9 @@ describe('SectionTitle React component', () => {
           clickHandle={() => {}}
           headline={false}
           open={false}
-          title="Section Title"
+          title="Hover Hint"
         >
-          Section Content
+          Section Title
         </SectionTitle>
       )
       const tree = component.toJSON()

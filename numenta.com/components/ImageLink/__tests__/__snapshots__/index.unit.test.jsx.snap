@@ -3,12 +3,12 @@ exports[`ImageLink React component Renders correctly 1`] = `
   className="imagelink"
   href="http://numenta.com"
   onClick={[Function onClick]}
-  title={undefined}>
+  title="Brain">
   <img
-    alt="Zebra"
+    alt="Brain"
     className="image shadow"
     onClick={undefined}
-    src="zebra.png"
+    src="brain.png"
     title={undefined} />
 </a>
 `;

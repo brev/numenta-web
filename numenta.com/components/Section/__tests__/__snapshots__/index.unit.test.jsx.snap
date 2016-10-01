@@ -1,7 +1,7 @@
 exports[`Section React component Renders Closed with Headline correctly 1`] = `
 <section
   className="section"
-  id={undefined}>
+  id="section">
   <h1
     className="headline">
     Section Title
@@ -16,7 +16,7 @@ exports[`Section React component Renders Closed with Headline correctly 1`] = `
 exports[`Section React component Renders Closed with No Headline correctly 1`] = `
 <section
   className="section"
-  id={undefined}>
+  id="section">
   <nav
     className="title"
     onClick={[Function clickHandle]}
@@ -78,7 +78,7 @@ exports[`Section React component Renders Closed with No Headline correctly 1`] =
 exports[`Section React component Renders Open with Headline correctly 1`] = `
 <section
   className="section"
-  id={undefined}>
+  id="section">
   <h1
     className="headline">
     Section Title
@@ -93,7 +93,7 @@ exports[`Section React component Renders Open with Headline correctly 1`] = `
 exports[`Section React component Renders Open with No Headline correctly 1`] = `
 <section
   className="section"
-  id={undefined}>
+  id="section">
   <nav
     className="title open"
     onClick={[Function clickHandle]}

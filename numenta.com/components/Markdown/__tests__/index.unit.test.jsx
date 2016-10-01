@@ -9,14 +9,16 @@ describe('Markdown React component', () => {
   it('Renders correctly', () => {
     const component = TestUtils.renderIntoDocument(
       <Markdown>
-        Marked Down Text
+        Content
       </Markdown>
     )
     const element = component._markdown  // get ref
-    expect(element.textContent).toEqual('Marked Down Text')
+    expect(element.textContent).toEqual('Content')
+    expect(element.className).toEqual('markdown')
   })
 
   // @TODO more in depth testing below...
+  //    Especially links+types, catchLinks(), etc!
   //
   // it('Mounts correctly', () => {
   //   TestUtils.Simulate.change(

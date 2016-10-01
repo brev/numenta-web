@@ -12,7 +12,9 @@ describe('Layout React component', () => {
   it('Renders correctly', () => {
     // const LayoutStubbed = stubContext(Layout, context)
     // const component = renderer.create(
-    //   <LayoutStubbed />
+    //   <LayoutStubbed>
+    //     <div>Site</div>
+    //   </LayoutStubbed>
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()
