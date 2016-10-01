@@ -25,7 +25,11 @@ const SectionTitle = ({children, clickHandle, headline, open, title}) => {
   const isOpen = open === true && !isHeadline
   const IconAngle = isOpen ? IconAngleUp : IconAngleDown
   const titleClasses = [styles.title]
-  let sectionTitle = (<Title headline={headline}>{children}</Title>)
+  let sectionTitle = (
+    <Title headline={headline}>
+      {children}
+    </Title>
+  )
 
   if (!isHeadline) {
     if (isOpen) titleClasses.push(styles.open)
@@ -51,11 +55,13 @@ SectionTitle.propTypes = {
   children: React.PropTypes.node.isRequired,
   clickHandle: React.PropTypes.func.isRequired,
   headline: React.PropTypes.bool.isRequired,
+  open: React.PropTypes.bool.isRequired,
   title: React.PropTypes.string,
 }
 
 SectionTitle.defaultProps = {
   headline: false,
+  open: false,
 }
 
 export default SectionTitle

@@ -1,0 +1,15 @@
+exports[`JSON Wrapper React component Renders correctly 1`] = `
+<div
+  className="json">
+  <h1 />
+  <p>
+    Raw view of json file
+  </p>
+  <pre
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "{}"
+      }
+    } />
+</div>
+`;

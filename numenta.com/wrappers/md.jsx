@@ -48,7 +48,7 @@ const postTypes = [
 class MarkdownWrapper extends React.Component {
 
   static propTypes = {
-    route: React.PropTypes.object,
+    route: React.PropTypes.object.isRequired,
   }
 
   static contextTypes = {

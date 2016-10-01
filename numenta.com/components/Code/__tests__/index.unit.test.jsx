@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer'
 import Code from '../../Code'
 
 
-describe('<Code /> React component unit test suite', () => {
+describe('Code React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(

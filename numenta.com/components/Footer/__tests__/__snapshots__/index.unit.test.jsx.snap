@@ -1,0 +1,76 @@
+exports[`Footer React component Renders correctly 1`] = `
+<div
+  className="footbar">
+  <footer
+    className="footer">
+    <span>
+      © 
+      2016
+       
+       
+      <a
+        className="textlink"
+        href={undefined}
+        onClick={[Function bound handleClick]}
+        style={Object {}}
+        target={undefined}>
+        Numenta
+      </a>
+    </span>
+    <span
+      className="mark">
+      <img
+        alt="Numenta Logo Mark"
+        className="image"
+        onClick={undefined}
+        src="filename.ext"
+        title="Numenta" />
+    </span>
+    <span>
+      <a
+        className="textlink"
+        href={undefined}
+        onClick={[Function bound handleClick]}
+        style={Object {}}
+        target={undefined}>
+        Terms
+      </a>
+      <span
+        className="spacer">
+        •
+      </span>
+      <a
+        className="textlink"
+        href={undefined}
+        onClick={[Function bound handleClick]}
+        style={Object {}}
+        target={undefined}>
+        Privacy
+      </a>
+      <span
+        className="spacer">
+        •
+      </span>
+      <a
+        className="textlink"
+        href={undefined}
+        onClick={[Function bound handleClick]}
+        style={Object {}}
+        target={undefined}>
+        Sitemap
+      </a>
+      <span
+        className="spacer">
+        •
+      </span>
+      <a
+        className="textlink"
+        href="https://github.com/numenta/numenta-web"
+        onClick={[Function instrumentOnClick]}
+        target={undefined}>
+        Source
+      </a>
+    </span>
+  </footer>
+</div>
+`;

@@ -22,11 +22,12 @@ import url from 'url'
  *
  */
 export function getBrowserWidth() {
+  const min = 640
   if (global.window) {
     const {width} = browserSize()
-    return width
+    return width || min
   }
-  return 640
+  return min
 }
 
 /**

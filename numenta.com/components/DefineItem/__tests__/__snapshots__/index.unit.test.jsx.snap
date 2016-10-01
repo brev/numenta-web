@@ -1,6 +1,20 @@
-exports[`<DefineItem /> React component unit test suite Renders correctly 1`] = `
+exports[`DefineItem React component Renders Default correctly 1`] = `
 <dd
   className="defineItem">
+  Item
+</dd>
+`;
+
+exports[`DefineItem React component Renders Horizontal correctly 1`] = `
+<dd
+  className="defineItem horizontal">
+  Item
+</dd>
+`;
+
+exports[`DefineItem React component Renders Vertical correctly 1`] = `
+<dd
+  className="defineItem vertical">
   Item
 </dd>
 `;

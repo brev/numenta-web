@@ -1,0 +1,8 @@
+exports[`FormCheckbox React component Renders correctly 1`] = `
+<input
+  className="checkbox"
+  id="field"
+  name="field"
+  onClick={[Function onClick]}
+  type="checkbox" />
+`;

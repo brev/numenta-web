@@ -18,12 +18,11 @@ import htmlToText from 'html2plaintext'
 import {ncp} from 'ncp'
 import toml from 'toml'
 
-/* eslint-disable no-console */
-
 const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
+
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -31,6 +30,7 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
+/* eslint-disable no-console */
 
 
 /**
@@ -42,11 +42,13 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  */
 export function modifyWebpackConfig(webpack, env) {
   const cssOptions = [
-    'modules',
-    'localIdentName=[name]_[local]_[hash:base64:3]',
     'importLoaders=1',
+    'localIdentName=[name]_[local]_[hash:base64:5]',
+    'modules',
   ].join('&')
   const cssModules = `css?${cssOptions}`
+
+  webpack.merge({debug: true})
 
   // dev source maps
   if (env === 'develop') {
@@ -95,25 +97,27 @@ export function modifyWebpackConfig(webpack, env) {
   if (env === 'build-html') {
     console.log(env, 'Auto-generating Icons...')
     webpack.merge({
-      plugins: [new FaviconsPlugin({
-        background: '#fff',
-        emitStats: false,
-        inject: false,
-        logo: 'components/LogoMark/images/mark.png',
-        persistentCache: true,
-        prefix: '/',
-        title: config.siteHost,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: true,
-          favicons: true,
-          firefox: true,
-          windows: true,
-          yandex: true,
-        },
-      })],
+      plugins: [
+        new FaviconsPlugin({
+          background: '#fff',
+          emitStats: false,
+          inject: false,
+          logo: 'components/LogoMark/images/mark.png',
+          persistentCache: true,
+          prefix: '/',
+          title: config.siteHost,
+          icons: {
+            android: true,
+            appleIcon: true,
+            appleStartup: true,
+            coast: true,
+            favicons: true,
+            firefox: true,
+            windows: true,
+            yandex: true,
+          },
+        }),
+      ],
     })
   }
 

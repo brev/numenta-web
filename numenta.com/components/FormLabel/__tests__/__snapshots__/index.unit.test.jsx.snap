@@ -1,0 +1,7 @@
+exports[`FormLabel React component Renders correctly 1`] = `
+<label
+  className="formLabel"
+  htmlFor="field">
+  Label
+</label>
+`;

@@ -22,6 +22,9 @@ import styles from './index.css'
 import modalStyles from './_style-modal'
 
 
+/**
+ *
+ */
 class Video extends React.Component {
 
   static propTypes = {
