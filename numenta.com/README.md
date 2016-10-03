@@ -38,18 +38,9 @@ us accomplish all of this.
 ## License
 
 ```
-Numenta company website source code. Copyright © 2016 Numenta.
-Full details in LICENSE.txt, or contact us at <http://numenta.com>.
-
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU Affero General Public License as published by the Free
-Software Foundation, either version 3 of the License, or (at your option) any
-later version. This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
-for more details. You should have received a copy of the GNU Affero General
-Public License along with this program. If not, see
-<https://www.gnu.org/licenses/agpl.html>.
+// Numenta.com company website source code
+// MIT License (see LICENSE.txt)
+// Copyright © 2005—2016 Numenta <http://numenta.com>
 ```
 
 
@@ -120,7 +111,7 @@ the following scripts against your change branch:
 ├── .jestrc.json        # Jest testing framework config, assets under test/
 ├── .stylelintignore    # CSS style lint files to ignore
 ├── .stylelintrc        # CSS style lint rules
-├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
+├── LICENSE.txt         # Open Source MIT License information.
 ├── README.md           # This file, welcome docs.
 ├── __tests__/          # Shared and Site-specific Component Tests & Mocks, etc.
 ├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)

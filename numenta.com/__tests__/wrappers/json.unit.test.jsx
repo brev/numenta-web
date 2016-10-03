@@ -8,7 +8,10 @@ import Json from '../../wrappers/json'
 
 const route = {
   page: {
-    data: {},
+    data: {
+      title: 'Wrapper Title',
+      body: 'Wrapper Body',
+    },
     file: {},
     path: '',
   },
