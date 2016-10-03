@@ -6,9 +6,15 @@
 //
 // import Md from '../../wrappers/md'
 //
+// // @TODO better test data below, test all differing cases.
 // const route = {
 //   page: {
-//     data: {},
+//     data: {
+//       post: {
+//         title: 'Wrapper Title',
+//         body: 'Wrapper Body',
+//       },
+//     },
 //     file: {},
 //     path: '',
 //   },

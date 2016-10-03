@@ -8,7 +8,12 @@ import Html from '../../wrappers/html'
 
 const route = {
   page: {
-    data: {},
+    data: {
+      post: {
+        title: 'Wrapper Title',
+        body: 'Wrapper Body',
+      },
+    },
     file: {},
     path: '',
   },

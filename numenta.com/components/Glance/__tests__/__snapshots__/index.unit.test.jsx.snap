@@ -18,7 +18,7 @@ exports[`Glance React component Renders correctly 1`] = `
     </dt>
     <dd
       className="defineItem horizontal">
-      Numenta develops machine intelligence technology based on neocortical theory.
+      Developing a neocortical theory for biological and machine intelligence.
     </dd>
     <dt
       className="defineTitle horizontal">
@@ -26,15 +26,14 @@ exports[`Glance React component Renders correctly 1`] = `
     </dt>
     <dd
       className="defineItem horizontal">
-      Feb 4, 2005
-    </dd>
-    <dt
-      className="defineTitle horizontal">
-      Location
-    </dt>
-    <dd
-      className="defineItem horizontal">
-      Redwood City, CA
+      <span>
+        Feb 4, 2005
+        <span
+          className="spacer">
+          •
+        </span>
+        Redwood City, CA
+      </span>
     </dd>
     <dt
       className="defineTitle horizontal">
@@ -50,15 +49,13 @@ exports[`Glance React component Renders correctly 1`] = `
     </dt>
     <dd
       className="defineItem horizontal">
-      Licensing
-    </dd>
-    <dt
-      className="defineTitle horizontal">
-      Type
-    </dt>
-    <dd
-      className="defineItem horizontal">
-      Private
+      <a
+        className="textlink"
+        href="/assets/pdf/apps/licensing-guide.pdf"
+        onClick={[Function instrumentOnClick]}
+        target={undefined}>
+        Licensing
+      </a>
     </dd>
     <dt
       className="defineTitle horizontal">
