@@ -25,17 +25,26 @@ import TextLink from '../TextLink'
 import styles from './index.css'
 
 
+/**
+ * At-A-Glance React view component. Quick Details about the company/site.
+ */
 const Glance = (props, context) => {
   const {config} = context
   const {links} = config
   const data = {
-    About: trims`Numenta develops machine intelligence technology based on
-            neocortical theory.`,
-    Established: 'Feb 4, 2005',
-    Location: 'Redwood City, CA',
+    About: trims`Developing a neocortical theory for biological and machine
+            intelligence.`,
+    Established: (
+      <span>
+        Feb 4, 2005
+        <Spacer />
+        Redwood City, CA
+      </span>
+    ),
     Employees: '15 — 20',
-    Business: 'Licensing',
-    Type: 'Private',
+    Business: (
+      <TextLink to="/assets/pdf/apps/licensing-guide.pdf">Licensing</TextLink>
+    ),
     Content: (
       <span>
         <TextLink to={links.in.blog}>Blog</TextLink>
