@@ -8,7 +8,7 @@ exports[`FormTextArea React component Renders correctly 1`] = `
   id="form"
   method="post"
   name="form"
-  onSubmit={[Function onSubmit]}>
+  onSubmit={[Function]}>
   <div
     className="formRow">
     <label

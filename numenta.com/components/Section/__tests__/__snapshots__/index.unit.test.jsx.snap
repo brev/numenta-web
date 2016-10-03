@@ -19,7 +19,7 @@ exports[`Section React component Renders Closed with No Headline correctly 1`] =
   id="section">
   <nav
     className="title"
-    onClick={[Function clickHandle]}
+    onClick={[Function]}
     title="Open Section: Section Title">
     <svg
       className="toggle"
@@ -29,7 +29,7 @@ exports[`Section React component Renders Closed with No Headline correctly 1`] =
       style={
         Object {
           "color": undefined,
-          "verticalAlign": "middle"
+          "verticalAlign": "middle",
         }
       }
       viewBox="0 0 40 40"
@@ -49,7 +49,7 @@ exports[`Section React component Renders Closed with No Headline correctly 1`] =
     Section Content
     <div
       className="closeButton"
-      onClick={[Function onClick]}
+      onClick={[Function]}
       title="Close Section: Section Title">
       <svg
         className="closeIcon"
@@ -59,7 +59,7 @@ exports[`Section React component Renders Closed with No Headline correctly 1`] =
         style={
           Object {
             "color": "inherit",
-            "verticalAlign": "middle"
+            "verticalAlign": "middle",
           }
         }
         viewBox="0 0 40 40"
@@ -96,7 +96,7 @@ exports[`Section React component Renders Open with No Headline correctly 1`] = `
   id="section">
   <nav
     className="title open"
-    onClick={[Function clickHandle]}
+    onClick={[Function]}
     title="Close Section: Section Title">
     <svg
       className="toggle"
@@ -106,7 +106,7 @@ exports[`Section React component Renders Open with No Headline correctly 1`] = `
       style={
         Object {
           "color": undefined,
-          "verticalAlign": "middle"
+          "verticalAlign": "middle",
         }
       }
       viewBox="0 0 40 40"
@@ -126,7 +126,7 @@ exports[`Section React component Renders Open with No Headline correctly 1`] = `
     Section Content
     <div
       className="closeButton"
-      onClick={[Function onClick]}
+      onClick={[Function]}
       title="Close Section: Section Title">
       <svg
         className="closeIcon"
@@ -136,7 +136,7 @@ exports[`Section React component Renders Open with No Headline correctly 1`] = `
         style={
           Object {
             "color": "inherit",
-            "verticalAlign": "middle"
+            "verticalAlign": "middle",
           }
         }
         viewBox="0 0 40 40"

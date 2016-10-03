@@ -13,7 +13,7 @@ exports[`JSON Wrapper React component Renders correctly 1`] = `
         "__html": "{
           \"title\": \"Wrapper Title\",
           \"body\": \"Wrapper Body\"
-      }"
+      }",
       }
     } />
 </div>

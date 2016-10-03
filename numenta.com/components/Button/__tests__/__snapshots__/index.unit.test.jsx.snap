@@ -2,7 +2,7 @@ exports[`Button React component Renders Default correctly 1`] = `
 <button
   className="button default"
   disabled={false}
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="button">
   Title
 </button>
@@ -12,7 +12,7 @@ exports[`Button React component Renders Disabled correctly 1`] = `
 <button
   className="button default disabled"
   disabled={true}
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="button">
   Title
 </button>
@@ -22,7 +22,7 @@ exports[`Button React component Renders Theme:Light correctly 1`] = `
 <button
   className="button light"
   disabled={false}
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="button">
   Title
 </button>
@@ -32,7 +32,7 @@ exports[`Button React component Renders Theme:Primary correctly 1`] = `
 <button
   className="button primary"
   disabled={false}
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="button">
   Title
 </button>
@@ -42,7 +42,7 @@ exports[`Button React component Renders Theme:Short correctly 1`] = `
 <button
   className="button short"
   disabled={false}
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="button">
   Title
 </button>
@@ -52,7 +52,7 @@ exports[`Button React component Renders Type:Submit correctly 1`] = `
 <button
   className="button default"
   disabled={false}
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="submit">
   Title
 </button>

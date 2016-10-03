@@ -52,7 +52,7 @@ exports[`Glance React component Renders correctly 1`] = `
       <a
         className="textlink"
         href="/assets/pdf/apps/licensing-guide.pdf"
-        onClick={[Function instrumentOnClick]}
+        onClick={[Function]}
         target={undefined}>
         Licensing
       </a>
@@ -67,7 +67,7 @@ exports[`Glance React component Renders correctly 1`] = `
         <a
           className="textlink"
           href={undefined}
-          onClick={[Function bound handleClick]}
+          onClick={[Function]}
           style={Object {}}
           target={undefined}>
           Blog
@@ -79,7 +79,7 @@ exports[`Glance React component Renders correctly 1`] = `
         <a
           className="textlink"
           href={undefined}
-          onClick={[Function bound handleClick]}
+          onClick={[Function]}
           style={Object {}}
           target={undefined}>
           Newsletter
@@ -96,7 +96,7 @@ exports[`Glance React component Renders correctly 1`] = `
         <a
           className="textlink"
           href={undefined}
-          onClick={[Function bound handleClick]}
+          onClick={[Function]}
           style={Object {}}
           target={undefined}>
           Releases
@@ -108,7 +108,7 @@ exports[`Glance React component Renders correctly 1`] = `
         <a
           className="textlink"
           href={undefined}
-          onClick={[Function bound handleClick]}
+          onClick={[Function]}
           style={Object {}}
           target={undefined}>
           Links
@@ -124,7 +124,7 @@ exports[`Glance React component Renders correctly 1`] = `
       <a
         className="textlink"
         href={undefined}
-        onClick={[Function bound handleClick]}
+        onClick={[Function]}
         style={Object {}}
         target={undefined}>
         Events
@@ -139,7 +139,7 @@ exports[`Glance React component Renders correctly 1`] = `
       <a
         className="textlink"
         href={undefined}
-        onClick={[Function bound handleClick]}
+        onClick={[Function]}
         style={Object {}}
         target={undefined}>
         Why did we overhaul our web design? The story behind our new look. 

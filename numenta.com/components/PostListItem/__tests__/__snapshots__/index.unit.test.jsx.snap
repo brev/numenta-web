@@ -12,7 +12,7 @@ exports[`PostListItem React component Renders Evented Post (Event) correctly 1`]
   <a
     className="textlink"
     href={undefined}
-    onClick={[Function bound handleClick]}
+    onClick={[Function]}
     style={Object {}}
     target={undefined}>
     <span
@@ -63,7 +63,7 @@ exports[`PostListItem React component Renders Link stub (Press Link) correctly 1
   <a
     className="textlink"
     href="http://superblog.com"
-    onClick={[Function instrumentOnClick]}
+    onClick={[Function]}
     target={undefined}>
     <span
       className="title">
@@ -113,7 +113,7 @@ exports[`PostListItem React component Renders Normal Post (Blog, Press Release, 
   <a
     className="textlink"
     href={undefined}
-    onClick={[Function bound handleClick]}
+    onClick={[Function]}
     style={Object {}}
     target={undefined}>
     <span

@@ -6,7 +6,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
     <a
       className="imagelink"
       href="https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf"
-      onClick={[Function onClick]}
+      onClick={[Function]}
       title="facebook">
       <svg
         fill="currentColor"
@@ -15,7 +15,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
         style={
           Object {
             "color": "inherit",
-            "verticalAlign": "middle"
+            "verticalAlign": "middle",
           }
         }
         viewBox="0 0 40 40"
@@ -32,7 +32,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
     <a
       className="imagelink"
       href="https://twitter.com/numenta"
-      onClick={[Function onClick]}
+      onClick={[Function]}
       title="twitter">
       <svg
         fill="currentColor"
@@ -41,7 +41,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
         style={
           Object {
             "color": "inherit",
-            "verticalAlign": "middle"
+            "verticalAlign": "middle",
           }
         }
         viewBox="0 0 40 40"
@@ -58,7 +58,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
     <a
       className="imagelink"
       href="https://www.youtube.com/user/numenta"
-      onClick={[Function onClick]}
+      onClick={[Function]}
       title="youtube">
       <svg
         fill="currentColor"
@@ -67,7 +67,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
         style={
           Object {
             "color": "inherit",
-            "verticalAlign": "middle"
+            "verticalAlign": "middle",
           }
         }
         viewBox="0 0 40 40"
@@ -84,7 +84,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
     <a
       className="imagelink"
       href="https://www.linkedin.com/company/numenta"
-      onClick={[Function onClick]}
+      onClick={[Function]}
       title="linkedin">
       <svg
         fill="currentColor"
@@ -93,7 +93,7 @@ exports[`SocialMedia React component Renders correctly 1`] = `
         style={
           Object {
             "color": "inherit",
-            "verticalAlign": "middle"
+            "verticalAlign": "middle",
           }
         }
         viewBox="0 0 40 40"

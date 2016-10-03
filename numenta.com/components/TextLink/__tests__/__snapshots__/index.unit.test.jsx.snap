@@ -2,7 +2,7 @@ exports[`TextLink React component Renders Augmented correctly 1`] = `
 <a
   className="textlink"
   href="http://numenta.com"
-  onClick={[Function instrumentOnClick]}
+  onClick={[Function]}
   target="_blank">
   Numenta Homepage
 </a>
@@ -12,7 +12,7 @@ exports[`TextLink React component Renders Default correctly 1`] = `
 <a
   className="textlink"
   href="http://numenta.com"
-  onClick={[Function instrumentOnClick]}
+  onClick={[Function]}
   target={undefined}>
   Numenta Homepage
 </a>

@@ -9,7 +9,7 @@ exports[`NextSection React component Renders correctly 1`] = `
    
   <a
     className="textlink"
-    onClick={[Function bound handleClick]}
+    onClick={[Function]}
     style={Object {}}
     target={undefined}>
     Mission & History
@@ -21,7 +21,7 @@ exports[`NextSection React component Renders correctly 1`] = `
       style={
         Object {
           "color": undefined,
-          "verticalAlign": "middle"
+          "verticalAlign": "middle",
         }
       }
       viewBox="0 0 40 40"
