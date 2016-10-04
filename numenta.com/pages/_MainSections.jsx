@@ -15,7 +15,7 @@ import React from 'react'
 
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
 import SectionApplications from './applications/_Section'
-import SectionBrain from './brain-science/_Section'
+import SectionNeuroscience from './neuroscience-research/_Section'
 import SectionBusiness from './business-strategy-and-ip/_Section'
 import SectionCareers from './careers-and-team/_Section'
 import SectionContact from './contact/_Section'
@@ -40,9 +40,9 @@ const mainSectionList = [
     url: '/mission-and-history/',
   },
   {
-    component: <SectionBrain key="sectionBrain" />,
-    title: 'Brain Science',
-    url: '/brain-science/',
+    component: <SectionNeuroscience key="sectionNeuroscience" />,
+    title: 'Neuroscience Research',
+    url: '/neuroscience-research/',
   },
   {
     component: <SectionTechnology key="sectionTechnology" />,

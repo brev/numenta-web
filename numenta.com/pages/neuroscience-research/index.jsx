@@ -17,17 +17,18 @@ import {scrollToSection} from '../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionBrain from './_Section'
+import SectionNeuroscience from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionBrain key="sectionBrain" />)
-const title = 'Brain Science'
+const Default = (<SectionNeuroscience key="sectionNeuroscience" />)
+const title = 'Neuroscience Research'
 
 
 /**
- * Brain Science page, wrapper for associated Main Section - React component.
+ * Neuroscience Research page React component, a wrapper for the associated
+ *  MainSection component.
  */
-class BrainPage extends React.Component {
+class NeurosciencePage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -69,4 +70,4 @@ class BrainPage extends React.Component {
 
 }
 
-export default BrainPage
+export default NeurosciencePage

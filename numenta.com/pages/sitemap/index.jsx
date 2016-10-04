@@ -97,8 +97,8 @@ const SitemapPage = (props, {config, route}) => {
                 </TextLink>
               </ListItem>
               <ListItem>
-                <TextLink to={links.in.brain}>
-                  Brain Science
+                <TextLink to={links.in.neuro}>
+                  Neuroscience Research
                 </TextLink>
               </ListItem>
               <ListItem>

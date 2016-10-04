@@ -21,9 +21,9 @@ import styles from './index.css'
 
 
 /**
- * Brain Science Section - React view component
+ * Neuroscience Research MainSection - React view component.
  */
-const SectionBrain = (props, {config}) => {
+const SectionNeuroscience = (props, {config}) => {
   const {links} = config
 
   return (
@@ -42,14 +42,16 @@ const SectionBrain = (props, {config}) => {
         <div className={styles.content}>
           <Paragraph lead={true}>
             Reverse engineering the neocortex to figure out how the brain works
-            is a problem that many people think cannot be solved. We disagree.
-            Solving any scientific challenge is possible when you match
-            empirical evidence with theory. Our team of researchers are
-            constantly reading neuroscience papers and studies that focus on
-            various aspects of the brain. While there is no shortage of
-            neuroscientists that specialize in particular areas, Numenta takes
-            the unique approach of looking across these studies and putting the
-            pieces together to make a working theory of the neocortex.
+            is one of humanity's grand scientific challenges. We are fortunate
+            to be living in era when neuroscience techniques are advancing at an
+            amazing pace, giving rise to a wealth of data on the detailed
+            functionality of individual neurons all the way to large cortical
+            regions. Our team of researchers are constantly reading neuroscience
+            papers and studies that focus on various aspects of the brain. While
+            there is no shortage of neuroscientists that specialize in
+            particular areas, Numenta takes the unique approach of looking
+            across these studies and putting the pieces together to make a
+            working theory of the neocortex.
           </Paragraph>
           <Paragraph>
             We call this theory {' '}
@@ -77,8 +79,8 @@ const SectionBrain = (props, {config}) => {
   )
 }
 
-SectionBrain.contextTypes = {
+SectionNeuroscience.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionBrain
+export default SectionNeuroscience

@@ -42,7 +42,11 @@ const SectionTechnology = (props, {config}) => {
       </div>
       <article className={styles.content}>
         <Paragraph lead={true}>
-          Based on a wealth of neuroscience evidence, our HTM technology is not
+          Based on a wealth of {' '}
+          <TextLink to={links.in.neuro}>
+            neuroscience evidence,
+          </TextLink> {' '}
+          our HTM technology is not
           just biologically inspired. It’s biologically constrained.  When
           applied to computers, HTM is well suited for prediction, anomaly
           detection, classification and ultimately sensori-motor applications.
