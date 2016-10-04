@@ -199,6 +199,8 @@ npm install
 | Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
+| Test Links Production | `npm run test:links:prod` | Runs link checker against http://numenta.com |
+| Test Links Staging | `npm run test:links:stage` | Runs link checker against http://staging.numenta.com |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
 | Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
 | Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
@@ -213,7 +215,7 @@ Each React component (which might be shared between sites) has it's own internal
 Sitewide Non-component tests, for pages, utils, wrappers, etc., exist in the
 root `__tests__` directory.
 
-To run All Tests (unit, etc):
+To run All Tests (covered unit, etc):
 
 ```shell
 npm run test
@@ -241,6 +243,15 @@ open this report when the testing is finished, and the report is generated.
 
 ```shell
 npm run test:unit:coverage
+```
+
+### Hyperlinks
+
+@TODO Add local dev env/build, and local post-build, hyperlink checking.
+
+```
+npm run test:links:stage  # test hyperlinks on http://staging.numenta.com
+npm run test:links:prod   # test hyperlinks on http://numenta.com
 ```
 
 
