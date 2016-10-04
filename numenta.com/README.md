@@ -38,18 +38,9 @@ us accomplish all of this.
 ## License
 
 ```
-Numenta company website source code. Copyright © 2016 Numenta.
-Full details in LICENSE.txt, or contact us at <http://numenta.com>.
-
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU Affero General Public License as published by the Free
-Software Foundation, either version 3 of the License, or (at your option) any
-later version. This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
-for more details. You should have received a copy of the GNU Affero General
-Public License along with this program. If not, see
-<https://www.gnu.org/licenses/agpl.html>.
+Numenta.com company website source code
+MIT License (see LICENSE.txt)
+Copyright © 2005—2016 Numenta <http://numenta.com>
 ```
 
 
@@ -63,6 +54,12 @@ welcome. Contributors, please sign and submit our
 If you'd like to help, please make your own fork of this repo, and work from
 branches in your fork. Pull Requests should be between your fork, and our main
 repo. This will keep our main repo clean of working branches.
+
+**Before** submitting Pull Requsts, please make sure you have successfully run
+the following scripts against your change branch:
+
+* `npm run lint`
+* `npm run test`
 
 
 ## Environments
@@ -109,14 +106,17 @@ repo. This will keep our main repo clean of working branches.
 ```shell
 .                       # https://github.com/numenta/numenta-web/numenta.com/
 ├── .babelrc            # Babel ES6 transpiler configuration file
+├── .eslintignore       # ES lint files and paths to ignore during run
 ├── .eslintrc.json      # ES lint rules, mostly AirBnB defaults + few tweaks
 ├── .jestrc.json        # Jest testing framework config, assets under test/
+├── .stylelintignore    # CSS style lint files to ignore
 ├── .stylelintrc        # CSS style lint rules
-├── LICENSE.txt         # AGPLv3, more at: http://numenta.org/licenses/
+├── LICENSE.txt         # Open Source MIT License information.
 ├── README.md           # This file, welcome docs.
-├── components/         # React.js View Components and UI modules (HTML/CSS/JS)
+├── __tests__/          # Shared and Site-specific Component Tests & Mocks, etc.
+├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
-├── coverage/           # Test Code Coverage generated reports (not in git)
+├── coverage/           # Target for Test Code Coverage reports (not in git)
 ├── gatsby-browser.js   # Browser-specific code, tied to React Router by Gatsby
 ├── gatsby-node.js      # Build-time, Node.js, Webpack & Server specific code
 ├── html.jsx            # Main HTML Document Component
@@ -125,7 +125,6 @@ repo. This will keep our main repo clean of working branches.
 ├── pages/              # Webpage Documents and URL Tree Structure
 ├── public/             # STATIC OUTPUT. Static website generated built files
 ├── static/             # Static html, styles, assets, etc. Copied after build.
-├── test/               # Test support files (stubs, mocks, etc.)
 ├── utils/              # Local Helpers, utils, client, and misc code
 └── wrappers/           # Document-type (.html, .md, etc.) wrapper Components
 ```
@@ -192,26 +191,57 @@ npm install
 | -------- | ----------- | ----- |
 | Build | `npm run build` | Generate static production files |
 | Clean | `npm run clean` | Clean build |
+| Clean Build | `npm run clean:build` | Clean Gatsby static output from `/public` |
 | Clean NPM | `npm run clean:npm` | Reset npm packaging |
+| Clean Test | `npm run clean:test` | Clean up after test runs (remove `/coverage` reports, etc) |
 | Deploy | `npm run deploy:gh-pages` | Deploy branch `public/` build to `origin:gh-pages` |
 | Develop | `npm run dev` | Develop site interactively on http://localhost:8000 |
 | Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
+| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
+| Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
+| Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
 
 
 ## Testing
+
+Each React component (which might be shared between sites) has it's own internal
+`__tests__` subdirectory, with it's own tests.
+
+Sitewide Non-component tests, for pages, utils, wrappers, etc., exist in the
+root `__tests__` directory.
+
+To run All Tests (unit, etc):
 
 ```shell
 npm run test
 ```
 
-* Unit tests take and use snapshots in order to perform. To update these
-  snapshots, try running: `npm run test:unit -- -u`. Make sure the new snapshots
-  are correct before committing!
-* A code coverage report is generated on each run and saved in `./coverage`.
-  There is a nice HTML report you can view in your browser in here.
+### Unit
+
+Run only unit tests:
+
+```shell
+npm run test:unit
+npm run test:unit:watch  # auto re-run on changes to test files
+```
+
+Unit tests take and use snapshots in order to perform. Make sure new or updated
+snapshots are correct before committing! To update these snapshots, try running:
+
+```shell
+npm run test:unit:update
+```
+
+Run the command below to generate a Unit Test Code Coverage report, which will
+be saved in your local `./coverage` directory. Your browser should automatically
+open this report when the testing is finished, and the report is generated.
+
+```shell
+npm run test:unit:coverage
+```
 
 
 ## Build

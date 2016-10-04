@@ -1,0 +1,6 @@
+exports[`Subtle React component Renders correctly 1`] = `
+<span
+  className="subtle">
+  Quiet Text
+</span>
+`;

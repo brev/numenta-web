@@ -1,0 +1,43 @@
+exports[`FormInput React component Renders Default correctly 1`] = `
+<input
+  className="formInput large"
+  id="field"
+  name="field"
+  onChange={[Function]}
+  placeholder="Default"
+  type="text"
+  value="Contents" />
+`;
+
+exports[`FormInput React component Renders Large stretch correctly 1`] = `
+<input
+  className="formInput large"
+  id="field"
+  name="field"
+  onChange={[Function]}
+  placeholder="Default"
+  type="text"
+  value="Contents" />
+`;
+
+exports[`FormInput React component Renders Medium stretch correctly 1`] = `
+<input
+  className="formInput medium"
+  id="field"
+  name="field"
+  onChange={[Function]}
+  placeholder="Default"
+  type="text"
+  value="Contents" />
+`;
+
+exports[`FormInput React component Renders Small stretch correctly 1`] = `
+<input
+  className="formInput small"
+  id="field"
+  name="field"
+  onChange={[Function]}
+  placeholder="Default"
+  type="text"
+  value="Contents" />
+`;

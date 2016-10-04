@@ -1,0 +1,45 @@
+exports[`Form React component Renders correctly 1`] = `
+<form
+  acceptCharset="UTF-8"
+  action={undefined}
+  autoComplete="off"
+  className="form"
+  encType="multipart/form-data"
+  id={undefined}
+  method="post"
+  name={undefined}
+  onSubmit={undefined}>
+  <div
+    className="formRow">
+    <label
+      className="formLabel"
+      htmlFor={undefined}>
+      Label 1
+    </label>
+    <input
+      className="formInput large"
+      id="field1"
+      name="field1"
+      onChange={undefined}
+      placeholder={undefined}
+      type="text"
+      value="Testing 1" />
+  </div>
+  <div
+    className="formRow">
+    <label
+      className="formLabel"
+      htmlFor={undefined}>
+      Label 2
+    </label>
+    <input
+      className="formInput large"
+      id="field2"
+      name="field2"
+      onChange={undefined}
+      placeholder={undefined}
+      type="text"
+      value="Testing 2" />
+  </div>
+</form>
+`;
