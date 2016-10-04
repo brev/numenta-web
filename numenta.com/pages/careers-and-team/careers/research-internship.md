@@ -14,9 +14,6 @@ type: post
   University, are US Citizens, or hold a Green Card or are NAFTA (Mexican or
   Canadian) citizens.*
 
-
-### About Opening
-
 The Research Group at Numenta is looking for outstanding PhD students or other
 research scientists for internship opportunities during the Fall - Winter
 2016/2017 and Summer 2017 time frames. We are looking for candidates with
@@ -79,7 +76,9 @@ Qualified applicants should send the following:
 
 * Cover letter describing their specific interest in Numenta.
 
-* Resume, including list of relevant course work.
+* Resume, including list of relevant course work and a link to your github
+  repository or other public code repository that contains code you have
+  worked on.
 
 * Period of the internship (typically 3 to 4 months fulltime).
 

@@ -14,9 +14,6 @@ type: post
   University, are US Citizens, or hold a Green Card or are NAFTA (Mexican or
   Canadian) citizens.*
 
-
-### About Opening
-
 We are now accepting technical intern applications for the Fall - Winter
 2016/2017 and Summer 2017 time frames.
 
@@ -96,7 +93,9 @@ Qualified applicants should send the following:
 * Cover letter describing their specific interest in Numenta. Please include
   any relevant experience with NuPIC.
 
-* Resume, including list of relevant course work.
+* Resume, including list of relevant course work and a link to your github
+  repository or other public code repository that contains code you have
+  worked on.
 
 * Period of the internship (e.g.: summer, January-March, etc).
 
