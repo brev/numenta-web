@@ -2,7 +2,7 @@ exports[`ButtonLink React component Renders Default correctly 1`] = `
 <a
   className="buttonLink primary enabled"
   href="http://numenta.com"
-  onClick={[Function onClick]}>
+  onClick={[Function]}>
   Title
 </a>
 `;
@@ -11,7 +11,7 @@ exports[`ButtonLink React component Renders Disabled correctly 1`] = `
 <a
   className="buttonLink primary disabled"
   href="http://numenta.com"
-  onClick={[Function onClick]}>
+  onClick={[Function]}>
   Title
 </a>
 `;

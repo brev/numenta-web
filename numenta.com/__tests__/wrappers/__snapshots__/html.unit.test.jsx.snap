@@ -4,13 +4,13 @@ exports[`HTML Wrapper React component Renders correctly 1`] = `
   <h1
     dangerouslySetInnerHTML={
       Object {
-        "__html": undefined
+        "__html": undefined,
       }
     } />
   <div
     dangerouslySetInnerHTML={
       Object {
-        "__html": undefined
+        "__html": undefined,
       }
     } />
 </div>

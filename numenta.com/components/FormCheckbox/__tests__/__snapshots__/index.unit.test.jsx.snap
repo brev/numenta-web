@@ -3,6 +3,6 @@ exports[`FormCheckbox React component Renders correctly 1`] = `
   className="checkbox"
   id="field"
   name="field"
-  onClick={[Function onClick]}
+  onClick={[Function]}
   type="checkbox" />
 `;

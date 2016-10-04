@@ -8,7 +8,7 @@ exports[`SectionTitle React component Headline version Renders Headline correctl
 exports[`SectionTitle React component Regular version Renders Regular Closed correctly 1`] = `
 <nav
   className="title"
-  onClick={[Function clickHandle]}
+  onClick={[Function]}
   title="Hover Hint">
   <svg
     className="toggle"
@@ -18,7 +18,7 @@ exports[`SectionTitle React component Regular version Renders Regular Closed cor
     style={
       Object {
         "color": undefined,
-        "verticalAlign": "middle"
+        "verticalAlign": "middle",
       }
     }
     viewBox="0 0 40 40"
@@ -38,7 +38,7 @@ exports[`SectionTitle React component Regular version Renders Regular Closed cor
 exports[`SectionTitle React component Regular version Renders Regular Opened correctly 1`] = `
 <nav
   className="title open"
-  onClick={[Function clickHandle]}
+  onClick={[Function]}
   title="Hover Hint">
   <svg
     className="toggle"
@@ -48,7 +48,7 @@ exports[`SectionTitle React component Regular version Renders Regular Opened cor
     style={
       Object {
         "color": undefined,
-        "verticalAlign": "middle"
+        "verticalAlign": "middle",
       }
     }
     viewBox="0 0 40 40"

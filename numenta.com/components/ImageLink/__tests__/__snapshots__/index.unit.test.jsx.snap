@@ -2,7 +2,7 @@ exports[`ImageLink React component Renders correctly 1`] = `
 <a
   className="imagelink"
   href="http://numenta.com"
-  onClick={[Function onClick]}
+  onClick={[Function]}
   title="Brain">
   <img
     alt="Brain"

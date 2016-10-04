@@ -38,7 +38,7 @@
     "darwin"
   ],
   "dependencies": {
-    "babel-core": "6.16.0",
+    "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-class-properties": "6.16.0",
@@ -80,10 +80,10 @@
   },
   "devDependencies": {
     "babel-eslint": "7.0.0",
-    "babel-jest": "15.0.0",
+    "babel-jest": "16.0.0",
     "babel-polyfill": "6.16.0",
     "babel-preset-react-hmre": "1.1.1",
-    "eslint": "3.7.0",
+    "eslint": "3.7.1",
     "eslint-config-airbnb": "12.0.0",
     "eslint-plugin-import": "1.16.0",
     "eslint-plugin-jasmine": "1.8.1",
@@ -93,7 +93,7 @@
     "html5-lint": "0.2.5",
     "htmllint-cli": "0.0.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "15.1.1",
+    "jest": "16.0.0",
     "react-addons-test-utils": "15.3.2",
     "react-stub-context": "0.7.0",
     "react-test-renderer": "15.3.2",

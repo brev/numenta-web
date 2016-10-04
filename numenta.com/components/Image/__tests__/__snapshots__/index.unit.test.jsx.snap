@@ -2,7 +2,7 @@ exports[`Image React component Renders Alternate correctly 1`] = `
 <img
   alt="Brain"
   className="image border center round"
-  onClick={[Function onClick]}
+  onClick={[Function]}
   src="brain.png"
   title="Brain" />
 `;
@@ -11,7 +11,7 @@ exports[`Image React component Renders Default correctly 1`] = `
 <img
   alt="Brain"
   className="image shadow"
-  onClick={[Function onClick]}
+  onClick={[Function]}
   src="brain.png"
   title="Brain" />
 `;
@@ -20,7 +20,7 @@ exports[`Image React component Renders Responsive Max-width 100% correctly 1`] =
 <img
   alt="Brain"
   className="image mw shadow"
-  onClick={[Function onClick]}
+  onClick={[Function]}
   src="brain.png"
   title="Brain" />
 `;
@@ -29,7 +29,7 @@ exports[`Image React component Renders Responsive Width 100% correctly 1`] = `
 <img
   alt="Brain"
   className="image w shadow"
-  onClick={[Function onClick]}
+  onClick={[Function]}
   src="brain.png"
   title="Brain" />
 `;

@@ -10,79 +10,80 @@ type: post
 ---
 
 > **IMPORTANT NOTE:** *Numenta is unable to consider internship applications
-  from international students unless they are currently enrolled in a
-  US University, are US Citizens, or hold a Green Card.*
+  from international applicants unless they currently enrolled in a US
+  University, are US Citizens, or hold a Green Card or are NAFTA (Mexican or
+  Canadian) citizens.*
 
-We have filled our technical intern positions for Summer 2016, and are no longer
-accepting applications. We do have one open intern position for Fall-Winter
-2016, so you can submit an application if this time period is of interest. We
-will start accepting applications for Summer 2017 on October 1, 2016.
+We are now accepting technical intern applications for the Fall - Winter
+2016/2017 and Summer 2017 time frames.
 
-Numenta's technical interns will get exposure to all aspects of HTM learning
-algorithms and our streaming analytics platform. The commitment is for 3 to 4
-months, full time. We have internship positions in the following areas:
+We have two types of technical internships at Numenta: Algorithms and Software
+Engineering. While the two internships have a somewhat different focus, and
+therefore different requirements, all of Numenta’s technical interns will get
+exposure to the HTM learning algorithms and our streaming analytics platform.
+The commitment is for 3 to 4 months, full time.  
 
 
 ### Algorithms Internships
 
-What you can expect to learn:
+#### What You Can Expect to Learn
 
-* The challenges of deploying complex machine learning algorithms in a
-  production environment
+* Deep understanding of Numenta’s open source cortical learning algorithms.
 
-* Deep understanding of our open source machine learning algorithms
+* The challenges of testing and implementing learning algorithms based on
+  neocortical principles.
 
-Desired qualifications:
+#### Desired Qualifications
 
-* Experience with machine learning or pattern recognition algorithms
+* Enrolled in undergraduate or graduate studies in CS, EE or related
+  disciplines.
 
-* Strong experience with conducting machine learning experiments. This
-  includes writing and evaluating machine learning algorithms
+* Strong experience with writing and evaluating machine learning algorithms, and
+  with conducting machine learning experiments.
 
-* Excellent programming skills in either Python (preferred), Java or C++
+* Excellent programming skills in either Python (preferred), Java or C++.
 
-* Enrolled in undergraduate or graduate studies in CS, EE or related disciplines
+* Demonstrated excellent verbal and written communication skills.
+
+* Preference given to candidates who have an academic background in
+  neuroscience.
 
 * Preference given to candidates who have working knowledge of NuPIC or have
-  contributed to the NuPIC community
-
-* Experience with data analytics
+  contributed to the NuPIC community.
 
 
 ### Software Engineering Internships
 
-Our innovative real time streaming data prediction service runs locally and in
-the cloud, and includes both web and mobile applications. A developer API allows
-customers to integrate the service directly into their business.
+#### What You Can Expect to Learn
 
-There are many interesting problems related to data analytics, visualization,
-architecting web based API's, and running complex algorithms reliably and
-quickly. As a Software Engineering intern, you will be exposed to all of these
-exciting areas.
+* Improved understanding of modern software engineering practices.
 
-What you can expect to learn:
+* Improved understanding of data science.
 
-* Improved understanding of data science
+* The challenges of applying learning algorithms based on neocortical
+  principles.
 
-* Improved understanding of modern software engineering practices
+#### Desired Qualifications
 
-* Working with professional development teams and experienced industry veterans
+* Enrolled in undergraduate or graduate studies in CS, EE or related
+  disciplines.
 
-Desired qualifications:
+* Excellent programming skills in either Python (preferred), Java or C++.
 
-* Excellent programming skills in at least one language, preferably Java,
-  iPython or C++
+* Experience with the latest web development technologies (HTML 5, JavaScript,
+  CSS 3, JSON, REST, etc).
 
-* Enrolled in undergraduate or graduate studies in CS, EE or related disciplines
+* Good understanding of cloud systems.
 
-* Experience with the latest web development technologies
-  (HTML 5, JavaScript, CSS 3, JSON, REST, etc.)
+* Experience with machine learning or data analytics.
 
-* Good understanding of cloud systems
+* Demonstrated excellent verbal and written communication skills.
 
-* Experience with machine learning or data analytics
+* Preference given to candidates who have an academic background in
+  neuroscience.
 
-* Experience with NuPIC
+* Preference given to candidates who have working knowledge of NuPIC or have
+  contributed to the NuPIC community.
 
 
 ### How to Apply
@@ -92,9 +93,11 @@ Qualified applicants should send the following:
 * Cover letter describing their specific interest in Numenta. Please include
   any relevant experience with NuPIC.
 
-* Resume, including list of relevant course work.
+* Resume, including list of relevant course work and a link to your github
+  repository or other public code repository that contains code you have
+  worked on.
 
-* Period of the internship (e.g.: summer, January-March, etc.)
+* Period of the internship (e.g.: summer, January-March, etc).
 
 * Which area of internship you would like to be considered for.
 

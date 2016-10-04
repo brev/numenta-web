@@ -10,7 +10,7 @@ exports[`IconMarker React component Renders Custom Icon correctly 1`] = `
       style={
         Object {
           "color": undefined,
-          "verticalAlign": "middle"
+          "verticalAlign": "middle",
         }
       }
       viewBox="0 0 40 40"
@@ -37,7 +37,7 @@ exports[`IconMarker React component Renders Default correctly 1`] = `
       style={
         Object {
           "color": undefined,
-          "verticalAlign": "middle"
+          "verticalAlign": "middle",
         }
       }
       viewBox="0 0 40 40"
