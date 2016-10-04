@@ -38,9 +38,9 @@ us accomplish all of this.
 ## License
 
 ```
-// Numenta.com company website source code
-// MIT License (see LICENSE.txt)
-// Copyright © 2005—2016 Numenta <http://numenta.com>
+Numenta.com company website source code
+MIT License (see LICENSE.txt)
+Copyright © 2005—2016 Numenta <http://numenta.com>
 ```
 
 
@@ -191,14 +191,16 @@ npm install
 | -------- | ----------- | ----- |
 | Build | `npm run build` | Generate static production files |
 | Clean | `npm run clean` | Clean build |
+| Clean Build | `npm run clean:build` | Clean Gatsby static output from `/public` |
 | Clean NPM | `npm run clean:npm` | Reset npm packaging |
+| Clean Test | `npm run clean:test` | Clean up after test runs (remove `/coverage` reports, etc) |
 | Deploy | `npm run deploy:gh-pages` | Deploy branch `public/` build to `origin:gh-pages` |
 | Develop | `npm run dev` | Develop site interactively on http://localhost:8000 |
 | Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
-| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests and generates coverage report in `coverage/` directory |
+| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
 | Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
 | Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
 
@@ -234,8 +236,8 @@ npm run test:unit:update
 ```
 
 Run the command below to generate a Unit Test Code Coverage report, which will
-be saved in your local `./coverage` directory. There is a nice HTML report in
-there which you can open in a web browser.
+be saved in your local `./coverage` directory. Your browser should automatically
+open this report when the testing is finished, and the report is generated.
 
 ```shell
 npm run test:unit:coverage
