@@ -119,7 +119,7 @@
     "preserve": "npm run build",
     "serve": "gatsby serve-build",
     "pretest": "npm run clean:test",
-    "test": "npm run test:unit:cover",
+    "test": "npm run test:unit",
     "test:unit": "jest --bail --config .jestrc.json \"unit.test\"",
     "test:unit:cover": "npm run test:unit -- --coverage && open-url file://$(shx pwd)/coverage/lcov-report/index.html",
     "test:unit:update": "npm run test:unit -- -u",

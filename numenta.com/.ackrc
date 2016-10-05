@@ -1,3 +1,4 @@
+--ignore-dir=coverage/
 --ignore-dir=public/
 --ignore-dir=node_modules/
 
