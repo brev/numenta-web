@@ -43,8 +43,8 @@ const SectionNeuroscience = (props, {config}) => {
           <Paragraph lead={true}>
             Reverse engineering the neocortex to figure out how the brain works
             is one of humanity's grand scientific challenges. We are fortunate
-            to be living in era when neuroscience techniques are advancing at an
-            amazing pace, giving rise to a wealth of data on the detailed
+            to be living in an era when neuroscience techniques are advancing at
+            an amazing pace, giving rise to a wealth of data on the detailed
             functionality of individual neurons all the way to large cortical
             regions. Our team of researchers are constantly reading neuroscience
             papers and studies that focus on various aspects of the brain. While
