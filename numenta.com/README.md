@@ -257,10 +257,10 @@ npm run test:links:prod   # test hyperlinks on http://numenta.com
 
 ## Build
 
-| Environment | Time  |
-| ----- | -------- |
-| Dynamic Development | ~20s |
-| Static (Any) | ~6m |
+| Environments | @TODO         | 2x 2.6ghz 8gb |
+| ------------ | ------------- | ------------- |
+| Dynamic Dev  | ~11s | ~22s |
+| Static (Any) | ~6m | ~12m |
 
 Additional Notes:
 
