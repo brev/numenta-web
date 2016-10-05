@@ -1,6 +1,6 @@
 {
   "name": "Numenta.com",
-  "version": "0.2.97",
+  "version": "0.2.98",
   "description": "Numenta.com company website content, source code, and static generator tooling.",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "main": false,
@@ -93,7 +93,7 @@
     "html5-lint": "0.2.5",
     "htmllint-cli": "0.0.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "16.0.0",
+    "jest": "16.0.1",
     "open-url": "2.0.2",
     "react-addons-test-utils": "15.3.2",
     "react-stub-context": "0.7.0",
