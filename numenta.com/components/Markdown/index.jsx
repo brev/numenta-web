@@ -35,6 +35,12 @@ class Markdown extends React.Component {
     catchLinks(this._markdown, (href) => {
       const target = url.parse(href)
       const newHref = prefixLink(href)
+
+      // @TODO catchLinks should also stop non-https? protocols from working
+      if (!target.protocol.match(/http/)) {
+        return true
+      }
+
       if (!target.host && !target.hash && (
         target.pathname.match(/^\/assets\//) || target.pathname.match(/\.pdf$/)
       )) {
@@ -49,6 +55,7 @@ class Markdown extends React.Component {
       else {
         router.push(newHref)  // same site react-routed single-page
       }
+      return false
     })
   }
 
