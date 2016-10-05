@@ -37,7 +37,7 @@ class Markdown extends React.Component {
       const newHref = prefixLink(href)
 
       // @TODO catchLinks should also stop non-https? protocols from working
-      if (!target.protocol.match(/http/)) {
+      if (!href.match(/https?:/)) {
         return true
       }
 
