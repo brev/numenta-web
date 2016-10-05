@@ -1,13 +1,9 @@
 {
   "name": "Numenta.com",
   "short_name": "Numenta.com",
-  "description": null,
-  "dir": "auto",
-  "lang": "en-US",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "portrait",
   "start_url": "/?homescreen=1",
-  "background_color": "#fff",
   "icons": [
     {
       "src": "android-chrome-36x36.png",
