@@ -46,12 +46,13 @@ const SectionTechnology = (props, {config}) => {
           <TextLink to={links.in.neuro}>
             neuroscience evidence,
           </TextLink> {' '}
-          our HTM technology is not
-          just biologically inspired. It’s biologically constrained.  When
-          applied to computers, HTM is well suited for prediction, anomaly
-          detection, classification and ultimately sensori-motor applications.
-          We believe this technology will be the foundation for the next wave of
-          computing.
+          we have created HTM (Hierarchical Temporal Memory), a theoretical
+          framework for both biological and machine intelligence. Our HTM
+          technology is not just biologically inspired. It’s biologically
+          constrained. When applied to computers, HTM is well suited for
+          prediction, anomaly detection, classification and ultimately
+          sensorimotor applications. We believe this technology will be the
+          foundation for the next wave of computing.
         </Paragraph>
         <Paragraph>
           At the core of HTM are learning algorithms that can store, learn,
