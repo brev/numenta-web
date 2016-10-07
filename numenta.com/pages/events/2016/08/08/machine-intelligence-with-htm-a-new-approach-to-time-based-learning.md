@@ -85,4 +85,4 @@ input patterns and sequences, thus building an increasingly complex model of the
 world.
 
 More information about HTMs: <br />
-[http://numenta.com/technology-overivew/](/technology-overview/)
+[http://numenta.com/technology-overivew/](/machine-intelligence-technology/)

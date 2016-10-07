@@ -107,7 +107,7 @@ new era of machine intelligence, this technology is ideal for analysis of
 continuously streaming data sets and excels at modeling and predicting patterns
 in data. Numenta has also developed a suite of products and demonstration
 applications that utilize its flexible and generalizable
-[Hierarchical Temporal Memory (HTM)](/technology-overview/) learning algorithms
+[Hierarchical Temporal Memory (HTM)](/machine-intelligence-technology/) learning algorithms
 to provide solutions that encompass the fields of machine generated data, human
 behavioral modeling, geo-location processing, semantic understanding and
 sensory-motor control.

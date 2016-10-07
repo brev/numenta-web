@@ -8,7 +8,7 @@ describe('Code React component', () => {
 
   it('Renders correctly', () => {
     const component = renderer.create(
-      <Code>const KEY = 'id_123'</Code>
+      <Code>const KEY = id123</Code>
     )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()

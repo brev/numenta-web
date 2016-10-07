@@ -7,6 +7,7 @@ import React from 'react'
 
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
 import SectionApplications from './applications/_Section'
+import SectionNeuroscience from './neuroscience-research/_Section'
 import SectionBusiness from './business-strategy-and-ip/_Section'
 import SectionCareers from './careers-and-team/_Section'
 import SectionContact from './contact/_Section'
@@ -15,7 +16,7 @@ import SectionMission from './mission-and-history/_Section'
 import SectionOpensource from './open-source-community/_Section'
 import SectionPapers from './papers-videos-and-more/_Section'
 import SectionPartners from './partners/_Section'
-import SectionTechnology from './technology-overview/_Section'
+import SectionTechnology from './machine-intelligence-technology/_Section'
 
 import Section from '../components/Section'
 
@@ -31,9 +32,14 @@ const mainSectionList = [
     url: '/mission-and-history/',
   },
   {
+    component: <SectionNeuroscience key="sectionNeuroscience" />,
+    title: 'Neuroscience Research',
+    url: '/neuroscience-research/',
+  },
+  {
     component: <SectionTechnology key="sectionTechnology" />,
-    title: 'Technology Overview',
-    url: '/technology-overview/',
+    title: 'Machine Intelligence Technology',
+    url: '/machine-intelligence-technology/',
   },
   {
     component: <SectionOpensource key="sectionOpensource" />,

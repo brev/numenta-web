@@ -88,7 +88,7 @@ September 26-27.
 Lastly, we are in the final countdown of our Numenta Anomaly Benchmark (NAB)
 competition. This [short video][19] explains how easy it is to win up to $5,000.
 
-[1]: /technology-overview/
+[1]: /machine-intelligence-technology/
 [2]: http://www.businesswire.com/news/home/20160627005453/en/Numenta-Releases-HTM-Studio
 [3]: /htm-studio/
 [4]: http://youtu.be/f80ewxLvgks

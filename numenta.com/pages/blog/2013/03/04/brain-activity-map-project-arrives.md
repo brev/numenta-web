@@ -90,7 +90,7 @@ not brain mapping.  We should set goals for brain theory and goals for machine
 intelligence tasks based on those theories.  That is what we do at Numenta.  For
 example, we set goals to understand how neurons in the neocortex form sparse
 distributed representations and then how they learn to predict future events.
-This resulted in [Hierarchical Temporal Memory (HTM)](/technology-overview/)
+This resulted in [Hierarchical Temporal Memory (HTM)](/machine-intelligence-technology/)
 which is the heart of our Grok streaming prediction engine.  The next big
 theoretical challenge we are working on is how the cortex generates behaviors
 from predictions, what is sometimes called the sensory-motor integration

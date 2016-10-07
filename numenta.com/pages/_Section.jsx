@@ -43,8 +43,14 @@ const SectionIndex = (props, {config}) => {
           On this site, you’ll find information about our company. If
           you’re looking for technical resources, including details of our
           research, software implementations, and how to get started with
-          our technology, visit our HTM open source community at {' '}
-          <TextLink to={links.out.org}>{links.out.org}.</TextLink>
+          our technology, visit our {' '}
+          <TextLink to={links.in.opensource}>
+            open source community
+          </TextLink> {' '}
+          at {' '}
+          <TextLink to={links.out.org}>
+            {links.out.org}.
+          </TextLink>
         </Paragraph>
       </div>
     </article>

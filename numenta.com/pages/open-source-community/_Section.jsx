@@ -8,12 +8,12 @@ import Image from '../../components/Image'
 import Paragraph from '../../components/Paragraph'
 import TextLink from '../../components/TextLink'
 
-import ImageBrain from './images/brain.svg'
+import ImageOpensource from './images/image.png'
 import styles from './index.css'
 
 
 /**
- *
+ * Open Source Community main Section/Page - React view component.
  */
 const SectionOpensource = (props, {config}) => {
   const {links} = config
@@ -21,14 +21,11 @@ const SectionOpensource = (props, {config}) => {
   return (
     <article className={styles.columns}>
       <div className={styles.aside}>
-        <div className={styles.brain}>
-          <Image
-            alt="Stylized Brain Artwork"
-            respond="mw"
-            shadow={false}
-            src={ImageBrain}
-          />
-        </div>
+        <Image
+          alt="Numenta Open Source Hackathon Event"
+          respond="mw"
+          src={ImageOpensource}
+        />
       </div>
       <div className={styles.content}>
         <Paragraph lead={true}>
