@@ -1,6 +1,6 @@
 {
   "name": "Numenta.com",
-  "version": "0.2.102",
+  "version": "0.2.103",
   "description": "Numenta.com company website content, source code, and static generator tooling.",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "main": false,
@@ -46,7 +46,7 @@
     "babel-preset-react": "6.16.0",
     "babel-preset-stage-0": "6.16.0",
     "browser-size": "0.1.0",
-    "catch-links": "2.0.1",
+    "catch-links": "github:numenta/catch-links#d2c449d4fb8511f16958fc78d3d385de3086615c",
     "classnames": "2.2.5",
     "eslint-plugin-import": "2.0.0",
     "extract-text-webpack-plugin": "github:michelebertoli/extract-text-webpack-plugin#614c3bb1ed72587218aa644df12bbf514fb77a06",
