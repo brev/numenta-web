@@ -35,6 +35,7 @@ class Markdown extends React.Component {
     catchLinks(this._markdown, (href) => {
       const target = url.parse(href)
       const newHref = prefixLink(href)
+
       if (!target.host && !target.hash && (
         target.pathname.match(/^\/assets\//) || target.pathname.match(/\.pdf$/)
       )) {

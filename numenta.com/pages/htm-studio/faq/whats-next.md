@@ -1,6 +1,6 @@
 ---
 section: Using HTM Studio
-sort: c
+sort: b
 title: I am interested in integrating HTM technology into my application, what can I do next?
 ---
 
