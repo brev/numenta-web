@@ -261,7 +261,7 @@ Average build wait times:
 
 | Environments | 4x 2.8ghz 16gb | 2x 2.6ghz 8gb |
 | ------------ | -------------- | ------------- |
-| Dynamic Dev  | ~11s           | ~22s          |
+| Dynamic Dev  | ~10s           | ~20s          |
 | Static (Any) | ~6m            | ~12m          |
 
 Additional Notes:
