@@ -32,11 +32,9 @@ class Markdown extends React.Component {
 
     // Take over markdown local content links, local links now in Single-page
     //  app mode - also handling staging prefixLinks.
-    catchLinks(this._markdown, function (href) {  // eslint-disable-line prefer-arrow-callback, max-len
+    catchLinks(this._markdown, (href) => {
       const target = url.parse(href)
       const newHref = prefixLink(href)
-
-      console.log(href)
 
       if (!target.host && !target.hash && (
         target.pathname.match(/^\/assets\//) || target.pathname.match(/\.pdf$/)
