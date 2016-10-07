@@ -257,10 +257,12 @@ npm run test:links:prod   # test hyperlinks on http://numenta.com
 
 ## Build
 
-| Environments | @TODO         | 2x 2.6ghz 8gb |
-| ------------ | ------------- | ------------- |
-| Dynamic Dev  | ~11s | ~22s |
-| Static (Any) | ~6m | ~12m |
+Average build wait times:
+
+| Environments | 4x 2.8ghz 16gb | 2x 2.6ghz 8gb |
+| ------------ | -------------- | ------------- |
+| Dynamic Dev  | ~11s           | ~22s          |
+| Static (Any) | ~6m            | ~12m          |
 
 Additional Notes:
 
