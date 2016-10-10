@@ -11,7 +11,7 @@ event:
     city: San Francisco
     state: CA
     country: USA
-    web: https://aws.amazon.com/aws-summit-2014/san-francisco/
+    web: http://searchaws.techtarget.com/photostory/2240219795/Amazon-Summit-showcases-new-cloud-product-initiatives/1/AWS-Summit-2014-Product-partner-and-price-news
 featured: false
 image: ../images/image.png
 org: Event

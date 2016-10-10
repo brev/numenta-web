@@ -116,6 +116,6 @@ this very important class of algorithms.
 * [1] https://github.com/numenta/NAB/wiki
 * [2] http://numenta.com/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf
 * [3] http://grokstream.com/
-* [4] http://labs.yahoo.com/news/announcing-a-benchmark-dataset-for-time-series-anomaly-detection/
+* [4] https://research.yahoo.com/news/announcing-benchmark-dataset-time-series-anomaly-detection
 * [5] https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series
 * [6] https://github.com/numenta/NAB/

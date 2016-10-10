@@ -3,7 +3,7 @@ author: Jeff Hawkins & Sandra Blakeslee
 brief: The core concepts in Hierarchical Temporal Memory (HTM) theory were first described in this book titled On Intelligence, which was written by Jeff Hawkins with the help of Sandra Blakeslee.
 date: 2005/07/14
 image:
-link: http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&qid=1363894040&sr=8-1&keywords=on+intelligence
+link: https://www.amazon.com/On-Intelligence-ebook/dp/B003J4VE5Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1359401193&sr=1-1&keywords=on+intelligence
 media: book
 org: Co-Founder & Co-Author
 section: overview
@@ -19,7 +19,7 @@ Hawkins with the help of Sandra Blakeslee. This book still provides background
 and a great introduction to our theory, though many of the ideas in chapter 6
 (“How the Cortex Works”) are currently being revised.
 
-**Buy Book**: [Purchase on Amazon](http://www.amazon.com/On-Intelligence-Jeff-Hawkins/dp/0805078533/ref=sr_1_1?ie=UTF8&qid=1363894040&sr=8-1&keywords=on+intelligence)
+**Buy Book**: [Purchase on Amazon](https://www.amazon.com/On-Intelligence-ebook/dp/B003J4VE5Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1359401193&sr=1-1&keywords=on+intelligence)
 
 **Note:** This book refers to the HTM learning algorithm as the Cortical
 Learning Algorithm, or CLA; we have recently decided to sunset this term as our
