@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import BlogPage from '../../pages/blog'
+// import RootTemplate from '../../pages/_template'
 
 
-describe('Blog Page React component', () => {
+describe('Root Template React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <BlogPage />
+    //   <RootTemplate />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()
