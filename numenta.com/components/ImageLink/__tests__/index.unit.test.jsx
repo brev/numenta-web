@@ -10,7 +10,7 @@ describe('ImageLink React component', () => {
   it('Renders correctly', () => {
     const component = renderer.create(
       <ImageLink title="Brain" to="http://numenta.com">
-        <Image alt="Brain" src="brain.png" />
+        <Image alt="Brain" src="brain.png" title="Brain Image" />
       </ImageLink>
     )
     const tree = component.toJSON()

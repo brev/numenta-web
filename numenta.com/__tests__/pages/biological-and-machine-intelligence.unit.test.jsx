@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import AnomalyPage from '../../pages/anomaly-detection-benchmark'
+// import BamiPage from '../../pages/biological-and-machine-intelligence'
 
 
-describe('Anomaly Detection Benchmark Page React component', () => {
+describe('Bio and Machine Intelligence (BAMI) page React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <AnomalyPage />
+    //   <BamiPage />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()

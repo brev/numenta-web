@@ -9,6 +9,6 @@ exports[`ImageLink React component Renders correctly 1`] = `
     className="image shadow"
     onClick={undefined}
     src="brain.png"
-    title={undefined} />
+    title="Brain Image" />
 </a>
 `;

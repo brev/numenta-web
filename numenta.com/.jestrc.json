@@ -15,5 +15,6 @@
     "^.+\\.(css)$": "<rootDir>/__tests__/__mocks__/styleMock.js",
     "^.+\\.(eot|gif|jpe?g|png|svg|ttf|woff2?)$": "<rootDir>/__tests__/__mocks__/fileMock.js"
   },
+  "setupTestFrameworkScriptFile": "<rootDir>/__tests__/__setup.js",
   "testRegex": ".*/__tests__/.*\\.test\\.(js|jsx)$"
 }

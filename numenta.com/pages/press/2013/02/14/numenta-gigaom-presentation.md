@@ -18,9 +18,10 @@ type: post
 
 Numenta, a breakthrough machine intelligence company, today announced it has
 been selected as one of the four Big Ideas companies to be featured at the
-GigaOM [Structure:Data](http://event.gigaom.com/structuredata/) conference
-March 20-21 in New York City.  Numenta CEO Rami Branitzky will give an on-stage
-introduction of Grok, the company’s first product, on March 20 at 5:20 p.m.
+GigaOM [Structure:Data](http://www.structuredata.com/introducing-structure-a-new-tech-events-company/)
+conference March 20-21 in New York City.  Numenta CEO Rami Branitzky will give
+an on-stage introduction of Grok, the company’s first product, on March 20
+at 5:20 p.m.
 
 [Grok](http://grokstream.com) brings together Numenta’s trailblazing R&amp;D in
 biologically inspired machine intelligence software with a highly scalable

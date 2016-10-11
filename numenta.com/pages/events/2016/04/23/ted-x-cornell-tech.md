@@ -12,7 +12,7 @@ event:
     city: New York City
     state: NY
     country: USA
-    web: http://www.tedxcornelltech.com/
+    web: https://www.ted.com/tedx/events/17592
   who: Alexander Lavin
   why: Speaking
 featured: false

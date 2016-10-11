@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import AnomalyPage from '../../pages/anomaly-detection-benchmark'
+// import HtmStudioPage from '../../pages/htm-studio'
 
 
-describe('Anomaly Detection Benchmark Page React component', () => {
+describe('HTM Studio Page React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <AnomalyPage />
+    //   <HtmStudioPage />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()

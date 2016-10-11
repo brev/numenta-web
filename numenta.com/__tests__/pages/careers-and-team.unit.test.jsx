@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import AnomalyPage from '../../pages/anomaly-detection-benchmark'
+// import CareersTeamPage from '../../pages/careers-and-team'
 
 
-describe('Anomaly Detection Benchmark Page React component', () => {
+describe('Careers and Team Page React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <AnomalyPage />
+    //   <CareersTeamPage />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()

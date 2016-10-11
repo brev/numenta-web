@@ -1,7 +1,7 @@
 import {parse} from 'toml'
 import {readFileSync} from 'fs'
 
-const file = readFileSync('config.toml')
+const file = readFileSync(`${process.cwd()}/config.toml`)
 const config = parse(file)
 
 

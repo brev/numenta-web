@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import AnomalyPage from '../../pages/anomaly-detection-benchmark'
+// import MachinePage from '../../pages/machine-intelligence-technology'
 
 
-describe('Anomaly Detection Benchmark Page React component', () => {
+describe('Machine Intelligence Technology Page React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <AnomalyPage />
+    //   <MachinePage />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()

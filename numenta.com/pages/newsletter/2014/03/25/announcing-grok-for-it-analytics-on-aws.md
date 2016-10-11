@@ -17,7 +17,7 @@ type: post
 
 Today is an important day for Numenta.  We are pleased to announce the general
 availability of [Grok](http://grokstream.com). We will be showcasing Grok at the
-[AWS Summit](https://aws.amazon.com/aws-summit-2014/san-francisco/)
+[AWS Summit](http://searchaws.techtarget.com/photostory/2240219795/Amazon-Summit-showcases-new-cloud-product-initiatives/1/AWS-Summit-2014-Product-partner-and-price-news)
 at the San Francisco Moscone Convention Center on March 26th.  If you are
 attending, please join us in booth 100 to see a demo - and experience our
 breakthrough technology for anomaly detection.

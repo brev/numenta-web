@@ -47,9 +47,9 @@ accurate detections as soon as possible.
 At Numenta we’ve built a robust, real-time anomaly detector using
 [Hierarchical Temporal Memory (HTM)<sup>[2]</sup>](/assets/pdf/whitepapers/Numenta%20White%20Paper%20-%20Science%20of%20Anomaly%20Detection.pdf).
 Our [Grok application](http://grokstream.com/) is great demo of the algorithm
-in action on server metrics data<sup>[3]</sup>. Other real-time anomaly detectors are
-out there, namely at
-[Yahoo](http://labs.yahoo.com/news/announcing-a-benchmark-dataset-for-time-series-anomaly-detection/) and
+in action on server metrics data<sup>[3]</sup>. Other real-time anomaly
+detectors are out there, namely at
+[Yahoo](https://research.yahoo.com/news/announcing-benchmark-dataset-time-series-anomaly-detection) and
 [Twitter](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series)
 who both recently announced their activities in real-time anomaly
 detection<sup>[4]\[5]</sup>. But how can one truly discern whether or not these

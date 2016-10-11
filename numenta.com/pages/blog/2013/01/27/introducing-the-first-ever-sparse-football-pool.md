@@ -35,9 +35,8 @@ of entries!
 
 Also, in order to have more people participate, we're also offering a cool
 prize. The winner will receive a digital copy of
-*[On Intelligence](http://www.amazon.com/On-Intelligence-ebook/dp/B003J4VE5Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1359401193&sr=1-1&keywords=on+intelligence)*
-as well as an Amazon
-[Paperwhite Kindle](http://www.amazon.com/gp/product/B007OZNZG0/ref=s9_simh_gw_p349_d2_i1?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=01F8XD1MTXSPHDJF52RD&pf_rd_t=101&pf_rd_p=1389517282&pf_rd_i=507846).
+*[On Intelligence](https://www.amazon.com/On-Intelligence-ebook/dp/B003J4VE5Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1359401193&sr=1-1&keywords=on+intelligence)*
+as well as an Amazon Paperwhite Kindle.
 
 
 #### The Three Rules:

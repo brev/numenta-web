@@ -1,14 +1,14 @@
 // import React from 'react'
 // import renderer from 'react-test-renderer'
 //
-// import AnomalyPage from '../../pages/anomaly-detection-benchmark'
+// import NabPage from '../../pages/numenta-anomaly-benchmark'
 
 
-describe('Anomaly Detection Benchmark Page React component', () => {
+describe('Numenta Anomaly Benchmark (NAB) Page React component', () => {
 
   it('Renders correctly', () => {
     // const component = renderer.create(
-    //   <AnomalyPage />
+    //   <NabPage />
     // )
     // const tree = component.toJSON()
     // expect(tree).toMatchSnapshot()

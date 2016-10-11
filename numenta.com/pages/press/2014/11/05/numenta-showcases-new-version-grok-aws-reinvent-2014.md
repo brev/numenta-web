@@ -19,11 +19,10 @@ type: post
 REDWOOD CITY, Calif. --([BUSINESS WIRE](http://www.businesswire.com/))--
 [Numenta Inc.](/), a leader in machine intelligence technology,
 today announced the newest release of
-[Grok IT for Analytics](/assets/pdf/grok/resources/1.6/Grok-1.6-DataSheet.pdf).
-The application, which runs on Amazon Web Services, will be featured
-at the [upcoming AWS re:Invent 2014](https://reinvent.awsevents.com/),
-November 11-14 in Las Vegas. Visit Numenta and see Grok in action at
-AWS Booth 648.
+[Grok IT for Analytics](http://grokstream.com). The application, which runs on
+Amazon Web Services, will be featured at the
+[upcoming AWS re:Invent 2014](https://reinvent.awsevents.com/), November 11-14
+in Las Vegas. Visit Numenta and see Grok in action at AWS Booth 648.
 
 Based on Numenta’s breakthrough Hierarchical Temporal Memory technology, Grok
 monitors servers running on AWS and enables complex pattern detection, automatic

@@ -93,7 +93,7 @@ uncut version of an interview with Yang Lan. We don’t know what the final piec
 will look like and how the producers plan to include Numenta, but it was
 exciting to be a part of this documentary series.
 
-[1]: http://www.npr.org/templates/story/story.php?storyId=130401381
+[1]: http://time.com/2907444/yang-lan-the-oprah-of-china-expands-her-reach/
 [2]: http://www.chinasunmedia.com/en/?page_id=2468
 [3]: http://www.forbes.com/pictures/fjed45ed/yang-lan/#66b8dfc972ef
 [4]: /

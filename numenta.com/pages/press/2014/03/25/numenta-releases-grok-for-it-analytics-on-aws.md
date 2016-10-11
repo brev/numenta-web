@@ -45,7 +45,7 @@ Grok features include:
 * Automatic modeling to determine normal patterns
 * Automatic identification and ranking of unusual patterns
 * Continuous learning of new patterns as environments evolve – no need for
-manual threshold setting
+  manual threshold setting
 * Notification to user when an anomaly occurs
 * Output displayed graphically on an Android mobile device
 * Simple setup via a web-based or command-line interface
@@ -56,8 +56,8 @@ Grok is available now:
 > http://grokstream.com
 
 Grok will be demonstrated in Booth 100 at the
-[AWS Summit](https://aws.amazon.com/aws-summit-2014/) on March 26 at the
-Moscone Center in San Francisco.
+[AWS Summit](http://searchaws.techtarget.com/photostory/2240219795/Amazon-Summit-showcases-new-cloud-product-initiatives/1/AWS-Summit-2014-Product-partner-and-price-news)
+on March 26 at the Moscone Center in San Francisco.
 
 In addition to working on the Grok product release, Numenta continues to push
 its biologically-inspired algorithms forward.  “We’ve made some important
