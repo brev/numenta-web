@@ -56,7 +56,7 @@ const SitemapPage = (props, {config, route}) => {
   const posts = categories
     .map((category) => pages
       .filter(({data, file}) => {
-        const matcher = new RegExp(`.*${category}\/.*\.md`)
+        const matcher = new RegExp(`.*${category}/.*.md`)
         return (data.type === 'post') && file.path.match(matcher)
       })
       .sort(sortDateDescend)
