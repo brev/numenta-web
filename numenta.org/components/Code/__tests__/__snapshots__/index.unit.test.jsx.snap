@@ -1,0 +1,6 @@
+exports[`Code React component Renders correctly 1`] = `
+<code
+  className="code">
+  const KEY = id123
+</code>
+`;

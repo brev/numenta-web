@@ -1,0 +1,34 @@
+exports[`SubTitle React component Renders Heading Level 2 correctly 1`] = `
+<h2
+  className="h2">
+  Level 2 Title
+</h2>
+`;
+
+exports[`SubTitle React component Renders Heading Level 3 correctly 1`] = `
+<h3
+  className="h3">
+  Level 3 Title
+</h3>
+`;
+
+exports[`SubTitle React component Renders Heading Level 4 correctly 1`] = `
+<h4
+  className="h4">
+  Level 4 Title
+</h4>
+`;
+
+exports[`SubTitle React component Renders Heading Level 5 correctly 1`] = `
+<h5
+  className="h5">
+  Level 5 Title
+</h5>
+`;
+
+exports[`SubTitle React component Renders Heading Level 6 correctly 1`] = `
+<h6
+  className="h6">
+  Level 6 Title
+</h6>
+`;

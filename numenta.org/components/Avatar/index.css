@@ -1,0 +1,13 @@
+/**
+ * Numenta.org HTM Community website source code
+ * MIT License (see LICENSE.txt)
+ * Copyright © 2005—2016 Numenta <http://numenta.com>
+ */
+
+.avatar {
+  composes: dib from 'tachyons';
+  composes: mr2 from 'tachyons';
+  composes: relative from 'tachyons';
+  composes: v-mid from 'tachyons';
+  top: 0.3rem;
+}

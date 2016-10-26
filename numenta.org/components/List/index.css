@@ -1,0 +1,11 @@
+/**
+ * Numenta.org HTM Community website source code
+ * MIT License (see LICENSE.txt)
+ * Copyright © 2005—2016 Numenta <http://numenta.com>
+ */
+
+.ul {
+  composes: list from 'tachyons';
+  composes: mb4 from 'tachyons';
+  composes: pl0 from 'tachyons';
+}
