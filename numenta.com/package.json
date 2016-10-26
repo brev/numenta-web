@@ -2,13 +2,13 @@
   "name": "Numenta.com",
   "version": "0.2.108",
   "description": "Numenta.com company website content, source code, and static generator tooling.",
-  "license": "SEE LICENSE IN LICENSE.TXT",
+  "license": "MIT",
   "main": false,
   "private": false,
   "author": {
     "name": "Numenta",
     "email": "info@numenta.com",
-    "url": "https://numenta.com"
+    "url": "http://numenta.com"
   },
   "bugs": {
     "url": "https://github.com/numenta/numenta-web/issues",
@@ -33,9 +33,6 @@
     "Neuroscience",
     "Machine",
     "Intelligence"
-  ],
-  "os": [
-    "darwin"
   ],
   "dependencies": {
     "babel-core": "6.18.0",
@@ -78,7 +75,7 @@
     "xss-filters": "1.2.7"
   },
   "devDependencies": {
-    "babel-eslint": "7.0.0",
+    "babel-eslint": "7.1.0",
     "babel-jest": "16.0.0",
     "babel-polyfill": "6.16.0",
     "babel-preset-react-hmre": "1.1.1",
