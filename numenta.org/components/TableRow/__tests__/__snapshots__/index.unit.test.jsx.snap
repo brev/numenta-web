@@ -1,0 +1,41 @@
+exports[`TableRow React component Renders Bordered correctly 1`] = `
+<tr
+  className="tableRow">
+  <td
+    className="tableCell border"
+    colSpan={1}>
+    Cell 1
+  </td>
+  <td
+    className="tableCell border"
+    colSpan={1}>
+    Cell 2
+  </td>
+  <td
+    className="tableCell border"
+    colSpan={1}>
+    Cell 3
+  </td>
+</tr>
+`;
+
+exports[`TableRow React component Renders Un-bordered correctly 1`] = `
+<tr
+  className="tableRow">
+  <td
+    className="tableCell"
+    colSpan={1}>
+    Cell 1
+  </td>
+  <td
+    className="tableCell"
+    colSpan={1}>
+    Cell 2
+  </td>
+  <td
+    className="tableCell"
+    colSpan={1}>
+    Cell 3
+  </td>
+</tr>
+`;

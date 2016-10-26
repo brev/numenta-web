@@ -1,0 +1,6 @@
+exports[`Spacer React component Renders correctly 1`] = `
+<span
+  className="spacer">
+  •
+</span>
+`;

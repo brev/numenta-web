@@ -1,0 +1,35 @@
+exports[`Avatar React component Renders correctly for Default 1`] = `
+<span
+  className="avatar">
+  <img
+    alt=""
+    className="image border round"
+    onClick={undefined}
+    src="filename.ext"
+    title="" />
+</span>
+`;
+
+exports[`Avatar React component Renders correctly for Name 1 1`] = `
+<span
+  className="avatar">
+  <img
+    alt="Jeff Hawkins"
+    className="image border round"
+    onClick={undefined}
+    src="filename.ext"
+    title="Jeff Hawkins" />
+</span>
+`;
+
+exports[`Avatar React component Renders correctly for Name 2 1`] = `
+<span
+  className="avatar">
+  <img
+    alt="Ada Lovelace"
+    className="image border round"
+    onClick={undefined}
+    src="filename.ext"
+    title="Ada Lovelace" />
+</span>
+`;

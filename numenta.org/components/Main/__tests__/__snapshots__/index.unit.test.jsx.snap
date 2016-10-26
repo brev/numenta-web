@@ -1,0 +1,8 @@
+exports[`Main React component Renders correctly 1`] = `
+<main
+  className="main">
+  <div>
+    Hello
+  </div>
+</main>
+`;

@@ -1,0 +1,41 @@
+exports[`ListItem React component Copy Renders Non correctly 1`] = `
+<li
+  className="li">
+  List Item
+</li>
+`;
+
+exports[`ListItem React component Copy Renders correctly 1`] = `
+<li
+  className="li copy">
+  List Item
+</li>
+`;
+
+exports[`ListItem React component Marker Renders Circle correctly 1`] = `
+<li
+  className="li copy markerCircle">
+  List Item
+</li>
+`;
+
+exports[`ListItem React component Marker Renders Decimal correctly 1`] = `
+<li
+  className="li copy markerDecimal">
+  List Item
+</li>
+`;
+
+exports[`ListItem React component Marker Renders Disc correctly 1`] = `
+<li
+  className="li copy markerDisc">
+  List Item
+</li>
+`;
+
+exports[`ListItem React component Renders Default correctly 1`] = `
+<li
+  className="li copy">
+  List Item
+</li>
+`;

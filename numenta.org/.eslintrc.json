@@ -1,0 +1,53 @@
+{
+  "ecmaFeatures": {
+    "classes": true,
+    "jsx": true
+  },
+  "env": {
+    "jasmine": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:jasmine/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "jasmine",
+    "react"
+  ],
+  "rules": {
+    "arrow-parens": [2, "always"],
+    "brace-style": [2, "stroustrup"],
+    "class-methods-use-this": [0],
+    "func-names": [0],
+    "import/extensions": [2, {
+      "js": "never",
+      "json": "never",
+      "jsx": "never"
+    }],
+    "import/no-extraneous-dependencies": [0],
+    "import/prefer-default-export": [0],
+    "jsx-a11y/html-has-lang": [0],
+    "max-len": [2, 80],
+    "no-restricted-syntax": [2,
+      "DebuggerStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-param-reassign": [2, {"props": false}],
+    "no-return-assign": [0],
+    "no-underscore-dangle": [0],
+    "object-curly-spacing": [2, "never"],
+    "one-var": [2, {"uninitialized": "always", "initialized": "never"}],
+    "one-var-declaration-per-line": [0],
+    "padded-blocks": [0],
+    "react/jsx-boolean-value": [2, "always"],
+    "react/jsx-filename-extension": [1],
+    "react/forbid-prop-types": [2, {"forbid": ["any"]}],
+    "react/no-danger": [0],
+    "react/no-did-mount-set-state": [0],
+    "react/no-unescaped-entities": [0],
+    "react/require-extension": [0],
+    "semi": [2, "never"]
+  }
+}
