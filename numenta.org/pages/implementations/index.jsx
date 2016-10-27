@@ -9,17 +9,17 @@ import {scrollToSection} from '../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionMission from './_Section'
+import SectionCode from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionMission key="sectionMission" />)
-const title = 'Mission & History'
+const Default = (<SectionCode key="sectionCode" />)
+const title = 'Implementations'
 
 
 /**
  *
  */
-class MissionPage extends React.Component {
+class CodePage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -61,4 +61,4 @@ class MissionPage extends React.Component {
 
 }
 
-export default MissionPage
+export default CodePage

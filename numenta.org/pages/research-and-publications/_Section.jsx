@@ -13,9 +13,9 @@ import styles from './index.css'
 
 
 /**
- * Neuroscience Research MainSection - React view component.
+ * Research & Publications MainSection - React view component.
  */
-const SectionNeuroscience = (props, {config}) => {
+const SectionResearch = (props, {config}) => {
   const {links} = config
 
   return (
@@ -67,8 +67,8 @@ const SectionNeuroscience = (props, {config}) => {
   )
 }
 
-SectionNeuroscience.contextTypes = {
+SectionResearch.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionNeuroscience
+export default SectionResearch

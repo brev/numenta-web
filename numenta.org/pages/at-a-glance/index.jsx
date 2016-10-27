@@ -7,29 +7,28 @@ import React from 'react'
 
 import {scrollToSection} from '../../utils/client'
 
-import MainSections, {getNextSection} from '../_MainSections'
+import MainSections from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionResources from './_Section'
+import SectionGlance from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionResources key="sectionResources" />)
-const title = 'Papers, Videos & More'
+const Default = (<SectionGlance key="sectionGlance" />)
+const title = 'At A Glance'
 
 
 /**
  *
  */
-class PapersPage extends React.Component {
+class GlancePage extends React.Component {
 
   constructor(props) {
     super(props)
-    const next = getNextSection(Default)
 
     this.state = {
       sections: (
         <Section headline={true} open={true} title={title}>
           {Default}
-          <NextSection {...next} />
+          <NextSection title="Back to Home" url="/" />
         </Section>
       ),
     }
@@ -60,4 +59,4 @@ class PapersPage extends React.Component {
   }
 }
 
-export default PapersPage
+export default GlancePage

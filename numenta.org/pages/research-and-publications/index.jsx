@@ -17,10 +17,10 @@ const title = 'Neuroscience Research'
 
 
 /**
- * Neuroscience Research page React component, a wrapper for the associated
+ * Research & Publications page React component, a wrapper for the associated
  *  MainSection component.
  */
-class NeurosciencePage extends React.Component {
+class ResearchPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -62,4 +62,4 @@ class NeurosciencePage extends React.Component {
 
 }
 
-export default NeurosciencePage
+export default ResearchPage

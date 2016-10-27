@@ -9,17 +9,17 @@ import {scrollToSection} from '../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionOpensource from './_Section'
+import SectionCommunity from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionOpensource key="sectionOpensource" />)
-const title = 'Open Source Community'
+const Default = (<SectionCommunity key="sectionCommunity" />)
+const title = 'Community'
 
 
 /**
  *
  */
-class OpenSourcePage extends React.Component {
+class CommunityPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -61,4 +61,4 @@ class OpenSourcePage extends React.Component {
 
 }
 
-export default OpenSourcePage
+export default CommunityPage

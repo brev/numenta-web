@@ -9,17 +9,17 @@ import {scrollToSection} from '../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionResources from './_Section'
+import SectionSchool from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionResources key="sectionResources" />)
-const title = 'Papers, Videos & More'
+const Default = (<SectionSchool key="sectionSchool" />)
+const title = 'HTM School'
 
 
 /**
  *
  */
-class PapersPage extends React.Component {
+class SchoolPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -60,4 +60,4 @@ class PapersPage extends React.Component {
   }
 }
 
-export default PapersPage
+export default SchoolPage

@@ -11,9 +11,9 @@ import styles from './index.css'
 
 
 /**
- *
+ * At A Glance - MainSection React component
  */
-const SectionPapers = (props, {config}) => {
+const SectionGlance = (props, {config}) => {
   const {links} = config
 
   return (
@@ -37,8 +37,8 @@ const SectionPapers = (props, {config}) => {
   )
 }
 
-SectionPapers.contextTypes = {
+SectionGlance.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionPapers
+export default SectionGlance

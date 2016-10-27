@@ -13,7 +13,7 @@ import styles from './index.css'
 /**
  *
  */
-const SectionPapers = (props, {config}) => {
+const SectionSchool = (props, {config}) => {
   const {links} = config
 
   return (
@@ -37,8 +37,8 @@ const SectionPapers = (props, {config}) => {
   )
 }
 
-SectionPapers.contextTypes = {
+SectionSchool.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionPapers
+export default SectionSchool
