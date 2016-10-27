@@ -3,15 +3,16 @@
 Source code, generators, tooling, and content for Numenta websites and platform.
 
 ```shell
+.                 # https://github.com/numenta/numenta-web
 ├── numenta.com/  # Source for Numenta company site: http://numenta.com
 ├── numenta.org/  # Source for Numenta HTM Community site: http://numenta.org
 └── shared/       # Components and code shared between sites
 ```
 
 
-## Websites
+# Websites
 
-### Goals
+## Goals
 
 These sites are an attempt at getting back to the roots of the web: *reading*.
 [Inspired by](http://numenta.com/blog/2016/09/02/why-did-we-completely-change-our-website-design-the-story-behind-our-new-look/)
@@ -38,7 +39,7 @@ then is loaded on the clients to continue the applications live.
 [Gatsby.js](https://github.com/gatsbyjs/gatsby) is the amazing tool that helps
 us accomplish all of this.
 
-### Stack
+## Stack
 
 * Script
   * ECMAscript [ES6](https://github.com/lukehoban/es6features) (Javascript)
@@ -81,12 +82,12 @@ us accomplish all of this.
     [Favicons](https://github.com/jantimon/favicons-webpack-plugin)
     webpack plugin
 
-### Server
+## Server
 
-#### Filesystem
+### Filesystem
 
-**The contents of each individual website source directory (`numenta.com/`) will
-look like the following:**
+**The contents of each individual website source directory (`cd numenta.com/`)
+will look like the following:**
 
 ```shell
 .                       # Inside `numenta.com/` or `numenta.org/`
@@ -114,18 +115,18 @@ look like the following:**
 └── wrappers/           # Document-type (.html, .md, etc.) wrapper Components
 ```
 
-#### Lifecycle
+### Lifecycle
 
 @TODO - talk about how dynamic dev works, how builds work, trace how content
 works it's way through components, pages, \_templates, html.jsx, webpack,
 gatsby, etc, etc. Gatsby's docs have some of this to build on (and maybe we can
 contribute back).
 
-### Client
+## Client
 
-#### Lifecycle
+### Lifecycle
 
-##### Baseline
+#### Baseline
 
 All browsers and clients will start by loading a classic, simple,
 statically-generated, multi-page site. This guarantees that all users will
@@ -133,7 +134,7 @@ receive a decent baseline experience, especially on older, accessible, or unique
 browsers. This also gives robots and search engine crawlers to have many
 internal pages to link and index.
 
-##### Advanced / Targets
+#### Advanced / Targets
 
 After loading the baseline experience, modern clients (listed in the support
 table below) will then be augmented with an advanced single-page style web
@@ -153,13 +154,13 @@ page transitions, a full client-side text search system, etc.
 | **Win/7**   |        |         |        |      |       |   ✓   |         |
 | **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
 
-### Setup
+## Setup
 
 Please see each site's individual `README.md` for specific setup instructions.
 
 **Each site needs to be setup before running scripts, tests, etc.**
 
-### Scripts
+## Scripts
 
 **Scripts should be run from inside each websites individual source
 directory (`cd numenta.com/`).**
@@ -177,14 +178,14 @@ directory (`cd numenta.com/`).**
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
 | Test Links Local | `npm run test:links:local` | Runs link checker against http://0.0.0.0:8000 |
-| Test Links Production | `npm run test:links:prod` | Runs link checker against http://numenta.com |
-| Test Links Staging | `npm run test:links:stage` | Runs link checker against http://staging.numenta.com |
+| Test Links Production | `npm run test:links:prod` | Runs link checker against Production site |
+| Test Links Staging | `npm run test:links:stage` | Runs link checker against Staging site |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
 | Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
 | Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
 | Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
 
-### Testing
+## Testing
 
 **Tests should be run from inside each websites individual source
 directory (`cd numenta.com/`).**
@@ -199,7 +200,7 @@ To run All Tests (unit, etc):
 npm run test
 ```
 
-#### Unit
+### Unit
 
 Run only unit tests:
 
@@ -223,7 +224,7 @@ open this report when the testing is finished, and the report is generated.
 npm run test:unit:coverage
 ```
 
-#### Hyperlinks
+### Hyperlinks
 
 ```shell
 # Test hyperlinks on http://0.0.0.0:8000.
@@ -236,7 +237,7 @@ npm run test:links:stage  # test hyperlinks on Staging
 npm run test:links:prod   # test hyperlinks on Production
 ```
 
-### Build
+## Build
 
 Average build wait times:
 
@@ -260,9 +261,9 @@ Additional Notes:
   an override production Post URL to Disqus
   [via the component, here](https://github.com/numenta/numenta-web/blob/master/numenta.com/components/Disqus/index.jsx#L34-L40).
 
-#### Development
+### Development
 
-##### Dynamic
+#### Dynamic
 
 ```shell
 npm run dev
@@ -293,14 +294,14 @@ Additional Notes:
   cp public/_searchIndex.json pages/.
   ```
 
-##### Static
+#### Static
 
 ```shell
 npm run serve
 # Visit http://localhost:8000
 ```
 
-#### Integration
+### Integration
 
 Update Gatsby config for GitHub Pages (gh-pages) integration targets. Modify
 `config.toml` and set (but DO NOT commit):
@@ -316,7 +317,7 @@ And then run an integration build:
 npm run build
 ```
 
-##### Personal
+#### Personal
 
 Push build to personal fork `origin:gh-pages` integration hosting branch:
 
@@ -328,7 +329,7 @@ npm run deploy:gh-pages -- --remote origin  # same thing
 # Visit http://fork.github.io/numenta-web/
 ```
 
-##### Shared
+#### Shared
 
 Push build to shared `upstream:gh-pages` integration hosting branch:
 
@@ -341,7 +342,7 @@ npm run deploy:gh-pages -- --remote upstream
 # Visit http://numenta.github.io/numenta-web/
 ```
 
-#### Staging
+### Staging
 
 ```shell
 npm run build
@@ -350,7 +351,7 @@ npm run build
 # Visit Staging
 ```
 
-#### Production
+### Production
 
 ```shell
 npm run build
@@ -359,12 +360,12 @@ npm run build
 # Visit Production
 ```
 
-### Guidance
+## Guidance
 
 Code standards are handled by their respective linters and lint configs (for
 example, see the local file `.eslintrc.json`).
 
-#### Components
+### Components
 
 * Pages and Main Sections:
   * Main Sections (pages grouped on our Wikipedia-like single-page app
@@ -383,7 +384,7 @@ example, see the local file `.eslintrc.json`).
   This should be handled auto-magically for you already, but if you have trouble
   with links on staging, this may be the problem.
 
-#### Content
+### Content
 
 * Markdown link target filenames with spaces must be quoted:
   `[link text]("spaces in filename.txt")`
@@ -397,9 +398,9 @@ example, see the local file `.eslintrc.json`).
   * @TODO more basics here.
   * Make sure to follow the **URL Format** notes further below.
 
-#### Links and URLs
+### Links and URLs
 
-##### URL Format
+#### URL Format
 
 * URLs should end with `/` (slash)
 * Examples of ideal URLs detailed below:
@@ -409,7 +410,7 @@ example, see the local file `.eslintrc.json`).
   * `http://numenta.org/`
   * `http://numenta.org/htm-school/`
 
-##### Possible Link Situations
+#### Possible Link Situations
 
 * @TODO list files here with lots of link/href/URL-related code. And Refactor.
 * Google Analytics should be tracking `pages` and `events` for all Situations
@@ -439,7 +440,7 @@ example, see the local file `.eslintrc.json`).
 [link12]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/02/11/numenta-anomaly-benchmark-contest-ieee-wcci-2016.md#numenta-anomaly-benchmark-nab-competition
 [link13]: https://github.com/numenta/numenta-web/blob/master/numenta.com/pages/blog/2016/03/30/numenta-at-computational-and-systems-neuroscience-conference.md
 
-#### Packages
+### Packages
 
 * Use exact versions for dependencies in `package.json`, no version RegExps
   please. All package changes need be exact and on purpose for build
@@ -452,7 +453,7 @@ example, see the local file `.eslintrc.json`).
 * Keep packages as up-to-date as possible. Check with: `npm outdated -depth 0`
 * Update and test 1 package at a time
 
-#### Styles
+### Styles
 
 * `CSS Module` Composition order:
 
@@ -477,13 +478,13 @@ example, see the local file `.eslintrc.json`).
   ```
 
 
-## Shared
+# Shared
 
 Code shared between websites (components, utils, etc.) is located in
 the `shared/` directory.
 
 
-## Contributing
+# Contributing
 
 These projects are open source, and
 [Pull Requests](https://help.github.com/articles/about-pull-requests/) are
@@ -501,7 +502,7 @@ the following scripts against your change branch:
 * `npm run test`
 
 
-## License
+# License
 
 ```
 Numenta.com company website source code
