@@ -12,7 +12,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * TextLink React Component
  */
 const TextLink = ({children, onClick, target, to}) => {
   const instrumentOnClick = (event) => {

@@ -7,7 +7,7 @@
 /* dropcap - sync with wrappers/md/md.css */
 ._dropcap:first-of-type::first-letter {
   background-color: #fff;
-  color: #1aa0db;
+  color: #0277bd;
   float: left;
   font-weight: 500;
   line-height: 0.85;

@@ -15,7 +15,7 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
 
 [links]
   [links.out]  # external links
-    # partners
+    bami = 'http://numenta.com/biological-and-machine-intelligence/'
     com = 'http://numenta.com'
     cortical = 'http://cortical.io'
     grok = 'http://grokstream.com'
@@ -31,6 +31,7 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     # other site pages
     blog = '/blog/'
     events = '/events/'
+    papers = '/papers/'
     sitemap = '/sitemap/'
     privacy = '/legal/privacy/'
     terms = '/legal/terms/'

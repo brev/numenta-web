@@ -6,7 +6,7 @@ import React from 'react'
 
 import Image from '../../components/Image'
 import Paragraph from '../../components/Paragraph'
-import TextLink from '../../components/TextLink'
+// import TextLink from '../../components/TextLink'
 
 import ImageOpensource from './images/image.png'
 import styles from './index.css'
@@ -38,28 +38,7 @@ const SectionOpensource = (props, {config}) => {
           You’ll also find our implementation of HTM theory, called NuPIC
           (Numenta Platform for Intelligent Computing), which is written in C++
           and Python. Other implementations have been ported from NuPIC into
-          other languages by community members.
-        </Paragraph>
-        <Paragraph>
-          If you are interested in seeing, developing or working with our
-          technology, we invite you to participate at {' '}
-          <TextLink to={links.out.org}>
-            {links.out.org}
-          </TextLink>.
-          Anyone is welcome to use our technology for free, under the {' '}
-          <TextLink to={links.out.license}>
-            AGPLv3 open source license.
-          </TextLink> {' '}
-          In addition, we have created a separate, {' '}
-          <TextLink to={links.out.trial}>
-            trial license without commercial rights
-          </TextLink> {' '}
-          for those individuals or organizations who are unable to use the
-          AGPLv3 license. For more on our licenses, see the {' '}
-          <TextLink to={links.in.business}>
-            Business Strategy & IP
-          </TextLink> {' '}
-          section.
+          other languages by community members. {links.in.home}
         </Paragraph>
       </div>
     </article>

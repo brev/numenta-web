@@ -4,9 +4,8 @@
 
 import React from 'react'
 
-import ImageLink from '../ImageLink'
-import Logo from '../Logo'
 import Search from '../Search'
+import TextLink from '../TextLink'
 
 import styles from './index.css'
 
@@ -21,9 +20,9 @@ const Header = (props, {config}) => {
     <div className={styles.appbar}>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <ImageLink to={links.in.home}>
-            <Logo />
-          </ImageLink>
+          <TextLink to={links.in.home}>
+            Numenta.org
+          </TextLink>
         </div>
         <div className={styles.search}>
           <Search />
