@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://numenta.com/sitemap.xml
+Sitemap: http://numenta.org/sitemap.xml
