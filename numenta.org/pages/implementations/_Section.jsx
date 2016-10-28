@@ -5,9 +5,7 @@
 import React from 'react'
 
 import Anchor from '../../components/Anchor'
-import Code from '../../components/Code'
 import IconMarker from '../../components/IconMarker'
-// import Image from '../../components/Image'
 import Paragraph from '../../components/Paragraph'
 import Strong from '../../components/Strong'
 import SubTitle from '../../components/SubTitle'
@@ -17,9 +15,9 @@ import styles from './index.css'
 
 
 /**
- *
+ * Implemntations MainSection React view component
  */
-const SectionCode = (props, {config}) => {
+const SectionImplement = (props, {config}) => {
   const {links} = config
 
   return (
@@ -96,7 +94,8 @@ const SectionCode = (props, {config}) => {
         provided in <Strong>nupic.core</Strong>.
       </Paragraph>
       <Paragraph>
-        In addition to providing Python bindings to the <Code>nupic.core</Code>
+        In addition to providing Python bindings to the {' '}
+        <Strong>nupic.core</Strong> {' '}
         <TextLink to="https://github.com/numenta/nupic/wiki/Network-API">
           Network API,
         </TextLink> {' '}
@@ -142,8 +141,8 @@ const SectionCode = (props, {config}) => {
   )
 }
 
-SectionCode.contextTypes = {
+SectionImplement.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionCode
+export default SectionImplement

@@ -9,11 +9,11 @@ import {scrollToSection} from '../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionNeuroscience from './_Section'
+import SectionResearch from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionNeuroscience key="sectionNeuroscience" />)
-const title = 'Neuroscience Research'
+const Default = (<SectionResearch key="sectionResearch" />)
+const title = 'Research &amp; Publications'
 
 
 /**

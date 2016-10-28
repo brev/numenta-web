@@ -40,7 +40,7 @@ SitemapItem.propTypes = {
 
 
 /**
- *
+ * Sitemap Page React view component
  */
 const SitemapPage = (props, {config, route}) => {
   const {links} = config
@@ -90,7 +90,7 @@ const SitemapPage = (props, {config, route}) => {
                 </TextLink>
               </ListItem>
               <ListItem>
-                <TextLink to={links.in.code}>
+                <TextLink to={links.in.implement}>
                   Implementations
                 </TextLink>
               </ListItem>

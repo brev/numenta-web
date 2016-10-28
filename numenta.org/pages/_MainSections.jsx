@@ -5,14 +5,14 @@
 import {findIndex} from 'lodash'
 import React from 'react'
 
+import Section from '../components/Section'
+
 import SectionCommunity from './community/_Section'
 import SectionGlance from './at-a-glance/_Section'
 import SectionHome from './_Section'
 import SectionImplement from './implementations/_Section'
 import SectionResearch from './research-and-publications/_Section'
 import SectionSchool from './htm-school/_Section'
-
-import Section from '../components/Section'
 
 const mainSectionList = [
   {
@@ -48,8 +48,10 @@ const mainSectionList = [
 ]
 
 /**
- *
+ * Gets the next MainSection object based on the one given
+ * @param {Object} current - Current Section object trying to get next of
  * @public
+ * @returns {Object|null} - Next Section object or null
  */
 function getNextSection(current) {
   const nextIndex = findIndex(mainSectionList, (item) => (
@@ -64,7 +66,8 @@ function getNextSection(current) {
 
 
 /**
- *
+ * Main Sections of site (Single-page app Homepage for advanced clients,
+ *  individual pages for older clients), React view component.
  */
 const MainSections = ({current}) => {
   const details = {}

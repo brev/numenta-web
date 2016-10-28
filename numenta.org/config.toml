@@ -19,18 +19,19 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     com = 'http://numenta.com/'
     cortical = 'http://cortical.io/'
     grok = 'http://grokstream.com/'
+    forum = 'https://discourse.numenta.org/categories'
 
   [links.in]  # internal paths
     # main/home pseudo-single page
     home = '/'
     research = '/research-and-publications/'
     community = '/community/'
-    code = '/implementations/'
+    implement = '/implementations/'
     school = '/htm-school/'
     glance = '/at-a-glance/'
     # other site pages
     blog = '/blog/'
-    conduct = '/'
+    conduct = '/'  # @TODO
     events = '/events/'
     papers = '/papers/'
     sitemap = '/sitemap/'

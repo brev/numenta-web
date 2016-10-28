@@ -28,14 +28,11 @@ const SectionCommunity = (props, {config}) => {
         <Paragraph lead={true}>
           Our community is an eclectic collection of researchers, scientists,
           hobbyists, and hackers interested in building biologically-inspired
-          intelligent systems with {' '}
-          <TextLink to="">
-            Hierarchical Temporal Memory (HTM).
-          </TextLink>
+          intelligent systems with Hierarchical Temporal Memory (HTM).
         </Paragraph>
         <Paragraph>
           To get involved in our community, join {' '}
-          <TextLink to="">
+          <TextLink to={links.out.forum}>
             HTM Forum.
           </TextLink> {' '}
           You can login with your Google, Facebook, or Twitter account, or by
@@ -45,26 +42,24 @@ const SectionCommunity = (props, {config}) => {
           welcoming community, and we hope you'll join us.
         </Paragraph>
         <Paragraph>
-          The HTM Community is sponsored by
-          <TextLink to="">
+          The HTM Community is sponsored by {' '}
+          <TextLink to={links.out.com}>
             Numenta,
           </TextLink> {' '}
-          the company behind HTM.
-          Since Numenta open sourced their
-          <TextLink to={links.in.code}>
+          the company behind HTM. Since Numenta open sourced their {' '}
+          <TextLink to={links.in.implement}>
             HTM implementations,
           </TextLink> {' '}
-          they have
-          dedicated
+          they have dedicated {' '}
           <TextLink to="https://discourse.numenta.org/users/rhyolight">
             one employee
           </TextLink> {' '}
-          to help foster and grow the HTM community.
-          Numenta also organizes and sponsors community events like meetups,
-          hackathons, and workshops. We at Numenta believe that HTM will thrive
-          because it will be easily accessible to many people. Our community
-          exemplifies the type of people drawn toward new technology, and it
-          shows in our curiosity and open-mindedness.
+          to help foster and grow the HTM community. Numenta also organizes and
+          sponsors community events like meetups, hackathons, and workshops. We
+          at Numenta believe that HTM will thrive because it will be easily
+          accessible to many people. Our community exemplifies the type of
+          people drawn toward new technology, and it shows in our curiosity and
+          open-mindedness.
         </Paragraph>
 
         <Anchor name="meetups" />

@@ -9,17 +9,17 @@ import {scrollToSection} from '../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import NextSection from '../../components/NextSection'
-import SectionCode from './_Section'
+import SectionImplement from './_Section'
 import Section from '../../components/Section'
 
-const Default = (<SectionCode key="sectionCode" />)
+const Default = (<SectionImplement key="sectionImplement" />)
 const title = 'Implementations'
 
 
 /**
- *
+ * Implementations Page, MainSection wrapper React view component.
  */
-class CodePage extends React.Component {
+class ImplementPage extends React.Component {
 
   constructor(props) {
     super(props)
@@ -61,4 +61,4 @@ class CodePage extends React.Component {
 
 }
 
-export default CodePage
+export default ImplementPage

@@ -4,11 +4,9 @@
 
 import React from 'react'
 
-// import Image from '../../components/Image'
 import Paragraph from '../../components/Paragraph'
 import TextLink from '../../components/TextLink'
 
-// import ImageBrain from './images/brain.svg'
 import styles from './index.css'
 
 
@@ -24,15 +22,10 @@ const SectionResearch = (props, {config}) => {
         <div className={styles.aside}>
           <div className={styles.brain}>
             Aside
-            { /* <Image
-              alt="Stylized Brain Artwork"
-              respond="mw"
-              shadow={false}
-              src={ImageBrain}
-            /> */ }
           </div>
         </div>
         <div className={styles.content}>
+          {/* @TODO make Quote, Cite components and refactor */}
           <blockquote>
             <p>
               “Numenta’s unique approach of focusing on large-scale cortical
