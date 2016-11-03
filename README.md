@@ -4,9 +4,11 @@ Source code, generators, tooling, and content for Numenta websites and platform.
 
 ```shell
 .                 # https://github.com/numenta/numenta-web
+├── components/   # Shared React View Components for all sites
+├── package.json  # Shared npm packages to install for all sites
 ├── numenta.com/  # Source for Numenta company site: http://numenta.com
 ├── numenta.org/  # Source for Numenta HTM Community site: http://numenta.org
-└── shared/       # Components and code shared between sites
+└── utils/        # Shared helper utilities for all sites
 ```
 
 

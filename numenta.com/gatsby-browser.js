@@ -2,11 +2,12 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
-import {scrollToSection} from './utils/client'
+import {scrollToSection} from '../utils/client'
 
 
 /**
- *
+ * Gatsby event handler bridge to React-Router, fires every time URL changes
+ *  within the clientside Single-Page-App mode.
  */
 export function onRouteUpdate() {
   const {hash} = global.window.location

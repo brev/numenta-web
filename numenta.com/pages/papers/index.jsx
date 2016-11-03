@@ -6,15 +6,14 @@ import {capitalize} from 'lodash'
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {sortOrderAscend} from '../../utils/shared'
-
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import Paragraph from '../../components/Paragraph'
-import Section from '../../components/Section'
-import Spacer from '../../components/Spacer'
-import Subtle from '../../components/Subtle'
-import TextLink from '../../components/TextLink'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Paragraph from '../../../components/Paragraph'
+import Section from '../../../components/Section'
+import {sortOrderAscend} from '../../../utils/shared'
+import Spacer from '../../../components/Spacer'
+import Subtle from '../../../components/Subtle'
+import TextLink from '../../../components/TextLink'
 
 import styles from './index.css'
 
@@ -22,7 +21,7 @@ const title = 'Research Papers'
 
 
 /**
- *
+ * Research Papers page and MainSection wrapper - React view component.
  */
 const PapersPage = (props, {route}) => {
   const {pages} = route

@@ -9,16 +9,16 @@ import IconPdf from 'react-icons/lib/fa/file-pdf-o'
 import IconSlideshare from 'react-icons/lib/fa/slideshare'
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import IconMarker from '../../components/IconMarker'
-import Image from '../../components/Image'
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import Paragraph from '../../components/Paragraph'
-import Section from '../../components/Section'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
-import Video from '../../components/Video'
+import Anchor from '../../../components/Anchor'
+import IconMarker from '../../../components/IconMarker'
+import Image from '../../../components/Image'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import Paragraph from '../../../components/Paragraph'
+import Section from '../../../components/Section'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
+import Video from '../../../components/Video'
 
 import ImageCompare from './images/compare.png'
 import ImageDatasheet from './images/datasheet.png'
@@ -36,7 +36,7 @@ const title = 'Numenta Anomaly Benchmark (NAB)'
 
 
 /**
- *
+ * Numenta Anomaly Benchmark (NAB) page - React view component.
  */
 const NabPage = () => (
   <article>

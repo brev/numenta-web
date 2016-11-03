@@ -5,23 +5,22 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
-
-import Anchor from '../../components/Anchor'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import PostListItem from '../../components/PostListItem'
-import Section from '../../components/Section'
-import Spacer from '../../components/Spacer'
-import SubTitle from '../../components/SubTitle'
-import Subtle from '../../components/Subtle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import PostListItem from '../../../components/PostListItem'
+import Section from '../../../components/Section'
+import {sortDateDescend} from '../../../utils/shared'
+import Spacer from '../../../components/Spacer'
+import SubTitle from '../../../components/SubTitle'
+import Subtle from '../../../components/Subtle'
+import TextLink from '../../../components/TextLink'
 
 import styles from './index.css'
 
 
 /**
- *
+ * Press Page - React view component.
  */
 const PressPage = (props, {route}) => {
   const {pages} = route

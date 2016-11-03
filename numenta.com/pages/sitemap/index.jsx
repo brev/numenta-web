@@ -6,21 +6,25 @@ import Helmet from 'react-helmet'
 import {zipObject} from 'lodash'
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
-
-import Anchor from '../../components/Anchor'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import Section from '../../components/Section'
-import Spacer from '../../components/Spacer'
-import SubTitle from '../../components/SubTitle'
-import Subtle from '../../components/Subtle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Section from '../../../components/Section'
+import {sortDateDescend} from '../../../utils/shared'
+import Spacer from '../../../components/Spacer'
+import SubTitle from '../../../components/SubTitle'
+import Subtle from '../../../components/Subtle'
+import TextLink from '../../../components/TextLink'
 
 import styles from './index.css'
 
 const title = 'Sitemap'
 
+
+/**
+ * Element for each individula Post List item (Blog, event, etc) for Sitemap -
+ *  React view component.
+ */
 const SitemapItem = (props) => {
   const {data, path} = props
   return (
@@ -40,7 +44,7 @@ SitemapItem.propTypes = {
 
 
 /**
- *
+ * Sitemap Page - React view component.
  */
 const SitemapPage = (props, {config, route}) => {
   const {links} = config

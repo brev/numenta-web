@@ -5,6 +5,9 @@
 import React from 'react'
 
 
+/**
+ * Gatsby HTML Wrapper - React view component.
+ */
 const HtmlWrapper = ({route}) => {
   const post = route.page.data
 

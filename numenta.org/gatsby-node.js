@@ -8,14 +8,13 @@ import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
 import {ncp} from 'ncp'
+// import {resolve} from 'path'
 import toml from 'toml'
 
 const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
-
-// @TODO generl refactoring of shared code to ../shared/
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -41,7 +40,12 @@ export function modifyWebpackConfig(webpack, env) {
   ].join('&')
   const cssModules = `css?${cssOptions}`
 
-  webpack.merge({debug: true})
+  // turn on debugging
+  webpack.merge({
+    debug: true,
+  })
+
+  console.log(webpack)
 
   // dev source maps
   if (env === 'develop') {
@@ -140,8 +144,6 @@ export function postBuild(pages, callback) {
   const searchSkip = [
     '/blog/',   // @TODO prune
     '/events/',
-    '/newsletter/',
-    '/press/',
     '/sitemap/',
   ]
   const dataSkip = ['author', 'date', 'org', 'title']
@@ -199,6 +201,7 @@ export function postBuild(pages, callback) {
       const text = [title, content, details.join(' ')].join(' ')
       return {path, text, title}
     })
+
   // prep sitemap
   const urls = pages
     .filter((page) => page.path)

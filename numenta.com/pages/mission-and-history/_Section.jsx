@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import Image from '../../components/Image'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import Paragraph from '../../components/Paragraph'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
-import Video from '../../components/Video'
+import Anchor from '../../../components/Anchor'
+import Image from '../../../components/Image'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Paragraph from '../../../components/Paragraph'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
+import Video from '../../../components/Video'
 
 import ImageTimeline from './images/timeline.png'
 import ImageVideoStory from './images/video-ourstory.png'
@@ -20,7 +20,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Mission & History MainSection and page content - React view component.
  */
 const SectionMission = (props, {config}) => {
   const {links} = config

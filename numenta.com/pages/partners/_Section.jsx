@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import Image from '../../components/Image'
-import ImageLink from '../../components/ImageLink'
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import LogoMark from '../../components/LogoMark'
-import Paragraph from '../../components/Paragraph'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import Image from '../../../components/Image'
+import ImageLink from '../../../components/ImageLink'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import LogoMark from '../../../components/LogoMark'
+import Paragraph from '../../../components/Paragraph'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
 import ImageCortical from './images/cortical.png'
 import ImageGrokstream from './images/grokstream.png'
@@ -20,7 +20,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Partners MainSection and Page content - React view component.
  */
 const SectionPartners = (props, {config}) => {
   const {contact, links} = config

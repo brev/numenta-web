@@ -6,15 +6,15 @@ import IconQuote from 'react-icons/lib/fa/quote-left'
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import Code from '../../components/Code'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import Paragraph from '../../components/Paragraph'
-import Section from '../../components/Section'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import Code from '../../../components/Code'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Paragraph from '../../../components/Paragraph'
+import Section from '../../../components/Section'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
 import styles from './index.css'
 
@@ -22,7 +22,7 @@ const title = 'Biological and Machine Intelligence (BAMI)'
 
 
 /**
- *
+ * Biological and Machine Intelligence (BAMI) page - React view component.
  */
 const BamiPage = (props, {config}) => {
   const {links} = config

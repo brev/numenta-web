@@ -5,19 +5,19 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import NextSection from '../../../components/NextSection'
+import {scrollToSection} from '../../../utils/client'
+import Section from '../../../components/Section'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../components/NextSection'
 import SectionPartners from './_Section'
-import Section from '../../components/Section'
 
 const Default = (<SectionPartners key="sectionPartners" />)
 const title = 'Partners'
 
 
 /**
- *
+ * Partners Page - React view component.
  */
 class PartnersPage extends React.Component {
 

@@ -1,0 +1,17 @@
+/**
+ * Numenta shared web components
+ * MIT License (see LICENSE.txt)
+ * Copyright © 2005—2016 Numenta <http://numenta.com>
+ */
+
+._visited:visited {
+  color: #1aa0db;
+}
+
+
+.imagelink {
+  composes: dim from 'tachyons';
+  composes: link from 'tachyons';
+  composes: color-blue from '../../static/assets/css/theme.css';
+  composes: _visited;
+}

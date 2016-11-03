@@ -5,18 +5,17 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
-
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/List'
-import PostListRow from '../../components/PostListRow'
-import Section from '../../components/Section'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/List'
+import PostListRow from '../../../components/PostListRow'
+import Section from '../../../components/Section'
+import {sortDateDescend} from '../../../utils/shared'
 
 const title = 'Blog'
 
 
 /**
- *
+ * Blog page - React view component.
  */
 const BlogPage = (props, {route}) => {
   const {pages} = route

@@ -4,16 +4,16 @@
 
 import React from 'react'
 
-import Glance from '../components/Glance'
-import Paragraph from '../components/Paragraph'
-import Strong from '../components/Strong'
-import TextLink from '../components/TextLink'
+import Glance from '../../components/Glance'
+import Paragraph from '../../components/Paragraph'
+import Strong from '../../components/Strong'
+import TextLink from '../../components/TextLink'
 
 import styles from './index.css'
 
 
 /**
- *
+ * Home MainSection and Homepage Content - React view component.
  */
 const SectionIndex = (props, {config}) => {
   const {links} = config

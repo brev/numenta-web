@@ -1,0 +1,16 @@
+/**
+ * Numenta shared web components
+ * MIT License (see LICENSE.txt)
+ * Copyright © 2005—2016 Numenta <http://numenta.com>
+ */
+
+.iconMarker {
+  /* */
+}
+
+.icon {
+  composes: mr1 from 'tachyons';
+  composes: relative from 'tachyons';
+  composes: color-blue-dark from '../../static/assets/css/theme.css';
+  top: -0.1rem;
+}

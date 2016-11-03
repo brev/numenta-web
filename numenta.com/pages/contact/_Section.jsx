@@ -4,29 +4,29 @@
 
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import Button from '../../components/Button'
-import DefineItem from '../../components/DefineItem'
-import DefineList from '../../components/DefineList'
-import DefineTitle from '../../components/DefineTitle'
-import Form from '../../components/Form'
-import FormInput from '../../components/FormInput'
-import FormLabel from '../../components/FormLabel'
-import FormRow from '../../components/FormRow'
-import FormTextArea from '../../components/FormTextArea'
-import Image from '../../components/Image'
-import ImageLink from '../../components/ImageLink'
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import Paragraph from '../../components/Paragraph'
-import SocialMedia from '../../components/SocialMedia'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import Table from '../../components/Table'
-import TableBody from '../../components/TableBody'
-import TableCell from '../../components/TableCell'
-import TableRow from '../../components/TableRow'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import Button from '../../../components/Button'
+import DefineItem from '../../../components/DefineItem'
+import DefineList from '../../../components/DefineList'
+import DefineTitle from '../../../components/DefineTitle'
+import Form from '../../../components/Form'
+import FormInput from '../../../components/FormInput'
+import FormLabel from '../../../components/FormLabel'
+import FormRow from '../../../components/FormRow'
+import FormTextArea from '../../../components/FormTextArea'
+import Image from '../../../components/Image'
+import ImageLink from '../../../components/ImageLink'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import Paragraph from '../../../components/Paragraph'
+import SocialMedia from '../../../components/SocialMedia'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import Table from '../../../components/Table'
+import TableBody from '../../../components/TableBody'
+import TableCell from '../../../components/TableCell'
+import TableRow from '../../../components/TableRow'
+import TextLink from '../../../components/TextLink'
 
 import ImageMap from './images/map.png'
 import styles from './index.css'
@@ -44,7 +44,7 @@ const fields = {  // wufoo ids
 
 
 /**
- *
+ * Contact MainSection and page content - React view component.
  */
 const SectionContact = (props, {config}) => {
   const {contact, links} = config

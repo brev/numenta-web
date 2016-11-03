@@ -5,19 +5,19 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import NextSection from '../../../components/NextSection'
+import {scrollToSection} from '../../../utils/client'
+import Section from '../../../components/Section'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../components/NextSection'
 import SectionResources from './_Section'
-import Section from '../../components/Section'
 
 const Default = (<SectionResources key="sectionResources" />)
 const title = 'Papers, Videos & More'
 
 
 /**
- *
+ * Papers Videos and More page, MainSection wrapper - React view component.
  */
 class PapersPage extends React.Component {
 
