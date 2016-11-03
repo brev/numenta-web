@@ -37,7 +37,7 @@ const SectionPapers = (props, {config, route}) => {
   const {links} = config
   const {pages} = route
   const postsLearn = pages.filter(({file}) => (
-    (file.path.match(/^papers\-videos\-and\-more\/.*\.md/))
+    (file.path.match(/^papers-videos-and-more\/.*\.md/))
   ))
   const postsMore = postsLearn.filter(({data}) => (
     (data.media !== 'video')

@@ -115,7 +115,7 @@ class HtmStudioPage extends React.Component {
       links.out.htmstudio.win : links.out.htmstudio.osx
     )
     const faqs = pages.filter(({file}) => (
-      (file.path.match(/^htm\-studio\/faq\/.*\.md/))
+      (file.path.match(/^htm-studio\/faq\/.*\.md/))
     ))
     const faq = faqs.sort(sortFaqs).map(({data, file}) => (
       <div key={file.stem}>
