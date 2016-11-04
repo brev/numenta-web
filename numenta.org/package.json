@@ -20,6 +20,10 @@
   "dependencies": {
     "numenta-web-site-base": ".."
   },
+  "engines": {
+    "node": ">=7.0.0",
+    "npm": ">=3.10.8"
+  },
   "keywords": [
     "Numenta",
     "HTM",

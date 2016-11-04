@@ -2,19 +2,21 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
+/* eslint-disable no-console */
+
 import {createSitemap} from 'sitemap'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
 import {ncp} from 'ncp'
+import {resolve} from 'path'
 import toml from 'toml'
-
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
 
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -22,7 +24,6 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
-/* eslint-disable no-console */
 
 
 /**
@@ -40,7 +41,15 @@ export function modifyWebpackConfig(webpack, env) {
   ].join('&')
   const cssModules = `css?${cssOptions}`
 
+  // turn debug on for all
   webpack.merge({debug: true})
+
+  // let shared modules in parent dir find webpack loaders in node_modules/
+  webpack.merge({
+    resolveLoader: {
+      fallback: resolve(__dirname, 'node_modules'),
+    },
+  })
 
   // dev source maps
   if (env === 'develop') {
@@ -120,6 +129,7 @@ export function modifyWebpackConfig(webpack, env) {
       output: {publicPath: `${config.linkPrefix}/`},
     })
   }
+
 
   return webpack
 }
