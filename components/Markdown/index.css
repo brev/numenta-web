@@ -13,7 +13,7 @@
 
 .markdown a:link,
 .markdown a:visited {
-  color: #0277bd;  /* color-blue-dark from '...theme' */
+  color: #0277bd;
   text-decoration: none;
   transition: opacity 0.15s ease-in;
 }

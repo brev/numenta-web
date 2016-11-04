@@ -10,6 +10,7 @@ import React from 'react'
 
 import Avatar from '../../components/Avatar'
 import Disqus from '../../components/Disqus'
+import {getEventTimeDisplay, getVideoIdFromUrl} from '../../utils/shared'
 import IconMarker from '../../components/IconMarker'
 import Image from '../../components/Image'
 import Markdown from '../../components/Markdown'
@@ -24,8 +25,6 @@ import TableRow from '../../components/TableRow'
 import TextLink from '../../components/TextLink'
 import Time from '../../components/Time'
 import Video from '../../components/Video'
-
-import {getEventTimeDisplay, getVideoIdFromUrl} from '../../utils/shared'
 
 import styles from './md.css'
 

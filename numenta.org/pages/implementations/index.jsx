@@ -5,12 +5,12 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import {scrollToSection} from '../../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../components/NextSection'
+import NextSection from '../../../components/NextSection'
 import SectionImplement from './_Section'
-import Section from '../../components/Section'
+import Section from '../../../components/Section'
 
 const Default = (<SectionImplement key="sectionImplement" />)
 const title = 'Implementations'

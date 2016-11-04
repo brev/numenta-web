@@ -12,10 +12,10 @@ import FormLabel from '../../../components/FormLabel'
 import FormRow from '../../../components/FormRow'
 import ListItem from '../../../components/ListItem'
 import ListOrder from '../../../components/ListOrder'
-import PostListRow from '../../../components/PostListRow'
 import Section from '../../../components/Section'
 import {sortDateDescend} from '../../../utils/shared'
 
+import PostListRow from '../../components/PostListRow'
 import styles from './index.css'
 
 const title = 'Newsletter'

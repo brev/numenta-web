@@ -1,6 +1,0 @@
-exports[`Strong React component Renders correctly 1`] = `
-<strong
-  className="strong">
-  Heavy Text
-</strong>
-`;

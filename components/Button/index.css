@@ -16,7 +16,7 @@
   composes: f5-ns from 'tachyons';
   composes: ph4 from 'tachyons';
   composes: pv3 from 'tachyons';
-  composes: color-blue from '../../static/assets/css/theme.css';
+  color: #1aa0db;
 }
 
 .light {
@@ -24,7 +24,7 @@
   composes: bn from 'tachyons';
   composes: f4 from 'tachyons';
   composes: pa1 from 'tachyons';
-  composes: color-blue from '../../static/assets/css/theme.css';
+  color: #1aa0db;
 }
 
 .primary {
@@ -34,7 +34,7 @@
   composes: ph4 from 'tachyons';
   composes: pv3 from 'tachyons';
   composes: white from 'tachyons';
-  composes: bg-color-blue from '../../static/assets/css/theme.css';
+  background-color: #1aa0db;
 }
 
 .short {
@@ -46,7 +46,7 @@
   composes: pv0 from 'tachyons';
   composes: relative from 'tachyons';
   composes: white from 'tachyons';
-  composes: bg-color-blue from '../../static/assets/css/theme.css';
+  background-color: #1aa0db;
   top: -0.1rem;
 }
 

@@ -5,12 +5,12 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import {scrollToSection} from '../../../utils/client'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../components/NextSection'
+import NextSection from '../../../components/NextSection'
 import SectionCommunity from './_Section'
-import Section from '../../components/Section'
+import Section from '../../../components/Section'
 
 const Default = (<SectionCommunity key="sectionCommunity" />)
 const title = 'Community'

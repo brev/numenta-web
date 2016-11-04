@@ -9,11 +9,11 @@ import React from 'react'
 import Anchor from '../../../components/Anchor'
 import ListItem from '../../../components/ListItem'
 import ListOrder from '../../../components/List'
-import PostListRow from '../../../components/PostListRow'
 import Section from '../../../components/Section'
 import {sortDateAscend, sortDateDescend} from '../../../utils/shared'
 import SubTitle from '../../../components/SubTitle'
 
+import PostListRow from '../../components/PostListRow'
 import styles from './index.css'
 
 const title = 'Events'

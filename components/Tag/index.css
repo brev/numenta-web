@@ -11,7 +11,7 @@
   composes: relative from 'tachyons';
   composes: ttu from 'tachyons';
   composes: white from 'tachyons';
-  composes: bg-color-blue-lite from '../../static/assets/css/theme.css';
+  background-color: #03a9f4;
   font-size: 0.7rem;
   letter-spacing: 0.05rem;
   padding: 0.05rem 0.35rem 0;

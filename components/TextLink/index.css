@@ -5,14 +5,14 @@
  */
 
 ._visited:visited {
-  color: #0277bd;  /* color-blue-dark from '...theme' */
+  color: #0277bd;
 }
 
 .textlink {
   composes: dim from 'tachyons';
   composes: link from 'tachyons';
   composes: underline-hover from 'tachyons';
-  composes: color-blue-dark from '../../static/assets/css/theme.css';
   composes: _visited;
+  color: #0277bd;
   word-wrap: normal;
 }

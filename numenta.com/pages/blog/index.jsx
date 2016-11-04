@@ -7,9 +7,10 @@ import React from 'react'
 
 import ListItem from '../../../components/ListItem'
 import ListOrder from '../../../components/List'
-import PostListRow from '../../../components/PostListRow'
 import Section from '../../../components/Section'
 import {sortDateDescend} from '../../../utils/shared'
+
+import PostListRow from '../../components/PostListRow'
 
 const title = 'Blog'
 

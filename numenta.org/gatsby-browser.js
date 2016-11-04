@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
-import {scrollToSection} from './utils/client'
+import {scrollToSection} from '../utils/client'
 
 
 /**

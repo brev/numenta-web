@@ -6,9 +6,9 @@ import React from 'react'
 
 import MainSections, {getNextSection} from './_MainSections'
 
-import NextSection from '../components/NextSection'
+import NextSection from '../../components/NextSection'
 import SectionHome from './_Section'
-import Section from '../components/Section'
+import Section from '../../components/Section'
 
 import styles from './index.css'
 

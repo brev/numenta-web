@@ -4,12 +4,12 @@
 
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import IconMarker from '../../components/IconMarker'
-import Paragraph from '../../components/Paragraph'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import IconMarker from '../../../components/IconMarker'
+import Paragraph from '../../../components/Paragraph'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
 import styles from './index.css'
 

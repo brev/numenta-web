@@ -32,6 +32,6 @@
   composes: ph2 from 'tachyons';
   composes: pointer from 'tachyons';
   composes: relative from 'tachyons';
-  composes: color-blue-dark from '../../static/assets/css/theme.css';
+  color: #0277bd;
   top: 0.3rem;
 }

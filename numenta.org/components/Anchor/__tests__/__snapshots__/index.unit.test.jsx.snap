@@ -1,5 +1,0 @@
-exports[`Anchor React component Renders correctly 1`] = `
-<span
-  className="anchor"
-  id="technology" />
-`;

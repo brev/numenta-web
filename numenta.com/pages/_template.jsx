@@ -79,13 +79,15 @@ class Template extends React.Component {
       const type = icon.match(/^(\w+)\[/).pop()
       const target = (type === 'link') ? links : meta
       const details = {}
-      icon.match(/[.+?]/g)
+      /* eslint-disable no-useless-escape */
+      icon.match(/\[.+?\]/g)
         .forEach((detail) => {
-          const line = detail.replace(/[[\]]/g, '')
+          const line = detail.replace(/[\[\]]/g, '')
           const [key, value] = line.split(/\$?=/)
           const clean = value.replace(/'/g, '')
           details[key] = (key === 'href') ? prefixLink(`/${clean}`) : clean
         })
+      /* eslint-enable no-useless-escape */
       target.push(details)
     })
 

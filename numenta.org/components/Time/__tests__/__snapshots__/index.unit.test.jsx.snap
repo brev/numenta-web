@@ -1,7 +1,0 @@
-exports[`Time React component Renders correctly 1`] = `
-<time
-  className="time"
-  dateTime="2016-09-21T18:10:32Z">
-  2016-09-21T18:10:32
-</time>
-`;

@@ -5,7 +5,7 @@
 import {findIndex} from 'lodash'
 import React from 'react'
 
-import Section from '../components/Section'
+import Section from '../../components/Section'
 
 import SectionCommunity from './community/_Section'
 import SectionHome from './_Section'
