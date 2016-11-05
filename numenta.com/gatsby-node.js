@@ -16,14 +16,14 @@ import toml from 'toml'
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
 
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
-
 /**
  * Gatsby.js Node server-side specific functions.
  *  1. modifyWebpackConfig()
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
+
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 
 /**
@@ -41,7 +41,7 @@ export function modifyWebpackConfig(webpack, env) {
   ].join('&')
   const cssModules = `css?${cssOptions}`
 
-  // turn debug on for all
+  // turn on debugging for all
   webpack.merge({debug: true})
 
   // let shared modules in parent dir find webpack loaders in node_modules/
