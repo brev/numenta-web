@@ -6,16 +6,17 @@ import moment from 'moment'
 import React from 'react'
 
 import {getRepo} from '../../utils/shared'
-
-import LogoMark from '../LogoMark'
 import Spacer from '../Spacer'
 import TextLink from '../TextLink'
 
 import styles from './index.css'
 
 
+/**
+ * Site Footer - React view component.
+ */
 const Footer = (props, {config}) => {
-  const {links} = config
+  const {links, siteTitle} = config
   const repo = getRepo()
   const year = moment().year()
 
@@ -24,11 +25,13 @@ const Footer = (props, {config}) => {
       <footer className={styles.footer}>
         <span>
           © {year} {' '}
-          <TextLink to={links.in.home}>Numenta</TextLink>
+          <TextLink to={links.in.home}>{siteTitle}</TextLink>
         </span>
+        {/*
         <span className={styles.mark}>
-          <LogoMark />
+          {mark}
         </span>
+        */}
         <span>
           <TextLink to={links.in.terms}>Terms</TextLink>
           <Spacer />

@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import Image from '../Image'
+import Image from '../../../components/Image'
+
 import LogoMarkDark from './images/numenta-mark-dark.svg'
 import LogoMarkLite from './images/numenta-mark-lite.svg'
-
 import styles from './index.css'
 
 
 /**
- *
+ * Logo Mark - React view component.
  */
 const LogoMark = ({color}) => {
   const Marks = {
