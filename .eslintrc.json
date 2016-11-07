@@ -19,6 +19,12 @@
     "arrow-parens": [2, "always"],
     "brace-style": [2, "stroustrup"],
     "class-methods-use-this": [0],
+    "comma-dangle": [2, {
+      "arrays": "always-multiline",
+      "functions": "never",
+      "imports": "always-multiline",
+      "objects": "always-multiline"
+    }],
     "func-names": [0],
     "import/extensions": [2, {
       "js": "never",

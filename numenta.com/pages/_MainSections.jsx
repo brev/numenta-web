@@ -4,6 +4,7 @@
 
 import {findIndex} from 'lodash'
 import React from 'react'
+
 import Section from '../../components/Section'
 
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
