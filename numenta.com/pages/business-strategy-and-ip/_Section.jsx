@@ -8,30 +8,30 @@ import IconQuestion from 'react-icons/lib/fa/question-circle'
 import IconShuttle from 'react-icons/lib/fa/space-shuttle'
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import DefineItem from '../../components/DefineItem'
-import DefineList from '../../components/DefineList'
-import DefineTitle from '../../components/DefineTitle'
-import Image from '../../components/Image'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import Paragraph from '../../components/Paragraph'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import Table from '../../components/Table'
-import TableHead from '../../components/TableHead'
-import TableBody from '../../components/TableBody'
-import TableRow from '../../components/TableRow'
-import TableTitle from '../../components/TableTitle'
-import TableCell from '../../components/TableCell'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import DefineItem from '../../../components/DefineItem'
+import DefineList from '../../../components/DefineList'
+import DefineTitle from '../../../components/DefineTitle'
+import Image from '../../../components/Image'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Paragraph from '../../../components/Paragraph'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import Table from '../../../components/Table'
+import TableHead from '../../../components/TableHead'
+import TableBody from '../../../components/TableBody'
+import TableRow from '../../../components/TableRow'
+import TableTitle from '../../../components/TableTitle'
+import TableCell from '../../../components/TableCell'
+import TextLink from '../../../components/TextLink'
 
 import ImageBusiness from './images/business.png'
 import styles from './index.css'
 
 
 /**
- *
+ * Business Strategy & IP - MainSection and page content - React view component.
  */
 const SectionBusiness = (props, {config}) => {
   const {contact, links} = config

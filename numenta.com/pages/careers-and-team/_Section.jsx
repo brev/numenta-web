@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
+import Anchor from '../../../components/Anchor'
+import Image from '../../../components/Image'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import Paragraph from '../../../components/Paragraph'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
-import Anchor from '../../components/Anchor'
-import Image from '../../components/Image'
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import Paragraph from '../../components/Paragraph'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import {sortDateDescend} from '../../../utils/shared'
 
 import ImageCareers from './images/careers.png'
 import ImageCeleste from './images/team/celeste-baranski.png'
@@ -26,7 +26,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Careers & Team MainSection and page content - React view component.
  */
 const SectionCareers = (props, {route}) => {
   const {pages} = route

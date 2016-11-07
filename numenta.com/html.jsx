@@ -1,14 +1,22 @@
+// Numenta.com company website source code
+// MIT License (see LICENSE.txt)
+// Copyright © 2005—2016 Numenta <http://numenta.com>
+
 import Helmet from 'react-helmet'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
-import {getConfig, stamp} from './utils/shared'
-
-import Pingdom from './components/Pingdom'
+import {getConfig, stamp} from '../utils/shared'
+import Pingdom from '../components/Pingdom'
 
 
 /**
- *
+ * Main Numenta.com HTML5 Document skeleton - React view component.
+ *  Base file for Gatsby.js framework.
+ * @author Numenta <info@numenta.com>
+ * @copyright © 2005—2016 Numenta <http://numenta.com>
+ * @license MIT
+ * @requires gatsby react
  */
 const HtmlDocument = ({body}) => {
   const {analytics} = getConfig()

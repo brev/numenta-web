@@ -5,6 +5,9 @@
 import React from 'react'
 
 
+/**
+ * Gatsby JSON Wrapper - React view component.
+ */
 const JsonWrapper = ({route}) => {
   const data = route.page.data
 

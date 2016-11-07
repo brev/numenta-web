@@ -11,18 +11,18 @@ import moment from 'moment'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
-import {getConfig, getVersion, stamp} from '../utils/shared'
+import {getConfig, getVersion, stamp} from '../../utils/shared'
+import Layout from '../../components/Layout'
 
-import Layout from '../components/Layout'
-
-import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/imports-first, max-len
+import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/first, max-len
 import '../static/assets/css/fonts.css'
 
 const config = getConfig()
 
 
 /**
- *
+ * Root Gatsby Template, acts as React-router bridge (per Gatsby), and internal
+ *  Layout and Headmatter manager.
  */
 class Template extends React.Component {
 
@@ -78,13 +78,15 @@ class Template extends React.Component {
       const type = icon.match(/^(\w+)\[/).pop()
       const target = (type === 'link') ? links : meta
       const details = {}
-      icon.match(/\[.+?]/g)
+      /* eslint-disable no-useless-escape */
+      icon.match(/\[.+?\]/g)
         .forEach((detail) => {
-          const line = detail.replace(/[[\]]/g, '')
+          const line = detail.replace(/[\[\]]/g, '')
           const [key, value] = line.split(/\$?=/)
           const clean = value.replace(/'/g, '')
           details[key] = (key === 'href') ? prefixLink(`/${clean}`) : clean
         })
+      /* eslint-enable no-useless-escape */
       target.push(details)
     })
 

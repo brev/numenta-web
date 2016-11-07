@@ -5,6 +5,8 @@
 import {findIndex} from 'lodash'
 import React from 'react'
 
+import Section from '../../components/Section'
+
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
 import SectionApplications from './applications/_Section'
 import SectionNeuroscience from './neuroscience-research/_Section'
@@ -17,8 +19,6 @@ import SectionOpensource from './open-source-community/_Section'
 import SectionPapers from './papers-videos-and-more/_Section'
 import SectionPartners from './partners/_Section'
 import SectionTechnology from './machine-intelligence-technology/_Section'
-
-import Section from '../components/Section'
 
 const mainSectionList = [
   {
@@ -84,8 +84,10 @@ const mainSectionList = [
 ]
 
 /**
- *
+ * Get the next MainSection in order.
+ * @param {Object} current - MainSection object to use as `current`.
  * @public
+ * @returns {Object} - Next MainSection in order after `current`.
  */
 function getNextSection(current) {
   const nextIndex = findIndex(mainSectionList, (item) => (
@@ -100,7 +102,9 @@ function getNextSection(current) {
 
 
 /**
- *
+ * MainSections aggregator for Single-Page-App-style Homepage and Site.
+ *  These are only shown to modern advanced clients and browsers, more details
+ *  in `README.md`.
  */
 const MainSections = ({current}) => {
   const details = {}

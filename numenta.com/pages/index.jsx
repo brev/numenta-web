@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import MainSections, {getNextSection} from './_MainSections'
+import NextSection from '../../components/NextSection'
+import Section from '../../components/Section'
 
-import NextSection from '../components/NextSection'
+import MainSections, {getNextSection} from './_MainSections'
 import SectionHome from './_Section'
-import Section from '../components/Section'
 
 import styles from './index.css'
 
@@ -16,7 +16,7 @@ const Default = (<SectionHome key="sectionHome" />)
 
 
 /**
- *
+ * Home Page and MainSection wrapper - React view component.
  */
 class HomePage extends React.Component {
 

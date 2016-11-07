@@ -6,15 +6,14 @@ import Helmet from 'react-helmet'
 import moment from 'moment'
 import React from 'react'
 
-import {sortDateAscend, sortDateDescend} from '../../utils/shared'
+import Anchor from '../../../components/Anchor'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/List'
+import Section from '../../../components/Section'
+import {sortDateAscend, sortDateDescend} from '../../../utils/shared'
+import SubTitle from '../../../components/SubTitle'
 
-import Anchor from '../../components/Anchor'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/List'
 import PostListRow from '../../components/PostListRow'
-import Section from '../../components/Section'
-import SubTitle from '../../components/SubTitle'
-
 import styles from './index.css'
 
 const title = 'Events'

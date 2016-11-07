@@ -4,16 +4,16 @@
 
 import React from 'react'
 
-import Image from '../../components/Image'
-import Paragraph from '../../components/Paragraph'
-import TextLink from '../../components/TextLink'
+import Image from '../../../components/Image'
+import Paragraph from '../../../components/Paragraph'
+import TextLink from '../../../components/TextLink'
 
 import ImageOpensource from './images/image.png'
 import styles from './index.css'
 
 
 /**
- * Open Source Community main Section/Page - React view component.
+ * Open Source Community MainSection and page content - React view component.
  */
 const SectionOpensource = (props, {config}) => {
   const {links} = config

@@ -3,6 +3,8 @@
 --ignore-dir=node_modules/
 
 --ignore-file=is:_searchIndex.json
+--ignore-file=is:bundle.js
+--ignore-file=is:tags
 
 --type-set=js=javascript=.js,.jsx,.json
 --type-set=json=.json

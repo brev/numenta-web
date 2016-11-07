@@ -15,29 +15,27 @@ import Modal from 'react-modal'
 import platform from 'platform'
 import React from 'react'
 
-import {getBrowserWidth} from '../../utils/client'
-import {getModalWidth} from '../../utils/shared'
-
-import Anchor from '../../components/Anchor'
-import Button from '../../components/Button'
-import ButtonLink from '../../components/ButtonLink'
-import Form from '../../components/Form'
-import FormCheckbox from '../../components/FormCheckbox'
-import FormInput from '../../components/FormInput'
-import FormLabel from '../../components/FormLabel'
-import FormRow from '../../components/FormRow'
-import FormTextArea from '../../components/FormTextArea'
-import Image from '../../components/Image'
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import Markdown from '../../components/Markdown'
-import Paragraph from '../../components/Paragraph'
-import Section from '../../components/Section'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import Terms from './terms.md'
-import TextLink from '../../components/TextLink'
-import Video from '../../components/Video'
+import Anchor from '../../../components/Anchor'
+import Button from '../../../components/Button'
+import ButtonLink from '../../../components/ButtonLink'
+import Form from '../../../components/Form'
+import FormCheckbox from '../../../components/FormCheckbox'
+import FormInput from '../../../components/FormInput'
+import FormLabel from '../../../components/FormLabel'
+import FormRow from '../../../components/FormRow'
+import FormTextArea from '../../../components/FormTextArea'
+import {getBrowserWidth} from '../../../utils/client'
+import {getModalWidth} from '../../../utils/shared'
+import Image from '../../../components/Image'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import Markdown from '../../../components/Markdown'
+import Paragraph from '../../../components/Paragraph'
+import Section from '../../../components/Section'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
+import Video from '../../../components/Video'
 
 import ImageUse1 from './images/use1.png'
 import ImageUse2 from './images/use2.png'
@@ -47,8 +45,9 @@ import ImageVideoDatasource from './images/video-datasource.png'
 import ImageVideoDatetime from './images/video-datetime.png'
 import ImageVideoIntro from './images/charts.png'
 import ImageVideoWalkthru from './images/video-walkthru.png'
-import styles from './index.css'
 import modalStyles from './_style-modal'
+import styles from './index.css'
+import Terms from './terms.md'
 
 const title = 'HTM Studio'
 
@@ -60,7 +59,7 @@ const sortFaqs = (a, b) => {
 
 
 /**
- *
+ * HTM Studio page - React view component.
  */
 class HtmStudioPage extends React.Component {
 

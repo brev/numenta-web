@@ -5,19 +5,19 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import NextSection from '../../../components/NextSection'
+import {scrollToSection} from '../../../utils/client'
+import Section from '../../../components/Section'
 
 import MainSections from '../_MainSections'
-import NextSection from '../../components/NextSection'
 import SectionContact from './_Section'
-import Section from '../../components/Section'
 
 const Default = (<SectionContact key="sectionContact" />)
 const title = 'Contact'
 
 
 /**
- *
+ * Contact page and MainSection wrapper - React view component.
  */
 class ContactPage extends React.Component {
 

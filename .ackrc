@@ -1,8 +1,11 @@
+--ignore-dir=coverage/
 --ignore-dir=node_modules/
 --ignore-dir=public/
 
+--ignore-file=is:_searchIndex.json
+--ignore-file=is:bundle.js
 --ignore-file=is:tags
 
 --type-set=js=javascript=.js,.jsx,.json
---type-set=jsx=react=.jsx
 --type-set=json=.json
+--type-set=jsx=react=.jsx

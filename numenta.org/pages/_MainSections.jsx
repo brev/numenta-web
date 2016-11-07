@@ -5,10 +5,9 @@
 import {findIndex} from 'lodash'
 import React from 'react'
 
-import Section from '../components/Section'
+import Section from '../../components/Section'
 
 import SectionCommunity from './community/_Section'
-import SectionGlance from './at-a-glance/_Section'
 import SectionHome from './_Section'
 import SectionImplement from './implementations/_Section'
 import SectionResearch from './research-and-publications/_Section'
@@ -40,12 +39,8 @@ const mainSectionList = [
     title: 'HTM School',
     url: '/htm-school/',
   },
-  {
-    component: <SectionGlance key="sectionGlance" />,
-    title: 'At A Glance',
-    url: '/at-a-glance/',
-  },
 ]
+
 
 /**
  * Gets the next MainSection object based on the one given

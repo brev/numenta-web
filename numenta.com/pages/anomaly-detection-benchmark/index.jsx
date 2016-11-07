@@ -5,19 +5,20 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import NextSection from '../../../components/NextSection'
+import {scrollToSection} from '../../../utils/client'
+import Section from '../../../components/Section'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../components/NextSection'
 import SectionAnomaly from './_Section'
-import Section from '../../components/Section'
 
 const Default = (<SectionAnomaly key="sectionAnomaly" />)
 const title = 'Anomaly Detection Benchmark'
 
 
 /**
- *
+ * Anomaly Detection Benchmark page and MainSection wrapper - React
+ *  view component.
  */
 class AnomalyBenchmarkPage extends React.Component {
 

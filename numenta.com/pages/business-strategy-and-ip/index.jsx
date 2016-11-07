@@ -5,19 +5,19 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../utils/client'
+import NextSection from '../../../components/NextSection'
+import {scrollToSection} from '../../../utils/client'
+import Section from '../../../components/Section'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../components/NextSection'
 import SectionBusiness from './_Section'
-import Section from '../../components/Section'
 
 const Default = (<SectionBusiness key="sectionBusiness" />)
 const title = 'Business Strategy & IP'
 
 
 /**
- *
+ * Business Strategy & IP page and MainSection wrapper - React view component.
  */
 class BusinessPage extends React.Component {
 

@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import Paragraph from '../../components/Paragraph'
-import TextLink from '../../components/TextLink'
-import Video from '../../components/Video'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import Paragraph from '../../../components/Paragraph'
+import TextLink from '../../../components/TextLink'
+import Video from '../../../components/Video'
 
 import ImageVideoTech from './images/video-tech.png'
 import styles from './index.css'

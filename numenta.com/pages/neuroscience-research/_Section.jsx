@@ -4,16 +4,16 @@
 
 import React from 'react'
 
-import Image from '../../components/Image'
-import Paragraph from '../../components/Paragraph'
-import TextLink from '../../components/TextLink'
+import Image from '../../../components/Image'
+import Paragraph from '../../../components/Paragraph'
+import TextLink from '../../../components/TextLink'
 
 import ImageBrain from './images/brain.svg'
 import styles from './index.css'
 
 
 /**
- * Neuroscience Research MainSection - React view component.
+ * Neuroscience Research MainSection and page content - React view component.
  */
 const SectionNeuroscience = (props, {config}) => {
   const {links} = config

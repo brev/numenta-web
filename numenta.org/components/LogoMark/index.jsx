@@ -1,18 +1,18 @@
-// Numenta.org HTM Community website source code
+// Numenta shared web components
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
 import React from 'react'
 
-import Image from '../Image'
+import Image from '../../../components/Image'
+
 import LogoMarkDark from './images/numenta-mark-dark.svg'
 import LogoMarkLite from './images/numenta-mark-lite.svg'
-
 import styles from './index.css'
 
 
 /**
- *
+ * Logo Mark - React view component.
  */
 const LogoMark = ({color}) => {
   const Marks = {

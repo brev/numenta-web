@@ -6,18 +6,18 @@ import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-import Button from '../../components/Button'
-import Form from '../../components/Form'
-import FormInput from '../../components/FormInput'
-import FormLabel from '../../components/FormLabel'
-import FormRow from '../../components/FormRow'
-import Image from '../../components/Image'
-import ImageLink from '../../components/ImageLink'
-import Paragraph from '../../components/Paragraph'
-import Section from '../../components/Section'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+import Button from '../../../components/Button'
+import Form from '../../../components/Form'
+import FormInput from '../../../components/FormInput'
+import FormLabel from '../../../components/FormLabel'
+import FormRow from '../../../components/FormRow'
+import Image from '../../../components/Image'
+import ImageLink from '../../../components/ImageLink'
+import Paragraph from '../../../components/Paragraph'
+import Section from '../../../components/Section'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
 import ImageFeature1 from './images/feature1.png'
 import ImageFeature2 from './images/feature2.png'
@@ -37,7 +37,7 @@ const title = 'HTM for Stocks'
 
 
 /**
- *
+ * HTM for Stocks page - React view component.
  */
 const HtmStocksPage = (props, {config}) => {
   const {contact, links} = config

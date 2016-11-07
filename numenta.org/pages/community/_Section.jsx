@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import Anchor from '../../components/Anchor'
-// import Image from '../../components/Image'
-import Paragraph from '../../components/Paragraph'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import Anchor from '../../../components/Anchor'
+// import Image from '../../../components/Image'
+import Paragraph from '../../../components/Paragraph'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
 import styles from './index.css'
 

@@ -1,6 +1,0 @@
-exports[`Tag React component Renders correctly 1`] = `
-<span
-  className="tag">
-  New!
-</span>
-`;

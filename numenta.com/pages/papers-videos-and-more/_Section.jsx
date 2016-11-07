@@ -8,17 +8,17 @@ import IconPaper from 'react-icons/lib/fa/file-pdf-o'
 import IconVideo from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
+import Anchor from '../../../components/Anchor'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Paragraph from '../../../components/Paragraph'
+import Spacer from '../../../components/Spacer'
+import SubTitle from '../../../components/SubTitle'
+import Subtle from '../../../components/Subtle'
+import TextLink from '../../../components/TextLink'
+import Video from '../../../components/Video'
 
-import Anchor from '../../components/Anchor'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
-import Paragraph from '../../components/Paragraph'
-import Spacer from '../../components/Spacer'
-import SubTitle from '../../components/SubTitle'
-import Subtle from '../../components/Subtle'
-import TextLink from '../../components/TextLink'
-import Video from '../../components/Video'
+import {sortDateDescend} from '../../../utils/shared'
 
 import ImageVideo from './images/video.png'
 import styles from './index.css'
@@ -31,7 +31,7 @@ const learnIcons = {
 
 
 /**
- *
+ * Papers Videos & More - MainSection and page content - React view component.
  */
 const SectionPapers = (props, {config, route}) => {
   const {links} = config

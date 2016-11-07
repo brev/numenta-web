@@ -1,15 +1,15 @@
-// Numenta.com company website source code
+// Numenta shared web components
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
 import React from 'react'
 
-import {getVideoIdFromUrl} from '../../utils/shared'
+import {getVideoIdFromUrl} from '../../../utils/shared'
 
-import Image from '../Image'
-import ImageLink from '../ImageLink'
-import PostListItem from '../PostListItem'
-import Video from '../Video'
+import Image from '../../../components/Image'
+import ImageLink from '../../../components/ImageLink'
+import PostListItem from '../../../components/PostListItem'
+import Video from '../../../components/Video'
 
 import styles from './index.css'
 

@@ -28,7 +28,6 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     community = '/community/'
     implement = '/implementations/'
     school = '/htm-school/'
-    glance = '/at-a-glance/'
     # other site pages
     blog = '/blog/'
     conduct = '/'  # @TODO

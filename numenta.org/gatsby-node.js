@@ -2,20 +2,20 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
+/* eslint-disable no-console */
+
 import {createSitemap} from 'sitemap'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
 import {ncp} from 'ncp'
+import {resolve} from 'path'
 import toml from 'toml'
-
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
 
-// @TODO generl refactoring of shared code to ../shared/
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -23,7 +23,8 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
-/* eslint-disable no-console */
+
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 
 /**
@@ -41,7 +42,17 @@ export function modifyWebpackConfig(webpack, env) {
   ].join('&')
   const cssModules = `css?${cssOptions}`
 
-  webpack.merge({debug: true})
+  // turn on debugging for all
+  webpack.merge({
+    debug: true,
+  })
+
+  // let shared modules in parent dir find webpack loaders in node_modules/
+  webpack.merge({
+    resolveLoader: {
+      fallback: resolve(__dirname, 'node_modules'),
+    },
+  })
 
   // dev source maps
   if (env === 'develop') {
@@ -140,8 +151,6 @@ export function postBuild(pages, callback) {
   const searchSkip = [
     '/blog/',   // @TODO prune
     '/events/',
-    '/newsletter/',
-    '/press/',
     '/sitemap/',
   ]
   const dataSkip = ['author', 'date', 'org', 'title']
@@ -199,6 +208,7 @@ export function postBuild(pages, callback) {
       const text = [title, content, details.join(' ')].join(' ')
       return {path, text, title}
     })
+
   // prep sitemap
   const urls = pages
     .filter((page) => page.path)

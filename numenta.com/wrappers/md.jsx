@@ -8,24 +8,23 @@ import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
 import React from 'react'
 
-import {getEventTimeDisplay, getVideoIdFromUrl} from '../utils/shared'
-
-import Avatar from '../components/Avatar'
-import Disqus from '../components/Disqus'
-import IconMarker from '../components/IconMarker'
-import Image from '../components/Image'
-import Markdown from '../components/Markdown'
-import Section from '../components/Section'
-import Spacer from '../components/Spacer'
-import Strong from '../components/Strong'
-import Subtle from '../components/Subtle'
-import Table from '../components/Table'
-import TableBody from '../components/TableBody'
-import TableCell from '../components/TableCell'
-import TableRow from '../components/TableRow'
-import TextLink from '../components/TextLink'
-import Time from '../components/Time'
-import Video from '../components/Video'
+import Avatar from '../../components/Avatar'
+import Disqus from '../../components/Disqus'
+import {getEventTimeDisplay, getVideoIdFromUrl} from '../../utils/shared'
+import IconMarker from '../../components/IconMarker'
+import Image from '../../components/Image'
+import Markdown from '../../components/Markdown'
+import Section from '../../components/Section'
+import Spacer from '../../components/Spacer'
+import Strong from '../../components/Strong'
+import Subtle from '../../components/Subtle'
+import Table from '../../components/Table'
+import TableBody from '../../components/TableBody'
+import TableCell from '../../components/TableCell'
+import TableRow from '../../components/TableRow'
+import TextLink from '../../components/TextLink'
+import Time from '../../components/Time'
+import Video from '../../components/Video'
 
 import styles from './md.css'
 
@@ -35,7 +34,7 @@ const postTypes = [
 
 
 /**
- *
+ * Gatsby Markdown Wrapper - React view component.
  */
 class MarkdownWrapper extends React.Component {
 

@@ -4,21 +4,22 @@
 
 import React from 'react'
 
-import Image from '../../components/Image'
-import ImageLink from '../../components/ImageLink'
-import List from '../../components/List'
-import ListItem from '../../components/ListItem'
-import Paragraph from '../../components/Paragraph'
-import Strong from '../../components/Strong'
-import SubTitle from '../../components/SubTitle'
-import TextLink from '../../components/TextLink'
+import Image from '../../../components/Image'
+import ImageLink from '../../../components/ImageLink'
+import List from '../../../components/List'
+import ListItem from '../../../components/ListItem'
+import Paragraph from '../../../components/Paragraph'
+import Strong from '../../../components/Strong'
+import SubTitle from '../../../components/SubTitle'
+import TextLink from '../../../components/TextLink'
 
 import ImageBenchmark from './images/benchmark.png'
 import styles from './index.css'
 
 
 /**
- *
+ * Anomaly Detection Benchmark MainSection and page content - React
+ *  view component.
  */
 const SectionAnomaly = (props, {config}) => {
   const {links} = config

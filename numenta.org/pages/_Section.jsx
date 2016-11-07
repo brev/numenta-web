@@ -4,8 +4,9 @@
 
 import React from 'react'
 
-import Paragraph from '../components/Paragraph'
-import Strong from '../components/Strong'
+import Glance from '../../components/Glance'
+import Paragraph from '../../components/Paragraph'
+import Strong from '../../components/Strong'
 
 import styles from './index.css'
 
@@ -19,7 +20,7 @@ const SectionIndex = (props, {config}) => {
   return (
     <article className={styles.columns}>
       <div className={styles.aside}>
-        Aside
+        <Glance />
       </div>
       <div className={styles.content}>
         <Paragraph lead={true}>

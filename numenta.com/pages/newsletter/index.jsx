@@ -5,25 +5,24 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {sortDateDescend} from '../../utils/shared'
+import Button from '../../../components/Button'
+import Form from '../../../components/Form'
+import FormInput from '../../../components/FormInput'
+import FormLabel from '../../../components/FormLabel'
+import FormRow from '../../../components/FormRow'
+import ListItem from '../../../components/ListItem'
+import ListOrder from '../../../components/ListOrder'
+import Section from '../../../components/Section'
+import {sortDateDescend} from '../../../utils/shared'
 
-import Button from '../../components/Button'
-import Form from '../../components/Form'
-import FormInput from '../../components/FormInput'
-import FormLabel from '../../components/FormLabel'
-import FormRow from '../../components/FormRow'
-import ListItem from '../../components/ListItem'
-import ListOrder from '../../components/ListOrder'
 import PostListRow from '../../components/PostListRow'
-import Section from '../../components/Section'
-
 import styles from './index.css'
 
 const title = 'Newsletter'
 
 
 /**
- *
+ * Newsletter page - React view component.
  */
 const NewsletterPage = (props, {route}) => {
   const {pages} = route
