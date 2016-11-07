@@ -5,7 +5,7 @@ date: 2016/11/07
 featured: false
 hideImage: true
 image: ../images/image.png
-org: "Engineering &amp; Design"
+org: "Engineering & Design"
 tags: numenta scientific research process publishing papers in peer review journals neuroscience machine intelligence htm
 title: "Research Process at Numenta: Peer-Review and Publishing"
 type: post
