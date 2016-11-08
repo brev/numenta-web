@@ -30,8 +30,8 @@ several important properties like continuous online learning, the ability to
 handle multiple predictions, robustness to sensor noise and fault tolerance, and
 good performance without the need for task-specific tuning.
 
-![../images/continuous-online-sequence-learning.png](Taxi passenger predictions)
-> * We used HTM and other algorithms to predict taxi passenger count in the New
+![Taxi passenger predictions](../images/continuous-online-sequence-learning.png)
+> *We used HTM and other algorithms to predict taxi passenger count in the New
   York City. **LEFT:** Overall prediction error for various algorithms.
   **RIGHT:** After a new pattern is introduced (black dashed line), HTM quickly
   learns the new pattern and gives better prediction accuracy than LSTM due to
