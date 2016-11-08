@@ -1,4 +1,4 @@
-// Numenta.org HTM Community website source code
+// Numenta.com company website source code
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
@@ -6,12 +6,11 @@ import {capitalize} from 'lodash'
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {sortOrderAscend} from '../../../utils/shared'
-
 import ListItem from '../../../components/ListItem'
 import ListOrder from '../../../components/ListOrder'
 import Paragraph from '../../../components/Paragraph'
 import Section from '../../../components/Section'
+import {sortOrderAscend} from '../../../utils/shared'
 import Spacer from '../../../components/Spacer'
 import Subtle from '../../../components/Subtle'
 import TextLink from '../../../components/TextLink'
@@ -22,18 +21,19 @@ const title = 'Research Papers'
 
 
 /**
- *
+ * Research Papers page and MainSection wrapper - React view component.
  */
 const PapersPage = (props, {route}) => {
   const {pages} = route
   const posts = pages.filter(({file}) => (file.path.match(/^papers\/.*\.md/)))
-  const items = posts.sort(sortOrderAscend).map(({data, file}) => {
+  const items = posts.sort(sortOrderAscend).map(({data, file, path}) => {
     const categoryNice = capitalize(data.category.replace(/-/, ' '))
+    const url = (data.type === 'link') ? data.link : path
     return (
       <ListItem key={file.stem}>
         <div className={styles.paper}>
           <div className={styles.title}>
-            <TextLink to={data.link}>
+            <TextLink to={url}>
               {data.title}
             </TextLink>
           </div>

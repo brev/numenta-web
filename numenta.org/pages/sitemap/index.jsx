@@ -99,11 +99,6 @@ const SitemapPage = (props, {config, route}) => {
                   HTM School
                 </TextLink>
               </ListItem>
-              <ListItem>
-                <TextLink to={links.in.glance}>
-                  At A Glance
-                </TextLink>
-              </ListItem>
             </ListOrder>
 
           </div>
@@ -113,8 +108,18 @@ const SitemapPage = (props, {config, route}) => {
             <SubTitle>Other</SubTitle>
             <ListOrder marker="disc">
               <ListItem>
+                <TextLink to={links.in.htm}>
+                  Hierarchical Temporal Memory (HTM)
+                </TextLink>
+              </ListItem>
+              <ListItem>
                 <TextLink to={links.in.papers}>
-                  Papers
+                  Research Papers
+                </TextLink>
+              </ListItem>
+              <ListItem>
+                <TextLink to="/">
+                  @TODO Licenses
                 </TextLink>
               </ListItem>
               <ListItem>

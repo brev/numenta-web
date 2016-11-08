@@ -15,7 +15,7 @@ import {getConfig, getVersion, stamp} from '../../utils/shared'
 
 import Layout from '../../components/Layout'
 
-import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/imports-first, max-len
+import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/first, max-len
 import '../static/assets/css/fonts.css'
 
 const config = getConfig()

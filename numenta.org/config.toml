@@ -32,9 +32,11 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     blog = '/blog/'
     conduct = '/'  # @TODO
     events = '/events/'
+    htm = '/hierarchical-temporal-memory/'
+    # @TODO licenses
     papers = '/papers/'
-    sitemap = '/sitemap/'
     privacy = '/legal/privacy/'
+    sitemap = '/sitemap/'
     terms = '/legal/terms/'
 
 [moments]
