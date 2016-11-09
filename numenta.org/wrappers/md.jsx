@@ -29,9 +29,7 @@ import Video from '../../components/Video'
 
 import styles from './md.css'
 
-const postTypes = [
-  'blog', 'careers', 'events', 'newsletter', 'press', 'resources',
-]
+const postTypes = ['blog', 'events', 'papers']
 
 
 /**
@@ -48,7 +46,7 @@ class MarkdownWrapper extends React.Component {
   }
 
   state = {
-    comments: null,
+    comments: (<span />),
   }
 
   componentDidMount() {
@@ -78,16 +76,9 @@ class MarkdownWrapper extends React.Component {
     const {data, file, path} = route.page
     const datetime = moment(data.date, config.moments.post)
     const occur = datetime.format(config.moments.human)
-    let key = file.dir.split('/')[0]
+    const key = file.dir.split('/')[0]
     const url = `/${key}/`
     let author, back, date, event, media, type
-
-    if (key === 'careers-and-team') {
-      key = 'careers'
-    }
-    if (key === 'papers-videos-and-more') {
-      key = 'resources'
-    }
 
     if (data.type === 'post') {
       author = (

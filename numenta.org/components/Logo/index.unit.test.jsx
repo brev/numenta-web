@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Logo from '../../Logo'
+import Logo from '../Logo'
 
 
 describe('Logo React component', () => {

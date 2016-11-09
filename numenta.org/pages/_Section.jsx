@@ -4,9 +4,15 @@
 
 import React from 'react'
 
+import DefineItem from '../../components/DefineItem'
+import DefineTitle from '../../components/DefineTitle'
 import Glance from '../../components/Glance'
+// import Logo from '../../components/Logo'
 import Paragraph from '../../components/Paragraph'
+import Spacer from '../../components/Spacer'
 import Strong from '../../components/Strong'
+import Tag from '../../components/Tag'
+import TextLink from '../../components/TextLink'
 
 import styles from './index.css'
 
@@ -20,9 +26,75 @@ const SectionIndex = (props, {config}) => {
   return (
     <article className={styles.columns}>
       <div className={styles.aside}>
-        <Glance />
+
+        <Glance head={<Strong>Hierarchical Temporal Memory (HTM)</Strong>}>
+          <DefineTitle>
+            About
+          </DefineTitle>
+          <DefineItem>
+            HTM is a biologically-constrained theory of intelligence based on
+            years of research in theoretical neuroscience.
+          </DefineItem>
+
+          <DefineTitle>
+            Community
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.out.forum}>
+              HTM Forum
+            </TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            Research
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.in.research}>
+              Research &amp; Publications
+            </TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            Open Source
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.in.implement}>
+              Code
+            </TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            License
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.in.license}>
+              AGPLv3
+            </TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            Content
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.in.blog}>Blog</TextLink>
+            <Spacer />
+            <TextLink to={links.in.events}>Events</TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            Latest
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to="/">
+              Why did we overhaul our web design? The story behind our new look.
+              {' '} <Tag>New</Tag>
+            </TextLink>
+          </DefineItem>
+        </Glance>
+
       </div>
       <div className={styles.content}>
+
         <Paragraph lead={true}>
           Numenta <Strong>HTM Community</Strong> is rad.
           {links.in.home}.
@@ -36,6 +108,7 @@ const SectionIndex = (props, {config}) => {
           sit officia aliquip et aliquip dolor amet consequat ea. Veniam in anim
           fugiat fugiat id occaecat ex et nisi consequat enim duis.
         </Paragraph>
+
       </div>
     </article>
   )

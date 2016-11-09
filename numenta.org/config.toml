@@ -30,14 +30,16 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     school = '/htm-school/'
     # other site pages
     blog = '/blog/'
-    conduct = '/'  # @TODO
+    conduct = '/licenses/conduct/'
+    contrib = '/licenses/contrib/'
     events = '/events/'
     htm = '/hierarchical-temporal-memory/'
-    # @TODO licenses
+    license = '/licenses/'
     papers = '/papers/'
     privacy = '/legal/privacy/'
     sitemap = '/sitemap/'
     terms = '/legal/terms/'
+    trial = '/licenses/trial/'
 
 [moments]
   post = 'YYYY/MM/DD'

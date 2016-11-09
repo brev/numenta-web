@@ -23,7 +23,7 @@
   composes: _rules;
 }
 
-.logo {
+.head {
   composes: center from 'tachyons';
   composes: h3 from 'tachyons';
   composes: h2-m from 'tachyons';

@@ -4,12 +4,15 @@
 
 import React from 'react'
 
-import Image from '../Image'
+import Image from '../../../components/Image'
 
 import logoFile from './images/numenta.svg'
 import styles from './index.css'
 
 
+/**
+ * Site Logo image - React view component.
+ */
 const Logo = () => (
   <Image
     alt="Numenta Logo"
