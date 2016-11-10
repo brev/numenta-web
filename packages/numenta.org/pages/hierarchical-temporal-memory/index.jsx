@@ -62,11 +62,11 @@ const HtmPage = (props, {config}) => {
           <div className={styles.content}>
             <Paragraph>
               For an excellent technical overview of HTM theory, read the {' '}
-              <TextLink to={links.in.bami}>
+              <TextLink to={links.out.bami}>
                 HTM Overview
               </TextLink> {' '}
               chapter of our online text, {' '}
-              <TextLink to={links.in.bami}>
+              <TextLink to={links.out.bami}>
                 Biological and Machine Intelligence.
               </TextLink>
             </Paragraph>

@@ -67,10 +67,7 @@ const SectionCommunity = (props, {config}) => {
           Meetups, Hackathons, &amp; other Live Events
         </SubTitle>
         <Paragraph>
-          Take a {' '}
-          <TextLink to={links.in.glance}>
-            quick glance,
-          </TextLink> or see all of our {' '}
+          Take a look at all of our {' '}
           <TextLink to={links.in.events}>
             Upcoming Events.
           </TextLink>

@@ -9,7 +9,7 @@ import NextSection from 'numenta-web-shared-components/NextSection'
 import {scrollToSection} from 'numenta-web-shared-utils/client'
 import Section from 'numenta-web-shared-components/Section'
 
-import MainSections, {getNextSection} from '../_MainSections'
+import MainSections from '../_MainSections'
 import SectionSchool from './_Section'
 
 const Default = (<SectionSchool key="sectionSchool" />)
@@ -23,13 +23,12 @@ class SchoolPage extends React.Component {
 
   constructor(props) {
     super(props)
-    const next = getNextSection(Default)
 
     this.state = {
       sections: (
         <Section headline={true} open={true} title={title}>
           {Default}
-          <NextSection {...next} />
+          <NextSection title="Back to Home" url="/" />
         </Section>
       ),
     }

@@ -2,13 +2,6 @@
 title: Numenta Licenses
 ---
 
-[1]: https://www.gnu.org/licenses/agpl-3.0.en.html
-[2]: mailto:sales@numenta.com?subject=Commercial%20License%20Inquiry
-[3]: trial/
-[4]: /blog/2013/07/01/patent-position/
-[5]: https://discourse.numenta.org/categories
-[6]: contrib/
-
 ## Summary
 
 Our core algorithms are [AGPL Version 3][1], but there are ways you can
@@ -65,3 +58,10 @@ We give you the rights to translate these materials under the following license:
 > target language, in the translation. The foregoing applies only to
 > documentation as described above – all Numenta software code and algorithms
 > remain subject to the applicable software license.
+
+[1]: https://www.gnu.org/licenses/agpl-3.0.en.html
+[2]: mailto:sales@numenta.com?subject=Commercial%20License%20Inquiry
+[3]: trial/
+[4]: /blog/2013/07/01/patent-position/
+[5]: https://discourse.numenta.org/categories
+[6]: contrib/
