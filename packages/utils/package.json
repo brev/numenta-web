@@ -1,0 +1,29 @@
+{
+  "name": "numenta-web-shared-utils",
+  "version": "0.0.0",
+  "description": "Numenta Web Platform Shared Utilities",
+  "license": "MIT",
+  "main": false,
+  "private": true,
+  "author": {
+    "name": "Numenta",
+    "email": "info@numenta.com",
+    "url": "http://numenta.com"
+  },
+  "bugs": {
+    "url": "https://github.com/numenta/numenta-web/issues",
+    "email": "info@numenta.com"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numenta/numenta-web"
+  },
+  "scripts": {
+    "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
+    "lint:css": "stylelint --config=../../.stylelintrc \"**/*.css\"",
+    "lint:html": "echo",
+    "lint:js": "eslint --config=../../.eslintrc.json --ext=js --ext=jsx ."
+  }
+}
