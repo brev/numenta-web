@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import Anchor from '../../../components/Anchor'
-// import Image from '../../../components/Image'
-import Paragraph from '../../../components/Paragraph'
-import SubTitle from '../../../components/SubTitle'
-import TextLink from '../../../components/TextLink'
+import Anchor from 'numenta-web-shared-components/Anchor'
+// import Image from 'numenta-web-shared-components/Image'
+import Paragraph from 'numenta-web-shared-components/Paragraph'
+import SubTitle from 'numenta-web-shared-components/SubTitle'
+import TextLink from 'numenta-web-shared-components/TextLink'
 
 import styles from './index.css'
 

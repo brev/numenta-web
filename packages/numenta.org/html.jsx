@@ -2,9 +2,9 @@ import Helmet from 'react-helmet'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
-import {getConfig, stamp} from '../utils/shared'
+import {getConfig, stamp} from 'numenta-web-shared-utils/shared'
 
-import Pingdom from '../components/Pingdom'
+import Pingdom from 'numenta-web-shared-components/Pingdom'
 
 
 /**

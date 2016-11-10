@@ -4,12 +4,12 @@
 
 import React from 'react'
 
-import Footer from '../../../components/Footer'
-import Header from '../../../components/Header'
-import Logo from '../Logo'
-import Main from '../../../components/Main'
-import TextLink from '../../../components/TextLink'
+import Footer from 'numenta-web-shared-components/Footer'
+import Header from 'numenta-web-shared-components/Header'
+import Main from 'numenta-web-shared-components/Main'
+import TextLink from 'numenta-web-shared-components/TextLink'
 
+import Logo from '../Logo'
 import styles from './index.css'
 
 

@@ -4,8 +4,8 @@
 
 import React from 'react'
 
-import Paragraph from '../../../components/Paragraph'
-// import TextLink from '../../../components/TextLink'
+import Paragraph from 'numenta-web-shared-components/Paragraph'
+// import TextLink from 'numenta-web-shared-components/TextLink'
 
 import styles from './index.css'
 

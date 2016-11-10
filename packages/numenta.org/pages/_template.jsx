@@ -4,14 +4,13 @@
 
 import favicons from 'favicons/config/html'
 import {flatten, keys, mapValues, values} from 'lodash'
+import {getConfig, getVersion, stamp} from 'numenta-web-shared-utils/shared'
 import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import moment from 'moment'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
-
-import {getConfig, getVersion, stamp} from '../../utils/shared'
 
 import Layout from '../components/Layout'
 

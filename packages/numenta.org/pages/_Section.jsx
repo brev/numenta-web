@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import DefineItem from '../../components/DefineItem'
-import DefineTitle from '../../components/DefineTitle'
-import Glance from '../../components/Glance'
-// import Logo from '../../components/Logo'
-import Paragraph from '../../components/Paragraph'
-import Spacer from '../../components/Spacer'
-import Strong from '../../components/Strong'
-import Tag from '../../components/Tag'
-import TextLink from '../../components/TextLink'
+import DefineItem from 'numenta-web-shared-components/DefineItem'
+import DefineTitle from 'numenta-web-shared-components/DefineTitle'
+import Glance from 'numenta-web-shared-components/Glance'
+// import Logo from 'numenta-web-shared-components/Logo'
+import Paragraph from 'numenta-web-shared-components/Paragraph'
+import Spacer from 'numenta-web-shared-components/Spacer'
+import Strong from 'numenta-web-shared-components/Strong'
+import Tag from 'numenta-web-shared-components/Tag'
+import TextLink from 'numenta-web-shared-components/TextLink'
 
 import styles from './index.css'
 

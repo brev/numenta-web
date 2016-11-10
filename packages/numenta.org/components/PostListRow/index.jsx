@@ -4,12 +4,12 @@
 
 import React from 'react'
 
-import {getVideoIdFromUrl} from '../../../utils/shared'
+import {getVideoIdFromUrl} from 'numenta-web-shared-utils/shared'
 
-import Image from '../../../components/Image'
-import ImageLink from '../../../components/ImageLink'
-import PostListItem from '../../../components/PostListItem'
-import Video from '../../../components/Video'
+import Image from 'numenta-web-shared-components/Image'
+import ImageLink from 'numenta-web-shared-components/ImageLink'
+import PostListItem from 'numenta-web-shared-components/PostListItem'
+import Video from 'numenta-web-shared-components/Video'
 
 import styles from './index.css'
 

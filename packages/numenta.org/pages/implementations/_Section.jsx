@@ -4,12 +4,12 @@
 
 import React from 'react'
 
-import Anchor from '../../../components/Anchor'
-import IconMarker from '../../../components/IconMarker'
-import Paragraph from '../../../components/Paragraph'
-import Strong from '../../../components/Strong'
-import SubTitle from '../../../components/SubTitle'
-import TextLink from '../../../components/TextLink'
+import Anchor from 'numenta-web-shared-components/Anchor'
+import IconMarker from 'numenta-web-shared-components/IconMarker'
+import Paragraph from 'numenta-web-shared-components/Paragraph'
+import Strong from 'numenta-web-shared-components/Strong'
+import SubTitle from 'numenta-web-shared-components/SubTitle'
+import TextLink from 'numenta-web-shared-components/TextLink'
 
 import styles from './index.css'
 

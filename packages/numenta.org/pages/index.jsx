@@ -4,12 +4,11 @@
 
 import React from 'react'
 
+import NextSection from 'numenta-web-shared-components/NextSection'
+import Section from 'numenta-web-shared-components/Section'
+
 import MainSections, {getNextSection} from './_MainSections'
-
-import NextSection from '../../components/NextSection'
 import SectionHome from './_Section'
-import Section from '../../components/Section'
-
 import styles from './index.css'
 
 const Default = (<SectionHome key="sectionHome" />)

@@ -5,10 +5,10 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import ListItem from '../../../components/ListItem'
-import ListOrder from '../../../components/List'
-import Section from '../../../components/Section'
-import {sortDateDescend} from '../../../utils/shared'
+import ListItem from 'numenta-web-shared-components/ListItem'
+import ListOrder from 'numenta-web-shared-components/List'
+import Section from 'numenta-web-shared-components/Section'
+import {sortDateDescend} from 'numenta-web-shared-utils/shared'
 
 import PostListRow from '../../components/PostListRow'
 

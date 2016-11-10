@@ -5,12 +5,12 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import {scrollToSection} from '../../../utils/client'
+import NextSection from 'numenta-web-shared-components/NextSection'
+import {scrollToSection} from 'numenta-web-shared-utils/client'
+import Section from 'numenta-web-shared-components/Section'
 
 import MainSections, {getNextSection} from '../_MainSections'
-import NextSection from '../../../components/NextSection'
 import SectionCommunity from './_Section'
-import Section from '../../../components/Section'
 
 const Default = (<SectionCommunity key="sectionCommunity" />)
 const title = 'Community'

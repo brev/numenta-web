@@ -5,7 +5,7 @@
 import {config} from 'config'  // eslint-disable-line import/no-unresolved
 import moment from 'moment'
 
-import {repository, version} from '../package'
+import {repository, version} from './package'  // @TODO fix this, wrong verison
 
 /**
  * Utils Shared between Client and Server (Isomorphic, Universal, etc.)
