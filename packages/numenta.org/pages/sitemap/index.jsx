@@ -47,6 +47,7 @@ const SitemapPage = (props, {config, route}) => {
   const categories = [
     'blog',
     'events',
+    'papers',
   ]
   const posts = categories
     .map((category) => pages
@@ -117,8 +118,8 @@ const SitemapPage = (props, {config, route}) => {
                 </TextLink>
               </ListItem>
               <ListItem>
-                <TextLink to="/">
-                  @TODO Licenses
+                <TextLink to={links.in.license}>
+                  Licenses
                 </TextLink>
               </ListItem>
               <ListItem>
@@ -155,6 +156,16 @@ const SitemapPage = (props, {config, route}) => {
 
           </div>
           <div className={styles.aside}>
+
+            <Anchor name="papers" />
+            <SubTitle>
+              <TextLink to={links.in.papers}>
+                Papers
+              </TextLink>
+            </SubTitle>
+            <ListOrder marker="disc">
+              {items.papers}
+            </ListOrder>
 
             <Anchor name="blog" />
             <SubTitle>
