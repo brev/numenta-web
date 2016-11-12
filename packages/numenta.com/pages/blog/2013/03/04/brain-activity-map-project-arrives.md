@@ -27,8 +27,7 @@ important problem makes sense and will accelerate progress.
 
 ![Brain Image](../images/main.jpg)
 
-BAM is modeled after the
-[Human Genome Project](http://www.ornl.gov/sci/techresources/Human_Genome/home.shtml).
+BAM is modeled after the [Human Genome Project](https://www.genome.gov/10001772/).
 This was a decade long federally funded effort to map the genome.  It was a
 success. But mapping the brain’s activities is not a singular thing like mapping
 the human genome.  People don’t agree on what it means to map the brain or what
