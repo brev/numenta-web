@@ -9,13 +9,13 @@ import Image from 'numenta-web-shared-components/Image'
 import ImageLink from 'numenta-web-shared-components/ImageLink'
 import List from 'numenta-web-shared-components/List'
 import ListItem from 'numenta-web-shared-components/ListItem'
+import LogoMark from 'numenta-web-shared-components/LogoMark'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import SubTitle from 'numenta-web-shared-components/SubTitle'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
 import ImageCortical from './images/cortical.png'
 import ImageGrokstream from './images/grokstream.png'
-import LogoMark from '../../components/LogoMark'
 import styles from './index.css'
 
 

@@ -5,8 +5,6 @@
 import {config} from 'config'  // eslint-disable-line import/no-unresolved
 import moment from 'moment'
 
-import {repository, version} from './package'  // @TODO fix this, wrong verison
-
 /**
  * Utils Shared between Client and Server (Isomorphic, Universal, etc.)
  */
@@ -93,20 +91,6 @@ export function getModalWidth(width, options) {
 }
 
 /**
- *
- */
-export function getRepo() {
-  return repository.url
-}
-
-/**
- *
- */
-export function getVersion() {
-  return version
-}
-
-/**
  * Parse Video ID from URL, currently YouTube format http://youtu.be/VIDEO_ID
  * @param {String} url - Video URL to get Video ID from, as http://youtu.be/ID
  * @returns {String} - Video ID as parsed from URL
@@ -149,10 +133,13 @@ export function sortOrderAscend(a, b) {
 }
 
 /**
- *
+ * Stamp a URL string with a version query param.
+ * @param {String} url - URL string to stamp.
+ * @param {String} version - Version string ("1.0.2") to use as stamp on URL.
+ * @returns {String} - URL with Version stamp.
  */
-export function stamp(text) {
-  return `${text}?v=${getVersion()}`
+export function stampUrl(url, version) {
+  return `${url}?v=${version}`
 }
 
 /**

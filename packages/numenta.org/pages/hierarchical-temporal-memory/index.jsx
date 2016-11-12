@@ -85,7 +85,7 @@ const HtmPage = (props, {config}) => {
             />
           </div>
           <div className={styles.content}>
-            <List>
+            <List marker="disc">
               <ListItem>
                 Creation of RNI
               </ListItem>
@@ -111,7 +111,7 @@ const HtmPage = (props, {config}) => {
             />
           </div>
           <div className={styles.content}>
-            <List>
+            <List marker="disc">
               <ListItem>
                 Code implementations (link to homepage section)
               </ListItem>
@@ -134,7 +134,7 @@ const HtmPage = (props, {config}) => {
             />
           </div>
           <div className={styles.content}>
-            <List>
+            <List marker="disc">
               <ListItem>
                 What we are/will be working on
               </ListItem>

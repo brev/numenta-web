@@ -383,10 +383,11 @@ example, see the local file `.eslintrc.json`).
 * Include spaces manually around React Elements in JSX with: `{' '}`
 * Custom [React context](https://facebook.github.io/react/docs/context.html)
   which is available:
-  * `config` = Site config (see: `config.toml`)
+  * `config` = Site config (see: `config.toml`).
+  * `manifest` = Site `package.json` manifest vars like `repo` and 'version`
 * Make sure to use the `prefixLink()` helper function on all internal links.
   This should be handled auto-magically for you already, but if you have trouble
-  with links on staging, this may be the problem.
+  with links on staging, this may be the problem
 
 ### Content
 

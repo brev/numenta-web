@@ -4,6 +4,8 @@
 
 import React from 'react'
 
+import styles from './index.css'
+
 
 /**
  * Disqus Comments Thread React Component.
@@ -43,7 +45,7 @@ class Disqus extends React.Component {
 
   render() {
     return (
-      <div id="disqus_thread" />
+      <div className={styles.disqus} id="disqus_thread" />
     )
   }
 

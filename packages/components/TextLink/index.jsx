@@ -6,7 +6,7 @@ import {IndexLink, Link} from 'react-router'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
-import {triggerGAnalyticsEvent} from '../../utils/client'
+import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/client'
 
 import styles from './index.css'
 

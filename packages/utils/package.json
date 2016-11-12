@@ -15,6 +15,9 @@
     "email": "info@numenta.com"
   },
   "dependencies": {
+    "browser-size": "0.1.0",
+    "gatsby": "0.11.7",
+    "moment": "2.15.2"
   },
   "repository": {
     "type": "git",

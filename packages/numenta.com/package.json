@@ -1,6 +1,6 @@
 {
   "name": "numenta-web-site-com",
-  "version": "0.2.110",
+  "version": "0.2.200",
   "description": "Numenta.com company website content, source code, and static generator tooling",
   "license": "MIT",
   "main": false,
@@ -23,8 +23,6 @@
     "babel-preset-react": "6.16.0",
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-0": "6.16.0",
-    "browser-size": "0.1.0",
-    "catch-links": "github:numenta/catch-links#d6986c48715d69ba9575195002bd1338c4b41933",
     "classnames": "2.2.5",
     "extract-text-webpack-plugin": "github:michelebertoli/extract-text-webpack-plugin#614c3bb1ed72587218aa644df12bbf514fb77a06",
     "favicons-webpack-plugin": "0.0.7",
@@ -33,7 +31,6 @@
     "history": "2.1.1",
     "html2plaintext": "1.0.1",
     "js-yaml": "3.6.1",
-    "lunr": "0.7.2",
     "moment": "2.15.2",
     "ncp": "2.0.0",
     "numenta-web-shared-components": "^0.0.0",
@@ -44,17 +41,13 @@
     "react-dom": "15.3.2",
     "react-g-analytics": "0.2.6",
     "react-helmet": "3.2.0",
-    "react-highlighter": "0.3.3",
     "react-icons": "2.2.1",
     "react-modal": "1.5.2",
     "react-router": "2.8.1",
     "react-tap-event-plugin": "1.0.0",
-    "react-youtube": "7.2.0",
     "sitemap": "1.8.2",
-    "superagent": "2.3.0",
     "tachyons": "github:numenta/tachyons#d8e73dec47cb1c868bde3e4e4d5fd60fa5483fe2",
-    "tachyons-base": "1.2.6",
-    "xss-filters": "1.2.7"
+    "tachyons-base": "1.2.6"
   },
   "devDependencies": {
     "babel-eslint": "7.1.0",

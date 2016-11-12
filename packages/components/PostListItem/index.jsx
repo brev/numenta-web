@@ -2,10 +2,9 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
+import {getEventTimeDisplay} from 'numenta-web-shared-utils/shared'
 import moment from 'moment'
 import React from 'react'
-
-import {getEventTimeDisplay} from '../../utils/shared'
 
 import Avatar from '../Avatar'
 import Paragraph from '../Paragraph'
@@ -23,7 +22,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Post Item Row - React view component for Post List.
  */
 const PostListItem = ({post}, {config}) => {
   const {data, file, path} = post

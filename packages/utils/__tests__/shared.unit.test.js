@@ -1,5 +1,5 @@
 import {
-  getModalWidth, getRepo, getVersion, getVideoIdFromUrl, stamp, trims,
+  getModalWidth, getVideoIdFromUrl, stampUrl, trims,
 } from '../../utils/shared'
 
 
@@ -23,20 +23,6 @@ describe('Shared Client+Server helper utils', () => {
     })
   })
 
-  describe('getRepo()', () => {
-    it('Gets repository', () => {
-      const repo = getRepo()
-      expect(repo).toContain('github')
-      expect(repo).toContain('numenta-web')
-    })
-  })
-
-  describe('getVersion()', () => {
-    it('Gets 0.2.x version number', () => {
-      expect(getVersion()).toContain('0.2.')
-    })
-  })
-
   describe('getVideoIdFromUrl()', () => {
     it('Gets Video ID from Video URL', () => {
       expect(getVideoIdFromUrl('http://youtu.be/abc123')).toContain('abc123')
@@ -55,9 +41,9 @@ describe('Shared Client+Server helper utils', () => {
     })
   })
 
-  describe('stamp()', () => {
+  describe('stampUrl()', () => {
     it('Stamps a cache-buster version number on a URL string', () => {
-      expect(stamp('http://numenta.com/')).toContain('0.2.')
+      expect(stampUrl('http://numenta.com/', '0.2.43')).toContain('0.2.')
     })
   })
 

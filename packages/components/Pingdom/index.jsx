@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import {trims} from '../../utils/shared'
+import {trims} from 'numenta-web-shared-utils/shared'
 
 
 /**
- * Pingdom monitoring and analytics instrumentation.
+ * Pingdom monitoring and analytics instrumentation - React view component.
  *  NOTE: Do not remove semi-colons from the JS code block below!
  */
 const Pingdom = ({id}) => (

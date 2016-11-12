@@ -4,7 +4,7 @@
 
 import favicons from 'favicons/config/html'
 import {flatten, keys, mapValues, values} from 'lodash'
-import {getConfig, getVersion, stamp} from 'numenta-web-shared-utils/shared'
+import {getConfig, stampUrl} from 'numenta-web-shared-utils/shared'
 import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -13,6 +13,7 @@ import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unre
 import React from 'react'
 
 import Layout from '../components/Layout'
+import manifest from '../package'
 
 import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/first, max-len
 import '../static/assets/css/fonts.css'
@@ -33,12 +34,13 @@ class Template extends React.Component {
 
   static childContextTypes = {
     config: React.PropTypes.object,
+    manifest: React.PropTypes.object,
     route: React.PropTypes.object,
   }
 
   getChildContext() {
     const {route} = this.props
-    return {config, route}
+    return {config, manifest, route}
   }
 
   componentDidMount() {
@@ -52,8 +54,8 @@ class Template extends React.Component {
     const now = moment().toString()
     const title = `${siteTitle} — ${description}`
     const titleForm = `%s | ${siteHost}`
-    const ver = getVersion()
     const icons = flatten(values(mapValues(favicons, (value) => keys(value))))
+    const {version} = manifest
 
     // react-helmet / head
     const attrs = {lang}
@@ -64,13 +66,19 @@ class Template extends React.Component {
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
       {name: 'author', content: `${siteTitle}`},
       {name: 'description', content: title},
-      {name: 'generator', content: `© ${siteHost} v${ver} ${now} Gatsby.js`},
       {name: 'keywords', content: title.split(' ').join(',')},
+      {
+        name: 'generator',
+        content: `© ${siteHost} v${version} ${now} / Gatsby.js`,
+      },
     ]
 
     // production stylesheet bundle
     if (process.env.NODE_ENV === 'production') {
-      links.push({rel: 'stylesheet', href: prefixLink(stamp('/styles.css'))})
+      links.push({
+        rel: 'stylesheet',
+        href: prefixLink(stampUrl('/styles.css', version)),
+      })
     }
 
     // push auto-generated favicons into react-helmet header link and meta
