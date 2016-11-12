@@ -3,8 +3,7 @@
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
 import React from 'react'
-
-import {trims} from '../../utils/shared'
+import {trims} from 'numenta-web-shared-utils/shared'
 
 import DefineItem from '../DefineItem'
 import DefineList from '../DefineList'
@@ -40,7 +39,7 @@ Glance.contextTypes = {
 }
 
 Glance.propTypes = {
-  children: React.PropTypes.element.isRequired,
+  children: React.PropTypes.array.isRequired,
   head: React.PropTypes.element.isRequired,
 }
 

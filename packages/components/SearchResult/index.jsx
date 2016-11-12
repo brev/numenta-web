@@ -2,13 +2,12 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
+import {getBrowserWidth} from 'numenta-web-shared-utils/client'
+import {getModalWidth} from 'numenta-web-shared-utils/shared'
 import {unescape} from 'lodash'
 import Highlight from 'react-highlighter'
 import Modal from 'react-modal'
 import React from 'react'
-
-import {getBrowserWidth} from '../../utils/client'
-import {getModalWidth} from '../../utils/shared'
 
 import ListItem from '../ListItem'
 import ListOrder from '../ListOrder'
@@ -18,8 +17,8 @@ import SubTitle from '../SubTitle'
 import Subtle from '../Subtle'
 import TextLink from '../TextLink'
 
-import styles from './index.css'
 import modalStyles from './_style-modal'
+import styles from './index.css'
 
 const filterText = (text) => unescape(text)
   .replace(/&#x27;/g, '')

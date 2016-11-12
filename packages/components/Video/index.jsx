@@ -2,21 +2,20 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
+import {getBrowserWidth} from 'numenta-web-shared-utils/client'
+import {getModalWidth} from 'numenta-web-shared-utils/shared'
 import Modal from 'react-modal'
 import React from 'react'
 import YouTube from 'react-youtube'
 
-import {getBrowserWidth} from '../../utils/client'
-import {getModalWidth} from '../../utils/shared'
-
 import Image from '../Image'
 
-import styles from './index.css'
 import modalStyles from './_style-modal'
+import styles from './index.css'
 
 
 /**
- *
+ * Video Holder and Player - React view component.
  */
 class Video extends React.Component {
 

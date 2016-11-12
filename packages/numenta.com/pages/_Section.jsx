@@ -7,13 +7,13 @@ import React from 'react'
 import DefineItem from 'numenta-web-shared-components/DefineItem'
 import DefineTitle from 'numenta-web-shared-components/DefineTitle'
 import Glance from 'numenta-web-shared-components/Glance'
+import Logo from 'numenta-web-shared-components/Logo'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import Spacer from 'numenta-web-shared-components/Spacer'
 import Strong from 'numenta-web-shared-components/Strong'
 import Tag from 'numenta-web-shared-components/Tag'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
-import Logo from '../components/Logo'
 import styles from './index.css'
 
 

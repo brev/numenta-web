@@ -5,7 +5,7 @@
 import moment from 'moment'
 import React from 'react'
 
-import {getRepo} from '../../utils/shared'
+import LogoMark from '../LogoMark'
 import Spacer from '../Spacer'
 import TextLink from '../TextLink'
 
@@ -15,9 +15,9 @@ import styles from './index.css'
 /**
  * Site Footer - React view component.
  */
-const Footer = (props, {config}) => {
+const Footer = (props, {config, manifest}) => {
   const {links, siteTitle} = config
-  const repo = getRepo()
+  const {repository} = manifest
   const year = moment().year()
 
   return (
@@ -27,11 +27,9 @@ const Footer = (props, {config}) => {
           © {year} {' '}
           <TextLink to={links.in.home}>{siteTitle}</TextLink>
         </span>
-        {/*
         <span className={styles.mark}>
-          {mark}
+          <LogoMark />
         </span>
-        */}
         <span>
           <TextLink to={links.in.terms}>Terms</TextLink>
           <Spacer />
@@ -39,7 +37,7 @@ const Footer = (props, {config}) => {
           <Spacer />
           <TextLink to={links.in.sitemap}>Sitemap</TextLink>
           <Spacer />
-          <TextLink to={repo}>Source</TextLink>
+          <TextLink to={repository.url}>Source</TextLink>
         </span>
       </footer>
     </div>
@@ -47,7 +45,8 @@ const Footer = (props, {config}) => {
 }
 
 Footer.contextTypes = {
-  config: React.PropTypes.object,
+  config: React.PropTypes.object.isRequired,
+  manifest: React.PropTypes.object.isRequired,
 }
 
 export default Footer

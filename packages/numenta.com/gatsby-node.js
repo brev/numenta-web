@@ -103,7 +103,7 @@ export function modifyWebpackConfig(webpack, env) {
           background: '#fff',
           emitStats: false,
           inject: false,
-          logo: 'components/LogoMark/images/mark.png',
+          logo: 'static/assets/img/mark.png',
           persistentCache: true,
           prefix: '/',
           title: config.siteHost,

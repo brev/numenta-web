@@ -4,7 +4,7 @@
 
 import React from 'react'
 
-import Image from 'numenta-web-shared-components/Image'
+import Image from '../Image'
 
 import LogoMarkDark from './images/numenta-mark-dark.svg'
 import LogoMarkLite from './images/numenta-mark-lite.svg'

@@ -2,12 +2,13 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2016 Numenta <http://numenta.com>
 
+import {getConfig, stampUrl} from 'numenta-web-shared-utils/shared'
 import Helmet from 'react-helmet'
+import Pingdom from 'numenta-web-shared-components/Pingdom'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 
-import {getConfig, stamp} from 'numenta-web-shared-utils/shared'
-import Pingdom from 'numenta-web-shared-components/Pingdom'
+import {version} from './package'
 
 
 /**
@@ -34,7 +35,7 @@ const HtmlDocument = ({body}) => {
       </head>
       <body className="body">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: body}} />
-        <script src={prefixLink(stamp('/bundle.js'))} />
+        <script src={prefixLink(stampUrl('/bundle.js', version))} />
       </body>
     </html>
   )

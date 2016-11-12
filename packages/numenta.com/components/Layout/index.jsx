@@ -6,10 +6,10 @@ import React from 'react'
 
 import Footer from 'numenta-web-shared-components/Footer'
 import Header from 'numenta-web-shared-components/Header'
+import Logo from 'numenta-web-shared-components/Logo'
 import Main from 'numenta-web-shared-components/Main'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
-import Logo from '../Logo'
 import styles from './index.css'
 
 

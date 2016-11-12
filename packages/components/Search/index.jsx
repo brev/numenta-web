@@ -8,8 +8,7 @@ import lunr from 'lunr'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
 import React from 'react'
 import request from 'superagent'
-
-import {stamp} from '../../utils/shared'
+import {stampUrl} from 'numenta-web-shared-utils/shared'
 
 import Button from '../Button'
 import Form from '../Form'
@@ -26,6 +25,11 @@ import styles from './index.css'
  * @see https://github.com/bvaughn/js-search
  */
 class Search extends React.Component {
+
+  static contextTypes = {
+    manifest: React.PropTypes.object.isRequired,
+  }
+
   constructor(props) {
     super(props)
 
@@ -42,8 +46,11 @@ class Search extends React.Component {
   }
 
   componentDidMount() {
+    const {manifest} = this.context
+    const {version} = manifest
+
     request
-      .get(prefixLink(stamp('/_searchIndex.json')))  // load index
+      .get(prefixLink(stampUrl('/_searchIndex.json', version)))  // load index
       .set('Accept', 'application/json')
       .end((error, {body}) => {
         if (error) throw new Error(error)

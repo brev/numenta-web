@@ -7,7 +7,7 @@ import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unre
 import React from 'react'
 import url from 'url'
 
-import {triggerGAnalyticsEvent} from '../../utils/client'
+import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/client'
 
 import styles from './index.css'
 

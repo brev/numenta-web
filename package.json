@@ -1,6 +1,6 @@
 {
   "name": "numenta-web-site-base",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Numenta Web Platform Site Base",
   "license": "MIT",
   "main": false,
@@ -14,8 +14,9 @@
     "url": "https://github.com/numenta/numenta-web/issues",
     "email": "info@numenta.com"
   },
+  "dependencies": {
+  },
   "devDependencies": {
-    "lerna": "2.0.0-beta.30"
   },
   "repository": {
     "type": "git",

@@ -4,7 +4,7 @@
 
 import React from 'react'
 
-import Image from 'numenta-web-shared-components/Image'
+import Image from '../Image'
 
 import logoFile from './images/numenta.svg'
 import styles from './index.css'
