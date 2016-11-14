@@ -1,0 +1,47 @@
+{
+  "name": "numenta-web-shared-components",
+  "version": "0.0.0",
+  "description": "Numenta Web Platform Shared View Components",
+  "license": "MIT",
+  "main": false,
+  "private": true,
+  "author": {
+    "name": "Numenta",
+    "email": "info@numenta.com",
+    "url": "http://numenta.com"
+  },
+  "bugs": {
+    "url": "https://github.com/numenta/numenta-web/issues",
+    "email": "info@numenta.com"
+  },
+  "dependencies": {
+    "catch-links": "github:numenta/catch-links#d6986c48715d69ba9575195002bd1338c4b41933",
+    "classnames": "2.2.5",
+    "gatsby": "0.11.7",
+    "lunr": "0.7.2",
+    "moment": "2.15.2",
+    "numenta-web-shared-utils": "^0.0.0",
+    "react": "15.3.2",
+    "react-highlighter": "0.3.3",
+    "react-icons": "2.2.1",
+    "react-modal": "1.5.2",
+    "react-router": "2.8.1",
+    "react-youtube": "7.2.0",
+    "superagent": "2.3.0",
+    "xss-filters": "1.2.7"
+  },
+  "devDependencies": {
+    "react-stub-context": "0.7.0",
+    "react-test-renderer": "15.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numenta/numenta-web"
+  },
+  "scripts": {
+    "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
+    "lint:css": "stylelint --config=../../.stylelintrc \"**/*.css\"",
+    "lint:html": "echo",
+    "lint:js": "eslint --config=../../.eslintrc.json --ext=js --ext=jsx ."
+  }
+}
