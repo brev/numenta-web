@@ -11,11 +11,13 @@ title: "Research Process at Numenta: Peer-Review and Publishing"
 type: post
 ---
 
-1. @TODO Create new process graphic.
-2. @TODO Brev Intro self (who am i, my perspective on this, new and interesting
-    to me, what did I learn, etc).
+I've spent the past 4 years here at Numenta working on developing and designing
+example applications and websites related to our Machine Intelligence
+technology. This continues my long career path of developing software products
+and user experiences. But, here at Numenta, I had the wonderful opportunity to
+experience something new: *serious, cutting-edge scientific research.*
 
-For almost a decade, our small team at Numenta has been developing a working
+For almost a decade, this small Numenta team has been developing a working
 theory of how intelligence is realized by the human brain.
 [Hierarchical Temporal Memory (HTM)][1] is our theory of how neurons and the
 architecture of the neocortex produce real-time learning, pattern detection and
@@ -34,9 +36,14 @@ have many of our partners, customers, developers, and friends. Our new
 you can find new peer-reviewed published content, conference papers and posters,
 and academic [pre-print][7] links (such as [arXiv][8] and [bioRxiv][9]).
 
-What does it take to get a modern scientific paper peer-reviewed, and published
-in a journal? Our process, which is fairly standard in academia, follows four
-general steps, which are detailed further below: **Writing, Submission, Review,
+*What does it take to get a modern scientific paper peer-reviewed, and published
+in a journal?* I was very curious about how this process worked when I started
+at Numenta. I had read many peer-reviewed articles before, but had never been
+on the other side of the process. In order to find out, I've been observing
+Numenta's Research team in action, taking notes, and performing interviews.
+
+Our process, which is fairly standard in academia, follows four
+general steps which are detailed below: **Writing, Submission, Review,
 and Acceptance.**
 
 ![Numenta Research and Writing Process Diagram](../images/image.png)
@@ -123,7 +130,7 @@ As always, our theory and research are [open to the community][13], so we hope
 that you’ll join us in our progress. Thanks for reading about research at
 [Numenta][14].
 
-[1]: http://numenta.com/machine-intelligence-technology
+[1]: http://numenta.com/machine-intelligence-technology/
 [2]: http://numenta.com/numenta-anomaly-benchmark/
 [3]: https://github.com/numenta/nupic
 [4]: http://numenta.com/applications/
@@ -135,5 +142,5 @@ that you’ll join us in our progress. Thanks for reading about research at
 [10]: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
 [11]: http://numenta.com/blog/2014/09/17/increasing-research-transparency/
 [12]: https://en.wikipedia.org/wiki/Open_access_journal
-[13]: http://numenta.org
-[14]: http://numenta.com
+[13]: http://numenta.org/
+[14]: http://numenta.com/
