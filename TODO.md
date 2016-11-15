@@ -9,3 +9,4 @@
 - theme.css global what to do?
 - describe: numenta.com has default/shared/global components, .org starts splitting
   off customs.
+- .org - gh-pages redirects? in markdown?

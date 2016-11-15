@@ -7,14 +7,22 @@ Although most open source projects refer to a "Contributor License Agreement
 License (CL)" to prevent confusion between it and the Cortical Learning
 Algorithm (CLA) referenced in our source code and documentation.
 
-Please read and sign the document below. **Use your _github username_ as the
-optional "Public Name" value.** You may also download the Numenta CL in the
-following formats:
+### Please read and sign the Numenta Contributor License below:
 
-* [Plain Text](numenta-cl.txt)
-* [PDF](Numenta-Contributor-License.pdf)
-* [Word Document](Numenta-Contributor-License.docx)
+*Use your **github username** as the optional "Public Name" value.*
 
-The submission form is loading below:
+---
 
 <script type="text/javascript" src="https://secure.echosign.com/public/embeddedWidget?wid=CBFCIBAA2AAABLblqZhB5rcsG-E9OX4keHHTob72yY2GZtKetGhXxARrVNTTlcPF1Tu9IOlFnCGXNyOhZ96U*"></script>
+
+---
+
+### You may also download the Numenta CL in the following formats:
+
+* [Plain Text][txt]
+* [PDF][pdf]
+* [Word Document][doc]
+
+[doc]: Numenta-Contributor-License.docx
+[pdf]: Numenta-Contributor-License.pdf
+[txt]: numenta-cl.txt
