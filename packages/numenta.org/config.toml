@@ -33,6 +33,7 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     conduct = '/licenses/conduct/'
     contrib = '/licenses/contrib/'
     events = '/events/'
+    faq = '/faq/'
     htm = '/hierarchical-temporal-memory/'
     license = '/licenses/'
     papers = '/papers/'

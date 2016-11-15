@@ -118,8 +118,8 @@ const SitemapPage = (props, {config, route}) => {
                 </TextLink>
               </ListItem>
               <ListItem>
-                <TextLink to={links.in.license}>
-                  Licenses
+                <TextLink to={links.in.faq}>
+                  Frequently Asked Questions (FAQ)
                 </TextLink>
               </ListItem>
               <ListItem>
@@ -144,18 +144,29 @@ const SitemapPage = (props, {config, route}) => {
         <div className={styles.columns}>
           <div className={styles.content}>
 
-            <Anchor name="events" />
+            <Anchor name="licenses" />
             <SubTitle>
-              <TextLink to={links.in.events}>
-                Events
+              <TextLink to={links.in.license}>
+                Licenses
               </TextLink>
             </SubTitle>
             <ListOrder marker="disc">
-              {items.events}
+              <ListItem>
+                <TextLink to={links.in.conduct}>
+                  Code of Conduct
+                </TextLink>
+              </ListItem>
+              <ListItem>
+                <TextLink to={links.in.contrib}>
+                  Contributor License
+                </TextLink>
+              </ListItem>
+              <ListItem>
+                <TextLink to={links.in.trial}>
+                  Trial License
+                </TextLink>
+              </ListItem>
             </ListOrder>
-
-          </div>
-          <div className={styles.aside}>
 
             <Anchor name="papers" />
             <SubTitle>
@@ -175,6 +186,19 @@ const SitemapPage = (props, {config, route}) => {
             </SubTitle>
             <ListOrder marker="disc">
               {items.blog}
+            </ListOrder>
+
+          </div>
+          <div className={styles.aside}>
+
+            <Anchor name="events" />
+            <SubTitle>
+              <TextLink to={links.in.events}>
+                Events
+              </TextLink>
+            </SubTitle>
+            <ListOrder marker="disc">
+              {items.events}
             </ListOrder>
 
           </div>
