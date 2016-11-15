@@ -4,7 +4,6 @@
 
 import React from 'react'
 
-import ImageLink from '../ImageLink'
 import Search from '../Search'
 
 import styles from './index.css'
@@ -13,9 +12,7 @@ import styles from './index.css'
 /**
  * Site Static Header UI Bar - React view component.
  */
-const Header = ({logo}, {config}) => {
-  const {links} = config
-
+const Header = ({logo}) => {
   return (
     <div className={styles.appbar}>
       <header className={styles.header}>
@@ -32,10 +29,6 @@ const Header = ({logo}, {config}) => {
 
 Header.contextTypes = {
   config: React.PropTypes.object,
-}
-
-Header.propTypes = {
-  logo: React.PropTypes.element.isRequired,
 }
 
 export default Header

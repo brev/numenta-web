@@ -47,6 +47,12 @@ export function modifyWebpackConfig(webpack, env) {
     debug: true,
   })
 
+  // ignore some other common document asset formats
+  webpack.loader('doc', {
+    test: /\.docx?$/,
+    loader: 'null',
+  })
+
   // let shared modules in parent dir find webpack loaders in node_modules/
   webpack.merge({
     resolveLoader: {
