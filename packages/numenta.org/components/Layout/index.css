@@ -4,6 +4,7 @@
  * Copyright © 2005—2016 Numenta <http://numenta.com>
  */
 
+
 /**
  * Global document layout and style
  */
@@ -13,7 +14,7 @@
   font-size: 15px;  /* base size for tachyons em's */
 }
 :global .body {
-  background: #eee;
+  background: #999;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }

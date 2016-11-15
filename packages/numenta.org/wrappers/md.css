@@ -7,7 +7,7 @@
 /* dropcap - sync with component/Paragraph/index.css */
 ._dropcap > div > div > p:first-of-type::first-letter {
   background-color: #fff;
-  color: #0277bd;
+  color: #0a90cb;
   float: left;
   font-weight: 500;
   line-height: 0.85;
