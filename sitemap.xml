@@ -49,7 +49,10 @@
 <url> <loc>http://numenta.org/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/legal/privacy/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/legal/terms/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/licenses/conduct/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/licenses/contrib/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/licenses/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/licenses/trial/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/papers/encoding-data-for-htm-systems/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/papers/evaluating-real-time-anomaly-detection-algorithms-numenta-anomaly-benchmark/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
