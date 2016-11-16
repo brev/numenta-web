@@ -20,6 +20,7 @@ description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resource
     cortical = 'http://cortical.io/'
     grok = 'http://grokstream.com/'
     forum = 'https://discourse.numenta.org/categories'
+    school = 'https://www.youtube.com/watch?v=XMB0ri4qgwc'
 
   [links.in]  # internal paths
     # main/home pseudo-single page

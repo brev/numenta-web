@@ -16,7 +16,7 @@ const title = 'Blog'
 
 
 /**
- *
+ * Blog Post List index page - React view component.
  */
 const BlogPage = (props, {route}) => {
   const {pages} = route
