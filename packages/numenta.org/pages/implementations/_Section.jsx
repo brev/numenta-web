@@ -127,11 +127,10 @@ const SectionImplement = (props, {config}) => {
             </TextLink> {' '}
             this codebase also includes a higher-level client API called the
             Online Prediction Framework (OPF), which is tuned towards
-            experimentation with predictions, anomaly detection, and identifying
-            optimal model parameters
-            (<TextLink to="https://github.com/numenta/nupic/wiki/Running-Swarms">
-              swarming
-            </TextLink>).
+            experimentation with predictions, anomaly detection, and {' '}
+            <TextLink to="https://github.com/numenta/nupic/wiki/Running-Swarms">
+              identifying optimal model parameters (swarming).
+            </TextLink>
           </Paragraph>
           <div className={styles.promote}>
             <IconMarker>
