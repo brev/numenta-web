@@ -13,7 +13,18 @@
 }
 
 .aside {
-  composes: mt2 from 'tachyons';
+  composes: mt4 from 'tachyons';
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
+}
+
+
+.logomark {
+  composes: center from 'tachyons';
+  composes: w4 from 'tachyons';
+}
+
+.promote {
+  composes: db from 'tachyons';
+  composes: mb4 from 'tachyons';
 }

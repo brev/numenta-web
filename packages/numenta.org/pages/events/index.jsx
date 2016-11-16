@@ -12,6 +12,7 @@ import ListOrder from 'numenta-web-shared-components/List'
 import Section from 'numenta-web-shared-components/Section'
 import {sortDateAscend, sortDateDescend} from 'numenta-web-shared-utils/shared'
 import SubTitle from 'numenta-web-shared-components/SubTitle'
+import Subtle from 'numenta-web-shared-components/Subtle'
 
 import PostListRow from '../../components/PostListRow'
 import styles from './index.css'
@@ -20,11 +21,14 @@ const title = 'Events'
 
 
 /**
- *
+ * Event Post List index page - React view component.
  */
 const EventsPage = (props, {config, route}) => {
   const {pages} = route
   const now = moment()
+  const empty = (
+    <Subtle>No new events scheduled, please check back again soon!</Subtle>
+  )
   const posts = pages.filter(({file}) => (file.path.match(/^events\/.*\.md/)))
   const past = posts.filter(({data}) => (
     (moment(data.date, config.moments.post) < now)
@@ -37,18 +41,18 @@ const EventsPage = (props, {config, route}) => {
       <PostListRow post={post} />
     </ListItem>
   ))
-  const itemsUp = upcoming.sort(sortDateAscend).map((post) => (
+  let itemsUp = upcoming.sort(sortDateAscend).map((post) => (
     <ListItem key={post.file.stem}>
       <PostListRow post={post} />
     </ListItem>
   ))
 
+  if (itemsUp.length < 1) itemsUp = empty
+
   return (
     <article className={styles.events}>
       <Helmet title={title} />
       <Section headline={true} open={true} title={title}>
-        <Anchor name="upcoming" />
-        <SubTitle>Upcoming Events</SubTitle>
         <ListOrder copy={false}>
           {itemsUp}
         </ListOrder>
