@@ -15,9 +15,3 @@
 .aside {
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
-
-.promote {
-  composes: f4 from 'tachyons';
-  composes: mt4 from 'tachyons';
-  composes: tc from 'tachyons';
-}

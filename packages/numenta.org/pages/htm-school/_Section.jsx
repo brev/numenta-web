@@ -29,8 +29,9 @@ const SectionSchool = (props, {config}) => {
           <ImageLink to={links.out.school}>
             <Image
               alt="HTM School Video Screenshot"
-              border={true}
+              border={false}
               respond="mw"
+              shadow={false}
               src={ImageMain}
             />
           </ImageLink>
@@ -42,13 +43,13 @@ const SectionSchool = (props, {config}) => {
             learn about HTM cortical theory and its applications for machine
             intelligence.
           </Paragraph>
-          <div className={styles.promote}>
+          <Paragraph>
             <IconMarker icon={<IconPlay />}>
               <TextLink to={links.out.school}>
                 HTM School on YouTube
               </TextLink>
             </IconMarker>
-          </div>
+          </Paragraph>
         </div>
       </div>
     </article>
