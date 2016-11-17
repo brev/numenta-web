@@ -2,7 +2,6 @@
 author: Fareed Zakaria, GPS
 brief:
 date: 2015/05/22
-featured: false
 image:
 link: http://www.cnn.com/videos/tv/2015/05/22/exp-gps-0524-hawkins-artificial-intelligence.cnn
 org: CNN

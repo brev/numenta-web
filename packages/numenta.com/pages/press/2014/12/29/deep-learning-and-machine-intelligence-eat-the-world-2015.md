@@ -2,7 +2,6 @@
 author: Anthony Wing Kosner
 brief:
 date: 2014/12/29
-featured: false
 image:
 link: http://www.forbes.com/sites/anthonykosner/2014/12/29/tech-2015-deep-learning-and-machine-intelligence-will-eat-the-world/
 org: Forbes

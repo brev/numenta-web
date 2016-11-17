@@ -12,7 +12,6 @@ event:
     state: NY
     country: USA
     web: http://searchaws.techtarget.com/photostory/2240219795/Amazon-Summit-showcases-new-cloud-product-initiatives/1/AWS-Summit-2014-Product-partner-and-price-news
-featured: false
 image: ../images/image.png
 org: Event
 tags: grok it analytics aws amazon web services summit ny 2014

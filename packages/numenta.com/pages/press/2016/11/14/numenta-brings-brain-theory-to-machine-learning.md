@@ -2,7 +2,6 @@
 author: Numenta
 brief: "REDWOOD CITY, CA — November 14, 2016 — Numerous proposals have been offered for how intelligent machines might learn sequences of patterns, which is believed to be an essential component of any intelligent system."
 date: 2016/11/14
-featured: false
 image: ../images/image.png
 link:
 org: Press Release

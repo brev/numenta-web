@@ -2,7 +2,6 @@
 author: Numenta
 brief: Numenta.org has been created as the home for the NuPIC (Numenta Platform for Intelligent Computing) open source project and community.  The project was
 date: 2013/07/22
-featured: false
 image: ../images/nupic.png
 link:
 org: Press Release

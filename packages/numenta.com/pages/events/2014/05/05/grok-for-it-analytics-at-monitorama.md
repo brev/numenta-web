@@ -12,7 +12,6 @@ event:
     state: OR
     country: USA
     web: http://monitorama.com/
-featured: false
 image: ../images/image.png
 org: Event
 tags: grok it analytics monitorama 2014

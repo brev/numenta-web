@@ -15,7 +15,6 @@ event:
     web: https://theinnovationenterprise.com/summits/business-analytics-innovation-summit-chicago-2016
   who: Christy Maver
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Director of Marketing
 tags: business analytics innovation summit chicago 2016 numenta htm

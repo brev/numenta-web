@@ -2,7 +2,6 @@
 author: Matthew Taylor
 brief: Numenta has held five hackathons over the past several years to engage our community of dedicated and passionate HTM enthusiasts. It's been a great time for lots of people involved. We've grown together and created some really interesting things!
 date: 2015/09/29
-featured: false
 image: ../images/image.png
 org: Open Source Manager
 tags: introducing numenta htm challenge hackathon nov 2015 onsite contest judging prizes jeff hawkins

@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/220895892/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: meetup nyc new york city cornell tech what the brain says about machine intelligence jeff hawkins numenta

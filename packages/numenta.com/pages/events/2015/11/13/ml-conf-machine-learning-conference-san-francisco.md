@@ -15,7 +15,6 @@ event:
     web: http://mlconf.com/events/san-francisco-ca/
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: subutai ahmad numenta htm real time streaming data anomaly detection mlconf machine learning conference san francisco sf 2015

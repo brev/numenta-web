@@ -15,7 +15,6 @@ event:
     web: http://www.cognitivecomputingforum.com/
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: numenta grok cognitive computing forum san jose 2014

@@ -15,7 +15,6 @@ event:
     web: http://neuroscience.berkeley.edu/2016-neuro-inspired-computational-elements-workshop/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/nice.png
 org: Co-Founder
 tags: numenta jeff hawkins speaking neuro inspired computational elements workshop nice 2016

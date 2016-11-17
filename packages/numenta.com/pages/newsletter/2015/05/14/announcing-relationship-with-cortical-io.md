@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: "I am excited to let you know that we recently announced a relationship with Cortical.io, an innovative company based in Austria that is working on the next generation of natural language processing: language intelligence. Cortical.io has created a technology that can"
 date: 2015/05/14
-featured: false
 image: ../../../../images/numenta.png
 org: CEO
 tags: numenta newsletter may 2015 announcing relatioship cortical.io

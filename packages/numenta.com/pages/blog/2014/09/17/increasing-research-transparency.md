@@ -2,7 +2,6 @@
 author: Subutai Ahmad
 brief: I am pleased to tell you about a change we recently made to our research process. We have made our day to day experimental code public. We've already released our commercial HTM algorithm code to the
 date: 2014/09/17
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: increasing research transparency numenta nupic machine intelligence

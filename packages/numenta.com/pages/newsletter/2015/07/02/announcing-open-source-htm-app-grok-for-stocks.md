@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: Over the last two years, we have created a series of example applications that illustrate the capabilities of HTM. Grok for IT Analytics, available for download on the Amazon Web Services Marketplace
 date: 2015/07/02
-featured: false
 image: ../images/image.png
 org: CEO
 tags: htm for stocks monitor stock price volume twitter anomaly outlier detection numenta open source htm app application nupic

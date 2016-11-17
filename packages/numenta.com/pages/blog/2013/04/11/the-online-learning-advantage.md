@@ -2,7 +2,6 @@
 author: Rahul Agarwal
 brief: Streaming data is the future of data. Businesses need real-time solutions that can keep up with the accelerating pace and scale of information they are
 date: 2013/04/11
-featured: false
 image: ../images/image.png
 org: Engineering
 tags: Machine Learning, Data

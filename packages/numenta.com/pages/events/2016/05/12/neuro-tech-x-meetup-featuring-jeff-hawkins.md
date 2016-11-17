@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/NeuroTechSF/events/230385690/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: jeff hawkins numenta founder speaking machine intelligence artificial neocortex

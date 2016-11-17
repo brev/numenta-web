@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/228433496/
   who:
   why:
-featured: false
 image: ../images/image.png
 org: "Open Source Manager"
 tags: nupic htm hierarchical temporal memory numenta machine intelligence meetup bay area silicon valley

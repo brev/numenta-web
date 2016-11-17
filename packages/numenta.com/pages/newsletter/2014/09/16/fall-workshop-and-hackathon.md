@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: "I’m writing to let you know that we have two upcoming opportunities to learn about and try our technology: Our Numenta Training Workshop and NuPIC Fall Hackathon 2014"
 date: 2014/09/16
-featured: false
 image: ../../../../images/numenta.png
 org: CEO
 tags: numenta training workshop nupic machine intelligence hackathon fall 2014

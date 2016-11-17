@@ -2,7 +2,6 @@
 author: Rob Haitani
 brief: Thanks to everyone for participating in the Sparse Football Pool!  It was a tight race that, given the game, went down to the wire.  The winner had a total
 date: 2013/01/29
-featured: false
 image: ../images/image.jpg
 org: Marketing
 tags:  Neuroscience, Machine Learning

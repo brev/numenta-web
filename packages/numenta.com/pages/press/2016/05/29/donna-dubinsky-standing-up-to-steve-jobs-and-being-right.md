@@ -2,7 +2,6 @@
 author: Ryan Hawk
 brief:
 date: 2016/05/29
-featured: false
 image:
 link: http://learningleader.com/episode-128-donna-dubinsky-standing-up-to-steve-jobs-and-being-right/
 org: Learning Leader

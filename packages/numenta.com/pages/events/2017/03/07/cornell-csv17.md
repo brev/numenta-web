@@ -15,7 +15,6 @@ event:
     web: http://www.alumni.cornell.edu/csv/csv17/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: jeff hawkins numenta machine intelligence cornell silicon valley csv17

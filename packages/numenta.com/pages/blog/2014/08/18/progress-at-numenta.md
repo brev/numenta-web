@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: Late last year we shipped our first product, Grok for IT Analytics on AWS. Since then, we’ve released several enhancements for the product, including the recent version 1.5 with a new web charting feature.
 date: 2014/08/18
-featured: false
 image: ../images/image.png
 org: CEO
 tags: progress numenta grok htm aws it analytics anomaly detection streaming data

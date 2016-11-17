@@ -15,7 +15,6 @@ event:
     web: http://numenta.org/nab/
   who:
   why:
-featured: false
 image: ../images/image.png
 org: Event
 tags: numenta anomaly benchmark competition nab ieee wcci world congress computational intelligence 2016

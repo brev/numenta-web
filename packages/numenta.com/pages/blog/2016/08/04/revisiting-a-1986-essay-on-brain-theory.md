@@ -2,7 +2,6 @@
 author: Jeff Hawkins
 brief: This week I received an email from a gentleman in Japan. He was creating materials for a course and asked permission to include an extensive passage
 date: 2016/08/04
-featured: false
 hideImage: false
 image: ../images/image.png
 org: Co-Founder

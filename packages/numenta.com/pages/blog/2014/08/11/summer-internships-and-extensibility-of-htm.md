@@ -2,7 +2,6 @@
 author: Nick DeFalco
 brief: On the other hand, HTM machine intelligence – like your brain – comprises a single underlying processing method that is extensible across a wide range of applications. Over the course of this summer alone, we have used our underlying
 date: 2014/08/11
-featured: false
 image: ../images/image.png
 org: Marketing Intern
 tags: summer internships hierarchical temporal memory htm extensible

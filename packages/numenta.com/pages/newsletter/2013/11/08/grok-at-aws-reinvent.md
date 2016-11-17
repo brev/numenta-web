@@ -2,7 +2,6 @@
 author: Jeff Hawkins
 brief: "Grok is targeted towards Amazon Web Services (AWS) customers. We will be showing it publicly for the first time at the Amazon re:Invent conference next week in Las Vegas."
 date: 2013/11/08
-featured: false
 image: ../../../../images/numenta.png
 org: Founder
 tags: grok at aws reinvent 2013

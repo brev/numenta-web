@@ -2,7 +2,6 @@
 author: Jared Casner
 brief: Like most engineering managers, I like to know when someone is manually touching one of our servers. That’s especially true for production systems, but also
 date: 2014/04/22
-featured: false
 image: ../images/image.png
 org: Director, Product Development
 tags: science, anomaly, detection, grok, aws

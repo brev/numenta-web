@@ -2,7 +2,6 @@
 author: Tom Simonite
 brief:
 date: 2015/04/08
-featured: false
 image:
 link: http://www.technologyreview.com/news/536326/ibm-tests-mobile-computing-pioneers-controversial-brain-algorithms/
 org: MIT Technology Review

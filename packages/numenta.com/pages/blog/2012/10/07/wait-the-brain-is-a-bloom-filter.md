@@ -2,7 +2,6 @@
 author: Ian Danforth
 brief: This insightful tweet came from the Strangeloop keynote after Jeff Hawkins described Sparse Distributed Representations (SDRs). This isn't the first time
 date: 2012/10/07
-featured: false
 image: ../images/bloom-thumb.jpg
 org: Engineering
 tags: Neuroscience

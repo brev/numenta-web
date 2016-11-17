@@ -2,7 +2,6 @@
 author: Kypriani Sinaris
 brief:
 date: 2016/07/26
-featured: false
 image:
 link: https://jaxenter.de/machine-learning-experten-check-43830
 org: Jaxenter

@@ -14,7 +14,6 @@ event:
     web: http://gsvlabs.com/gsv-pioneer/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins nupic htm machine intelligence gsv labs gsvlabs pioneer summit

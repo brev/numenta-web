@@ -14,7 +14,6 @@ event:
     web: http://nice.sandia.gov/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins speaking sandia national laboratories neuro inspired computational elements workshop 2015

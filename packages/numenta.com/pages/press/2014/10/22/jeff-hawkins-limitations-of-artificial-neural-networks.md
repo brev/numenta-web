@@ -2,7 +2,6 @@
 author: Augustus Van Dusen
 brief:
 date: 2014/10/22
-featured: false
 image:
 link: http://thinkingmachineblog.net/jeff-hawkins-on-the-limitations-of-artificial-neural-networks/
 org: Thinking Machine

@@ -15,7 +15,6 @@ event:
     web: http://conferences.oreilly.com/strata/hadoop-big-data-ca
   who:
   why:
-featured: false
 image: ../images/image.png
 org: Event
 tags: strata hadoop world big data conference 2016 oreilly numenta machine intelligence

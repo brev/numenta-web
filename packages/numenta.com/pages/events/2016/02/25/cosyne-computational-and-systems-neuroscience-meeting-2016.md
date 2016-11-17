@@ -15,7 +15,6 @@ event:
     web: http://www.cosyne.org/c/index.php?title=Cosyne_16
   who: Jeff Hawkins, Subutai Ahmad, Yuwei Cui, and Scott Purdy
   why: Poster Presentation
-featured: false
 image: ../images/image.png
 org: Research Team
 tags: theory sequence memory neocortex cosyne 2016 computational and systems neuroscience numenta jeff hawkins

@@ -15,7 +15,6 @@ event:
     web: http://www.computemidwest.com/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: compute midwest 2015 jeff hawkins numenta future of machine intelligence imagine the future

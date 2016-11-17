@@ -12,7 +12,6 @@ event:
     state: CA
     country: USA
     web: http://numenta.org/events/#nupic_fall_2014_hackathon
-featured: false
 image: ../images/image.png
 org: Open Source Manager
 tags: nupic numenta platform intelligent computing fall 2014 hackathon san jose california

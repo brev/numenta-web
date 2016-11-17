@@ -2,7 +2,6 @@
 author: Dean Takahashi
 brief:
 date: 2014/07/09
-featured: false
 image:
 link: http://venturebeat.com/2014/07/09/numentas-brain-research-has-taken-a-long-nine-years-but-it-starting-to-pay-off-interview/
 org: Venture Beat

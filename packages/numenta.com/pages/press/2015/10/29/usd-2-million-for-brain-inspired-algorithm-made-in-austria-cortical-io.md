@@ -2,7 +2,6 @@
 author: Cortical.io
 brief:
 date: 2015/10/29
-featured: false
 image:
 link: http://www.prweb.com/releases/corticalio/3rdcapitalround/prweb13038027.htm
 org: PRWeb

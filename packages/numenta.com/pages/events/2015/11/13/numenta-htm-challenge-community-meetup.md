@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/224711563/
   who:
   why:
-featured: false
 image: ../images/htm-challenge.png
 org: Open Source Flag-Bearer
 tags: numenta htm challenge 2015 community meetup hierarchical temporal memory machine intelligence learning brain neocortex

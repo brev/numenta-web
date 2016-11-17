@@ -2,7 +2,6 @@
 author: Numenta
 brief: Numenta, a leading provider of solutions that help companies intelligently act on machine-generated data, today announced its Grok solution has achieved certified integration
 date: 2013/05/17
-featured: false
 image: ../images/numenta.png
 link:
 org: Press Release

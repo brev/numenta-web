@@ -15,7 +15,6 @@ event:
     web: http://strataconf.com/big-data-conference-ca-2015/public/schedule/detail/38703
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: strata hadoop world big data subutai ahmad numenta machine intelligence streaming analytics

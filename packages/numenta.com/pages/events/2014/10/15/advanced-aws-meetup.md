@@ -15,7 +15,6 @@ event:
     country: USA
   who: Scott Purdy
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Engineering Manager
 tags: numenta grok event advanced aws meetup lightning talk anomlay service

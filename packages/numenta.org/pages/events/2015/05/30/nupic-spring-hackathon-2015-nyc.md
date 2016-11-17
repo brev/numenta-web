@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/220422020/
   who:
   why:
-featured: false
 image: ../images/image.png
 org: "Open Source Manager"
 tags: nupic spring hackathon 2015 nyc new york city htm numenta

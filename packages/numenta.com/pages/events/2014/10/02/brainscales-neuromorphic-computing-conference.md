@@ -15,7 +15,6 @@ event:
     web: https://brainscales.kip.uni-heidelberg.de/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-founder
 tags: brainscales neuromorphic computing conference jeff hawkins model cortical layers

@@ -15,7 +15,6 @@ event:
     web: http://mlconf.com/events/san-francisco-ca/
   who:
   why:
-featured: false
 image: ../images/image.png
 org: Research Team
 tags: numenta machine learning conference san francisco sf 2016

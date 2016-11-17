@@ -41,6 +41,16 @@
   transition: opacity 0.15s ease-in;
 }
 
+.markdown pre > code {
+  background-color: #eef4f5;
+  border-radius: 0.2rem;
+  color: #555;
+  display: block;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
 .markdown table {
   border: 1px solid #eee;
   border-radius: 0.25rem;

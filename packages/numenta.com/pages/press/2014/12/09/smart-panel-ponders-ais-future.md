@@ -2,7 +2,6 @@
 author: Jessica Lipsky
 brief:
 date: 2014/12/09
-featured: false
 image:
 link: http://www.eetimes.com/document.asp?doc_id=1324910&_mc=sm_eet_editor_rickmerritt
 org: EE Times

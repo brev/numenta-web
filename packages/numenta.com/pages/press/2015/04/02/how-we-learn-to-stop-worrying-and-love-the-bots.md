@@ -2,7 +2,6 @@
 author: Wired
 brief:
 date: 2015/04/02
-featured: false
 image:
 link: http://www.wired.com/2015/04/learn-stop-worrying-love-bots/
 org: Wired

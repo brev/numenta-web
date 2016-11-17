@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/220690176/
   who:
   why:
-featured: false
 image: ../images/image.png
 org: "Open Source Manager"
 tags: nupic meetup bay area silicon valley

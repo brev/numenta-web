@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta
   who: Matthew Taylor & Christy Maver
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Matt Taylor & Christy Maver
 tags: numenta htm hierarchical temporal memory bay area meetup santa clara ca

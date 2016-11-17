@@ -15,7 +15,6 @@ event:
     web: http://www.bernstein-conference.de/
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: bernstein conference neuroscience 2016 humboldt university berlin germany numenta neurons synapses neocortex

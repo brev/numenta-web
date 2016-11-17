@@ -15,7 +15,6 @@ event:
     web: http://www.cosyne.org/c/index.php?title=Cosyne_15
   who: Yuwei Cui, Subutai Ahmad, Chetan Surpur, and Jeff Hawkins
   why: Authors
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: computational systems neuroscience cosyne 2015 numenta nupic machine intelligence

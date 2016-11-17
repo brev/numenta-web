@@ -2,7 +2,6 @@
 author: Rob Haitani
 brief: We modeled Grok after the human brain because the brain is a predictive modeling system.  This is the first post in a series describing what this
 date: 2013/01/03
-featured: false
 image: ../images/image.png
 org: Marketing
 tags:  Neuroscience

@@ -12,7 +12,6 @@ event:
     state: NY
     country: USA
     web: http://www.meetup.com/numenta/events/220422020/
-featured: false
 image: ../images/image.png
 org: Open Source Manager
 tags: nupic spring 2015 hackathon numenta machine intelligence htm hierarchical temporal memory

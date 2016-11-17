@@ -14,7 +14,6 @@ event:
     web: https://www.janelia.org/you-janelia/conferences/emerging-tools-acquisition-and-interpretation-whole-brain-functional-data
   who: Subutai Ahmad
   why: Invited Participant
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: subutai ahmad numenta htm machine intelligence janelia research emerging tools whole brain functional data

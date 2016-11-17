@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: As part of the community interested in machine intelligence, you may be following the current public debate about whether artificial intelligence should be feared or encouraged. Jeff Hawkins recently
 date: 2015/03/12
-featured: false
 image: ../../../../images/numenta.png
 org: CEO
 tags: numenta newsletter march 2015
