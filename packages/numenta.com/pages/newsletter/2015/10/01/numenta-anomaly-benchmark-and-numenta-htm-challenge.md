@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: To start with, I’m pleased to announce that we have a paper accepted on the Numenta Anomaly Benchmark (NAB).  I’ve written to you about the development of
 date: 2015/10/01
-featured: false
 image: ../images/image.png
 org: CEO
 tags: numenta anomaly benchmark nab numenta htm challenge nupic onsite november 2015

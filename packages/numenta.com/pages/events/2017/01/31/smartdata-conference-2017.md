@@ -15,7 +15,6 @@ event:
     web: http://smartdata2017.dataversity.net/sessionPop.cfm?confid=110&proposalid=9381
   who: "Scott Purdy"
   why: "Speaking"
-featured: false
 image: ../images/image.png
 org: "Director of Engineering"
 tags: smartdata conference 2017 scott purdy model streaming data you know nothing about htm numenta

@@ -12,7 +12,6 @@ event:
     state: CA
     country: USA
     web: https://www.eventbrite.com/e/numenta-training-workshop-registration-12898835765
-featured: true
 image: ../images/image.png
 org: Event
 tags: numenta training workshop htm hierarchical temporal memory october 2014

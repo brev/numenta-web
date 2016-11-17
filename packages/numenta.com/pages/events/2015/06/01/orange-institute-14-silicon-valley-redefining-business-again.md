@@ -14,7 +14,6 @@ event:
     web: http://institute.orange.com/sessions/2015-2016-program
   who: Donna Dubinsky
   why: Speaking
-featured: false
 image: ../images/image.png
 org: CEO, Co-Founder
 tags: orange institute 14 silicon valley redefine business donna dubinsky numenta machine intelligence

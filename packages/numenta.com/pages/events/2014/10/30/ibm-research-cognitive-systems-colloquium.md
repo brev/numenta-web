@@ -14,7 +14,6 @@ event:
     country: USA
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: ibm research cognitive systems colloquium jeff hawkins numenta machine intelligence cognitive computing

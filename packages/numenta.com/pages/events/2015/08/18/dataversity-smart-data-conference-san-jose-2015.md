@@ -15,7 +15,6 @@ event:
     web: http://smartdata2015.dataversity.net/
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP Research
 tags: dataversity smart data conference san jose 2015 subutai ahmad numenta htm hierarchical temporal memory cognitive computing

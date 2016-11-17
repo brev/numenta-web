@@ -15,7 +15,6 @@ event:
     web: http://globalbigdataconference.com/67/santa-clara/global-data-science-conference/event.html
   who: Alexander Lavin
   why: Speaking
-featured: false
 image: ../images/bigdata.png
 org: Research Engineer
 tags: global big data conference 2016 numenta htm hierarchical temporal memory

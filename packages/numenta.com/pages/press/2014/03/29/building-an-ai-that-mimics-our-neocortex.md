@@ -2,7 +2,6 @@
 author: Jack Clark
 brief:
 date: 2014/03/29
-featured: false
 image:
 link: http://www.theregister.co.uk/2014/03/29/hawkins_ai_feature/
 org: The Register

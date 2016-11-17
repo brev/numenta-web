@@ -15,7 +15,6 @@ event:
     web: http://conf.dato.com/2016/us/speakers/subutai-ahmad/
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Numenta Event
 tags: data science summit 2016 numenta sponsor machine intelligence ai

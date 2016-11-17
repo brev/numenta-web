@@ -2,7 +2,6 @@
 author: Numenta
 brief: REDWOOD CITY, CA –November 10, 2015— Numenta, Inc., a leader in machine intelligence, today launched the Numenta Anomaly Benchmark (NAB), an open-source benchmark and tool designed to help data
 date: 2015/11/10
-featured: false
 image: ../images/image.png
 link:
 org: Press Release

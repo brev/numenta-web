@@ -15,7 +15,6 @@ event:
     web: https://playfairaisummit2016.splashthat.com/
   who: Subutai Ahmad
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP of Research
 tags: playfair ai summit 2016 subutai ahmad numenta htm hierarchical temporal memory theoretical biological machine intelligence

@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: As we look forward to a bright 2016 here at Numenta, I thought I’d pause and review the highlights of 2015.  From advancing our research to expanding our community, we had many accomplishments that laid the groundwork for significant
 date: 2016/01/07
-featured: false
 image: ../../../../images/numenta.png
 org: CEO
 tags: numenta 2015 review partners cortical.io avik grok nlp semantic folding nab numenta anomaly benchmark

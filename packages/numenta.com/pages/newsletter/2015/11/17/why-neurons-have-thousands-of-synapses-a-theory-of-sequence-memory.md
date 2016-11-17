@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: November is shaping up to be a busy and exciting month for Numenta. I wrote you about the release of our Numenta Anomaly Benchmark (NAB). Today I’m pleased to share more good news. Founders Jeff Hawkins and Subutai Ahmad have written a paper that
 date: 2015/11/17
-featured: false
 image: ../images/image.png
 org: CEO
 tags: numenta machine learning intelligence neurons thousands synapses theory sequence memory neocortex

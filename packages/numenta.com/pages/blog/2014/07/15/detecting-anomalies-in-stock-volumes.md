@@ -2,7 +2,6 @@
 author: Viraj Sinha
 brief: "I decided to apply Grok and the Cortical Learning Algorithm to stock data: have the CLA learn patterns and alert me to anomalies. I decided to monitor volume"
 date: 2014/07/15
-featured: false
 image: ../images/image.png
 org: Summer Intern, Engineering
 tags: anomaly, detection, stock, finance, volume

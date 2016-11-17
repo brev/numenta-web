@@ -15,7 +15,6 @@ event:
     web: http://www.flyoverlabs.io/podcasts/celeste-baranski-vp-of-engineering-at-numenta-interview/
   who: Celeste Baranski
   why: Interview
-featured: false
 image: ../images/image.png
 org: VP Engineering
 tags: flyover labs podcast interview numenta vp engineering celeste baranski htm hierarchical temporal memory

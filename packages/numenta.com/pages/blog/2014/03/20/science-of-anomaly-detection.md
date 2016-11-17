@@ -2,7 +2,6 @@
 author: Jeff Hawkins
 brief: I’ve written a paper that explains how we have applied the science of the CLA to the technology of anomaly detection.  It illustrates how a simple-to-use product
 date: 2014/03/20
-featured: false
 image: ../images/image.png
 org: Founder
 tags: science, anomaly, detection, grok

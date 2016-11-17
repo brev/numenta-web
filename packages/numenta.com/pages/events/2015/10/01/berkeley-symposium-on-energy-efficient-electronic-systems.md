@@ -15,7 +15,6 @@ event:
     web: http://www.e3s-center.org/events/e3s-symposium/
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: numenta jeff hawkins berkeley symposium energy efficient electronic systems htm hierarchical temporal memory

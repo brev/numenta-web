@@ -2,7 +2,6 @@
 author: Rob Haitani
 brief: Will the future of machine intelligence lead to evil robots and a dystopian apocalypse?  Or robotic butlers and immortal carriers of our memories?  Berkeley
 date: 2012/12/13
-featured: false
 image: ../images/image.png
 org: Marketing
 tags: Machine Learning, Neuroscience

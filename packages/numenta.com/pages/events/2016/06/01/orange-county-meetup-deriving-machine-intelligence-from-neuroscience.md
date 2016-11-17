@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/OC-Deep-Learning-HTM-ANN-NLP-AI/events/230346144/
   who: Alexander Lavin
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Research Engineer
 tags: numenta machine intelligence neuroscience orange county oc meetup

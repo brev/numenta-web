@@ -2,7 +2,6 @@
 author: Christy Maver
 brief: "I was asked to explore various questions, including what is machine intelligence technology based on neocortical theory, why is it important, how and why does it work, and where will it take us?"
 date: 2016/11/03
-featured: false
 hideImage: false
 image: ../images/image.png
 org: Director of Marketing

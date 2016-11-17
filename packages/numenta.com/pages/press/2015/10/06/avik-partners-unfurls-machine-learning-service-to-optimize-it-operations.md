@@ -2,7 +2,6 @@
 author: Mike Vizard
 brief:
 date: 2015/10/06
-featured: false
 image:
 link: http://www.itbusinessedge.com/blogs/it-unmasked/avik-partners-unfurls-machine-learning-service-to-optimize-it-operations.html
 org: IT Business Edge

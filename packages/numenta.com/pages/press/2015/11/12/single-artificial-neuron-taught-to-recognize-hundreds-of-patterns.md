@@ -2,7 +2,6 @@
 author: Emerging Technology
 brief:
 date: 2015/11/12
-featured: false
 image:
 link: http://www.technologyreview.com/view/543486/single-artificial-neuron-taught-to-recognize-hundreds-of-patterns/
 org: MIT Technology Review

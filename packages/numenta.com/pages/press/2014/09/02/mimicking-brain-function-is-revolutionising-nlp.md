@@ -2,7 +2,6 @@
 author: Eileen McNulty
 brief:
 date: 2014/09/02
-featured: false
 image:
 link: http://dataconomy.com/how-an-austrian-startup-is-mimicking-brain-function-to-revolutionise-nlp/
 org: Dataconomy

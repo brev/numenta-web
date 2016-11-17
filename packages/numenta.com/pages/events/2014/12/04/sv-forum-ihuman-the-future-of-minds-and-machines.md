@@ -14,7 +14,6 @@ event:
     web: http://svforum.org/Education-Tech-Conference/iHuman-Future-Minds-and-Machines
   who: Jeff Hawkins
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Co-Founder
 tags: sv silicon valley forum ihuman future of minds and machines jeff hawkins numenta machine intelligence

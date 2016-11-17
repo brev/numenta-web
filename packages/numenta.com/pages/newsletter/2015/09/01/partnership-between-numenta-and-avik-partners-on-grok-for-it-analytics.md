@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: I am excited to tell you about a new partnership between Numenta and Avik Partners, an IT services and advanced analytics company. Before I tell you more about Avik, I want to remind you of our strategy for
 date: 2015/09/01
-featured: false
 image: ../images/image.png
 org: CEO
 tags: numenta partnership avik partners grok stream for it analytics

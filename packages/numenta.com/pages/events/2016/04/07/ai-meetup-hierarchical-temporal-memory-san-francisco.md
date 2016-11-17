@@ -15,7 +15,6 @@ event:
     web: https://www.eventbrite.com/e/ai-meetup-hierarchal-temporal-memory-presented-by-numenta-tickets-24327505223
   who: Yuwei Cui
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory ai meetup san francisco

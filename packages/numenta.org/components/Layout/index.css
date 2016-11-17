@@ -14,7 +14,7 @@
   font-size: 15px;  /* base size for tachyons em's */
 }
 :global .body {
-  background: #999;
+  background: linear-gradient(to bottom, #999, #777);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }

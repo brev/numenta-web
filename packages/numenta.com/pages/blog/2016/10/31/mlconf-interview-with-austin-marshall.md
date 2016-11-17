@@ -2,7 +2,6 @@
 author: Christy Maver
 brief: "MLconf Technical Chair Nick Vasiloglou recently interviewed one of our engineers, Austin Marshall, about HTM and our approach in this space.  In their conversation, Nick asks Austin about a variety of topics - from AI to"
 date: 2016/10/31
-featured: false
 hideImage: false
 image: ../images/image.png
 org: Director of Marketing

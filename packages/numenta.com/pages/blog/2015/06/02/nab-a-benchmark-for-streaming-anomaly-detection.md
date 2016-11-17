@@ -2,7 +2,6 @@
 author: Alexander Lavin
 brief: Data is in ever-increasing supply as sensors inhabit more and more of our world. Examples abound from health data tracked by pacemakers and fitness wearables, to temperature sensors
 date: 2015/06/02
-featured: false
 image: ../images/graph2.png
 org: Software Engineer
 tags: nab numenta anomaly benchmark streaming data detection realtime

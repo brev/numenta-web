@@ -2,7 +2,6 @@
 author: Donna Dubinsky
 brief: In order to encourage our developers and to facilitate the creation of applications, we have decided to release substantially more of our technology into open source. To that end, we just added to the code base two complete products
 date: 2015/06/09
-featured: false
 image: ../../../../images/numenta.png
 org: CEO
 tags: numenta open source htm products apps applications nupic june 2015 newsletter donna dubinsky

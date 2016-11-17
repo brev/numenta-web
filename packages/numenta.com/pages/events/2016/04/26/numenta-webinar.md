@@ -15,7 +15,6 @@ event:
     web: http://www.prohuddle.com/webinars/ChristyAndScott/Machine_Intelligence_with_Streaming_Data_A_New_Approach.php
   who: Christy Maver & Scott Purdy
   why: Webinar
-featured: false
 image: ../images/image.png
 org: Christy Maver & Scott Purdy
 tags: numenta webinar machine intelligence with streaming data

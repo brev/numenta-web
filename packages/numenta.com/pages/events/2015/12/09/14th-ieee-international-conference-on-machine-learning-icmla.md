@@ -15,7 +15,6 @@ event:
     web: http://www.icmla-conference.org/icmla15/
   who: Alexander Lavin
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Engineer
 tags: ieee machine learning conference numenta alexander lavin research numenta anomaly detection algorithm benchmark

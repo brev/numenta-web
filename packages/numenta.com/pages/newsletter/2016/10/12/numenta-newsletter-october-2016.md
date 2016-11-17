@@ -2,7 +2,6 @@
 author: Christy Maver
 brief: One of my favorite parts of working at Numenta is fielding the inquiries that come in from people all over the world. As the buzz in the AI landscape continues to increase, what has become clear through my interactions with people
 date: 2016/10/12
-featured: false
 hideImage: false
 image: ../images/video.png
 org: Director of Marketing

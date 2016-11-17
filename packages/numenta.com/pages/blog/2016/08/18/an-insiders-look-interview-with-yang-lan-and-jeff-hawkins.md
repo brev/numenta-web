@@ -2,7 +2,6 @@
 author: Taylor Wirfs
 brief: But it did come as a surprise to hear that the interview was with Yang Lan, a prominent broadcast journalist and figure who has been referred to as the Oprah of China. She hosts several TV talk shows, is the cofounder and
 date: 2016/08/18
-featured: false
 hideImage: true
 image: ../images/image.png
 org: Marketing

@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/232848149/
   who:
   why:
-featured: false
 image: ../images/meetup.png
 org: HTM Community
 tags: numenta hierarchical temporal memory htm community 3rd bay area meetup palo alto machine intelligence neuroscience biological

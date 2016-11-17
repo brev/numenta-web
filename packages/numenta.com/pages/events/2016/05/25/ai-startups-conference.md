@@ -15,7 +15,6 @@ event:
     web: https://www.eventbrite.com/e/ai-startups-conference-tickets-24722374287
   who: Celeste Baranski
   why: Speaking
-featured: false
 image: ../images/image.png
 org: VP Engineering
 tags: ai startups conference 2016 san francisco reverse engineering neocortex machine intelligence

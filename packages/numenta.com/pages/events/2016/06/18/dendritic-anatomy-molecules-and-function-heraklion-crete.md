@@ -15,7 +15,6 @@ event:
     web: http://www.dendrites2016.gr/
   who: Yuwei Cui
   why: Speaking
-featured: false
 image: ../images/image.png
 org: Research Engineer
 tags: numenta htm hierarchical temporal memory dendritic anatomy molecules function herkalion crete 2016 event

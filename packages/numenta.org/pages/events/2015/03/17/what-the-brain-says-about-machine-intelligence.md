@@ -15,7 +15,6 @@ event:
     web: http://www.meetup.com/numenta/events/220895892/
   who: "Jeff Hawkins"
   why: "Speaking"
-featured: false
 image: ../images/image.png
 org: "Open Source Manager"
 tags: nupic meetup nyc new york city cornell tech jeff hawkins brain machine intelligence

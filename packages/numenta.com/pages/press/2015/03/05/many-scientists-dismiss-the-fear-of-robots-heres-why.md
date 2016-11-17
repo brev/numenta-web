@@ -2,7 +2,6 @@
 author: Erik Sherman
 brief:
 date: 2015/03/05
-featured: false
 image:
 link: http://fortune.com/2015/03/05/forget-the-naysayers-robots-pose-no-threat-to-humanity-these-experts-say/
 org: Fortune
