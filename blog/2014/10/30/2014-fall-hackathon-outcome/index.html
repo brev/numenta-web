@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+ <html lang="en"><head><title data-react-helmet="true">2014 Fall Hackathon Outcome | Numenta.org</title><meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge"/><meta data-react-helmet="true" name="author" content="Numenta HTM Community"/><meta data-react-helmet="true" name="description" content="Numenta HTM Community — Numenta Hierarchical Temporal Memory (HTM) Community and Resources"/><meta data-react-helmet="true" name="keywords" content="Numenta,HTM,Community,—,Numenta,Hierarchical,Temporal,Memory,(HTM),Community,and,Resources"/><meta data-react-helmet="true" name="generator" content="© Numenta.org v0.2.6 Wed Nov 16 2016 17:16:35 GMT-0800 / Gatsby.js"/><meta data-react-helmet="true" name="mobile-web-app-capable"/><meta data-react-helmet="true" name="theme-color"/><meta data-react-helmet="true" name="application-name"/><meta data-react-helmet="true" name="apple-mobile-web-app-capable"/><meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style"/><meta data-react-helmet="true" name="apple-mobile-web-app-title"/><meta data-react-helmet="true" name="msapplication-TileColor"/><meta data-react-helmet="true" name="msapplication-TileImage" content="mstile-144x144.png"/><meta data-react-helmet="true" name="msapplication-config" content="browserconfig.xml"/><link data-react-helmet="true" rel="stylesheet" href="/numenta-web/styles.css?v=0.2.6"/><link data-react-helmet="true" rel="manifest" href="/numenta-web/manifest.json"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="57x57" href="/numenta-web/apple-touch-icon-57x57.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="60x60" href="/numenta-web/apple-touch-icon-60x60.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="72x72" href="/numenta-web/apple-touch-icon-72x72.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="76x76" href="/numenta-web/apple-touch-icon-76x76.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="114x114" href="/numenta-web/apple-touch-icon-114x114.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="120x120" href="/numenta-web/apple-touch-icon-120x120.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="144x144" href="/numenta-web/apple-touch-icon-144x144.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="152x152" href="/numenta-web/apple-touch-icon-152x152.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/numenta-web/apple-touch-icon-180x180.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/numenta-web/apple-touch-startup-image-320x460.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-640x920.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-640x1096.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-750x1294.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/numenta-web/apple-touch-startup-image-1182x2208.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/numenta-web/apple-touch-startup-image-1242x2148.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/numenta-web/apple-touch-startup-image-748x1024.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/numenta-web/apple-touch-startup-image-768x1004.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-1496x2048.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-1536x2008.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="228x228" href="/numenta-web/coast-228x228.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/numenta-web/favicon-32x32.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="192x192" href="/numenta-web/android-chrome-192x192.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/numenta-web/favicon-16x16.png"/><link data-react-helmet="true" rel="shortcut icon" href="/numenta-web/favicon.ico"/><link data-react-helmet="true" rel="yandex-tableau-widget" href="/numenta-web/yandex-browser-manifest.json"/><script> var _prum = [['id', '55a7dbc8abe53dba666b928b'], ['mark', 'firstbyte', (new Date()).getTime()]]; (function() { var s = document.getElementsByTagName('script')[0], p = document.createElement('script'); p.async = 'async'; p.src = '//rum-static.pingdom.net/prum.min.js'; s.parentNode.insertBefore(p, s); })(); </script></head><body class="body"><div id="react-mount"><div class="index_layout_2APRV tachyons_f4_1ZtFo tachyons_f5-ns_QvA9N tachyons_fw4_3tjGI" data-reactroot="" data-reactid="1" data-react-checksum="-1216897051"><div class="index_appbar_2mn1B tachyons_fixed_I-cP7 tachyons_h3_bmkiF tachyons_ph3_QxldC tachyons_shadow-1_8y5Al tachyons_top-0_2pSw0 tachyons_w-100_1xCa-" data-reactid="2"><header class="index_header_Rq-u8 tachyons_center_iwfDV tachyons_cf_g7Rbw tachyons_mw-100_ge3eY tachyons_mw7-m_FjTMD tachyons_mw8-l_KcPEl" data-reactid="3"><div class="index_logo_36Fb9 tachyons_fl_wJK08 tachyons_relative_1fOAN tachyons_top-1_UVWcI" data-reactid="4"><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/" data-reactid="5"><img alt="Numenta Logo" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7" src="/numenta-web/3a169c8bb69e60988a590d930ff8b552.svg" title="Numenta" data-reactid="6"/></a></div><div class="index_search__jDs6 tachyons_fr_2Nnlq tachyons_mt3_11A88" data-reactid="7"><div class="index_search_3w2G7 tachyons_cf_g7Rbw" data-reactid="8"><form accept-charset="UTF-8" autocomplete="off" class="index_form_Fg7MS tachyons_pa0_RbR9y tachyons_mb3_1mVjM tachyons_mh0_2XVE6 tachyons_mt0_12uVA" enctype="multipart/form-data" method="post" data-reactid="9"><span class="index_label_2Lg1G tachyons_clip_2YGUH" data-reactid="10"><label class="index_formLabel_3oaZS tachyons_f5_2mBLC tachyons_fl_wJK08 tachyons_fw6_1NVHA tachyons_mb3_1mVjM tachyons_mr3_1EzMb tachyons_relative_1fOAN tachyons_v-top_1JDSz tachyons_w4_3jJdW" for="q" data-reactid="11">Search</label></span><span class="index_query_1UQAG tachyons_fl_wJK08 tachyons_flex_22HX5 tachyons_h2_1bnrx tachyons_mb2_1U4Ly tachyons_relative_1fOAN tachyons_w4_3jJdW tachyons_w5-ns_1tFKD" data-reactid="12"><input type="search" class="index_formInput_rh9lC tachyons_ba_1NLTg tachyons_b--black-20_1zcpL tachyons_br2_rOajV tachyons_f5_2mBLC tachyons_flex-auto_1Fvbr tachyons_fw3_3xIyG tachyons_input-reset_3AzOw tachyons_pb1_2R8OW tachyons_ph2_2upwK tachyons_pt2_3ymYR tachyons_silver_3lNzP index__focus_TOE2N index_large_1iVB4" id="q" name="q" placeholder="Search..." value="" data-reactid="13"/></span><button class="index_button_39gnr tachyons_br2_rOajV tachyons_dim_1n1Ux tachyons_flex-auto_1Fvbr tachyons_ma0_2xh0v tachyons_pointer_25KSQ index__disabled_1vwUl index_light_1eAVK tachyons_bg-white_WF0bD tachyons_bn_3W7rs tachyons_f4_1ZtFo tachyons_pa1_3f3GD" type="submit" data-reactid="14"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;color:inherit;" data-reactid="15"><g data-reactid="16"><path d="m27.2 18.6q0-4.2-2.9-7.1t-7.1-2.9-7 2.9-3 7.1 2.9 7 7.1 3 7.1-3 2.9-7z m11.4 18.5q0 1.2-0.8 2.1t-2 0.8q-1.2 0-2-0.8l-7.7-7.7q-4 2.8-8.9 2.8-3.2 0-6.1-1.3t-5-3.3-3.4-5-1.2-6.1 1.2-6.1 3.4-5.1 5-3.3 6.1-1.2 6.1 1.2 5 3.3 3.4 5.1 1.2 6.1q0 4.9-2.7 8.9l7.6 7.6q0.8 0.9 0.8 2z" data-reactid="17"></path></g></svg></button></form></div></div></header></div><main class="index_main_tnP91 tachyons_bg-white_WF0bD tachyons_br--bottom_1e0iK tachyons_br2_rOajV tachyons_center_iwfDV tachyons_mt5_2gsGq tachyons_mw-100_ge3eY tachyons_mw7-m_FjTMD tachyons_mw8-l_KcPEl tachyons_overflow-hidden_LTNH3 tachyons_pb4_38sbl tachyons_ph3_QxldC tachyons_ph4-l_pNzb2 tachyons_pt3_1QCt4 tachyons_shadow-4_3--ZM" data-reactid="18"><!-- react-empty: 19 --><!-- react-empty: 20 --><article class="md_md_tlmEy tachyons_center_iwfDV tachyons_lh-copy_15fP- tachyons_measure_hbrV7 tachyons_measure-wide-l_2Qfse" data-reactid="21"><!-- react-empty: 22 --><div class="md_date_1QTAL tachyons_fw5_3JqK9 tachyons_lh-copy_15fP- tachyons_mb2_1U4Ly tachyons_ttc_3Js-n" data-reactid="23"><time class="index_time_7qs6g" datetime="2014-10-30T00:00:00-07:00" data-reactid="24">Thu, Oct 30, 2014</time><span data-reactid="25"><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="26">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/blog/" data-reactid="27">Blog</a></span></div><section class="index_section_3riWR" data-reactid="28"><h1 class="index_headline_2MYZb tachyons_f2_ipMqY index__base_d8fC- tachyons_black_2yDOs tachyons_fw6_1NVHA tachyons_lh-title_1xoXI tachyons_mv1_3WPZc tachyons_pa0_RbR9y" data-reactid="29">2014 Fall Hackathon Outcome</h1><div class="index_article_2F-Fv tachyons_mb1_2-HF7 tachyons_mt3_11A88" data-reactid="30"><div class="md_author_1KZlz tachyons_lh-copy_15fP- tachyons_relative_1fOAN" data-reactid="31"><span class="index_subtle_3x1V5 tachyons_silver_3lNzP" data-reactid="32"><span class="index_avatar_27stB tachyons_dib_1gHl4 tachyons_mr2_2P1HS tachyons_relative_1fOAN tachyons_v-mid_2J0aX" data-reactid="33"><img alt="Matthew Taylor" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7 index_border_lcxQ0 tachyons_b--black-10_14Lyo tachyons_ba_1NLTg index_round_3AHvu tachyons_br-100_aI5YQ" src="/numenta-web/02db35aad4581cb04d8900d86917e22e.png" title="Matthew Taylor" data-reactid="34"/></span><!-- react-text: 35 -->Matthew Taylor<!-- /react-text --><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="36">•</span><!-- react-text: 37 -->Open Source Manager<!-- /react-text --></span></div><div class="md_media_12JBZ tachyons_tc_3abHg" data-reactid="38"><img alt="2014 Fall Hackathon Outcome" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7 index_border_lcxQ0 tachyons_b--black-10_14Lyo tachyons_ba_1NLTg index_mw_2LWC6 tachyons_mw-100_ge3eY index_shadow_2DHwp tachyons_shadow-4_3--ZM" src="/numenta-web/blog/2014/10/30/2014-fall-hackathon-outcome/../images/image.png" data-reactid="39"/></div><div class="md_content_11f2L md__dropcap_3sI70" data-reactid="40"><div class="index_markdown_P7JK5 tachyons_center_iwfDV tachyons_lh-copy_15fP- tachyons_measure_hbrV7 tachyons_measure-wide-l_2Qfse" data-reactid="41"><div data-reactid="42"><p>On October 18-19 of 2014, we held our fourth NuPIC Hackathon in San Jose at
+<a href="http://pinger.com">Pinger, Inc</a>. It was a 36-hour event, starting at 10AM on
+Saturday, and ending with hack demos at 4PM Sunday afternoon. We started with a
+Kickoff presentation to go over hackathon protocol, then jumped right into
+hacking. There were some interesting themes this time. A lot more people tried
+using <a href="http://cortical.io">cortical.io</a>’s word fingerprinting service for
+natural language processing hacks. We also had a lot of interest in EEG analysis
+with NuPIC, which seems to be a hot topic within the community. And we even had
+another robotics demo!</p>
+<p>I think I say this after every NuPIC hackathon we host, but this hackathon was
+the best one yet! We had well over 50 participants, 16 demos, and a ton of fun
+and community bonding. It was really nice to see some new faces at this
+hackathon. I love meeting the people of our community!</p>
+<blockquote>
+<p><strong><a href="https://www.youtube.com/watch?v=r8MSfbfg5io&amp;index=1&amp;list=PL3yXMgtrZmDo4uTtO8Fqialyf6O1szHaT">Watch Video</a>
+on YouTube.</strong></p>
+</blockquote>
+<p>Once again, we had attendees from all over the world: Amsterdam, China, Austria,
+Ireland, not to mention from all over the United States. I was really impressed
+how with each hackathon our community gets a better understanding of NuPIC and
+how it can be used to tackle many different kinds of problems. Even though we
+had a high percentage of new hackers this time, I could really see the light
+bulbs turning on as I talked to people about their hackathon ideas.</p>
+<h2>Photos</h2>
+<p>All Photos taken at the hackathon can be seen on Flickr: <br />
+<a href="https://www.flickr.com/photos/nupic/sets/72157648601989450/">https://www.flickr.com/photos/nupic/sets/72157648601989450/</a></p>
+<h2>Testimonials</h2>
+<p>More people than ever, and a more diverse community than ever. We had pro
+hackers, students, software professionals, a neurologist, and even some new to
+programming in general.</p>
+<blockquote>
+<p><em>“Had an awesome time!! Thanks again to Matt and Scott for helping me so much
+with getting started with nupic.”</em>
+—<strong>Adam</strong></p>
+</blockquote>
+<blockquote>
+<p><em>“Thanks Matt and the whole Numenta crew for a wonderful weekend. It was a good
+chance to prototype how NuPIC can be used for wearables.”</em>
+—<strong>Ben Morrow</strong></p>
+</blockquote>
+<blockquote>
+<p><em>“Thank you Matt for making this an unforgettable event. I am already looking
+forward to the next Hack-a-thon!”</em>
+—<strong>Rian Shams</strong></p>
+</blockquote>
+<blockquote>
+<p><em>“Thanks For hosting the workshop and hackathon Nupic team. Had a great
+time!”</em>
+—<strong>Chandan Maruthi</strong></p>
+</blockquote>
+<blockquote>
+<p><em>“I really had a good time. I learned so much and loved seeing the incredible
+variety of hacks.”</em>
+—<strong>Daniel McDonald</strong></p>
+</blockquote>
+<blockquote>
+<p><em>“This was inspiring!”</em>
+—<strong>Chirag Mirani</strong></p>
+</blockquote>
+<blockquote>
+<p><em>“A fantastic event. It underscores Numenta’s approach of being totally open
+with their work and supportive of the community. It feels like we are at the
+cusp of a revolution, where a few more good ideas will really make this
+thing fly.”</em> —<strong>Felix Andrews</strong></p>
+</blockquote>
+<h2>Sessions</h2>
+<p>We only gave a few presentations from Numenta and friends for hackathon
+participants to attend in order to give more time for attendees to work on their
+projects. You can watch all the recordings we took at the hackathon
+<a href="https://www.youtube.com/playlist?list=PL3yXMgtrZmDo4uTtO8Fqialyf6O1szHaT">in this playlist</a>.</p>
+<h4>Hackathon Kickoff</h4>
+<p>Where hackers are welcomed to the hackathon, protocol is reviewed, and ideas are
+brainstormed.</p>
+<ul>
+<li>Video: <a href="https://www.youtube.com/watch?v=r8MSfbfg5io">https://www.youtube.com/watch?v=r8MSfbfg5io</a></li>
+<li>Slides: <a href="http://www.slideshare.net/numenta/2014-fall-nupic-hackathon-kickoff">http://www.slideshare.net/numenta/2014-fall-nupic-hackathon-kickoff</a></li>
+<li>Presenters: Matt Taylor &amp; Jeff Hawkins</li>
+</ul>
+<h4>EEGs &amp; NuPIC Demo</h4>
+<p>We had a neurologist attending the hackathon, who was kind enough to sit in
+front of a camera for us and let us pick his brain about EEGs.</p>
+<ul>
+<li>Video: <a href="https://www.youtube.com/watch?v=TFbNbaBtxr4">https://www.youtube.com/watch?v=TFbNbaBtxr4</a></li>
+<li>Presenter: Dr. Richard Pantera</li>
+</ul>
+<h4>Language Intelligence</h4>
+<p>“On the Way to Language Intelligence” by <a href="http://cortical.io">http://cortical.io</a>.</p>
+<p>Francisco talks about language, intelligence, and <a href="http://cortical.io">cortical.io</a>’s new REST API
+version 2.0 and all its capabilities.</p>
+<ul>
+<li>Video: <a href="https://www.youtube.com/watch?v=gKtKIR0cieI">https://www.youtube.com/watch?v=gKtKIR0cieI</a></li>
+<li>Presenter: Francisco Webber, <a href="http://cortical.io">http://cortical.io</a></li>
+</ul>
+<h4>Applications of HTM</h4>
+<p>This talk is from the Numenta Workshop that preceeded the hackathon, but Chetan
+gave the same talk at the hackathon. Since the recording at the workshop was a
+better quality than the hackathon presentation, I’ve included the first one.</p>
+<ul>
+<li>Video: <a href="https://www.youtube.com/watch?v=900nFOfzp2E">https://www.youtube.com/watch?v=900nFOfzp2E</a></li>
+<li>Presenter: Chetan Surpur, Numenta Engineer</li>
+</ul>
+<h4>Q&amp;A with Jeff Hawkins</h4>
+<p>Jeff Hawkins takes questions about HTM theory from hackathon attendees and
+explains the answers in front of a whiteboard.</p>
+<ul>
+<li>Video: <a href="https://www.youtube.com/watch?v=HRwf2uQTiWU">https://www.youtube.com/watch?v=HRwf2uQTiWU</a></li>
+<li>Presenter: Jeff Hawkins</li>
+</ul>
+<h2>Demos</h2>
+<p>Games, physics, robotics, geology, natural language, geospatial analysis…
+demos at this hackathon spanned a large breadth of topics. We were really
+impressed with the types of things hackers attempted to perform with NuPIC. When
+we have hackathons, it’s a chance for people interested in NuPIC and HTM to push
+the boundaries of HTM technology and really see what it might be capable of. I
+always come away inspired and excited about the future of NuPIC and HTM, and
+this hackathon was no exception at all.</p>
+<p>Not all hacks are success stories, but each one is a learning experience. We’ll
+never know what can be achieved with cortically-inspired machine intelligence
+unless we try to solve hard problems.</p>
+<h4>Pendulum</h4>
+<p>An attempt to balance an inverted pendulum using predicted data.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=WFUtSGunoeQ">http://www.youtube.com/watch?v=WFUtSGunoeQ</a></li>
+<li>Code: <a href="https://github.com/andymo/pendulum">https://github.com/andymo/pendulum</a></li>
+<li>By: Alejandro Schuler, Andrew Morrison, Shashwat Kandadai</li>
+</ul>
+<h4>MineHack</h4>
+<p>I created a Minecraft mod that exports player X,Y,Z coordinates into NuPIC using
+the CoordinateEncoder to get anomaly indications for a live player.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=ToJHv_K1c_U">http://www.youtube.com/watch?v=ToJHv_K1c_U</a></li>
+<li>Code: <a href="https://github.com/nupic-community/mine-hack">https://github.com/nupic-community/mine-hack</a></li>
+<li>By: Matt Taylor</li>
+</ul>
+<h4>Shake Hack</h4>
+<p>According to recent news, the Bay Area is overdue another “Big One”.  I’ll be
+evaluating encoding schemes for data that comprises the last 10+ years of
+magnitude 2.5 or greater earthquake activity for the 1000 km radius centered on
+the Pinger headquarters in San Jose, CA. I’m hoping to identify earthquake
+swarms leading up to larger events in the same region.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=na2lys7xhYM">http://www.youtube.com/watch?v=na2lys7xhYM</a></li>
+<li>Code: <a href="https://github.com/oxtopus/shakehack">https://github.com/oxtopus/shakehack</a></li>
+<li>By: Austin Marshall</li>
+</ul>
+<h4>A Whole New World</h4>
+<p>A demonstration of sensorimotor inference in simple robotics.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=-aCYujW7QSc">http://www.youtube.com/watch?v=-aCYujW7QSc</a></li>
+<li>Slides: <a href="http://www.slideshare.net/numenta/a-whole-newworld">http://www.slideshare.net/numenta/a-whole-newworld</a></li>
+<li>Code: <a href="https://github.com/chetan51/saccadebot">https://github.com/chetan51/saccadebot</a></li>
+<li>By: Chetan Surpur, Yuwei Cui</li>
+</ul>
+<h4>Semantic Fingerprint Sentence Generation</h4>
+<p>In this hack, we will attempt to generate semantic fingerprints from WordNet
+semantic relationships and train the HTM to recognize sequences of meaning from
+training texts.  The trained HTM will be used to generate English sentences by
+using the predicted sequence of SDRs from the HTM to select words from the
+training set to fill in blanks in the sentences generated according to a limited
+English grammar.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=Q7Dgj_h-yeA">http://www.youtube.com/watch?v=Q7Dgj_h-yeA</a></li>
+<li>Code: <a href="https://github.com/encs-humanoid/ai/tree/master/sandbox/wordnet_fp">https://github.com/encs-humanoid/ai/tree/master/sandbox/wordnet_fp</a></li>
+<li>By: Daniel McDonald, Mark Whelan</li>
+</ul>
+<h4>HTM in Clojure</h4>
+<p>Demo of HTM implemented in Clojure, with a web-based visualization.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=hE6alw_HHrk">http://www.youtube.com/watch?v=hE6alw_HHrk</a></li>
+<li>Blog: <a href="http://floybix.github.io/2014/10/27/hackathon_demo/">http://floybix.github.io/2014/10/27/hackathon_demo/</a></li>
+<li>Code: <a href="https://github.com/nupic-community/comportex">https://github.com/nupic-community/comportex</a></li>
+<li>By: Felix Andrews</li>
+</ul>
+<h4>Smart Harbor</h4>
+<p>Tracking geolocations of cargo ships in the port of Rotterdam.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=vpAQUHc8_4U">http://www.youtube.com/watch?v=vpAQUHc8_4U</a></li>
+<li>By: Daniel Ducro, Egbert Wietses</li>
+</ul>
+<h4>Temporal Memory in Racket</h4>
+<p>A Racket-based implementation of the current temporal memory algorithm.
+Amazingly, this was Rian’s first real program. It’s very impressive that he
+chose to implement HTM in a Lisp!</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=Zz5fFAEYKHc">http://www.youtube.com/watch?v=Zz5fFAEYKHc</a></li>
+<li>Slides: <a href="http://www.slideshare.net/numenta/temporal-memory-in-racket">http://www.slideshare.net/numenta/temporal-memory-in-racket</a></li>
+<li>By: Rian Shams</li>
+</ul>
+<h4>Jinglinator 4000</h4>
+<p>I am training NuPIC on a dataset of 500 jingles and generating new jingles based
+on input vectors of a few notes.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=MEsOb9p3nmU">http://www.youtube.com/watch?v=MEsOb9p3nmU</a></li>
+<li>Code: <a href="https://github.com/salexashenko/The-Jinglinator-Returns">https://github.com/salexashenko/The-Jinglinator-Returns</a></li>
+<li>By: Sergey Alexashenko</li>
+</ul>
+<h4>Corti-Yelp</h4>
+<p>Using <a href="http://cortical.io">http://cortical.io</a> to analyze Yelp’s academic dataset. This might not have
+been the most successful hack at the hackathon, but it was one of the most
+entertaining.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=_H9e7CD_BOc">http://www.youtube.com/watch?v=_H9e7CD_BOc</a></li>
+<li>Source: <a href="https://github.com/baroobob/CortiYelp">https://github.com/baroobob/CortiYelp</a></li>
+<li>By: Jim Bridgewater, Artem Avdacev</li>
+</ul>
+<h4>NuPIC EEG</h4>
+<p>Nicolas used his hack to work on a <a href="https://www.kaggle.com/c/seizure-prediction">Kaggle competition</a>,
+and the rules of the competition prevent us from displaying his video or source
+code until the competition is over.</p>
+<ul>
+<li>By: Nicolas Thiebaud</li>
+</ul>
+<h4>AutoDJ</h4>
+<p>I’m extracting my track-by-track music listening history from <a href="http://Last.fm">Last.fm</a> and then
+seeing if NUPIC can predict what artist I’m going to listen to next given a
+sequence of my previous listens.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=VZ83xOhUc2c">http://www.youtube.com/watch?v=VZ83xOhUc2c</a></li>
+<li>By: George London</li>
+</ul>
+<h4>Kaggle Bike Share</h4>
+<p>Chandan tried using NuPIC to solve a
+<a href="https://www.kaggle.com/c/bike-sharing-demand">Kaggle Bike Sharing</a>
+competition, where one week of demand data is missing from each month.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=J4owvvBPPS8">http://www.youtube.com/watch?v=J4owvvBPPS8</a></li>
+<li>By: Chandan Maruthi</li>
+</ul>
+<h4>Always Have Paris</h4>
+<p>Feed a network of htms with articles about different topics. Get the network to
+extract and learn interesting facts from the input. Then query the network’s
+knowledge.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=ikmflJLElkc">http://www.youtube.com/watch?v=ikmflJLElkc</a></li>
+<li>Slides: <a href="http://www.slideshare.net/numenta/well-always-have-paris">http://www.slideshare.net/numenta/well-always-have-paris</a></li>
+<li>By: Pablo Gonzalvez, Soren Madsen, Erik Graf</li>
+</ul>
+<h4>Heartbeat</h4>
+<p>Apple Watch app for telling if there is an anomaly detected in your heartbeat.
+You can view the rhythm strip and share the information with your doctor.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=bCJeSlxSpbo">http://www.youtube.com/watch?v=bCJeSlxSpbo</a></li>
+<li>More: <a href="https://www.youtube.com/watch?v=4LTvr7QaSIM">https://www.youtube.com/watch?v=4LTvr7QaSIM</a></li>
+<li>Source: <a href="https://github.com/happywatch/heartbeat">https://github.com/happywatch/heartbeat</a></li>
+<li>By: Ben Morrow</li>
+</ul>
+<h4>EEG Data Classify</h4>
+<p>EEG data is classified by NuPIC based upon the thoughts of the subject. EEG data
+was collected by an <a href="http://openbci.com/">http://openbci.com/</a> board.</p>
+<ul>
+<li>Video: <a href="http://www.youtube.com/watch?v=UEh48KOmkIA">http://www.youtube.com/watch?v=UEh48KOmkIA</a></li>
+<li>Slides: <a href="https://docs.google.com/presentation/d/1wFWSk4P3yHDkPzV19Q0sZYX9NhwvEBLJQQXKh0eyZws/edit?usp=sharing">https://docs.google.com/presentation/d/1wFWSk4P3yHDkPzV19Q0sZYX9NhwvEBLJQQXKh0eyZws/edit?usp=sharing</a></li>
+<li>Code: <a href="https://github.com/marionleborgne/nupic.eeg">https://github.com/marionleborgne/nupic.eeg</a></li>
+<li>By: Marion Le Borgne</li>
+</ul>
+<h2>Conclusion</h2>
+<p>As the NuPIC community grows, I continue to be awed and inspired by its passion
+and perseverance. A sincere thank you to all who have participated on our
+mailing lists, our code repositories, and our hackathons. You folks are the
+reason we’ve gone open source, and the reason we continue to thrive. I see a
+bright future for us, and I truly believe we will lead the path forward to truly
+intelligent machines built on neocortical principles.</p>
+<p>It’s not an easy road, but you are the <strong>pioneers</strong> helping us pave it for the
+masses that will follow. I had a wonderful time interacting with all of you, and
+I look forward to even more ground-breaking work at the next hackathon in
+Spring 2015.</p>
+<p>Thanks to <a href="https://twitter.com/jeffreyfohl">Jeff Fohl</a> for the excellent
+logo design!</p>
+<p><strong>By the way!</strong> You can see all the videos and photos taken at every hackathon
+on our <a href="http://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA">YouTube channel</a>
+and <a href="https://www.flickr.com/photos/nupic/">Flickr page</a>.</p>
+<p><a href="http://www.reddit.com/r/MachineLearning/comments/2ktnpt/2014_fall_nupic_hackathon_outcome/">Comments on Reddit</a></p>
+</div></div></div><div class="md_author_1KZlz tachyons_lh-copy_15fP- tachyons_relative_1fOAN" data-reactid="43"><span class="index_subtle_3x1V5 tachyons_silver_3lNzP" data-reactid="44"><span class="index_avatar_27stB tachyons_dib_1gHl4 tachyons_mr2_2P1HS tachyons_relative_1fOAN tachyons_v-mid_2J0aX" data-reactid="45"><img alt="Matthew Taylor" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7 index_border_lcxQ0 tachyons_b--black-10_14Lyo tachyons_ba_1NLTg index_round_3AHvu tachyons_br-100_aI5YQ" src="/numenta-web/02db35aad4581cb04d8900d86917e22e.png" title="Matthew Taylor" data-reactid="46"/></span><!-- react-text: 47 -->Matthew Taylor<!-- /react-text --><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="48">•</span><!-- react-text: 49 -->Open Source Manager<!-- /react-text --></span></div><span data-reactid="50"></span><div class="md_back_wPbZh tachyons_mt4_3dV0e tachyons_ttc_3Js-n" data-reactid="51"><span class="index_iconMarker_3J6Z3" data-reactid="52"><span class="index_icon_2bHFW tachyons_mr1_28BCg tachyons_relative_1fOAN" data-reactid="53"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;" data-reactid="54"><g data-reactid="55"><path d="m26.3 10v20q0 0.6-0.4 1t-1 0.4-1-0.4l-10-10q-0.5-0.4-0.5-1t0.5-1l10-10q0.4-0.4 1-0.4t1 0.4 0.4 1z" data-reactid="56"></path></g></svg></span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/blog/" data-reactid="57"><!-- react-text: 58 -->All <!-- /react-text --><!-- react-text: 59 -->Blog<!-- /react-text --><!-- react-text: 60 --> Posts<!-- /react-text --></a></span></div></div></section></article></main><div class="index_footbar_gJvSl tachyons_w-100_1xCa-" data-reactid="61"><footer class="index_footer_2NjIo tachyons_br--bottom_1e0iK tachyons_br2_rOajV tachyons_center_iwfDV tachyons_f6_14UFF tachyons_mw-100_ge3eY tachyons_mw7-m_FjTMD tachyons_mw8-l_KcPEl tachyons_pv4_1RQ2o tachyons_silver_3lNzP tachyons_tc_3abHg" data-reactid="62"><span data-reactid="63"><!-- react-text: 64 -->© <!-- /react-text --><!-- react-text: 65 -->2016<!-- /react-text --><!-- react-text: 66 --> <!-- /react-text --><!-- react-text: 67 --> <!-- /react-text --><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/" data-reactid="68">Numenta HTM Community</a></span><span class="index_mark_2ecsu tachyons_dib_1gHl4 tachyons_h1_Kzadc tachyons_mh3_2gHoo tachyons_relative_1fOAN tachyons_w1_1jOQc" data-reactid="69"><img alt="Numenta Logo Mark" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7" src="/numenta-web/87b23beb8a4b7dea7d88099bfb28d182.svg" title="Numenta" data-reactid="70"/></span><span data-reactid="71"><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/legal/terms/" data-reactid="72">Terms</a><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="73">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/legal/privacy/" data-reactid="74">Privacy</a><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="75">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/sitemap/" data-reactid="76">Sitemap</a><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="77">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="https://github.com/numenta/numenta-web" data-reactid="78">Source</a></span></footer></div></div></div><script src="/numenta-web/bundle.js?v=0.2.6"></script></body></html>

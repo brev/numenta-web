@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+ <html lang="en"><head><title data-react-helmet="true">HTM.java Receives New Network API | Numenta.org</title><meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge"/><meta data-react-helmet="true" name="author" content="Numenta HTM Community"/><meta data-react-helmet="true" name="description" content="Numenta HTM Community — Numenta Hierarchical Temporal Memory (HTM) Community and Resources"/><meta data-react-helmet="true" name="keywords" content="Numenta,HTM,Community,—,Numenta,Hierarchical,Temporal,Memory,(HTM),Community,and,Resources"/><meta data-react-helmet="true" name="generator" content="© Numenta.org v0.2.6 Wed Nov 16 2016 17:16:35 GMT-0800 / Gatsby.js"/><meta data-react-helmet="true" name="mobile-web-app-capable"/><meta data-react-helmet="true" name="theme-color"/><meta data-react-helmet="true" name="application-name"/><meta data-react-helmet="true" name="apple-mobile-web-app-capable"/><meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style"/><meta data-react-helmet="true" name="apple-mobile-web-app-title"/><meta data-react-helmet="true" name="msapplication-TileColor"/><meta data-react-helmet="true" name="msapplication-TileImage" content="mstile-144x144.png"/><meta data-react-helmet="true" name="msapplication-config" content="browserconfig.xml"/><link data-react-helmet="true" rel="stylesheet" href="/numenta-web/styles.css?v=0.2.6"/><link data-react-helmet="true" rel="manifest" href="/numenta-web/manifest.json"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="57x57" href="/numenta-web/apple-touch-icon-57x57.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="60x60" href="/numenta-web/apple-touch-icon-60x60.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="72x72" href="/numenta-web/apple-touch-icon-72x72.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="76x76" href="/numenta-web/apple-touch-icon-76x76.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="114x114" href="/numenta-web/apple-touch-icon-114x114.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="120x120" href="/numenta-web/apple-touch-icon-120x120.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="144x144" href="/numenta-web/apple-touch-icon-144x144.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="152x152" href="/numenta-web/apple-touch-icon-152x152.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/numenta-web/apple-touch-icon-180x180.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/numenta-web/apple-touch-startup-image-320x460.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-640x920.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-640x1096.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-750x1294.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/numenta-web/apple-touch-startup-image-1182x2208.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/numenta-web/apple-touch-startup-image-1242x2148.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/numenta-web/apple-touch-startup-image-748x1024.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/numenta-web/apple-touch-startup-image-768x1004.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-1496x2048.png"/><link data-react-helmet="true" rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/numenta-web/apple-touch-startup-image-1536x2008.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="228x228" href="/numenta-web/coast-228x228.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/numenta-web/favicon-32x32.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="192x192" href="/numenta-web/android-chrome-192x192.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/numenta-web/favicon-16x16.png"/><link data-react-helmet="true" rel="shortcut icon" href="/numenta-web/favicon.ico"/><link data-react-helmet="true" rel="yandex-tableau-widget" href="/numenta-web/yandex-browser-manifest.json"/><script> var _prum = [['id', '55a7dbc8abe53dba666b928b'], ['mark', 'firstbyte', (new Date()).getTime()]]; (function() { var s = document.getElementsByTagName('script')[0], p = document.createElement('script'); p.async = 'async'; p.src = '//rum-static.pingdom.net/prum.min.js'; s.parentNode.insertBefore(p, s); })(); </script></head><body class="body"><div id="react-mount"><div class="index_layout_2APRV tachyons_f4_1ZtFo tachyons_f5-ns_QvA9N tachyons_fw4_3tjGI" data-reactroot="" data-reactid="1" data-react-checksum="-103236344"><div class="index_appbar_2mn1B tachyons_fixed_I-cP7 tachyons_h3_bmkiF tachyons_ph3_QxldC tachyons_shadow-1_8y5Al tachyons_top-0_2pSw0 tachyons_w-100_1xCa-" data-reactid="2"><header class="index_header_Rq-u8 tachyons_center_iwfDV tachyons_cf_g7Rbw tachyons_mw-100_ge3eY tachyons_mw7-m_FjTMD tachyons_mw8-l_KcPEl" data-reactid="3"><div class="index_logo_36Fb9 tachyons_fl_wJK08 tachyons_relative_1fOAN tachyons_top-1_UVWcI" data-reactid="4"><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/" data-reactid="5"><img alt="Numenta Logo" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7" src="/numenta-web/3a169c8bb69e60988a590d930ff8b552.svg" title="Numenta" data-reactid="6"/></a></div><div class="index_search__jDs6 tachyons_fr_2Nnlq tachyons_mt3_11A88" data-reactid="7"><div class="index_search_3w2G7 tachyons_cf_g7Rbw" data-reactid="8"><form accept-charset="UTF-8" autocomplete="off" class="index_form_Fg7MS tachyons_pa0_RbR9y tachyons_mb3_1mVjM tachyons_mh0_2XVE6 tachyons_mt0_12uVA" enctype="multipart/form-data" method="post" data-reactid="9"><span class="index_label_2Lg1G tachyons_clip_2YGUH" data-reactid="10"><label class="index_formLabel_3oaZS tachyons_f5_2mBLC tachyons_fl_wJK08 tachyons_fw6_1NVHA tachyons_mb3_1mVjM tachyons_mr3_1EzMb tachyons_relative_1fOAN tachyons_v-top_1JDSz tachyons_w4_3jJdW" for="q" data-reactid="11">Search</label></span><span class="index_query_1UQAG tachyons_fl_wJK08 tachyons_flex_22HX5 tachyons_h2_1bnrx tachyons_mb2_1U4Ly tachyons_relative_1fOAN tachyons_w4_3jJdW tachyons_w5-ns_1tFKD" data-reactid="12"><input type="search" class="index_formInput_rh9lC tachyons_ba_1NLTg tachyons_b--black-20_1zcpL tachyons_br2_rOajV tachyons_f5_2mBLC tachyons_flex-auto_1Fvbr tachyons_fw3_3xIyG tachyons_input-reset_3AzOw tachyons_pb1_2R8OW tachyons_ph2_2upwK tachyons_pt2_3ymYR tachyons_silver_3lNzP index__focus_TOE2N index_large_1iVB4" id="q" name="q" placeholder="Search..." value="" data-reactid="13"/></span><button class="index_button_39gnr tachyons_br2_rOajV tachyons_dim_1n1Ux tachyons_flex-auto_1Fvbr tachyons_ma0_2xh0v tachyons_pointer_25KSQ index__disabled_1vwUl index_light_1eAVK tachyons_bg-white_WF0bD tachyons_bn_3W7rs tachyons_f4_1ZtFo tachyons_pa1_3f3GD" type="submit" data-reactid="14"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;color:inherit;" data-reactid="15"><g data-reactid="16"><path d="m27.2 18.6q0-4.2-2.9-7.1t-7.1-2.9-7 2.9-3 7.1 2.9 7 7.1 3 7.1-3 2.9-7z m11.4 18.5q0 1.2-0.8 2.1t-2 0.8q-1.2 0-2-0.8l-7.7-7.7q-4 2.8-8.9 2.8-3.2 0-6.1-1.3t-5-3.3-3.4-5-1.2-6.1 1.2-6.1 3.4-5.1 5-3.3 6.1-1.2 6.1 1.2 5 3.3 3.4 5.1 1.2 6.1q0 4.9-2.7 8.9l7.6 7.6q0.8 0.9 0.8 2z" data-reactid="17"></path></g></svg></button></form></div></div></header></div><main class="index_main_tnP91 tachyons_bg-white_WF0bD tachyons_br--bottom_1e0iK tachyons_br2_rOajV tachyons_center_iwfDV tachyons_mt5_2gsGq tachyons_mw-100_ge3eY tachyons_mw7-m_FjTMD tachyons_mw8-l_KcPEl tachyons_overflow-hidden_LTNH3 tachyons_pb4_38sbl tachyons_ph3_QxldC tachyons_ph4-l_pNzb2 tachyons_pt3_1QCt4 tachyons_shadow-4_3--ZM" data-reactid="18"><!-- react-empty: 19 --><!-- react-empty: 20 --><article class="md_md_tlmEy tachyons_center_iwfDV tachyons_lh-copy_15fP- tachyons_measure_hbrV7 tachyons_measure-wide-l_2Qfse" data-reactid="21"><!-- react-empty: 22 --><div class="md_date_1QTAL tachyons_fw5_3JqK9 tachyons_lh-copy_15fP- tachyons_mb2_1U4Ly tachyons_ttc_3Js-n" data-reactid="23"><time class="index_time_7qs6g" datetime="2015-06-08T00:00:00-07:00" data-reactid="24">Mon, Jun 08, 2015</time><span data-reactid="25"><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="26">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/blog/" data-reactid="27">Blog</a></span></div><section class="index_section_3riWR" data-reactid="28"><h1 class="index_headline_2MYZb tachyons_f2_ipMqY index__base_d8fC- tachyons_black_2yDOs tachyons_fw6_1NVHA tachyons_lh-title_1xoXI tachyons_mv1_3WPZc tachyons_pa0_RbR9y" data-reactid="29">HTM.java Receives New Network API</h1><div class="index_article_2F-Fv tachyons_mb1_2-HF7 tachyons_mt3_11A88" data-reactid="30"><div class="md_author_1KZlz tachyons_lh-copy_15fP- tachyons_relative_1fOAN" data-reactid="31"><span class="index_subtle_3x1V5 tachyons_silver_3lNzP" data-reactid="32"><span class="index_avatar_27stB tachyons_dib_1gHl4 tachyons_mr2_2P1HS tachyons_relative_1fOAN tachyons_v-mid_2J0aX" data-reactid="33"><img alt="David Ray" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7 index_border_lcxQ0 tachyons_b--black-10_14Lyo tachyons_ba_1NLTg index_round_3AHvu tachyons_br-100_aI5YQ" src="/numenta-web/dfcb13e9dfdc45cfce309d603abce583.png" title="David Ray" data-reactid="34"/></span><!-- react-text: 35 -->David Ray<!-- /react-text --><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="36">•</span><!-- react-text: 37 -->Community Contributor<!-- /react-text --></span></div><div class="md_media_12JBZ tachyons_tc_3abHg" data-reactid="38"><img alt="HTM.java Receives New Network API" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7 index_border_lcxQ0 tachyons_b--black-10_14Lyo tachyons_ba_1NLTg index_mw_2LWC6 tachyons_mw-100_ge3eY index_shadow_2DHwp tachyons_shadow-4_3--ZM" src="/numenta-web/blog/2015/06/08/htm-java-receives-new-network-api/../images/image.png" data-reactid="39"/></div><div class="md_content_11f2L md__dropcap_3sI70" data-reactid="40"><div class="index_markdown_P7JK5 tachyons_center_iwfDV tachyons_lh-copy_15fP- tachyons_measure_hbrV7 tachyons_measure-wide-l_2Qfse" data-reactid="41"><div data-reactid="42"><p>Greetings Earthlings! (…and otherwise affiliated) :-) We’re
+<em>[ insert understatement here ]</em> “<em><strong>excited</strong></em>?” to announce the completion of
+the Network API <strong>(NAPI)</strong> for the
+<a href="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html">Java™</a>
+port of <a href="https://github.com/numenta/nupic/wiki">NuPIC</a>. This addition to
+<a href="https://github.com/numenta/htm.java">HTM.java</a> will usher in a whole new realm
+of possibilities for application integration and for streaming data
+applications.</p>
+<p><strong>Stream of consciousness you say? Maybe someday… :-)</strong> For now let us be
+content with easy integration of <a href="http://numenta.com">Numenta’s</a> learning,
+prediction, and anomaly detection algorithms into new forward-thinking Java
+applications; distributed data applications; and enterprise ecosystems.</p>
+<p>Until now, Java users of NuPIC had to be content with piecing together
+individual algorithmic components by supplying their own duct-tape, stitching
+and glue. This is no longer necessary, as the NAPI is very robust; has lots of
+features, and most importantly - is <strong>hypnotizing-ly easy to work with!</strong></p>
+<p>Here’s an example of the code it takes to get a full featured network up and
+running:</p>
+<pre><code class="language-java">Parameters p = NetworkDemoHarness.getParameters();
+p = p.union(NetworkDemoHarness.getNetworkDemoTestEncoderParams());
+
+Network network = Network.create(<span class="hljs-string">"Network API Demo"</span>, p)
+  .add(Network.createRegion(<span class="hljs-string">"Region 1"</span>)
+  .add(Network.createLayer(<span class="hljs-string">"Layer 2/3"</span>, p)
+  .alterParameter(KEY.AUTO_CLASSIFY, Boolean.TRUE)
+  .add(Anomaly.create())
+  .add(<span class="hljs-keyword">new</span> TemporalMemory())
+  .add(<span class="hljs-keyword">new</span> SpatialPooler())
+  .add(Sensor.create(FileSensor::create, SensorParams.create(
+    Keys::path, <span class="hljs-string">""</span>, ResourceLocator.path(<span class="hljs-string">"rec-center-hourly.csv"</span>))))));
+
+network.start();
+</code></pre>
+<p><strong>…and that’s it!</strong></p>
+<p>For less “ear-chattering” and more “quick-starting”, see the
+<a href="https://github.com/numenta/htm.java/wiki/NAPI-Quick-Start-Guide">Quick Start Guide &amp; Docs</a>.</p>
+<h3>Decided to stick around eh?</h3>
+<p>Well, since you’re here, let’s talk more about how the NAPI is designed and a
+bit more about its features.</p>
+<p>In <strong>HTM.java</strong>, the hierarchical entities seek to provide corollaries to actual
+biological structures. A Network can be thought of like a single neocortex,
+while a Region can be thought of as a location in the neocortex that is
+sensitized to a particular function, behavior or memory. Lastly, Layers are
+metaphors for actual layers in the neocortex such as the 6 layers identified by
+neurological researchers. Thus, in HTM.java, the Layer is the container for the
+<em><strong>Connections</strong></em> object and eventually will hold the column/cell matrix that
+the Connections object now holds. (<strong>Hint!:</strong> Work to be done here). The
+SpatialPooler and TemporalMemory describe how connections are formed and their
+associations, and algorithmic data flow - but are not physical members of a
+hierarchy - they describe <strong>how</strong> data <strong>flows</strong>.</p>
+<p>At the top level there is the Network. A Network is a container of Regions,
+which in turn contain Layers, which in turn contain <em><strong>Columns</strong></em>, <em><strong>Cells</strong></em>,
+<em><strong>Dendrites</strong></em> and <em><strong>Synapses</strong></em> - and are acted upon by the different
+algorithms (i.e. SP, TM etc.). A Network can be both listened to and it can have
+data submitted to it. In fact, this is its normal usage pattern.</p>
+<p>Regions are collections of Layers. While they are not an optional construct
+within a Network, they also don’t do all that much. Regions are best thought of
+as “groups” of algorithmic hierarchies that may in the future, specialize on
+types of knowledge or types of behavior or other functionality. They are here
+mostly to provide a corollary to Regions in the neocortex - but mostly they are
+meant to identify and distinguish layers of functionality specialized for a
+particular purpose.</p>
+<p>The last level in the hierarchy is the <em><strong>Layer</strong></em>. Layers contain the
+column/cell matrix (<em><strong>Connections</strong></em>) and house all the algorithmic and
+functional components. This is where the heart of the NAPI beats. Layers house
+most of the functionality - automatically forming computational units
+implemented via RxJava Observables which know how to connect one algorithm to
+another, transforming its data in the process in order to input data to the next
+succeeding algorithm (whatever it may be) in the format that that algorithm
+expects. Layers emit <em><strong>Inference</strong></em> objects when subscribed to (either via
+their <code>Layer.subscribe()</code> method or by retrieving their <code>Observable&lt;Inference&gt;</code>
+object, and calling <code>Observable.subscribe()</code> on it); and may have data directly
+submitted to them via the <code>onNext()</code> method of their <code>Observable</code>. To retrieve
+their <code>Observable</code>, simply call <code>Layer.observe()</code> which returns an
+<code>Observable&lt;Inference&gt;</code> object. While the <code>Layer</code> object is flexible enough to
+function this way, the typical usage pattern will be to create a <em><strong>Network</strong></em>
+object (with a <em><strong>Sensor</strong></em> connected at the bottom), start it; then subscribe
+to it via its <code>Observable</code> (<code>Network.observe()</code>), in order to receive its
+emitted <code>Inference</code> objects. All hierarchy objects may be “listened” to by
+calling (<em><strong>Network.observe()</strong></em>, <em><strong>Region.observe()</strong></em>, or
+<em><strong>Layer.observe()</strong></em> / <em><strong>Layer.subscribe()</strong></em>).</p>
+<p>The <em><strong>Inference</strong></em> object emitted contains a vast amount of information such as
+the predicted columns, the previously predicted columns, the activated columns
+etc. In addition data may be retrieved from a given <code>Layer</code> following each cycle
+also.</p>
+<h3>Usage (A bit of FRP)</h3>
+<p>First, as you can see above, entire networks can be constructed using the
+&quot;fluent&quot; style of declaration (all one method call chain). This reduces
+boilerplate typing and clarifies the hierarchical structure of the api’s
+constructs.</p>
+<p>Secondly, the whole framework is designed with Streaming data and Asynchronous
+usage in mind. The network’s <em><strong>Sensors</strong></em> were implemented using the Java 8
+Streams API and will be totally asynchronous ready when work on the various
+<em><strong>Encoders</strong></em> is completed to make them thread safe.</p>
+<blockquote>
+<p>HTM.java’s <code>Stream</code> usage has been customized to include “batching” of input -
+speeding up parallel processing by up to 30 or 40%. The
+<a href="https://github.com/numenta/htm.java/blob/master/src/test/java/org/numenta/nupic/network/sensor/BatchedCsvStreamBenchmark.java"><code>BatchedCsvStreamBenchmark</code></a>
+test class can be run as a demonstration. (Your mileage may vary.)</p>
+</blockquote>
+<p>Finally, the
+<a href="http://reactivex.io/documentation/observable.html">RxJava Reactive Extensions library</a>
+was used throughout to simplify the connection of algorithms within
+a <em><strong>Layer</strong></em>.</p>
+<p>Think about it…</p>
+<blockquote>
+<p><em>Each Layer can contain one or more components, and it is unknown which ones
+will exist in any given Layer. Next, these components all output different
+data and take in different data in different combinations. So a framework that
+allows for all of this must be adaptable and able to transform data based on
+the dynamic existence or non-existence of any particular algorithm
+or component!</em></p>
+</blockquote>
+<p>Additionally, because at all levels (except the bottom input level),
+<em><strong>Inference</strong></em> objects are passed between components, layers and regions;
+RxJava Observables can be obtained at any point in the hierarchy, and subscribed
+to to receive output data --or-- they can be combined, operated upon and
+manipulated in Map-Reduce form! <strong>How exciting is that?</strong></p>
+<blockquote>
+<p><em><strong>This means that you can take output from any point and operate on it
+(combine, zip, merge, delay etc.) in your own applications using RxJava
+idioms!</strong></em></p>
+</blockquote>
+<h3>A bit about input / output (FEED ME!)</h3>
+<p>This is discussed in more detail in the wiki linked below, but we just wanted to
+touch on this briefly.</p>
+<p>Networks can be fed either by connecting them to receive streaming data
+&quot;automatically&quot; by declaring a <em><strong>FileSensor</strong></em> or <em><strong>URLSensor</strong></em>. Additionally
+you can call <em><strong>Layer.compute()</strong></em> directly with either an <strong>int[]</strong>,
+<strong>String[]</strong> (not fully implemented), <strong>Map</strong> (like an encoder mapping), or
+<strong>ManualInput</strong> object. Lastly, you can use an <em><strong>ObservableSensor</strong></em> to either
+feed in data manually/programmatically <strong>–or–</strong> connect to other Observable
+emitters within your applications!</p>
+<blockquote>
+<p><code>ManualInput</code> objects inherit from <code>Inference</code> (the interface received on
+output and passed between layers, regions, and other components)</p>
+</blockquote>
+<p>At the other end, <em><strong>Networks</strong></em> can be subscribed to in order to receive data
+&quot;out of the top&quot; (And so can Regions, and Layers - see <em><strong>Region.observe()</strong></em>
+and <em><strong>Layer.observe()</strong></em> ).</p>
+<p>Here’s a brief look at the Observable interface’s simplicity:</p>
+<pre><code class="language-java">Observable&lt;Inference&gt; o = network.observe();
+<span class="hljs-comment">// This Observable can be used a million different ways!</span>
+o.subscribe(<span class="hljs-keyword">new</span> Subscriber&lt;Inference&gt;() {
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCompleted</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Do finalization work here if desired</span>
+  }
+
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onError</span><span class="hljs-params">(Throwable e)</span> </span>{
+    <span class="hljs-comment">// Error handling here</span>
+  }
+
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onNext</span><span class="hljs-params">(Inference i)</span> </span>{
+    <span class="hljs-comment">// Called on every cycle of the Network - work is done here</span>
+  }
+});
+</code></pre>
+<h3>Where do I fit in?</h3>
+<p>Now that the ground work has been laid, there is a <strong>TON</strong> of things to do! If
+you would like to get your name in bright lights, or simply help out with
+HTM.java drop a line to the <strong>hackers</strong> mailing list and offer to help - all are
+welcome (at any level!).</p>
+<p>For more in depth information (Work in progress), start here with the
+<a href="https://github.com/numenta/htm.java/wiki/NAPI-In-Depth-Component-Overview">NAPI - In-Depth Component Overview</a>;
+which leads into a tutorial series of wiki pages and docs.</p>
+<p>To dig right in, look at the <a href="https://github.com/numenta/htm.java/wiki/NAPI-Quick-Start-Guide">Quick Start
+Guide</a></p>
+<h3>Lastly…</h3>
+<p>I’d like to mention that I’ve had a lot of help from my team members and the
+leadership at <a href="http://Cortical.io">Cortical.io</a> with organizing my work, and also being generously
+granted the time to work on this project! (I have such a <strong>great</strong> job!) - Thank
+you!</p>
+<p>Happy Hacking!</p>
+<p><strong>Next:</strong></p>
+<ul>
+<li><a href="https://github.com/numenta/htm.java/wiki/NAPI-Quick-Start-Guide">Quick Start Guide</a></li>
+<li><a href="http://www.reddit.com/r/MachineLearning/comments/392kao/htmjava_receives_new_network_api/">Comments on Reddit</a></li>
+</ul>
+</div></div></div><div class="md_author_1KZlz tachyons_lh-copy_15fP- tachyons_relative_1fOAN" data-reactid="43"><span class="index_subtle_3x1V5 tachyons_silver_3lNzP" data-reactid="44"><span class="index_avatar_27stB tachyons_dib_1gHl4 tachyons_mr2_2P1HS tachyons_relative_1fOAN tachyons_v-mid_2J0aX" data-reactid="45"><img alt="David Ray" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7 index_border_lcxQ0 tachyons_b--black-10_14Lyo tachyons_ba_1NLTg index_round_3AHvu tachyons_br-100_aI5YQ" src="/numenta-web/dfcb13e9dfdc45cfce309d603abce583.png" title="David Ray" data-reactid="46"/></span><!-- react-text: 47 -->David Ray<!-- /react-text --><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="48">•</span><!-- react-text: 49 -->Community Contributor<!-- /react-text --></span></div><span data-reactid="50"></span><div class="md_back_wPbZh tachyons_mt4_3dV0e tachyons_ttc_3Js-n" data-reactid="51"><span class="index_iconMarker_3J6Z3" data-reactid="52"><span class="index_icon_2bHFW tachyons_mr1_28BCg tachyons_relative_1fOAN" data-reactid="53"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;" data-reactid="54"><g data-reactid="55"><path d="m26.3 10v20q0 0.6-0.4 1t-1 0.4-1-0.4l-10-10q-0.5-0.4-0.5-1t0.5-1l10-10q0.4-0.4 1-0.4t1 0.4 0.4 1z" data-reactid="56"></path></g></svg></span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/blog/" data-reactid="57"><!-- react-text: 58 -->All <!-- /react-text --><!-- react-text: 59 -->Blog<!-- /react-text --><!-- react-text: 60 --> Posts<!-- /react-text --></a></span></div></div></section></article></main><div class="index_footbar_gJvSl tachyons_w-100_1xCa-" data-reactid="61"><footer class="index_footer_2NjIo tachyons_br--bottom_1e0iK tachyons_br2_rOajV tachyons_center_iwfDV tachyons_f6_14UFF tachyons_mw-100_ge3eY tachyons_mw7-m_FjTMD tachyons_mw8-l_KcPEl tachyons_pv4_1RQ2o tachyons_silver_3lNzP tachyons_tc_3abHg" data-reactid="62"><span data-reactid="63"><!-- react-text: 64 -->© <!-- /react-text --><!-- react-text: 65 -->2016<!-- /react-text --><!-- react-text: 66 --> <!-- /react-text --><!-- react-text: 67 --> <!-- /react-text --><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/" data-reactid="68">Numenta HTM Community</a></span><span class="index_mark_2ecsu tachyons_dib_1gHl4 tachyons_h1_Kzadc tachyons_mh3_2gHoo tachyons_relative_1fOAN tachyons_w1_1jOQc" data-reactid="69"><img alt="Numenta Logo Mark" class="index_image_3raMR tachyons_br2_rOajV tachyons_mb1_2-HF7" src="/numenta-web/87b23beb8a4b7dea7d88099bfb28d182.svg" title="Numenta" data-reactid="70"/></span><span data-reactid="71"><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/legal/terms/" data-reactid="72">Terms</a><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="73">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/legal/privacy/" data-reactid="74">Privacy</a><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="75">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="/numenta-web/sitemap/" data-reactid="76">Sitemap</a><span class="index_spacer_1sa9- tachyons_mh1_-Z3vI tachyons_silver_3lNzP" data-reactid="77">•</span><a class="index_textlink_xojiV tachyons_dim_1n1Ux tachyons_link_2zVru tachyons_underline-hover_1xvkF index__visited_2CaWR" href="https://github.com/numenta/numenta-web" data-reactid="78">Source</a></span></footer></div></div></div><script src="/numenta-web/bundle.js?v=0.2.6"></script></body></html>
