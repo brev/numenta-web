@@ -21,3 +21,8 @@
 .content {
   composes: layout-content from '../static/assets/css/theme.css';
 }
+
+.promo {
+  composes: fw5 from 'tachyons';
+  composes: mv4 from 'tachyons';
+}

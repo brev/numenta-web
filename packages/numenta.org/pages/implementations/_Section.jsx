@@ -36,7 +36,10 @@ const SectionImplement = (props, {config}) => {
         </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
-            Hierarchical Temporal Memory (HTM) is a theory of intelligence that
+            <TextLink to={links.in.htm}>
+              Hierarchical Temporal Memory (HTM)
+            </TextLink> {' '}
+            is a theory of intelligence that
             can be implemented in most computer programming languages. Below are
             descriptions of several HTM implementations currently active within
             our community. For detailed descriptions of HTM algorithms, see our
