@@ -16,7 +16,7 @@
   composes: mw-100 from 'tachyons';
   composes: mw7-m from 'tachyons';
   composes: mw8-l from 'tachyons';
-  composes: pv4 from 'tachyons';
+  composes: pt4 from 'tachyons';
   composes: silver from 'tachyons';
   composes: tc from 'tachyons';
 }

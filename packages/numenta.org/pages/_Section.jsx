@@ -7,12 +7,13 @@ import React from 'react'
 import DefineItem from 'numenta-web-shared-components/DefineItem'
 import DefineTitle from 'numenta-web-shared-components/DefineTitle'
 import Glance from 'numenta-web-shared-components/Glance'
-// import Logo from 'numenta-web-shared-components/Logo'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import Spacer from 'numenta-web-shared-components/Spacer'
 import Strong from 'numenta-web-shared-components/Strong'
 import Tag from 'numenta-web-shared-components/Tag'
 import TextLink from 'numenta-web-shared-components/TextLink'
+
+import Logo from '../components/Logo'
 
 import styles from './index.css'
 
@@ -27,13 +28,14 @@ const SectionIndex = (props, {config}) => {
     <article className={styles.columns}>
       <div className={styles.aside}>
 
-        <Glance head={<Strong>Hierarchical Temporal Memory (HTM)</Strong>}>
+        <Glance head={<Logo />}>
           <DefineTitle>
             About
           </DefineTitle>
           <DefineItem>
-            HTM is a biologically-constrained theory of intelligence based on
-            years of research in theoretical neuroscience.
+            <TextLink to={links.in.htm}>HTM</TextLink> {' '}
+            is a biologically-constrained theory of intelligence based on years
+            of research in theoretical neuroscience.
           </DefineItem>
 
           <DefineTitle>
@@ -80,16 +82,6 @@ const SectionIndex = (props, {config}) => {
             <Spacer />
             <TextLink to={links.in.events}>Events</TextLink>
           </DefineItem>
-
-          <DefineTitle>
-            Latest
-          </DefineTitle>
-          <DefineItem>
-            <TextLink to="/">
-              Why did we overhaul our web design? The story behind our new look.
-              {' '} <Tag>New</Tag>
-            </TextLink>
-          </DefineItem>
         </Glance>
 
       </div>
@@ -108,6 +100,13 @@ const SectionIndex = (props, {config}) => {
           sit officia aliquip et aliquip dolor amet consequat ea. Veniam in anim
           fugiat fugiat id occaecat ex et nisi consequat enim duis.
         </Paragraph>
+        <div className={styles.promo}>
+          <Tag>New</Tag>
+          {' '}
+          <TextLink to="/">
+            Why did we overhaul our web design? The story behind our new look.
+          </TextLink>
+        </div>
 
       </div>
     </article>

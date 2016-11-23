@@ -40,8 +40,11 @@ const SectionSchool = (props, {config}) => {
           <Paragraph lead={true}>
             To help you learn about our theory and technology, we have organized
             educational content below. It is designed for anyone who wants to
-            learn about HTM cortical theory and its applications for machine
-            intelligence.
+            learn about {' '}
+            <TextLink to={links.in.htm}>
+              HTM cortical theory
+            </TextLink> {' '}
+            and its applications for machine intelligence.
           </Paragraph>
           <Paragraph>
             <IconMarker icon={<IconPlay />}>
