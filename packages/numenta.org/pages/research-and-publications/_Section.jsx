@@ -4,9 +4,11 @@
 
 import React from 'react'
 
+import Image from 'numenta-web-shared-components/Image'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
+import ImageResearch from './images/image.png'
 import styles from './index.css'
 
 
@@ -20,9 +22,13 @@ const SectionResearch = (props, {config}) => {
     <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
-          <div className={styles.brain}>
-            Aside
-          </div>
+          <Image
+            alt="HTM Research Event"
+            border={true}
+            respond="mw"
+            shadow={true}
+            src={ImageResearch}
+          />
         </div>
         <div className={styles.content}>
           {/* @TODO make Quote, Cite components and refactor */}
