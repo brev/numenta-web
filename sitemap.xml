@@ -33,6 +33,7 @@
 <url> <loc>http://numenta.org/events/2015/03/25/bay-area-nupic-meetup/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/events/2015/05/30/nupic-spring-hackathon-2015-nyc/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/events/2016/03/14/bay-area-htm-meetup/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/events/2016/07/24/numenta-anomaly-benchmark-competition-at-ieee-wcci-2016/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/events/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/faq/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/hierarchical-temporal-memory/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
