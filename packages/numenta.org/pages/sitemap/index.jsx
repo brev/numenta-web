@@ -144,6 +144,29 @@ const SitemapPage = (props, {config, route}) => {
         <div className={styles.columns}>
           <div className={styles.content}>
 
+            <Anchor name="blog" />
+            <SubTitle>
+              <TextLink to={links.in.blog}>
+                Blog
+              </TextLink>
+            </SubTitle>
+            <ListOrder marker="disc">
+              {items.blog}
+            </ListOrder>
+
+          </div>
+          <div className={styles.aside}>
+
+            <Anchor name="events" />
+            <SubTitle>
+              <TextLink to={links.in.events}>
+                Events
+              </TextLink>
+            </SubTitle>
+            <ListOrder marker="disc">
+              {items.events}
+            </ListOrder>
+
             <Anchor name="licenses" />
             <SubTitle>
               <TextLink to={links.in.license}>
@@ -176,29 +199,6 @@ const SitemapPage = (props, {config, route}) => {
             </SubTitle>
             <ListOrder marker="disc">
               {items.papers}
-            </ListOrder>
-
-            <Anchor name="blog" />
-            <SubTitle>
-              <TextLink to={links.in.blog}>
-                Blog
-              </TextLink>
-            </SubTitle>
-            <ListOrder marker="disc">
-              {items.blog}
-            </ListOrder>
-
-          </div>
-          <div className={styles.aside}>
-
-            <Anchor name="events" />
-            <SubTitle>
-              <TextLink to={links.in.events}>
-                Events
-              </TextLink>
-            </SubTitle>
-            <ListOrder marker="disc">
-              {items.events}
             </ListOrder>
 
           </div>
