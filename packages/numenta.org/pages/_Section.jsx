@@ -88,17 +88,23 @@ const SectionIndex = (props, {config}) => {
       <div className={styles.content}>
 
         <Paragraph lead={true}>
-          Numenta <Strong>HTM Community</Strong> is rad.
-          {links.in.home}.
-          Ullamco dolor reprehenderit sit id non esse voluptate minim cupidatat
-          pariatur nisi sint consequat consectetur Lorem aliqua. Velit cupidatat
-          culpa sunt anim adipisicing in ea in nisi sunt et. Minim magna nisi
-          anim eu deserunt cupidatat pariatur ullamco irure ex deserunt id magna
-          pariatur irure. Ut minim duis duis aliquip nostrud officia esse
-          proident non incididunt sint. Enim labore ut eu voluptate quis culpa
-          amet laboris Lorem sint ipsum ad aliquip dolor. Eu sunt tempor fugiat
-          sit officia aliquip et aliquip dolor amet consequat ea. Veniam in anim
-          fugiat fugiat id occaecat ex et nisi consequat enim duis.
+          Welcome to the Numenta <Strong>HTM Community</Strong> – an open source
+          platform and community for machine intelligence based on HTM Theory.
+          Here you will find our open source project {' '}
+          <TextLink to={links.in.implement}>NuPIC</TextLink> {' '}
+          (Numenta Platform for Intelligent Computing), our open source project
+          based on a theory of neocortex called {' '}
+          <TextLink to={links.in.htm}>
+            Hierarchical Temporal Memory (HTM).
+          </TextLink> {' '}
+          Parts of HTM theory have been implemented, tested, and used in
+          applications, and other parts of HTM theory are still being developed.
+          Today the HTM code in NuPIC can be used to analyze streaming data. It
+          learns the time-based patterns in data, predicts future values, and
+          detects anomalies. The HTM Community includes discussion groups on HTM
+          theory, research on extending HTM, and source code for complete
+          applications based on HTM. We welcome participation in all of these
+          areas.
         </Paragraph>
         <div className={styles.promo}>
           <Tag>New</Tag>
