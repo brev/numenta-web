@@ -82,16 +82,18 @@ class MarkdownWrapper extends React.Component {
     let author, back, date, event, media, type
 
     if (data.type === 'post') {
-      author = (
-        <div className={styles.author}>
-          <Subtle>
-            <Avatar name={data.author} />
-            {data.author}
-            <Spacer />
-            {data.org}
-          </Subtle>
-        </div>
-      )
+      if (key !== 'papers') {
+        author = (
+          <div className={styles.author}>
+            <Subtle>
+              <Avatar name={data.author} />
+              {data.author}
+              <Spacer />
+              {data.org}
+            </Subtle>
+          </div>
+        )
+      }
 
       if (postTypes.indexOf(key) > -1) {
         type = (
