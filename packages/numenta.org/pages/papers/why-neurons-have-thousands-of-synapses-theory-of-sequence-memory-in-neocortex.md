@@ -12,9 +12,12 @@ title: "Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in N
 type: post
 ---
 
-**J. Hawkins and S. Ahmad**, Frontiers in Neural Circuits. 10 (2016) 1–13.
-doi:10.3389/fncir.2016.00023. This paper was published on March 30, 2016. You
-can [read and download the paper here][1].
+| | |
+|-|-|
+| **Authors** | J. Hawkins and S. Ahmad |
+| **Journal** | Frontiers in Neural Circuits, 10 (2016) 1–13, `doi:10.3389/fncir.2016.00023` |
+| **Online** | [Read or Download this Paper][1] |
+| **Published** | March 30, 2016 |
 
 All sensory inputs and all behavior comprise complex sequences of patterns. In
 this paper we propose that the most fundamental operation of all neocortical
@@ -30,7 +33,8 @@ neocortex, and the importance of sequence memory, we propose that this form of
 sequence memory could be a universal property of all neocortical tissue.
 
 ![Real, HTM, and Deep Learning neurons](../images/why-neurons-have-thousands.png)
-> *Visual comparison of Biological, HTM, and Deep Learning neurons.*
+> ***Image from the paper.*** *Visual comparison of Biological, HTM, and Deep
+  Learning neurons.*
 
 ## Frequently asked questions about this research
 
@@ -115,26 +119,6 @@ The model described in the paper demonstrate the following key properties:
 
 A [companion paper][5], to appear in Neural Computation in November 2016,
 provides more detailed machine learning comparisons of the above properties.
-
-### Q. What are active dendrites and why do you need them?
-
-@TODO
-
-### Q. So why does a neuron have thousands of synapses?
-
-@TODO
-
-### Q. How does the model learn?
-
-@TODO
-
-### Q. How is the model robust to noise and faults?
-
-@TODO
-
-### Q. Does your model use inhibition?
-
-@TODO
 
 ### Q. Where can I find out more?
 

@@ -12,8 +12,12 @@ title: "Continuous Online Sequence Learning with an Unsupervised Neural Network 
 type: post
 ---
 
-This paper has been published in Neural Computation 28, **2474–2504** (2016).
-You can [read and download the paper here][1].
+| | |
+|-|-|
+| **Authors** | Y. Cui, S. Ahmad, J. Hawkins, and C. Surpur |
+| **Journal** | Neural Computation 28, `2474–2504` (2016) |
+| **Online** | [Read or Download this Paper][1] |
+| **Published** | 2016 |
 
 This paper demonstrates how HTM sequence memory, a recently proposed theoretical
 framework for sequence learning in the cortex, helps us understand how the brain
@@ -31,8 +35,9 @@ handle multiple predictions, robustness to sensor noise and fault tolerance, and
 good performance without the need for task-specific tuning.
 
 ![Taxi passenger predictions](../images/continuous-online-sequence-learning.png)
-> *We used HTM and other algorithms to predict taxi passenger count in the New
-  York City. **LEFT:** Overall prediction error for various algorithms.
+> ***Image from the paper.*** *We used HTM and other algorithms to predict taxi
+  passenger count in the New York City.
+  **LEFT:** Overall prediction error for various algorithms.
   **RIGHT:** After a new pattern is introduced (black dashed line), HTM quickly
   learns the new pattern and gives better prediction accuracy than LSTM due to
   its ability of continuous learning.*
