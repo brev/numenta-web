@@ -2,8 +2,9 @@ linkPrefix = ''
 # linkPrefix = '/numenta-web'  # integration/staging (gh-pages)
 
 siteHost = 'Numenta.org'
-siteTitle = 'Numenta HTM Community'
-description = 'Numenta Hierarchical Temporal Memory (HTM) Community and Resources'
+siteTitle = 'Hierarchical Temporal Memory (HTM)'
+description = 'Bridging the Gap between Neuroscience and AI'
+company = 'Numenta'
 
 [contact]
   [contact.email]

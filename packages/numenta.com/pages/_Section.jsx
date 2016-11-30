@@ -27,7 +27,11 @@ const SectionIndex = (props, {config}) => {
     <article className={styles.columns}>
       <div className={styles.aside}>
 
-        <Glance head={<Logo />}>
+        <Glance
+          head={
+            <div className={styles.glanceHead}><Logo /></div>
+          }
+        >
           <DefineTitle>
             About
           </DefineTitle>

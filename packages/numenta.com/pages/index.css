@@ -21,3 +21,12 @@
 .content {
   composes: layout-content from '../static/assets/css/theme.css';
 }
+
+.glanceHead {
+  composes: center from 'tachyons';
+  composes: h3 from 'tachyons';
+  composes: h2-m from 'tachyons';
+  composes: mv2 from 'tachyons';
+  composes: w5 from 'tachyons';
+  composes: w4-m from 'tachyons';
+}

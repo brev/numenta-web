@@ -2,8 +2,9 @@ linkPrefix = ''
 # linkPrefix = '/numenta-web'  # integration/staging (gh-pages)
 
 siteHost = 'Numenta.com'
-siteTitle = 'Numenta'
+siteTitle = ''
 description = 'Leading the New Era of Machine Intelligence'
+company = 'Numenta'
 
 [contact]
   [contact.email]
