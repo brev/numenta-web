@@ -10,6 +10,9 @@ This is a [monorepo](http://danluu.com/monorepo/), managed with
 sub-repos (websites, shared components, utils) located in the `/packages`
 directory.
 
+We currently have sub-packages maintain their own unique version numbers (not
+forcing a global version sync across packages).
+
 ## Filesystem
 
 ```shell
@@ -197,8 +200,8 @@ page transitions, a full client-side text search system, etc.
 
 ## Scripts
 
-**Scripts should be run from inside each websites individual source
-directory (`cd packages/numenta.com/`).**
+***Scripts should be run from inside each websites individual source
+directory (`cd packages/numenta.com/`).***
 
 | Function | `<command>` | Notes |
 | -------- | ----------- | ----- |
@@ -222,8 +225,8 @@ directory (`cd packages/numenta.com/`).**
 
 ## Testing
 
-**Tests should be run from inside each websites individual source
-directory (`cd packages/numenta.com/`).**
+***Tests should be run from inside each websites individual source
+directory (`cd packages/numenta.com/`).***
 
 Individual React `components/` (which may be shared between sites) each have
 their own `__tests__` subdirectory. All other tests (site-specific pages,
@@ -274,8 +277,8 @@ npm run test:links:prod   # test hyperlinks on Production
 
 ## Build
 
-**Builds should be run from inside each websites individual source
-directory (`cd packages/numenta.com/`).**
+***Builds should be run from inside each websites individual source
+directory (`cd packages/numenta.com/`).***
 
 Average build wait times:
 
