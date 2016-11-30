@@ -510,7 +510,7 @@ the following scripts against your change branch:
 # License
 
 ```
-Numenta.com company website source code
+Numenta Web Platform and Sites source code
 MIT License (see LICENSE.txt)
-Copyright © 2005—2016 Numenta <http://numenta.com>
+Copyright © 2005—2017 Numenta <http://numenta.com>
 ```

@@ -32,5 +32,5 @@ When finished, `npm` scripts and tests can then be run (see the parent
 ```
 Numenta.com company website source code
 MIT License (see LICENSE.txt)
-Copyright © 2005—2016 Numenta <http://numenta.com>
+Copyright © 2005—2017 Numenta <http://numenta.com>
 ```

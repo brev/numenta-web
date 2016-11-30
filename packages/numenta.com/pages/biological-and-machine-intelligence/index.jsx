@@ -1,6 +1,6 @@
-// Numenta.com company website source code
+// Numenta Web Platform and Sites source code
 // MIT License (see LICENSE.txt)
-// Copyright © 2005—2016 Numenta <http://numenta.com>
+// Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import IconQuote from 'react-icons/lib/fa/quote-left'
 import Helmet from 'react-helmet'

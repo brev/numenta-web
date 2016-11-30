@@ -1,6 +1,6 @@
-// Numenta shared web components
+// Numenta Web Platform and Sites source code
 // MIT License (see LICENSE.txt)
-// Copyright © 2005—2016 Numenta <http://numenta.com>
+// Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import IconFacebook from 'react-icons/lib/fa/facebook'
 import IconLinkedIn from 'react-icons/lib/fa/linkedin'

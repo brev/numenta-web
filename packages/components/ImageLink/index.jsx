@@ -1,6 +1,6 @@
-// Numenta shared web components
+// Numenta Web Platform and Sites source code
 // MIT License (see LICENSE.txt)
-// Copyright © 2005—2016 Numenta <http://numenta.com>
+// Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import {IndexLink, Link} from 'react-router'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len

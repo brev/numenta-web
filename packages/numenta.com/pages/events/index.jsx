@@ -1,6 +1,6 @@
-// Numenta.com company website source code
+// Numenta Web Platform and Sites source code
 // MIT License (see LICENSE.txt)
-// Copyright © 2005—2016 Numenta <http://numenta.com>
+// Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import Helmet from 'react-helmet'
 import moment from 'moment'
