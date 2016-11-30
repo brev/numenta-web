@@ -15,9 +15,11 @@
     "email": "info@numenta.com"
   },
   "dependencies": {
+    "lerna": "prerelease"
   },
   "devDependencies": {
   },
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/numenta/numenta-web"

@@ -2,17 +2,54 @@
 
 Source code, generators, tooling, and content for Numenta websites and platform.
 
+
+# Monorepo
+
+This is a [monorepo](http://danluu.com/monorepo/), managed with
+[Lerna.js](https://github.com/lerna/lerna). This monorepo contains several child
+sub-repos (websites, shared components, utils) located in the `/packages`
+directory.
+
+## Filesystem
+
 ```shell
-.                   # https://github.com/numenta/numenta-web
-├── .eslintrc.json  # Shared JS ES6 lint rules, mostly AirBnB defaults + tweaks
-├── .stylelintrc    # Shared CSS style lint rules
-├── components/     # Shared React View Components for all sites
-├── LICENSE.txt     # Open Source MIT License information.
-├── numenta.com/    # Source for Numenta company site: http://numenta.com
-├── numenta.org/    # Source for Numenta HTM Community site: http://numenta.org
-├── package.json    # Shared npm packages to install for all sites
-├── README.md       # This file, welcome docs.
-└── utils/          # Shared helper utilities for all sites
+.                     # https://github.com/numenta/numenta-web/
+├── .eslintrc.json    # Shared JS ES6 lint rules, AirBnB defaults + tweaks.
+├── .stylelintrc      # Shared CSS style lint rules.
+├── LICENSE.txt       # Open Source MIT License information.
+├── README.md         # This file, welcome documentation.
+├── lerna.json        # Lerna.js monorepo tool config file.
+├── package.json      # Skeleton monorepo project config (not really used).
+└── packages/         # Child sub-repos of our Lerna monorepo, details below.
+    ├── components/   # Shared React View Components to be used amongst sites.
+    ├── numenta.com/  # http://numenta.com Numenta Company website source code.
+    ├── numenta.org/  # http://numenta.org HTM Community website source code.
+    └── utils/        # Shared helper utils to be used amongst sites.
+```
+
+## Setup
+
+These instructions assume latest Mac OS/X with [homebrew](http://brew.sh/)
+package manager installed. Other platforms should come up just as easily.
+
+```shell
+brew install git node
+npm install --global lerna@prerelease
+git clone git@github.com:numenta/numenta-web.git
+cd numenta-web/
+lerna bootstrap
+```
+
+You should now be ready to run any of the child repos, further details below.
+
+### Updating
+
+If you update the child repos, and need to re-sync everything back together
+again, just re-run Lerna's `bootstrap` command anytime:
+
+```shell
+cd numenta-web/
+lerna bootstrap
 ```
 
 
@@ -92,11 +129,11 @@ us accomplish all of this.
 
 ### Filesystem
 
-**The contents of each individual website source directory (`cd numenta.com/`)
-will look like the following:**
+**The contents of each individual website source directory
+(i.e. `cd packages/numenta.com/`) will look like the following:**
 
 ```shell
-.                       # Inside `numenta.com/` or `numenta.org/`
+.                       # Inside `packages/numenta.com/` or similar
 ├── .babelrc            # Babel ES6 transpiler configuration file
 ├── .eslintignore       # ES lint files and paths to ignore during run
 ├── .jestrc.json        # Jest testing framework config, assets under test/
@@ -158,16 +195,10 @@ page transitions, a full client-side text search system, etc.
 | **Win/7**   |        |         |        |      |       |   ✓   |         |
 | **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
 
-## Setup
-
-Please see each site's individual `README.md` for specific setup instructions.
-
-**Each site needs to be setup before running scripts, tests, etc.**
-
 ## Scripts
 
 **Scripts should be run from inside each websites individual source
-directory (`cd numenta.com/`).**
+directory (`cd packages/numenta.com/`).**
 
 | Function | `<command>` | Notes |
 | -------- | ----------- | ----- |
@@ -192,7 +223,7 @@ directory (`cd numenta.com/`).**
 ## Testing
 
 **Tests should be run from inside each websites individual source
-directory (`cd numenta.com/`).**
+directory (`cd packages/numenta.com/`).**
 
 Individual React `components/` (which may be shared between sites) each have
 their own `__tests__` subdirectory. All other tests (site-specific pages,
@@ -242,6 +273,9 @@ npm run test:links:prod   # test hyperlinks on Production
 ```
 
 ## Build
+
+**Builds should be run from inside each websites individual source
+directory (`cd packages/numenta.com/`).**
 
 Average build wait times:
 
@@ -481,12 +515,6 @@ example, see the local file `.eslintrc.json`).
     opacity: 0.5;
   }
   ```
-
-
-# Shared
-
-Code shared between websites (components, utils, etc.) is located in
-the `shared/` directory.
 
 
 # Contributing
