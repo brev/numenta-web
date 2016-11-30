@@ -132,8 +132,8 @@ us accomplish all of this.
 
 ### Filesystem
 
-**The contents of each individual website source directory
-(i.e. `cd packages/numenta.com/`) will look like the following:**
+***The contents of each individual website source directory
+(i.e. `cd packages/numenta.com/`) will look like the following:***
 
 ```shell
 .                       # Inside `packages/numenta.com/` or similar
@@ -142,7 +142,7 @@ us accomplish all of this.
 ├── .jestrc.json        # Jest testing framework config, assets under test/
 ├── .stylelintignore    # CSS style lint files to ignore
 ├── LICENSE.txt         # Open Source MIT License information.
-├── README.md           # This file, welcome docs.
+├── README.md           # Site-specific intro documentation.
 ├── __tests__/          # Shared and Site-specific Component Tests & Mocks, etc.
 ├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
