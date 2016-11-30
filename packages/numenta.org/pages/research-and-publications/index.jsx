@@ -13,7 +13,7 @@ import MainSections, {getNextSection} from '../_MainSections'
 import SectionResearch from './_Section'
 
 const Default = (<SectionResearch key="sectionResearch" />)
-const title = 'Research &amp; Publications'
+const title = 'Research & Publications'
 
 
 /**
