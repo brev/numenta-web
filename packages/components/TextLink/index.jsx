@@ -32,6 +32,8 @@ const TextLink = ({children, onClick, target, to}) => {
 
   if (! to) return
 
+  console.log(to, attrs)
+
   if (to && (
     to.match(/^.+:/) || to.match(/^\/assets\//) || to.match(/\.pdf$/)
   )) {

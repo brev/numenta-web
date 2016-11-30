@@ -7,3 +7,4 @@
   no resizing on mobile
 - describe: numenta.com has default/shared/global components, .org starts
   splitting off customs.
+- post-Lerna: eslint, stylelint, testing, etc, etc. still messy.
