@@ -9,7 +9,6 @@
   border-top: 1px solid #ddd;
 }
 
-
 .glance {
   composes: bg-near-white from 'tachyons';
   composes: br2 from 'tachyons';
@@ -21,13 +20,4 @@
   composes: pt2 from 'tachyons';
   composes: tl from 'tachyons';
   composes: _rules;
-}
-
-.head {
-  composes: center from 'tachyons';
-  composes: h3 from 'tachyons';
-  composes: h2-m from 'tachyons';
-  composes: mv2 from 'tachyons';
-  composes: w5 from 'tachyons';
-  composes: w4-m from 'tachyons';
 }

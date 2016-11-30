@@ -16,7 +16,7 @@ import styles from './index.css'
  * Site Footer - React view component.
  */
 const Footer = (props, {config, manifest}) => {
-  const {links, siteTitle} = config
+  const {company, links} = config
   const {repository} = manifest
   const year = moment().year()
 
@@ -25,7 +25,7 @@ const Footer = (props, {config, manifest}) => {
       <footer className={styles.footer}>
         <span>
           © {year} {' '}
-          <TextLink to={links.in.home}>{siteTitle}</TextLink>
+          <TextLink to={links.in.home}>{company}</TextLink>
         </span>
         <span className={styles.mark}>
           <LogoMark />

@@ -10,20 +10,20 @@
 
 
 .default {
-  composes: bg-near-white from 'tachyons';
   composes: ba from 'tachyons';
   composes: f4 from 'tachyons';
   composes: f5-ns from 'tachyons';
   composes: ph4 from 'tachyons';
   composes: pv3 from 'tachyons';
+  background-color: transparent;
   color: #1aa0db;
 }
 
 .light {
-  composes: bg-white from 'tachyons';
   composes: bn from 'tachyons';
   composes: f4 from 'tachyons';
   composes: pa1 from 'tachyons';
+  background-color: transparent;
   color: #1aa0db;
 }
 

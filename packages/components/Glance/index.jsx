@@ -24,9 +24,7 @@ const Glance = ({children, head}, context) => {
 
   return (
     <aside className={styles.glance}>
-      <div className={styles.head}>
-        {head}
-      </div>
+      <div>{head}</div>
       <DefineList direction="horizontal">
         {children}
       </DefineList>

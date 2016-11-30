@@ -28,7 +28,7 @@ class HomePage extends React.Component {
         <Section
           headline={true}
           open={true}
-          title="Numenta HTM Community"
+          title="Bridging the Gap between Neuroscience and AI"
         >
           {Default}
           <NextSection {...next} />

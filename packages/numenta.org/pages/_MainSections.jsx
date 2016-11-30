@@ -16,7 +16,7 @@ import SectionSchool from './htm-school/_Section'
 const mainSectionList = [
   {
     component: <SectionHome key="sectionHome" />,
-    title: 'Numenta HTM Community',
+    title: 'Bridging the Gap between Neuroscience and AI',
     url: '/',
   },
   {

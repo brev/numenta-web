@@ -13,8 +13,6 @@ import Strong from 'numenta-web-shared-components/Strong'
 import Tag from 'numenta-web-shared-components/Tag'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
-import Logo from '../components/Logo'
-
 import styles from './index.css'
 
 
@@ -22,13 +20,19 @@ import styles from './index.css'
  * Numenta.org Home Page React Component
  */
 const SectionIndex = (props, {config}) => {
-  const {links} = config
+  const {links, siteTitle} = config
 
   return (
     <article className={styles.columns}>
       <div className={styles.aside}>
 
-        <Glance head={<Logo />}>
+        <Glance
+          head={
+            <div className={styles.glanceHead}>
+              {siteTitle}
+            </div>
+          }
+        >
           <DefineTitle>
             About
           </DefineTitle>

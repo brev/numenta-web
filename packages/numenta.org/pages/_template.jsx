@@ -48,11 +48,11 @@ class Template extends React.Component {
 
   render() {
     const {children} = this.props
-    const {analytics, description, siteHost, siteTitle} = config
+    const {analytics, company, description, siteHost} = config
     const lang = 'en'  // @TODO i18n l10n
     const now = moment().toString()
-    const title = `${siteTitle} — ${description}`
-    const titleForm = `%s | ${siteHost}`
+    const title = `${siteHost} • ${description}`
+    const titleForm = `${siteHost} • %s`
     const icons = flatten(values(mapValues(favicons, (value) => keys(value))))
     const {version} = manifest
 
@@ -63,12 +63,12 @@ class Template extends React.Component {
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
-      {name: 'author', content: `${siteTitle}`},
+      {name: 'author', content: `${company}`},
       {name: 'description', content: title},
       {name: 'keywords', content: title.split(' ').join(',')},
       {
         name: 'generator',
-        content: `© ${siteHost} v${version} ${now} / Gatsby.js`,
+        content: `© ${siteHost} v${version} ${now} • Gatsby.js`,
       },
     ]
 
