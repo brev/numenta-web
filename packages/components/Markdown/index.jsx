@@ -13,7 +13,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Markdown content block wrapper - React view component.
  */
 class Markdown extends React.Component {
 

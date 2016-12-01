@@ -11,7 +11,7 @@ which allows you to experiment temporarily without affecting your codebase with
 the AGPL, giving you time to decide whether a commercial license is worth it.
 
 * NuPIC and associated applications of NuPIC at <http://github.com/numenta> are
-  licensed as dual commercial and i[AGPL version 3][1]
+  licensed as dual commercial and [AGPL version 3][1]
 
 * [Commercial licenses][2] are also available from Numenta
 
@@ -61,7 +61,7 @@ We give you the rights to translate these materials under the following license:
 
 [1]: https://www.gnu.org/licenses/agpl-3.0.en.html
 [2]: mailto:sales@numenta.com?subject=Commercial%20License%20Inquiry
-[3]: trial/
+[3]: /licenses/trial/
 [4]: /blog/2013/07/01/patent-position/
 [5]: https://discourse.numenta.org/categories
-[6]: contrib/
+[6]: /licenses/contrib/

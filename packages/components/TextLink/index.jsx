@@ -32,15 +32,15 @@ const TextLink = ({children, onClick, target, to}) => {
 
   if (! to) return
 
-  console.log(to, attrs)
-
   if (to && (
     to.match(/^.+:/) || to.match(/^\/assets\//) || to.match(/\.pdf$/)
   )) {
     // external link (browser location)
     Node = 'a'
-    if (to.match(/^.*:/)) attrs.href = to  // = mailto:etc@blah.com
-    if (to.match(/^\/assets\//) || to.match(/\.pdf$/)) {
+    if (to.match(/^.*:/)) {
+      attrs.href = to  // = mailto:etc@blah.com
+    }
+    else if (to.match(/^\/assets\//) || to.match(/\.pdf$/)) {
       attrs.href = prefixLink(to)  // = /assets/etc/
     }
     delete attrs.to
