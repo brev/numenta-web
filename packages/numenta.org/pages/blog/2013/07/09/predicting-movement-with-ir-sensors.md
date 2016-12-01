@@ -164,9 +164,8 @@ Selective evolution of models is the idea of running multiple model instances,
 with the same encoders tuned differently, being fed the same data. One chooses
 the model with the best predictive performance to continue forward.
 
-I'd recommend anyone interested head into the
-**[#nupic](irc://irc.freenode.net/nupic)** channel on IRC and post to
-the mailing list. I can be found on IRC as @rava, and also
+I'd recommend anyone interested head into the **#nupic** channel on Freenode IRC
+and post to the mailing list. I can be found on IRC as @rava, and also
 [on the mailing list](http://nupic.markmail.org/search/?q=erik#query:erik%20from%3A%22Erik%20Blas).
 Also, here is [my personal fork of NuPIC](http://github.com/ravaa/nupic)
 (it's a mess in there).

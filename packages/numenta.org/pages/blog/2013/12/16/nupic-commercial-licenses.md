@@ -11,7 +11,7 @@ type: post
 ---
 
 > **NOTE:** *Since this original blog post, we have updated our license to the
-  [AGPLv3](http://numenta.org/blog/2015-08-14-agpl) license.*
+  [AGPLv3](/licenses/) license.*
 
 We created the [NuPIC open source environment](/) with the desire to build a
 broad community to work on these algorithms, to advance the science, and to

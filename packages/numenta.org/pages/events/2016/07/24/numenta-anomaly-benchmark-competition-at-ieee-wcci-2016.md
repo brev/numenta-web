@@ -172,7 +172,7 @@ run through the NAB scoring system.
 <br />
 <sup>[2]</sup> https://cran.r-project.org/web/packages/extremevalues/index.html
 <br />
-<sup>[3]</sup> https://gitub.com/baggedanomalydetectors
+<sup>[3]</sup> https://github.com/numenta/NAB
 
 ### What are the rules?
 

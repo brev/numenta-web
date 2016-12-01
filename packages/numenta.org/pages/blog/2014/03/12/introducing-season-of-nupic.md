@@ -14,7 +14,7 @@ Unfortunately, NuPIC was unable to participate in
 [Google's Summer of Code](https://www.google-melange.com/gsoc/homepage/google/gsoc2014)
 this year, but some of our community members suggested that we go ahead and host
 our own GSoC-like event, much like the KDE community does with their
-[Season of KDE](https://season.kde.org/). And [here it is](/son/)!
+[Season of KDE](https://season.kde.org/). And here it is!
 
 **Here's how it works.**
 

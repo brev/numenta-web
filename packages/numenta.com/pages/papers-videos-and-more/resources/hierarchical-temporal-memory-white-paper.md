@@ -55,3 +55,5 @@ technology has evolved.
 [pt]: /assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-pt.pdf
 [ru]: /assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-ru.pdf
 [es]: /assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-es.pdf
+
+<br />

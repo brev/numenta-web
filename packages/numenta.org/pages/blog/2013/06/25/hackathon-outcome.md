@@ -25,8 +25,7 @@ not to mention those attending from the San Francisco bay area.
 The event was live-streamed on
 [YouTube](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA). All the
 individual videos are linked below, but the most interesting videos are the
-<a href="#kickoff_video_and_slides">kickoff</a> and the
-<a href="#demonstrations">demonstrations</a> at the end.
+**kickoff** and the **demonstrations** at the end.
 
 
 ## Kickoff Video
@@ -91,7 +90,6 @@ easier for you to navigate by project. I've linked each demo individually below.
 </iframe>
 
 * By: Jin Pan, Danny Bankman, Stanislav Nikolov
-* Code: https://github.com/snikolov/nupic/tree/master/examples/opf/experiments/multistep/midi
 
 #### Tic Tac Toe
 
@@ -121,7 +119,7 @@ easier for you to navigate by project. I've linked each demo individually below.
 
 We were so happy with the hacks, we gave everyone who came up with one a
 [raspberry pi](http://www.raspberrypi.org/) (and we'll be working on getting
-NuPIC to [build on one](https://issues.numenta.org/browse/NPC-141)!).
+NuPIC to build on one!)
 
 We had a great time hosting this hackathon, and we can't wait to do it again.
 Additionally, we got really valuable feedback from all the participants on how
@@ -130,7 +128,7 @@ be taking all your comments and critiques into consideration as we continue to
 mature our open source offering.
 
 If you are interesting in joining our next hackathon, please
-[sign up for our mailing list](http://lists.numenta.org/mailman/listinfo/nupic_lists.numenta.org),
-were I'll continue to post notifications about future events.
+[visit our community forum](https://discourse.numenta.org), where we'll continue
+to post notifications about future events.
 
 [Comments on Reddit](http://www.reddit.com/r/MachineLearning/comments/1h50kg/first_nupic_hackathon_outcome/)

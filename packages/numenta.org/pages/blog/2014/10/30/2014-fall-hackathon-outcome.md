@@ -199,7 +199,6 @@ English grammar.
 Demo of HTM implemented in Clojure, with a web-based visualization.
 
 * Video: http://www.youtube.com/watch?v=hE6alw_HHrk
-* Blog: http://floybix.github.io/2014/10/27/hackathon_demo/
 * Code: https://github.com/nupic-community/comportex
 * By: Felix Andrews
 
@@ -226,7 +225,6 @@ I am training NuPIC on a dataset of 500 jingles and generating new jingles based
 on input vectors of a few notes.
 
 * Video: http://www.youtube.com/watch?v=MEsOb9p3nmU
-* Code: https://github.com/salexashenko/The-Jinglinator-Returns
 * By: Sergey Alexashenko
 
 #### Corti-Yelp

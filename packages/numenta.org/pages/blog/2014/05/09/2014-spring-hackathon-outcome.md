@@ -233,7 +233,6 @@ the audio signal to see what works best with NuPIC.
 Trying to teach NuPIC to understand complex word associations with CEPT word SDRs.
 
 * Video: http://www.youtube.com/watch?v=O2VAP3B6t5M
-* Code: https://github.com/cept/CEPT-Public/tree/master/Demonstrations/NuPICSpring2014Hackathon
 * By: Francisco Webber, Soeren, &amp; Erik from CEPT.
 
 #### Single-Entry Multifactor Authentication

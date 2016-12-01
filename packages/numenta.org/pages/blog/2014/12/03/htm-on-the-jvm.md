@@ -34,7 +34,7 @@ a virtual machine (not to mention mobile devices!)
 The community is fully committed to adding all the support tools and
 infrastructure the Python version enjoys, and those are the next milestones to
 be worked on. There is already a
-"[HelloSP](https://github.com/numenta/htm.java/tree/master/src/main/java/org/numenta/nupic/examples/sp)"
+"[HelloSP](https://github.com/numenta/htm.java-examples/blob/master/src/main/java/org/numenta/nupic/examples/sp)"
 example created by a community member. Here is the constructor:
 
 ```java

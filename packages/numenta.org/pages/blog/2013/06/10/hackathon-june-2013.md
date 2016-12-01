@@ -16,13 +16,11 @@ available for more participants. *First come, first served!* It will be in the
 San Francisco Bay Area. If you are interested in attending, please contact me
 directly at <matt@numenta.org>.
 
-Like Jeff
-[said earlier](/news/2013/06/03/introducing-nupic/), this
-stuff is not easy. The Cortical Learning Algorithm is based on novel concepts
-that present a steep learning curve. I'd recommend you have at least one of the
-following qualities before you contact me to attend. If you have both, then
-you're our target market for this Hackathon, and you should seriously think
-about coming!
+This stuff is not easy. The Cortical Learning Algorithm is based on novel
+concepts that present a steep learning curve. I'd recommend you have at least
+one of the following qualities before you contact me to attend. If you have
+both, then you're our target market for this Hackathon, and you should seriously
+think about coming!
 
 - Familiarity with the [CLA white paper](/resources/HTM_CorticalLearningAlgorithms.pdf)
 - Programming skills with C++ or python

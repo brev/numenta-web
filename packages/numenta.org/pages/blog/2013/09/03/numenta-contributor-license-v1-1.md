@@ -13,6 +13,8 @@ type: post
 We have made two small changes to our [Contributor License](/licenses/contrib/),
 regarding GitHub Usernames and Patent License changes, detailed below.
 
+<br />
+
 ### Github Username Required
 
 The new version of the CL now requires a Github username, which is necessary in

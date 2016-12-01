@@ -10,9 +10,8 @@ title: "CLA Quiz Office Hour"
 type: post
 ---
 
-Tomorrow at 4PM Pacific, we're holding an
-[Office Hour](https://plus.google.com/b/100642636108337517466/events/crmrf6k58s77hlgk4v30bll8hp8)
-for anyone interested to join in and talk about
+Tomorrow at 4PM Pacific, we're holding an Office Hour for anyone interested to
+join in and talk about
 [Hierarchical Temporal Memory](http://numenta.com/papers-videos-and-more/resources/hierarchical-temporal-memory-white-paper/),
 as implemented by Numenta within [NuPIC](/). Jeff Hawkins and Numenta VP of
 Engineering Subutai Ahmad will be at this event to go through the _CLA Quiz_, a
@@ -21,9 +20,8 @@ questions were originally created for new employees and interns to research in
 order to better understand the CLA. Tomorrow, we're going to be asking you!
 
 If you're interested in taking part, or just joining in to listen, please use
-your Google account and request an RSVP to our
-[Office Hour](https://plus.google.com/b/100642636108337517466/events/crmrf6k58s77hlgk4v30bll8hp8).
-We'll be happy to invite you. If you can't make it, the video will be
+your Google account and request an RSVP to our Office Hour. We'll be happy to
+invite you. If you can't make it, the video will be
 [posted on YouTube](http://www.youtube.com/watch?v=rSpYyUN4iP0).
 
 
