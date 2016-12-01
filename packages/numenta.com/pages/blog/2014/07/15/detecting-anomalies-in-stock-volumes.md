@@ -1,11 +1,11 @@
 ---
-author: Viraj Sinha
+author: "Viraj Sinha"
 brief: "I decided to apply Grok and the Cortical Learning Algorithm to stock data: have the CLA learn patterns and alert me to anomalies. I decided to monitor volume"
 date: 2014/07/15
 image: ../images/image.png
-org: Summer Intern, Engineering
+org: "Engineering Intern"
 tags: anomaly, detection, stock, finance, volume
-title: Detecting Anomalies in Stock Volumes
+title: "Detecting Anomalies in Stock Volumes"
 type: post
 ---
 
@@ -62,14 +62,10 @@ to see additional anomalies detected around 8:40 and 9:05 that day.
 
 I’m writing this post a week after this event, and the press has had some time
 to catch up. There are a few speculative reasons for this price spike, including
-a change in management<sup>[1]</sup>, the launch of a new 3d scanner for the
-iPad<sup>[2]</sup>, and news of recent advancements in medical-grade 3D printing
-which will allow for antibiotic-infused implants<sup>[3]</sup>. This is pretty
-exciting news, all of which I likely wouldn’t have noticed if it weren’t for
-Grok.
+a change in management<sup>[1]</sup>, and news of recent advancements in
+medical-grade 3D printing which will allow for antibiotic-infused
+implants<sup>[2]</sup>. This is pretty exciting news, all of which I likely
+wouldn’t have noticed if it weren’t for Grok.
 
 [1] http://www.marketnewscall.com/volume-buzzers-3d-systems-corporation-nyseddd-ezchip-semiconductor-ltd-nasdaqezch/1231261/
-
-[2] http://www.gaininggreen.com/computer-peripherals-3d-systems-corporation-nyseddd-logitech-international-sa-nasdaqlogi-electronics-for-imaging-nasdaqefii-universal-display-corporation-nasdaqoled-transact-technolog/1239893/
-
-[3] http://3dprint.com/7793/3d-print-antibiotics-implants/
+[2] http://3dprint.com/7793/3d-print-antibiotics-implants/
