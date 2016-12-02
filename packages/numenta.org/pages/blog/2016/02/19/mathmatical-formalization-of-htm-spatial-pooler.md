@@ -4,7 +4,7 @@ brief: "Those of you subscribing to the nupic-theory mailing list are aware that
 date: 2016/02/19
 hideImage: false
 image: ../images/image.png
-org: "Machine Learning Researcher"
+org: "Community Contributor"
 tags: mathematical math formalization htm spatial pooler hierarchical temporal memory
 title: "A Mathematical Formalization of HTM’s Spatial Pooler"
 type: post
