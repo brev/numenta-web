@@ -15,7 +15,7 @@ const Default = (<SectionHome key="sectionHome" />)
 
 
 /**
- *
+ * Numenta.org Homepage - React view component.
  */
 class HomePage extends React.Component {
 
