@@ -29,6 +29,7 @@ import {
 
 import styles from './md.css'
 
+const pluralize = (text) => (text.match(/s$/) ? text : `${text}s`)
 const postTypes = ['blog', 'events', 'papers']
 
 
@@ -70,7 +71,7 @@ const MarkdownWrapper = ({route}, {config}) => {
         <div className={styles.back}>
           <IconMarker icon={<IconArrow />}>
             <TextLink to={url}>
-              All {capitalize(key)} Posts
+              All {capitalize(pluralize(key))}
             </TextLink>
           </IconMarker>
         </div>
@@ -162,7 +163,7 @@ const MarkdownWrapper = ({route}, {config}) => {
     }
   }
 
-  if (data.date) {
+  if (data.date && key !== 'papers') {
     date = (
       <div className={styles.date}>
         <Time moment={datetime}>{occur}</Time>
