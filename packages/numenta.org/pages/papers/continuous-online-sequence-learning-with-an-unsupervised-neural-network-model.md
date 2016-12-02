@@ -1,5 +1,5 @@
 ---
-author: "Yuwei Cui, Subutai Ahmad, Jeff Hawkins & Chetan Surpur"
+author: "Yuwei Cui, Subutai Ahmad & Jeff Hawkins"
 brief: "Analysis of HTM sequence memory applied to various sequence learning and prediction problems. Written with a machine learning perspective, the paper contains some comparisons to statistical and Deep Learning techniques."
 category: machine-learning
 date: 2015/12/17
@@ -14,10 +14,10 @@ type: post
 
 | | |
 |-|-|
-| **Authors** | Y. Cui, S. Ahmad, J. Hawkins, and C. Surpur |
+| **Authors** | Y. Cui, S. Ahmad, and J. Hawkins |
 | **Journal** | Neural Computation 28, `2474–2504` (2016) |
 | **Online** | [Read or Download this Paper][1] |
-| **Published** | 2016 |
+| **Published** | November 1, 2016 |
 
 This paper demonstrates how HTM sequence memory, a recently proposed theoretical
 framework for sequence learning in the cortex, helps us understand how the brain
