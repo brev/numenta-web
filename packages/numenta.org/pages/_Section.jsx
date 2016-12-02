@@ -17,7 +17,7 @@ import styles from './index.css'
 
 
 /**
- * Numenta.org Home Page React Component
+ * Numenta.org MainSection Homepage wrapper - React view component.
  */
 const SectionIndex = (props, {config}) => {
   const {links, siteTitle} = config

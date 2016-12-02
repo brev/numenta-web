@@ -6,6 +6,7 @@ import React from 'react'
 
 import Image from 'numenta-web-shared-components/Image'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
+import Quote from 'numenta-web-shared-components/Quote'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
 import ImageResearch from './images/image.png'
@@ -31,16 +32,12 @@ const SectionResearch = (props, {config}) => {
           />
         </div>
         <div className={styles.content}>
-          {/* @TODO make Quote, Cite components and refactor */}
-          <blockquote>
-            <p>
-              “Numenta’s unique approach of focusing on large-scale cortical
-              theory and simulation drives us to tackle one of humanity’s
-              greatest scientific challenges: reverse-engineering the
-              neocortex.”
-            </p>
-            <footer>- <cite>Jeff Hawkins</cite></footer>
-          </blockquote>
+          <Quote citation="Jeff Hawkins">
+            Numenta’s unique approach of focusing on large-scale cortical
+            theory and simulation drives us to tackle one of humanity’s
+            greatest scientific challenges: reverse-engineering the
+            neocortex.
+          </Quote>
           <Paragraph lead={true}>
             Numenta’s team of researchers focuses on developing a comprehensive
             theory of the neocortex – what it does and how its architecture
