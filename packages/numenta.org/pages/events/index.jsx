@@ -9,10 +9,12 @@ import React from 'react'
 import Anchor from 'numenta-web-shared-components/Anchor'
 import ListItem from 'numenta-web-shared-components/ListItem'
 import ListOrder from 'numenta-web-shared-components/List'
+import Paragraph from 'numenta-web-shared-components/Paragraph'
 import Section from 'numenta-web-shared-components/Section'
 import {sortDateAscend, sortDateDescend} from 'numenta-web-shared-utils/shared'
 import SubTitle from 'numenta-web-shared-components/SubTitle'
 import Subtle from 'numenta-web-shared-components/Subtle'
+import TextLink from 'numenta-web-shared-components/TextLink'
 
 import PostListRow from '../../components/PostListRow'
 import styles from './index.css'
@@ -27,7 +29,17 @@ const EventsPage = (props, {config, route}) => {
   const {pages} = route
   const now = moment()
   const empty = (
-    <Subtle>No new events scheduled, please check back again soon!</Subtle>
+    <Paragraph>
+      <Subtle>
+        No HTM Community events are currently scheduled, please check
+        back soon.
+        <br />
+        Also, try the upcoming Numenta {' '}
+        <TextLink to="http://numenta.com/events/">
+          company events
+        </TextLink> {' '} page.
+      </Subtle>
+    </Paragraph>
   )
   const posts = pages.filter(({file}) => (file.path.match(/^events\/.*\.md/)))
   const past = posts.filter(({data}) => (
