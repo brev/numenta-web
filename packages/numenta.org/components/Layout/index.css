@@ -26,8 +26,11 @@
   z-index: -9999;
 }
 
-:global a[href*="://"]::after {
-  background-image: url('./images/link.svg');
+:global a[href*="://"]::after,
+:global a[href$=".doc"]::after,
+:global a[href$=".docx"]::after,
+:global a[href$=".pdf"]::after,
+:global a[href$=".txt"]::after {
   background-size: 11px 11px;
   content: ' ';
   display: inline-block;
@@ -37,6 +40,19 @@
   position: relative;
   top: 0.05rem;
   width: 11px;
+}
+:global a[href*="://"]::after {
+  background-image: url('./images/link.svg');
+}
+:global a[href$=".doc"]::after,
+:global a[href$=".docx"]::after {
+  background-image: url('./images/word.svg');
+}
+:global a[href$=".pdf"]::after {
+  background-image: url('./images/pdf.svg');
+}
+:global a[href$=".txt"]::after {
+  background-image: url('./images/text.svg');
 }
 
 
