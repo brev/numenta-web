@@ -26,15 +26,13 @@ const SectionSchool = (props, {config}) => {
     <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
-          <ImageLink to={links.out.school}>
-            <Image
-              alt="HTM School Video Screenshot"
-              border={false}
-              respond="mw"
-              shadow={false}
-              src={ImageMain}
-            />
-          </ImageLink>
+          <Image
+            alt="HTM School Video Screenshot"
+            border={false}
+            respond="mw"
+            shadow={false}
+            src={ImageMain}
+          />
         </div>
         <div className={styles.content}>
           <Paragraph lead={true}>
