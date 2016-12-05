@@ -7,7 +7,6 @@ import React from 'react'
 
 import IconMarker from 'numenta-web-shared-components/IconMarker'
 import Image from 'numenta-web-shared-components/Image'
-import ImageLink from 'numenta-web-shared-components/ImageLink'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
