@@ -16,7 +16,7 @@ import SectionSchool from './htm-school/_Section'
 const mainSectionList = [
   {
     component: <SectionHome key="sectionHome" />,
-    title: 'Bridging the Gap between Neuroscience and AI',
+    title: 'Bridging the Gap Between Neuroscience and AI',
     url: '/',
   },
   {
