@@ -3,60 +3,68 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import Helmet from 'react-helmet'
+import IconPlay from 'react-icons/lib/fa/youtube-play'
 import React from 'react'
 
-import NextSection from 'numenta-web-shared-components/NextSection'
-import {scrollToSection} from 'numenta-web-shared-utils/client'
+import IconMarker from 'numenta-web-shared-components/IconMarker'
+import Image from 'numenta-web-shared-components/Image'
+import Paragraph from 'numenta-web-shared-components/Paragraph'
+import TextLink from 'numenta-web-shared-components/TextLink'
 import Section from 'numenta-web-shared-components/Section'
 
-import MainSections from '../_MainSections'
-import SectionSchool from './_Section'
+import ImageMain from './images/image.png'
+import styles from './index.css'
 
-const Default = (<SectionSchool key="sectionSchool" />)
 const title = 'HTM School'
 
 
 /**
- *
+ * HTM School page - React view component.
  */
-class SchoolPage extends React.Component {
+const SchoolPage = (props, {config}) => {
+  const {links} = config
 
-  constructor(props) {
-    super(props)
+  return (
+    <article>
+      <Helmet title={title} />
+      <Section headline={true} open={true} title={title}>
 
-    this.state = {
-      sections: (
-        <Section headline={true} open={true} title={title}>
-          {Default}
-          <NextSection title="Back to Home" url="/" />
-        </Section>
-      ),
-    }
-  }
+        <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Image
+              alt="HTM School Video Screenshot"
+              border={false}
+              respond="mw"
+              shadow={false}
+              src={ImageMain}
+            />
+          </div>
+          <div className={styles.content}>
+            <Paragraph lead={true}>
+              To help you learn about our theory and technology, we have
+              organized educational content below. It is designed for anyone who
+              wants to learn about {' '}
+              <TextLink to={links.in.htm}>
+                HTM cortical theory
+              </TextLink> {' '}
+              and its applications for machine intelligence.
+            </Paragraph>
+            <Paragraph>
+              <IconMarker icon={<IconPlay />}>
+                <TextLink to={links.out.school}>
+                  HTM School on YouTube
+                </TextLink>
+              </IconMarker>
+            </Paragraph>
+          </div>
+        </div>
+      </Section>
+    </article>
+  )
+}
 
-  componentDidMount() {
-    this.setState({
-      sections: (<MainSections current={Default} />),
-    })
-  }
-
-  componentDidUpdate() {
-    scrollToSection(global.document.getElementById(Default.key))
-  }
-
-  componentWillUnmount() {
-    this.setState({sections: []})
-  }
-
-  render() {
-    const {sections} = this.state
-    return (
-      <div>
-        <Helmet title={title} />
-        {sections}
-      </div>
-    )
-  }
+SchoolPage.contextTypes = {
+  config: React.PropTypes.object,
 }
 
 export default SchoolPage

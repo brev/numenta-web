@@ -48,14 +48,8 @@ const SectionResearch = (props, {config}) => {
             <TextLink to={links.out.bami}>
               BAMI (Biological and Machine Intelligence),
             </TextLink> {' '}
-            and scientific publications.
-          </Paragraph>
-          <Paragraph>
-            Feel free to view our collection of {' '}
-            <TextLink to={links.in.papers}>
-              research papers,
-            </TextLink> {' '}
-            which include peer-reviewed journal papers.
+            and scientific publications, which include peer-reviewed journal
+            papers and self-archived scientific manuscripts.
           </Paragraph>
         </div>
       </div>

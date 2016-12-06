@@ -7,11 +7,11 @@ import React from 'react'
 
 import Section from 'numenta-web-shared-components/Section'
 
+import SectionCode from './code/_Section'
 import SectionCommunity from './community/_Section'
 import SectionHome from './_Section'
-import SectionImplement from './implementations/_Section'
+import SectionHtm from './hierarchical-temporal-memory/_Section'
 import SectionResearch from './research-and-publications/_Section'
-import SectionSchool from './htm-school/_Section'
 
 const mainSectionList = [
   {
@@ -25,19 +25,19 @@ const mainSectionList = [
     url: '/research-and-publications/',
   },
   {
+    component: <SectionHtm key="sectionHtm" />,
+    title: 'Hierarchical Temporal Memory',
+    url: '/hierarchical-temporal-memory/',
+  },
+  {
     component: <SectionCommunity key="sectionCommunity" />,
     title: 'Community',
     url: '/community/',
   },
   {
-    component: <SectionImplement key="sectionImplement" />,
-    title: 'Implementations',
-    url: '/implementations/',
-  },
-  {
-    component: <SectionSchool key="sectionSchool" />,
-    title: 'HTM School',
-    url: '/htm-school/',
+    component: <SectionCode key="sectionCode" />,
+    title: 'Code',
+    url: '/code/',
   },
 ]
 

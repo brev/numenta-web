@@ -64,7 +64,7 @@ const SectionIndex = (props, {config}) => {
             Open Source
           </DefineTitle>
           <DefineItem>
-            <TextLink to={links.in.implement}>
+            <TextLink to={links.in.code}>
               Code
             </TextLink>
           </DefineItem>

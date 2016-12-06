@@ -9,28 +9,26 @@ import NextSection from 'numenta-web-shared-components/NextSection'
 import {scrollToSection} from 'numenta-web-shared-utils/client'
 import Section from 'numenta-web-shared-components/Section'
 
-import MainSections, {getNextSection} from '../_MainSections'
-import SectionHtm from './_Section'
+import MainSections from '../_MainSections'
+import SectionCode from './_Section'
 
-const Default = (<SectionHtm key="sectionHtm" />)
-const title = 'Hierarchical Temporal Memory (HTM)'
+const Default = (<SectionCode key="sectionCode" />)
+const title = 'Code'
 
 
 /**
- * Hierarchical Temporal Memory (HTM) page wrapper and MainSection - React view
- *  component.
+ * Code page and MainSection wrapper - React view component.
  */
-class HtmPage extends React.Component {
+class CodePage extends React.Component {
 
   constructor(props) {
     super(props)
-    const next = getNextSection(Default)
 
     this.state = {
       sections: (
         <Section headline={true} open={true} title={title}>
           {Default}
-          <NextSection {...next} />
+          <NextSection title="Back to Home" url="/" />
         </Section>
       ),
     }
@@ -62,4 +60,4 @@ class HtmPage extends React.Component {
 
 }
 
-export default HtmPage
+export default CodePage
