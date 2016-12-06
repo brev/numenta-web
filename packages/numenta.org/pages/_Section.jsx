@@ -111,10 +111,10 @@ const SectionIndex = (props, {config}) => {
           areas.
         </Paragraph>
         <div className={styles.promo}>
-          <Tag>New!</Tag>
+          <Tag>New</Tag>
           {' '}
           <TextLink to="/">
-            @TODO Why did we overhaul our web design?
+            Why did we overhaul our web design? The story behind our new look.
           </TextLink>
         </div>
 
