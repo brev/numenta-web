@@ -28,6 +28,7 @@
 <url> <loc>http://numenta.org/blog/2015/11/09/vote-for-the-best-htm-challenge-submissions/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/blog/2016/02/19/mathmatical-formalization-of-htm-spatial-pooler/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/blog/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/code/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/community/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/events/2015/03/17/what-the-brain-says-about-machine-intelligence/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/events/2015/03/25/bay-area-nupic-meetup/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
@@ -37,6 +38,7 @@
 <url> <loc>http://numenta.org/events/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/faq/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/hierarchical-temporal-memory/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/htm-history/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/htm-school/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/implementations/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
