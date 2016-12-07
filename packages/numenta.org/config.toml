@@ -19,9 +19,12 @@ company = 'Numenta'
     bami = 'http://numenta.com/biological-and-machine-intelligence/'
     com = 'http://numenta.com/'
     cortical = 'http://cortical.io/'
+    github = 'https://github.com/numenta'
     grok = 'http://grokstream.com/'
     forum = 'https://discourse.numenta.org/categories'
+    meetup = 'http://www.meetup.com/numenta/'
     school = 'https://www.youtube.com/watch?v=XMB0ri4qgwc'
+    youtube = 'https://www.youtube.com/c/NumentaOrg'
 
   [links.in]  # internal paths
     # main/home pseudo-single page
