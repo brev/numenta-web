@@ -14,4 +14,10 @@
 
 .aside {
   composes: layout-aside from '../../static/assets/css/theme.css';
+  composes: tc from 'tachyons';
+}
+
+.narrow {
+  composes: center from 'tachyons';
+  composes: w5 from 'tachyons';
 }

@@ -10,7 +10,6 @@ import Glance from 'numenta-web-shared-components/Glance'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import Spacer from 'numenta-web-shared-components/Spacer'
 import Strong from 'numenta-web-shared-components/Strong'
-import Tag from 'numenta-web-shared-components/Tag'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
 import styles from './index.css'
@@ -92,31 +91,36 @@ const SectionIndex = (props, {config}) => {
       <div className={styles.content}>
 
         <Paragraph lead={true}>
-          Welcome to the Numenta <Strong>HTM Community</Strong> – an open source
-          platform and community for machine intelligence based on HTM Theory.
-          Here you will find our open source project {' '}
-          <TextLink to={links.in.implement}>NuPIC</TextLink> {' '}
-          (Numenta Platform for Intelligent Computing), our open source project
-          based on a theory of neocortex called {' '}
-          <TextLink to={links.in.htm}>
-            Hierarchical Temporal Memory (HTM).
+          Welcome to <Strong>Numenta.org,</Strong> an open platform and
+          community dedicated to advancing the state of brain theory and machine
+          intelligence.  On this site, you will find the technical resources you
+          need to get started with Hierarchical Temporal Memory (HTM). HTM is
+          a theory of the neocortex developed by {' '}
+          <TextLink to={links.out.com}>
+            Numenta
           </TextLink> {' '}
-          Parts of HTM theory have been implemented, tested, and used in
-          applications, and other parts of HTM theory are still being developed.
-          Today the HTM code in NuPIC can be used to analyze streaming data. It
-          learns the time-based patterns in data, predicts future values, and
-          detects anomalies. The HTM Community includes discussion groups on HTM
-          theory, research on extending HTM, and source code for complete
-          applications based on HTM. We welcome participation in all of these
-          areas.
-        </Paragraph>
-        <div className={styles.promo}>
-          <Tag>New</Tag>
-          {' '}
-          <TextLink to="/">
-            Why did we overhaul our web design? The story behind our new look.
+          that provides a framework for both biological and machine
+          intelligence. Parts of HTM theory have been implemented, tested, and
+          used in applications, and other parts are still being developed.
+          Because Numenta believes in making our work open and accessible, we
+          offer several ways to join us as we continue to progress the theory.
+          Experiment with our open source project {' '}
+          <TextLink to={links.in.code}>
+            NuPIC (Numenta Platform for Intelligent Computing),
+          </TextLink> {' '}
+          learn about HTM through our collection of {' '}
+          <TextLink to={links.in.papers}>
+            scientific publications
+          </TextLink> {' '}
+          and {' '}
+          <TextLink to={links.in.school}>
+            educational videos,
+          </TextLink> {' '}
+          and {' '}
+          <TextLink to={links.in.community}>
+            join our open source community.
           </TextLink>
-        </div>
+        </Paragraph>
 
       </div>
     </article>
