@@ -3,6 +3,10 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import Helmet from 'react-helmet'
+import IconEncoder from 'react-icons/lib/fa/qrcode'
+import IconSdr from 'react-icons/lib/fa/barcode'
+import IconSpace from 'react-icons/lib/ti/location'
+import IconTime from 'react-icons/lib/ti/media-play'
 import React from 'react'
 
 import Anchor from 'numenta-web-shared-components/Anchor'
@@ -110,10 +114,19 @@ const SchoolPage = () => (
 
       <Anchor name="sdrs" />
       <SubTitle>SDRs</SubTitle>
-      <Paragraph>
-        Sparse Distributed Representations are a fundamental aspect of HTM
-        systems. Let's start at the very beginning!
-      </Paragraph>
+      <div className={styles.columns}>
+        <div className={styles.aside}>
+          <div className={styles.icon}>
+            <IconSdr color="inherit" />
+          </div>
+        </div>
+        <div className={styles.content}>
+          <Paragraph>
+            Sparse Distributed Representations are a fundamental aspect of HTM
+            systems. Let's start at the very beginning!
+          </Paragraph>
+        </div>
+      </div>
 
       <Anchor name="bit-arrays" />
       <SubTitle level={3}>Bit Arrays</SubTitle>
@@ -245,13 +258,22 @@ const SchoolPage = () => (
       <SubTitle>
         Encoders
       </SubTitle>
-      <Paragraph>
-        Encoding real-world data into SDRs is a very important process to
-        understand in HTM. Semantic meaning within the input data must be
-        encoded into a binary representation. These videos show some examples
-        of encoding data into binary arrays so they can be processed by the
-        Spatial Pooler.
-      </Paragraph>
+      <div className={styles.columns}>
+        <div className={styles.aside}>
+          <div className={styles.icon}>
+            <IconEncoder color="inherit" />
+          </div>
+        </div>
+        <div className={styles.content}>
+          <Paragraph>
+            Encoding real-world data into SDRs is a very important process to
+            understand in HTM. Semantic meaning within the input data must be
+            encoded into a binary representation. These videos show some
+            examples of encoding data into binary arrays so they can be
+            processed by the Spatial Pooler.
+          </Paragraph>
+        </div>
+      </div>
 
       <Anchor name="scalar-encoding" />
       <SubTitle level={3}>
@@ -337,24 +359,34 @@ const SchoolPage = () => (
       <SubTitle>
         Spatial Pooling
       </SubTitle>
-      <Paragraph>
-        The idea for the Spatial Pooler came from an observation in biology.
-        The neocortex is composed of a hierarchy of regions. The feed-forward
-        input to each region consists of millions of nerve axons which come
-        from sensory organs and other regions. Most regions in the neocortex
-        receive input from multiple sources; it is not uncommon for a region
-        to receive input from six or more other regions. These inputs are
-        generally mixed together, so a region doesn’t “know” where the inputs
-        originated or what they represent. Confusing the picture, the number
-        of input axons doesn’t correlate closely with the size of the region.
-        For example, in humans there are about one million input axons
-        projecting to the primary visual region (V1) of the neocortex.
-        However, the areal size of V1 varies considerably in normal humans,
-        reportedly by up to a factor of three! How can a region process inputs
-        from many different sources without any prior knowledge of what these
-        inputs represent, how many input bits there will be, and what spatial
-        patterns may exist in the input?
-      </Paragraph>
+      <div className={styles.columns}>
+        <div className={styles.aside}>
+          <div className={styles.icon}>
+            <IconSpace color="inherit" />
+          </div>
+        </div>
+        <div className={styles.content}>
+          <Paragraph>
+            The idea for the Spatial Pooler came from an observation in biology.
+            The neocortex is composed of a hierarchy of regions. The
+            feed-forward input to each region consists of millions of nerve
+            axons which come from sensory organs and other regions. Most regions
+            in the neocortex receive input from multiple sources; it is not
+            uncommon for a region to receive input from six or more other
+            regions. These inputs are generally mixed together, so a region
+            doesn’t “know” where the inputs originated or what they represent.
+            Confusing the picture, the number of input axons doesn’t correlate
+            closely with the size of the region. For example, in humans there
+            are about one million input axons projecting to the primary visual
+            region (V1) of the neocortex. However, the areal size of V1 varies
+            considerably in normal humans, reportedly by up to a factor of
+            three! How can a region process inputs from many different sources
+            without any prior knowledge of what these inputs represent, how many
+            input bits there will be, and what spatial patterns may exist in the
+            input?
+          </Paragraph>
+        </div>
+      </div>
 
       <Anchor name="input-space-and-connections" />
       <SubTitle level={3}>
@@ -435,9 +467,18 @@ const SchoolPage = () => (
       <SubTitle>
         Temporal Memory
       </SubTitle>
-      <Paragraph>
-        Coming Soon.
-      </Paragraph>
+      <div className={styles.columns}>
+        <div className={styles.aside}>
+          <div className={styles.icon}>
+            <IconTime color="inherit" />
+          </div>
+        </div>
+        <div className={styles.content}>
+          <Paragraph>
+            Coming Soon.
+          </Paragraph>
+        </div>
+      </div>
 
     </Section>
   </article>

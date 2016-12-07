@@ -21,3 +21,8 @@
   composes: center from 'tachyons';
   composes: w5 from 'tachyons';
 }
+
+.icon {
+  composes: light-silver from 'tachyons';
+  font-size: 7rem;
+}
