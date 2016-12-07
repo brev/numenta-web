@@ -25,7 +25,7 @@ Our CEO, Donna Dubinsky, wrote a blog post about our [Patent Position][4].
 ## Contributor License
 
 Are you interested in [getting involved][5] in this project? You'll first have
-to sign the [Contributor License][6]
+to sign the [Contributor License][6].
 
 ## Trial License
 
@@ -44,6 +44,8 @@ efforts to help us spread the word about this technology.
 
 We give you the rights to translate these materials under the following license:
 
+---
+
 > **Copyright 2010-2017 Numenta, Inc.**
 >
 > Numenta owns copyrights and patent rights on documentation related to
@@ -58,6 +60,8 @@ We give you the rights to translate these materials under the following license:
 > target language, in the translation. The foregoing applies only to
 > documentation as described above – all Numenta software code and algorithms
 > remain subject to the applicable software license.
+
+---
 
 [1]: https://www.gnu.org/licenses/agpl-3.0.en.html
 [2]: mailto:sales@numenta.com?subject=Commercial%20License%20Inquiry

@@ -9,8 +9,8 @@
 }
 
 .icon {
-  composes: mr1 from 'tachyons';
+  composes: mr2 from 'tachyons';
   composes: relative from 'tachyons';
   color: #0277bd;
-  top: -0.1rem;
+  top: -0.066rem;
 }
