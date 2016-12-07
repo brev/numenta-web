@@ -8,7 +8,6 @@ import DefineItem from 'numenta-web-shared-components/DefineItem'
 import DefineTitle from 'numenta-web-shared-components/DefineTitle'
 import Glance from 'numenta-web-shared-components/Glance'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
-import Spacer from 'numenta-web-shared-components/Spacer'
 import Strong from 'numenta-web-shared-components/Strong'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
@@ -51,11 +50,11 @@ const SectionIndex = (props, {config}) => {
           </DefineItem>
 
           <DefineTitle>
-            Research
+            Research Papers
           </DefineTitle>
           <DefineItem>
-            <TextLink to={links.in.research}>
-              Research &amp; Publications
+            <TextLink to={links.in.papers}>
+              Collection
             </TextLink>
           </DefineItem>
 
@@ -63,8 +62,8 @@ const SectionIndex = (props, {config}) => {
             Open Source
           </DefineTitle>
           <DefineItem>
-            <TextLink to={links.in.code}>
-              Code
+            <TextLink to={links.out.github}>
+              GitHub
             </TextLink>
           </DefineItem>
 
@@ -78,12 +77,30 @@ const SectionIndex = (props, {config}) => {
           </DefineItem>
 
           <DefineTitle>
-            Content
+            Videos
           </DefineTitle>
           <DefineItem>
-            <TextLink to={links.in.blog}>Blog</TextLink>
-            <Spacer />
-            <TextLink to={links.in.events}>Events</TextLink>
+            <TextLink to={links.out.youtube}>
+              YouTube
+            </TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            Events
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.out.meetup}>
+              Meetup
+            </TextLink>
+          </DefineItem>
+
+          <DefineTitle>
+            Blog
+          </DefineTitle>
+          <DefineItem>
+            <TextLink to={links.in.blog}>
+              Blog
+            </TextLink>
           </DefineItem>
         </Glance>
 
