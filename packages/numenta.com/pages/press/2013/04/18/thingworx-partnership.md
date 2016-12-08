@@ -25,8 +25,8 @@ enormous opportunity for automated predictive maintenance solutions. According
 to leading device and network companies such as Ericsson and Cisco, the number
 of connected devices and machines is expected to reach
 [50 billion devices by 2020](https://www.ericsson.com/openarticle/mwc-connected-devices_1686565587_c);
-ARC Research estimates that Predictive Maintenance is a global
-[$20 billion opportunity](http://www.arcweb.com/strategy-reports/Lists/Posts/Post.aspx?List=e497b184-6a3a-4283-97bf-ae7b2f7ef41f&ID=1164&Source=http%3A%2F%2Fwww%2Earcweb%2Ecom%2Fstrategy-reports%2Fpages%2Fdefault%2Easpx%3FPaged%3DTRUE%26p_PublishedDate%3D20120629%252017%253A32%253A00%26p_ID%3D1166%26PageFirstRow%3D511%26%26View%3D%257B1DC2889F-2E16-4577-81CD-8EDA82389B45%257D&ContentTypeId=0x011000153E2017F3E6F541A00FC37793258D4700B558742EE69D754482FF374DF1B9C9B7)
+ARC Research estimates that Predictive Maintenance is a global $20 billion
+opportunity.
 
 To fully capitalize on this opportunity, ThingWorx and Numenta believe that a
 new generation of maintenance solutions are required that go beyond today’s
