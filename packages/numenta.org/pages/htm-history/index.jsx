@@ -9,12 +9,15 @@ import Anchor from 'numenta-web-shared-components/Anchor'
 import Image from 'numenta-web-shared-components/Image'
 import List from 'numenta-web-shared-components/List'
 import ListItem from 'numenta-web-shared-components/ListItem'
+import LogoMark from 'numenta-web-shared-components/LogoMark'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import Section from 'numenta-web-shared-components/Section'
 import SubTitle from 'numenta-web-shared-components/SubTitle'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
-import ImageDetail from './images/detail.png'
+import ImageEvolve from './images/evolve.png'
+import ImageNumenta from './images/numenta.png'
+import ImageRni from './images/rni.png'
 import styles from './index.css'
 
 const title = 'HTM History'
@@ -33,12 +36,9 @@ const HistoryPage = (props, {config}) => {
 
         <div className={styles.columns}>
           <div className={styles.aside}>
-            <Image
-              alt="Detail"
-              border={true}
-              respond="mw"
-              src={ImageDetail}
-            />
+            <div className={styles.narrow}>
+              <LogoMark />
+            </div>
           </div>
           <div className={styles.content}>
             <Paragraph lead={true}>
@@ -57,10 +57,11 @@ const HistoryPage = (props, {config}) => {
         <div className={styles.columns}>
           <div className={styles.aside}>
             <Image
-              alt="Detail"
+              alt="Redwood Neuroscience Institute"
               border={true}
               respond="mw"
-              src="http://redwood.berkeley.edu/w/images/e/eb/Rni_people.jpg"
+              shadow={true}
+              src={ImageRni}
             />
           </div>
           <div className={styles.content}>
@@ -81,9 +82,13 @@ const HistoryPage = (props, {config}) => {
             </Paragraph>
 
             <SubTitle level={3}>Accomplishments of RNI:</SubTitle>
+            {/* eslint-disable max-len */}
             <List marker="disc">
               <ListItem>
-                The book [On Intelligence](http://www.onintelligence.org/).
+                The book {' '}
+                <TextLink to="http://numenta.com/papers-videos-and-more/resources/on-intelligence/">
+                  On Intelligence.
+                </TextLink> {' '}
                 (Hawkins in collaboration with Sandra Blakeslee, NY Times)
               </ListItem>
               <ListItem>
@@ -114,6 +119,7 @@ const HistoryPage = (props, {config}) => {
                 distributed representation in high-dimensional spaces. (Kanerva)
               </ListItem>
             </List>
+            {/* eslint-enable max-len */}
           </div>
         </div>
 
@@ -122,10 +128,11 @@ const HistoryPage = (props, {config}) => {
         <div className={styles.columns}>
           <div className={styles.aside}>
             <Image
-              alt="Detail"
+              alt="Numenta Office"
               border={true}
               respond="mw"
-              src={ImageDetail}
+              shadow={true}
+              src={ImageNumenta}
             />
           </div>
           <div className={styles.content}>
@@ -161,23 +168,14 @@ const HistoryPage = (props, {config}) => {
         <div className={styles.columns}>
           <div className={styles.aside}>
             <Image
-              alt="Detail"
+              alt="HTM Evolution"
               border={true}
               respond="mw"
-              src={ImageDetail}
+              shadow={true}
+              src={ImageEvolve}
             />
           </div>
           <div className={styles.content}>
-            <List marker="disc">
-              <ListItem>Common Cortical Algorithm</ListItem>
-              <ListItem>Hierarchy and Invariance</ListItem>
-              <ListItem>Sequence and Prediction</ListItem>
-              <ListItem>Continuous Learning</ListItem>
-              <ListItem>Feedback</ListItem>
-              <ListItem>Behavior</ListItem>
-              <ListItem>Attention</ListItem>
-              <ListItem>Laminar Structure</ListItem>
-            </List>
             <Paragraph>
               Numenta's first generation of HTM algorithms was internally called
               "Zeta 1" and was not open source. This product was focused on
@@ -252,6 +250,7 @@ const HistoryPage = (props, {config}) => {
               <ListItem>Continuous Learning</ListItem>
               <ListItem>Feedback</ListItem>
               <ListItem>Behavior</ListItem>
+              <ListItem>Attention</ListItem>
               <ListItem>Laminar Structure</ListItem>
             </List>
           </div>

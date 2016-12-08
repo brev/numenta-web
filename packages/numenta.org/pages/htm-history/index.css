@@ -20,3 +20,8 @@
   composes: tc from 'tachyons';
   composes: layout-aside from '../../static/assets/css/theme.css';
 }
+
+.narrow {
+  composes: center from 'tachyons';
+  composes: w3 from 'tachyons';
+}

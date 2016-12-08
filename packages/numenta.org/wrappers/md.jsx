@@ -14,23 +14,16 @@ import Image from 'numenta-web-shared-components/Image'
 import Markdown from 'numenta-web-shared-components/Markdown'
 import Section from 'numenta-web-shared-components/Section'
 import Spacer from 'numenta-web-shared-components/Spacer'
-import Strong from 'numenta-web-shared-components/Strong'
 import Subtle from 'numenta-web-shared-components/Subtle'
-import Table from 'numenta-web-shared-components/Table'
-import TableBody from 'numenta-web-shared-components/TableBody'
-import TableCell from 'numenta-web-shared-components/TableCell'
-import TableRow from 'numenta-web-shared-components/TableRow'
 import TextLink from 'numenta-web-shared-components/TextLink'
 import Time from 'numenta-web-shared-components/Time'
 import Video from 'numenta-web-shared-components/Video'
-import {
-  getEventTimeDisplay, getVideoIdFromUrl,
-} from 'numenta-web-shared-utils/shared'
+import {getVideoIdFromUrl} from 'numenta-web-shared-utils/shared'
 
 import styles from './md.css'
 
 const pluralize = (text) => (text.match(/s$/) ? text : `${text}s`)
-const postTypes = ['blog', 'events', 'papers']
+const postTypes = ['blog', 'papers']
 
 
 /**
@@ -42,7 +35,7 @@ const MarkdownWrapper = ({route}, {config}) => {
   const occur = datetime.format(config.moments.human)
   const key = file.dir.split('/')[0]
   const url = `/${key}/`
-  let author, back, date, event, media, type
+  let author, back, date, media, type
 
   if (data.type === 'post') {
     if (key !== 'papers') {
@@ -74,90 +67,6 @@ const MarkdownWrapper = ({route}, {config}) => {
               All {capitalize(pluralize(key))}
             </TextLink>
           </IconMarker>
-        </div>
-      )
-    }
-
-    if (key === 'events') {
-      const {what, when, where, who, why} = data.event
-      const {desc, city, state, country, web} = where
-      const details = [(
-        <TableRow key="when">
-          <TableCell>
-            <Strong>When</Strong>
-          </TableCell>
-          <TableCell>
-            {getEventTimeDisplay(when)}
-          </TableCell>
-        </TableRow>
-      )]
-      let location = city
-
-      if (state) {
-        location = `${location}, ${state}`
-      }
-      if (country) {
-        location = `${location} ${country}`
-      }
-
-      details.push((
-        <TableRow key="where">
-          <TableCell>
-            <Strong>Where</Strong>
-          </TableCell>
-          <TableCell>
-            <div>{desc}</div>
-            <div>
-              {location}
-            </div>
-          </TableCell>
-        </TableRow>
-      ))
-
-      if (web) {
-        details.push((
-          <TableRow key="web">
-            <TableCell>
-              <Strong>Web</Strong>
-            </TableCell>
-            <TableCell>
-              <TextLink to={web}>Event Website</TextLink>
-            </TableCell>
-          </TableRow>
-        ))
-      }
-      if (what) {
-        details.push((
-          <TableRow key="topic">
-            <TableCell>
-              <Strong>Topic</Strong>
-            </TableCell>
-            <TableCell>
-              {what}
-            </TableCell>
-          </TableRow>
-        ))
-      }
-      if (why && who) {
-        details.push((
-          <TableRow key="why">
-            <TableCell>
-              <Strong>{why}</Strong>
-            </TableCell>
-            <TableCell>
-              {who}
-            </TableCell>
-          </TableRow>
-        ))
-      }
-
-      event = (
-        <div className={styles.event}>
-          <Table direction="horizontal">
-            <TableBody>
-              {details}
-            </TableBody>
-          </Table>
         </div>
       )
     }
@@ -216,7 +125,6 @@ const MarkdownWrapper = ({route}, {config}) => {
       >
         {author}
         {media}
-        {event}
         <div className={styles.content}>
           <Markdown>
             <div dangerouslySetInnerHTML={{__html: data.body}} />

@@ -41,7 +41,7 @@ const SectionIndex = (props, {config}) => {
           </DefineItem>
 
           <DefineTitle>
-            Community
+            Discussion
           </DefineTitle>
           <DefineItem>
             <TextLink to={links.out.forum}>
@@ -119,6 +119,8 @@ const SectionIndex = (props, {config}) => {
           that provides a framework for both biological and machine
           intelligence. Parts of HTM theory have been implemented, tested, and
           used in applications, and other parts are still being developed.
+        </Paragraph>
+        <Paragraph>
           Because Numenta believes in making our work open and accessible, we
           offer several ways to join us as we continue to progress the theory.
           Experiment with our open source project {' '}

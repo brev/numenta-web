@@ -89,15 +89,9 @@ const SectionCommunity = (props, {config}) => {
         </div>
         <div className={styles.content}>
           <Paragraph>
-            Take a look at all of our {' '}
-            <TextLink to={links.in.events}>
-              Upcoming Events.
-            </TextLink>
-          </Paragraph>
-          <Paragraph>
             All our live events are scheduled via Meetup. Please join our {' '}
             {/* eslint-disable max-len */}
-            <TextLink to="http://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/">
+            <TextLink to={links.out.meetup}>
               Meetup Group
             </TextLink> {' '}
             {/* eslint-enable max-len */}
@@ -110,12 +104,12 @@ const SectionCommunity = (props, {config}) => {
           </Paragraph>
           <Paragraph>
             For recordings of previous events, please see our {' '}
-            <TextLink to="https://www.youtube.com/c/NumentaOrg">
+            <TextLink to={links.out.youtube}>
               YouTube channel.
             </TextLink> {' '}
-            You can also view our archive of {' '}
-            <TextLink to={`${links.in.events}#past`}>
-              Past Events.
+            You may also be interested in Numenta's {' '}
+            <TextLink to="http://numenta.com/events/">
+              company events and archive.
             </TextLink>
           </Paragraph>
         </div>
