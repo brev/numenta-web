@@ -4,9 +4,11 @@
 
 import React from 'react'
 
+import Image from 'numenta-web-shared-components/Image'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
+import ImageCode from './images/image.png'
 import styles from './index.css'
 
 
@@ -20,28 +22,52 @@ const SectionCode = (props, {config}) => {
     <article>
       <div className={styles.columns}>
         <div className={styles.aside}>
-          <div className={styles.logomark}>
-            Aside
-          </div>
+          <Image
+            alt="HTM Coding"
+            border={true}
+            respond="mw"
+            shadow={true}
+            src={ImageCode}
+          />
         </div>
         <div className={styles.content}>
+
           <Paragraph lead={true}>
-            Our code is strong. Please see more details in {' '}
-            <TextLink to={links.in.implement}>
-              implementations.
+            In addition to making all of our {' '}
+            <TextLink to={links.out.github}>
+              production
             </TextLink> {' '}
-            Nostrud magna ullamco dolore ut anim quis in incididunt pariatur
-            commodo aliqua. Officia consequat voluptate reprehenderit commodo
-            quis quis laboris dolor sunt ipsum est quis nostrud. Enim anim do
-            mollit ex sint excepteur excepteur quis anim. Dolor deserunt eiusmod
-            ad dolor irure pariatur id officia dolor. Velit labore ullamco
-            aliquip anim ea occaecat in deserunt in veniam culpa tempor tempor
-            aliquip cillum. Cupidatat ullamco veniam quis sunt amet deserunt
-            irure laborum non consectetur ea. Aliqua aliquip occaecat anim anim
-            et in cillum tempor ut in ex consectetur ad eu Lorem. Commodo nisi
-            est occaecat magna do voluptate proident ut laborum minim esse
-            cillum velit do.
+            and {' '}
+            <TextLink to="https://github.com/numenta/nupic.research">
+              research
+            </TextLink> {' '}
+            code open source, Numenta fosters an open source community of HTM
+            hobbyists, engineers, scientists, and programmers. This community
+            produces and shares HTM implementations and applications, commonly
+            posting their projects on {' '}
+            <TextLink to={links.out.forum}>
+              HTM Forum.
+            </TextLink> {' '}
+            Our community hosts many of these projects on the {' '}
+            <TextLink to="https://github.com/htm-community">
+              HTM Community
+            </TextLink> {' '}
+            Github organization. We have {' '}
+            <TextLink to={links.in.implement}>
+              HTM implementations
+            </TextLink> {' '}
+            in languages like Python, C++, Java, Closure, Go, and JavaScript.
           </Paragraph>
+          <Paragraph>
+            We at Numenta strive to engage our community to help build out HTM
+            applications and experiments. If you are interested in helping out,
+            please leave us a note on the {' '}
+            <TextLink to="https://discourse.numenta.org/c/htm-hackers">
+              HTM Hackers Forum
+            </TextLink> {' '}
+            and introduce yourself.
+          </Paragraph>
+
         </div>
       </div>
     </article>

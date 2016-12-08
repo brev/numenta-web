@@ -49,17 +49,6 @@
   composes: tc from 'tachyons';
 }
 
-.event {
-  composes: bg-near-white from 'tachyons';
-  composes: br2 from 'tachyons';
-  composes: mt3 from 'tachyons';
-  composes: pa2 from 'tachyons';
-}
-.event table {
-  margin: 0;
-  padding: 0;
-}
-
 .content {
   composes: _dropcap;
 }

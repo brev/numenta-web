@@ -6,7 +6,6 @@ import Helmet from 'react-helmet'
 import React from 'react'
 
 import Anchor from 'numenta-web-shared-components/Anchor'
-import IconMarker from 'numenta-web-shared-components/IconMarker'
 import Image from 'numenta-web-shared-components/Image'
 import LogoMark from 'numenta-web-shared-components/LogoMark'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
@@ -100,11 +99,9 @@ const ImplementPage = (props, {config}) => {
               which is the primary low-level interface for creating HTM systems.
             </Paragraph>
             <div className={styles.promote}>
-              <IconMarker>
-                <TextLink to="http://github.com/numenta/nupic.core">
-                  http://github.com/numenta/nupic.core
-                </TextLink>
-              </IconMarker>
+              <TextLink to="http://github.com/numenta/nupic.core">
+                http://github.com/numenta/nupic.core
+              </TextLink>
             </div>
           </div>
         </div>
@@ -144,11 +141,9 @@ const ImplementPage = (props, {config}) => {
               {/* eslint-enable max-len */}
             </Paragraph>
             <div className={styles.promote}>
-              <IconMarker>
-                <TextLink to="http://github.com/numenta/nupic">
-                  http://github.com/numenta/nupic
-                </TextLink>
-              </IconMarker>
+              <TextLink to="http://github.com/numenta/nupic">
+                http://github.com/numenta/nupic
+              </TextLink>
             </div>
           </div>
         </div>
@@ -177,11 +172,9 @@ const ImplementPage = (props, {config}) => {
               NuPIC Network API, and has algorithmic parity with NuPIC.
             </Paragraph>
             <div className={styles.promote}>
-              <IconMarker>
-                <TextLink to="http://github.com/numenta/htm.java">
-                  http://github.com/numenta/htm.java
-                </TextLink>
-              </IconMarker>
+              <TextLink to="http://github.com/numenta/htm.java">
+                http://github.com/numenta/htm.java
+              </TextLink>
             </div>
           </div>
         </div>
@@ -206,11 +199,9 @@ const ImplementPage = (props, {config}) => {
               evolved.
             </Paragraph>
             <div className={styles.promote}>
-              <IconMarker>
-                <TextLink to="https://github.com/htm-community/comportex">
-                  https://github.com/htm-community/comportex
-                </TextLink>
-              </IconMarker>
+              <TextLink to="https://github.com/htm-community/comportex">
+                https://github.com/htm-community/comportex
+              </TextLink>
             </div>
           </div>
         </div>

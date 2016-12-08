@@ -8,6 +8,7 @@ import Image from 'numenta-web-shared-components/Image'
 import Paragraph from 'numenta-web-shared-components/Paragraph'
 import TextLink from 'numenta-web-shared-components/TextLink'
 
+import ImageHtm from './images/image.png'
 import styles from './index.css'
 
 
@@ -27,7 +28,7 @@ const SectionHtm = (props, {config}) => {
             border={true}
             respond="mw"
             shadow={true}
-            src=""
+            src={ImageHtm}
           />
         </div>
         <div className={styles.content}>

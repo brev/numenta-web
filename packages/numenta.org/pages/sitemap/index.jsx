@@ -46,7 +46,6 @@ const SitemapPage = (props, {config, route}) => {
   const {pages} = route
   const categories = [
     'blog',
-    'events',
     'papers',
   ]
   const posts = categories
@@ -166,16 +165,6 @@ const SitemapPage = (props, {config, route}) => {
 
           </div>
           <div className={styles.aside}>
-
-            <Anchor name="events" />
-            <SubTitle>
-              <TextLink to={links.in.events}>
-                Events
-              </TextLink>
-            </SubTitle>
-            <ListOrder marker="disc">
-              {items.events}
-            </ListOrder>
 
             <Anchor name="licenses" />
             <SubTitle>

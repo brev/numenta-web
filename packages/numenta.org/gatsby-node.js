@@ -16,6 +16,7 @@ import toml from 'toml'
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
 
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -23,8 +24,6 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
-
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 
 /**
@@ -142,6 +141,7 @@ export function modifyWebpackConfig(webpack, env) {
   return webpack
 }
 
+
 /**
  * Gatsby post-build callback.
  *  1. Build client-side search index
@@ -156,11 +156,9 @@ export function postBuild(pages, callback) {
   // prep search index
   const searchSkip = [
     '/blog/',   // @TODO prune
-    '/events/',
     '/sitemap/',
   ]
   const dataSkip = ['author', 'date', 'org', 'title']
-  const eventSkip = ['what', 'who', 'why']
   const searches = pages
     .filter((page) => (
       page.path &&
@@ -188,29 +186,6 @@ export function postBuild(pages, callback) {
           dataSkip.indexOf(key) !== -1
         ))
         .map((key) => data[key])
-      if ('event' in data) {
-        details.push(
-          Object
-            .keys(data.event)
-            .filter((key) => (
-              typeof data[key] === 'string' &&
-              data[key].length &&
-              eventSkip.indexOf(key) !== -1
-            ))
-            .join(' ')
-        )
-        if ('where' in data.event) {
-          details.push(
-            Object
-              .keys(data.event.where)
-              .filter((key) => (
-                typeof data[key] === 'string' &&
-                data[key].length
-              ))
-              .join(' ')
-          )
-        }
-      }
       const text = [title, content, details.join(' ')].join(' ')
       return {path, text, title}
     })
@@ -234,8 +209,15 @@ export function postBuild(pages, callback) {
   console.log('postBuild generate sitemap')
   fs.writeFileSync('public/sitemap.xml', sitemap.toString())
 
-  console.log('postBuild static asset copy')
-  return ncp('static/', 'public/', callback)
+  console.log('postBuild copy assets Gatsby missed from pages')
+  ncp('pages/', 'public/', {filter: /\.(doc|docx|txt)$/}, () => {
+
+    console.log('postBuild copy static assets')
+    ncp('static/', 'public/', callback)
+    // done.
+
+  })
 }
+
 
 /* eslint-enable no-console */
