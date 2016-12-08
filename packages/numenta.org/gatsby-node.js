@@ -46,12 +46,6 @@ export function modifyWebpackConfig(webpack, env) {
     debug: true,
   })
 
-  // ignore some other common document asset formats
-  webpack.loader('doc', {
-    test: /\.docx?$/,
-    loader: 'null',
-  })
-
   // let shared modules in parent dir find webpack loaders in node_modules/
   webpack.merge({
     resolveLoader: {
@@ -153,7 +147,7 @@ export function modifyWebpackConfig(webpack, env) {
  * @see https://github.com/gatsbyjs/gatsby#perform-additional-post-build-step
  */
 export function postBuild(pages, callback) {
-  // prep search index
+  // prep search index (munge text)
   const searchSkip = [
     '/blog/',   // @TODO prune
     '/sitemap/',
@@ -209,15 +203,8 @@ export function postBuild(pages, callback) {
   console.log('postBuild generate sitemap')
   fs.writeFileSync('public/sitemap.xml', sitemap.toString())
 
-  console.log('postBuild copy assets Gatsby missed from pages')
-  ncp('pages/', 'public/', {filter: /\.(doc|docx|txt)$/}, () => {
-
-    console.log('postBuild copy static assets')
-    ncp('static/', 'public/', callback)
-    // done.
-
-  })
+  console.log('postBuild copy static assets')
+  return ncp('static/', 'public/', callback)
 }
-
 
 /* eslint-enable no-console */
