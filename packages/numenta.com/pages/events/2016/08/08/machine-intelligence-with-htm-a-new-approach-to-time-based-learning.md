@@ -15,7 +15,7 @@ event:
     web: http://www.meetup.com/numenta/events/232848149/
   who:
   why:
-image: ../images/meetup.png
+image: ../images/image.png
 org: HTM Community
 tags: numenta hierarchical temporal memory htm community 3rd bay area meetup palo alto machine intelligence neuroscience biological
 title: "Machine Intelligence with HTM - A New Approach to Time-Based Learning"
