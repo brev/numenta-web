@@ -63,7 +63,7 @@ class MarkdownWrapper extends React.Component {
       this.setState({
         comments: (
           <Disqus
-            shortname={config.siteTitle.toLowerCase()}
+            shortname={config.company.toLowerCase()}
             title={data.title}
             url={global.window.location.href}
           />
