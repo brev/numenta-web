@@ -13,7 +13,7 @@ Algorithm (CLA) referenced in our source code and documentation.
 
 ---
 
-<script type="text/javascript" src="https://secure.echosign.com/public/embeddedWidget?wid=CBFCIBAA2AAABLblqZhB5rcsG-E9OX4keHHTob72yY2GZtKetGhXxARrVNTTlcPF1Tu9IOlFnCGXNyOhZ96U*"></script>
+<script src="https://secure.echosign.com/public/embeddedWidget?wid=CBFCIBAA2AAABLblqZhB5rcsG-E9OX4keHHTob72yY2GZtKetGhXxARrVNTTlcPF1Tu9IOlFnCGXNyOhZ96U*"></script>
 
 ---
 
@@ -23,6 +23,6 @@ Algorithm (CLA) referenced in our source code and documentation.
 * [PDF][pdf]
 * [Word Document][doc]
 
-[doc]: Numenta-Contributor-License.docx
-[pdf]: Numenta-Contributor-License.pdf
-[txt]: numenta-cl.txt
+[doc]: /resources/licenses/contrib/Numenta-Contributor-License.docx
+[pdf]: /resources/licenses/contrib/Numenta-Contributor-License.pdf
+[txt]: /resources/licenses/contrib/numenta-cl.txt

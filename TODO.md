@@ -8,3 +8,5 @@
 - describe: numenta.com has default/shared/global components, .org starts
   splitting off customs.
 - post-Lerna: eslint, stylelint, testing, etc, etc. still messy.
+- mention that PDF, Doc/x, TXT should be in `static/resources/`, as everything
+  in `pages/` needs to be able to lose filename during webpack transpilation.
