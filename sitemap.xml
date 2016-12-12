@@ -54,4 +54,5 @@
 <url> <loc>http://numenta.org/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/research-and-publications/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://numenta.org/sitemap/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://numenta.org/tools/</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 </urlset>
