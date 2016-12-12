@@ -4,6 +4,7 @@
 
 import {getBrowserWidth} from 'numenta-web-shared-utils/client'
 import {getModalWidth} from 'numenta-web-shared-utils/shared'
+import IconClose from 'react-icons/lib/fa/close'
 import Modal from 'react-modal'
 import React from 'react'
 import YouTube from 'react-youtube'
@@ -83,7 +84,16 @@ class Video extends React.Component {
           onRequestClose={() => this._playerClose()}
           style={modalStyles}
         >
-          {player}
+          <div className={styles.close}>
+            <IconClose
+              color="inherit"
+              onClick={() => this._playerClose()}
+              title="Close"
+            />
+          </div>
+          <div>
+            {player}
+          </div>
         </Modal>
       </div>
     )

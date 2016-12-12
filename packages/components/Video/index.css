@@ -49,3 +49,13 @@
   composes: mt1 from 'tachyons';
   composes: silver from 'tachyons';
 }
+
+.close {
+  composes: dim from 'tachyons';
+  composes: f3 from 'tachyons';
+  composes: fr from 'tachyons';
+  composes: mb2 from 'tachyons';
+  composes: pointer from 'tachyons';
+  color: #29aae2;
+  margin-top: -0.666rem;
+}
