@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import IconFaSearch from 'react-icons/lib/fa/search'
+import IconSearch from 'react-icons/lib/fa/search'
 import {inHTMLData} from 'xss-filters'
 import lunr from 'lunr'
 import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
@@ -28,6 +28,10 @@ class Search extends React.Component {
 
   static contextTypes = {
     manifest: React.PropTypes.object.isRequired,
+  }
+
+  static propTypes = {
+    icon: React.PropTypes.element,
   }
 
   constructor(props) {
@@ -75,7 +79,10 @@ class Search extends React.Component {
 
   render() {
     const {query} = this.state
+    let {icon} = this.props
     let matches, results
+
+    if (!icon) icon = (<IconSearch color="inherit" />)
 
     if (query) {
       matches = this._index
@@ -115,7 +122,7 @@ class Search extends React.Component {
             theme="light"
             type="submit"
           >
-            <IconFaSearch color="inherit" />
+            {icon}
           </Button>
           {results}
         </Form>
