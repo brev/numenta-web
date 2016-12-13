@@ -2,6 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
+import IconSearch from 'react-icons/lib/fa/search'
 import React from 'react'
 
 import Search from 'numenta-web-shared-components/Search'
@@ -19,7 +20,7 @@ const Header = ({logo}) => (
         {logo}
       </div>
       <div className={styles.search}>
-        <Search />
+        <Search icon={<IconSearch color="white" />} />
       </div>
     </header>
   </div>
