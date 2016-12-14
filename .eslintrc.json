@@ -32,6 +32,9 @@
       "jsx": "never"
     }],
     "import/no-extraneous-dependencies": [0],
+    "import/no-unresolved": [2, {
+      "ignore": ["^__tests__", "^config", "^gatsby-helpers"]
+    }],
     "import/prefer-default-export": [0],
     "jsx-a11y/html-has-lang": [0],
     "max-len": [2, 80],

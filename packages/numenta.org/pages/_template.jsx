@@ -9,7 +9,7 @@ import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import moment from 'moment'
-import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
+import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 
 import Layout from '../components/Layout'

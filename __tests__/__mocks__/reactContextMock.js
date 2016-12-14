@@ -2,6 +2,13 @@ import config from './configMock'
 
 const context = {
   config,
+  manifest: {
+    repository: {
+      type: 'git',
+      url: 'https://github.com/numenta/numenta-web',
+    },
+    version: '0.0.1',
+  },
   route: {
     page: {
       data: {},

@@ -5,7 +5,7 @@
 import IconSearch from 'react-icons/lib/fa/search'
 import {inHTMLData} from 'xss-filters'
 import lunr from 'lunr'
-import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
+import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 import request from 'superagent'
 import {stampUrl} from 'numenta-web-shared-utils/shared'
@@ -56,9 +56,9 @@ class Search extends React.Component {
     request
       .get(prefixLink(stampUrl('/_searchIndex.json', version)))  // load index
       .set('Accept', 'application/json')
-      .end((error, {body}) => {
-        if (error) throw new Error(error)
-        body.forEach((doc) => {
+      .end((error, results) => {
+        if (error || !results || !('body' in results)) return
+        results.body.forEach((doc) => {
           const {path, text, title} = doc
           this._documents[path] = {text, title}  // save
           this._index.add(doc)  // index

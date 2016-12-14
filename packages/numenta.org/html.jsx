@@ -5,7 +5,7 @@
 import {getConfig, stampUrl} from 'numenta-web-shared-utils/shared'
 import Helmet from 'react-helmet'
 import Pingdom from 'numenta-web-shared-components/Pingdom'
-import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
+import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 
 import {version} from './package'

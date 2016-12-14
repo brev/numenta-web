@@ -80,6 +80,7 @@ class Video extends React.Component {
           Video: {titleLine}
         </div>
         <Modal
+          contentLabel={`Video: ${titleLine}`}
           isOpen={open}
           onRequestClose={() => this._playerClose()}
           style={modalStyles}

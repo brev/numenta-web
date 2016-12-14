@@ -85,6 +85,7 @@ const SearchResult = ({onClose, onOpen, query, results}) => {
 
   return (
     <Modal
+      contentLabel={`Search Results for ${query}`}
       isOpen={isOpen}
       onAfterOpen={onOpen}
       onRequestClose={onClose}

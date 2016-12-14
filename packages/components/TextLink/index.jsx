@@ -3,7 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import {IndexLink, Link} from 'react-router'
-import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
+import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 
 import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/client'
@@ -12,7 +12,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * HTML Text Link - React view component.
  */
 const TextLink = ({children, onClick, target, to}) => {
   const instrumentOnClick = (event) => {
@@ -30,7 +30,7 @@ const TextLink = ({children, onClick, target, to}) => {
   }
   let Node = Link
 
-  if (! to) return
+  if (!to) throw new Error('missing TextLink attr [to]', to)
 
   if (to && (
     to.match(/^.+:/) || to.match(/^\/assets\//) || to.match(/\.pdf$/)

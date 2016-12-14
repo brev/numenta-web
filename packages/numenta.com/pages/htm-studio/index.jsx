@@ -144,6 +144,7 @@ class HtmStudioPage extends React.Component {
 
     termsModal = (
       <Modal
+        contentLabel={Terms.title}
         isOpen={terms}
         onRequestClose={() => this._toggleTerms()}
         style={modalStyles}

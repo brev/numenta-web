@@ -1,7 +1,8 @@
 import {parse} from 'toml'
 import {readFileSync} from 'fs'
 
-const file = readFileSync(`${process.cwd()}/config.toml`)
+const cwd = process.cwd()
+const file = readFileSync(`${cwd}/packages/numenta.com/config.toml`)
 const config = parse(file)
 
 

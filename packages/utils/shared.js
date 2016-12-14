@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {config} from 'config'  // eslint-disable-line import/no-unresolved
+import {config} from 'config'
 import moment from 'moment'
 
 /**

@@ -3,7 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import classNames from 'classnames'
-import {prefixLink} from 'gatsby-helpers'  // eslint-disable-line import/no-unresolved, max-len
+import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 
 import styles from './index.css'

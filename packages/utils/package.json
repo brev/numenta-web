@@ -17,7 +17,7 @@
   "dependencies": {
     "browser-size": "0.1.0",
     "gatsby": "0.11.7",
-    "moment": "2.15.2"
+    "moment": "2.17.1"
   },
   "repository": {
     "type": "git",
