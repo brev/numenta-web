@@ -1,6 +1,6 @@
 import {
   getModalWidth, getVideoIdFromUrl, stampUrl, trims,
-} from '../../utils/shared'
+} from '../lib/shared'
 
 
 describe('Shared Client+Server helper utils', () => {

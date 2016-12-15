@@ -4,7 +4,7 @@
 
 import favicons from 'favicons/config/html'
 import {flatten, keys, mapValues, values} from 'lodash'
-import {getConfig, stampUrl} from 'numenta-web-shared-utils/shared'
+import {getConfig, stampUrl} from 'numenta-web-shared-utils/lib/shared'
 import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'

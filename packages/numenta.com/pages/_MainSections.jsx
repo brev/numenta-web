@@ -5,7 +5,7 @@
 import {findIndex} from 'lodash'
 import React from 'react'
 
-import Section from 'numenta-web-shared-components/Section'
+import Section from 'numenta-web-shared-components/lib/Section'
 
 import SectionAnomaly from './anomaly-detection-benchmark/_Section'
 import SectionApplications from './applications/_Section'

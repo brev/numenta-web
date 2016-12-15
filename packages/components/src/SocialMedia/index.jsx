@@ -26,14 +26,20 @@ const SocialMedia = (props, {config}) => {
   for (const site in sites) {
     if ({}.hasOwnProperty.call(sites, site)) {
       const Component = sites[site]
-      const title = site.match(/(\w+)\.com/)[1]
-      socials.push(
-        <span className={styles.spread} key={title}>
-          <ImageLink title={title} to={site}>
-            <Component color="inherit" />
-          </ImageLink>
-        </span>
-      )
+      const titles = site.match(/(\w+)\.com/)
+      let title
+
+      if (titles && titles.length > 0) {
+        title = titles.pop()
+
+        socials.push(
+          <span className={styles.spread} key={title}>
+            <ImageLink title={title} to={site}>
+              <Component color="inherit" />
+            </ImageLink>
+          </span>
+        )
+      }
     }
   }
 

@@ -7,7 +7,7 @@ import IconAngleUp from 'react-icons/lib/fa/angle-up'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 
-import {hasSessionStorage} from 'numenta-web-shared-utils/client'
+import {hasSessionStorage} from 'numenta-web-shared-utils/lib/client'
 
 import SectionTitle from '../SectionTitle'
 

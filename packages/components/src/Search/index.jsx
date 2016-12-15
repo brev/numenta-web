@@ -8,7 +8,7 @@ import lunr from 'lunr'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 import request from 'superagent'
-import {stampUrl} from 'numenta-web-shared-utils/shared'
+import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
 
 import Button from '../Button'
 import Form from '../Form'

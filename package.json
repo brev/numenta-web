@@ -80,7 +80,6 @@
     "test:links:local": "npm run test:links -- http://0.0.0.0:8000",
     "test:unit": "jest --config .jestrc.json \"unit.test\"",
     "test:unit:cover": "npm run test:unit -- --coverage && open-url file://$(shx pwd)/coverage/lcov-report/index.html",
-    "test:unit:update": "npm run test:unit -- -u",
-    "test:unit:watch": "npm run test:unit -- --watch"
+    "test:unit:update": "npm run test:unit -- -u"
   }
 }

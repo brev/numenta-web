@@ -5,7 +5,7 @@
 import IconSearch from 'react-icons/lib/fa/search'
 import React from 'react'
 
-import Search from 'numenta-web-shared-components/Search'
+import Search from 'numenta-web-shared-components/lib/Search'
 
 import styles from './index.css'
 

@@ -4,14 +4,14 @@
 
 import React from 'react'
 
-import Image from 'numenta-web-shared-components/Image'
-import ImageLink from 'numenta-web-shared-components/ImageLink'
-import List from 'numenta-web-shared-components/List'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import Strong from 'numenta-web-shared-components/Strong'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import Image from 'numenta-web-shared-components/lib/Image'
+import ImageLink from 'numenta-web-shared-components/lib/ImageLink'
+import List from 'numenta-web-shared-components/lib/List'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import Strong from 'numenta-web-shared-components/lib/Strong'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import ImageBenchmark from './images/benchmark.png'
 import styles from './index.css'

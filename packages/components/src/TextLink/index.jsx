@@ -6,7 +6,7 @@ import {IndexLink, Link} from 'react-router'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 
-import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/client'
+import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/lib/client'
 
 import styles from './index.css'
 
@@ -29,8 +29,6 @@ const TextLink = ({children, onClick, target, to}) => {
     to: prefixLink(to),
   }
   let Node = Link
-
-  if (!to) throw new Error('missing TextLink attr [to]', to)
 
   if (to && (
     to.match(/^.+:/) || to.match(/^\/assets\//) || to.match(/\.pdf$/)

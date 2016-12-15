@@ -4,9 +4,9 @@
 
 import React from 'react'
 
-import Image from 'numenta-web-shared-components/Image'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import Image from 'numenta-web-shared-components/lib/Image'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import ImageOpensource from './images/image.png'
 import styles from './index.css'

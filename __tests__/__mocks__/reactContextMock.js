@@ -1,5 +1,17 @@
 import config from './configMock'
 
+
+const page = {
+  data: {
+    date: '2016-12-21',
+    title: 'Title',
+  },
+  file: {
+    path: '/papers/test.md',
+  },
+  path: '/papers/test.md',
+}
+
 const context = {
   config,
   manifest: {
@@ -10,11 +22,8 @@ const context = {
     version: '0.0.1',
   },
   route: {
-    page: {
-      data: {},
-      file: {},
-      path: '',
-    },
+    page,
+    pages: [page],
   },
   router: {
     createHref() {},

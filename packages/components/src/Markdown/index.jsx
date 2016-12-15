@@ -7,7 +7,7 @@ import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 import url from 'url'
 
-import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/client'
+import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/lib/client'
 
 import styles from './index.css'
 

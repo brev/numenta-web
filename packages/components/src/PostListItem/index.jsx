@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {getEventTimeDisplay} from 'numenta-web-shared-utils/shared'
+import {getEventTimeDisplay} from 'numenta-web-shared-utils/lib/shared'
 import moment from 'moment'
 import React from 'react'
 

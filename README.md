@@ -221,7 +221,6 @@ directory (`cd packages/numenta.com/`).***
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
 | Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
 | Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
-| Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
 
 ## Testing
 
@@ -244,7 +243,6 @@ Run only unit tests:
 
 ```shell
 npm run test:unit
-npm run test:unit:watch  # auto re-run on changes to test files
 ```
 
 Unit tests take and use snapshots in order to perform. Make sure new or updated
