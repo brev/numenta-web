@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {camelCase} from 'lodash'
+import camelCase from 'lodash/camelCase'
 import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import IconBarChart from 'react-icons/lib/fa/bar-chart'
@@ -15,27 +15,27 @@ import Modal from 'react-modal'
 import platform from 'platform'
 import React from 'react'
 
-import Anchor from 'numenta-web-shared-components/Anchor'
-import Button from 'numenta-web-shared-components/Button'
-import ButtonLink from 'numenta-web-shared-components/ButtonLink'
-import Form from 'numenta-web-shared-components/Form'
-import FormCheckbox from 'numenta-web-shared-components/FormCheckbox'
-import FormInput from 'numenta-web-shared-components/FormInput'
-import FormLabel from 'numenta-web-shared-components/FormLabel'
-import FormRow from 'numenta-web-shared-components/FormRow'
-import FormTextArea from 'numenta-web-shared-components/FormTextArea'
-import {getBrowserWidth} from 'numenta-web-shared-utils/client'
-import {getModalWidth} from 'numenta-web-shared-utils/shared'
-import Image from 'numenta-web-shared-components/Image'
-import List from 'numenta-web-shared-components/List'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import Markdown from 'numenta-web-shared-components/Markdown'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import Section from 'numenta-web-shared-components/Section'
-import Strong from 'numenta-web-shared-components/Strong'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
-import TextLink from 'numenta-web-shared-components/TextLink'
-import Video from 'numenta-web-shared-components/Video'
+import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import Button from 'numenta-web-shared-components/lib/Button'
+import ButtonLink from 'numenta-web-shared-components/lib/ButtonLink'
+import Form from 'numenta-web-shared-components/lib/Form'
+import FormCheckbox from 'numenta-web-shared-components/lib/FormCheckbox'
+import FormInput from 'numenta-web-shared-components/lib/FormInput'
+import FormLabel from 'numenta-web-shared-components/lib/FormLabel'
+import FormRow from 'numenta-web-shared-components/lib/FormRow'
+import FormTextArea from 'numenta-web-shared-components/lib/FormTextArea'
+import {getBrowserWidth} from 'numenta-web-shared-utils/lib/client'
+import {getModalWidth} from 'numenta-web-shared-utils/lib/shared'
+import Image from 'numenta-web-shared-components/lib/Image'
+import List from 'numenta-web-shared-components/lib/List'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import Markdown from 'numenta-web-shared-components/lib/Markdown'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import Section from 'numenta-web-shared-components/lib/Section'
+import Strong from 'numenta-web-shared-components/lib/Strong'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
+import Video from 'numenta-web-shared-components/lib/Video'
 
 import ImageUse1 from './images/use1.png'
 import ImageUse2 from './images/use2.png'
@@ -50,6 +50,8 @@ import styles from './index.css'
 import Terms from './terms.md'
 
 const title = 'HTM Studio'
+const URL_OSX = 'http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg'  // eslint-disable-line max-len
+const URL_WIN = 'http://public.numenta.com/releases/htm-studio/win/HTM%20Studio%20Setup%201.0.0.exe'  // eslint-disable-line max-len
 
 const sortFaqs = (a, b) => {
   if (a.data.sort > b.data.sort) return 1
@@ -110,9 +112,7 @@ class HtmStudioPage extends React.Component {
     const modalWidth = getModalWidth(getBrowserWidth(), {copy: true})
     const warningClasses = [styles.row, styles.error]
     const family = camelCase(os.family).toLowerCase()
-    const downloadLink = ((family && family.match(/win/)) ?
-      links.out.htmstudio.win : links.out.htmstudio.osx
-    )
+    const downloadLink = (family && family.match(/win/)) ? URL_WIN : URL_OSX
     const faqs = pages.filter(({file}) => (
       (file.path.match(/^htm-studio\/faq\/.*\.md/))
     ))
@@ -144,6 +144,7 @@ class HtmStudioPage extends React.Component {
 
     termsModal = (
       <Modal
+        contentLabel={Terms.title}
         isOpen={terms}
         onRequestClose={() => this._toggleTerms()}
         style={modalStyles}

@@ -4,12 +4,12 @@
 
 import React from 'react'
 
-import DefineItem from 'numenta-web-shared-components/DefineItem'
-import DefineTitle from 'numenta-web-shared-components/DefineTitle'
-import Glance from 'numenta-web-shared-components/Glance'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import Strong from 'numenta-web-shared-components/Strong'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import DefineItem from 'numenta-web-shared-components/lib/DefineItem'
+import DefineTitle from 'numenta-web-shared-components/lib/DefineTitle'
+import Glance from 'numenta-web-shared-components/lib/Glance'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import Strong from 'numenta-web-shared-components/lib/Strong'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import styles from './index.css'
 
@@ -17,7 +17,7 @@ import styles from './index.css'
 /**
  * Numenta.org MainSection Homepage wrapper - React view component.
  */
-const SectionIndex = (props, {config}) => {
+const SectionHome = (props, {config}) => {
   const {links, siteTitle} = config
 
   return (
@@ -146,8 +146,8 @@ const SectionIndex = (props, {config}) => {
   )
 }
 
-SectionIndex.contextTypes = {
+SectionHome.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionIndex
+export default SectionHome

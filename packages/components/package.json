@@ -19,29 +19,34 @@
     "classnames": "2.2.5",
     "gatsby": "0.11.7",
     "lunr": "0.7.2",
-    "moment": "2.15.2",
+    "moment": "2.17.1",
     "numenta-web-shared-utils": "^0.0.0",
-    "react": "15.3.2",
+    "react": "15.4.1",
     "react-highlighter": "0.3.3",
     "react-icons": "2.2.1",
-    "react-modal": "1.5.2",
+    "react-modal": "1.6.3",
     "react-router": "2.8.1",
-    "react-youtube": "7.2.0",
-    "superagent": "2.3.0",
+    "react-youtube": "7.3.0",
+    "superagent": "3.2.1",
     "xss-filters": "1.2.7"
   },
   "devDependencies": {
-    "react-stub-context": "0.7.0",
-    "react-test-renderer": "15.3.2"
+    "babel-cli": "6.18.0",
+    "babel-core": "6.20.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-class-properties": "6.19.0",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-react-hmre": "1.1.1",
+    "babel-preset-stage-0": "6.16.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/numenta/numenta-web"
   },
   "scripts": {
-    "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
-    "lint:css": "stylelint --config=../../.stylelintrc \"**/*.css\"",
-    "lint:html": "echo",
-    "lint:js": "eslint --config=../../.eslintrc.json --ext=js --ext=jsx ."
+    "build": "npm run compile",
+    "compile": "babel --copy-files --ignore __tests__ --out-dir lib/ --source-maps true src/",
+    "postinstall": "npm run build"
   }
 }

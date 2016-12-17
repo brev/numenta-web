@@ -3,18 +3,18 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import Helmet from 'react-helmet'
-import {zipObject} from 'lodash'
+import zipObject from 'lodash/zipObject'
 import React from 'react'
 
-import Anchor from 'numenta-web-shared-components/Anchor'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import ListOrder from 'numenta-web-shared-components/ListOrder'
-import Section from 'numenta-web-shared-components/Section'
-import {sortDateDescend} from 'numenta-web-shared-utils/shared'
-import Spacer from 'numenta-web-shared-components/Spacer'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
-import Subtle from 'numenta-web-shared-components/Subtle'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import ListOrder from 'numenta-web-shared-components/lib/ListOrder'
+import Section from 'numenta-web-shared-components/lib/Section'
+import {sortDateDescend} from 'numenta-web-shared-utils/lib/shared'
+import Spacer from 'numenta-web-shared-components/lib/Spacer'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import Subtle from 'numenta-web-shared-components/lib/Subtle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import styles from './index.css'
 

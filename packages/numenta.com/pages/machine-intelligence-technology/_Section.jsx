@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import List from 'numenta-web-shared-components/List'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import TextLink from 'numenta-web-shared-components/TextLink'
-import Video from 'numenta-web-shared-components/Video'
+import List from 'numenta-web-shared-components/lib/List'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
+import Video from 'numenta-web-shared-components/lib/Video'
 
 import ImageVideoTech from './images/video-tech.png'
 import styles from './index.css'

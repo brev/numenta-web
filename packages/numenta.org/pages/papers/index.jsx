@@ -2,18 +2,18 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {capitalize} from 'lodash'
+import capitalize from 'lodash/capitalize'
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import ListItem from 'numenta-web-shared-components/ListItem'
-import ListOrder from 'numenta-web-shared-components/ListOrder'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import Section from 'numenta-web-shared-components/Section'
-import {sortOrderAscend} from 'numenta-web-shared-utils/shared'
-import Spacer from 'numenta-web-shared-components/Spacer'
-import Subtle from 'numenta-web-shared-components/Subtle'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import ListOrder from 'numenta-web-shared-components/lib/ListOrder'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import Section from 'numenta-web-shared-components/lib/Section'
+import {sortOrderAscend} from 'numenta-web-shared-utils/lib/shared'
+import Spacer from 'numenta-web-shared-components/lib/Spacer'
+import Subtle from 'numenta-web-shared-components/lib/Subtle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import styles from './index.css'
 

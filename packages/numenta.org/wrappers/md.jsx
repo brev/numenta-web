@@ -2,23 +2,23 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {capitalize} from 'lodash'
+import capitalize from 'lodash/capitalize'
 import Helmet from 'react-helmet'
 import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
 import React from 'react'
 
-import Avatar from 'numenta-web-shared-components/Avatar'
-import IconMarker from 'numenta-web-shared-components/IconMarker'
-import Image from 'numenta-web-shared-components/Image'
-import Markdown from 'numenta-web-shared-components/Markdown'
-import Section from 'numenta-web-shared-components/Section'
-import Spacer from 'numenta-web-shared-components/Spacer'
-import Subtle from 'numenta-web-shared-components/Subtle'
-import TextLink from 'numenta-web-shared-components/TextLink'
-import Time from 'numenta-web-shared-components/Time'
-import Video from 'numenta-web-shared-components/Video'
-import {getVideoIdFromUrl} from 'numenta-web-shared-utils/shared'
+import Avatar from 'numenta-web-shared-components/lib/Avatar'
+import IconMarker from 'numenta-web-shared-components/lib/IconMarker'
+import Image from 'numenta-web-shared-components/lib/Image'
+import Markdown from 'numenta-web-shared-components/lib/Markdown'
+import Section from 'numenta-web-shared-components/lib/Section'
+import Spacer from 'numenta-web-shared-components/lib/Spacer'
+import Subtle from 'numenta-web-shared-components/lib/Subtle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
+import Time from 'numenta-web-shared-components/lib/Time'
+import Video from 'numenta-web-shared-components/lib/Video'
+import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/shared'
 
 import styles from './md.css'
 

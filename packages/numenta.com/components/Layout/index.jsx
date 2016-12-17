@@ -4,11 +4,11 @@
 
 import React from 'react'
 
-import Footer from 'numenta-web-shared-components/Footer'
-import Header from 'numenta-web-shared-components/Header'
-import Logo from 'numenta-web-shared-components/Logo'
-import Main from 'numenta-web-shared-components/Main'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import Footer from 'numenta-web-shared-components/lib/Footer'
+import Header from 'numenta-web-shared-components/lib/Header'
+import Logo from 'numenta-web-shared-components/lib/Logo'
+import Main from 'numenta-web-shared-components/lib/Main'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import styles from './index.css'
 

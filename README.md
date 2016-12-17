@@ -209,19 +209,17 @@ directory (`cd packages/numenta.com/`).***
 | Clean | `npm run clean` | Clean build |
 | Clean Build | `npm run clean:build` | Clean Gatsby static output from `/public` |
 | Clean NPM | `npm run clean:npm` | Reset npm packaging |
-| Clean Test | `npm run clean:test` | Clean up after test runs (remove `/coverage` reports, etc) |
+| Clean Tests | `npm run clean:test` | Clean up after test runs (remove `/coverage` reports, etc) |
 | Deploy | `npm run deploy:gh-pages` | Deploy branch `public/` build to `origin:gh-pages` |
 | Develop | `npm run dev` | Develop site interactively on http://localhost:8000 |
 | Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
 | Serve | `npm run serve` | Builds, then Serves static output |
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
-| Test Links Local | `npm run test:links:local` | Runs link checker against http://0.0.0.0:8000 |
-| Test Links Production | `npm run test:links:prod` | Runs link checker against Production site |
-| Test Links Staging | `npm run test:links:stage` | Runs link checker against Staging site |
+| Test Links | `npm run test:links` | Runs link checker |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
 | Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
 | Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
-| Test Unit Watch | `npm run test:unit:watch` | Constantly Re-Runs unit tests while watching for file changes |
+| Test Unit Watch | `npm run test:unit:watch` | Run unit tests while watching for files to change in realtime |
 
 ## Testing
 
@@ -244,7 +242,15 @@ Run only unit tests:
 
 ```shell
 npm run test:unit
-npm run test:unit:watch  # auto re-run on changes to test files
+```
+
+Run unit tests while watching filesystem for changes in realtime (requires
+3rd-party [Watchman](https://facebook.github.io/watchman/) to be installed
+first):
+
+```
+brew install watchman
+npm run test:unit:watch
 ```
 
 Unit tests take and use snapshots in order to perform. Make sure new or updated
@@ -269,10 +275,11 @@ npm run test:unit:coverage
 #   You probably have `npm run serve` ready in another terminal window or
 #   background job process. Or, you could do `npm run build` and run an http
 #   server on the contents of `public/`.
-npm run test:links:local
+npm run test:links -- http://localhost:8000
 
-npm run test:links:stage  # test hyperlinks on Staging
-npm run test:links:prod   # test hyperlinks on Production
+# Test hyperlinks on staging or production
+npm run test:links -- http://staging.numenta.com
+npm run test:links -- http://numenta.com
 ```
 
 ## Build

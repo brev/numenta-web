@@ -6,18 +6,18 @@ import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import Anchor from 'numenta-web-shared-components/Anchor'
-import Button from 'numenta-web-shared-components/Button'
-import Form from 'numenta-web-shared-components/Form'
-import FormInput from 'numenta-web-shared-components/FormInput'
-import FormLabel from 'numenta-web-shared-components/FormLabel'
-import FormRow from 'numenta-web-shared-components/FormRow'
-import Image from 'numenta-web-shared-components/Image'
-import ImageLink from 'numenta-web-shared-components/ImageLink'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import Section from 'numenta-web-shared-components/Section'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import Button from 'numenta-web-shared-components/lib/Button'
+import Form from 'numenta-web-shared-components/lib/Form'
+import FormInput from 'numenta-web-shared-components/lib/FormInput'
+import FormLabel from 'numenta-web-shared-components/lib/FormLabel'
+import FormRow from 'numenta-web-shared-components/lib/FormRow'
+import Image from 'numenta-web-shared-components/lib/Image'
+import ImageLink from 'numenta-web-shared-components/lib/ImageLink'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import Section from 'numenta-web-shared-components/lib/Section'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
 import ImageFeature1 from './images/feature1.png'
 import ImageFeature2 from './images/feature2.png'
@@ -304,8 +304,9 @@ const HtmStocksPage = (props, {config}) => {
         </SubTitle>
         <div className={styles.columns}>
           <div className={styles.aside}>
+            {/* eslint-disable max-len */}
             <div className={styles.download}>
-              <ImageLink to={links.out.htmstocks.app}>
+              <ImageLink to="https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8">
                 <Image
                   alt="HTM for Stocks on Apple iOS App Store"
                   center={true}
@@ -319,7 +320,7 @@ const HtmStocksPage = (props, {config}) => {
               </div>
             </div>
             <div className={styles.download}>
-              <ImageLink to={links.out.htmstocks.play}>
+              <ImageLink to="https://play.google.com/store/apps/details?id=com.numenta.taurus">
                 <Image
                   alt="HTM for Stocks on Google Android Play Store"
                   center={true}
@@ -332,6 +333,7 @@ const HtmStocksPage = (props, {config}) => {
                 Android phone (version 4.1 or higher)
               </div>
             </div>
+            {/* eslint-enable max-len */}
           </div>
           <div className={styles.content}>
             <Paragraph>
@@ -339,7 +341,6 @@ const HtmStocksPage = (props, {config}) => {
               provide feedback. This is optional registration so we can contact
               you for future discussion.
             </Paragraph>
-            {/* eslint-disable max-len */}
             <Form
               action="https://numenta.wufoo.com/forms/z1v02iwe1pywsrf/#public"
             >
@@ -387,7 +388,6 @@ const HtmStocksPage = (props, {config}) => {
                 value="QtcKYnectCUEIoQBldg0abE8A+/1vmIblmzSzfMUVTM="
               />
             </Form>
-            {/* eslint-enable max-len */}
 
           </div>
         </div>

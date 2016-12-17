@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import Anchor from 'numenta-web-shared-components/Anchor'
-import Image from 'numenta-web-shared-components/Image'
-import ImageLink from 'numenta-web-shared-components/ImageLink'
-import List from 'numenta-web-shared-components/List'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
-import TextLink from 'numenta-web-shared-components/TextLink'
-import Video from 'numenta-web-shared-components/Video'
+import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import Image from 'numenta-web-shared-components/lib/Image'
+import ImageLink from 'numenta-web-shared-components/lib/ImageLink'
+import List from 'numenta-web-shared-components/lib/List'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
+import Video from 'numenta-web-shared-components/lib/Video'
 
 import ImageHtmStocks from './images/htm-for-stocks.png'
 import ImageHtmStudio from './images/htm-studio.png'
@@ -164,13 +164,15 @@ const SectionApplications = (props, {config}) => {
             stock volume, and Twitter volume for top publicly traded companies
             and alerts you in real time when something unusual is happening.
             HTM for Stocks is available for free via the {' '}
-            <TextLink to={links.out.htmstocks.app}>
+            {/* eslint-disable max-len */}
+            <TextLink to="https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8">
               App Store
             </TextLink>
             {' '} or {' '}
-            <TextLink to={links.out.htmstocks.play}>
+            <TextLink to="https://play.google.com/store/apps/details?id=com.numenta.taurus">
               Google Play Store.
             </TextLink>
+            {/* eslint-enable max-len */}
           </Paragraph>
           <List marker="disc">
             <ListItem>

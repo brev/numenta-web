@@ -1,4 +1,4 @@
-import {getBrowserWidth, hasSessionStorage} from '../../utils/client'
+import {getBrowserWidth, hasSessionStorage} from '../lib/client'
 
 
 describe('Client helper utils', () => {
@@ -15,16 +15,16 @@ describe('Client helper utils', () => {
     })
   })
 
-  describe('scrollToSection()', () => {
-    it('Scrolls to a section', () => {
+  // describe('scrollToSection()', () => {
+    // it('Scrolls to a section', () => {
       // expect(scrollToSection(X)).toBe()
-    })
-  })
+    // })
+  // })
 
-  describe('triggerGAnalyticsEvent()', () => {
-    it('Triggers a GoogleAnalytics custom event', () => {
+  // describe('triggerGAnalyticsEvent()', () => {
+    // it('Triggers a GoogleAnalytics custom event', () => {
       // expect(triggerGAnalyticsEvent()).toBe()
-    })
-  })
+    // })
+  // })
 
 })

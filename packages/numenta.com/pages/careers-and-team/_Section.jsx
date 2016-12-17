@@ -4,15 +4,15 @@
 
 import React from 'react'
 
-import Anchor from 'numenta-web-shared-components/Anchor'
-import Image from 'numenta-web-shared-components/Image'
-import List from 'numenta-web-shared-components/List'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import Paragraph from 'numenta-web-shared-components/Paragraph'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
-import TextLink from 'numenta-web-shared-components/TextLink'
+import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import Image from 'numenta-web-shared-components/lib/Image'
+import List from 'numenta-web-shared-components/lib/List'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
-import {sortDateDescend} from 'numenta-web-shared-utils/shared'
+import {sortDateDescend} from 'numenta-web-shared-utils/lib/shared'
 
 import ImageCareers from './images/careers.png'
 import ImageCeleste from './images/team/celeste-baranski.png'

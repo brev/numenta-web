@@ -1,15 +1,9 @@
 import {
   getModalWidth, getVideoIdFromUrl, stampUrl, trims,
-} from '../../utils/shared'
+} from '../lib/shared'
 
 
 describe('Shared Client+Server helper utils', () => {
-
-  describe('getConfig()', () => {
-    it('Gets configuration', () => {
-      // expect(getConfig()).toBeObject()
-    })
-  })
 
   describe('getEventTimeDisplay()', () => {
     it('Gets event datetime display', () => {
@@ -29,17 +23,17 @@ describe('Shared Client+Server helper utils', () => {
     })
   })
 
-  describe('sortDateAscend()', () => {
-    it('Sorts by Date in ascending order', () => {
-      // expect().toContain()
-    })
-  })
+  // describe('sortDateAscend()', () => {
+  //   it('Sorts by Date in ascending order', () => {
+  //     expect().toContain()
+  //   })
+  // })
 
-  describe('sortDateDescend()', () => {
-    it('Sorts by Date in descending order', () => {
-      // expect().toContain()
-    })
-  })
+  // describe('sortDateDescend()', () => {
+  //   it('Sorts by Date in descending order', () => {
+  //     expect().toContain()
+  //   })
+  // })
 
   describe('stampUrl()', () => {
     it('Stamps a cache-buster version number on a URL string', () => {

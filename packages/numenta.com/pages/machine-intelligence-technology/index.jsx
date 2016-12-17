@@ -5,9 +5,9 @@
 import Helmet from 'react-helmet'
 import React from 'react'
 
-import NextSection from 'numenta-web-shared-components/NextSection'
-import {scrollToSection} from 'numenta-web-shared-utils/client'
-import Section from 'numenta-web-shared-components/Section'
+import NextSection from 'numenta-web-shared-components/lib/NextSection'
+import {scrollToSection} from 'numenta-web-shared-utils/lib/client'
+import Section from 'numenta-web-shared-components/lib/Section'
 
 import MainSections, {getNextSection} from '../_MainSections'
 import SectionTechnology from './_Section'

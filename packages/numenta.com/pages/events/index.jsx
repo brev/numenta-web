@@ -6,12 +6,14 @@ import Helmet from 'react-helmet'
 import moment from 'moment'
 import React from 'react'
 
-import Anchor from 'numenta-web-shared-components/Anchor'
-import ListItem from 'numenta-web-shared-components/ListItem'
-import ListOrder from 'numenta-web-shared-components/List'
-import Section from 'numenta-web-shared-components/Section'
-import {sortDateAscend, sortDateDescend} from 'numenta-web-shared-utils/shared'
-import SubTitle from 'numenta-web-shared-components/SubTitle'
+import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import ListItem from 'numenta-web-shared-components/lib/ListItem'
+import ListOrder from 'numenta-web-shared-components/lib/List'
+import Section from 'numenta-web-shared-components/lib/Section'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
+import {
+  sortDateAscend, sortDateDescend,
+} from 'numenta-web-shared-utils/lib/shared'
 
 import PostListRow from '../../components/PostListRow'
 import styles from './index.css'
