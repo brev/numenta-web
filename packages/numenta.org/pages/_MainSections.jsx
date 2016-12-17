@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {findIndex} from 'lodash'
+import findIndex from 'lodash/findIndex'
 import React from 'react'
 
 import {hasSessionStorage} from 'numenta-web-shared-utils/lib/client'

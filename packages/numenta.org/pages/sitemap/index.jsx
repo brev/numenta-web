@@ -3,8 +3,8 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import Helmet from 'react-helmet'
-import {zipObject} from 'lodash'
 import React from 'react'
+import zipObject from 'lodash/zipObject'
 
 import Anchor from 'numenta-web-shared-components/lib/Anchor'
 import ListItem from 'numenta-web-shared-components/lib/ListItem'

@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {capitalize} from 'lodash'
+import capitalize from 'lodash/capitalize'
 import Helmet from 'react-helmet'
 import React from 'react'
 

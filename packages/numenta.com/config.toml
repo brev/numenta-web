@@ -41,12 +41,6 @@ company = 'Numenta'
     map = 'http://maps.google.com/maps?q=791+Middlefield+Road,+Redwood+City,+CA+94063'
     twitter = 'https://twitter.com/numenta'
     youtube = 'https://www.youtube.com/user/numenta'
-    [links.out.htmstocks]
-      app = 'https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8'
-      play = 'https://play.google.com/store/apps/details?id=com.numenta.taurus'
-    [links.out.htmstudio]
-      osx = 'http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg'
-      win = 'http://public.numenta.com/releases/htm-studio/win/HTM%20Studio%20Setup%201.0.0.exe'
 
   [links.in]  # internal paths
     # main/home pseudo-single page

@@ -20,7 +20,7 @@ import styles from './index.css'
 /**
  * Home MainSection and Homepage Content - React view component.
  */
-const SectionIndex = (props, {config}) => {
+const SectionHome = (props, {config}) => {
   const {links} = config
 
   return (
@@ -144,8 +144,8 @@ const SectionIndex = (props, {config}) => {
   )
 }
 
-SectionIndex.contextTypes = {
+SectionHome.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionIndex
+export default SectionHome

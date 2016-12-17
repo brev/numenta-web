@@ -2,7 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {camelCase} from 'lodash'
+import camelCase from 'lodash/camelCase'
 import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import IconBarChart from 'react-icons/lib/fa/bar-chart'
@@ -50,6 +50,8 @@ import styles from './index.css'
 import Terms from './terms.md'
 
 const title = 'HTM Studio'
+const URL_OSX = 'http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg'  // eslint-disable-line max-len
+const URL_WIN = 'http://public.numenta.com/releases/htm-studio/win/HTM%20Studio%20Setup%201.0.0.exe'  // eslint-disable-line max-len
 
 const sortFaqs = (a, b) => {
   if (a.data.sort > b.data.sort) return 1
@@ -110,9 +112,7 @@ class HtmStudioPage extends React.Component {
     const modalWidth = getModalWidth(getBrowserWidth(), {copy: true})
     const warningClasses = [styles.row, styles.error]
     const family = camelCase(os.family).toLowerCase()
-    const downloadLink = ((family && family.match(/win/)) ?
-      links.out.htmstudio.win : links.out.htmstudio.osx
-    )
+    const downloadLink = (family && family.match(/win/)) ? URL_WIN : URL_OSX
     const faqs = pages.filter(({file}) => (
       (file.path.match(/^htm-studio\/faq\/.*\.md/))
     ))

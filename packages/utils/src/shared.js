@@ -11,15 +11,6 @@ import moment from 'moment'
 
 
 /**
- * Get the config from the Gatsby configuration TOML file via Gatsby+Webpack
- *  loader.
- * @returns {Object} - Site configuration object.
- */
-export function getConfig() {
-  return config
-}
-
-/**
  * Format a human-readable, display-ready version of a Post Item's (Blog,
  *  Event, etc.) occurance (start and end times). Can be complex as some events
  *  have only a start, some have both start+end, some are full-day, and some

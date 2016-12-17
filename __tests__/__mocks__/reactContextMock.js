@@ -1,16 +1,5 @@
 import config from './configMock'
-
-
-const page = {
-  data: {
-    date: '2016-12-21',
-    title: 'Title',
-  },
-  file: {
-    path: '/papers/test.md',
-  },
-  path: '/papers/test.md',
-}
+import post from './postMock'
 
 const context = {
   config,
@@ -22,8 +11,8 @@ const context = {
     version: '0.0.1',
   },
   route: {
-    page,
-    pages: [page],
+    page: post,
+    pages: [post],
   },
   router: {
     createHref() {},

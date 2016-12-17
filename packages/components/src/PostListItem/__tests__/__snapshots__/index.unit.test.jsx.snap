@@ -5,8 +5,8 @@ exports[`PostListItem React component Renders Evented Post (Event) correctly 1`]
     className="date">
     <time
       className="time"
-      dateTime="2016-08-20T00:00:00-07:00">
-      Sat, Aug 20, 2016
+      dateTime="2016-12-21T00:00:00-08:00">
+      Wed, Dec 21, 2016
     </time>
   </div>
   <a
@@ -17,12 +17,12 @@ exports[`PostListItem React component Renders Evented Post (Event) correctly 1`]
     target={undefined}>
     <span
       className="title">
-      Another AI Conference
+      Calculus of the Nervous System
     </span>
   </a>
   <p
     className="paragraph">
-    Quick Synopsis or First Paragraph
+    Quick quip or intro to the full text.
     ...
   </p>
   <div
@@ -32,13 +32,13 @@ exports[`PostListItem React component Renders Evented Post (Event) correctly 1`]
       <span
         className="avatar">
         <img
-          alt="Alan Turing"
+          alt="Ada Lovelace"
           className="image border round"
           onClick={undefined}
           src="filename.ext"
-          title="Alan Turing" />
+          title="Ada Lovelace" />
       </span>
-      Alan Turing
+      Ada Lovelace
       <span
         className="spacer">
         •
@@ -56,23 +56,23 @@ exports[`PostListItem React component Renders Link stub (Press Link) correctly 1
     className="date">
     <time
       className="time"
-      dateTime="2016-07-10T00:00:00-07:00">
-      Sun, Jul 10, 2016
+      dateTime="2016-12-21T00:00:00-08:00">
+      Wed, Dec 21, 2016
     </time>
   </div>
   <a
     className="textlink"
-    href="http://superblog.com"
+    href="http://numenta.com"
     onClick={[Function]}
     target={undefined}>
     <span
       className="title">
-      Super Blog on Numenta and AI
+      Calculus of the Nervous System
     </span>
   </a>
   <p
     className="paragraph">
-    Intro to the full text.
+    Quick quip or intro to the full text.
     ...
   </p>
   <div
@@ -82,18 +82,18 @@ exports[`PostListItem React component Renders Link stub (Press Link) correctly 1
       <span
         className="avatar">
         <img
-          alt="Blogger Uno"
+          alt="Ada Lovelace"
           className="image border round"
           onClick={undefined}
           src="filename.ext"
-          title="Blogger Uno" />
+          title="Ada Lovelace" />
       </span>
-      Blogger Uno
+      Ada Lovelace
       <span
         className="spacer">
         •
       </span>
-      SuperBlog
+      Evangelist
     </span>
   </div>
 </div>
@@ -106,8 +106,8 @@ exports[`PostListItem React component Renders Normal Post (Blog, Press Release, 
     className="date">
     <time
       className="time"
-      dateTime="2016-09-30T00:00:00-07:00">
-      Fri, Sep 30, 2016
+      dateTime="2016-12-21T00:00:00-08:00">
+      Wed, Dec 21, 2016
     </time>
   </div>
   <a

@@ -3,21 +3,11 @@ import renderer from 'react-test-renderer'
 import stubContext from 'react-stub-context'
 
 import context from '__tests__/__mocks__/reactContextMock'
+import post from '__tests__/__mocks__/postMock'
 
 import Html from '../../wrappers/html'
 
-const route = {
-  page: {
-    data: {
-      post: {
-        title: 'Wrapper Title',
-        body: 'Wrapper Body',
-      },
-    },
-    file: {},
-    path: '',
-  },
-}
+const route = {page: post}
 
 
 describe('HTML Wrapper React component', () => {

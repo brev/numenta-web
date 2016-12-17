@@ -164,13 +164,15 @@ const SectionApplications = (props, {config}) => {
             stock volume, and Twitter volume for top publicly traded companies
             and alerts you in real time when something unusual is happening.
             HTM for Stocks is available for free via the {' '}
-            <TextLink to={links.out.htmstocks.app}>
+            {/* eslint-disable max-len */}
+            <TextLink to="https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8">
               App Store
             </TextLink>
             {' '} or {' '}
-            <TextLink to={links.out.htmstocks.play}>
+            <TextLink to="https://play.google.com/store/apps/details?id=com.numenta.taurus">
               Google Play Store.
             </TextLink>
+            {/* eslint-enable max-len */}
           </Paragraph>
           <List marker="disc">
             <ListItem>

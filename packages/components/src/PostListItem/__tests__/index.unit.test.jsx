@@ -1,80 +1,37 @@
+import merge from 'lodash/merge'
 import React from 'react'
 import renderer from 'react-test-renderer'
 import stubContext from 'react-stub-context'
 
 import context from '__tests__/__mocks__/reactContextMock'
+import post from '__tests__/__mocks__/postMock'
 
 import PostListItem from '../../PostListItem'
 
+
 const PostListItemStubbed = stubContext(PostListItem, context)
 
-const blog = {
-  file: {
-    dir: '/blog/2016/09/30/calculus-of-the-nervous-system/',
+const eventMock = {
+  when: {
+    begin: '2016/08/20 13:00',
+    end: '2016/08/20 14:00',
   },
-  data: {
-    author: 'Ada Lovelace',
-    brief: 'Quick quip or intro to the full text.',
-    date: '2016/09/30',
-    link: null,  // URL
-    org: 'Evangelist',
-    title: 'Calculus of the Nervous System',
-    type: 'post',  // link
+  where: {
+    desc: 'Big Ben',
+    city: 'London',
+    state: 'England',
+    country: 'UK',
+    web: 'http://bigben.co.uk',
   },
-  path: '/blog/2016/09/30/calculus-of-the-nervous-system/',
 }
-
-const event = {
-  file: {
-    dir: '/event/2016/08/20/another-ai-conference/',
-  },
-  data: {
-    author: 'Alan Turing',
-    brief: 'Quick Synopsis or First Paragraph',
-    date: '2016/08/20',
-    event: {
-      when: {
-        begin: '2016/08/20 13:00',
-        end: '2016/08/20 14:00',
-      },
-      where: {
-        desc: 'Big Ben',
-        city: 'London',
-        state: 'England',
-        country: 'UK',
-        web: 'http://bigben.co.uk',
-      },
-    },
-    link: null,
-    org: 'Evangelist',
-    title: 'Another AI Conference',
-    type: 'post',  // link
-  },
-  path: '/event/2016/08/20/another-ai-conference/',
-}
-
-const link = {
-  file: {
-    dir: '/press/2016/07/10/super-shout-out/',
-  },
-  data: {
-    author: 'Blogger Uno',
-    brief: 'Intro to the full text.',
-    date: '2016/07/10',
-    link: 'http://superblog.com',
-    org: 'SuperBlog',
-    title: 'Super Blog on Numenta and AI',
-    type: 'link',
-  },
-  path: '/press/2016/07/10/super-shout-out/',
-}
+const linkMock = '/press/2015/08/20/numenta-releases-product/'
 
 
 describe('PostListItem React component', () => {
 
   it('Renders Normal Post (Blog, Press Release, etc.) correctly', () => {
     const component = renderer.create(
-      <PostListItemStubbed post={blog}>
+      <PostListItemStubbed post={post}>
         Blog-like Content
       </PostListItemStubbed>
     )
@@ -83,6 +40,7 @@ describe('PostListItem React component', () => {
   })
 
   it('Renders Evented Post (Event) correctly', () => {
+    const event = merge({}, post, eventMock)
     const component = renderer.create(
       <PostListItemStubbed post={event}>
         Event-like Content
@@ -93,6 +51,20 @@ describe('PostListItem React component', () => {
   })
 
   it('Renders Link stub (Press Link) correctly', () => {
+    const stem = linkMock.split('/').pop()
+    const link = merge({}, post, {
+      data: {
+        link: 'http://numenta.com',
+        type: 'link',
+      },
+      file: {
+        dir: linkMock,
+        path: linkMock,
+        stem,
+      },
+      key: stem,
+      path: linkMock,
+    })
     const component = renderer.create(
       <PostListItemStubbed post={link} />
     )

@@ -2,23 +2,25 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
+import {config} from 'config'
 import favicons from 'favicons/config/html'
-import {flatten, keys, mapValues, values} from 'lodash'
-import {getConfig, stampUrl} from 'numenta-web-shared-utils/lib/shared'
+import flatten from 'lodash/flatten'
 import GoogleAnalytics from 'react-g-analytics'
 import Helmet from 'react-helmet'
 import injectTapEventPlugin from 'react-tap-event-plugin'
+import keys from 'lodash/keys'
+import mapValues from 'lodash/mapValues'
 import moment from 'moment'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
+import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
+import values from 'lodash/values'
 
 import Layout from '../components/Layout'
 import manifest from '../package'
 
 import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/first, max-len
 import '../static/assets/css/fonts.css'
-
-const config = getConfig()
 
 
 /**

@@ -17,7 +17,7 @@ import styles from './index.css'
 /**
  * Numenta.org MainSection Homepage wrapper - React view component.
  */
-const SectionIndex = (props, {config}) => {
+const SectionHome = (props, {config}) => {
   const {links, siteTitle} = config
 
   return (
@@ -146,8 +146,8 @@ const SectionIndex = (props, {config}) => {
   )
 }
 
-SectionIndex.contextTypes = {
+SectionHome.contextTypes = {
   config: React.PropTypes.object,
 }
 
-export default SectionIndex
+export default SectionHome

@@ -1,7 +1,6 @@
+import merge from 'lodash/merge'
 import {parse} from 'toml'
 import {readFileSync} from 'fs'
-
-// const cwd = process.cwd()
 
 const fileCom = readFileSync('packages/numenta.com/config.toml')
 const configCom = parse(fileCom)
@@ -15,6 +14,6 @@ const configOrg = parse(fileOrg)
  * @requires jest webpack
  */
 
-const config = Object.assign({}, configCom, configOrg)
+const config = merge({}, configCom, configOrg)
 
 export default config

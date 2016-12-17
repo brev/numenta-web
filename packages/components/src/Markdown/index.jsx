@@ -30,6 +30,8 @@ class Markdown extends React.Component {
     const {router} = this.context
     const {location} = global.window
 
+    if (!this._markdown) return
+
     // Take over markdown local content links, local links now in Single-page
     //  app mode - also handling staging prefixLinks.
     catchLinks(this._markdown, (href) => {

@@ -46,7 +46,7 @@
   },
   "scripts": {
     "build": "npm run compile",
-    "compile": "babel --ignore __tests__ --out-dir lib/ --source-maps true src/",
+    "compile": "babel --copy-files --ignore __tests__ --out-dir lib/ --source-maps true src/",
     "postinstall": "npm run build"
   }
 }

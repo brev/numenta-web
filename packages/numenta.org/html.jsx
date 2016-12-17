@@ -2,7 +2,8 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import {getConfig, stampUrl} from 'numenta-web-shared-utils/lib/shared'
+import {config} from 'config'
+import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
 import Helmet from 'react-helmet'
 import Pingdom from 'numenta-web-shared-components/lib/Pingdom'
 import {prefixLink} from 'gatsby-helpers'
@@ -15,7 +16,7 @@ import {version} from './package'
  * Main HTML Document Site wrapper - React view component.
  */
 const HtmlDocument = ({body}) => {
-  const {analytics} = getConfig()
+  const {analytics} = config
   const {htmlAttributes, link, meta, title} = Helmet.rewind()
   const attrs = htmlAttributes.toComponent()
 

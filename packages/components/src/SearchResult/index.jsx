@@ -4,7 +4,7 @@
 
 import {getBrowserWidth} from 'numenta-web-shared-utils/lib/client'
 import {getModalWidth} from 'numenta-web-shared-utils/lib/shared'
-import {unescape} from 'lodash'
+import unescape from 'lodash/unescape'
 import Highlight from 'react-highlighter'
 import Modal from 'react-modal'
 import React from 'react'
