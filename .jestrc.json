@@ -10,8 +10,9 @@
   ],
   "moduleFileExtensions": ["js", "json", "jsx"],
   "moduleNameMapper": {
-    "^gatsby-helpers$": "<rootDir>/node_modules/gatsby/dist/isomorphic/gatsby-helpers.js",
+    "^catch-links$": "<rootDir>/packages/components/node_modules/catch-links/index.js",
     "^config$": "<rootDir>/__tests__/__mocks__/configMock.js",
+    "^gatsby-helpers$": "<rootDir>/node_modules/gatsby/dist/isomorphic/gatsby-helpers.js",
     "^.+\\.(css)$": "<rootDir>/__tests__/__mocks__/styleMock.js",
     "^.+\\.(eot|gif|jpe?g|png|svg|ttf|woff2?)$": "<rootDir>/__tests__/__mocks__/fileMock.js",
     "^.+\\.(md)$": "<rootDir>/__tests__/__mocks__/markdownMock.js"
