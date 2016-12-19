@@ -217,7 +217,7 @@ directory (`cd packages/numenta.com/`).***
 | Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
 | Test Links | `npm run test:links` | Runs link checker |
 | Test Unit | `npm run test:unit` | Runs just Unit Tests |
-| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory, and open in browser |
+| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory |
 | Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
 | Test Unit Watch | `npm run test:unit:watch` | Run unit tests while watching for files to change in realtime |
 
@@ -261,11 +261,13 @@ npm run test:unit:update
 ```
 
 Run the command below to generate a Unit Test Code Coverage report, which will
-be saved in your local `./coverage` directory. Your browser should automatically
-open this report when the testing is finished, and the report is generated.
+be saved in your local `./coverage` directory.
 
 ```shell
 npm run test:unit:coverage
+
+# open nice coverage report in browser (Mac OS/X)
+open ./coverage/lcov-report/index.html
 ```
 
 ### Hyperlinks
