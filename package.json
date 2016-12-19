@@ -53,6 +53,7 @@
     "jasmine-expect": "3.0.1",
     "jest-cli": "17.0.3",
     "lerna": "2.0.0-beta.30",
+    "mockdate": "2.0.1",
     "open-url": "2.0.2",
     "react-addons-test-utils": "15.4.1",
     "react-stub-context": "0.7.0",
