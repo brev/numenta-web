@@ -1,6 +1,6 @@
 {
   "name": "numenta-web-site-base",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Numenta Web Platform Site Base",
   "license": "MIT",
   "main": false,
@@ -66,11 +66,15 @@
     "url": "https://github.com/numenta/numenta-web"
   },
   "scripts": {
-    "clean": "npm run clean:test && npm run clean:lerna && npm run clean:npm",
-    "clean:lerna": "lerna clean",
+    "preclean": "npm install shx",
+    "clean": "npm run clean:test && npm run clean:compile && npm run clean:lerna && npm run clean:npm",
+    "clean:compile": "lerna run clean",
+    "clean:lerna": "lerna clean --yes",
     "clean:npm": "shx rm -rf node_modules/ && npm prune && npm cache clear && npm cache clean",
     "clean:test": "shx rm -rf coverage/",
-    "postinstall": "lerna bootstrap",
+    "compile": "lerna run compile",
+    "postinstall": "npm run lerna && npm run compile",
+    "lerna": "lerna bootstrap",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint --config=.stylelintrc \"**/*.css\"",
     "lint:js": "eslint --config=.eslintrc.json --ext=js --ext=jsx .",
