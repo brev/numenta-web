@@ -17,7 +17,7 @@ import url from 'url'
  */
 export function getBrowserWidth() {
   const min = 640
-  if (root) {
+  if (global.window) {
     const {width} = browserSize()
     return width || min
   }
