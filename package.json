@@ -36,6 +36,7 @@
     "react-youtube": "7.3.0",
     "superagent": "3.2.1",
     "toml": "2.3.0",
+    "window-or-global": "1.0.1",
     "xss-filters": "1.2.7"
   },
   "devDependencies": {

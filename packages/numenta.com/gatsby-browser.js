@@ -2,6 +2,7 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
+import root from 'window-or-global'
 import {scrollToSection} from 'numenta-web-shared-utils/lib/client'
 
 
@@ -10,7 +11,8 @@ import {scrollToSection} from 'numenta-web-shared-utils/lib/client'
  *  within the clientside Single-Page-App mode.
  */
 export function onRouteUpdate() {
-  const {hash} = global.window.location
+  const {location} = root
+  const {hash} = location
 
   // if url has #hash try to scroll to it
   if (hash !== '') {

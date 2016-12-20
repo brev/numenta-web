@@ -6,6 +6,7 @@ import classNames from 'classnames'
 import IconAngleUp from 'react-icons/lib/fa/angle-up'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
+import root from 'window-or-global'
 
 import {hasSessionStorage} from 'numenta-web-shared-utils/lib/client'
 
@@ -15,7 +16,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Main HTML Section for each site - React view component.
  */
 class Section extends React.Component {
 
@@ -47,7 +48,7 @@ class Section extends React.Component {
   }
 
   _toggleSection() {
-    const {ga, history, sessionStorage} = global.window
+    const {ga, history, sessionStorage} = root
     const {url} = this.props
     const open = !this.state.open
     const hasStorage = hasSessionStorage()
