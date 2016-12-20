@@ -3,6 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import React from 'react'
+import root from 'window-or-global'
 
 import styles from './index.css'
 
@@ -20,23 +21,19 @@ class Disqus extends React.Component {
   }
 
   componentWillMount() {
-    const {window} = global
-    const {document} = window
-
-    if (typeof window !== 'undefined' && document) {
-      const component = this
-      window.disqus_config = function () {
-        this.page.category_id = component.state.category_id
-        this.page.identifier = component.state.identifier
-        this.page.title = component.state.title
-        this.page.url = component.state.url
-        this.callbacks.onNewComment = component.state.onNewComment
-      }
-      const script = document.createElement('script')
-      script.src = `//${this.state.shortname}.disqus.com/embed.js`
-      script.async = true
-      document.body.appendChild(script)
+    const {document} = root
+    const component = this
+    const script = document.createElement('script')
+    root.disqus_config = function () {
+      this.page.category_id = component.state.category_id
+      this.page.identifier = component.state.identifier
+      this.page.title = component.state.title
+      this.page.url = component.state.url
+      this.callbacks.onNewComment = component.state.onNewComment
     }
+    script.src = `//${this.state.shortname}.disqus.com/embed.js`
+    script.async = true
+    document.body.appendChild(script)
   }
 
   componentWillReceiveProps(nextProps) {

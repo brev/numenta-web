@@ -5,6 +5,7 @@
 import catchLinks from 'catch-links'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
+import root from 'window-or-global'
 import url from 'url'
 
 import {triggerGAnalyticsEvent} from 'numenta-web-shared-utils/lib/client'
@@ -28,7 +29,7 @@ class Markdown extends React.Component {
 
   componentDidMount() {
     const {router} = this.context
-    const {location} = global.window
+    const {location} = root
 
     if (!this._markdown) return
 

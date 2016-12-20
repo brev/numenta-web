@@ -3,6 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import browserSize from 'browser-size'
+import root from 'window-or-global'
 import url from 'url'
 
 /**
@@ -16,7 +17,7 @@ import url from 'url'
  */
 export function getBrowserWidth() {
   const min = 640
-  if (global.window) {
+  if (root) {
     const {width} = browserSize()
     return width || min
   }
@@ -28,8 +29,9 @@ export function getBrowserWidth() {
  * @returns {Boolean} - True for SessionStorage in browser, False if not.
  */
 export function hasSessionStorage() {
-  const {sessionStorage} = global.window
+  const {sessionStorage} = root
   const mod = '_'
+
   try {
     sessionStorage.setItem(mod, mod)
     sessionStorage.removeItem(mod)
@@ -47,7 +49,7 @@ export function hasSessionStorage() {
  *  static header component.
  */
 export function scrollToSection(element, pad = -60) {
-  const {scroll, setTimeout} = global.window
+  const {scroll, setTimeout} = root
   if (element && 'getBoundingClientRect' in element) {
     const {top} = element.getBoundingClientRect()
     if (top) {
@@ -64,7 +66,7 @@ export function scrollToSection(element, pad = -60) {
 export function triggerGAnalyticsEvent(href) {
   if (!href) return
 
-  const {ga} = global.window
+  const {ga} = root
   const uri = url.parse(href)
 
   // g-analytics universal tracking (non-pageview)

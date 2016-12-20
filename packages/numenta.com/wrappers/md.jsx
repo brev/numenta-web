@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 import IconArrow from 'react-icons/lib/fa/caret-left'
 import moment from 'moment'
 import React from 'react'
+import root from 'window-or-global'
 
 import Avatar from 'numenta-web-shared-components/lib/Avatar'
 import Disqus from 'numenta-web-shared-components/lib/Disqus'
@@ -53,6 +54,7 @@ class MarkdownWrapper extends React.Component {
   }
 
   componentDidMount() {
+    const {location} = root
     const {route} = this.props
     const {config} = this.context
     const {data, file} = route.page
@@ -65,7 +67,7 @@ class MarkdownWrapper extends React.Component {
           <Disqus
             shortname={config.company.toLowerCase()}
             title={data.title}
-            url={global.window.location.href}
+            url={location.href}
           />
         ),
       })

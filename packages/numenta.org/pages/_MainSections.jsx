@@ -4,6 +4,7 @@
 
 import findIndex from 'lodash/findIndex'
 import React from 'react'
+import root from 'window-or-global'
 
 import {hasSessionStorage} from 'numenta-web-shared-utils/lib/client'
 import Section from 'numenta-web-shared-components/lib/Section'
@@ -14,7 +15,6 @@ import SectionHome from './_Section'
 import SectionHtm from './hierarchical-temporal-memory/_Section'
 import SectionResearch from './research-and-publications/_Section'
 
-const hasStorage = hasSessionStorage()
 const mainSectionList = [
   {
     component: <SectionHome key="sectionHome" />,
@@ -67,7 +67,6 @@ function getNextSection(current) {
  *  individual pages for older clients), React view component.
  */
 const MainSections = ({current}) => {
-  const {sessionStorage} = global.window
   const details = {}
   const mainComponents = mainSectionList.map(({component, title, url}) => {
     const {key} = component
@@ -80,7 +79,8 @@ const MainSections = ({current}) => {
       const {key} = Component
       const {title, url} = details[key]
       const isHome = (key === 'sectionHome')
-      const isStored = hasStorage && (sessionStorage.getItem(url) === 'open')
+      const isStored = hasSessionStorage() &&
+        (root.sessionStorage.getItem(url) === 'open')
       const open = (key === current.key) || isHome || isStored
       return (
         <Section
