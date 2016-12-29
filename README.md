@@ -11,22 +11,29 @@ sub-repos (websites, shared components, utils) located in the `/packages`
 directory.
 
 We currently have sub-packages maintain their own unique version numbers (not
-forcing a global version sync across packages).
+forcing a global version sync across packages, as is the `Lerna` default).
 
 ## Filesystem
 
 ```shell
 .                     # https://github.com/numenta/numenta-web/
-├── .eslintrc.json    # Shared JS ES6 lint rules, AirBnB defaults + tweaks.
-├── .stylelintrc      # Shared CSS style lint rules.
-├── LICENSE.txt       # Open Source MIT License information.
-├── README.md         # This file, welcome documentation.
+├── .babelrc          # Babel ES6 transpiler configuration file
+├── .eslintignore     # ES lint files and paths to ignore during run
+├── .eslintrc.json    # JS ES6 lint rules, AirBnB defaults + tweaks
+├── .jestrc.json      # Jest testing framework config, assets under test/
+├── .stylelintignore  # CSS style lint files to ignore
+├── .stylelintrc      # CSS style lint rules
+├── LICENSE.txt       # Open Source MIT License information
+├── README.md         # This file, welcome documentation
+├── __tests__/        # Shared Tests and Test Setup
+├── coverage/         # Target for Test Code Coverage reports (not in git)
 ├── lerna.json        # Lerna.js monorepo tool config file.
-├── package.json      # Skeleton monorepo project config (not really used).
-└── packages/         # Child sub-repos of our Lerna monorepo, details below.
-    ├── components/   # Shared React View Components to be used amongst sites.
-    ├── numenta.com/  # http://numenta.com Numenta Company website source code.
-    ├── numenta.org/  # http://numenta.org HTM Community website source code.
+├── node_modules/     # `npm` module install target (not in git)
+├── package.json      # Skeleton monorepo project config
+└── packages/         # Child sub-repos of our Lerna monorepo, details below
+    ├── components/   # Shared React View Components to be used amongst sites
+    ├── numenta.com/  # http://numenta.com Numenta Company website source code
+    ├── numenta.org/  # http://numenta.org HTM Community website source code
     └── utils/        # Shared helper utils to be used amongst sites.
 ```
 
@@ -37,10 +44,9 @@ package manager installed. Other platforms should come up just as easily.
 
 ```shell
 brew install git node
-npm install --global lerna@prerelease
 git clone git@github.com:numenta/numenta-web.git
 cd numenta-web/
-lerna bootstrap
+npm install
 ```
 
 You should now be ready to run any of the child repos, further details below.
@@ -48,12 +54,80 @@ You should now be ready to run any of the child repos, further details below.
 ### Updating
 
 If you update the child repos, and need to re-sync everything back together
-again, just re-run Lerna's `bootstrap` command anytime:
+again, just re-run `npm install` again.
+
+## Testing
+
+To run All Tests (unit, etc):
 
 ```shell
-cd numenta-web/
-lerna bootstrap
+npm run test
 ```
+
+### Unit
+
+Run only unit tests:
+
+```shell
+npm run test:unit
+```
+
+Unit tests take and use snapshots in order to perform. Make sure new or updated
+snapshots are correct before committing! To update these snapshots, try running:
+
+```shell
+npm run test:unit:update
+```
+
+Run the command below to generate a Unit Test Code Coverage report, which will
+be saved in your local `./coverage` directory.
+
+```shell
+npm run test:unit:coverage
+
+# open nice coverage report in browser (Mac OS/X)
+open ./coverage/lcov-report/index.html
+```
+
+Run unit tests while watching filesystem for changes in realtime (requires
+3rd-party [Watchman](https://facebook.github.io/watchman/) to be installed
+first):
+
+```
+brew install watchman
+npm run test:unit:watch
+```
+
+### Hyperlinks
+
+```shell
+# Test hyperlinks on http://0.0.0.0:8000.
+#   You probably have `npm run serve` ready in another terminal window or
+#   background job process. Or, you could do `npm run build` and run an http
+#   server on the contents of `public/`.
+npm run test:links -- http://localhost:8000
+
+# Test hyperlinks on staging or production
+npm run test:links -- http://staging.numenta.com
+npm run test:links -- http://numenta.com
+```
+
+## Contributing
+
+These projects are open source, and
+[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
+welcome. Contributors, please sign and submit our
+[Contributor License](http://numenta.org/licenses/cl/).
+
+If you'd like to help, please make your own fork of this repo, and work from
+branches in your fork. Pull Requests should be between your fork, and our main
+repo. This will keep our main repo clean of working branches.
+
+**Before** submitting Pull Requsts, please make sure you have successfully run
+the following scripts against your change branch:
+
+* `npm run lint`
+* `npm run test`
 
 
 # Websites
@@ -108,8 +182,6 @@ us accomplish all of this.
     * [React.js](https://facebook.github.io/react/) reactive view components in
       [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) format
     * [Lunr](http://lunrjs.com/) client-side fulltext site search
-    * Instrumented with [Google Analtyics](https://www.google.com/analytics/)
-      and [Pingdom](https://www.pingdom.com/)
 * Style
   * [Tachyons](http://tachyons.io/) Responsive style library, composed via
     [CSS Modules](https://github.com/css-modules/css-modules)
@@ -119,7 +191,6 @@ us accomplish all of this.
     files, which Gatsby hands to
     [markdown-it](https://github.com/markdown-it/markdown-it)
   * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) spec
-  * Validation linting by [htmllint](https://github.com/htmllint/htmllint-cli)
 * Assets
   * [React Icon Library](http://gorangajic.github.io/react-icons/)
   * Images: [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) best,
@@ -137,20 +208,12 @@ us accomplish all of this.
 
 ```shell
 .                       # Inside `packages/numenta.com/` or similar
-├── .babelrc            # Babel ES6 transpiler configuration file
-├── .eslintignore       # ES lint files and paths to ignore during run
-├── .jestrc.json        # Jest testing framework config, assets under test/
-├── .stylelintignore    # CSS style lint files to ignore
-├── LICENSE.txt         # Open Source MIT License information.
-├── README.md           # Site-specific intro documentation.
-├── __tests__/          # Shared and Site-specific Component Tests & Mocks, etc.
+├── __tests__/          # Site-specific Tests
 ├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)
 ├── config.toml         # Configuration setings for Gatsby static site generator
-├── coverage/           # Target for Test Code Coverage reports (not in git)
 ├── gatsby-browser.js   # Browser-specific code, tied to React Router by Gatsby
 ├── gatsby-node.js      # Build-time, Node.js, Webpack & Server specific code
 ├── html.jsx            # Main HTML Document Component
-├── node_modules/       # `npm` module install target (not in git)
 ├── package.json        # Project scripts, settings, and `npm` dependency lists
 ├── pages/              # Webpage Documents and URL Tree Structure
 ├── public/             # STATIC OUTPUT. Static website generated built files
@@ -197,92 +260,6 @@ page transitions, a full client-side text search system, etc.
 | **Win/8**   |        |         |        |      |   ✓   |       |         |
 | **Win/7**   |        |         |        |      |       |   ✓   |         |
 | **Linux**   |    ✓   |    ✓    |        |      |       |       | &nbsp;  |
-
-## Scripts
-
-***Scripts should be run from inside each websites individual source
-directory (`cd packages/numenta.com/`).***
-
-| Function | `<command>` | Notes |
-| -------- | ----------- | ----- |
-| Build | `npm run build` | Generate static production files |
-| Clean | `npm run clean` | Clean build |
-| Clean Build | `npm run clean:build` | Clean Gatsby static output from `/public` |
-| Clean NPM | `npm run clean:npm` | Reset npm packaging |
-| Clean Tests | `npm run clean:test` | Clean up after test runs (remove `/coverage` reports, etc) |
-| Deploy | `npm run deploy:gh-pages` | Deploy branch `public/` build to `origin:gh-pages` |
-| Develop | `npm run dev` | Develop site interactively on http://localhost:8000 |
-| Lint | `npm run lint` | Check code for meeting js/css/html linting conventions |
-| Serve | `npm run serve` | Builds, then Serves static output |
-| Test | `npm run test` | Runs all test suites: unit, integration, web, etc. |
-| Test Links | `npm run test:links` | Runs link checker |
-| Test Unit | `npm run test:unit` | Runs just Unit Tests |
-| Test Unit Coverage | `npm run test:unit:cover` | Runs unit tests, generate coverage report in `coverage/` directory |
-| Test Unit Update | `npm run test:unit:update` | Recreate out-of-date snapshots for Unit tests |
-| Test Unit Watch | `npm run test:unit:watch` | Run unit tests while watching for files to change in realtime |
-
-## Testing
-
-***Tests should be run from inside each websites individual source
-directory (`cd packages/numenta.com/`).***
-
-Individual React `components/` (which may be shared between sites) each have
-their own `__tests__` subdirectory. All other tests (site-specific pages,
-wrappers, and helper utilities) live under the root `__tests__` directory.
-
-To run All Tests (unit, etc):
-
-```shell
-npm run test
-```
-
-### Unit
-
-Run only unit tests:
-
-```shell
-npm run test:unit
-```
-
-Run unit tests while watching filesystem for changes in realtime (requires
-3rd-party [Watchman](https://facebook.github.io/watchman/) to be installed
-first):
-
-```
-brew install watchman
-npm run test:unit:watch
-```
-
-Unit tests take and use snapshots in order to perform. Make sure new or updated
-snapshots are correct before committing! To update these snapshots, try running:
-
-```shell
-npm run test:unit:update
-```
-
-Run the command below to generate a Unit Test Code Coverage report, which will
-be saved in your local `./coverage` directory.
-
-```shell
-npm run test:unit:coverage
-
-# open nice coverage report in browser (Mac OS/X)
-open ./coverage/lcov-report/index.html
-```
-
-### Hyperlinks
-
-```shell
-# Test hyperlinks on http://0.0.0.0:8000.
-#   You probably have `npm run serve` ready in another terminal window or
-#   background job process. Or, you could do `npm run build` and run an http
-#   server on the contents of `public/`.
-npm run test:links -- http://localhost:8000
-
-# Test hyperlinks on staging or production
-npm run test:links -- http://staging.numenta.com
-npm run test:links -- http://numenta.com
-```
 
 ## Build
 
@@ -390,24 +367,6 @@ Push build to shared `upstream:gh-pages` integration hosting branch:
 npm run deploy:gh-pages -- --remote upstream
 
 # Visit http://numenta.github.io/numenta-web/
-```
-
-### Staging
-
-```shell
-npm run build
-# Push output to staging.
-# Wait a few minutes for build to happen. THIS WILL CHANGE SOON.
-# Visit Staging
-```
-
-### Production
-
-```shell
-npm run build
-# Push output to production.
-# Wait a few minutes for build to happen. THIS WILL CHANGE SOON.
-# Visit Production
 ```
 
 ## Guidance
@@ -527,24 +486,6 @@ example, see the local file `.eslintrc.json`).
     opacity: 0.5;
   }
   ```
-
-
-# Contributing
-
-These projects are open source, and
-[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
-welcome. Contributors, please sign and submit our
-[Contributor License](http://numenta.org/licenses/cl/).
-
-If you'd like to help, please make your own fork of this repo, and work from
-branches in your fork. Pull Requests should be between your fork, and our main
-repo. This will keep our main repo clean of working branches.
-
-**Before** submitting Pull Requsts, please make sure you have successfully run
-the following scripts against your change branch:
-
-* `npm run lint`
-* `npm run test`
 
 
 # License
