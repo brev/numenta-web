@@ -45,7 +45,8 @@ cd numenta-web/
 npm install
 ```
 
-You should now be ready to run any of the child repos, further details below.
+***You should now be ready to run any of the child Website repos, further
+details below.***
 
 ### Updating
 
@@ -475,7 +476,7 @@ example, see the local file `.eslintrc.json`).
   ```
 
 
-## Contributing
+# Contributing
 
 These projects are open source, and
 [Pull Requests](https://help.github.com/articles/about-pull-requests/) are
