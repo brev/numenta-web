@@ -1,3 +1,10 @@
+- Version bump after builds
+- Production deployments
+- Update new rewrites to new style for new sites
+- Docs/training
+  - Where are rewrites
+- .Org ready for code handoff to Matt
+
 - .ORG FAQ PAGE!?
 - Shared `/components` need to have theme style vars passed in from each site
   independently somehow. `theme.css` global what to do?
