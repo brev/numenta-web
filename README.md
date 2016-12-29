@@ -2,16 +2,12 @@
 
 Source code, generators, tooling, and content for Numenta websites and platform.
 
-
-# Monorepo
+## Monorepo
 
 This is a [monorepo](http://danluu.com/monorepo/), managed with
 [Lerna.js](https://github.com/lerna/lerna). This monorepo contains several child
 sub-repos (websites, shared components, utils) located in the `/packages`
 directory.
-
-We currently have sub-packages maintain their own unique version numbers (not
-forcing a global version sync across packages, as is the `Lerna` default).
 
 ## Filesystem
 
@@ -20,7 +16,7 @@ forcing a global version sync across packages, as is the `Lerna` default).
 ├── .babelrc          # Babel ES6 transpiler configuration file
 ├── .eslintignore     # ES lint files and paths to ignore during run
 ├── .eslintrc.json    # JS ES6 lint rules, AirBnB defaults + tweaks
-├── .jestrc.json      # Jest testing framework config, assets under test/
+├── .jestrc.json      # Jest test framework setup, assets under __tests__/ dirs
 ├── .stylelintignore  # CSS style lint files to ignore
 ├── .stylelintrc      # CSS style lint rules
 ├── LICENSE.txt       # Open Source MIT License information
@@ -53,8 +49,16 @@ You should now be ready to run any of the child repos, further details below.
 
 ### Updating
 
-If you update the child repos, and need to re-sync everything back together
-again, just re-run `npm install` again.
+If you update the child repos and need to re-sync everything back together
+again, just re-run `npm install` from the monorepo root.
+
+## Linting
+
+To run All Linting checks against JS, CSS, etc:
+
+```shell
+npm run lint
+```
 
 ## Testing
 
@@ -111,23 +115,6 @@ npm run test:links -- http://localhost:8000
 npm run test:links -- http://staging.numenta.com
 npm run test:links -- http://numenta.com
 ```
-
-## Contributing
-
-These projects are open source, and
-[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
-welcome. Contributors, please sign and submit our
-[Contributor License](http://numenta.org/licenses/cl/).
-
-If you'd like to help, please make your own fork of this repo, and work from
-branches in your fork. Pull Requests should be between your fork, and our main
-repo. This will keep our main repo clean of working branches.
-
-**Before** submitting Pull Requsts, please make sure you have successfully run
-the following scripts against your change branch:
-
-* `npm run lint`
-* `npm run test`
 
 
 # Websites
@@ -486,6 +473,21 @@ example, see the local file `.eslintrc.json`).
     opacity: 0.5;
   }
   ```
+
+
+## Contributing
+
+These projects are open source, and
+[Pull Requests](https://help.github.com/articles/about-pull-requests/) are
+welcome. Contributors, please sign and submit our
+[Contributor License](http://numenta.org/licenses/cl/).
+
+If you'd like to help, please make your own fork of this repo, and work from
+branches in your fork. Pull Requests should be between your fork, and our main
+repo. This will keep our main repo clean of working branches.
+
+**Before** submitting Pull Requsts, please make sure you have successfully
+`linted` and `tested` your change branch.
 
 
 # License
