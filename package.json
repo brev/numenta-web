@@ -81,7 +81,7 @@
     "lint:js": "eslint --config=.eslintrc.json --ext=js --ext=jsx .",
     "pretest": "npm run clean:test",
     "test": "npm run test:unit:cover",
-    "test:links": "blc --exclude \"amazon.com/On-Intel\" --exclude \"linkedin.com/company/numenta\" --get --ordered --recursive",
+    "test:links": "blc --exclude \"amazon.com/On-Intel\" --exclude \"linkedin.com/company/numenta\" --exclude \"nature.com\" --get --ordered --recursive",
     "test:unit": "TZ=\"America/Los_Angeles\" jest --config .jestrc.json \"unit.test\"",
     "test:unit:cover": "npm run test:unit -- --coverage",
     "test:unit:update": "npm run test:unit -- -u",
