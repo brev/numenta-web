@@ -11,7 +11,7 @@ event:
     city: Redwood City
     state: CA
     country: USA
-    web: http://gsvlabs.com/gsv-pioneer/
+    web: http://pioneersummit.com/
   who: Jeff Hawkins
   why: Speaking
 image: ../images/image.png

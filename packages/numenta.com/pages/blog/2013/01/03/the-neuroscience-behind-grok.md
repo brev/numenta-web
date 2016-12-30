@@ -47,8 +47,7 @@ see.
 And "bombarded" is an understatement.  Vision alone consists of an array of a
 million fibers on your optic nerve, flipping on and off in milliseconds. What
 you see is not "projected" inside your head.  Instead, the input from your eyes
-are electrical impulses transmitted at an
-[estimated 10 million bits per second](http://www.uphs.upenn.edu/news/News_Releases/jul06/retinput.htm),
+are electrical impulses transmitted at an estimated 10 million bits per second
 translated in the darkness of your skull into our perception of images.
 
 In sum, you take massive streams of input, learn patterns to make models of
