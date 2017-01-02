@@ -8,19 +8,20 @@ import Helmet from 'react-helmet'
 import Pingdom from 'numenta-web-shared-components/lib/Pingdom'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
+import root from 'window-or-global'
 
-import {version} from './package'
 
 
 /**
- * Main Numenta.com HTML5 Document skeleton - React view component.
- *  Base file for Gatsby.js framework.
+ * Main Numenta.com HTML5 Document skeleton - React view component. Base file
+ *  for Gatsby.js framework.
  * @author Numenta <info@numenta.com>
  * @copyright © 2005—2017 Numenta <http://numenta.com>
  * @license MIT
  * @requires gatsby react
  */
 const HtmlDocument = ({body}) => {
+  const {STAMP} = root
   const {analytics} = config
   const {htmlAttributes, link, meta, title} = Helmet.rewind()
   const attrs = htmlAttributes.toComponent()
@@ -36,7 +37,7 @@ const HtmlDocument = ({body}) => {
       </head>
       <body className="body">
         <div id="react-mount" dangerouslySetInnerHTML={{__html: body}} />
-        <script src={prefixLink(stampUrl('/bundle.js', version))} />
+        <script src={prefixLink(stampUrl('/bundle.js', STAMP))} />
       </body>
     </html>
   )

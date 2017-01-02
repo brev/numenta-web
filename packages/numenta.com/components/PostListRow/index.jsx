@@ -14,7 +14,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Numenta.com Post ListRow - React view component.
  */
 const PostListRow = ({post}) => {
   const {data, path} = post

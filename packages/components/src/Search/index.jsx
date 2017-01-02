@@ -9,6 +9,7 @@ import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 import request from 'superagent'
 import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
+import root from 'window-or-global'
 
 import Button from '../Button'
 import Form from '../Form'
@@ -27,7 +28,7 @@ import styles from './index.css'
 class Search extends React.Component {
 
   static contextTypes = {
-    manifest: React.PropTypes.object.isRequired,
+    stamp: React.PropTypes.string.isRequired,
   }
 
   static propTypes = {
@@ -50,11 +51,10 @@ class Search extends React.Component {
   }
 
   componentDidMount() {
-    const {manifest} = this.context
-    const {version} = manifest
+    const {stamp} = this.context
 
     request
-      .get(prefixLink(stampUrl('/_searchIndex.json', version)))  // load index
+      .get(prefixLink(stampUrl('/_searchIndex.json', stamp)))  // load index
       .set('Accept', 'application/json')
       .end((error, results) => {
         if (error || !results || !('body' in results)) return
@@ -78,6 +78,7 @@ class Search extends React.Component {
   }
 
   render() {
+    const {document} = root
     const {query} = this.state
     let {icon} = this.props
     let matches, results
@@ -95,7 +96,7 @@ class Search extends React.Component {
       results = (
         <SearchResult
           onClose={() => this._performSearch('')}
-          onOpen={() => global.document.getElementById('q').focus()}
+          onOpen={() => document.getElementById('q').focus()}
           query={query}
           results={matches}
         />
