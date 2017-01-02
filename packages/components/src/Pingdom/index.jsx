@@ -4,7 +4,7 @@
 
 import React from 'react'
 
-import {trims} from 'numenta-web-shared-utils/lib/shared'
+import {trims} from 'numenta-web-shared-utils/lib/universal'
 
 
 /**

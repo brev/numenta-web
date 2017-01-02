@@ -3,7 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import {getBrowserWidth} from 'numenta-web-shared-utils/lib/client'
-import {getModalWidth} from 'numenta-web-shared-utils/lib/shared'
+import {getModalWidth} from 'numenta-web-shared-utils/lib/universal'
 import unescape from 'lodash/unescape'
 import Highlight from 'react-highlighter'
 import Modal from 'react-modal'

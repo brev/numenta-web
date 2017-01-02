@@ -3,7 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import {getBrowserWidth} from 'numenta-web-shared-utils/lib/client'
-import {getModalWidth} from 'numenta-web-shared-utils/lib/shared'
+import {getModalWidth} from 'numenta-web-shared-utils/lib/universal'
 import IconClose from 'react-icons/lib/fa/close'
 import Modal from 'react-modal'
 import React from 'react'

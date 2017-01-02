@@ -18,7 +18,7 @@ import Subtle from 'numenta-web-shared-components/lib/Subtle'
 import TextLink from 'numenta-web-shared-components/lib/TextLink'
 import Video from 'numenta-web-shared-components/lib/Video'
 
-import {sortDateDescend} from 'numenta-web-shared-utils/lib/shared'
+import {sortDateDescend} from 'numenta-web-shared-utils/lib/universal'
 
 import ImageVideo from './images/video.png'
 import styles from './index.css'

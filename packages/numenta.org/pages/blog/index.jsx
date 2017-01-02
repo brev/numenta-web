@@ -8,7 +8,7 @@ import React from 'react'
 import ListItem from 'numenta-web-shared-components/lib/ListItem'
 import ListOrder from 'numenta-web-shared-components/lib/List'
 import Section from 'numenta-web-shared-components/lib/Section'
-import {sortDateDescend} from 'numenta-web-shared-utils/lib/shared'
+import {sortDateDescend} from 'numenta-web-shared-utils/lib/universal'
 
 import PostListRow from '../../components/PostListRow'
 

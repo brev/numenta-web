@@ -4,7 +4,7 @@
 
 import React from 'react'
 
-import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/shared'
+import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/universal'
 
 import Image from 'numenta-web-shared-components/lib/Image'
 import ImageLink from 'numenta-web-shared-components/lib/ImageLink'
@@ -15,7 +15,7 @@ import styles from './index.css'
 
 
 /**
- *
+ * Numenta.org Post List Row - React view component.
  */
 const PostListRow = ({post}) => {
   const {data, path} = post
