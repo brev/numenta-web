@@ -13,9 +13,10 @@ import mapValues from 'lodash/mapValues'
 import moment from 'moment'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
-import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
 import root from 'window-or-global'
 import values from 'lodash/values'
+
+import {stampUrl} from 'numenta-web-shared-utils/lib/universal'
 
 import Layout from '../components/Layout'
 import manifest from '../package'

@@ -3,13 +3,13 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import {config} from 'config'
-import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
 import Helmet from 'react-helmet'
-import Pingdom from 'numenta-web-shared-components/lib/Pingdom'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
 import root from 'window-or-global'
 
+import Pingdom from 'numenta-web-shared-components/lib/Pingdom'
+import {stampUrl} from 'numenta-web-shared-utils/lib/universal'
 
 
 /**

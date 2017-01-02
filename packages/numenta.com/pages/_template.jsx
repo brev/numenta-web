@@ -13,15 +13,18 @@ import mapValues from 'lodash/mapValues'
 import moment from 'moment'
 import {prefixLink} from 'gatsby-helpers'
 import React from 'react'
-import {stampUrl} from 'numenta-web-shared-utils/lib/shared'
 import root from 'window-or-global'
 import values from 'lodash/values'
+
+import {stampUrl} from 'numenta-web-shared-utils/lib/universal'
 
 import Layout from '../components/Layout'
 import manifest from '../package'
 
 import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/first, max-len
 import '../static/assets/css/fonts.css'
+
+root.STAMP = moment().unix().toString()  // global! cache-busting id
 
 root.STAMP = moment().unix().toString()  // global! cache-busting id
 
