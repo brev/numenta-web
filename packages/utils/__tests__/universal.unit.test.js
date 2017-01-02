@@ -1,6 +1,6 @@
 const {
   getModalWidth, getVideoIdFromUrl, stampUrl, trims,
-} = require('../universal')
+} = require('../lib/universal')
 
 
 describe('Universal Client+Server helper utils', () => {

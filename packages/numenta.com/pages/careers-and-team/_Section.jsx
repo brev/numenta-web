@@ -12,7 +12,7 @@ import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
 import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
 import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
-import {sortDateDescend} from 'numenta-web-shared-utils/lib/shared'
+import {sortDateDescend} from 'numenta-web-shared-utils/lib/universal'
 
 import ImageCareers from './images/careers.png'
 import ImageCeleste from './images/team/celeste-baranski.png'

@@ -26,8 +26,6 @@ import '../static/assets/css/fonts.css'
 
 root.STAMP = moment().unix().toString()  // global! cache-busting id
 
-root.STAMP = moment().unix().toString()  // global! cache-busting id
-
 
 /**
  * Numenta.com Root Gatsby Template, acts as React-router bridge (per Gatsby),

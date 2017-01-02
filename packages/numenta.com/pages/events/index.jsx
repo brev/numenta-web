@@ -13,7 +13,7 @@ import Section from 'numenta-web-shared-components/lib/Section'
 import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
 import {
   sortDateAscend, sortDateDescend,
-} from 'numenta-web-shared-utils/lib/shared'
+} from 'numenta-web-shared-utils/lib/universal'
 
 import PostListRow from '../../components/PostListRow'
 import styles from './index.css'

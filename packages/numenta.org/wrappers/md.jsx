@@ -18,7 +18,7 @@ import Subtle from 'numenta-web-shared-components/lib/Subtle'
 import TextLink from 'numenta-web-shared-components/lib/TextLink'
 import Time from 'numenta-web-shared-components/lib/Time'
 import Video from 'numenta-web-shared-components/lib/Video'
-import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/shared'
+import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/universal'
 
 import styles from './md.css'
 

@@ -27,7 +27,7 @@ import Time from 'numenta-web-shared-components/lib/Time'
 import Video from 'numenta-web-shared-components/lib/Video'
 import {
   getEventTimeDisplay, getVideoIdFromUrl,
-} from 'numenta-web-shared-utils/lib/shared'
+} from 'numenta-web-shared-utils/lib/universal'
 
 import styles from './md.css'
 
