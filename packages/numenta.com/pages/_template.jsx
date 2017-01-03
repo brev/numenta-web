@@ -67,6 +67,7 @@ class Template extends React.Component {
     // react-helmet / head
     const attrs = {lang}
     const links = []
+    const style = []
     const meta = [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
@@ -79,7 +80,6 @@ class Template extends React.Component {
         content: `© ${now} ${siteHost} v=${STAMP} x Gatsby.js`,
       },
     ]
-    const style = []
 
     // inline production stylesheet bundle
     if (process.env.NODE_ENV === 'production') {
@@ -91,15 +91,13 @@ class Template extends React.Component {
       const type = icon.match(/^(\w+)\[/).pop()
       const target = (type === 'link') ? links : meta
       const details = {}
-      /* eslint-disable no-useless-escape */
-      icon.match(/\[.+?\]/g)
+      icon.match(/\[.+?]/g)
         .forEach((detail) => {
-          const line = detail.replace(/[\[\]]/g, '')
+          const line = detail.replace(/[[\]]/g, '')
           const [key, value] = line.split(/\$?=/)
           const clean = value.replace(/'/g, '')
           details[key] = (key === 'href') ? prefixLink(`/${clean}`) : clean
         })
-      /* eslint-enable no-useless-escape */
       target.push(details)
     })
 
