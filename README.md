@@ -67,6 +67,9 @@ To run All Tests (unit, etc):
 
 ```shell
 npm run test
+
+# For older versions of Node.js (< 7, having less harmony)
+npm run test --harmony_proxies
 ```
 
 ### Unit
