@@ -163,8 +163,8 @@ us accomplish all of this.
 
 * Script
   * ECMAscript [ES6](https://github.com/lukehoban/es6features) (Javascript)
-    * [Node.js 6](https://nodejs.org) engine with
-      [Npm 3](https://www.npmjs.com/) JS packaging
+    * [Node.js](https://nodejs.org) engine with
+      [npm](https://www.npmjs.com/) JS packaging
     * [Babel](https://babeljs.io/) Transpiler down to older cross-browser JS
     * Testing via [Jest](https://facebook.github.io/jest/) (on top of
       [Jasmine](https://github.com/jasmine/jasmine))
