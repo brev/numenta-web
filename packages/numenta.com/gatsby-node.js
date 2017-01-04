@@ -5,16 +5,21 @@
 /* eslint-disable no-console */
 
 import {createSitemap} from 'sitemap'
+import {DefinePlugin, optimize} from 'webpack'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
+import ImageminPlugin from 'imagemin-webpack-plugin'
 import {ncp} from 'ncp'
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import {resolve} from 'path'
 import toml from 'toml'
 
 // Default max of 10 EventEmitters is not enough for our MainSections, bump up.
 require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-line max-len, no-underscore-dangle
+
+const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 /**
  * Gatsby.js Node server-side specific functions.
@@ -22,8 +27,6 @@ require('events').EventEmitter.prototype._maxListeners = 20  // eslint-disable-l
  *  2. postBuild()
  * @see https://github.com/gatsbyjs/gatsby#structure-of-a-gatsby-site
  */
-
-const config = toml.parse(fs.readFileSync(`${__dirname}/config.toml`))
 
 
 /**
@@ -51,6 +54,23 @@ export function modifyWebpackConfig(webpack, env) {
     },
   })
 
+  // bitmap images with file-loader (like gatsby svg default)
+  webpack.removeLoader('gif')
+  webpack.removeLoader('jpg')
+  webpack.removeLoader('png')
+  webpack.loader('gif', {
+    test: /\.(gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loaders: ['file-loader'],
+  })
+  webpack.loader('jpg', {
+    test: /\.(jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loaders: ['file-loader'],
+  })
+  webpack.loader('png', {
+    test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loaders: ['file-loader'],
+  })
+
   // dev source maps
   if (env === 'develop') {
     console.log(env, 'Enabling dev sourcemaps...')
@@ -76,23 +96,6 @@ export function modifyWebpackConfig(webpack, env) {
       plugins: [new ExtractTextPlugin('styles.css', {ignoreOrder: true})],
     })
   }
-
-  // bitmap images with file-loader (like gatsby svg default)
-  webpack.removeLoader('gif')
-  webpack.removeLoader('jpg')
-  webpack.removeLoader('png')
-  webpack.loader('gif', {
-    test: /\.(gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loaders: ['file-loader'],
-  })
-  webpack.loader('jpg', {
-    test: /\.(jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loaders: ['file-loader'],
-  })
-  webpack.loader('png', {
-    test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loaders: ['file-loader'],
-  })
 
   // favicons-webpack-plugin
   if (env === 'build-html') {
@@ -122,6 +125,23 @@ export function modifyWebpackConfig(webpack, env) {
     })
   }
 
+  // webpack optimize production assets (minify and de-dupe: css, js, etc.)
+  if (env !== 'develop') {
+    console.log(env, 'Optimizing assets in Prod mode...')
+    webpack.merge({
+      plugins: [
+        new DefinePlugin({
+          'process.env': {NODE_ENV: JSON.stringify('production')},
+        }),
+        new ImageminPlugin(),
+        new OptimizeCssAssetsPlugin(),
+        new optimize.DedupePlugin(),
+        new optimize.OccurrenceOrderPlugin(),
+        new optimize.UglifyJsPlugin(),
+      ],
+    })
+  }
+
   // webpack path: static asset build + config:linkPrefix (gh-pages, etc)
   if (env !== 'develop') {
     console.log(env, 'Init correct webpack asset publicPath in Prod mode...')
@@ -130,9 +150,9 @@ export function modifyWebpackConfig(webpack, env) {
     })
   }
 
-
   return webpack
 }
+
 
 /**
  * Gatsby post-build callback.

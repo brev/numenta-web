@@ -5,11 +5,14 @@
 /* eslint-disable no-console */
 
 import {createSitemap} from 'sitemap'
+import {DefinePlugin, optimize} from 'webpack'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
+import ImageminPlugin from 'imagemin-webpack-plugin'
 import {ncp} from 'ncp'
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import {resolve} from 'path'
 import toml from 'toml'
 
@@ -42,15 +45,30 @@ export function modifyWebpackConfig(webpack, env) {
   const cssModules = `css?${cssOptions}`
 
   // turn on debugging for all
-  webpack.merge({
-    debug: true,
-  })
+  webpack.merge({debug: true})
 
   // let shared modules in parent dir find webpack loaders in node_modules/
   webpack.merge({
     resolveLoader: {
       fallback: resolve(__dirname, 'node_modules'),
     },
+  })
+
+  // bitmap images with file-loader (like gatsby svg default)
+  webpack.removeLoader('gif')
+  webpack.removeLoader('jpg')
+  webpack.removeLoader('png')
+  webpack.loader('gif', {
+    test: /\.(gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loaders: ['file-loader'],
+  })
+  webpack.loader('jpg', {
+    test: /\.(jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loaders: ['file-loader'],
+  })
+  webpack.loader('png', {
+    test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loaders: ['file-loader'],
   })
 
   // dev source maps
@@ -79,23 +97,6 @@ export function modifyWebpackConfig(webpack, env) {
     })
   }
 
-  // bitmap images with file-loader (like gatsby svg default)
-  webpack.removeLoader('gif')
-  webpack.removeLoader('jpg')
-  webpack.removeLoader('png')
-  webpack.loader('gif', {
-    test: /\.(gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loaders: ['file-loader'],
-  })
-  webpack.loader('jpg', {
-    test: /\.(jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loaders: ['file-loader'],
-  })
-  webpack.loader('png', {
-    test: /\.(png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loaders: ['file-loader'],
-  })
-
   // favicons-webpack-plugin
   if (env === 'build-html') {
     console.log(env, 'Auto-generating Icons...')
@@ -120,6 +121,23 @@ export function modifyWebpackConfig(webpack, env) {
             yandex: true,
           },
         }),
+      ],
+    })
+  }
+
+  // webpack optimize production assets (minify and de-dupe: css, js, etc.)
+  if (env !== 'develop') {
+    console.log(env, 'Optimizing assets in Prod mode...')
+    webpack.merge({
+      plugins: [
+        new DefinePlugin({
+          'process.env': {NODE_ENV: JSON.stringify('production')},
+        }),
+        new ImageminPlugin(),
+        new OptimizeCssAssetsPlugin(),
+        new optimize.DedupePlugin(),
+        new optimize.OccurrenceOrderPlugin(),
+        new optimize.UglifyJsPlugin(),
       ],
     })
   }
