@@ -16,12 +16,11 @@ import React from 'react'
 import root from 'window-or-global'
 import values from 'lodash/values'
 
-import {stampUrl} from 'numenta-web-shared-utils/lib/universal'
-
 import Layout from '../components/Layout'
 import manifest from '../package'
 
-import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line import/first, max-len
+import styles from '!raw!../public/styles.css'  // eslint-disable-line
+import 'tachyons-base/css/tachyons-base.css'  // eslint-disable-line
 import '../static/assets/css/fonts.css'
 
 root.STAMP = moment().unix().toString()  // global! cache-busting id
@@ -68,6 +67,7 @@ class Template extends React.Component {
     // react-helmet / head
     const attrs = {lang}
     const links = []
+    const style = []
     const meta = [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
@@ -81,12 +81,9 @@ class Template extends React.Component {
       },
     ]
 
-    // production stylesheet bundle
+    // inline production stylesheet bundle
     if (process.env.NODE_ENV === 'production') {
-      links.push({
-        rel: 'stylesheet',
-        href: prefixLink(stampUrl('/styles.css', STAMP)),
-      })
+      style.push({type: 'text/css', cssText: styles})
     }
 
     // push auto-generated favicons into react-helmet header link and meta
@@ -112,6 +109,7 @@ class Template extends React.Component {
           htmlAttributes={attrs}
           link={links}
           meta={meta}
+          style={style}
           titleTemplate={titleForm}
         />
         {children}

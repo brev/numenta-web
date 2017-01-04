@@ -23,7 +23,7 @@ import {stampUrl} from 'numenta-web-shared-utils/lib/universal'
 const HtmlDocument = ({body}) => {
   const {STAMP} = root
   const {analytics} = config
-  const {htmlAttributes, link, meta, title} = Helmet.rewind()
+  const {htmlAttributes, link, meta, style, title} = Helmet.rewind()
   const attrs = htmlAttributes.toComponent()
 
   // Gatsby provides HTML5 !doctype at render-time
@@ -32,6 +32,7 @@ const HtmlDocument = ({body}) => {
       <head>
         {title.toComponent()}
         {meta.toComponent()}
+        {style.toComponent()}
         {link.toComponent()}
         <Pingdom id={analytics.pingdom} />
       </head>
