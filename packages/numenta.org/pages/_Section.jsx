@@ -114,17 +114,17 @@ const SectionHome = (props, {config}) => {
           </TextLink> {' '}.
         </Paragraph>
 
-        <Paragraph>
-          <Strong>Machine Intelligence Starts Here</Strong>
-        </Paragraph>
+        <SubTitle>
+          Machine Intelligence Starts Here
+        </SubTitle>
 
         <Paragraph>
           <Strong>Hierarchical Temporal Memory</Strong> is a foundational technology for the future of machine intelligence. Numenta wants to make this technology accessible to everyone, so all HTM software and on-going research is open source. Anyone can learn about HTM Theory, then inspect the software and see exactly how it is implemented. Community members have written their own versions of HTM systems in other languages and platforms. Some have created detailed visualizations, experiments, and applications.
         </Paragraph>
 
-        <Paragraph>
-          <Strong>Join us!</Strong>
-        </Paragraph>
+        <SubTitle>
+          Join us!
+        </SubTitle>
 
         <Paragraph>
           Come discuss HTM theory with us {' '}
