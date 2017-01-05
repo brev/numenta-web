@@ -63,8 +63,8 @@
     "stylelint-config-standard": "15.0.0"
   },
   "engines": {
-    "node": "7.3.0",
-    "npm": "3.10.10"
+    "node": "7.4.0",
+    "npm": "4.0.5"
   },
   "repository": {
     "type": "git",
