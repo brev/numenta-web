@@ -1,11 +1,12 @@
 .DS_Store
 .gatsby-context.js
-coverage
-node_modules
+.idea/
+coverage/
+node_modules/
 npm-debug.log
 pages/_searchIndex.json
 public/_searchIndex.json
-public
+public/
 
 .idea/
 

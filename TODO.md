@@ -1,6 +1,6 @@
-- Docs/training
-  - Where are rewrites
-- .Org ready for code handoff to Matt / MD!
+- / vs /index.html ?!
+- s3 error documents
+- markdown usage?
 
 
 - .ORG FAQ PAGE!?
