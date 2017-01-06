@@ -10,6 +10,7 @@ import Glance from 'numenta-web-shared-components/lib/Glance'
 import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
 import Strong from 'numenta-web-shared-components/lib/Strong'
 import TextLink from 'numenta-web-shared-components/lib/TextLink'
+import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
 
 import styles from './index.css'
 
@@ -108,8 +109,8 @@ const SectionHome = (props, {config}) => {
       <div className={styles.content}>
 
         <Paragraph lead={true}>
-          Welcome to <Strong>Numenta.org</Strong>, home of Numenta’s HTM 
-          community and open source project. If you want to learn about 
+          Welcome to <Strong>Numenta.org</Strong>, home of Numenta’s HTM
+          community and open source project. If you want to learn about
           Numenta the company visit {' '}
           <TextLink to={links.out.com}>
             Numenta.com
@@ -121,13 +122,13 @@ const SectionHome = (props, {config}) => {
         </SubTitle>
 
         <Paragraph>
-          <Strong>Hierarchical Temporal Memory</Strong> is a foundational 
-          technology for the future of machine intelligence. Numenta wants to 
-          make this technology accessible to everyone, so all HTM software and 
-          on-going research is open source. Anyone can learn about HTM Theory, 
-          then inspect the software and see exactly how it is implemented. 
-          Community members have written their own versions of HTM systems in 
-          other languages and platforms. Some have created detailed 
+          <Strong>Hierarchical Temporal Memory</Strong> is a foundational
+          technology for the future of machine intelligence. Numenta wants to
+          make this technology accessible to everyone, so all HTM software and
+          on-going research is open source. Anyone can learn about HTM Theory,
+          then inspect the software and see exactly how it is implemented.
+          Community members have written their own versions of HTM systems in
+          other languages and platforms. Some have created detailed
           visualizations, experiments, and applications.
         </Paragraph>
 
@@ -148,12 +149,12 @@ const SectionHome = (props, {config}) => {
           <TextLink to={links.out.school}>
             HTM School
           </TextLink> {' '}
-          . The neocortex is a logical system that we'll understand fully in 
-          time. HTM theory reflects our current understanding of how the 
-          neocortex works, and HTM code reduces that theory to practice. HTM 
-          is continually being updated as we learn more about the brain. We 
-          believe HTM will play a critical role in the creation of truly 
-          intelligent machines. Join our community and help us discover the 
+          . The neocortex is a logical system that we'll understand fully in
+          time. HTM theory reflects our current understanding of how the
+          neocortex works, and HTM code reduces that theory to practice. HTM
+          is continually being updated as we learn more about the brain. We
+          believe HTM will play a critical role in the creation of truly
+          intelligent machines. Join our community and help us discover the
           future of machine intelligence.
         </Paragraph>
 
