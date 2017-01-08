@@ -487,7 +487,16 @@ exports[`Open Source Community Page React component Renders correctly 1`] = `
                 </a>
                  
                  
-                We strive to be completely open in everything we do. We welcome collaborations with both neuroscientists and machine learning researchers.
+                We strive to be completely open in everything we do. If you are interested in a collaboration please explore our 
+                 
+                <a
+                  className="textlink"
+                  href={undefined}
+                  onClick={[Function]}
+                  style={Object {}}
+                  target={undefined}>
+                  Visiting Scholar Program.
+                </a>
               </p>
             </div>
           </div>
