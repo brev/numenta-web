@@ -55,6 +55,7 @@ company = 'Numenta'
     anomaly = '/anomaly-detection-benchmark/'
     resources = '/papers-videos-and-more/'
     careers = '/careers-and-team/'
+    visitingscholar = '/careers-and-team/careers/visiting-scholar-program/'
     contact = '/contact/'
     # other site pages
     bami = '/biological-and-machine-intelligence/'
