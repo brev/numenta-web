@@ -487,7 +487,11 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                 </a>
                  
                  
-                We strive to be completely open in everything we do. If you are interested in a collaboration please explore our 
+                We strive to be completely open in everything we do.
+              </p>
+              <p
+                className="paragraph">
+                We welcome collaborations with both neuroscientists and machine learning researchers. You may also be interested in our 
                  
                 <a
                   className="textlink"
