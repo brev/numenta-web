@@ -12,7 +12,7 @@ import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
 import SubTitle from 'numenta-web-shared-components/lib/SubTitle'
 import TextLink from 'numenta-web-shared-components/lib/TextLink'
 
-import {sortDateDescend} from 'numenta-web-shared-utils/lib/universal'
+import {sortOrderAscend} from 'numenta-web-shared-utils/lib/universal'
 
 import ImageCareers from './images/careers.png'
 import ImageCeleste from './images/team/celeste-baranski.png'
@@ -33,7 +33,7 @@ const SectionCareers = (props, {route}) => {
   const posts = pages.filter(({file}) => (
     (file.path.match(/^.*\/careers\/.*\.md/))
   ))
-  const careers = posts.sort(sortDateDescend).map(({data, file, path}) => (
+  const careers = posts.sort(sortOrderAscend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
       <TextLink to={path}>
         {data.title}

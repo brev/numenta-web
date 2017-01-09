@@ -84,9 +84,14 @@ const SectionNeuroscience = (props, {config}) => {
             <TextLink to={links.out.org}>
               NuPIC.
             </TextLink> {' '}
-            We strive to be completely open in everything we do. We welcome
-            collaborations with both neuroscientists and machine learning
-            researchers.
+            We strive to be completely open in everything we do.
+          </Paragraph>
+          <Paragraph>
+            We welcome collaborations with both neuroscientists and machine
+            learning researchers. You may also be interested in our {' '}
+            <TextLink to={links.in.visitingscholar}>
+            Visiting Scholar Program.
+            </TextLink>
           </Paragraph>
         </div>
       </div>
