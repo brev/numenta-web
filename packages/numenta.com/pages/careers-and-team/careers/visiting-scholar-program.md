@@ -29,7 +29,7 @@ and/or lodging expenses.  
 The environment at Numenta is highly collaborative and energetic. We support
 Open Science. All our source code is available via our open source Github
 project NuPIC. We are located in the heart of Silicon Valley (Redwood City, CA),
-close to Stanford University and San Francisco.. 
+close to Stanford University and San Francisco. 
 
 ### Research Areas
 
