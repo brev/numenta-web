@@ -1,10 +1,10 @@
 ---
 author: Numenta
 anchor: visiting-scholar-program
-date: 2017/01/07
+date: 2017/01/09
 email: scholars@numenta.com
 org: Careers
-sort: 2
+sort: 10
 title: Visiting Scholar Program
 type: post
 ---
@@ -64,7 +64,7 @@ interest:
 
 -   Representations of action and movement in motor cortex
 
-Our recent publications can be seen at http://www.numenta.com/papers
+Our recent publications can be seen at http://numenta.com/papers
 
 ### How To Apply
 
