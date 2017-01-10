@@ -88,7 +88,7 @@ const SectionNeuroscience = (props, {config}) => {
           </Paragraph>
           <Paragraph>
             We welcome collaborations with both neuroscientists and machine
-            learning researchers. You may also be interested in our {' '}
+            learning researchers. We also encourage you to apply to our {' '}
             <TextLink to={links.in.visitingscholar}>
             Visiting Scholar Program.
             </TextLink>

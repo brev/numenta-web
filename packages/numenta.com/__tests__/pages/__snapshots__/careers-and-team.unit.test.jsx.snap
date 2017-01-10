@@ -491,7 +491,7 @@ exports[`Careers and Team Page React component Renders correctly 1`] = `
               </p>
               <p
                 className="paragraph">
-                We welcome collaborations with both neuroscientists and machine learning researchers. You may also be interested in our 
+                We welcome collaborations with both neuroscientists and machine learning researchers. We also encourage you to apply to our 
                  
                 <a
                   className="textlink"
