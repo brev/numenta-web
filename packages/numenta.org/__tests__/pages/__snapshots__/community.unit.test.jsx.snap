@@ -416,19 +416,6 @@ exports[`Community Page React component Renders correctly 1`] = `
               </p>
               <p
                 className="paragraph">
-                To get an idea of how HTM theory originated, you can read about the created of the Redwood Neuroscience center and Numenta at 
-                 
-                <a
-                  className="textlink"
-                  href={undefined}
-                  onClick={[Function]}
-                  style={Object {}}
-                  target={undefined}>
-                  HTM History.
-                </a>
-              </p>
-              <p
-                className="paragraph">
                 To get involved in our community, join 
                  
                 <a
