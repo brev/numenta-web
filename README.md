@@ -114,10 +114,6 @@ npm run test:unit:watch
 #   background job process. Or, you could do `npm run build` and run an http
 #   server on the contents of `public/`.
 npm run test:links -- http://localhost:8000
-
-# Test hyperlinks on staging or production
-npm run test:links -- http://staging.numenta.com
-npm run test:links -- http://numenta.com
 ```
 
 
@@ -209,7 +205,7 @@ us accomplish all of this.
 ```shell
 .                       # Inside `packages/numenta.com/` or similar
 ├── __tests__/          # Site-specific Tests
-├── components/         # React view Components, Assets, and Tests (HTML/CSS/JS)
+├── components/         # Site-specific custom React view Components, etc.
 ├── config.toml         # Configuration setings for Gatsby static site generator
 ├── gatsby-browser.js   # Browser-specific code, tied to React Router by Gatsby
 ├── gatsby-node.js      # Build-time, Node.js, Webpack & Server specific code
@@ -222,12 +218,50 @@ us accomplish all of this.
 └── wrappers/           # Document-type (.html, .md, etc.) wrapper Components
 ```
 
+These websites use shared modules that exist outside of the specific website
+source directories, located under `projects/components` and `projects/utils`.
+The sites also can have their own custom `components/`, unique to each site,
+under their own subdirectory.
+
+The shared Components start out as a base for Numenta.com, where Numenta.org
+instead uses a few more of it's own custom Components. When making changes to
+shared Components or Utils, don't forget to run `npm run compile` to convert
+down to ES5 first (`npm install` from root also handles this).
+
 ### Lifecycle
 
-@TODO - talk about how dynamic dev works, how builds work, trace how content
-works it's way through components, pages, \_templates, html.jsx, webpack,
-gatsby, etc, etc. Gatsby's docs have some of this to build on (and maybe we can
-contribute back).
+Gatsby starts Webpack looping over and loading files under `pages/`. `.jsx` page
+code is run as normal. Other file extensions (`.md`, etc.), which have matching
+`wrappers/` (either Gatsby or custom), are translated accordingly. A few
+examples of page build paths follow.
+
+**Homepage Advanced Section/Pages build path:**
+
+* http://numenta.com/contact/
+  * ⇒ (`pages/contact/_Section.jsx`)
+    * ⇒ `pages/contact/index.jsx`
+      * ⇒ (`pages/contact/_template.jsx` - if exists)
+        * ⇒ (`pages/_MainSections.jsx`)
+          * ⇒ `pages/_template.jsx`
+            * ⇒ `./html.jsx`
+              * ⇒ **`public/contact/index.html`**
+
+**Regular Page build paths:**
+
+* http://numenta.com/sitemap/
+  * ⇒ `pages/sitemap/index.jsx`
+    * ⇒ (`pages/sitemap/_template.jsx` - if exists)
+      * ⇒ `pages/_template.jsx`
+        * ⇒ `./html.jsx`
+          * ⇒ **`public/sitemap/index.html`**
+
+* http://numenta.com/legal/privacy/
+  * ⇒ `pages/legal/privacy.md`
+    * ⇒ `wrappers/md.jsx`
+      * ⇒ (`pages/legal/_template.jsx` - if exists)
+        * ⇒ `pages/_template.jsx`
+          * ⇒ `./html.jsx`
+            * ⇒ **`public/legal/privacy/index.html`**
 
 ## Client
 
@@ -369,6 +403,11 @@ npm run deploy:gh-pages -- --remote upstream
 # Visit http://numenta.github.io/numenta-web/
 ```
 
+### Staging and Production
+
+Numenta handles builds and deployments for the Staging/Production runways in our
+internal Continuous Integration tooling.
+
 ## Guidance
 
 Code standards are handled by their respective linters and lint configs (for
@@ -393,7 +432,8 @@ example, see the local file `.eslintrc.json`).
   * `stamp` = Build start timestamp string (for cache-busting)
 * Make sure to use the `prefixLink()` helper function on all internal links.
   This should be handled auto-magically for you already, but if you have trouble
-  with links on staging, this may be the problem
+  with links on staging, this may be the problem. Try to keep this working so
+  that each developer can run their own demo sites on `gh-pages`.
 
 ### Content
 
@@ -406,10 +446,15 @@ example, see the local file `.eslintrc.json`).
   on staging servers, use markdown style instead:
   `[http://numenta.com/htm-studio/](/htm-studio/)`
 * Search Engine Optimization (SEO) notes:
-  * @TODO more basics here.
-  * Make sure to follow the **URL Format** notes further below.
+  * Make sure to follow the **Link** and **URL Format** notes further below.
 
 ### Links and URLs
+
+#### Link Text
+
+* Use meaningful and semantic text for links, which describes what will
+  be experienced at the destination of the link.
+* Avoid over-generalized link text, like **"click here"**.
 
 #### URL Format
 
@@ -423,7 +468,6 @@ example, see the local file `.eslintrc.json`).
 
 #### Possible Link Situations
 
-* @TODO list files here with lots of link/href/URL-related code. And Refactor.
 * Google Analytics should be tracking `pages` and `events` for all Situations
   in the matrix below.
 
@@ -456,15 +500,20 @@ example, see the local file `.eslintrc.json`).
 * Use exact versions for dependencies in `package.json`
 * Keep packages as up-to-date as possible: `npm outdated -depth 0`
 * Update and test 1 package at a time for safety
+* These packages have breaking updates which it seems we'll be skipping for now
+  (at least until `Gatsby`, etc., update to work with them):
+  * `history@3` `history@4`
+  * `react-router@3`
+  * `react-g-analytics@0.3`
 
 ### Styles
 
 * `CSS Module` Composition order:
 
   1. Compose from Tachyons classes
-  1. Compose from Site Theme classes (Numenta colors)
-  1. Compose from \_local_file_custom classes
-  1. Specific custom CSS overrides
+  2. Compose from Site Theme classes (Numenta colors)
+  3. Compose from \_local_file_custom classes
+  4. Specific custom CSS overrides
 
   Example:
   ```css
@@ -473,11 +522,11 @@ example, see the local file `.eslintrc.json`).
   }
 
   .iconlink {
-    composes: dim from 'tachyons';
+    composes: dim from 'tachyons';  /* 1. */
     composes: link from 'tachyons';
-    composes: color-blue from '../../assets/css/theme.css';
-    composes: _visited;
-    opacity: 0.5;
+    composes: color-blue from '../../assets/css/theme.css';  /* 2. */
+    composes: _visited;  /* 3. */
+    opacity: 0.5;  /* 4. */
   }
   ```
 
@@ -493,8 +542,12 @@ If you'd like to help, please make your own fork of this repo, and work from
 branches in your fork. Pull Requests should be between your fork, and our main
 repo. This will keep our main repo clean of working branches.
 
-**Before** submitting Pull Requsts, please make sure you have successfully
-`linted` and `tested` your change branch.
+Please take a look at our
+[Open Issues](https://github.com/numenta/numenta-web/issues) to see how you can
+dive in and help.
+
+**Before** submitting Pull Requsts, please make sure you have successfully run
+`npm run lint` and `npm run test` on your change branch.
 
 
 # License

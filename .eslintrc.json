@@ -62,6 +62,7 @@
     "react/no-danger": [0],
     "react/no-did-mount-set-state": [0],
     "react/no-unescaped-entities": [0],
+    "react/require-default-props": [0],
     "react/require-extension": [0],
     "semi": [2, "never"]
   }
