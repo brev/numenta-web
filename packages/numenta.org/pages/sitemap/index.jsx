@@ -46,7 +46,6 @@ const SitemapPage = (props, {config, route}) => {
   const {pages} = route
   const categories = [
     'blog',
-    'papers',
   ]
   const posts = categories
     .map((category) => pages
@@ -112,16 +111,6 @@ const SitemapPage = (props, {config, route}) => {
                 </TextLink>
               </ListItem>
               <ListItem>
-                <TextLink to={links.in.papers}>
-                  Research Papers
-                </TextLink>
-              </ListItem>
-              <ListItem>
-                <TextLink to={links.in.faq}>
-                  Frequently Asked Questions (FAQ)
-                </TextLink>
-              </ListItem>
-              <ListItem>
                 <TextLink to={links.in.privacy}>
                   Privacy Policy
                 </TextLink>
@@ -178,16 +167,6 @@ const SitemapPage = (props, {config, route}) => {
                   Trial License
                 </TextLink>
               </ListItem>
-            </ListOrder>
-
-            <Anchor name="papers" />
-            <SubTitle>
-              <TextLink to={links.in.papers}>
-                Papers
-              </TextLink>
-            </SubTitle>
-            <ListOrder marker="disc">
-              {items.papers}
             </ListOrder>
 
           </div>
