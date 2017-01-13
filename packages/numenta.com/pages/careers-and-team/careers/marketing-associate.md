@@ -8,12 +8,9 @@ sort: 1
 title: Marketing Associate
 type: post
 ---
-## Company
-Located in downtown Redwood City, Numenta has developed a cohesive theory, core software technology, and demonstration applications all based on principles of the neocortex. This technology lays the groundwork for the new era of machine intelligence. Our innovative work delivers breakthrough capabilities and demonstrates that a computing approach based on biological learning principles will enable a new generation of capabilities not possible with today’s programmed computers.
 
-We are looking for a Marketing Associate who can help us communicate our story to the world.  The ideal candidate is eager to learn and excited to be part of the next generation of computing.
+We are looking for a Marketing Associate to join our team and help us communicate our story to the world. The ideal candidate is eager to learn and excited to be part of the next generation of computing.
 
-## Role
 This entry-level role will be a member of the Numenta marketing team reporting to the Director of Marketing. It is a full-time, salaried position based in downtown Redwood City, CA.
 
 ## Responsibilities
