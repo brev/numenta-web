@@ -169,6 +169,27 @@ exports[`Anomaly Detection Benchmark Page React component Renders correctly 1`] 
             className="content">
             <p
               className="paragraph lead">
+              Welcome to 
+              <strong
+                className="strong">
+                Numenta.com
+              </strong>
+              . Here you’ll find information about the company Numenta. If you would like to learn about Numenta’s HTM community and open source project visit 
+              <a
+                className="textlink"
+                href="http://numenta.org"
+                onClick={[Function]}
+                target={undefined}>
+                <strong
+                  className="strong">
+                  Numenta.org
+                </strong>
+              </a>
+              .
+            </p>
+            <hr />
+            <p
+              className="paragraph">
               <strong
                 className="strong">
                 Numenta
@@ -178,31 +199,6 @@ exports[`Anomaly Detection Benchmark Page React component Renders correctly 1`] 
             <p
               className="paragraph">
               We are at the beginning of a thrilling new era of computing that will unfold over the coming decades, and we invite you to learn about how our approach is helping to advance the state of brain theory and machine intelligence.
-            </p>
-            <p
-              className="paragraph">
-              On this site, you’ll find information about our company. If you’re looking for technical resources, including details of our research, software implementations, and how to get started with our technology, visit our 
-               
-              <a
-                className="textlink"
-                href={undefined}
-                onClick={[Function]}
-                style={Object {}}
-                target={undefined}>
-                open source community
-              </a>
-               
-               
-              at 
-               
-              <a
-                className="textlink"
-                href="http://numenta.org"
-                onClick={[Function]}
-                target={undefined}>
-                http://numenta.org
-                .
-              </a>
             </p>
           </div>
         </article>

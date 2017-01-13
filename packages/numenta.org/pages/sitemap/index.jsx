@@ -46,7 +46,6 @@ const SitemapPage = (props, {config, route}) => {
   const {pages} = route
   const categories = [
     'blog',
-    'papers',
   ]
   const posts = categories
     .map((category) => pages
@@ -79,11 +78,6 @@ const SitemapPage = (props, {config, route}) => {
                 </TextLink>
               </ListItem>
               <ListItem>
-                <TextLink to={links.in.research}>
-                  Research &amp; Publications
-                </TextLink>
-              </ListItem>
-              <ListItem>
                 <TextLink to={links.in.htm}>
                   Hierarchical Temporal Memory (HTM)
                 </TextLink>
@@ -107,23 +101,13 @@ const SitemapPage = (props, {config, route}) => {
             <SubTitle>Other</SubTitle>
             <ListOrder marker="disc">
               <ListItem>
-                <TextLink to={links.out.school}>
+                <TextLink to={links.in.school}>
                   HTM School
                 </TextLink>
               </ListItem>
               <ListItem>
                 <TextLink to={links.in.implement}>
                   Implementations
-                </TextLink>
-              </ListItem>
-              <ListItem>
-                <TextLink to={links.in.papers}>
-                  Research Papers
-                </TextLink>
-              </ListItem>
-              <ListItem>
-                <TextLink to={links.in.faq}>
-                  Frequently Asked Questions (FAQ)
                 </TextLink>
               </ListItem>
               <ListItem>
@@ -183,16 +167,6 @@ const SitemapPage = (props, {config, route}) => {
                   Trial License
                 </TextLink>
               </ListItem>
-            </ListOrder>
-
-            <Anchor name="papers" />
-            <SubTitle>
-              <TextLink to={links.in.papers}>
-                Papers
-              </TextLink>
-            </SubTitle>
-            <ListOrder marker="disc">
-              {items.papers}
             </ListOrder>
 
           </div>

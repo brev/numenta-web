@@ -41,17 +41,6 @@ exports[`Sitemap Page React component Renders correctly 1`] = `
                 onClick={[Function]}
                 style={Object {}}
                 target={undefined}>
-                Research & Publications
-              </a>
-            </li>
-            <li
-              className="li copy markerDisc">
-              <a
-                className="textlink"
-                href={undefined}
-                onClick={[Function]}
-                style={Object {}}
-                target={undefined}>
                 Hierarchical Temporal Memory (HTM)
               </a>
             </li>
@@ -94,8 +83,9 @@ exports[`Sitemap Page React component Renders correctly 1`] = `
               className="li copy markerDisc">
               <a
                 className="textlink"
-                href="http://numenta.com/htm-school/"
+                href={undefined}
                 onClick={[Function]}
+                style={Object {}}
                 target={undefined}>
                 HTM School
               </a>
@@ -109,28 +99,6 @@ exports[`Sitemap Page React component Renders correctly 1`] = `
                 style={Object {}}
                 target={undefined}>
                 Implementations
-              </a>
-            </li>
-            <li
-              className="li copy markerDisc">
-              <a
-                className="textlink"
-                href={undefined}
-                onClick={[Function]}
-                style={Object {}}
-                target={undefined}>
-                Research Papers
-              </a>
-            </li>
-            <li
-              className="li copy markerDisc">
-              <a
-                className="textlink"
-                href={undefined}
-                onClick={[Function]}
-                style={Object {}}
-                target={undefined}>
-                Frequently Asked Questions (FAQ)
               </a>
             </li>
             <li
@@ -242,22 +210,6 @@ exports[`Sitemap Page React component Renders correctly 1`] = `
               </a>
             </li>
           </ol>
-          <span
-            className="anchor"
-            id="papers" />
-          <h2
-            className="h2">
-            <a
-              className="textlink"
-              href={undefined}
-              onClick={[Function]}
-              style={Object {}}
-              target={undefined}>
-              Papers
-            </a>
-          </h2>
-          <ol
-            className="ol" />
         </div>
       </div>
     </div>
