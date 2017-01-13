@@ -37,7 +37,13 @@ This entry-level role will be a member of the Numenta marketing team reporting t
 *	Comfortable in a startup environment – flexible, hard-working, good attitude
 *	Dependable and punctual
 
-Applicants should email a resume, cover letter and at least two writing samples to resume-marketing@numenta.com. Numenta is an equal opportunity employer supporting workforce diversity.
+## How to Apply
+Qualified applicants should send the following: 
+
+* Cover letter describing their interest in Numenta
+* Resume
+* At least two writing samples
+* Please email resume and cover letter to resume-marketing@numenta.com. Numenta is an equal opportunity employer supporting workforce diversity.
 
 
 
