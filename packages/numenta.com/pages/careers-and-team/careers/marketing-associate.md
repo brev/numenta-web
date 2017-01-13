@@ -1,7 +1,7 @@
 ---
 author: Numenta
 anchor: marketing-associate
-date: 2017/01/16
+date: 2017/01/13
 email: resume-marketing@numenta.com
 org: Careers
 sort: 1
