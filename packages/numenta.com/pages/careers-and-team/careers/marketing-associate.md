@@ -15,8 +15,8 @@ This entry-level role will be a member of the Numenta marketing team reporting t
 
 ## Responsibilities
 * Contribute to marketing and PR launch efforts
-* Support execution of marketing campaigns including newsletters, social media updates, list management, website updates
-* Support execution of events including prep, set-up, and other logistics
+* Support execution of marketing campaigns, including newsletters, social media updates, list management, website updates
+* Support execution of events, including prep, set-up, and other logistics
 * Manage the Numenta content calendar and contribute to digital content creation
 * Provide marketing operations support through management of contacts
 *	Gather market intelligence and perform marketing research as needed
