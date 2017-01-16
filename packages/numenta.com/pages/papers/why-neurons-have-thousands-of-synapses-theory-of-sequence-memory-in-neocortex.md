@@ -117,7 +117,7 @@ The model described in the paper demonstrate the following key properties:
 
 1. Use of sparse distributed representations
 
-A [companion paper][5], to appear in Neural Computation in November 2016,
+A [companion paper][5], which appears in Neural Computation, November 2016, Volume 28,
 provides more detailed machine learning comparisons of the above properties.
 
 ### Q. Where can I find out more?
@@ -136,4 +136,4 @@ through movement.
 [2]: http://numenta.com/blog/2014/09/17/increasing-research-transparency/
 [3]: https://github.com/numenta/nupic.research/tree/master/projects/sequence_learning
 [4]: https://discourse.numenta.org/
-[5]: https://arxiv.org/abs/1512.05463
+[5]: http://numenta.com/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model/
