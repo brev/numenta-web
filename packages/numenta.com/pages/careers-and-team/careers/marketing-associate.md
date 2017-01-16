@@ -40,7 +40,7 @@ Qualified applicants should send the following:
 * Cover letter describing their interest in Numenta
 * Resume
 * At least two writing samples
-* Please email resume and cover letter to resume-marketing@numenta.com. Numenta is an equal opportunity employer supporting workforce diversity.
+* Please email resume, cover letter, and writing samples to resume-marketing@numenta.com. Numenta is an equal opportunity employer supporting workforce diversity.
 
 
 
