@@ -49,7 +49,7 @@ good performance without the need for task-specific tuning.
 The purpose of this study was to compare HTM sequence memory to other sequence
 learning algorithms. This is a companion paper to
 [Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex][2],
-which appeared in Frontiers in Neural Circuits, in March 2016.
+which appeared in Frontiers in Neural Circuits, March 2016.
 
 ### Q. What are the key takeaways?
 
@@ -99,8 +99,7 @@ questions and discussion about the paper on the [HTM Forum][5].
 ### Q. How does this paper make contributions in machine learning?
 
 The HTM sequence memory algorithm is something that machine learning experts can
-test and incorporate into a broad range of applications. Any Additional
-Technical Questions we should add?
+test and incorporate into a broad range of applications.
 
 ### Q. Where can I find out more?
 
