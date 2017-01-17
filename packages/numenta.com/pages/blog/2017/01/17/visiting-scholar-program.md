@@ -19,8 +19,8 @@ continuing their normal research. To give you a better understanding of
 this new program, I interviewed our first visiting researcher, Mirko
 Klukas, and asked him about his time spent at Numenta.
 
-**Hi Mirko, can you introduce yourself and at a high level, your area of
-research and expertise?**
+##Hi Mirko, can you introduce yourself and at a high level, your area of
+research and expertise?
 
 My name is Mirko Klukas and I am a post-doctoral researcher at the
 [*Institute of Science and Technology Austria*](https://ist.ac.at/). The
@@ -30,7 +30,7 @@ My background lies in pure mathematics in the field of geometric and
 differential topology. Believe me, it sounds worse than it actually is
 :)
 
-**How did you learn about Numenta?**
+##How did you learn about Numenta?
 
 In 2013 I was on a vacation in Sweden, in a typical Swedish country
 house with a pretty unique set-up: no running water, but WIFI. I read
@@ -44,7 +44,7 @@ research, and I devoted a significant amount of time to think about the
 approach from the paper and related questions. Last year I reached out
 to Subutai to see if there is any interest in my ideas.
 
-**What was a typical day (or week) like for you during your time here?**
+##What was a typical day (or week) like for you during your time here?
 
 It felt very familiar, the atmosphere was very calm and relaxed, and a
 typical day didn't differ too much from my usual research days with two
@@ -56,7 +56,7 @@ meetings, non-research meetings included. Personally I found that to be
 very interesting as it gave me an idea about the operations side and the
 other facets of the company.
 
-**What did you hope to get out of it?**
+##What did you hope to get out of it?
 
 The part of my research that is related to Numenta's technology is only
 very loosely connected to my mathematical research and it was great to
@@ -65,7 +65,7 @@ and pitch ideas to people that speak the same language, and I am pretty
 confident and excited that down the line this collaboration will result
 in a publication.
 
-**What was most memorable or valuable to you?**
+##What was most memorable or valuable to you?
 
 Numenta finds a nice balance between its research mission and being
 product driven. The atmosphere and people at Numenta reflect that. In my
@@ -76,8 +76,8 @@ working. I felt really welcome, which I value a lot. Being able to
 present my ideas to Jeff, and the rest of team was a unique experience
 as well.
 
-**Was there anything you learned that you could not have learned without
-being here?**
+##Was there anything you learned that you could not have learned without
+being here?
 
 It was inspiring to be at the cutting edge of Numenta's current
 research, and it opened up new perspectives on previous ideas. Looking
@@ -87,15 +87,15 @@ Subutai, and the rest of the team, and getting their perspectives is a
 great asset. In particular, I appreciated getting a glimpse on where the
 individual priorities and emphases lie.
 
-**How will your time at Numenta shape your future work?**
+##How will your time at Numenta shape your future work?
 
 As mentioned earlier, I hope my time at Numenta wasn't an isolated
 event, and my visit was just the starting point for many future
 discussions to come. It also encouraged me to pursue the direction
 towards machine intelligence research even more.
 
-**Can you describe for more technical readers the area of your specific
-research?**
+##Can you describe for more technical readers the area of your specific
+research?
 
 I will spare you a detailed explanation of my mathematical research :)
 if someone is interested in that, all my pure math papers can be found
