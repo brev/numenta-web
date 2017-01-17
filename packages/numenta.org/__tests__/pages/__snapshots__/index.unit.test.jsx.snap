@@ -79,6 +79,20 @@ exports[`Index Page React component Renders correctly 1`] = `
                 </dd>
                 <dt
                   className="defineTitle horizontal">
+                  Technical
+                </dt>
+                <dd
+                  className="defineItem horizontal">
+                  <a
+                    className="textlink"
+                    href="http://numenta.com/papers/"
+                    onClick={[Function]}
+                    target={undefined}>
+                    Papers
+                  </a>
+                </dd>
+                <dt
+                  className="defineTitle horizontal">
                   License
                 </dt>
                 <dd
@@ -100,7 +114,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                   className="defineItem horizontal">
                   <a
                     className="textlink"
-                    href="http://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/"
+                    href="https://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/"
                     onClick={[Function]}
                     target={undefined}>
                     Meetup
@@ -142,7 +156,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                         alt="Latest HTM School Episode"
                         className="image border mw shadow"
                         onClick={undefined}
-                        src="http://i3.ytimg.com/vi/HTW2Q_UrkAw/mqdefault.jpg"
+                        src="https://i3.ytimg.com/vi/HTW2Q_UrkAw/mqdefault.jpg"
                         title={undefined} />
                     </a>
                   </div>
@@ -159,7 +173,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                 className="strong">
                 Numenta.org
               </strong>
-              , home of Numenta’s HTM community and open source project. If you want to learn about Numenta the company visit 
+              , home of Numenta’s HTM community and open source projects. If you want to learn about Numenta the company visit 
                
               <a
                 className="textlink"
@@ -182,7 +196,11 @@ exports[`Index Page React component Renders correctly 1`] = `
                 className="strong">
                 Hierarchical Temporal Memory
               </strong>
-               is a foundational technology for the future of machine intelligence. Numenta wants to make this technology accessible to everyone, so all HTM software and on-going research is open source. Anyone can learn about HTM Theory, then inspect the software and see exactly how it is implemented. Community members have written their own versions of HTM systems in other languages and platforms. Some have created detailed visualizations, experiments, and applications.
+               is a foundational technology for the future of machine intelligence based upon the biology of the neocortex. Because Numenta is committed to making this technology accessible to everyone, all HTM software and ongoing research is open source. This allows you to work with our technology in whatever way works best for you ‒ learn about the theory, dive into the source code, or start your own implementation. Some of our community members have written their own versions of HTM systems in other languages and platforms. Others have created detailed visualizations, experiments, and applications.
+            </p>
+            <p
+              className="paragraph">
+              The neocortex is a logical system that we\'ll understand fully in time. HTM theory reflects our current understanding of how the neocortex works, and HTM code reduces that theory to practice. HTM is continually being updated as we learn more about the brain. We believe HTM will play a critical role in the creation of truly intelligent machines.
             </p>
             <h2
               className="h2">
@@ -190,7 +208,7 @@ exports[`Index Page React component Renders correctly 1`] = `
             </h2>
             <p
               className="paragraph">
-              Come discuss HTM theory with us 
+              There are many ways for you to get involved. Come discuss HTM theory with us 
                
               <a
                 className="textlink"
@@ -212,7 +230,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               </a>
                
                
-              . If you\'re new to HTM, you\'ll learn a lot in 
+              . If you\'re new to HTM, a great place to learn is in 
                
               <a
                 className="textlink"
@@ -224,7 +242,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               </a>
                
                
-              . The neocortex is a logical system that we\'ll understand fully in time. HTM theory reflects our current understanding of how the neocortex works, and HTM code reduces that theory to practice. HTM is continually being updated as we learn more about the brain. We believe HTM will play a critical role in the creation of truly intelligent machines. Join our community and help us discover the future of machine intelligence.
+              . We hope you’ll join our community and help us discover the future of machine intelligence.
             </p>
           </div>
         </article>
@@ -283,11 +301,11 @@ exports[`Index Page React component Renders correctly 1`] = `
                 <em>
                   On Intelligence
                 </em>
-                . HTM is not a Deep Learning or Machine Learning technology. HTM is a machine intelligence framework strictly based on neuroscience and the physiology and interaction of pyramidal neurons in the neocortex of the mammalian brain.
+                . HTM is not a Deep Learning or Machine Learning technology. It is a machine intelligence framework strictly based on neuroscience and the physiology and interaction of pyramidal neurons in the neocortex of the mammalian brain.
               </p>
               <p
                 className="paragraph">
-                For detailed information — including educational videos, papers, and community discussions — regarding HTM, please see our 
+                If you’re interested in learning more about HTM, visit our educational series 
                  
                 <a
                   className="textlink"
@@ -297,18 +315,27 @@ exports[`Index Page React component Renders correctly 1`] = `
                   target={undefined}>
                   HTM School.
                 </a>
-              </p>
-              <p
-                className="paragraph">
-                To get involved in our community, join 
+                 
+                 
+                or browse through the topics on 
                  
                 <a
                   className="textlink"
                   href="https://discourse.numenta.org/categories"
                   onClick={[Function]}
                   target={undefined}>
-                  HTM Forum.
+                  HTM Forum
                 </a>
+                . You can also find a collection of research papers at 
+                 
+                <a
+                  className="textlink"
+                  href="http://numenta.com/papers/"
+                  onClick={[Function]}
+                  target={undefined}>
+                  numenta.com/papers
+                </a>
+                .
               </p>
             </div>
           </div>
@@ -391,6 +418,22 @@ exports[`Index Page React component Renders correctly 1`] = `
               </p>
               <p
                 className="paragraph">
+                Sponsored by
+                <a
+                  className="textlink"
+                  href="http://numenta.com/"
+                  onClick={[Function]}
+                  target={undefined}>
+                   
+                   
+                  Numenta
+                </a>
+                 
+                 
+                and supported by a full-time employee dedicated to fostering and growing the community, we strive to create an inclusive environment. Our community exemplifies the type of people drawn toward new technology, and it shows in our curiosity and open-mindedness.
+              </p>
+              <p
+                className="paragraph">
                 To get involved in our community, join 
                  
                 <a
@@ -402,45 +445,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                 </a>
                  
                  
-                You can login with your Google, Facebook, or Twitter account, or by creating an new account with your email address. This is the best place to ask questions, search for answers, or just interact with others working on similar problems. We aim to be a helpful and welcoming community, and we hope you\'ll join us.
-              </p>
-              <p
-                className="paragraph">
-                The HTM Community is sponsored by 
-                 
-                <a
-                  className="textlink"
-                  href="http://numenta.com/"
-                  onClick={[Function]}
-                  target={undefined}>
-                  Numenta,
-                </a>
-                 
-                 
-                the company behind HTM. Since Numenta open sourced their 
-                 
-                <a
-                  className="textlink"
-                  href={undefined}
-                  onClick={[Function]}
-                  style={Object {}}
-                  target={undefined}>
-                  HTM implementations,
-                </a>
-                 
-                 
-                they have dedicated 
-                 
-                <a
-                  className="textlink"
-                  href="https://discourse.numenta.org/users/rhyolight"
-                  onClick={[Function]}
-                  target={undefined}>
-                  one employee
-                </a>
-                 
-                 
-                to help foster and grow the HTM community. Numenta also organizes and sponsors community events like meetups, hackathons, and workshops. We at Numenta believe that HTM will thrive because it will be easily accessible to many people. Our community exemplifies the type of people drawn toward new technology, and it shows in our curiosity and open-mindedness.
+                You can login with your Google, Facebook, or Twitter account, or by creating a new account with your email address. This is the best place to ask questions, search for answers, or just interact with others working on similar problems. We aim to be a helpful and welcoming community, and we hope you\'ll join us.
               </p>
             </div>
           </div>
@@ -466,11 +471,11 @@ exports[`Index Page React component Renders correctly 1`] = `
               className="content">
               <p
                 className="paragraph">
-                All our live events are scheduled via Meetup. Please join our 
+                While many of our interactions are virtual, we do hold community events like meetups, hackathons, and workshops throughout the year. All our live events are scheduled via Meetup. Please join our 
                  
                 <a
                   className="textlink"
-                  href="http://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/"
+                  href="https://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/"
                   onClick={[Function]}
                   target={undefined}>
                   Meetup Group
@@ -591,7 +596,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               className="content">
               <p
                 className="paragraph lead">
-                In addition to making all of our 
+                In addition to making all of Numenta\'s 
                  
                 <a
                   className="textlink"
@@ -613,7 +618,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                 </a>
                  
                  
-                code open source, Numenta fosters an open source community of HTM hobbyists, engineers, scientists, and programmers. This community produces and shares HTM implementations and applications, commonly posting their projects on 
+                code open source, our community produces and shares HTM implementations and applications, commonly posting their projects on 
                  
                 <a
                   className="textlink"
@@ -651,7 +656,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               </p>
               <p
                 className="paragraph">
-                We at Numenta strive to engage our community to help build out HTM applications and experiments. If you are interested in helping out, please leave us a note on the 
+                We are always looking for community members that can help others build out HTM applications and experiments. If you are interested in helping or providing consulting services, please leave us a note on the 
                  
                 <a
                   className="textlink"

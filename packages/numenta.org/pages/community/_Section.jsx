@@ -40,35 +40,25 @@ const SectionCommunity = (props, {config}) => {
             intelligent systems with Hierarchical Temporal Memory (HTM).
           </Paragraph>
           <Paragraph>
+            Sponsored by
+            <TextLink to={links.out.com}> {' '}
+              Numenta
+            </TextLink> {' '}
+            and supported by a full-time employee dedicated to fostering and
+            growing the community, we strive to create an inclusive environment.
+            Our community exemplifies the type of people drawn toward new
+            technology, and it shows in our curiosity and open-mindedness.
+          </Paragraph>
+          <Paragraph>
             To get involved in our community, join {' '}
             <TextLink to={links.out.forum}>
               HTM Forum.
             </TextLink> {' '}
             You can login with your Google, Facebook, or Twitter account, or by
-            creating an new account with your email address. This is the best
+            creating a new account with your email address. This is the best
             place to ask questions, search for answers, or just interact with
             others working on similar problems. We aim to be a helpful and
             welcoming community, and we hope you'll join us.
-          </Paragraph>
-          <Paragraph>
-            The HTM Community is sponsored by {' '}
-            <TextLink to={links.out.com}>
-              Numenta,
-            </TextLink> {' '}
-            the company behind HTM. Since Numenta open sourced their {' '}
-            <TextLink to={links.in.implement}>
-              HTM implementations,
-            </TextLink> {' '}
-            they have dedicated {' '}
-            <TextLink to="https://discourse.numenta.org/users/rhyolight">
-              one employee
-            </TextLink> {' '}
-            to help foster and grow the HTM community. Numenta also organizes
-            and sponsors community events like meetups, hackathons, and
-            workshops. We at Numenta believe that HTM will thrive because it
-            will be easily accessible to many people. Our community exemplifies
-            the type of people drawn toward new technology, and it shows in our
-            curiosity and open-mindedness.
           </Paragraph>
         </div>
       </div>
@@ -89,6 +79,8 @@ const SectionCommunity = (props, {config}) => {
         </div>
         <div className={styles.content}>
           <Paragraph>
+            While many of our interactions are virtual, we do hold community
+            events like meetups, hackathons, and workshops throughout the year.
             All our live events are scheduled via Meetup. Please join our {' '}
             {/* eslint-disable max-len */}
             <TextLink to={links.out.meetup}>

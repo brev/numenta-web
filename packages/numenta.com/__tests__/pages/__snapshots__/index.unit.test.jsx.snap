@@ -1063,7 +1063,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               className="aside">
               <a
                 className="imagelink"
-                href="http://grokstream.com/"
+                href="https://grokstream.com/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1086,10 +1086,10 @@ exports[`Index Page React component Renders correctly 1`] = `
                  
                 <a
                   className="textlink"
-                  href="http://grokstream.com/"
+                  href="https://grokstream.com/"
                   onClick={[Function]}
                   target={undefined}>
-                  http://grokstream.com/
+                  https://grokstream.com/
                   .
                 </a>
               </p>
@@ -1099,7 +1099,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://grokstream.com//#pricing"
+                    href="https://grokstream.com//#pricing"
                     onClick={[Function]}
                     target={undefined}>
                     Sign Up
@@ -1109,7 +1109,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://grokstream.com/"
+                    href="https://grokstream.com/"
                     onClick={[Function]}
                     target={undefined}>
                     More Information
@@ -1241,7 +1241,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               className="aside">
               <a
                 className="imagelink"
-                href="http://cortical.io/"
+                href="https://cortical.io/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1260,7 +1260,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                  
                 <a
                   className="textlink"
-                  href="http://cortical.io/"
+                  href="https://cortical.io/"
                   onClick={[Function]}
                   target={undefined}>
                   Cortical.io,
@@ -1275,7 +1275,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://cortical.io/"
+                    href="https://cortical.io/"
                     onClick={[Function]}
                     target={undefined}>
                     More Information
@@ -1403,7 +1403,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               className="aside">
               <a
                 className="imagelink"
-                href="http://cortical.io/"
+                href="https://cortical.io/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1426,7 +1426,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://cortical.io/"
+                    href="https://cortical.io/"
                     onClick={[Function]}
                     target={undefined}>
                     Cortical.io
@@ -1480,7 +1480,7 @@ exports[`Index Page React component Renders correctly 1`] = `
               className="aside">
               <a
                 className="imagelink"
-                href="http://grokstream.com/"
+                href="https://grokstream.com/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1503,7 +1503,7 @@ exports[`Index Page React component Renders correctly 1`] = `
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://grokstream.com/"
+                    href="https://grokstream.com/"
                     onClick={[Function]}
                     target={undefined}>
                     Grok
