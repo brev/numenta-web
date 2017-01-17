@@ -16,6 +16,7 @@ company = 'Numenta'
 
 [links]
   [links.out]  # external links
+    papers = 'http://numenta.com/papers/'
     bami = 'http://numenta.com/biological-and-machine-intelligence/'
     com = 'http://numenta.com/'
     cortical = 'http://cortical.io/'
