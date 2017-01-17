@@ -1,3 +1,15 @@
+---
+author: Numenta
+brief: "We recently began a Visiting Scholar Program, where researchers and professors can spend some time at our offices and learn about HTM in depth.  Designed to promote collaboration, participants play an active part in our research meetings while continuing their normal research.  To give you a better understanding of this new program, I interviewed our first visiting researcher, Mirko Klukas, and asked him about his time spent at Numenta. "
+date: 2017/01/18
+hideImage: true
+image: ../images/image.png
+org: "Christy Maver & Mirko Klukas"
+tags: numenta hierarchical temporal memory htm visiting scholar
+title: "Q&A with Mirko Klukas, Numenta's First Visiting Scholar"
+type: post
+---
+
 We recently began a [*Visiting Scholar
 Program*](http://numenta.com/careers-and-team/careers/visiting-scholar-program/),
 where researchers and professors can spend some time at our offices and
@@ -44,7 +56,7 @@ meetings, non-research meetings included. Personally I found that to be
 very interesting as it gave me an idea about the operations side and the
 other facets of the company.
 
-**What did you hope to get out of it? **
+**What did you hope to get out of it?**
 
 The part of my research that is related to Numenta's technology is only
 very loosely connected to my mathematical research and it was great to
