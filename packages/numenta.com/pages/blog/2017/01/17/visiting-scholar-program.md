@@ -19,8 +19,7 @@ continuing their normal research. To give you a better understanding of
 this new program, I interviewed our first visiting researcher, Mirko
 Klukas, and asked him about his time spent at Numenta.
 
-##Hi Mirko, can you introduce yourself and at a high level, your area of
-research and expertise?
+##Hi Mirko, can you introduce yourself and at a high level, your area of research and expertise?
 
 My name is Mirko Klukas and I am a post-doctoral researcher at the
 [*Institute of Science and Technology Austria*](https://ist.ac.at/). The
@@ -76,8 +75,7 @@ working. I felt really welcome, which I value a lot. Being able to
 present my ideas to Jeff, and the rest of team was a unique experience
 as well.
 
-##Was there anything you learned that you could not have learned without
-being here?
+##Was there anything you learned that you could not have learned without being here?
 
 It was inspiring to be at the cutting edge of Numenta's current
 research, and it opened up new perspectives on previous ideas. Looking
@@ -94,8 +92,7 @@ event, and my visit was just the starting point for many future
 discussions to come. It also encouraged me to pursue the direction
 towards machine intelligence research even more.
 
-##Can you describe for more technical readers the area of your specific
-research?
+##Can you describe for more technical readers the area of your specific research?
 
 I will spare you a detailed explanation of my mathematical research :)
 if someone is interested in that, all my pure math papers can be found
