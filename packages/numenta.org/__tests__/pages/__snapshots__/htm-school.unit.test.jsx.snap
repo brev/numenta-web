@@ -27,29 +27,36 @@ exports[`HTM School Page React component Renders correctly 1`] = `
           className="content">
           <p
             className="paragraph lead">
-            HTM School is a series of educational videos hosted by Numenta
-             
-            <em>
-              Open Source Community Flag-Bearer
-            </em>
-             
+            HTM School is a series of educational videos hosted by Numenta Open Source Community Flag-Bearer 
              
             <strong
               className="strong">
               Matt Taylor
             </strong>
-            . Watch these videos to see detailed visualizations of HTM systems running, and thoughtful breakdowns of the biological algorithms involved.
+            . 
+             
+            Watch these videos to see detailed visualizations of HTM systems running, and thoughtful breakdowns of the biological algorithms involved.
           </p>
           <p
             className="paragraph">
-            This series was designed for a general audience to be viewed in order, but feel free to jump into any episode. There is no need to have a background in neuroscience, mathematics, or computer science to understand HTM Theory.
+            This series was designed for a general audience to be viewed in order, but feel free to jump into any episode. There is no need to have a background in neuroscience, mathematics, or computer science to understand HTM Theory. For those of you wanting more detailed resources on this subject, please have a look at 
+             
+            <a
+              className="textlink"
+              href="http://numenta.com/papers/"
+              onClick={[Function]}
+              target={undefined}>
+              Numenta\'s technical papers
+            </a>
+            .
           </p>
           <blockquote
             className="blockquote">
             <p
               className="paragraph">
               “
-              Please Subscribe to our 
+              Subscribe to our 
+               
               <a
                 className="textlink"
                 href="https://www.youtube.com/c/NumentaOrg"
@@ -59,13 +66,21 @@ exports[`HTM School Page React component Renders correctly 1`] = `
               </a>
                
                
-              to keep updated on new content.
+              to be 
+              <br />
+               notified of 
+               
+              <strong
+                className="strong">
+                new HTM School videos
+              </strong>
+              !
               ”
             </p>
           </blockquote>
           <p
             className="paragraph">
-            Read below for a description of the videos, and click the video icons on the right to watch!
+            Read below for a description of the videos, and click the video icons on the right to watch.
           </p>
         </div>
       </div>
@@ -100,8 +115,7 @@ exports[`HTM School Page React component Renders correctly 1`] = `
           className="content">
           <p
             className="paragraph">
-            In this introductory episode of HTM School, Matt walks you through the high-level theory of
-             
+            In this introductory episode of HTM School, Matt walks you through the high-level theory of 
              
             <strong
               className="strong">
@@ -171,16 +185,14 @@ exports[`HTM School Page React component Renders correctly 1`] = `
           className="content">
           <p
             className="paragraph">
-            An SDR is simply a list of bits, each bit being
-             
+            An SDR is simply a list of bits, each bit being 
              
             <code>
               0
             </code>
              
              
-            or
-             
+            or 
              
             <code>
               1

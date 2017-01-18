@@ -1062,7 +1062,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
               className="aside">
               <a
                 className="imagelink"
-                href="http://grokstream.com/"
+                href="https://grokstream.com/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1085,10 +1085,10 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                  
                 <a
                   className="textlink"
-                  href="http://grokstream.com/"
+                  href="https://grokstream.com/"
                   onClick={[Function]}
                   target={undefined}>
-                  http://grokstream.com/
+                  https://grokstream.com/
                   .
                 </a>
               </p>
@@ -1098,7 +1098,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://grokstream.com//#pricing"
+                    href="https://grokstream.com//#pricing"
                     onClick={[Function]}
                     target={undefined}>
                     Sign Up
@@ -1108,7 +1108,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://grokstream.com/"
+                    href="https://grokstream.com/"
                     onClick={[Function]}
                     target={undefined}>
                     More Information
@@ -1240,7 +1240,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
               className="aside">
               <a
                 className="imagelink"
-                href="http://cortical.io/"
+                href="https://cortical.io/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1259,7 +1259,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                  
                 <a
                   className="textlink"
-                  href="http://cortical.io/"
+                  href="https://cortical.io/"
                   onClick={[Function]}
                   target={undefined}>
                   Cortical.io,
@@ -1274,7 +1274,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://cortical.io/"
+                    href="https://cortical.io/"
                     onClick={[Function]}
                     target={undefined}>
                     More Information
@@ -1402,7 +1402,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
               className="aside">
               <a
                 className="imagelink"
-                href="http://cortical.io/"
+                href="https://cortical.io/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1425,7 +1425,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://cortical.io/"
+                    href="https://cortical.io/"
                     onClick={[Function]}
                     target={undefined}>
                     Cortical.io
@@ -1479,7 +1479,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
               className="aside">
               <a
                 className="imagelink"
-                href="http://grokstream.com/"
+                href="https://grokstream.com/"
                 onClick={[Function]}
                 title={undefined}>
                 <img
@@ -1502,7 +1502,7 @@ exports[`Machine Intelligence Technology Page React component Renders correctly 
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="http://grokstream.com/"
+                    href="https://grokstream.com/"
                     onClick={[Function]}
                     target={undefined}>
                     Grok

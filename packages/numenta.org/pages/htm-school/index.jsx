@@ -59,32 +59,39 @@ const SchoolPage = (props, {config}) => {
           <div className={styles.content}>
             <Paragraph lead={true}>
               HTM School is a series of educational videos hosted by Numenta
-              {' '}<em>
-                Open Source Community Flag-Bearer
-              </em> {' '}
+              Open Source Community Flag-Bearer {' '}
               <Strong>
                 Matt Taylor
-              </Strong>. Watch these
-              videos to see detailed visualizations of HTM systems running,
-              and thoughtful breakdowns of the biological algorithms
+              </Strong>. {' ' }
+              Watch these videos to see detailed visualizations of HTM systems
+              running, and thoughtful breakdowns of the biological algorithms
               involved.
             </Paragraph>
             <Paragraph>
               This series was designed for a general audience to be viewed
               in order, but feel free to jump into any episode. There is no
               need to have a background in neuroscience, mathematics, or
-              computer science to understand HTM Theory.
+              computer science to understand HTM Theory. For those of you
+              wanting more detailed resources on this subject, please have a
+              look at {' '}
+              <TextLink to={links.out.papers}>
+                Numenta's technical papers
+              </TextLink>.
             </Paragraph>
             <Quote>
-              Please Subscribe to our&nbsp;
+              Subscribe to our {' '}
               <TextLink to={links.out.youtube}>
                 YouTube channel
               </TextLink> {' '}
-              to keep updated on new content.
+              to be <br /> notified of {' '}
+              <Strong>
+                new HTM School videos
+              </Strong>
+              !
             </Quote>
             <Paragraph>
               Read below for a description of the videos, and click the video
-              icons on the right to watch!
+              icons on the right to watch.
             </Paragraph>
           </div>
         </div>
@@ -106,8 +113,8 @@ const SchoolPage = (props, {config}) => {
           <div className={styles.content}>
             <Paragraph>
               In this introductory episode of
-              HTM School, Matt walks you through the high-level theory of
-              {' '} <Strong>
+              HTM School, Matt walks you through the high-level theory of {' '}
+              <Strong>
                 Hierarchical Temporal Memory
               </Strong> {' '}
               in less than 15 minutes.
@@ -162,10 +169,10 @@ const SchoolPage = (props, {config}) => {
           </div>
           <div className={styles.content}>
             <Paragraph>
-              An SDR is simply a list of bits, each bit being
-              {' '} <code>0</code> {' '}
-              or
-              {' '} <code>1</code>.
+              An SDR is simply a list of bits, each bit being {' '}
+              <code>0</code> {' '}
+              or {' '}
+              <code>1</code>.
               The brain performs a lot of binary operations on
               these long bit arrays as it is trying to predict future input.
               This episode introduces bit arrays and some basic binary

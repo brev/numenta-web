@@ -33,7 +33,7 @@ const SectionCode = (props, {config}) => {
         <div className={styles.content}>
 
           <Paragraph lead={true}>
-            In addition to making all of our {' '}
+            In addition to making all of Numenta's {' '}
             <TextLink to={links.out.github}>
               production
             </TextLink> {' '}
@@ -41,8 +41,7 @@ const SectionCode = (props, {config}) => {
             <TextLink to="https://github.com/numenta/nupic.research">
               research
             </TextLink> {' '}
-            code open source, Numenta fosters an open source community of HTM
-            hobbyists, engineers, scientists, and programmers. This community
+            code open source, our community
             produces and shares HTM implementations and applications, commonly
             posting their projects on {' '}
             <TextLink to={links.out.forum}>
@@ -59,9 +58,10 @@ const SectionCode = (props, {config}) => {
             in languages like Python, C++, Java, Closure, Go, and JavaScript.
           </Paragraph>
           <Paragraph>
-            We at Numenta strive to engage our community to help build out HTM
-            applications and experiments. If you are interested in helping out,
-            please leave us a note on the {' '}
+            We are always looking for community members that can help others
+            build out HTM applications and experiments. If you are interested in
+            helping or providing consulting services, please leave us a note on
+            the {' '}
             <TextLink to="https://discourse.numenta.org/c/htm-hackers">
               HTM Hackers Forum
             </TextLink> {' '}

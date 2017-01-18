@@ -163,7 +163,7 @@ const ImplementPage = (props, {config}) => {
             <SubTitle>HTM.Java</SubTitle>
             <Paragraph>
               While the copyright to <Strong>HTM.Java</Strong> was generously
-              donated to Numenta by it&apos;s {' '}
+              donated to Numenta by its {' '}
               <TextLink to="https://discourse.numenta.org/users/cogmission">
                 author,
               </TextLink> {' '}
