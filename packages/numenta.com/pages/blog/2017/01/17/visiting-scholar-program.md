@@ -3,7 +3,7 @@ author: Numenta
 brief: "We recently began a Visiting Scholar Program, where researchers and professors can spend some time at our offices and learn about HTM in depth.  Designed to promote collaboration, participants play an active part in our research meetings while continuing their normal research.  To give you a better understanding of this new program, I interviewed our first visiting researcher, Mirko Klukas, and asked him about his time spent at Numenta. "
 date: 2017/01/18
 hideImage: true
-image: ../images/Visiting_scholar.png
+image: ../images/mirkoandprogram.png
 org: "Christy Maver & Mirko Klukas"
 tags: numenta hierarchical temporal memory htm visiting scholar
 title: "Q&A with Mirko Klukas, Numenta's First Visiting Scholar"
@@ -18,6 +18,10 @@ participants play an active part in our research meetings while
 continuing their normal research. To give you a better understanding of
 this new program, I interviewed our first visiting researcher, Mirko
 Klukas, and asked him about his time spent at Numenta.
+
+![Mirko_Klukas](../images/mirko.png)
+
+> *Mirko Klukas, Ph.D.*
 
 ## Hi Mirko, can you introduce yourself and at a high level, your area of research and expertise?
 
@@ -72,7 +76,7 @@ experience the two ends of this spectrum usually dance to a very
 different beat, and it was great to experience a research environment
 outside of academia, where I felt comfortable and could imagine myself
 working. I felt really welcome, which I value a lot. Being able to
-present my ideas to Jeff, and the rest of team was a unique experience
+present my ideas to Jeff and the rest of team was a unique experience
 as well.
 
 ## Was there anything you learned that you could not have learned without being here?
@@ -129,4 +133,10 @@ sparse coding and contrast it to other binary coding approaches. This is
 loosely related to *expressivity* of neural networks, and plays an
 interesting part in the objective of the spatial pooler. The objective
 balances a good *reconstruction error* and maximal *mean individual
-entropy*.
+entropy*. The interplay of these two quantities is something I want to understand better as well.
+
+=================================================================================================
+
+*If you're interested in applying for the Visiting Scholar Program, [*click here*](http://numenta.com/careers-and-team/careers/visiting-scholar-program/) to apply*.
+
+
