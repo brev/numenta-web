@@ -168,7 +168,7 @@ const ImplementPage = (props, {config}) => {
                 author,
               </TextLink> {' '}
               it is a community-created and maintained port of NuPIC algorithms
-              into Java. This JVM runtime provides a similar experience to the
+              into Java. This Java library provides a similar experience to the
               NuPIC Network API, and has algorithmic parity with NuPIC.
             </Paragraph>
             <div className={styles.promote}>
