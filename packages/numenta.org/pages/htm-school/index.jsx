@@ -91,7 +91,7 @@ const SchoolPage = (props, {config}) => {
             </Quote>
             <Paragraph>
               Read below for a description of the videos, and click the video
-              icons on the right to watch.
+              icons to watch.
             </Paragraph>
           </div>
         </div>
