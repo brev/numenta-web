@@ -159,7 +159,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
           </h2>
           <p
             className="paragraph">
-            The NuPIC Python codebase contains Python code implementations of HTM. Through this interface, uses may specify whether their code runs Python algorithms or the faster C++ algorithms using the Python bindings provided in 
+            The NuPIC Python codebase contains Python code implementations of HTM. Through this interface, users may specify whether their code runs Python algorithms or the faster C++ algorithms using the Python bindings provided in 
             <strong
               className="strong">
               nupic.core
@@ -245,7 +245,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
             </a>
              
              
-            it is a community-created and maintained port of NuPIC algorithms into Java. This JVM runtime provides a similar experience to the NuPIC Network API, and has algorithmic parity with NuPIC.
+            it is a community-created and maintained port of NuPIC algorithms into Java. This Java library provides a similar experience to the NuPIC Network API, and has algorithmic parity with NuPIC.
           </p>
           <div
             className="promote">

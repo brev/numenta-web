@@ -80,7 +80,7 @@ exports[`HTM School Page React component Renders correctly 1`] = `
           </blockquote>
           <p
             className="paragraph">
-            Read below for a description of the videos, and click the video icons on the right to watch.
+            Read below for a description of the videos, and click the video icons to watch.
           </p>
         </div>
       </div>
