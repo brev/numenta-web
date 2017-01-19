@@ -121,7 +121,7 @@ const ImplementPage = (props, {config}) => {
             <SubTitle>NuPIC (Python)</SubTitle>
             <Paragraph>
               The NuPIC Python codebase contains Python code implementations of
-              HTM. Through this interface, uses may specify whether their code
+              HTM. Through this interface, users may specify whether their code
               runs Python algorithms or the faster C++ algorithms using the
               Python bindings provided in <Strong>nupic.core</Strong>.
             </Paragraph>
