@@ -1,7 +1,7 @@
 ---
 author: Numenta
 brief: "We recently began a Visiting Scholar Program, where researchers and professors can spend some time at our offices and learn about HTM in depth.  Designed to promote collaboration, participants play an active part in our research meetings while continuing their normal research.  To give you a better understanding of this new program, I interviewed our first visiting researcher, Mirko Klukas, and asked him about his time spent at Numenta. "
-date: 2017/01/18
+date: 2017/01/19
 hideImage: true
 image: ../images/mirkoandprogram.png
 org: "Christy Maver & Mirko Klukas"
@@ -30,8 +30,7 @@ My name is Mirko Klukas and I am a post-doctoral researcher at the
 core of my current research is a combination of mathematics and computer
 science, including topological data analysis and computational topology.
 My background lies in pure mathematics in the field of geometric and
-differential topology. Believe me, it sounds worse than it actually is
-:)
+differential topology. Believe me, it sounds worse than it actually is. :)
 
 ## How did you learn about Numenta?
 
@@ -98,9 +97,9 @@ towards machine intelligence research even more.
 
 ## Can you describe for more technical readers the area of your specific research?
 
-I will spare you a detailed explanation of my mathematical research :)
-if someone is interested in that, all my pure math papers can be found
-online on the
+I will spare you a detailed explanation of my mathematical research. :)
+If someone is interested in that, all my pure math papers can be found
+online on 
 [*arXiv*](https://arxiv.org/find/all/1/all:+klukas/0/1/0/all/0/1) - some
 keywords are: *low-dimensional topology*, *contact* and *symplectic
 topology*, *symplectic cobordisms*, *open book decompositions*, *Engel
@@ -113,7 +112,7 @@ How can you generalize sequence learning approaches for discrete
 alphabets, e.g. variable markov order models like *context tree
 weighting* or *prediction by partial match*, to non-discrete input
 spaces, namely constant weight codes, or sparse distributed
-representations respectively. This can be done, for instance, for the
+representations respectively? This can be done, for instance, for the
 *incremental parsing algorithm*, the main ingredient in the classical
 1978 compression algorithm after Lempel and Ziv. The result is a
 recurrent neural network structure very similar to Numenta's sequence
