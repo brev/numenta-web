@@ -9,7 +9,7 @@ link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
 org: "Published in Frontiers in Neural Circuits Journal"
 sort: a
 title: "Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex"
-type: post
+type: link
 ---
 
 | | |
