@@ -35,7 +35,9 @@ const SectionHtm = (props, {config}) => {
           <Paragraph lead={true}>
             Hierarchical Temporal Memory (HTM) is a biologically-constrained
             theory of intelligence originally described in the book {' '}
-            <em>On Intelligence</em>. HTM is not a Deep Learning or Machine
+            <TextLink to={links.out.onintelligence}>
+              On Intelligence
+            </TextLink>. HTM is not a Deep Learning or Machine
             Learning technology. It is a machine intelligence framework
             strictly based on neuroscience and the physiology and interaction of
             pyramidal neurons in the neocortex of the mammalian brain.
