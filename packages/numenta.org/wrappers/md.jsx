@@ -22,7 +22,6 @@ import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/universal'
 
 import styles from './md.css'
 
-const pluralize = (text) => (text.match(/s$/) ? text : `${text}s`)
 const postTypes = ['blog', 'papers']
 
 
@@ -64,7 +63,7 @@ const MarkdownWrapper = ({route}, {config}) => {
         <div className={styles.back}>
           <IconMarker icon={<IconArrow />}>
             <TextLink to={url}>
-              All {capitalize(pluralize(key))}
+              All {capitalize(key)} Posts
             </TextLink>
           </IconMarker>
         </div>
