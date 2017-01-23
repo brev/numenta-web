@@ -62,7 +62,7 @@ our peer-reviewed paper by the same name.
 
 Related links:
 * [Peer-reviewed Paper](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)
-* [Numenta Research Papers](/papers/)
+* [Numenta Research Papers](http://numenta.com/papers/)
 
 
 ## About Cosyne
