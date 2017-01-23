@@ -2,6 +2,8 @@
 title: "Numenta Contributor License (CL)"
 ---
 
+<p></p>
+
 Although most open source projects refer to a "Contributor License Agreement
 (CLA)", we have chosen to refer to this agreement as Numenta's "Contributor
 License (CL)" to prevent confusion between it and the Cortical Learning

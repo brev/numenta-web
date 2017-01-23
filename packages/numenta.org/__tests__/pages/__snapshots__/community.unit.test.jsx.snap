@@ -297,9 +297,13 @@ exports[`Community Page React component Renders correctly 1`] = `
                 className="paragraph lead">
                 Hierarchical Temporal Memory (HTM) is a biologically-constrained theory of intelligence originally described in the book 
                  
-                <em>
+                <a
+                  className="textlink"
+                  href="http://numenta.com/papers-videos-and-more/resources/on-intelligence/"
+                  onClick={[Function]}
+                  target={undefined}>
                   On Intelligence
-                </em>
+                </a>
                 . HTM is not a Deep Learning or Machine Learning technology. It is a machine intelligence framework strictly based on neuroscience and the physiology and interaction of pyramidal neurons in the neocortex of the mammalian brain.
               </p>
               <p
