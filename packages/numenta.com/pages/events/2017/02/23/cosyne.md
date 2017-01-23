@@ -52,3 +52,26 @@ responding. We show that objects can be recognized faster with
 multiple columns because the lateral connections help to disambiguate
 the inputs, and that each cortical column can store more objects without
 being confused with cross-cortical column connections. 
+
+## Workshop
+
+
+
+## About Cosyne
+
+The annual Cosyne meeting provides an inclusive forum for the exchange of
+experimental and theoretical/computational approaches to problems in systems
+neuroscience.
+
+To encourage interdisciplinary interactions, the main meeting is arranged in a
+single track. A set of invited talks are selected by the Executive Committee and
+Organizing Committee, and additional talks and posters are selected by the
+Program Committee, based on submitted abstracts.
+
+Cosyne topics include (but are not limited to): neural coding, natural scene
+statistics, dendritic computation, neural basis of persistent activity,
+nonlinear receptive field mapping, representations of time and sequence, reward
+systems, decision-making, synaptic plasticity, map formation and plasticity,
+population coding, attention, and computation with spiking networks.
+Participants include pure experimentalists, pure theorists, and everything in
+between.
