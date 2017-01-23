@@ -55,6 +55,14 @@ being confused with cross-cortical column connections. 
 
 ## Workshop
 
+**Subutai Ahmad, VP Research,** will deliver a workshop on Feb. 28
+titled “Why Do Neurons Have Thousands of Synapses? A Theory of Sequence
+Learning in Neocortex." This workshop will be based on the content in
+our peer-reviewed paper by the same name.
+
+Related links:
+* [Peer-reviewed Paper](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)
+* [Numenta Research Papers](/papers/)
 
 
 ## About Cosyne
