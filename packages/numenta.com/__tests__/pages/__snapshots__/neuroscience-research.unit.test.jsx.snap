@@ -280,7 +280,7 @@ exports[`Neuroscience Research Page React component Renders correctly 1`] = `
                  
                 <a
                   className="textlink"
-                  href="http://numenta.org/licenses/"
+                  href="http://numenta.com/assets/pdf/apps/licensing-guide.pdf"
                   onClick={[Function]}
                   target={undefined}>
                   license our technology and intellectual property.
@@ -740,7 +740,7 @@ exports[`Neuroscience Research Page React component Renders correctly 1`] = `
                
               <a
                 className="textlink"
-                href="http://numenta.org/licenses/"
+                href="http://numenta.com/assets/pdf/apps/licensing-guide.pdf"
                 onClick={[Function]}
                 target={undefined}>
                 AGPLv3 open source license.
@@ -1369,7 +1369,7 @@ exports[`Neuroscience Research Page React component Renders correctly 1`] = `
                  
                 <a
                   className="textlink"
-                  href="http://numenta.org/licenses/"
+                  href="http://numenta.com/assets/pdf/apps/licensing-guide.pdf"
                   onClick={[Function]}
                   target={undefined}>
                   review our license guide,
@@ -1817,7 +1817,7 @@ exports[`Neuroscience Research Page React component Renders correctly 1`] = `
                  
                 <a
                   className="textlink"
-                  href="http://numenta.org/licenses/"
+                  href="http://numenta.com/assets/pdf/apps/licensing-guide.pdf"
                   onClick={[Function]}
                   target={undefined}>
                   commercial license available
