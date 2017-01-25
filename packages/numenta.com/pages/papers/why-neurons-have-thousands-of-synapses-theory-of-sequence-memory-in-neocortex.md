@@ -1,6 +1,6 @@
 ---
 author: "Jeff Hawkins & Subutai Ahmad"
-brief: "Foundational paper describing core HTM theory for sequence memory and its relationship to the neocortex. Written with a neuroscience perspective, the paper explains why neurons need so many synapses and how networks of neurons can form a powerful sequence learning mechanism."
+brief: "Foundational paper describing core HTM theory for sequence memory and its relationship to the neocortex. Written with a neuroscience perspective, the paper explains why neurons need so many synapses and how networks of neurons can form a powerful sequence learning mechanism. <p><em>This is the most viewed paper in the history of Frontiers in Neural Circuits.</em></p>"
 category: neuroscience
 date: 2016/03/30
 hideImage: true
