@@ -99,8 +99,8 @@ const SectionHome = (props, {config}) => {
           </DefineTitle>
           <DefineItem>
             {/* eslint-disable max-len */}
-            <TextLink to="/blog/2016/09/02/why-did-we-completely-change-our-website-design-the-story-behind-our-new-look/">
-              Why did we overhaul our web design? The story behind our new look.
+            <TextLink to="/careers-and-team/careers/visiting-scholar-program/">
+              Visiting Scholar Program
               {' '} <Tag>New</Tag>
             </TextLink>
             {/* eslint-enable max-len */}
