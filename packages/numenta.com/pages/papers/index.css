@@ -29,3 +29,9 @@
   composes: lh-title from 'tachyons';
   composes: mb1 from 'tachyons';
 }
+
+.remarks {
+  composes: silver from 'tachyons';
+  composes: i from 'tachyons';
+  composes: f6 from 'tachyons';
+}

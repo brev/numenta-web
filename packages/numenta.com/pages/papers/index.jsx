@@ -9,6 +9,7 @@ import React from 'react'
 import ListItem from 'numenta-web-shared-components/lib/ListItem'
 import ListOrder from 'numenta-web-shared-components/lib/ListOrder'
 import Paragraph from 'numenta-web-shared-components/lib/Paragraph'
+import Quote from 'numenta-web-shared-components/lib/Quote'
 import Section from 'numenta-web-shared-components/lib/Section'
 import {sortOrderAscend} from 'numenta-web-shared-utils/lib/universal'
 import Spacer from 'numenta-web-shared-components/lib/Spacer'
@@ -50,6 +51,9 @@ const PapersPage = (props, {route}) => {
           </div>
           <Paragraph>
             {data.brief}
+            <div className={styles.remarks}>
+              {data.remarks}
+            </div>
           </Paragraph>
         </div>
       </ListItem>
