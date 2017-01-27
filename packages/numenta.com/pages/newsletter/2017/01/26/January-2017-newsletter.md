@@ -25,7 +25,7 @@ is the most viewed paper in the history of the journal in which it’s
 published: *Frontiers in Neural Circuit*s.  The second, “[Continuous
 Online Sequence Learning with an Unsupervised Neural Network
 Model](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00893#.WIWQztUrKpp),”
-was only published two months ago and is already the 2^nd^ most viewed
+was only published two months ago and is already the 2nd most viewed
 paper in its journal, *Neural Computation*, over the past twelve
 months.  We’re happy to see these articles reaching a wide audience, and
 we are already working on adding to our portfolio. You can find these,
