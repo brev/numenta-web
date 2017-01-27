@@ -2,6 +2,7 @@
 author: Christy Maver
 brief: As we kick off a new year here at Numenta, we find ourselves as busy as ever and excited for what lies ahead. A year ago we were focused on publishing our first peer-reviewed paper. I’m pleased to share
 date: 2017/01/26
+hideImage: true
 image: ../images/jan-newsletter.png
 org: Director of Marketing
 tags: numenta newsletter january 2017 papers scholar program
@@ -10,6 +11,10 @@ type: post
 ---
 
 ### Numenta Newsletter &mdash; January 26, 2017
+
+![jan-newsletter](../images/jan-newsletter.png)
+
+> *[Click here](https://soundcloud.com/cdmaver/january-2017-numenta-news) for an audio version of the newsletter.*
 
 As we kick off a new year here at Numenta, we find ourselves as busy as
 ever and excited for what lies ahead.  A year ago at this time, we were
