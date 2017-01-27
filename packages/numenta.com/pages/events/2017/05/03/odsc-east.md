@@ -5,7 +5,7 @@ date: 2017/05/25
 event:
   what: "The Biological Path Towards Strong AI"
   when: 
-  begin: 2017/05/03 
+    begin: 2017/05/03 
     end: 2017/05/05 
   where:
     desc: Hynes Convention Center
