@@ -1,6 +1,6 @@
 ---
 author: Christy Maver
-brief: As we kick off a new year here at Numenta, we find ourselves as busy as ever and excited for what lies ahead. A year ago we were focused on publishing our first peer-reviewed paper. I’m pleased to share
+brief: As we kick off a new year here at Numenta, we find ourselves as busy as ever and excited for what lies ahead. A year ago we were focused on publishing our first peer-reviewed paper. I’m pleased to share that as I write this newsletter, we have two peer-reviewed papers that are receiving an impressive number of views. Our first, Why Neurons Have Thousands of Synapses, A Theory of Sequence memory in Neocortex, is the most viewed paper in the history of 
 date: 2017/01/26
 hideImage: true
 image: ../images/jan-newsletter.png
@@ -22,7 +22,7 @@ focused on publishing our first peer-reviewed paper.  I’m pleased to
 share that as I write this newsletter, we have two peer-reviewed papers
 that are receiving an impressive number of views. Our first, “[Why
 Neurons Have Thousands of Synapses, A Theory of Sequence Memory in
-Neocortex](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)”
+Neocortex,](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)”
 is the most viewed paper in the history of the journal in which it’s
 published: *Frontiers in Neural Circuit*s.  The second, “[Continuous
 Online Sequence Learning with an Unsupervised Neural Network
