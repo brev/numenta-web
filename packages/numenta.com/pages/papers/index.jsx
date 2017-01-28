@@ -50,6 +50,9 @@ const PapersPage = (props, {route}) => {
           </div>
           <Paragraph>
             {data.brief}
+            <div className={styles.remarks}>
+              {data.remarks}
+            </div>
           </Paragraph>
         </div>
       </ListItem>
