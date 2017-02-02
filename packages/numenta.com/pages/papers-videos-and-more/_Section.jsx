@@ -27,6 +27,7 @@ const learnIcons = {
   book: (<IconBook />),
   paper: (<IconPaper />),
   video: (<IconVideo />),
+  poster: (<IconPaper />),
 }
 
 
@@ -40,10 +41,13 @@ const SectionPapers = (props, {config, route}) => {
     (file.path.match(/^papers-videos-and-more\/.*\.md/))
   ))
   const postsMore = postsLearn.filter(({data}) => (
-    (data.media !== 'video')
+    (data.media !== 'video' && data.media !== 'poster')
   ))
   const postsVideos = postsLearn.filter(({data}) => (
     (data.media === 'video')
+  ))
+  const postsPosters = postsLearn.filter(({data}) => (
+    (data.media === 'poster')
   ))
   const mores = postsMore.sort(sortDateDescend).map(({data, file, path}) => (
     <ListItem key={file.stem}>
@@ -91,6 +95,30 @@ const SectionPapers = (props, {config, route}) => {
       </div>
     </ListItem>
   ))
+  const posters = postsPosters.sort(sortDateDescend)
+    .map(({data, file, path}) => (
+      <ListItem key={file.stem}>
+        <div className={classNames(styles.columns, styles.row)}>
+          <div className={styles.icon}>
+            {learnIcons[data.media]}
+          </div>
+          <div className={styles.learn}>
+            <TextLink to={data.link}>
+              {data.title}: {data.brief}
+            </TextLink>
+            <div>
+              <Subtle>
+                {data.org}
+                <Spacer />
+                {data.author}
+                <Spacer />
+                {data.date}
+              </Subtle>
+            </div>
+          </div>
+        </div>
+      </ListItem>
+    ))
 
   return (
     <article>
@@ -157,6 +185,15 @@ const SectionPapers = (props, {config, route}) => {
           </SubTitle>
           <ListOrder>
             {videos}
+          </ListOrder>
+        </div>
+        <div className={styles.aside}>
+          <Anchor name="posters" />
+          <SubTitle>
+            Posters
+          </SubTitle>
+          <ListOrder>
+            {posters}
           </ListOrder>
         </div>
         <div className={styles.aside}>
