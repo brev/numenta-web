@@ -96,7 +96,7 @@ const SectionPapers = (props, {config, route}) => {
     </ListItem>
   ))
   const posters = postsPosters.sort(sortDateDescend)
-    .map(({data, file, path}) => (
+    .map(({data, file}) => (
       <ListItem key={file.stem}>
         <div className={classNames(styles.columns, styles.row)}>
           <div className={styles.icon}>
