@@ -7,6 +7,7 @@ hideImage: true
 image: ../images/why-neurons-have-thousands.png
 link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
 org: "Published in Frontiers in Neural Circuits Journal"
+remarks: "This is the most viewed paper in the history of Frontiers in Neural Circuits."
 sort: a
 title: "Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex"
 type: link
