@@ -15,6 +15,7 @@ import IconMarker from 'numenta-web-shared-components/lib/IconMarker'
 import Image from 'numenta-web-shared-components/lib/Image'
 import Markdown from 'numenta-web-shared-components/lib/Markdown'
 import Section from 'numenta-web-shared-components/lib/Section'
+import Sound from 'numenta-web-shared-components/lib/Sound'
 import Spacer from 'numenta-web-shared-components/lib/Spacer'
 import Strong from 'numenta-web-shared-components/lib/Strong'
 import Subtle from 'numenta-web-shared-components/lib/Subtle'
@@ -230,6 +231,20 @@ class MarkdownWrapper extends React.Component {
             title={data.title}
             type="youtube"
             videoId={getVideoIdFromUrl(data.video)}
+          />
+        )
+      }
+      else if (data.sound) {
+        // media sound
+        media = (
+          <Sound
+            border={true}
+            image={`${path}${data.image}`}
+            respond="mw"
+            shadow={true}
+            title={data.title}
+            type="soundcloud"
+            url={data.sound}
           />
         )
       }

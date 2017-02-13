@@ -9,6 +9,7 @@ import Image from 'numenta-web-shared-components/lib/Image'
 import ImageLink from 'numenta-web-shared-components/lib/ImageLink'
 import PostListItem from 'numenta-web-shared-components/lib/PostListItem'
 import Video from 'numenta-web-shared-components/lib/Video'
+import Sound from 'numenta-web-shared-components/lib/Sound'
 
 import styles from './index.css'
 
@@ -42,6 +43,20 @@ const PostListRow = ({post}) => {
         title={data.title}
         type="youtube"
         videoId={getVideoIdFromUrl(data.video)}
+      />
+    )
+  }
+  if (data.sound) {
+    // media sound
+    media = (
+      <Sound
+        border={true}
+        image={`${path}${data.image}`}
+        respond="mw"
+        shadow={true}
+        title={data.title}
+        type="soundcloud"
+        url={data.sound}
       />
     )
   }
