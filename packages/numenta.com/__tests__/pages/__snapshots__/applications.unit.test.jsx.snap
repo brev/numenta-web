@@ -2324,6 +2324,18 @@ exports[`Applications Page React component Renders correctly 1`] = `
               className="aside">
               <span
                 className="anchor"
+                id="posters" />
+              <h2
+                className="h2">
+                Posters
+              </h2>
+              <ol
+                className="ol" />
+            </div>
+            <div
+              className="aside">
+              <span
+                className="anchor"
                 id="more" />
               <h2
                 className="h2">

@@ -1,20 +1,17 @@
 ---
 author: Christy Maver
-brief: As we kick off a new year here at Numenta, we find ourselves as busy as ever and excited for what lies ahead. A year ago we were focused on publishing our first peer-reviewed paper. I’m pleased to share that as I write this newsletter, we have two peer-reviewed papers that are receiving an impressive number of views. Our first, Why Neurons Have Thousands of Synapses, A Theory of Sequence memory in Neocortex, is the most viewed paper in the history of 
+brief: As we kick off a new year here at Numenta, we find ourselves as busy as ever and excited for what lies ahead. A year ago we were focused on publishing our first peer-reviewed paper. I’m pleased to share that as I write this newsletter, we have two peer-reviewed papers that are receiving an impressive number of views. Our first, Why Neurons Have Thousands of Synapses, A Theory of Sequence memory in Neocortex, is the most viewed paper in the history of
 date: 2017/01/26
-hideImage: true
+hideImage: false
 image: ../images/jan-newsletter.png
 org: Director of Marketing
 tags: numenta newsletter january 2017 papers scholar program
 title: Numenta Newsletter January 2017
 type: post
+sound: https://soundcloud.com/cdmaver/january-2017-numenta-news
 ---
 
 ### Numenta Newsletter &mdash; January 26, 2017
-
-![jan-newsletter](../images/jan-newsletter.png)
-
-> *[Click here](https://soundcloud.com/cdmaver/january-2017-numenta-news) for an audio version of the newsletter.*
 
 As we kick off a new year here at Numenta, we find ourselves as busy as
 ever and excited for what lies ahead.  A year ago at this time, we were
@@ -67,4 +64,3 @@ Lastly, we have an opening in marketing that is a great opportunity for
 someone who is ready to learn and eager to help us share our story. If
 you or someone you know are interested in this position, you can [apply
 here](http://numenta.com/careers-and-team/careers/marketing-associate/).
-
