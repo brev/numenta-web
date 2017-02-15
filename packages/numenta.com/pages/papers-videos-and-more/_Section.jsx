@@ -165,7 +165,7 @@ const SectionPapers = (props, {config, route}) => {
             </ListItem>
             <ListItem>
               {/* eslint-disable max-len */}
-              <TextLink to="https://numenta.org/htm-school/">
+              <TextLink to={links.out.htmschool}>
                 HTM School
               </TextLink>
               {/* eslint-enable max-len */}

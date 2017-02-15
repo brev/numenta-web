@@ -1,5 +1,5 @@
-linkPrefix = ''
-# linkPrefix = '/numenta-web'  # integration/staging (gh-pages)
+#linkPrefix = ''
+linkPrefix = '/numenta-web'  # integration/staging (gh-pages)
 
 siteHost = 'Numenta.com'
 siteTitle = ''
@@ -34,6 +34,8 @@ company = 'Numenta'
     # partners
     cortical = 'http://cortical.io'
     grok = 'http://grokstream.com'
+    # Org
+    htmschool = 'https://numenta.org/htm-school'
     org = 'http://numenta.org'
     # social
     facebook = 'https://www.facebook.com/pages/Numenta/321559142118?ref=br_tf'
