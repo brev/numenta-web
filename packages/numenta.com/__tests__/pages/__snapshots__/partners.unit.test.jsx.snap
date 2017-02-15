@@ -2292,7 +2292,7 @@ exports[`Partners Page React component Renders correctly 1`] = `
                   className="li copy markerDisc">
                   <a
                     className="textlink"
-                    href="https://www.youtube.com/playlist?list=PL3yXMgtrZmDqhsFQzwUC9V8MeeVOQ7eZ9"
+                    href="https://numenta.org/htm-school"
                     onClick={[Function]}
                     target={undefined}>
                     HTM School
