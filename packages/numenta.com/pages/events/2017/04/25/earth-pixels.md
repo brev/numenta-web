@@ -5,8 +5,8 @@ date: 2017/04/25
 event:
   what: "Panel Discussion: Geospatial Machine Learning"
   when:
-    begin: 2017/04/25 16:30
-    end: 2017/04/25 17:30
+    begin: 2017/04/25 16:00
+    end: 2017/04/25 17:00
   where:
     desc: Crowne Plaza San Jose
     city: Milpitas
