@@ -3,7 +3,7 @@ Spatial Pooler Algorithm
 
 The Spatial Pooler is one of the main learning algorithms in HTM. While we are working on a standalone chapter for BAMI that will detail the Spatial Pooler, for now you can explore the following resources to learn more:
 
-- **HTM School episodes about the Spatial Pooler** • [HTM School](http://numenta.org/htm-school/) is a video tutorial series that explains concepts of HTM with an emphasis on visualizations and examples.  These episodes talk about the Spatial Pooler and related functions.
+- **HTM School episodes about the Spatial Pooler** • [HTM School](https://numenta.org/htm-school/) is a video tutorial series that explains concepts of HTM with an emphasis on visualizations and examples.  These episodes talk about the Spatial Pooler and related functions.
     - [Spatial Pooling: Input Space & Connections (Episode 7)](https://www.youtube.com/watch?v=R5UoFNtv5AU)
     - [Spatial Pooling: Learning (Episode 8)](https://www.youtube.com/watch?v=rHvjykCIrZM)
     - [Boosting (Episode 9)](https://www.youtube.com/watch?v=MSwoNAODrgk)
