@@ -28,6 +28,8 @@ import ImageEpisode6 from './images/ep6.png'
 import ImageEpisode7 from './images/ep7.png'
 import ImageEpisode8 from './images/ep8.png'
 import ImageEpisode9 from './images/ep9.png'
+import ImageEpisode10 from './images/ep10.png'
+import ImageEpisode11 from './images/ep11.png'
 import ImageMain from './images/image.png'
 import styles from './index.css'
 
@@ -502,6 +504,37 @@ const SchoolPage = (props, {config}) => {
           </div>
         </div>
 
+        <Anchor name="topology" />
+        <SubTitle level={3}>
+          Topology
+        </SubTitle>
+        <div className={styles.columns}>
+          <div className={styles.aside}>
+            <Video
+              border={true}
+              image={ImageEpisode10}
+              respond="mw"
+              shadow={true}
+              title="Topology"
+              type="youtube"
+              videoId="HTW2Q_UrkAw"
+            />
+          </div>
+          <div className={styles.content}>
+            <Paragraph>
+              This episode, we're traveling into another dimension... the 2nd
+              dimension. We describe why topology in HTM is important and
+              how it is implemented today.
+            </Paragraph>
+            <Paragraph>
+              Topology indicates strong spatial relationships between the bits
+              within the input pattern streaming into the Spatial Pooler. With
+              topology engaged, the behavior of the Spatial Pooler changes to
+              better identify localized relationships.
+            </Paragraph>
+          </div>
+        </div>
+
         <Anchor name="more-sp-resources" />
         <SubTitle level={3}>
           More Spatial Pooling Resources
@@ -521,15 +554,41 @@ const SchoolPage = (props, {config}) => {
         <SubTitle>
           Temporal Memory
         </SubTitle>
+        <Paragraph>
+          The Temporal Memory component of HTM recognizes sequences of
+          incoming spatial patterns from the Spatial Pooler by activating
+          individual cells within each active column to indicate a temporal
+          context for each input.
+        </Paragraph>
+
+        <Anchor name="temporal-memory-part-1" />
+        <SubTitle level={3}>
+          Temporal Memory Part 1
+        </SubTitle>
         <div className={styles.columns}>
           <div className={styles.aside}>
-            <div className={styles.icon}>
-              <IconTime color="inherit" />
-            </div>
+            <Video
+              border={true}
+              image={ImageEpisode11}
+              respond="mw"
+              shadow={true}
+              title="Temporal Memory Part 1"
+              type="youtube"
+              videoId="V7JaB2TSQSU"
+            />
           </div>
           <div className={styles.content}>
             <Paragraph>
-              Coming Soon.
+              This episode offers a detailed introduction to a key component of
+              HTM theory and describes how neurons in the neocortex can remember
+              spatial sequences within the context of previous inputs by
+              activating specific cells within each column.
+            </Paragraph>
+            <Paragraph>
+              Using detailed examples, drawings, and computer animated
+              visualizations, we walk through how cells are put into predictive
+              states in response to new stimulus, and how segments and synapses
+              connect between cells in the columnar structure.
             </Paragraph>
           </div>
         </div>
