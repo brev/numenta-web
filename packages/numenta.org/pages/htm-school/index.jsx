@@ -3,7 +3,7 @@
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
 import Helmet from 'react-helmet'
-import IconTime from 'react-icons/lib/ti/media-play'
+// import IconTime from 'react-icons/lib/ti/media-play'
 import React from 'react'
 
 import Anchor from 'numenta-web-shared-components/lib/Anchor'
