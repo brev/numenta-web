@@ -61,7 +61,7 @@ company = 'Numenta'
     contact = '/contact/'
     # other site pages
     bami = '/biological-and-machine-intelligence/'
-    sp = '/spatial-pooler-algorithm/'
+    sp = '/spatial-pooling-algorithm/'
     blog = '/blog/'
     events = '/events/'
     htmstocks = '/htm-for-stocks/'

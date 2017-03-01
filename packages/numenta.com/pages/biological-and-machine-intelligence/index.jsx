@@ -59,7 +59,7 @@ const BamiPage = (props, {config}) => {
                 </ListItem>
                 <ListItem>
                   <TextLink to={links.in.sp}>
-                    Spatial Pooler Algorithm
+                    Spatial Pooling Algorithm
                   </TextLink>
                 </ListItem>
                 <ListItem>
