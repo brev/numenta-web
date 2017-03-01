@@ -27,8 +27,8 @@ company = 'Numenta'
     meetup = 'https://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/'
     onintelligence = 'http://numenta.com/papers-videos-and-more/resources/on-intelligence/'
     youtube = 'https://www.youtube.com/c/NumentaOrg'
-    latestSchool = 'https://www.youtube.com/watch?v=HTW2Q_UrkAw'
-    latestSchoolThumb = 'https://i3.ytimg.com/vi/HTW2Q_UrkAw/mqdefault.jpg'
+    latestSchool = 'https://www.youtube.com/watch?v=UBzemKcUoOk'
+    latestSchoolThumb = 'https://i3.ytimg.com/vi/UBzemKcUoOk/mqdefault.jpg'
 
   [links.in]  # internal paths
     # main/home pseudo-single page

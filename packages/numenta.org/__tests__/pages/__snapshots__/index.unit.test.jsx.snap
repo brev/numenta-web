@@ -149,14 +149,14 @@ exports[`Index Page React component Renders correctly 1`] = `
                     className="noLinkIcon">
                     <a
                       className="imagelink"
-                      href="https://www.youtube.com/watch?v=HTW2Q_UrkAw"
+                      href="https://www.youtube.com/watch?v=UBzemKcUoOk"
                       onClick={[Function]}
                       title={undefined}>
                       <img
                         alt="Latest HTM School Episode"
                         className="image border mw shadow"
                         onClick={undefined}
-                        src="https://i3.ytimg.com/vi/HTW2Q_UrkAw/mqdefault.jpg"
+                        src="https://i3.ytimg.com/vi/UBzemKcUoOk/mqdefault.jpg"
                         title={undefined} />
                     </a>
                   </div>
