@@ -69,7 +69,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                   onClick={[Function]}
                   style={Object {}}
                   target={undefined}>
-                  Spatial Pooler Algorithm
+                  Spatial Pooling Algorithm
                 </a>
               </li>
               <li
