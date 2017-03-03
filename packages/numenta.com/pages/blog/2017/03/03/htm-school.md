@@ -3,7 +3,7 @@ author: Christy Maver
 brief: "Sitting at the intersection of neuroscience and computer science, we encounter interest in our work from a variety of people.  For the scientific and academic community, we have a growing list of peer-reviewed papers. The machine learning and data science enthusiasts can dive into our open source code and experiment with it firsthand. But what about those of us with no exposure to neuroscience"
 date: 2017/03/03
 hideImage: false
-image: ../images/mirkoandprogram.png
+image: ../images/ep11.png
 org: Director of Marketing
 tags: numenta hierarchical temporal memory htm school
 title: "HTM School teaches Numenta’s theory of intelligence"
