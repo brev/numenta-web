@@ -63,8 +63,7 @@ comments of the videos or post your questions on the [HTM
 Forum](https://discourse.numenta.org/c/other-topics/youtube), where Matt
 has a dedicated section for discussion associated with these videos.
 
-**Jeff and Subutai to deliver opening keynote at Cornell Silicon Valley
-on March 7 in San Francisco **
+## Jeff and Subutai to deliver opening keynote at Cornell Silicon Valley on March 7 in San Francisco
 
 In between your HTM School tutorials, for those of you in the San
 Francisco area, you can catch Jeff Hawkins and Subutai Ahmad deliver the
