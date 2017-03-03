@@ -36,7 +36,7 @@ views and a healthy amount of Q&A that takes place in the comments
 section and on the [HTM
 Forum](https://discourse.numenta.org/c/other-topics/youtube).
 
-Recently, Matt published the 12^th^ episode in the series, “[Temporal
+Recently, Matt published the 12<sup>th</sup> episode in the series, “[Temporal
 Memory, Part 1](https://www.youtube.com/watch?v=UBzemKcUoOk),” marking
 an educational milestone as the first episode to introduce the concept
 of sequence memory. Readers of [On
