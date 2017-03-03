@@ -48,7 +48,7 @@ within the context of previous inputs, and make predictions based on
 this stimulus.
 
 These are not easy concepts, to be sure. Understanding the neuroscience
-within our theory of intelligence can be difficult, especially for
+underlying HTM theory can be difficult, especially for
 novices. Yet the implications of understanding how the brain learns and
 implementing these concepts in software are significant. With HTM
 School, Matt peels back the layers of complexity and uses computer
