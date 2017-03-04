@@ -6,7 +6,7 @@ hideImage: false
 image: ../images/ep11.png
 org: Director of Marketing
 tags: numenta hierarchical temporal memory htm school
-title: "HTM School teaches Numenta’s theory of intelligence"
+title: "HTM School Teaches Numenta’s Theoretical Framework for Biological and Machine Intelligence"
 type: post
 ---
 
