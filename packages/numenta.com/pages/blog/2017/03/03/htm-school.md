@@ -27,7 +27,7 @@ Taylor](https://discourse.numenta.org/users/rhyolight/activity), in an
 attempt to make HTM Theory more accessible by breaking it down into
 bite-sized, 15-20 minute episodes filled with stories, examples and
 illustrations. The series is designed to be viewed in order, starting
-with a high level overview in Episode zero. From there, Matt lays out
+with a high level overview in Episode 0. From there, Matt lays out
 core components of the theory, one episode at a time: from how we
 represent information to how we learn spatial patterns.
 
