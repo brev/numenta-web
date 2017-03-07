@@ -132,7 +132,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
           </p>
           <p
             className="paragraph">
-            The “Content to be Incorporated” section has place holders for new chapters. Importantly, it contains links to updated psuedocode for the current Spatial Pooler and Temporal Memory algorithms. It also has links to scientific papers and other material that cover topics we intend to make into chapters.
+            The “Content to be Incorporated” section contains an outline for new BAMI chapters, and has links to scientific papers and other material that cover topics we intend to incorporate.
           </p>
           <p
             className="paragraph">
