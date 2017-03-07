@@ -1,5 +1,5 @@
-linkPrefix = ''
-#linkPrefix = '/numenta-web'  # integration/staging (gh-pages)
+#linkPrefix = ''
+linkPrefix = '/numenta-web'  # integration/staging (gh-pages)
 
 siteHost = 'Numenta.com'
 siteTitle = ''

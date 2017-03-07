@@ -25,7 +25,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Introduction.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-Introduction.pdf"
                   onClick={[Function]}
                   target="_new">
                   Introduction
@@ -35,7 +35,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-HTM-Overview.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-HTM-Overview.pdf"
                   onClick={[Function]}
                   target="_new">
                   HTM Overview
@@ -45,7 +45,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-SDR.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-SDR.pdf"
                   onClick={[Function]}
                   target="_new">
                   Sparse Distributed Representations
@@ -55,7 +55,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Encoders.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-Encoders.pdf"
                   onClick={[Function]}
                   target="_new">
                   Encoders
@@ -87,7 +87,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Other-Content.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-Other-Content.pdf"
                   onClick={[Function]}
                   target="_new">
                   Content to be Incorporated
@@ -97,7 +97,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Problem-Sets.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-Problem-Sets.pdf"
                   onClick={[Function]}
                   target="_new">
                   Problem Sets
@@ -107,7 +107,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
                 className="li copy markerDisc">
                 <a
                   className="textlink"
-                  href="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Glossary.pdf"
+                  href="/assets/pdf/biological-and-machine-intelligence/BaMI-Glossary.pdf"
                   onClick={[Function]}
                   target="_new">
                   Glossary
