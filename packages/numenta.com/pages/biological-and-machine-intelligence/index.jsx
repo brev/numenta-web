@@ -113,11 +113,9 @@ const BamiPage = (props, {config}) => {
               in each chapter. Over time, we will add chapters to BAMI.
             </Paragraph>
             <Paragraph>
-              The “Content to be Incorporated” section has place holders for new
-              chapters. Importantly, it contains links to updated psuedocode for
-              the current Spatial Pooler and Temporal Memory algorithms. It also
-              has links to scientific papers and other material that cover
-              topics we intend to make into chapters.
+              The “Content to be Incorporated” section contains an outline for
+              new BAMI chapters, and has links to scientific papers and other
+              material that cover topics we intend to incorporate.
             </Paragraph>
             <Paragraph>
               We {' '}
