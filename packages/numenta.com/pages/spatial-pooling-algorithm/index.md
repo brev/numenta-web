@@ -24,9 +24,13 @@ explore the following resources to learn more:
 - **Peer-reviewed paper** • This document, authored by Yuwei Cui, Subutai Ahmad and Jeff Hawkins, is a pre-print of a paper submitted to a peer-reviewed journal. The paper contains a detailed description of the Spatial Pooling algorithm, including mathematical derivations and experimental results.
     - [The HTM Spatial Pooler: a neocortical algorithm for online sparse distributed coding](http://biorxiv.org/content/early/2017/02/16/085035)
 
-- **Overview presentation** • This recorded presentation, given by Yuwei Cui, gives an overview of the Spatial Pooling algorithm, following the outline of the peer-reviewed paper previously mentioned. Viewing this presentation in conjunction with reading the paper is recommended. A link to the slide deck used in the presentation is also given.
-    - [HTM Spatial Pooler Overview Presentation](https://www.youtube.com/watch?v=1r6GxDsEdd0)
-    - [HTM Spatial Pooler Overview Slide Deck](/assets/pdf/spatial-pooling-algorithm/HTM-Spatial-Pooler-Overview.pdf)
+- **Spatial Pooling presentation** • In this recorded presentation, Yuwei Cui
+goes into details of the Spatial Pooling algorithm, following the outline of the
+peer-reviewed paper previously mentioned. Viewing this presentation in
+conjunction with reading the paper is recommended. A link to the slide deck used
+in the presentation is also given.
+    - [HTM Spatial Pooler Presentation](https://www.youtube.com/watch?v=1r6GxDsEdd0)
+    - [HTM Spatial Pooler Slide Deck](/assets/pdf/spatial-pooling-algorithm/HTM-Spatial-Pooler-Overview.pdf)
 
 - Spatial Pooling algorithm pseudocode • Pseudocode implementing the version of the Spatial Pooling algorithm that is published in NuPIC, Numenta’s open source HTM platform.
     - [Spatial Pooling Algorithm Details](/assets/pdf/spatial-pooling-algorithm/Spatial-Pooling-Algorithm-Details.pdf)
