@@ -16,12 +16,9 @@ you can explore the following resources to learn more:
     -   Additional Temporal Memory episodes are still in development!
 
 
--   **Peer-reviewed paper** • This document, authored by Yuwei Cui,
-    Subutai Ahmad and Jeff Hawkins, was published in the November 2016 edition
-    of Neural Computation. The paper, written from a machine learning perspective,
-    analyses the Temporal Memory algorithm (called “HTM sequence memory” in the paper)
-    and compares it to statistical and Deep Learning techniques.
-    -   [Continuous Online Sequence Learning with an Unsupervised Neural Network Model](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00893#.WLc80RIrJBx)
+-   **Peer-reviewed paper**
+    -	 [Why Neurons Have Thousands of Synapses, a Theory of Sequence Memory in Neocortex](http://numenta.com/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex/) This paper, authored by Jeff Hawkins and Subutai Ahmad, was published on March 30, 2016 in Frontiers in Neural Circuits. The paper, written from a neuroscience perspective, describes the core HTM theory for temporal memory (called “sequence memory” in the paper) and its relationship to the neocortex.
+    -  [Continuous Online Sequence Learning with an Unsupervised Neural Network Model](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00893#.WMBBGBLytE6) This paper, authored by Yuwei Cui, Subutai Ahmad and Jeff Hawkins, was published in the November 2016 edition of Neural Computation. The paper, written from a machine learning perspective, analyses the Temporal Memory algorithm (called “HTM sequence memory” in the paper) and compares it to statistical and Deep Learning techniques.
 
 
 -   **Temporal Memory algorithm details and pseudocode** • Pseudocode implementing
