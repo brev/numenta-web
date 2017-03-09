@@ -32,5 +32,5 @@ in the presentation is also given.
     - [HTM Spatial Pooler Presentation](https://www.youtube.com/watch?v=1r6GxDsEdd0)
     - [HTM Spatial Pooler Slide Deck](/assets/pdf/spatial-pooling-algorithm/HTM-Spatial-Pooler-Overview.pdf)
 
-- Spatial Pooling algorithm pseudocode • Pseudocode implementing the version of the Spatial Pooling algorithm that is published in NuPIC, Numenta’s open source HTM platform.
+- **Spatial Pooling algorithm pseudocode** • Pseudocode implementing the version of the Spatial Pooling algorithm that is published in NuPIC, Numenta’s open source HTM platform.
     - [Spatial Pooling Algorithm Details](/assets/pdf/spatial-pooling-algorithm/Spatial-Pooling-Algorithm-Details.pdf)
