@@ -84,9 +84,11 @@ const BamiPage = (props, {config}) => {
                 </ListItem>
               </ListOrder>
             </div>
-            <ButtonLink to="/assets/pdf/biological-and-machine-intelligence/BAMI-Complete.pdf" target="_new">
-            Download all BAMI book sections in pdf
-            </ButtonLink>
+            <div className={styles.download}>
+              <ButtonLink to="/assets/pdf/biological-and-machine-intelligence/BAMI-Complete.pdf" target="_new">
+                Download all BAMI book sections in pdf
+              </ButtonLink>
+            </div>
             {/* eslint-enable max-len */}
           </div>
           <div className={styles.content}>
