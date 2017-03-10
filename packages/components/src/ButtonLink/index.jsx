@@ -4,6 +4,7 @@
 
 import classNames from 'classnames'
 import React from 'react'
+import {prefixLink} from 'gatsby-helpers'
 
 import styles from './index.css'
 
@@ -16,11 +17,14 @@ const ButtonLink = ({children, disabled, onClick, theme, target, to}) => {
 
   if (disabled) classes.push(styles.disabled)
   else classes.push(styles.enabled)
-
+  let link = to
+  if (to && to.match(/^\/assets\//)) {
+    link = prefixLink(to)
+  }
   return (
     <a
       className={classNames(...classes)}
-      href={to}
+      href={link}
       onClick={onClick}
       target={target}
     >
