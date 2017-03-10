@@ -11,7 +11,7 @@ import styles from './index.css'
 /**
  * External link only (browser location) for now.
  */
-const ButtonLink = ({children, disabled, onClick, theme, to}) => {
+const ButtonLink = ({children, disabled, onClick, theme, target, to}) => {
   const classes = [styles.buttonLink, styles[theme]]
 
   if (disabled) classes.push(styles.disabled)
@@ -22,6 +22,7 @@ const ButtonLink = ({children, disabled, onClick, theme, to}) => {
       className={classNames(...classes)}
       href={to}
       onClick={onClick}
+      target={target}
     >
       {children}
     </a>
@@ -32,6 +33,7 @@ ButtonLink.propTypes = {
   children: React.PropTypes.node.isRequired,
   disabled: React.PropTypes.bool,
   onClick: React.PropTypes.func,
+  target: React.PropTypes.string,
   theme: React.PropTypes.string,
   to: React.PropTypes.string.isRequired,
 }

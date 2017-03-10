@@ -29,3 +29,7 @@
   composes: ma0 from 'tachyons';
   composes: pointer from 'tachyons';
 }
+
+.buttonLink::after {
+  content: none !important;
+}

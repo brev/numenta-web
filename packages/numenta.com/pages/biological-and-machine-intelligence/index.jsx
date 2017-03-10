@@ -2,11 +2,11 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import IconQuote from 'react-icons/lib/fa/quote-left'
 import Helmet from 'react-helmet'
 import React from 'react'
 
 import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import ButtonLink from 'numenta-web-shared-components/lib/ButtonLink'
 import Code from 'numenta-web-shared-components/lib/Code'
 import ListItem from 'numenta-web-shared-components/lib/ListItem'
 import ListOrder from 'numenta-web-shared-components/lib/ListOrder'
@@ -83,8 +83,11 @@ const BamiPage = (props, {config}) => {
                   </TextLink>
                 </ListItem>
               </ListOrder>
-              {/* eslint-enable max-len */}
             </div>
+            <ButtonLink to="/assets/pdf/biological-and-machine-intelligence/BAMI-Complete.pdf" target="_new">
+            Download all BAMI book sections in pdf
+            </ButtonLink>
+            {/* eslint-enable max-len */}
           </div>
           <div className={styles.content}>
             <Paragraph lead={true}>
@@ -137,11 +140,6 @@ const BamiPage = (props, {config}) => {
         <Anchor name="citation" />
         <SubTitle>Citing the Book</SubTitle>
         <div className={styles.columns}>
-          <div className={styles.aside}>
-            <div className={styles.icon}>
-              <IconQuote />
-            </div>
-          </div>
           <div className={styles.content}>
             <Paragraph>
               This release of Biological and Machine Intelligence is not close
