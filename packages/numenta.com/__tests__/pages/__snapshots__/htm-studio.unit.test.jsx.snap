@@ -96,7 +96,8 @@ exports[`HTM Studio Page React component Renders correctly 1`] = `
                 <a
                   className="buttonLink primary disabled"
                   href="http://public.numenta.com/releases/htm-studio/darwin/HTM%20Studio-1.0.0.dmg"
-                  onClick={[Function]}>
+                  onClick={[Function]}
+                  target={undefined}>
                   Download HTM Studio
                 </a>
               </div>
