@@ -511,10 +511,10 @@ exports[`HTM School Page React component Renders correctly 1`] = `
           className="li copy markerDisc">
           <a
             className="textlink"
-            href="https://discourse.numenta.org/search?q=sdrs"
+            href="https://discourse.numenta.org/search?q=tag%3Aencoders"
             onClick={[Function]}
             target={undefined}>
-            SDR Forum Discussions
+            Encoder Forum Discussions
           </a>
         </li>
       </ul>
