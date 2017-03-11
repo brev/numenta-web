@@ -397,7 +397,7 @@ const SchoolPage = (props, {config}) => {
           </ListItem>
           <ListItem>
             <TextLink
-                to="https://discourse.numenta.org/search?q=tag%3Aencoders">
+              to="https://discourse.numenta.org/search?q=tag%3Aencoders">
               Encoder Forum Discussions
             </TextLink>
           </ListItem>
