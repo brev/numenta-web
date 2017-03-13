@@ -50,3 +50,7 @@
   composes: fl from 'tachyons';
   width: 90%;
 }
+
+.learn a[href$=".pdf"]::after {
+  background-image: none;
+}

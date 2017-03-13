@@ -52,7 +52,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
              
             <a
               className="textlink"
-              href="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Spatial-Pooler.pdf"
+              href="http://numenta.com/assets/pdf/biological-and-machine-intelligence/BaMI-Spatial-Pooler.pdf"
               onClick={[Function]}
               target={undefined}>
               spatial pooling
@@ -61,7 +61,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
              
             <a
               className="textlink"
-              href="http://numenta.com/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Temporal-Memory.pdf"
+              href="http://numenta.com/assets/pdf/biological-and-machine-intelligence/BaMI-Temporal-Memory.pdf"
               onClick={[Function]}
               target={undefined}>
               temporal memory

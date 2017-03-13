@@ -30,6 +30,11 @@
   width: 100%;
 }
 
+.download {
+  composes: mv3 from 'tachyons';
+  composes: tc from 'tachyons';
+}
+
 .icon {
   composes: layout-aside-icon from '../../static/assets/css/theme.css';
   composes: tc from 'tachyons';
