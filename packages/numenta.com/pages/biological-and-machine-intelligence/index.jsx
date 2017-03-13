@@ -2,11 +2,11 @@
 // MIT License (see LICENSE.txt)
 // Copyright © 2005—2017 Numenta <http://numenta.com>
 
-import IconQuote from 'react-icons/lib/fa/quote-left'
 import Helmet from 'react-helmet'
 import React from 'react'
 
 import Anchor from 'numenta-web-shared-components/lib/Anchor'
+import ButtonLink from 'numenta-web-shared-components/lib/ButtonLink'
 import Code from 'numenta-web-shared-components/lib/Code'
 import ListItem from 'numenta-web-shared-components/lib/ListItem'
 import ListOrder from 'numenta-web-shared-components/lib/ListOrder'
@@ -38,43 +38,58 @@ const BamiPage = (props, {config}) => {
               {/* eslint-disable max-len */}
               <ListOrder marker="disc">
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Introduction.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-Introduction.pdf" target="_new">
                     Introduction
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-HTM-Overview.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-HTM-Overview.pdf" target="_new">
                     HTM Overview
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-SDR.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-SDR.pdf" target="_new">
                     Sparse Distributed Representations
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Encoders.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-Encoders.pdf" target="_new">
                     Encoders
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Other-Content.pdf" target="_new">
+                  <TextLink to={links.in.sp}>
+                    Spatial Pooling
+                  </TextLink>
+                </ListItem>
+                <ListItem>
+                  <TextLink to={links.in.tm}>
+                    Temporal Memory
+                  </TextLink>
+                </ListItem>
+                <ListItem>
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-Other-Content.pdf" target="_new">
                     Content to be Incorporated
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Problem-Sets.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-Problem-Sets.pdf" target="_new">
                     Problem Sets
                   </TextLink>
                 </ListItem>
                 <ListItem>
-                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/0.4/BaMI-Glossary.pdf" target="_new">
+                  <TextLink to="/assets/pdf/biological-and-machine-intelligence/BaMI-Glossary.pdf" target="_new">
                     Glossary
                   </TextLink>
                 </ListItem>
               </ListOrder>
-              {/* eslint-enable max-len */}
             </div>
+            <div className={styles.download}>
+              <ButtonLink to="/assets/pdf/biological-and-machine-intelligence/BAMI-Complete.pdf" target="_new">
+                Download all BAMI book sections in pdf
+              </ButtonLink>
+            </div>
+            {/* eslint-enable max-len */}
           </div>
           <div className={styles.content}>
             <Paragraph lead={true}>
@@ -103,11 +118,9 @@ const BamiPage = (props, {config}) => {
               in each chapter. Over time, we will add chapters to BAMI.
             </Paragraph>
             <Paragraph>
-              The “Content to be Incorporated” section has place holders for new
-              chapters. Importantly, it contains links to updated psuedocode for
-              the current Spatial Pooler and Temporal Memory algorithms. It also
-              has links to scientific papers and other material that cover
-              topics we intend to make into chapters.
+              The “Content to be Incorporated” section contains an outline for
+              new BAMI chapters, and has links to scientific papers and other
+              material that cover topics we intend to incorporate.
             </Paragraph>
             <Paragraph>
               We {' '}
@@ -129,11 +142,6 @@ const BamiPage = (props, {config}) => {
         <Anchor name="citation" />
         <SubTitle>Citing the Book</SubTitle>
         <div className={styles.columns}>
-          <div className={styles.aside}>
-            <div className={styles.icon}>
-              <IconQuote />
-            </div>
-          </div>
           <div className={styles.content}>
             <Paragraph>
               This release of Biological and Machine Intelligence is not close
