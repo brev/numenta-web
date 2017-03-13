@@ -59,12 +59,12 @@ const BamiPage = (props, {config}) => {
                 </ListItem>
                 <ListItem>
                   <TextLink to={links.in.sp}>
-                    Spatial Pooling Algorithm
+                    Spatial Pooling
                   </TextLink>
                 </ListItem>
                 <ListItem>
                   <TextLink to={links.in.tm}>
-                    Temporal Memory Algorithm
+                    Temporal Memory
                   </TextLink>
                 </ListItem>
                 <ListItem>

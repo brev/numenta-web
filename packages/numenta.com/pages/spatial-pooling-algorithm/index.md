@@ -1,5 +1,5 @@
-Spatial Pooling Algorithm
-========================
+Spatial Pooling
+===============
 
 The neocortex is composed of a hierarchy of regions. The feedforward input to
 each region consists of millions of nerve axons which come from sensory organs

@@ -1,5 +1,5 @@
-Temporal Memory Algorithm
-=========================
+Temporal Memory
+===============
 
 In HTM, sequence memory is implemented by the Temporal Memory algorithm.
 This algorithm learns sequences of Sparse Distributed Representations
