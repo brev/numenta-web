@@ -1,6 +1,6 @@
 ---
 date: 2017/03/03
-title: Privacy Policy
+title: Numenta Privacy Policy
 ---
 
 Numenta, Inc. provides this Privacy Policy to inform you of our policies
@@ -12,7 +12,7 @@ website and its features. The websites and their features are
 collectively referred to herein as the “Sites.” This Privacy Policy
 applies only to information that you provide to us through the Sites.
 
-**Information Collection**
+## Information Collection
 
 **Personal Information**. When you sign up via the Sites to receive our
 newsletter or subscribe to our blog, complete an application to apply
@@ -52,13 +52,13 @@ required to process their requests. Accordingly, Log Data is shared with
 Google, which has [its own privacy policy](http://www.google.com/policies/privacy/)
 addressing how it uses such information.
 
-**Information Use**
+## Information Use
 
 Our primary goals in collecting information are to provide and improve
 our Sites, to administer your use of the Sites, to enable users to
 easily navigate our Sites and to respond to user inquiries and requests.
 
-**Information Sharing**
+## Information Sharing
 
 We will not share any PII that we have collected from you except as
 described below:
@@ -98,7 +98,7 @@ rights, property, and safety of third parties or the public in general;
 and (iii) to prevent or stop activity we consider to be illegal or
 unethical.
 
-**Security**
+## Security
 
 We take reasonable measures to protect the information that we collect
 from or about you (including your PII) from unauthorized access, use, or
@@ -107,7 +107,7 @@ information over the Internet or storing information is completely
 secure. Accordingly, we cannot guarantee the absolute security of any
 information.
 
-**Third Party Links**
+## Third Party Links
 
 Our Sites may contain links to other websites and services and may allow
 you to create accounts with third parties. Any information that you
@@ -119,7 +119,7 @@ security practices and policies of those websites or services. To
 protect your information we recommend that you carefully review the
 privacy policies of other websites and services that you access.
 
-**Modifying and Deleting Information**
+## Modifying and Deleting Information
 
 If you want us to delete or modify your PII, please contact us at
 info@numenta.com with your request. We’ll take steps to delete or modify
@@ -133,7 +133,7 @@ not be possible.
 To delete your name from our email contact lists, you may follow the
 “unsubscribe” instructions contained in our communications to you.
 
-**Be Careful When You Share Information with Others**
+## Be Careful When You Share Information with Others
 
 Please be aware that whenever you share information on a publicly
 available area of our Sites, such as in a comment section, that
@@ -141,7 +141,7 @@ information may be accessed, passed along or made public by others. This
 means that anyone with access to such information can potentially use it
 for any purpose, including sending unsolicited communications.
 
-**International Transfer**
+## International Transfer
 
 Your PII and communications may be transferred to, and maintained on,
 computers located outside of your state, province, country, or other
@@ -151,14 +151,14 @@ United States and choose to provide your PII or other information to us,
 we may transfer such information to the United States and process it
 there.
 
-**Our Policy Toward Children**
+## Our Policy Toward Children
 
 Our Sites are not directed to persons under 18. In addition, we do not
 knowingly collect PII from children under 13. If we learn that we have
 collected PII of a child under 13 we will take steps to delete such
 information from our files as soon as possible.
 
-**Changes to Privacy Policy**
+## Changes to Privacy Policy
 
 Any information that we collect is subject to the privacy policy in
 effect at the time such information is collected. We may, however,
@@ -168,7 +168,7 @@ changes by posting them on the Sites or by sending you an email or other
 notification, and we’ll indicate when such changes will become
 effective.
 
-**Contacting Numenta**
+## Contacting Numenta
 
 Please contact us at info@numenta.com if you have any questions about
 our Privacy Policy.

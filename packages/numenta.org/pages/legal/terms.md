@@ -12,7 +12,7 @@ Please read these Terms carefully before accessing or using the Numenta
 Websites. By accessing or using any part of the Numenta Websites, you
 agree to become bound by these Terms.
 
-**1. MODIFICATION OF TERMS**
+## 1. MODIFICATION OF TERMS
 
 We reserve the right to change, modify, add or remove portions of these
 Terms at any time without prior notice. Such modifications shall be
@@ -20,13 +20,13 @@ effective immediately upon posting of the modified Terms to the Numenta
 Websites. Your continued use of the Numenta Websites will mean that you
 accept these Terms.
 
-**2. NO UNLAWFUL OR PROHIBITED USE**
+## 2. NO UNLAWFUL OR PROHIBITED USE
 
 You warrant to Numenta that you will not use the Numenta Websites, or
 any of the content therein, for any purpose that is unlawful or that is
 prohibited by these Terms.
 
-**3. LINKS**
+## 3. LINKS
 
 The Numenta Websites may permit you to link to other websites, services
 or resources on the Internet that are not owned, operated or controlled
@@ -44,7 +44,7 @@ content, functions, accuracy, legality, appropriateness or any other
 aspect of such sites. The Numenta Privacy Policy is applicable only when
 you are on the Numenta Websites.
 
-**4. ADDITIONAL TERMS**
+## 4. ADDITIONAL TERMS
 
 Some areas of the Numenta Websites may have additional terms and
 conditions governing the use of certain features on the Numenta Websites
@@ -54,7 +54,7 @@ them available for you to read through prior to your use of that area of
 the Numenta Websites. By using those areas of the Numenta Websites, you
 agree to the Additional Terms.
 
-**5. USER REGISTRATION**
+## 5. USER REGISTRATION
 
 Certain features of the Numenta Websites, such as posting to community
 pages on the Numenta Websites, requires you to register for an account
@@ -68,7 +68,7 @@ access or use the Numenta Websites without permission. You are solely
 responsible for the activity that occurs on your Account, and for
 keeping your Account password secure.
 
-**6. COPYRIGHT, TRADEMARK, AND OTHER INTELLECTUAL PROPERTY RIGHTS**
+## 6. COPYRIGHT, TRADEMARK, AND OTHER INTELLECTUAL PROPERTY RIGHTS
 
 All of the content featured or displayed on the Numenta Websites,
 including without limitation, text, graphics, photographs, images, audio
@@ -97,7 +97,7 @@ or third-party trademarks. The Numenta Websites, Content, and all
 related rights shall remain the exclusive property of Numenta or its
 licensors unless otherwise expressly agreed.
 
-**7. USER-GENERATED CONTENT**
+## 7. USER-GENERATED CONTENT
 
 You are solely responsible for all material (including, but without
 limitation, information, data, text, photographs, videos, audio clips,
@@ -125,7 +125,7 @@ resulting therefrom. We do not guarantee that any Content you access on
 or through the Numenta Websites is or will continue to be accurate or
 complete.
 
-**8. ACCEPTABLE USE**
+## 8. ACCEPTABLE USE
 
 By using the Numenta Websites, you represent and warrant that you will
 not:
@@ -192,7 +192,7 @@ not:
 -   advocate, encourage or assist and third party in doing any of the
     foregoing.
 
-**9. LICENSE GRANT**
+## 9. LICENSE GRANT
 
 By posting or submitting User Content (excepting any information you
 provide to us as part of the recruitment, license and/or scholarship
@@ -218,7 +218,7 @@ your other ownership or license rights in your User Content, including
 the right to grant additional licenses to your User Content, unless
 otherwise agreed in writing.
 
-**10. AVAILABILITY OF CONTENT**
+## 10. AVAILABILITY OF CONTENT
 
 You acknowledge that Numenta has no obligation to monitor your access to
 or use of the Numenta Websites or to review or edit any User Content or
@@ -231,7 +231,7 @@ access to any User Content or content that we, at our sole discretion,
 consider to be objectionable for any reason, in violation of these Terms
 or otherwise harmful to the Numenta Websites.
 
-**11. COPYRIGHT INFRINGEMENT POLICY AND PROCEDURE**
+## 11. COPYRIGHT INFRINGEMENT POLICY AND PROCEDURE
 
 We respond to notices of alleged copyright infringement and terminate
 accounts of repeat infringers according to the process set out in the
@@ -330,7 +330,7 @@ determined to be a repeat infringer. Repeat infringers are users who
 have been the subject of more than one valid takedown request that has
 not been successfully rebutted.
 
-**12. TERMINATION**
+## 12. TERMINATION
 
 We may terminate your access to all or any part of the Numenta Websites
 at any time, with or without cause, with or without notice, effective
@@ -343,7 +343,7 @@ termination, including without limitation, licenses of User Content,
 ownership provisions, warranty disclaimers, indemnity and limitations of
 liability.
 
-**13. ASSIGNMENT**
+## 13. ASSIGNMENT
 
 These Terms are personal to you, and are not assignable, transferable or
 sublicensable by you without our prior written consent. We may assign,
@@ -353,7 +353,7 @@ acquisition, a sale of assets or by operation of law, without your
 consent. Any attempted transfer or assignment in violation hereof shall
 be null and void.
 
-**14. FORCE MAJEURE**
+## 14. FORCE MAJEURE
 
 Under no circumstances will Numenta be liable for any failure to perform
 our obligations hereunder, in whole or in part, where such failure
@@ -361,7 +361,7 @@ results from any cause beyond our reasonable control, including without
 limitation, mechanical, electronic or communications failure or
 degradation.
 
-**15. NO WAIVER**
+## 15. NO WAIVER
 
 Our failure to enforce any part of these Terms shall not constitute a
 waiver of our right to later enforce that or any other part of these
@@ -371,49 +371,49 @@ compliance with these Terms to be binding, we must provide you with
 written notice of such waiver through one of our authorized
 representatives.
 
-**16. DISCLAIMER AND LIMITATION OF LIABILITY**
+## 16. DISCLAIMER AND LIMITATION OF LIABILITY
 
-The NUMENTA Websites and all content available on the NUMENTA Websites
-are provided on an “as is” basis without warranties of any kind, whether
-express, implied, statutory or otherwise, including without limitation
-warranties of title or implied warranties of merchantability,
-non-infringement or fitness for a particular purpose or those arising
-out of a course of dealing or performance or usage of trade. to the
-fullest extent permitted by applicable law, you acknowledge and agree,
-by your use of the NUMENTA websites, that your use is at your sole risk
-and that numenta and its officers, employees, directors, shareholders,
-parents, subsidiaries, affiliates, agents and licensors (collectively,
-“**affiliates**”) shall not be liable for any damages of any kind
-related to your use of the NUMENTA websites.
+THE NUMENTA WEBSITES AND ALL CONTENT AVAILABLE ON THE NUMENTA WEBSITES
+ARE PROVIDED ON AN “AS IS” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER
+EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WITHOUT LIMITATION
+WARRANTIES OF TITLE OR IMPLIED WARRANTIES OF MERCHANTABILITY,
+NON-INFRINGEMENT OR FITNESS FOR A PARTICULAR PURPOSE OR THOSE ARISING
+OUT OF A COURSE OF DEALING OR PERFORMANCE OR USAGE OF TRADE. TO THE
+FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOU ACKNOWLEDGE AND AGREE,
+BY YOUR USE OF THE NUMENTA WEBSITES, THAT YOUR USE IS AT YOUR SOLE RISK
+AND THAT NUMENTA AND ITS OFFICERS, EMPLOYEES, DIRECTORS, SHAREHOLDERS,
+PARENTS, SUBSIDIARIES, AFFILIATES, AGENTS AND LICENSORS (COLLECTIVELY,
+“**AFFILIATES**”) SHALL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND
+RELATED TO YOUR USE OF THE NUMENTA WEBSITES.
 
-in particular, and to the fullest extent permitted by applicable law,
-numenta and its AFFILIATES makes no representations or warranties about
-the accuracy or completeness of content available on or through the
-NUMENTA websites or the content of any websites or online SERVICES
-linked to or integrated with the NUMENTA websites. to the fullest extent
-permitted by applicable law, numenta and its affiliates will have no
-liability for any: (a) errors, mistakes or inaccuracies of content; (b)
-personal injury or property damage resulting from your access to or use
-of the NUMENTA websites; (c) any unauthorized access to or use of our
-servers or any personal information or user data; (d) any interruption
-of transmission to or from the NUMENTA websites; (E) any bugs, viruses,
-trojan horses or the like which may be transmitted on or through the
-NUMENTA websites by any third party; or (f) any loss or damage of any
-kind incurred as a result of the use of any content posted or shared
-through the NUMENTA websites.
+IN PARTICULAR, AND TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW,
+NUMENTA AND ITS AFFILIATES MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT
+THE ACCURACY OR COMPLETENESS OF CONTENT AVAILABLE ON OR THROUGH THE
+NUMENTA WEBSITES OR THE CONTENT OF ANY WEBSITES OR ONLINE SERVICES
+LINKED TO OR INTEGRATED WITH THE NUMENTA WEBSITES. TO THE FULLEST EXTENT
+PERMITTED BY APPLICABLE LAW, NUMENTA AND ITS AFFILIATES WILL HAVE NO
+LIABILITY FOR ANY: (A) ERRORS, MISTAKES OR INACCURACIES OF CONTENT; (B)
+PERSONAL INJURY OR PROPERTY DAMAGE RESULTING FROM YOUR ACCESS TO OR USE
+OF THE NUMENTA WEBSITES; (C) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR
+SERVERS OR ANY PERSONAL INFORMATION OR USER DATA; (D) ANY INTERRUPTION
+OF TRANSMISSION TO OR FROM THE NUMENTA WEBSITES; (E) ANY BUGS, VIRUSES,
+TROJAN HORSES OR THE LIKE WHICH MAY BE TRANSMITTED ON OR THROUGH THE
+NUMENTA WEBSITES BY ANY THIRD PARTY; OR (F) ANY LOSS OR DAMAGE OF ANY
+KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED OR SHARED
+THROUGH THE NUMENTA WEBSITES.
 
-to the fullest extent permitted by applicable law, in no event will
-numenta or its affiliates be liable to you or any third party for any
-indirect, special, incidental, punitive or consequential damages
-(including for the indirect loss of profit, revenue or data) arising out
-of or relating to the NUMENTA websites, however caused, and under
-whatever cause of action or theory of liability brought (including under
-any contract, negligence or other tort theory of liability) even if
-advised of the possibility of such damages. some jurisdictions do not
-allow the exclusion of liability or incidental or consequential damages,
-so the above limitation or exclusion may not apply to you.
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL
+NUMENTA OR ITS AFFILIATES BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY
+INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES
+(INCLUDING FOR THE INDIRECT LOSS OF PROFIT, REVENUE OR DATA) ARISING OUT
+OF OR RELATING TO THE NUMENTA WEBSITES, HOWEVER CAUSED, AND UNDER
+WHATEVER CAUSE OF ACTION OR THEORY OF LIABILITY BROUGHT (INCLUDING UNDER
+ANY CONTRACT, NEGLIGENCE OR OTHER TORT THEORY OF LIABILITY) EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT
+ALLOW THE EXCLUSION OF LIABILITY OR INCIDENTAL OR CONSEQUENTIAL DAMAGES,
+SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
 
-**17. INDEMNIFICATION**
+## 17. INDEMNIFICATION
 
 To the fullest extent permitted by applicable law, you agree to defend,
 indemnify and hold harmless Numenta and its Affiliates from all
@@ -427,7 +427,7 @@ assume the exclusive defense and control of any matter otherwise subject
 to indemnification by you, in which event you will assist and cooperate
 with us in asserting any available defenses.
 
-**18. GOVERNING LAW AND JURISDICTION**
+## 18. GOVERNING LAW AND JURISDICTION
 
 These Terms shall be governed by and construed in accordance with the
 laws of the State of California, including its conflicts of law rules,
@@ -441,7 +441,7 @@ retain the right to seek injunctive or other equitable relief in a court
 of competent jurisdiction arising out of or in connection with or in
 relation to these Terms and your use of the Numenta Websites.
 
-**19. ENTIRE AGREEMENT AND SEVERABILITY**
+## 19. ENTIRE AGREEMENT AND SEVERABILITY
 
 These Terms are the entire agreement between you and Numenta with
 respect to the Numenta Websites, including use of the Numenta Websites,
@@ -454,6 +454,6 @@ otherwise remain in full force and effect and enforceable.
 
 **Effective Date of Agreement**: 3/3/2017
 
-**VIOLATIONS OF TERMS**
+## VIOLATIONS OF TERMS
 
 Please report any violations of these Terms to <info@numenta.com>.
