@@ -3,7 +3,7 @@ author: Christy Maver
 brief: A couple months ago, one of our engineers had an idea: What if we could dedicate a day or two to work on a Numenta project that may be outside our day-to-day responsibilities? From that, the first Internal Numenta Hackathon was born.
 date: 2017/03/23
 hideImage: true
-image: ../images/image.png
+image: ../images/hackathon_haiku.jpg
 org: Marketing
 tags: numenta machine intelligence htm htm school
 title: "Pressing the Pause Button for Numenta’s First Internal Hackathon"
