@@ -2,8 +2,8 @@
 author: Christy Maver
 brief: A couple months ago, one of our engineers had an idea: What if we could dedicate a day or two to work on a Numenta project that may be outside our day-to-day responsibilities? From that, the first Internal Numenta Hackathon was born.
 date: 2017/03/23
-hideImage: true
-image: ../images/hackathon_haiku.jpg
+hideImage: false
+image: ../images/hackathon_haiku.png
 org: Marketing
 tags: numenta machine intelligence htm htm school
 title: "Pressing the Pause Button for Numenta’s First Internal Hackathon"
@@ -35,7 +35,7 @@ improving the office.
 We kicked off the event Monday morning, where Matt briefly went over the
 guidelines.
 
-![](media/image2.jpeg){width="4.19in" height="2.76in"}
+![Hacakthon rules](../images/hackathon_rules.png)
 
 > *The first rule of internal hackathons: there are no rules *
 
@@ -54,7 +54,7 @@ If you’re interested in seeing the details or using the encoder, Marion
 shared the results of this project with the community on the [HTM
 Forum](https://discourse.numenta.org/t/new-frequency-encoder-a-k-a-cochlea-encoder/2015).
 
-![](media/image3.jpeg){width="3.68in" height="2.76in"}
+![Hacakthon encoder team](../images/hackathon_encoder_team.png)
 
 > *C’est tres bien! – Marion and Thomas discuss their encoder*
 
@@ -87,7 +87,7 @@ object?  The brain has to solve the same problem, so they wanted to
 figure out if we could learn inverse mappings using biologically
 plausible HTM neurons.
 
-![](media/image4.jpeg){width="3.68in" height="2.76in"}
+![Hacakthon team NIK](../images/hackathon_team_NIK.png)
 
 > *Team Nik hacking away*
 
@@ -136,7 +136,7 @@ to be out of town during the hackathon. She surprised us all with a
 top-secret project that was waiting for us Monday morning: the Clean
 Desk Hack.
 
-![](media/image5.jpeg){width="3.68in" height="2.76in"}
+![Hacakthon Clean Desk](../images/hackathon_clean_desk.png)
 
 > *You can use your imagination for the “Before” shot*
 
@@ -148,15 +148,15 @@ School](http://homechefcookingschool.com/) to engage in a fierce
 “[Chopped](https://en.wikipedia.org/wiki/Chopped_(TV_series))”-style
 cooking challenge.
 
-![](media/image6.jpeg){width="2.07in" height="2.76in"}
+![Cooking Competition Austin and Scott](../images/cooking_comp1.png)
 
 > *Austin and Scott prepare to plate
 
-![](media/image7.jpeg){width="2.07in" height="2.76in"}
+![Cooking Competition Matt](../images/cooking_comp2.png)
 
 > *Matt explains the dish 
 
-![](media/image8.jpeg){width="2.07in" height="2.76in"}
+![Cooking Competition Dig in](../images/cooking_comp3.png)
 
 > *Digging in
 
@@ -170,102 +170,8 @@ have a few new cooking tricks up our sleeves now.
 
 What’s on your “If only I had time to do” list?
 
-![](media/image9.jpeg){width="3.0758945756780403in"
-height="2.759411636045494in"}
+![Cooking Competition Dig in](../images/winner-winner-chicken-dinner.png)
 
 > *The winning dish: cornucopia pepper with chicken stir-fry, roasted
 purple cauliflower and zucchini with wilted spinach, and cold Thai
 noodle salad*
-
-
-
-
-
-
-
-In the two years I’ve been at Numenta, I’ve seen the field of AI grow to become
-a focal point of technology news. During this same time, I’ve also witnessed the
-interest in our work continues to grow.  
-
-So it didn’t come as a surprise when I learned a Chinese TV crew wanted to film
-an interview with our co-founder, Jeff Hawkins, at our office. But it did come
-as a surprise to hear that the interview was with Yang Lan, a prominent
-broadcast journalist and figure who has been referred to as
-[the Oprah of China][1]. She hosts several TV talk shows, is the cofounder and
-chairperson of [Sun Media Group][2] and Sun Culture Foundation, and was listed
-by Forbes as one of the [top 100 most powerful women][3].  
-
-The interview with Jeff is to be featured as part of Yang Lan’s upcoming
-documentary series on Artificial Intelligence. Yang Lan and her team travelled
-across the globe to interview knowledgeable researchers, technologists and
-leaders on their opinions and findings. The documentary series is set to air in
-China at the end of this year and will be seen by upwards of a billion people;
-there will be an English version afterwards as well.
-
-*We’ll update this blog when the interview becomes available, with instructions
-on how to access it.*
-
-## The View Behind the Scenes
-
-The film and production crew of 11 (yes eleven!) people arrived at our office in
-Redwood City, CA; a bit early for the 8:30 a.m. appointment and quickly took
-over our office. A coordinator based on the west coast had visited Numenta a
-week prior to the interview, to discuss details and scout the office for filming
-locations. The team chose to set up two chairs in the middle of the office, with
-a view of a neuron mural from neuroscientist Santiago Ramon y Cajal, on our wall
-in the background.
-
-We have a small team at Numenta, around 15 employees plus a few interns that
-join us every summer, so our office is small. Thursday is a no-meeting day, when
-many employees choose to work from home. This worked well to accommodate the
-large film crew, as the staff members who were present were displaced from their
-desks to various locations around the office.  
-
-![Yang Lan interview crew at Numenta office](../images/image2.png)
-
-> *This photo only shows half of the production crew. Other members were busy in
-  one of our conference rooms.*
-
-Yang Lan arrived once the cameras were setup, and was greeted by our eager staff
-and her production crew. After a few introductions, sound checks and lighting
-adjustments, the cameras began rolling.  
-
-Her first few questions focused on Jeff’s background and how he arrived at
-Numenta’s mission today - [reverse-engineering the neocortex][4]. Jeff
-referenced his prior work as “computers were fun to work on, but my real passion
-was brains.” He described solving brains as a difficult problem, but also as one
-of the most important problems in the world.  
-
-The next series of questions from Yang Lan evoked a more lively discussion. It
-was clear that she knew Numenta’s approach was different than traditional
-machine learning methods, but she wanted Jeff to explain why. He went into
-detail on why Numenta is studying the neocortex as a blueprint for machine
-intelligence. Jeff defined intelligence and highlighted one of the crucial
-processes involved when learning a model of the world: “the brain works on
-time-based data.” He also addressed the fears from those concerned with the
-creation of intelligent machines, a highly debated topic in artificial
-intelligence.
-
-![Yang Lan interviewing Jeff Hawkins at Numenta](../images/image.png)
-
-> *Yang Lan interviews Jeff Hawkins at our office.*
-
-The interview went smoothly, with the exception of an interruption from a
-deliveryman at our door. After the interview, Jeff showed Yang Lan several of
-our example applications and visualizations, to help her audience visualize our
-technology. A Numenta employee, who was working remotely, signed on to our
-tele-presence robot (made by Double Robotics) and introduced himself while
-navigating the robot through the office for Yang Lan and her film crew.
-
-Between set-up, the interview, b-roll footage and takedown, the production team
-spent four hours at our office, but by the afternoon, the office had returned to
-its norm. Seeing the effort that occurs behind the scenes of a documentary film
-interview was impressive. The real highlight though was witnessing the live,
-uncut version of an interview with Yang Lan. We don’t know what the final piece
-will look like and how the producers plan to include Numenta, but it was
-exciting to be a part of this documentary series.
-
-[1]: http://time.com/2907444/yang-lan-the-oprah-of-china-expands-her-reach/
-[2]: http://www.chinasunmedia.com/en/?page_id=2468
-[3]: http://www.forbes.com/pictures/fjed45ed/yang-lan/#66b8dfc972ef
-[4]: /
