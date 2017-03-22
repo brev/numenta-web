@@ -237,7 +237,7 @@ class HtmStudioPage extends React.Component {
                     Installation on Windows will take several minutes.
                   </ListItem>
                   <ListItem>
-                    Windows 10 users, {' '}
+                    Windows users, {' '}
                     <TextLink to={`${links.in.htmstudio}windows/`}>
                       click here
                     </TextLink> {' '}

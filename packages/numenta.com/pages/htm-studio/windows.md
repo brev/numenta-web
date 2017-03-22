@@ -1,17 +1,18 @@
 ---
-title: HTM Studio - Windows 10
+title: HTM Studio - Troubleshooting Tips on Windows
 ---
 
-#### If you are using Windows 10 “[Windows Defender](https://support.microsoft.com/en-us/help/17464/windows-defender-help-protect-computer)”
+#### Installation Failure 
 
-* You may see the following error screen. Click **More info**.
+If HTM Studio fails to install, this could be because your antivirus is
+blocking the installation process. This problem is not specific to HTM
+Studio. To troubleshoot, try the following:
 
-![Windows Screenshot 1](../images/windows1.png)
+-   Disable your antivirus. For tips on how to do this, [click
+    here](http://www.computerhope.com/issues/ch000864.htm). 
 
-* After clicking **More info**, click **Run anyway** to continue downloading the
-  application.
+-   Install HTM Studio again
 
-![Windows Screenshot 2](../images/windows2.png)
-
+-   Once HTM Studio installation is complete, enable your antivirus
 
 ◄ [Back to HTM Studio](/htm-studio/)
