@@ -1,126 +1,174 @@
 ---
-date: 2016/07/22
-title: Privacy Policy
+date: 2017/03/03
+title: Numenta Privacy Policy
 ---
 
-These terms of service apply to the use of Numenta’s streaming analytics product
-as distributed through cloud service providers (the Grok Product) and for the
-use of Numenta’s web site. Together, the Grok Product and the Numenta web site
-are called the Numenta Offering.
+Numenta, Inc. provides this Privacy Policy to inform you of our policies
+and procedures regarding the collection, use, and disclosure of personal
+information we might receive from visitors and registered users of the
+websites located at [www.numenta.com](http://www.numenta.com) and
+[www.numenta.org](/) through their use of the website and its features.
+The websites and their features are collectively referred to herein as
+the “Sites.” This Privacy Policy applies only to information that you
+provide to us through the Sites.
 
-### 1. ACCEPTANCE OF TERMS
+## Information Collection
 
-If you do not agree to these Terms, you should not use the Numenta Offering. We
-reserve the right to change, modify, add or remove portions of these Terms
-periodically. Such modifications shall be effective immediately upon posting of
-the modified Terms to the Numenta website. Your continued use of the Numenta
-Offering will mean that you accept these terms.
+**Personal Information**. When you sign up via the Sites to receive our
+newsletter or subscribe to our blog, complete an application to apply
+for a job, scholarship or license, register to provide feedback or
+contact us for any other purpose, you may choose to give us certain
+personal information that can be used to identify you, such as your
+name, email address, mailing address, phone number, company name,
+website URL and social media handles (“Personally Identifiable
+Information” or “PII”). The decision to provide this information is
+optional. However, if you choose not to provide the requested
+information, you may not be able to use some or all of the features of
+the Sites. You may also choose to provide us with additional information
+that cannot be used by itself to identify you, such as asking how you
+heard about Numenta, but that we may combine with your PII to associate
+with you.
 
-### 2. NO UNLAWFUL OR PROHIBITED USE
+**Information Related to Use of the Sites.** Our servers automatically
+record certain information about how a person uses our Sites (we refer
+to this information as “Log Data”). Log Data may include information
+such as your Internet Protocol (IP) address, browser type, operating
+system, the web page that you were visiting before accessing our Sites,
+the pages or features of our Sites to which you browsed, and the time
+spent on those pages or features, search terms, the links on our Sites
+that you click on, and other statistics. We use this information to
+administer the Sites and we analyze (and may engage third parties to
+analyze) this information to improve and enhance the Sites by expanding
+its features and functionality and tailoring them to our users’
+preferences. We may use a person’s IP address to fight spam, malware,
+and identity theft. We also use the IP Address to generate aggregate,
+non-identifying information about how our Sites are used.
 
-You warrant to Numenta that you will not use the Numenta Offering, or any of the
-content therein, for any purpose that is unlawful or that is prohibited by these
-Terms.
+We use Google Analytics to collect, monitor, and analyze Log Data in
+order to increase our Sites’ functionality and user-friendliness, and to
+better tailor our Sites to our visitors’ needs. We also use this
+information to verify that visitors to the Sites meet the criteria
+required to process their requests. Accordingly, Log Data is shared with
+Google, which has [its own privacy policy](http://www.google.com/policies/privacy/)
+addressing how it uses such information.
 
-### 3. LICENSE GRANT
+## Information Use
 
-Your rights to access, download, and use the Grok Product will be subject to the
-terms and conditions of the software license agreement provided on the cloud
-service provider’s site through which it is distributed.
+Our primary goals in collecting information are to provide and improve
+our Sites, to administer your use of the Sites, to enable users to
+easily navigate our Sites and to respond to user inquiries and requests.
 
-### 4. YOUR CONTENT
+## Information Sharing
 
-Numenta will not pre-screen or review your content, but Numenta shall have the
-right (but not the obligation) in its sole discretion to refuse or delete any
-content that it reasonably considers to violate the Terms or to be otherwise
-illegal.
+We will not share any PII that we have collected from you except as
+described below:
 
-You grant Numenta the right to review your content for the purposes of debugging
-the Numenta Offering and for providing you with technical support. Numenta will
-not share your content with others without your explicit, written permission,
-except in the case where being required to do so by the appropriate court or
-government agency.
+**Information Shared with Our Service Providers.** We may engage third
+party service providers to work with us to administer the Sites and
+provide other services. These third-party service providers have access
+to your PII and other information we collect from you only for the
+purpose of performing services on our behalf and are expressly obligated
+not to disclose or use your PII for any other purpose.
 
-### 5. TERMINATION
+**Information Shared with Third Parties.** We may share aggregated
+information and non-identifying information with third parties for
+industry analysis, demographic profiling, and other similar purposes.
 
-We may terminate your use of the Numenta Offering if we have reasonable belief
-that your use: 1) violates these Terms; or 2) abuses site resources or attempts
-to gain unauthorized entry to the site or site resources; or 3) we are required
-to do so by law, regulation, court or governing agency order.
+**Information Disclosed in Connection with Business Transactions.**
+Information that we collect from our users, including PII, is considered
+to be a business asset. As a result, if we go out of business or enter
+bankruptcy or if we are acquired as a result of a transaction such as a
+merger, acquisition, or asset sale, your PII may be disclosed or
+transferred to the third-party acquirer in connection with the
+transaction.
 
-Our termination of any user's access to the Numenta Offering may be effected
-without notice and, on such termination, we may immediately deactivate or delete
-user's account and/or bar any further access to such files. Numenta shall not be
-liable to any Numenta user or other third party for any such termination.
+**Information Disclosed for Our Protection and the Protection of
+Others.** It is our policy to protect you from having your privacy
+violated through abuse of the legal system, whether by individuals,
+entities, or government, and to contest claims that we believe to be
+invalid under applicable law. However, it is also our policy to
+cooperate with government and law enforcement officials and private
+parties, as appropriate. Accordingly, we reserve the right to disclose
+any information about you to government or law enforcement officials or
+private parties as we, in our sole discretion, believe necessary: (i) to
+satisfy or comply with any applicable law, regulation, or legal process
+or to respond to lawful requests, including subpoenas, warrants, or
+court orders; (ii) to protect our property, rights, and safety and the
+rights, property, and safety of third parties or the public in general;
+and (iii) to prevent or stop activity we consider to be illegal or
+unethical.
 
-You may terminate your use of the Numenta Offering by stopping its use without
-notice to us.
+## Security
 
-### 6. PAYMENT
+We take reasonable measures to protect the information that we collect
+from or about you (including your PII) from unauthorized access, use, or
+disclosure. Please be aware, however, that no method of transmitting
+information over the Internet or storing information is completely
+secure. Accordingly, we cannot guarantee the absolute security of any
+information.
 
-The Numenta Product is delivered through a cloud service provider’s marketplace.
-You will abide by the payment terms as detailed in that marketplace. If you do
-not wish to continue using and paying for the Numenta Product, you may stop
-using it at any time, and further charges will not accrue. We do not offer
-refunds for any amounts paid.
+## Third Party Links
 
-### 7. LINKS
+Our Sites may contain links to other websites and services and may allow
+you to create accounts with third parties. Any information that you
+provide on or to a third-party website or service is provided directly
+to the owner of that website or service and is subject to that party's
+privacy policy. Our Privacy Policy does not apply to such websites or
+services and we are not responsible for the content, privacy, or
+security practices and policies of those websites or services. To
+protect your information we recommend that you carefully review the
+privacy policies of other websites and services that you access.
 
-To the extent the Numenta website includes links to third parties, Numenta is
-not responsible or liable for the content of such sites. The Numenta website
-privacy statement is applicable only when you are on the Numenta websites.
+## Modifying and Deleting Information
 
-### 8. SUPPORT
+If you want us to delete or modify your PII, please contact us at
+info@numenta.com with your request. We’ll take steps to delete or modify
+your information as soon as is practicable, but some information may
+remain in archived/backup copies for our records or as otherwise
+required by law. Please note that some user content that appears on or
+is collected from our Sites is stored and controlled by third party
+providers, thus, complete and comprehensive removal of the contact may
+not be possible.
 
-Technical support for the Grok Product is provided by email. We will make a
-reasonable effort to respond to your email within 48 hours. Support inquiries
-are to be sent to support@numenta.com.
+To delete your name from our email contact lists, you may follow the
+“unsubscribe” instructions contained in our communications to you.
 
-### 9. TRADEMARK INFORMATION
+## Be Careful When You Share Information with Others
 
-Numenta, Grok, NuPIC, and the Numenta, Grok and NuPIC trademarks, logos and
-service marks are the intellectual property of Numenta, Inc.
+Please be aware that whenever you share information on a publicly
+available area of our Sites, such as in a comment section, that
+information may be accessed, passed along or made public by others. This
+means that anyone with access to such information can potentially use it
+for any purpose, including sending unsolicited communications.
 
-All trademarks, trade names, service marks and logos referenced herein are the
-property of their respective owners.
+## International Transfer
 
-### 10. COPYRIGHTS
+Your PII and communications may be transferred to, and maintained on,
+computers located outside of your state, province, country, or other
+governmental jurisdiction where the privacy laws may not be as
+protective as those in your jurisdiction. If you are located outside the
+United States and choose to provide your PII or other information to us,
+we may transfer such information to the United States and process it
+there.
 
-If you believe that your work has been copied and is accessible in the Numenta
-Offering in a way that constitutes copyright infringement, you may notify us by
-providing our copyright agent with the following information in writing:
+## Our Policy Toward Children
 
-* the electronic or physical signature of the owner of the copyright or the
-  person authorized to act on the owner's behalf;
+Our Sites are not directed to persons under 18. In addition, we do not
+knowingly collect PII from children under 13. If we learn that we have
+collected PII of a child under 13 we will take steps to delete such
+information from our files as soon as possible.
 
-* identification of the copyrighted work that you claim has been infringed;
+## Changes to Privacy Policy
 
-* identification of the material that is claimed to be infringing and
-  information reasonably sufficient to permit Grok to locate the material;
+Any information that we collect is subject to the privacy policy in
+effect at the time such information is collected. We may, however,
+modify and revise this Privacy Policy from time to time. If we make any
+material changes to this Privacy Policy, we’ll notify you of such
+changes by posting them on the Sites or by sending you an email or other
+notification, and we’ll indicate when such changes will become
+effective.
 
-* your name, address, telephone number, and email address;
+## Contacting Numenta
 
-* a statement by you that you have a good faith belief that the disputed use is
-  not authorized by the copyright owner, its agent, or the law;
-
-* a statement, made under penalty of perjury, that the above information in
-your Notice is accurate and that you are the copyright owner or are authorized
-to act on the copyright owner's behalf.
-
-If Numenta receives such a claim, Numenta will investigate and report back to
-the complainant. Numenta reserves the right to delete such reported content or
-to terminate a user's account.
-
-Our designated agent to receive notification of claimed infringement under the
-Digital Millennium Copyright Act OF 1998 ("DMCA") is:
-[dmca@numenta.com](mailto:dmca@numenta.com)
-
-### 11. VIOLATIONS OF TERMS
-
-Please report any violations of the Terms to
-[info@numenta.com](mailto:info@numenta.com).
-
-### 12. PRIVACY
-
-Our Privacy Policy is located
-at [http://numenta.org/legal/privacy/](/legal/privacy/).
+Please contact us at info@numenta.com if you have any questions about
+our Privacy Policy.
