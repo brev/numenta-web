@@ -4,7 +4,7 @@ brief: A couple months ago, one of our engineers had an idea: What if we could d
 date: 2017/03/23
 hideImage: false
 image: ../images/hackathon_haiku.png
-org: Marketing
+org: Director of Marketing
 tags: numenta machine intelligence htm htm school
 title: "Pressing the Pause Button for Numenta’s First Internal Hackathon"
 type: post
