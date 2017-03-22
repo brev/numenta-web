@@ -56,7 +56,7 @@ Forum](https://discourse.numenta.org/t/new-frequency-encoder-a-k-a-cochlea-encod
 
 ![](media/image3.jpeg){width="3.68in" height="2.76in"}
 
-*C’est tres bien! – Marion and Thomas discuss their encoder*
+> *C’est tres bien! – Marion and Thomas discuss their encoder*
 
 ## Marcus – Visualization: Stacks of Time Series
 
@@ -89,7 +89,7 @@ plausible HTM neurons.
 
 ![](media/image4.jpeg){width="3.68in" height="2.76in"}
 
-*Team Nik hacking away*
+> *Team Nik hacking away*
 
 Learning inverse kinematics is a challenging task in general. The
 results are preliminary but after two days of hacking, all signs point
@@ -138,7 +138,7 @@ Desk Hack.
 
 ![](media/image5.jpeg){width="3.68in" height="2.76in"}
 
-*You can use your imagination for the “Before” shot*
+> *You can use your imagination for the “Before” shot*
 
 There were no prizes or awards given, as this was more of a
 team-building event than a contest. Don’t be fooled into thinking there
@@ -149,10 +149,16 @@ School](http://homechefcookingschool.com/) to engage in a fierce
 cooking challenge.
 
 ![](media/image6.jpeg){width="2.07in" height="2.76in"}
+
+> *Austin and Scott prepare to plate
+
 ![](media/image7.jpeg){width="2.07in" height="2.76in"}
+
+> *Matt explains the dish 
+
 ![](media/image8.jpeg){width="2.07in" height="2.76in"}
 
-*Austin and Scott prepare to plate Matt explains the dish Digging in*
+> *Digging in
 
 With the first Numenta internal hackathon in the books, now it’s back to
 our regularly scheduled programming, but things are not exactly the same
@@ -167,7 +173,7 @@ What’s on your “If only I had time to do” list?
 ![](media/image9.jpeg){width="3.0758945756780403in"
 height="2.759411636045494in"}
 
-*The winning dish: cornucopia pepper with chicken stir-fry, roasted
+> *The winning dish: cornucopia pepper with chicken stir-fry, roasted
 purple cauliflower and zucchini with wilted spinach, and cold Thai
 noodle salad*
 
