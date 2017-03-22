@@ -1,6 +1,6 @@
 ---
 author: Christy Maver
-brief: A couple months ago, one of our engineers had an idea: What if we could dedicate a day or two to work on a Numenta project that may be outside our day-to-day responsibilities? From that, the first Internal Numenta Hackathon was born.
+brief: "A couple months ago, one of our engineers had an idea: What if we could dedicate a day or two to work on a Numenta project that may be outside our day-to-day responsibilities? From that, the first Internal Numenta Hackathon was born."
 date: 2017/03/23
 hideImage: false
 image: ../images/hackathon_haiku.png
