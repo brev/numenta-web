@@ -178,6 +178,11 @@ purple cauliflower and zucchini with wilted spinach, and cold Thai
 noodle salad*
 
 
+
+
+
+
+
 In the two years I’ve been at Numenta, I’ve seen the field of AI grow to become
 a focal point of technology news. During this same time, I’ve also witnessed the
 interest in our work continues to grow.  
