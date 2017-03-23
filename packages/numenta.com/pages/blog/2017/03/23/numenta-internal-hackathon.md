@@ -3,7 +3,7 @@ author: Christy Maver
 brief: "A couple months ago, one of our engineers had an idea: What if we could dedicate a day or two to work on a Numenta project that may be outside our day-to-day responsibilities? From that, the first Internal Numenta Hackathon was born."
 date: 2017/03/23
 hideImage: false
-image: ../images/hackathon_haiku.png
+image: ../images/hackathon_haiku.jpg
 org: Director of Marketing
 tags: numenta machine intelligence htm htm school
 title: "Pressing the Pause Button for Numenta’s First Internal Hackathon"
@@ -35,7 +35,7 @@ improving the office.
 We kicked off the event Monday morning, where Matt briefly went over the
 guidelines.
 
-![Hacakthon rules](../images/hackathon_rules.png)
+![Hacakthon rules](../images/hackathon_rules.jpg)
 
 > *The first rule of internal hackathons: there are no rules *
 
@@ -54,7 +54,7 @@ If you’re interested in seeing the details or using the encoder, Marion
 shared the results of this project with the community on the [HTM
 Forum](https://discourse.numenta.org/t/new-frequency-encoder-a-k-a-cochlea-encoder/2015).
 
-![Hacakthon encoder team](../images/hackathon_encoder_team.png)
+![Hacakthon encoder team](../images/hackathon_encoder_team.jpg)
 
 > *C’est tres bien! – Marion and Thomas discuss their encoder*
 
@@ -87,7 +87,7 @@ object?  The brain has to solve the same problem, so they wanted to
 figure out if we could learn inverse mappings using biologically
 plausible HTM neurons.
 
-![Hacakthon team NIK](../images/hackathon_team_NIK.png)
+![Hacakthon team NIK](../images/hackathon_team_NIK.jpg)
 
 > *Team Nik hacking away*
 
@@ -136,7 +136,7 @@ to be out of town during the hackathon. She surprised us all with a
 top-secret project that was waiting for us Monday morning: the Clean
 Desk Hack.
 
-![Hacakthon Clean Desk](../images/hackathon_clean_desk.png)
+![Hacakthon Clean Desk](../images/hackathon_clean_desk.jpg)
 
 > *You can use your imagination for the “Before” shot*
 
@@ -148,15 +148,15 @@ School](http://homechefcookingschool.com/) to engage in a fierce
 “[Chopped](https://en.wikipedia.org/wiki/Chopped_(TV_series))”-style
 cooking challenge.
 
-![Cooking Competition Austin and Scott](../images/cooking_comp1.png)
+![Cooking Competition Austin and Scott](../images/cooking_comp1.jpg)
 
 > *Austin and Scott prepare to plate
 
-![Cooking Competition Matt](../images/cooking_comp2.png)
+![Cooking Competition Matt](../images/cooking_comp2.jpg)
 
 > *Matt explains the dish 
 
-![Cooking Competition Dig in](../images/cooking_comp3.png)
+![Cooking Competition Dig in](../images/cooking_comp3.jpg)
 
 > *Digging in
 
@@ -170,7 +170,7 @@ have a few new cooking tricks up our sleeves now.
 
 What’s on your “If only I had time to do” list?
 
-![Cooking Competition Dig in](../images/winner-winner-chicken-dinner.png)
+![Cooking Competition Dig in](../images/winner-winner-chicken-dinner.jpg)
 
 > *The winning dish: cornucopia pepper with chicken stir-fry, roasted
 purple cauliflower and zucchini with wilted spinach, and cold Thai
