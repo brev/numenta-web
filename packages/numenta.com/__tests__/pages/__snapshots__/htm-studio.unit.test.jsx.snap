@@ -117,7 +117,7 @@ exports[`HTM Studio Page React component Renders correctly 1`] = `
               </li>
               <li
                 className="li markerDisc">
-                Windows 10 users, 
+                Windows users, 
                  
                 <a
                   className="textlink"
