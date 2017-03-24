@@ -154,7 +154,7 @@ cooking challenge.
 
 > *Austin and Scott prepare to plate*
 
-![Cooking Competition Matt](../images/cooking_comp2.jpg)
+![Cooking Competition Matt](../images/cooking_comp3.jpg)
 
 > *Matt explains the dish* 
 
