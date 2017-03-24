@@ -140,6 +140,8 @@ Desk Hack.
 
 > *You can use your imagination for the “Before” shot*
 
+## Winner Winner Chicken Dinner
+
 There were no prizes or awards given, as this was more of a
 team-building event than a contest. Don’t be fooled into thinking there
 wasn’t any competition, however. To celebrate the end of the hackathon,
