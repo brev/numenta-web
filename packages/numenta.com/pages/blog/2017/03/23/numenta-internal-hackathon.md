@@ -140,6 +140,8 @@ Desk Hack.
 
 > *You can use your imagination for the “Before” shot*
 
+## Winner Winner Chicken Dinner
+
 There were no prizes or awards given, as this was more of a
 team-building event than a contest. Don’t be fooled into thinking there
 wasn’t any competition, however. To celebrate the end of the hackathon,
@@ -150,15 +152,15 @@ cooking challenge.
 
 ![Cooking Competition Austin and Scott](../images/cooking_comp2.jpg)
 
-> *Austin and Scott prepare to plate
+> *Austin and Scott prepare to plate*
 
 ![Cooking Competition Matt](../images/cooking_comp2.jpg)
 
-> *Matt explains the dish 
+> *Matt explains the dish* 
 
 ![Cooking Competition Dig in](../images/cooking_comp1.jpg)
 
-> *Digging in
+> *Digging in*
 
 With the first Numenta internal hackathon in the books, now it’s back to
 our regularly scheduled programming, but things are not exactly the same
