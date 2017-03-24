@@ -10,7 +10,7 @@ org: "Published in Frontiers in Neural Circuits Journal"
 remarks: "This is the most viewed paper in the history of Frontiers in Neural Circuits."
 sort: a
 title: "Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex"
-type: link
+type: post
 ---
 
 | | |
@@ -34,8 +34,7 @@ neocortex, and the importance of sequence memory, we propose that this form of
 sequence memory could be a universal property of all neocortical tissue.
 
 ![Real, HTM, and Deep Learning neurons](../images/why-neurons-have-thousands.png)
-> ***Image from the paper.*** *Visual comparison of Biological, HTM, and Deep
-  Learning neurons.*
+> *The HTM neuron models biological neurons unlike most artificial neural networks*
 
 ## Frequently asked questions about this research
 
