@@ -3,7 +3,7 @@ author: Christy Maver
 brief: "A couple months ago, one of our engineers had an idea: What if we could dedicate a day or two to work on a Numenta project that may be outside our day-to-day responsibilities? From that, the first Internal Numenta Hackathon was born."
 date: 2017/03/23
 hideImage: false
-image: ../images/hackathon_haiku_smaller.jpg
+image: ../images/hackathon_haiku_smaller_resized.jpg
 org: Director of Marketing
 tags: numenta machine intelligence htm htm school
 title: "Pressing the Pause Button for Numenta’s First Internal Hackathon"
@@ -148,7 +148,7 @@ School](http://homechefcookingschool.com/) to engage in a fierce
 “[Chopped](https://en.wikipedia.org/wiki/Chopped_(TV_series))”-style
 cooking challenge.
 
-![Cooking Competition Austin and Scott](../images/cooking_comp1.jpg)
+![Cooking Competition Austin and Scott](../images/cooking_comp2.jpg)
 
 > *Austin and Scott prepare to plate
 
@@ -156,7 +156,7 @@ cooking challenge.
 
 > *Matt explains the dish 
 
-![Cooking Competition Dig in](../images/cooking_comp3.jpg)
+![Cooking Competition Dig in](../images/cooking_comp1.jpg)
 
 > *Digging in
 
