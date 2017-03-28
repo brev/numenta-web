@@ -9,7 +9,7 @@ link: http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00893#.WCEj8uErI18
 org: Published in Neural Computation, November 2016, Vol 28. No. 11
 sort: d
 title: "Continuous Online Sequence Learning with an Unsupervised Neural Network Model"
-type: link
+type: post
 ---
 
 | | |
@@ -19,7 +19,7 @@ type: link
 | **Online** | [Read or Download this Paper][1] |
 | **Published** | November 1, 2016 |
 
-This paper demonstrates how HTM sequence memory, a recently proposed theoretical
+This paper demonstrates how HTM sequence memory, a theoretical
 framework for sequence learning in the cortex, helps us understand how the brain
 can solve sequence learning problems and how we can apply this understanding to
 real-world sequence learning problems with continuous data streams. In this
@@ -35,7 +35,7 @@ handle multiple predictions, robustness to sensor noise and fault tolerance, and
 good performance without the need for task-specific tuning.
 
 ![Taxi passenger predictions](../images/continuous-online-sequence-learning.png)
-> ***Image from the paper.*** *We used HTM and other algorithms to predict taxi
+> *We used HTM and other algorithms to predict taxi
   passenger count in the New York City.
   **LEFT:** Overall prediction error for various algorithms.
   **RIGHT:** After a new pattern is introduced (black dashed line), HTM quickly
@@ -53,17 +53,17 @@ which appeared in Frontiers in Neural Circuits, March 2016.
 
 ### Q. What are the key takeaways?
 
-HTM performs comparably well and displays other important properties that apply
+HTM performs well, particularly with respect to some important properties that apply
 to both biological systems and real-world streaming applications:
 
 * Continuous online learning
   * Because continuous data streams often have dynamic statistics, the ability
-    to recognize and learn new patterns quickly is important. Yet this property
+    to recognize and learn new patterns quickly is important, yet this property
     has not been well studied in machine learning. Applying machine learning
     algorithms to continuous data stream analysis often requires compute and
-    storage-intensive resources, due to the need for keeping a buffered data set
-    of past records and regular retraining. By contrast, online sequential
-    algorithms can learn sequences in one pass.
+    storage-intensive resources, due to the need to keep a buffered data set of
+    past records and regular retraining. By contrast, online sequence learning
+    algorithms should learn in one pass.
 * Ability to handle multiple predictions
   * When information is ambiguous or changing, sequence learning algorithms
     should be able to make multiple predictions simultaneously and evaluate each
@@ -80,9 +80,8 @@ to both biological systems and real-world streaming applications:
 
 ### Q. How does this research differ from other studies?
 
-The HTM sequence memory algorithm is unlike most machine learning algorithms.
-Rather than focusing solely on HTM, however, this study offers performance
-comparisons to a wide variety of techniques.
+This study focuses on performance comparisons with a wide variety of techniques
+using some of the above criteria.
 
 ### Q. How were the simulations conducted?
 
