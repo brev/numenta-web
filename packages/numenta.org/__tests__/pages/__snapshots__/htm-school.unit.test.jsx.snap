@@ -704,6 +704,16 @@ exports[`HTM School Page React component Renders correctly 1`] = `
             Spatial Pooling Forum Discussions
           </a>
         </li>
+        <li
+          className="li copy markerDisc">
+          <a
+            className="textlink"
+            href="http://numenta.com/spatial-pooling-algorithm/"
+            onClick={[Function]}
+            target={undefined}>
+            SP in Biological and Machine Intelligence
+          </a>
+        </li>
       </ul>
       <span
         className="anchor"
@@ -755,6 +765,36 @@ exports[`HTM School Page React component Renders correctly 1`] = `
           </p>
         </div>
       </div>
+      <span
+        className="anchor"
+        id="more-tm-resources" />
+      <h3
+        className="h3">
+        More Temporal Memory Resources
+      </h3>
+      <ul
+        className="ul">
+        <li
+          className="li copy markerDisc">
+          <a
+            className="textlink"
+            href="https://discourse.numenta.org/search?q=temporal+memory"
+            onClick={[Function]}
+            target={undefined}>
+            Temporal Memory Forum Discussions
+          </a>
+        </li>
+        <li
+          className="li copy markerDisc">
+          <a
+            className="textlink"
+            href="http://numenta.com/temporal-memory-algorithm/"
+            onClick={[Function]}
+            target={undefined}>
+            TM in Biological and Machine Intelligence
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 </article>

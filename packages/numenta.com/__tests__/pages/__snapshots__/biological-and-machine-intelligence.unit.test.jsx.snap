@@ -120,8 +120,7 @@ exports[`Bio and Machine Intelligence (BAMI) page React component Renders correc
             <a
               className="buttonLink primary enabled"
               href="/assets/pdf/biological-and-machine-intelligence/BAMI-Complete.pdf"
-              onClick={undefined}
-              target="_new">
+              onClick={undefined}>
               Download all BAMI book sections in pdf
             </a>
           </div>
