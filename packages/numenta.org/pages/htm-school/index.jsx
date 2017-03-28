@@ -549,6 +549,13 @@ const SchoolPage = (props, {config}) => {
               Spatial Pooling Forum Discussions
             </TextLink>
           </ListItem>
+          <ListItem>
+            <TextLink
+              to={links.out.spLinks}
+            >
+              SP in Biological and Machine Intelligence
+            </TextLink>
+          </ListItem>
         </List>
 
 
@@ -594,6 +601,27 @@ const SchoolPage = (props, {config}) => {
             </Paragraph>
           </div>
         </div>
+
+        <Anchor name="more-tm-resources" />
+        <SubTitle level={3}>
+          More Temporal Memory Resources
+        </SubTitle>
+        <List marker="disc">
+          <ListItem>
+            <TextLink
+              to="https://discourse.numenta.org/search?q=temporal+memory"
+            >
+              Temporal Memory Forum Discussions
+            </TextLink>
+          </ListItem>
+          <ListItem>
+            <TextLink
+              to={links.out.tmLinks}
+            >
+              TM in Biological and Machine Intelligence
+            </TextLink>
+          </ListItem>
+        </List>
 
       </Section>
     </article>

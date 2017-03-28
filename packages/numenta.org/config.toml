@@ -29,6 +29,8 @@ company = 'Numenta'
     youtube = 'https://www.youtube.com/c/NumentaOrg'
     latestSchool = 'https://www.youtube.com/watch?v=UBzemKcUoOk'
     latestSchoolThumb = 'https://i3.ytimg.com/vi/UBzemKcUoOk/mqdefault.jpg'
+    spLinks = 'http://numenta.com/spatial-pooling-algorithm/'
+    tmLinks = 'http://numenta.com/temporal-memory-algorithm/'
 
   [links.in]  # internal paths
     # main/home pseudo-single page
