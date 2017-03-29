@@ -11,6 +11,7 @@ type: post
 sound: https://soundcloud.com/cdmaver/march-2017-numenta-news
 ---
 
+
 ### Numenta Newsletter &mdash; March 29, 2017
 
 As we kick off a new year here at Numenta, we find ourselves as busy as
