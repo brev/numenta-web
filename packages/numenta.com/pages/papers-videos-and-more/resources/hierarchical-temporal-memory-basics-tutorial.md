@@ -14,7 +14,7 @@ type: post
 ---
 
 This video tutorial follows the 2011 HTM whitepaper, and is largely obsolete.
-The content of this tutorial will be replace by
+The content of this tutorial will be replaced by
 [HTM School](https://www.youtube.com/watch?v=XMB0ri4qgwc) (over time).
 **Note:** This video refers to the HTM learning algorithm as the Cortical
 Learning Algorithm, or CLA; we have recently decided to sunset this term.
