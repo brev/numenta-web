@@ -25,7 +25,7 @@ which outlined how cortical columns learn 3D sensorimotor models of the
 world. We believe this work is a significant advance in our evolving
 theory of how the brain works and expect to share more details as it
 continues to develop. In the meantime, if you’re interested in learning
-more about it, our Open Source Flag Bearer, Matt Taylor, recently sat
+more about it, our Open Source Community Manager, Matt Taylor, recently sat
 down with Jeff to discuss the latest research in detail,
 along with a number of HTM topics. You can watch the entire conversation
 in the video series “[HTM Chat with Jeff
