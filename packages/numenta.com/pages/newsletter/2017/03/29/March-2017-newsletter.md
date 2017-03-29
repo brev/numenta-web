@@ -31,7 +31,7 @@ along with a number of HTM topics. You can watch the entire conversation
 in the video series “[HTM Chat with Jeff
 Hawkins](https://www.youtube.com/watch?v=fNc73-tHHgY&list=PL3yXMgtrZmDrlePl0jUIZWKwQwUgOfxA-)”
 and join the discussion on the [HTM
-Forum](file:///C:\Users\cmaver\Documents\newsletters\2017\discourse.numenta.org).
+Forum](https://discourse.numenta.org/).
 
 Jeff and Subutai delivered a joint keynote at [Cornell Silicon Valley
 2017](https://www.alumni.cornell.edu/csv/csv17/) on March 7 titled “Reverse
