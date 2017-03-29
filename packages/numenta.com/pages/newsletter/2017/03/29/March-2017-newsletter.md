@@ -14,54 +14,58 @@ sound: https://soundcloud.com/cdmaver/march-2017-numenta-news
 
 ### Numenta Newsletter &mdash; March 29, 2017
 
-As we kick off a new year here at Numenta, we find ourselves as busy as
-ever and excited for what lies ahead.  A year ago at this time, we were
-focused on publishing our first peer-reviewed paper.  I’m pleased to
-share that as I write this newsletter, we have two peer-reviewed papers
-that are receiving an impressive number of views. Our first, “[Why
-Neurons Have Thousands of Synapses, A Theory of Sequence Memory in
-Neocortex,](http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full)”
-is the most viewed paper in the history of the journal in which it’s
-published: *Frontiers in Neural Circuit*s.  The second, “[Continuous
-Online Sequence Learning with an Unsupervised Neural Network
-Model](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00893#.WIWQztUrKpp),”
-was only published two months ago and is already the 2nd most viewed
-paper in its journal, *Neural Computation*, over the past twelve
-months.  We’re happy to see these articles reaching a wide audience, and
-we are already working on adding to our portfolio. You can find these,
-along with our entire collection, on our website at
-[numenta.com/papers](http://www.numenta.com/papers).
+Last month, our Research team attended [Cosyne
+2017](http://www.cosyne.org/c/index.php?title=Cosyne_17) (Computational
+and Systems Neuroscience), to present important new work on our current
+area of focus within HTM Theory: sensorimotor inference. This research
+looks at how the neocortex learns through movement. The team delivered a
+poster titled “[3D Object Learning with Cortical
+Columns](http://numenta.com/assets/pdf/posters/CosynePoster_2017.pdf),”
+which outlined how cortical columns learn 3D sensorimotor models of the
+world. We believe this work is a significant advance in our evolving
+theory of how the brain works and expect to share more details as it
+continues to develop. In the meantime, if you’re interested in learning
+more about it, our Open Source Flag Bearer, Matt Taylor, recently sat
+down with Jeff to discuss the sensorimotor inference research in detail,
+along with a number of HTM related topics. You can watch the entire
+video series, “[HTM Chat with Jeff
+Hawkins](https://www.youtube.com/watch?v=fNc73-tHHgY&list=PL3yXMgtrZmDrlePl0jUIZWKwQwUgOfxA-)”
+and join the discussion on the [HTM
+Forum](file:///C:\Users\cmaver\Documents\newsletters\2017\discourse.numenta.org).
 
-For those of you that look for us at different events, we have several
-scheduled over the next couple months.  We’ll be at [Smart
-Data](http://smartdata2017.dataversity.net/sessionPop.cfm?confid=110&proposalid=9381)
-in Redwood City from Jan 30-Feb 1, where Scott Purdy will deliver a talk
-on “How to Model Streaming Data That You Know Nothing About.”  Jeff and
-Subutai will be at several events as well.  They’ll be joined by some of
-our research engineers at [Cosyne](http://www.cosyne.org/) the last week
-of February.  The team will present a poster titled, “Robust object
-learning with cross-cortical column connections,” and Subutai will lead
-a workshop based on our peer-reviewed neuron paper.  Jeff will also be
-presenting at the [5th Neuro Inspired Computational Elements Workshop
-(NICE 2017)](https://www.src.org/calendar/e006125/) in early March
-before joining Subutai to deliver an opening keynote for [Cornell
-Silicon Valley](http://www.alumni.cornell.edu/csv/csv17/schedule.cfm) on
-March 7.  To view all of our upcoming events, and presentations from
-past events, visit [numenta.com/events](http://www.numenta.com/events).
+Jeff and Subutai delivered a joint keynote at [Cornell Silicon Valley
+2017](https://www.alumni.cornell.edu/csv/csv17/) titled, “Reverse
+Engineering the Brain for Intelligent Machines.” During their 20 minute
+talk, they provided an overview of Numenta and covered topics including
+how our biological AI approach differs from others, the current state of
+neuroscience research, and what we’ve learned so far. Though the event
+was for Cornell alumni, the university was kind enough to let us share
+this [video](https://www.youtube.com/watch?v=RfxG5aSTrHA&t=28s) of the
+keynote.
 
-In other news, we recently started a [Visiting Scholar
-Program](http://numenta.com/careers-and-team/careers/visiting-scholar-program/),
-where scientists can apply to spend some time with us for anywhere from
-a few days to a few months.  During their visit, they can join all of
-our research meetings while continuing to work on their normal
-research.  This gives them a chance to learn HTM more deeply and us a
-chance to explore possible research partnerships. We strive to maintain
-an open, collaborative environment, and this program supports that.  For
-an inside look at how the program works, read this [blog
-post](http://numenta.com/blog/2017/01/17/visiting-scholar-program/) from
-our first visiting scholar, Mirko Klukas, Ph.D.
+For those of you familiar with
+[BAMI](http://numenta.com/biological-and-machine-intelligence/), our
+living book on biological and machine intelligence, we recently added
+two new chapters: [Spatial
+Pooling](http://numenta.com/spatial-pooling-algorithm/) and [Temporal
+Memory](http://numenta.com/temporal-memory-algorithm/). These chapters
+offer a collection of resources–from videos to algorithm details and
+pseudocode–that help explain each concept. Make sure to follow our
+[NumentaBAMI twitter](https://twitter.com/numentabami) account if you’d
+like to be notified about future updates.
 
-Lastly, we have an opening in marketing that is a great opportunity for
-someone who is ready to learn and eager to help us share our story. If
-you or someone you know are interested in this position, you can [apply
-here](http://numenta.com/careers-and-team/careers/marketing-associate/).
+In [partner](http://numenta.com/partners/) news, Francisco Webber,
+Co-founder of [Cortical.io](http://www.cortical.io), was featured on an
+episode of Ben Lorica’s podcast The Data Show. In this episode,
+“[Natural language analysis using Hierarchical Temporal
+Memory,”](https://www.oreilly.com/ideas/natural-language-analysis-using-hierarchical-temporal-memory)
+Francisco talked about how he is applying HTM to natural language and
+big text data problems.
+
+Our partner [Grok](http://www.grokstream.com) launched the [Applied
+Machine Learning Exchange](http://www.aml.exchange) designed to provide
+insights on leveraging machine learning to solve real, human problems.
+One of the key components is a conversation series, which kicked off
+March 1 with a discussion on “Machine Learning for the Entire Business
+Stack” and featured our Director of Engineering, Scott Purdy. You can
+watch the replay [here](http://www.aml.exchange/webinar1/).
