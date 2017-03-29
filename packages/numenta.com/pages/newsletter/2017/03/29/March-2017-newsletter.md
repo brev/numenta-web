@@ -1,6 +1,6 @@
 ---
 author: Christy Maver
-brief: "Last month, our Research team attended Cosyne 2017 (Computational and Systems Neuroscience), to present important new work on our current area of focus within HTM Theory: sensorimotor inference. This research looks at how the neocortex learns through movement. The team delivered a poster titled “3D Object Learning with Cortical Columns,” which outlined how cortical columns learn 3D sensorimotor models of the world.  We believe this work is a significant advance in our evolving theory of how the brain works and expect"
+brief: "Last month, our Research team attended Cosyne 2017 (Computational and Systems Neuroscience), to present important new work on our current area of focus within HTM Theory: sensorimotor integration. This research looks at how the neocortex learns through movement. The team delivered a poster titled “3D Object Learning with Cortical Columns,” which outlined how cortical columns learn 3D sensorimotor models of the world.  We believe this work is a significant advance in our evolving theory of how the brain works and expect"
 date: 2017/03/29
 hideImage: false
 image: ../images/mar-newsletter.jpg
@@ -25,13 +25,13 @@ which outlined how cortical columns learn 3D sensorimotor models of the
 world. We believe this work is a significant advance in our evolving
 theory of how the brain works and expect to share more details as it
 continues to develop. In the meantime, if you’re interested in learning
-more about it, our Open Source Flag Bearer, Matt Taylor, recently sat
+more about it, our Open Source Community Manager, Matt Taylor, recently sat
 down with Jeff to discuss the latest research in detail,
 along with a number of HTM topics. You can watch the entire conversation
 in the video series “[HTM Chat with Jeff
 Hawkins](https://www.youtube.com/watch?v=fNc73-tHHgY&list=PL3yXMgtrZmDrlePl0jUIZWKwQwUgOfxA-)”
 and join the discussion on the [HTM
-Forum](file:///C:\Users\cmaver\Documents\newsletters\2017\discourse.numenta.org).
+Forum](https://discourse.numenta.org/).
 
 Jeff and Subutai delivered a joint keynote at [Cornell Silicon Valley
 2017](https://www.alumni.cornell.edu/csv/csv17/) on March 7 titled “Reverse
