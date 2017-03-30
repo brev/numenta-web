@@ -15,7 +15,9 @@ type: post
 
 ## Video
 
-<iframe width="560" height="315" src="//www.youtube.com/watch?v=RfxG5aSTrHA" frameborder="0" allowfullscreen></iframe>
+<div class="video-container media-border">
+  <iframe width="560" height="315" src="//www.youtube.com/embed/RfxG5aSTrHA" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Presenters
 
