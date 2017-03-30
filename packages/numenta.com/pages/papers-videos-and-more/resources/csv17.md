@@ -20,4 +20,4 @@ type: post
 ## Presenters
 
 * Jeff Hawkins, Co-Founder
-* Subutai Ahmad, VP Research
+* Subutai Ahmad, VP of Research
