@@ -9,6 +9,7 @@ import Image from '../Image'
 import styles from './index.css'
 
 import ImageAlexanderLavin from './images/alexander-lavin.png'
+import ImageAustinMarshall from './images/austin-marshall.png'
 import ImageBrevPatterson from './images/brev-patterson.png'
 import ImageCelesteBaranski from './images/celeste-baranski.png'
 import ImageChetanSurpur from './images/chetan-surpur.png'
@@ -36,6 +37,7 @@ import ImageZuhaAgha from './images/zuha-agha.png'
 
 const avatars = {
   ImageAlexanderLavin,
+  ImageAustinMarshall,
   ImageBrevPatterson,
   ImageCelesteBaranski,
   ImageChetanSurpur,
