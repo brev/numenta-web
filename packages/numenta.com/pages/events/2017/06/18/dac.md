@@ -13,7 +13,7 @@ event:
     state: TX
     country: USA
     web: https://www.dac.com/
-  who: Matthew Taylor
+  who: Austin Marshall
   why: Speaking
 image: ../images/dac.png
 org: Senior Engineer
