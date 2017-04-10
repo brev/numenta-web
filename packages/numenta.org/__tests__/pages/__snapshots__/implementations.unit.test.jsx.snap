@@ -116,7 +116,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
              
             <a
               className="textlink"
-              href="https://github.com/numenta/nupic/wiki/Network-API"
+              href="https://numenta.github.io/nupic/guides/network.html"
               onClick={[Function]}
               target={undefined}>
               Network API,
@@ -178,7 +178,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
              
             <a
               className="textlink"
-              href="https://github.com/numenta/nupic/wiki/Network-API"
+              href="https://numenta.github.io/nupic/guides/network.html"
               onClick={[Function]}
               target={undefined}>
               Network API,
@@ -189,7 +189,7 @@ exports[`Implementations Page React component Renders correctly 1`] = `
              
             <a
               className="textlink"
-              href="https://github.com/numenta/nupic/wiki/Running-Swarms"
+              href="https://numenta.github.io/nupic/guides/swarming/index.html"
               onClick={[Function]}
               target={undefined}>
               identifying optimal model parameters (swarming).
