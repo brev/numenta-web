@@ -34,12 +34,12 @@ instance, will not be accepted.
 ## Does NuPIC implement hierarchy?
 
 Yes... and no. The software architecture for hierarchies exists within the
-[Network API](https://github.com/numenta/nupic/wiki/NuPIC-Core-Network-API) of
+[Network API](https://numenta.github.io/nupic/guides/network.html) of
 [NuPIC.Core](https://github.com/numenta/nupic.core), as well as the Python
 client. You can create models and link them together into a hierarchy, with
 lower levels passing data up into higher levels. However, hierarchy is not
 implemented in the easier to use
-[Online Prediction Framework](https://github.com/numenta/nupic/wiki/Online-Prediction-Framework).
+[Online Prediction Framework](https://numenta.github.io/guides/opf.html).
 That wouldn't prevent anyone from experimenting with hierarchies themselves,
 however.
 

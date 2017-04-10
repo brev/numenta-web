@@ -93,7 +93,7 @@ const ImplementPage = (props, {config}) => {
             </Paragraph>
             <Paragraph>
               This codebase exposes the {' '}
-              <TextLink to="https://github.com/numenta/nupic/wiki/Network-API">
+              <TextLink to="https://numenta.github.io/nupic/guides/network.html">
                 Network API,
               </TextLink> {' '}
               which is the primary low-level interface for creating HTM systems.
@@ -128,14 +128,14 @@ const ImplementPage = (props, {config}) => {
             <Paragraph>
               In addition to providing Python bindings to the {' '}
               <Strong>nupic.core</Strong> {' '}
-              <TextLink to="https://github.com/numenta/nupic/wiki/Network-API">
+              <TextLink to="https://numenta.github.io/nupic/guides/network.html">
                 Network API,
               </TextLink> {' '}
               this codebase also includes a higher-level client API called the
               Online Prediction Framework (OPF), which is tuned towards
               experimentation with predictions, anomaly detection, and {' '}
               {/* eslint-disable max-len */}
-              <TextLink to="https://github.com/numenta/nupic/wiki/Running-Swarms">
+              <TextLink to="https://numenta.github.io/nupic/guides/swarming/index.html">
                 identifying optimal model parameters (swarming).
               </TextLink>
               {/* eslint-enable max-len */}
