@@ -21,6 +21,6 @@ The embedded document above requires Flash. If it fails to load, [try this direc
 * [Plain Text][txt]
 * [Word Document][doc]
 
-[doc]: /resources/licenses/trial/Numenta_Trial_License_1.0.doc
-[pdf]: /resources/licenses/trial/Numenta_Trial_License_1.0.pdf
-[txt]: /resources/licenses/trial/Numenta_Trial_License_1.0.txt
+[doc]: /resources/licenses/trial/Numenta_Trial_License_1.1.doc
+[pdf]: /resources/licenses/trial/Numenta_Trial_License_1.1.pdf
+[txt]: /resources/licenses/trial/Numenta_Trial_License_1.1.txt
