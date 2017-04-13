@@ -23,6 +23,7 @@ import ImageJaredWeiss from './images/jared-weiss.png'
 import ImageJeffHawkins from './images/jeff-hawkins.png'
 import ImageJoeBlock from './images/joe-block.png'
 import ImageJoeHayashi from './images/joe-hayashi.png'
+import ImageMarionLeBorgne from './images/marion-leborgne.png'
 import ImageMatthewTaylor from './images/matthew-taylor.png'
 import ImageNickDeFalco from './images/nick-defalco.png'
 import ImageNumenta from './images/numenta.png'
@@ -50,6 +51,7 @@ const avatars = {
   ImageJeffHawkins,
   ImageJoeBlock,
   ImageJoeHayashi,
+  ImageMarionLeBorgne,
   ImageMatthewTaylor,
   ImageNickDeFalco,
   ImageNumenta,
