@@ -3,7 +3,7 @@ author: Subutai Ahmad
 brief:
 date: 2017/05/02
 event:
-  what: "Neural Control of Movement (NCM) Annual Meeting 2017"
+  what: A cortical circuit for fast sensorimotor learning and recognition
   when:
     begin: 2017/05/02
     end: 2017/05/05
@@ -17,7 +17,7 @@ event:
 image: ../images/ncm.png
 org: VP Research
 tags: strong ai artificial intelligence biological htm hierarchical temporal memory computing like the brain
-title: A cortical circuit for fast sensorimotor learning and recognition
+title: Neural Control of Movement (NCM) Annual Meeting 2017
 type: post
 ---
 
