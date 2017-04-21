@@ -8,7 +8,7 @@ org: Director of Marketing
 tags: numenta newsletter march 2017 cosyne cortical sensorimotor
 title: Numenta Newsletter March 2017
 type: post
-sound: https://soundcloud.com/cdmaver/march-2017-numenta-news
+sound: https://soundcloud.com/numenta/march-2017-numenta-news
 ---
 
 
