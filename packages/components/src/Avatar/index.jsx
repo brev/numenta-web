@@ -9,6 +9,7 @@ import Image from '../Image'
 import styles from './index.css'
 
 import ImageAlexanderLavin from './images/alexander-lavin.png'
+import ImageAustinMarshall from './images/austin-marshall.png'
 import ImageBrevPatterson from './images/brev-patterson.png'
 import ImageCelesteBaranski from './images/celeste-baranski.png'
 import ImageChetanSurpur from './images/chetan-surpur.png'
@@ -22,6 +23,7 @@ import ImageJaredWeiss from './images/jared-weiss.png'
 import ImageJeffHawkins from './images/jeff-hawkins.png'
 import ImageJoeBlock from './images/joe-block.png'
 import ImageJoeHayashi from './images/joe-hayashi.png'
+import ImageMarionLeBorgne from './images/marion-leborgne.png'
 import ImageMatthewTaylor from './images/matthew-taylor.png'
 import ImageNickDeFalco from './images/nick-defalco.png'
 import ImageNumenta from './images/numenta.png'
@@ -36,6 +38,7 @@ import ImageZuhaAgha from './images/zuha-agha.png'
 
 const avatars = {
   ImageAlexanderLavin,
+  ImageAustinMarshall,
   ImageBrevPatterson,
   ImageCelesteBaranski,
   ImageChetanSurpur,
@@ -48,6 +51,7 @@ const avatars = {
   ImageJeffHawkins,
   ImageJoeBlock,
   ImageJoeHayashi,
+  ImageMarionLeBorgne,
   ImageMatthewTaylor,
   ImageNickDeFalco,
   ImageNumenta,

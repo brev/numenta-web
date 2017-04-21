@@ -43,7 +43,7 @@ in use only for Grok Solutions' clients.
 Strangers in a strange land, we were.
 
 There was a lot of confusion on just how to use the software. Numenta provided a
-[VM with pre-baked environments](https://github.com/numenta/nupic/wiki/Running-Nupic-in-a-Virtual-Machine)
+[VM with pre-baked environments](https://discourse.numenta.org/t/install-nupic-using-docker/2158)
 using [Vagrant](http://www.vagrantup.com/) and
 [Virtual Box](https://www.virtualbox.org/). A few successfully built the
 software on their own platform of choice. The static binding of certain libs
@@ -57,7 +57,7 @@ victorious!
 
 #### The OPF
 
-The [Online Prediction Framework](https://github.com/numenta/nupic/wiki/Online-Prediction-Framework)
+The [Online Prediction Framework](https://numenta.github.io/nupic/guides/opf.html)
 ties together all the disparate parts of the CLA functions and HTM regions.
 To break it down, you're working with a data stream and its subsequent encoding.
 A data stream can be (and often is for pre-training) a CSV file, live streaming

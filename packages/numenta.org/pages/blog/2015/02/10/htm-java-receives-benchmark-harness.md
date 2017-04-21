@@ -48,7 +48,7 @@ directory, and is comprised of 4 classes to start off with:
 
 * [AbstractAlgorithmBenchmark](https://github.com/numenta/htm.java/blob/master/src/jmh/java/org/numenta/nupic/benchmarks/AbstractAlgorithmBenchmark.java) -
   Base class containing basic setup boilerplate code necessary to initialize the
-  [NuPIC](https://github.com/numenta/nupic/wiki) algorithms.
+  NuPIC algorithms.
 
 * [SpatialPoolerGlobalInhibitionBenchmark](https://github.com/numenta/htm.java/blob/master/src/jmh/java/org/numenta/nupic/benchmarks/SpatialPoolerGlobalInhibitionBenchmark.java) -
   Loops through 7 encoded (days of the week) inputs multiple times using the

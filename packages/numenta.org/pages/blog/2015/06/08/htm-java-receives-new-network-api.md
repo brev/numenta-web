@@ -14,7 +14,7 @@ Greetings Earthlings! (...and otherwise affiliated) :-) We're
 _[ insert understatement here ]_ "_**excited**_?" to announce the completion of
 the Network API **(NAPI)** for the
 [Java™](http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
-port of [NuPIC](https://github.com/numenta/nupic/wiki). This addition to
+port of [NuPIC](https://github.com/numenta/nupic). This addition to
 [HTM.java](https://github.com/numenta/htm.java) will usher in a whole new realm
 of possibilities for application integration and for streaming data
 applications.

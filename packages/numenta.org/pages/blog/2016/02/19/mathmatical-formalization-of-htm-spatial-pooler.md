@@ -33,7 +33,7 @@ hardware design of HTM that not only has higher performance than a
 software-based solution, but also consumes much less power. We are currently
 working on such a system, so please follow our work. ☺
 
-It is [widely known](https://github.com/numenta/nupic/wiki/CLA-for-ML-AI-Researchers)
+It is [widely known](https://discourse.numenta.org/t/htm-for-ml-ai-researchers/2187)
 that the SP is similar to a self-organizing map (SOM). Our paper takes that idea
 farther, by showing that the primary learning mechanism consists of a component
 that is very similar to competitive learning. In fact, we posit that the SP is

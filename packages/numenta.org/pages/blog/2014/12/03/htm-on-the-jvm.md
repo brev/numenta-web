@@ -17,7 +17,7 @@ a fully usable version of NuPIC (minus swarming and OPF functionality ➟ _comin
 soon!_) is now available in **Java**.
 
 This port is 100% functionally equivalent to
-[NuPIC's Network API](https://github.com/numenta/nupic/wiki/NuPIC-Architecture).
+[NuPIC's Network API](https://numenta.github.io/nupic/guides/network.html).
 
 [See the **complete javadocs** here!](http://numenta.org/docs/htm.java/)
 
