@@ -8,7 +8,7 @@ org: Director of Marketing
 tags: numenta newsletter january 2017 papers scholar program
 title: Numenta Newsletter January 2017
 type: post
-sound: https://soundcloud.com/cdmaver/january-2017-numenta-news
+sound: https://soundcloud.com/numenta/january-2017-numenta-news
 ---
 
 ### Numenta Newsletter &mdash; January 26, 2017
