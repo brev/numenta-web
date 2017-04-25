@@ -13,6 +13,7 @@ import IconMarker from 'numenta-web-shared-components/lib/IconMarker'
 import Image from 'numenta-web-shared-components/lib/Image'
 import Markdown from 'numenta-web-shared-components/lib/Markdown'
 import Section from 'numenta-web-shared-components/lib/Section'
+import Sound from 'numenta-web-shared-components/lib/Sound'
 import Spacer from 'numenta-web-shared-components/lib/Spacer'
 import Subtle from 'numenta-web-shared-components/lib/Subtle'
 import TextLink from 'numenta-web-shared-components/lib/TextLink'
@@ -92,6 +93,20 @@ const MarkdownWrapper = ({route}, {config}) => {
           title={data.title}
           type="youtube"
           videoId={getVideoIdFromUrl(data.video)}
+        />
+      )
+    }
+    else if (data.sound) {
+      // media sound
+      media = (
+        <Sound
+          border={true}
+          image={`${path}${data.image}`}
+          respond="mw"
+          shadow={true}
+          title={data.title}
+          type="soundcloud"
+          url={data.sound}
         />
       )
     }
