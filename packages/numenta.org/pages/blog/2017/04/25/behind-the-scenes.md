@@ -1,7 +1,7 @@
 ---
 author: Christy Maver
 brief: "HTM School turned one this month, and it has accomplished a lot in its
-first year. With 35,000 views and counting, the series has gained a loyal
+first year. With 47,000 views and counting, the series has gained a loyal
 following of eager students soaking up the relevant components of brain theory.
 
 As an HTM School student myself, one of the things that has intrigued me most
@@ -19,7 +19,7 @@ sound: https://soundcloud.com/numenta/behind-the-scenes-of-htm-school
 ### In Honor of HTM School’s First Anniversary: HTM School Podcast
 
 HTM School turned one this month, and it has accomplished a lot in its first
-year. With 35,000 views and counting, the series has gained a loyal following of
+year. With 47,000 views and counting, the series has gained a loyal following of
 eager students soaking up the relevant components of brain theory.
 
 As an HTM School student myself, one of the things that has intrigued me most
