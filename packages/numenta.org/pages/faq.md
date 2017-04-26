@@ -5,11 +5,11 @@ title: "FAQ"
 
 ## I’m new to HTM. Where can I learn more about it?
 
-A great place to start is [HTM School](http://numenta.org/htm-school/),
+A great place to start is [HTM School](/htm-school/),
 an educational YouTube series. The series is designed to be viewed in
 order, with each episode explaining fundamental concepts. HTM School is
 aimed at a general audience. If you’re looking for more technical
-detail, you can view [Numenta's technical papers](http://numenta.com/papers/).
+detail, you can view [Numenta's technical papers](/papers/).
 
 ## How can I join the HTM open source community?
 
@@ -31,7 +31,7 @@ projects on [HTM Forum](https://discourse.numenta.org/categories) or
 
 ## What implementations are available?
 
-We have multiple [HTM implementations](http://numenta.org/implementations/)
+We have multiple [HTM implementations](/implementations/)
 available. Numenta maintains and support one in Python with C++. Community
 members have contributed implementations in languages such as Java, Clojure,
 Go, and JavaScript.
@@ -41,10 +41,10 @@ Go, and JavaScript.
 Our open source code containing intellectual property is governed by
 an [AGPL Version 3](https://www.gnu.org/licenses/agpl-3.0.en.html)
 license. For those who are unable to use AGPLv3, we offer a
-[trial license](http://numenta.org/licenses/trial/), and for those interested
+[trial license](/licenses/trial/), and for those interested
 in distributing the technology, we offer
 [commercial licenses](http://numenta.com/assets/pdf/apps/licensing-guide.pdf).
-You can read more about our licenses [here](http://numenta.org/licenses/).
+You can read more about our licenses [here](/licenses/).
 
 ## Is there a specific application for HTM?
 
