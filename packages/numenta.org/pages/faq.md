@@ -9,12 +9,12 @@ A great place to start is [HTM School](/htm-school/),
 an educational YouTube series. The series is designed to be viewed in
 order, with each episode explaining fundamental concepts. HTM School is
 aimed at a general audience. If you’re looking for more technical
-detail, you can view [Numenta's technical papers](/papers/).
+detail, you can view [Numenta's technical papers](http://numenta.com/papers/).
 
 ## How can I join the HTM open source community?
 
 There are many ways to get involved, but the first step is to join the
-[HTM Forum](https://discourse.numenta.org/categories), which is where
+[HTM Forum,](https://discourse.numenta.org/categories) which is where
 you can introduce yourself, ask questions, find information and connect
 with others interested in and working on HTM. You can also join our
 [Meetup Group](https://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/)
@@ -32,7 +32,7 @@ projects on [HTM Forum](https://discourse.numenta.org/categories) or
 ## What implementations are available?
 
 We have multiple [HTM implementations](/implementations/)
-available. Numenta maintains and support one in Python with C++. Community
+available. Numenta maintains and supports one in Python with C++. Community
 members have contributed implementations in languages such as Java, Clojure,
 Go, and JavaScript.
 
