@@ -1,82 +1,62 @@
 ---
-title: "NuPIC FAQ"
+title: "FAQ"
 #redirect_from: "/faq.html"
 ---
 
-## Is there a specific application for NuPIC?
+## I’m new to HTM. Where can I learn more about it?
 
-The algorithm lends itself well to high-speed temporal data, but it could
-potentially be applied to many different fields and endeavors.
+A great place to start is [HTM School](http://numenta.org/htm-school/),
+an educational YouTube series. The series is designed to be viewed in
+order, with each episode explaining fundamental concepts. HTM School is
+aimed at a general audience. If you’re looking for more technical
+detail, you can view [Numenta's technical papers](http://numenta.com/papers/).
 
-## What's the difference between your contributor license and Apache's?
+## How can I join the HTM open source community?
 
-Not much, really. Here's a [diff](http://www.diffchecker.com/tas54ez4). We've
-also made a change to the contributor license that diverges from slightly from
-the Apache version, you can read more about it
-[on our blog](/blog/2013/09/03/numenta-contributor-license-v1-1/).
+There are many ways to get involved, but the first step is to join the
+[HTM Forum](https://discourse.numenta.org/categories), which is where
+you can introduce yourself, ask questions, find information and connect
+with others interested in and working on HTM. You can also join our
+[Meetup Group](https://www.meetup.com/Numenta-Platform-for-Intelligent-Computing-Events/)
+and subscribe to our [YouTube channel.](https://www.youtube.com/c/NumentaOrg)
 
-## What's the difference between this and your old offering?
+## Where can I find the code?
 
-It is important to emphasize that the old and new NuPIC algorithms are
-completely different.  This isn't an enhancement.  It might be a bit confusing
-that we are using the same name but we figured only a few people would be aware
-of the old NuPIC offering. The main differences are: a) NuPIC today includes HTM
-whereas the old NuPIC had our previous algorithms, b) old NuPIC was tuned for
-vision whereas new NuPIC is tuned for
-[our apps](http://numenta.com), and c) old NuPIC ran on Windows.
+You can find
+Numenta's [production](https://github.com/numenta) and
+[research](https://github.com/numenta/htmresearch) code (and more) on
+[Github](https://github.com/numenta/). Community members often share their
+projects on [HTM Forum](https://discourse.numenta.org/categories) or
+[HTM Community](https://github.com/htm-community) Github.
 
-## Can I add an external library to NuPIC?
+## What implementations are available?
 
-You can add external libraries to NuPIC. They must have a license that permits
-proprietary use of the library. External libraries licensed under AGPL, for
-instance, will not be accepted.
+We have multiple [HTM implementations](http://numenta.org/implementations/)
+available. Numenta maintains and support one in Python with C++. Community
+members have contributed implementations in languages such as Java, Clojure,
+Go, and JavaScript.
 
-## Does NuPIC implement hierarchy?
+## What are the licensing options?
 
-Yes... and no. The software architecture for hierarchies exists within the
-[Network API](https://numenta.github.io/nupic/guides/network.html) of
-[NuPIC.Core](https://github.com/numenta/nupic.core), as well as the Python
-client. You can create models and link them together into a hierarchy, with
-lower levels passing data up into higher levels. However, hierarchy is not
-implemented in the easier to use
-[Online Prediction Framework](https://numenta.github.io/guides/opf.html).
-That wouldn't prevent anyone from experimenting with hierarchies themselves,
-however.
+Our open source code containing intellectual property is governed by
+an [AGPL Version 3](https://www.gnu.org/licenses/agpl-3.0.en.html)
+license. For those who are unable to use AGPLv3, we offer a
+[trial license](http://numenta.org/licenses/trial/), and for those interested
+in distributing the technology, we offer
+[commercial licenses](http://numenta.com/assets/pdf/apps/licensing-guide.pdf).
+You can read more about our licenses [here](http://numenta.org/licenses/).
 
-The algorithmic mechanism for creating an effective learned spatiotemporal
-hierarchy using the CLA is still very much a research topic. A good mechanism
-for temporal pooling within a hierarchical architecture is an active area of
-research for Jeff and the NuPIC community. Please search our mailing list
-archives for discussion and proposals on that topic.
+## Is there a specific application for HTM?
 
-## What is the difference between HTM and CLA?
+The algorithm lends itself well to high-speed temporal data, but it
+could potentially be applied to many different fields and endeavors.
+Have an idea? Discuss HTM applications on
+[HTM Forum](https://discourse.numenta.org/c/htm-hackers).
 
-The neocortex is the seat of intelligent thought in the mammalian brain. High
-level vision, hearing, touch, movement, language, and planning are all performed
-by the neocortex. Given such a diverse suite of cognitive functions, you might
-expect the neocortex to implement an equally diverse suite of specialized neural
-algorithms. This is not the case. The neocortex displays a remarkably uniform
-pattern of neural circuitry. The biological evidence suggests that the neocortex
-implements a common set of algorithms to perform many different intelligence
-functions.
+## What is the current research focus for HTM?
 
-Hierarchical Temporal Memory (HTM) is a term coined by Jeff Hawkins to describe
-the overall space of systems that capture the structural and algorithmic
-properties of the neocortex. Many of the key properties concerning HTM
-algorithms were described in the book On Intelligence. These properties include
-continuous learning, sequence prediction, hierarchy, feedback, attention, and
-sensorimotor control. The [HTM whitepaper](http://numenta.com/papers-videos-and-more/#more)
-introduced a new property, namely Sparse Distributed Representations (SDR).
-
-There could be many different HTM algorithms but so far no one has effectively
-implemented the full set of properties in a fully working system. The Cortical
-Learning Algorithm (CLA) is a specific algorithm that covers some of the key
-aspects of HTM. The CLA uses SDR's, is a continuously learning system, can learn
-complex sequences and make temporal predictions. There are strong relationships
-to what is currently known about the laminar structure in a single layer of the
-neocortex. CLA does not cover all the properties of HTM but we believe it forms
-a strong foundation for a more complete implementation.
-
-Current research at Numenta is focused on temporal pooling (required for
-effective spatiotemporal hierarchies) and sensorimotor control. Please see some
-of the recent talks for more detail on these topics.
+Numenta’s current focus is developing a comprehensive theory of how the
+neocortex learns through movement — what is often called “sensorimotor”
+learning. You can view a recording of Numenta Open Source Community
+Manager Matt Taylor talking with Jeff Hawkins about this topic in this
+[video series](https://www.youtube.com/watch?list=PL3yXMgtrZmDrlePl0jUIZWKwQwUgOfxA-&v=fNc73-tHHgY).
