@@ -10,7 +10,6 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import FaviconsPlugin from 'favicons-webpack-plugin'
 import fs from 'fs'
 import htmlToText from 'html2plaintext'
-import ImageminPlugin from 'imagemin-webpack-plugin'
 import {ncp} from 'ncp'
 import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import {resolve} from 'path'
@@ -133,7 +132,6 @@ export function modifyWebpackConfig(webpack, env) {
         new DefinePlugin({
           'process.env': {NODE_ENV: JSON.stringify('production')},
         }),
-        new ImageminPlugin(),
         new OptimizeCssAssetsPlugin(),
         new optimize.DedupePlugin(),
         new optimize.OccurrenceOrderPlugin(),
