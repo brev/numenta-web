@@ -447,6 +447,9 @@ example, see the local file `.eslintrc.json`).
   `[http://numenta.com/htm-studio/](/htm-studio/)`
 * Search Engine Optimization (SEO) notes:
   * Make sure to follow the **Link** and **URL Format** notes further below.
+* Optimize all images before committing to the repository.
+  * Use [imagemin-cli](https://github.com/imagemin/imagemin-cli) or some other
+    tool to optimize all the images.
 
 ### Links and URLs
 
