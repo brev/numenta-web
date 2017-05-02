@@ -5,7 +5,7 @@ category: machine-learning
 date: 2017/05/15
 hideImage: true
 image: ../images/continuous-online-sequence-learning.png
-link: 
+link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
 org: Published in Neurocomputing, May 2017
 sort: d
 title: "Unsupervised real-time anomaly detection for streaming data"
