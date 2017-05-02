@@ -1,6 +1,8 @@
 ---
 author: "Subutai Ahmad, Alexander Lavin, Scott Purdy, Zuha Agha"
-brief: "This paper combines two of our existing papers, “Real-Time Anomaly Detection for Streaming Analytics” and “Evaluating Real-time Anomaly Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on anomaly detection."
+brief: "This paper combines two of our existing papers, “Real-Time Anomaly Detection for Streaming Analytics” and “Evaluating Real-time Anomaly 
+Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on 
+anomaly detection."
 category: machine-learning
 date: 2017/05/15
 hideImage: true
