@@ -1,12 +1,12 @@
 ---
 author: Matthew Taylor
 brief:
-date: 2017/05/25
+date: 2017/05/05
 event:
   what: "The Biological Path Towards Strong AI"
-  when: 
-    begin: 2017/05/03 
-    end: 2017/05/05 
+  when:
+    begin: 2017/05/03
+    end: 2017/05/05
   where:
     desc: Hynes Convention Center
     city: Boston  
@@ -46,4 +46,3 @@ have discovered some of the foundational algorithms of the neocortex,
 and we’ve implemented them in software. I’ll show you how they work with
 detailed dynamic visualizations of Sparse Distributed Representations,
 Spatial Pooling, and Temporal Memory.
-
