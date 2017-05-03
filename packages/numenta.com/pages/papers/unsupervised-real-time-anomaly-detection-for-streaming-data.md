@@ -10,7 +10,7 @@ image: ../images/anomaly-detection-image.png
 link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
 org: "Published in Neurocomputing, May 2017"
 sort: d
-title: "Unsupervised real-time anomaly detection for streaming data"
+title: "Unsupervised Real-Time Anomaly Detection for Streaming data"
 type: post
 ---
 
