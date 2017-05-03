@@ -36,15 +36,15 @@ Numenta’s online sequence memory algorithm, Hierarchical Temporal Memory
 the Numenta Anomaly Benchmark (NAB), the first open-source benchmark
 designed for testing anomaly detection algorithms on streaming data.
 
-![Taxi passenger predictions](../images/anomaly-detection-image.png)
+![Machine temperature readings](../images/anomaly-detection-image.png)
 > *This data stream from NAB represents machine temperatures recorded
   over time. Anomalies are marked by a red circle within the pink 
   shaded anomaly windows.*
 
 
-**Frequently asked questions about this research**
+## **Frequently asked questions about this research**
 
-**Q. What was the purpose of this paper?**
+### **Q. What was the purpose of this paper?**
 
 The purpose of this paper is to highlight the importance of anomaly
 detection for streaming applications and introduce two contributions
@@ -59,7 +59,7 @@ of HTM with a comprehensive results on the Numenta Anomaly Benchmark
 (NAB), the first open source benchmark for testing anomaly detection
 algorithms on streaming data.
 
-**Q. What are the key takeaways?**
+### **Q. What are the key takeaways?**
 
 -   Anomaly detection represents one of the most significant
     applications for machine learning in IoT
@@ -91,7 +91,7 @@ algorithms on streaming data.
     streams, a scoring methodology that rewards early detection and an
     open repository that allows anyone to use it.
 
-**Q. How does this research differ from other studies?**
+### **Q. How does this research differ from other studies?**
 
 Anomaly detection in time-series data has been actively studied for
 decades. The subject has generated much interest within the data science
@@ -99,7 +99,7 @@ and machine learning communities. While there are many different anomaly
 detection approaches, most of them are designed to process data in
 batches, making them unsuitable for real-time streaming applications.
 
-**Q. How were the algorithms evaluated?**
+### **Q. How were the algorithms evaluated?**
 
 Based on the criteria identified for the ideal anomaly detector, we
 selected 7 algorithms to run on NAB, including HTM, Twitter’s Anomaly
@@ -108,7 +108,7 @@ Bayesian Online Changepoint detection, and a simple sliding threshold.
 The source code and parameter settings are included in the NAB
 repository for each algorithm tested.
 
-**Q. Can I replicate these results?**
+### **Q. Can I replicate these results?**
 
 Yes! In keeping with Numenta’s [open research
 philosophy](http://numenta.com/blog/2014/09/17/increasing-research-transparency/),
@@ -118,7 +118,7 @@ repository](https://github.com/numenta/NAB). We also welcome questions
 and discussion about the paper on the [HTM
 Forum](https://discourse.numenta.org/).
 
-**Q. How does this paper make contributions in machine learning?**
+### **Q. How does this paper make contributions in machine learning?**
 
 Anomaly detection is one of the most significant, current applications
 for machine learning in IoT. Yet streaming data introduce difficult
@@ -136,13 +136,13 @@ other machine learning models, you can read this [peer-reviewed
 paper](http://numenta.com/papers/continuous-online-sequence-learning-with-an-unsupervised-neural-network-model/),
 which appears in Neural Computation, November 2016, Volume 28.
 
-**Q. Where can I find out more?**
+### **Q. Where can I find out more?**
 
 The [HTM Forum](https://discourse.numenta.org/) is a great resource for
 further questions and discussion on HTM, NAB and other related topics.
 The authors of this paper are active participants in the forum.
 
-**Q. What is next for this research?**
+### **Q. What is next for this research?**
 
 We’ve identified several areas for future work. NAB is currently limited
 to single metric data streams, but the error analysis indicates that the
