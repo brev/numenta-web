@@ -36,9 +36,11 @@ Numenta’s online sequence memory algorithm, Hierarchical Temporal Memory
 the Numenta Anomaly Benchmark (NAB), the first open-source benchmark
 designed for testing anomaly detection algorithms on streaming data.
 
-*This data stream from NAB represents machine temperatures recorded over
-time. Anomalies are marked by a red circle within the pink shaded
-anomaly windows. *
+![Taxi passenger predictions](../images/anomaly-detection-image.png)
+> *This data stream from NAB represents machine temperatures recorded
+  over time. Anomalies are marked by a red circle within the pink 
+  shaded anomaly windows.*
+
 
 **Frequently asked questions about this research**
 
