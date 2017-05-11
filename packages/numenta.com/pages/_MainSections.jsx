@@ -17,6 +17,7 @@ import SectionCareers from './careers-and-team/_Section'
 import SectionContact from './contact/_Section'
 import SectionHome from './_Section'
 import SectionMission from './mission-and-history/_Section'
+import SectionNutshell from './numenta-in-a-nutshell/_Section'
 import SectionOpensource from './open-source-community/_Section'
 import SectionPapers from './papers-videos-and-more/_Section'
 import SectionPartners from './partners/_Section'
@@ -27,6 +28,11 @@ const mainSectionList = [
     component: <SectionHome key="sectionHome" />,
     title: 'Leading the New Era of Machine Intelligence',
     url: '/',
+  },
+  {
+    component: <SectionNutshell key="sectionNutshell" />,
+    title: 'Numenta in a Nutshell',
+    url: '/numenta-in-a-nutshell/',
   },
   {
     component: <SectionMission key="sectionMission" />,
