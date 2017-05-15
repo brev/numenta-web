@@ -5,8 +5,8 @@ date: 2017/07/06
 event:
   what: "What the brain tells us about the future of streaming analytics"
   when:
-    begin: 2017/07/06
-    end: 2017/07/06
+    begin: 2017/07/06 18:00
+    end: 2017/07/06 18:00
   where:
     desc: 140 New Montgomery
     city: San Francisco
