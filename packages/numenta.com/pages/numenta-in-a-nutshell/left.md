@@ -8,13 +8,6 @@ title: Left Title
 | **What we do:**       | We are reverse engineering the neocortex. We publish our progress in scientific journals and create software simulations to test our theories. Everything we do is publicly disclosed and available in an open source form.     |
 | **Our business:**  | We have built a large IP/patent portfolio. We offer several types of licenses. Our IP will become increasingly essential as machine learning and AI adopt brain principles.     |
 | **Our progress:**   | We have made several fundamental discoveries so far. These include:
-
--   How neurons make predictions and detect anomalies.
-
--   How layers of neurons learn sequences of patterns.
-
--   How multiple layers of neurons learn to recognize objects via
-    movement.    |
 | **Our latest discovery-Sensorimotor integration:** | In 2016 we discovered a “missing ingredient”. All areas of the neocortex assign their input to a “location" in the external world. This explains how we learn through movement and perceive a rich model
 of the world and the objects in it. This is a major addition to existing neuroscience thinking and it will have a large impact on how
 we design intelligent machines.     |
