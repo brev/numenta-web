@@ -1,9 +1,7 @@
----
-title: Left Title
----
-
-
-| ------------- |-------------| 
+ 
+  
+|  | Numenta in a Nutshell |
+|:------------- |-------------|
 | **Who we are:**      | Numenta is a small team of scientists and engineers working on one of science’s grand challenges: how the brain works and how brain principles will be used in Machine Intelligence. |
 | **What we do:**       | We are reverse engineering the neocortex. We publish our progress in scientific journals and create software simulations to test our theories. Everything we do is publicly disclosed and available in an open source form.     |
 | **Our business:**  | We have built a large IP/patent portfolio. We offer several types of licenses. Our IP will become increasingly essential as machine learning and AI adopt brain principles.     |
