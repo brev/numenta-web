@@ -2,7 +2,7 @@
 title: Left Title
 ---
 
-|   |            |
+
 | ------------- |-------------| 
 | **Who we are:**      | Numenta is a small team of scientists and engineers working on one of science’s grand challenges: how the brain works and how brain principles will be used in Machine Intelligence. |
 | **What we do:**       | We are reverse engineering the neocortex. We publish our progress in scientific journals and create software simulations to test our theories. Everything we do is publicly disclosed and available in an open source form.     |
