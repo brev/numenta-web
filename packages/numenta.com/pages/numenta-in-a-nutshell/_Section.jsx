@@ -11,8 +11,7 @@ import Sound from 'numenta-web-shared-components/lib/Sound'
 import Video from 'numenta-web-shared-components/lib/Video'
 import {getVideoIdFromUrl} from 'numenta-web-shared-utils/lib/universal'
 
-import LeftColumn from './left.md'
-import RightColumn from './right.md'
+
 import styles from './index.css'
 
 
@@ -20,38 +19,42 @@ import styles from './index.css'
  * Numenta in a Nutshell MainSection and page content - React
  *  view component.
  */
-const SectionNutshell = () => {
-
+const SectionNutshell = (props, {route}) => {
+  const {pages} = route
+  const left = pages.find((file) =>
+    file.path === '/numenta-in-a-nutshell/left/')
+  const right = pages.find((file) =>
+      file.path === '/numenta-in-a-nutshell/right/')
   let leftTitle, rightTitle, rightMedia
-  if (LeftColumn.title) {
-    leftTitle = (<SubTitle>{LeftColumn.title}</SubTitle>)
+  if (left.data.title) {
+    leftTitle = (<SubTitle>{left.data.title}</SubTitle>)
   }
-  if (RightColumn.image && !RightColumn.hideImage) {
-    if (RightColumn.video) {
+  if (right.data.image && !right.data.hideImage) {
+    if (right.data.video) {
       // media video
       rightMedia = (
         <Video
           border={true}
-          image={RightColumn.image}
+          image={`${right.path}${right.data.image}`}
           respond="mw"
           shadow={true}
-          title={RightColumn.title}
+          title={right.data.title}
           type="youtube"
-          videoId={getVideoIdFromUrl(RightColumn.video)}
+          videoId={getVideoIdFromUrl(right.data.video)}
         />
       )
     }
-    else if (RightColumn.sound) {
+    else if (right.data.sound) {
       // media sound
       rightMedia = (
         <Sound
           border={true}
-          image={RightColumn.image}
+          image={`${right.path}${right.data.image}`}
           respond="mw"
           shadow={true}
-          title={RightColumn.title}
+          title={right.data.title}
           type="soundcloud"
-          url={RightColumn.sound}
+          url={right.data.sound}
         />
       )
     }
@@ -59,11 +62,11 @@ const SectionNutshell = () => {
       // media image
       rightMedia = (
         <Image
-          alt={RightColumn.title}
+          alt={right.data.title}
           border={true}
           respond="mw"
           shadow={true}
-          src={RightColumn.image}
+          src={`${right.path}${right.data.image}`}
         />
       )
     }
@@ -72,8 +75,8 @@ const SectionNutshell = () => {
       <div className={styles.media}>{rightMedia}</div>
     )
   }
-  else if (RightColumn.title) {
-    rightTitle = (<SubTitle>{RightColumn.title}</SubTitle>)
+  else if (right.data.title) {
+    rightTitle = (<SubTitle>{right.data.title}</SubTitle>)
   }
 
   return (
@@ -81,14 +84,14 @@ const SectionNutshell = () => {
       <div className={styles.content}>
         <Markdown>
           {leftTitle}
-          <div dangerouslySetInnerHTML={{__html: LeftColumn.body}} />
+          <div dangerouslySetInnerHTML={{__html: left.data.body}} />
         </Markdown>
       </div>
       <div className={styles.aside}>
         <Markdown>
           {rightTitle}
           {rightMedia}
-          <div dangerouslySetInnerHTML={{__html: RightColumn.body}} />
+          <div dangerouslySetInnerHTML={{__html: right.data.body}} />
         </Markdown>
       </div>
     </article>
@@ -96,7 +99,7 @@ const SectionNutshell = () => {
 }
 
 SectionNutshell.contextTypes = {
-  config: React.PropTypes.object,
+  route: React.PropTypes.object,
 }
 
 export default SectionNutshell
