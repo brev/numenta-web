@@ -14,8 +14,8 @@ type: post
   University, are US Citizens, or hold a Green Card or are NAFTA (Mexican or
   Canadian) citizens.*
 
-We are now accepting technical intern applications for the Fall - Winter
-2016/2017 and Summer 2017 time frames.
+We are no longer accepting technical intern applications for Summer/Fall 2017.
+We will begin accepting applications for Summer 2018 on October 1, 2017.
 
 We have two types of technical internships at Numenta: Algorithms and Software
 Engineering. While the two internships have a somewhat different focus, and
