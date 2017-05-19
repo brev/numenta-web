@@ -85,17 +85,17 @@ const SectionNutshell = (props, {route}) => {
 
   return (
     <article className={styles.columns}>
-      <div className={styles.content}>
-        <Markdown>
-          {leftTitle}
-          <div dangerouslySetInnerHTML={{__html: left.data.body}} />
-        </Markdown>
-      </div>
       <div className={styles.aside}>
         <Markdown>
           {rightTitle}
           {rightMedia}
           <div dangerouslySetInnerHTML={{__html: right.data.body}} />
+        </Markdown>
+      </div>
+      <div className={styles.content}>
+        <Markdown>
+          {leftTitle}
+          <div dangerouslySetInnerHTML={{__html: left.data.body}} />
         </Markdown>
       </div>
     </article>
