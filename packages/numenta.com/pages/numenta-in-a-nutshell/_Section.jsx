@@ -25,6 +25,10 @@ const SectionNutshell = (props, {route}) => {
     file.path === '/numenta-in-a-nutshell/left/')
   const right = pages.find((file) =>
       file.path === '/numenta-in-a-nutshell/right/')
+  if (!left && !right) {
+    // Nothing to display here
+    return null
+  }
   let leftTitle, rightTitle, rightMedia
   if (left.data.title) {
     leftTitle = (<SubTitle>{left.data.title}</SubTitle>)
