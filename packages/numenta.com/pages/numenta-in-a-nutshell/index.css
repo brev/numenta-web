@@ -29,7 +29,6 @@
 }
 
 .content {
-  composes: _dropcap;
   composes: layout-content from '../../static/assets/css/theme.css';
 }
 
