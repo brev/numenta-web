@@ -100,7 +100,7 @@ const SectionHome = (props, {config}) => {
           <DefineItem>
             {/* eslint-disable max-len */}
             <TextLink to="https://www.cbinsights.com/blog/top-artificial-intelligence-startup-patent-holders/">
-              Numenta named top AI patent-holder
+              Numenta named as a top AI patent-holder
               {' '} <Tag>New</Tag>
             </TextLink>
             {/* eslint-enable max-len */}
