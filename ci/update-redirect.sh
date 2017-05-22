@@ -21,8 +21,7 @@
 # ----------------------------------------------------------------------
 
 # This scripts create web page redirect links by using S3 redirect metadata
-# property. Set 'S3_BUCKET' environment variable with a valid bucket name
-# such as 'numenta.com' or 'staging.numenta.com'
+# property.
 # See https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html
 
 set -o errexit
