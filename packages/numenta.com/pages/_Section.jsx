@@ -99,8 +99,8 @@ const SectionHome = (props, {config}) => {
           </DefineTitle>
           <DefineItem>
             {/* eslint-disable max-len */}
-            <TextLink to="/biological-and-machine-intelligence/">
-              BAMI adds 2 chapters
+            <TextLink to="https://www.cbinsights.com/blog/top-artificial-intelligence-startup-patent-holders/">
+              Numenta identified as a top AI patent-holder
               {' '} <Tag>New</Tag>
             </TextLink>
             {/* eslint-enable max-len */}
