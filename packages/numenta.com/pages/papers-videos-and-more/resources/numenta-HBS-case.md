@@ -4,7 +4,7 @@ brief: "In January 2016, Harvard Business School Professor David B. Yoffie began
 date: 2017/06/01
 image:
 link: https://www.amazon.com/On-Intelligence-ebook/dp/B003J4VE5Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1359401193&sr=1-1&keywords=on+intelligence
-media: pdf
+media: paper
 org: Harvard Business School
 section: overview
 sort: a
