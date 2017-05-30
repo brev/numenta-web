@@ -9,7 +9,7 @@ org: Harvard Business School
 section: overview
 sort: a
 tags: on intelligence jeff hawkins htm hierarchical temporal memory
-title: "Numenta: Inventing and (or) Commercializing AI (Book)"
+title: "Numenta: Inventing and (or) Commercializing AI (Case Study)"
 type: post
 ---
 
