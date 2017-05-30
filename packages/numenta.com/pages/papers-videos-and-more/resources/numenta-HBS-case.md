@@ -8,7 +8,7 @@ media: paper
 org: Harvard Business School
 section: overview
 sort: a
-tags: on intelligence jeff hawkins htm hierarchical temporal memory
+tags: numenta jeff hawkins donna dubinsky 
 title: "Numenta: Inventing and (or) Commercializing AI (Case Study)"
 type: post
 ---
