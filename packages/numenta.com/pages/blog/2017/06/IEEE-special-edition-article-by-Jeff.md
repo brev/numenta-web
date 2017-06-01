@@ -6,9 +6,9 @@ hideImage: false
 image: ../images/IEEE_article_soundlcoud.jpg
 org: Director of Marketing
 tags: numenta Jeff Hawkins machine intelligence
-title: "New Article by Jeff Hawkins appears in IEEE Spectrum Special Report"
+title: "New Article by Jeff Hawkins Appears in IEEE Spectrum Special Report"
 type: post
-sound: https://soundcloud.com/numenta/interview-with-jeff-hawkins-on-his-article-in-an-ieee-special-report/s-um0kb
+sound: https://soundcloud.com/numenta/interview-with-jeff-hawkins-ieee-special-report
 ---
 
 IEEE Spectrum, the flagship magazine and website of the Institute of Electrical and Electronics
