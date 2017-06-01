@@ -1,7 +1,7 @@
 ---
 author: "Subutai Ahmad, Alexander Lavin, Scott Purdy, Zuha Agha"
-brief: "This paper combines two of our existing papers, “Real-Time Anomaly Detection for Streaming Analytics” and “Evaluating Real-time Anomaly 
-Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on 
+brief: "This paper combines two of our existing papers, “Real-Time Anomaly Detection for Streaming Analytics” and “Evaluating Real-time Anomaly
+Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on
 anomaly detection."
 category: machine-learning
 date: 2017/05/15
@@ -19,7 +19,7 @@ type: post
 | **Authors** | S. Ahmad, A. Lavin, S. Purdy, and Z. Agha |
 | **Journal** | Neurocomputing (2017) |
 | **Online** | [Read or Download this Paper][1] |
-| **Published** | May, 2017 |
+| **Published** | June 2017 |
 
 Across every industry, we are seeing an increase in the amount of
 streaming, time-series data produced by connected real-time data
@@ -38,7 +38,7 @@ designed for testing anomaly detection algorithms on streaming data.
 
 ![Machine temperature readings](../images/anomaly-detection-image.png)
 > *This data stream from NAB represents machine temperatures recorded
-  over time. Anomalies are marked by a red circle within the pink 
+  over time. Anomalies are marked by a red circle within the pink
   shaded anomaly windows.*
 
 
