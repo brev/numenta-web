@@ -4,7 +4,7 @@ brief: "This paper combines two of our existing papers, “Real-Time Anomaly Det
 Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on
 anomaly detection."
 category: machine-learning
-date: 2017/05/15
+date: 2017/06/06
 hideImage: true
 image: ../images/anomaly-detection-image.png
 link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
