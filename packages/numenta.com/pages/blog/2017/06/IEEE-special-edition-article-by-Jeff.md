@@ -1,7 +1,7 @@
 ---
 author: Christy Maver
 brief: "Our co-founder, Jeff Hawkins, was invited to write an article for a special edition of IEEE Spectrum, the flagship magazine and website of the Institute of Electrical and Electronics Engineers. His piece, What Intelligent Machines Need to Learn from the Neocortex, makes the case for"
-date: 2017/06/01
+date: 2017/06/02
 hideImage: false
 image: ../images/IEEE_article_soundcloud.jpg
 org: Director of Marketing
@@ -26,5 +26,5 @@ conversation, in which I asked him to discuss the importance of building biologi
 intelligent machines, the features of intelligence we can’t ignore and the far reaching
 implications of machine intelligence.    
 
-The full article is available in print for IEEE Spectrum subscribers or online at xxx. Share your
-thoughts and continue the discussion on the [HTM Forum](https://discourse.numenta.org/).  
+The full article is available in print for IEEE Spectrum subscribers or [online at this link](http://spectrum.ieee.org/computing/software/what-intelligent-machines-need-to-learn-from-the-neocortex). We'd love to know what you think. Share your
+thoughts about the article in the comments or continue the discussion on the [HTM Forum](https://discourse.numenta.org/).  
