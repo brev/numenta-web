@@ -20,9 +20,9 @@ IEEE Spectrum, the flagship magazine and website of the Institute of Electrical 
  order to build intelligent machines and which essential attributes of intelligence we cannot
  overlook.
 
-Tune in to my interview with Jeff, in which he discusses the article.  I asked him to walk through
-each feature of intelligence he identified in the piece, one of which involves a key discovery in
-Numenta’s brain theory and sensorimotor integration research.  
+Click on the image above to listen to my interview with Jeff, in which he discusses the article.  
+I asked him to walk through each feature of intelligence he identified in the piece, one of which
+involves a key discovery in Numenta’s brain theory and sensorimotor integration research.  
 
 The full article is available in print for IEEE Spectrum subscribers or online at xxx. Share your
 thoughts and continue the discussion on the [HTM Forum](https://discourse.numenta.org/).  
