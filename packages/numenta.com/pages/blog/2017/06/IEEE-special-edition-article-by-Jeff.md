@@ -1,7 +1,7 @@
 ---
 author: Christy Maver
 brief: "Our co-founder, Jeff Hawkins, was invited to write an article for a special edition of IEEE Spectrum, the flagship magazine and website of the Institute of Electrical and Electronics Engineers. His piece, What Intelligent Machines Need to Learn from the Neocortex, makes the case for"
-date: 2017/06/01
+date: 2017/06/02
 hideImage: false
 image: ../images/IEEE_article_soundcloud.jpg
 org: Director of Marketing
