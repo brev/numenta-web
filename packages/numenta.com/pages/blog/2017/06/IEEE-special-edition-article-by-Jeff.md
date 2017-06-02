@@ -26,5 +26,5 @@ conversation, in which I asked him to discuss the importance of building biologi
 intelligent machines, the features of intelligence we can’t ignore and the far reaching
 implications of machine intelligence.    
 
-The full article is available in print for IEEE Spectrum subscribers or online at xxx. Share your
-thoughts and continue the discussion on the [HTM Forum](https://discourse.numenta.org/).  
+The full article is available in print for IEEE Spectrum subscribers or [online at this link](http://spectrum.ieee.org/computing/software/what-intelligent-machines-need-to-learn-from-the-neocortex). We'd love to know what you think. Share your
+thoughts about the article in the comments or continue the discussion on the [HTM Forum](https://discourse.numenta.org/).  
