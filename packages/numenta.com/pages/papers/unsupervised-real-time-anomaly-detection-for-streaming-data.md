@@ -4,10 +4,10 @@ brief: "This paper combines two of our existing papers, “Real-Time Anomaly Det
 Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on
 anomaly detection."
 category: machine-learning
-date: 2017/06/06
+date: 2017/06/02
 hideImage: true
 image: ../images/anomaly-detection-image.png
-link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
+link: http://www.sciencedirect.com/science/article/pii/S0925231217309864
 org: "Published in Neurocomputing, June 2017"
 sort: d
 title: "Unsupervised Real-Time Anomaly Detection for Streaming Data"
@@ -19,7 +19,7 @@ type: post
 | **Authors** | S. Ahmad, A. Lavin, S. Purdy, and Z. Agha |
 | **Journal** | Neurocomputing (2017) |
 | **Online** | [Read or Download this Paper][1] |
-| **Published** | June 2017 |
+| **Published** | June 2, 2017 |
 
 Across every industry, we are seeing an increase in the amount of
 streaming, time-series data produced by connected real-time data
@@ -151,4 +151,4 @@ correlated. Adding real-world multivariate data streams labeled with
 anomalies could be valuable and allow for an ensemble-based approach,
 which might provide a significant increase in accuracy.
 
-[1]: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/full
+[1]: http://www.sciencedirect.com/science/article/pii/S0925231217309864
