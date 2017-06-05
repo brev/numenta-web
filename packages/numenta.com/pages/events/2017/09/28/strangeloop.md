@@ -18,7 +18,7 @@ event:
 image: ../images/strangeloop.jpg
 org: HTM Community Leader
 tags: strong ai artificial intelligence biological htm hierarchical temporal memory computing strangeloop brain
-title: "Strange Loop: The Biological Path Towards Strong AI"
+title: "Strange Loop"
 type: post
 ---
 ## Abstract:
