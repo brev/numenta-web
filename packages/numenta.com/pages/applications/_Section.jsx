@@ -145,90 +145,6 @@ const SectionApplications = (props, {config}) => {
         </div>
       </div>
 
-      <Anchor name="htmstocks" />
-      <SubTitle>HTM for Stocks</SubTitle>
-      <div className={styles.columns}>
-        <div className={styles.aside}>
-          <ImageLink to={links.in.htmstocks}>
-            <Image
-              alt="HTM for Stocks screenshot"
-              respond="mw"
-              src={ImageHtmStocks}
-            />
-          </ImageLink>
-        </div>
-        <div className={styles.content}>
-          <Paragraph>
-            HTM for Stocks is an example application that detects anomalies in
-            publicly traded companies. It continuously models stock price,
-            stock volume, and Twitter volume for top publicly traded companies
-            and alerts you in real time when something unusual is happening.
-            HTM for Stocks is available for free via the {' '}
-            {/* eslint-disable max-len */}
-            <TextLink to="https://itunes.apple.com/us/app/htm-for-stocks/id1049429350?mt=8">
-              App Store
-            </TextLink>
-            {' '} or {' '}
-            <TextLink to="https://play.google.com/store/apps/details?id=com.numenta.taurus">
-              Google Play Store.
-            </TextLink>
-            {/* eslint-enable max-len */}
-          </Paragraph>
-          <List marker="disc">
-            <ListItem>
-              <TextLink to={links.in.htmstocks}>
-                More Information
-              </TextLink>
-            </ListItem>
-            <ListItem>
-              <TextLink to={`${links.in.htmstocks}#get`}>
-                Register to Give Feedback
-              </TextLink>
-            </ListItem>
-          </List>
-        </div>
-      </div>
-
-      <Anchor name="grokit" />
-      <SubTitle>Grok</SubTitle>
-      <div className={styles.columns}>
-        <div className={styles.aside}>
-          <ImageLink to={links.out.grok}>
-            <Image
-              alt="Grok for IT Analytics screenshot"
-              respond="mw"
-              src={ImageGrokIt}
-            />
-          </ImageLink>
-        </div>
-        <div className={styles.content}>
-          <Paragraph>
-            Grok is a commercial application offered by one of our strategic
-            partners that detects anomalies in servers and applications. It
-            learns continuously, automatically discovers time-based patterns in
-            data, and generalizes from experience.
-          </Paragraph>
-          <Paragraph>
-            Grok is now available at {' '}
-            <TextLink to={links.out.grok}>
-              {links.out.grok}.
-            </TextLink>
-          </Paragraph>
-          <List marker="disc">
-            <ListItem>
-              <TextLink to={`${links.out.grok}/#pricing`}>
-                Sign Up
-              </TextLink>
-            </ListItem>
-            <ListItem>
-              <TextLink to={links.out.grok}>
-                More Information
-              </TextLink>
-            </ListItem>
-          </List>
-        </div>
-      </div>
-
       <Anchor name="rogue" />
       <SubTitle>Rogue Behavior Detection</SubTitle>
       <div className={styles.columns}>
@@ -300,6 +216,78 @@ const SectionApplications = (props, {config}) => {
             </ListItem>
           </List>
           {/* eslint-enable max-len */}
+        </div>
+      </div>
+
+      <Anchor name="htmstocks" />
+      <SubTitle>HTM for Stocks</SubTitle>
+      <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.htmstocks}>
+            <Image
+              alt="HTM for Stocks screenshot"
+              respond="mw"
+              src={ImageHtmStocks}
+            />
+          </ImageLink>
+        </div>
+        <div className={styles.content}>
+          <Paragraph>
+            HTM for Stocks is an example application that detects anomalies in
+            publicly traded companies. It continuously models stock price, stock
+            volume, and Twitter volume for publicly traded companies and alerts
+            you in real time when something unusual is happening. You can
+            experiment with this application by downloading our sample
+            application code below and connecting it to Twitter and stock m
+            etric collectors.
+          </Paragraph>
+          <List marker="disc">
+            <ListItem>
+              <TextLink to={`${links.out.apps}`}>
+                Download Application Code
+              </TextLink>
+            </ListItem>
+          </List>
+        </div>
+      </div>
+
+      <Anchor name="grokit" />
+      <SubTitle>Grok</SubTitle>
+      <div className={styles.columns}>
+        <div className={styles.aside}>
+          <ImageLink to={links.out.grok}>
+            <Image
+              alt="Grok for IT Analytics screenshot"
+              respond="mw"
+              src={ImageGrokIt}
+            />
+          </ImageLink>
+        </div>
+        <div className={styles.content}>
+          <Paragraph>
+            Grok is a commercial application offered by one of our strategic
+            partners that detects anomalies in servers and applications. It
+            learns continuously, automatically discovers time-based patterns in
+            data, and generalizes from experience.
+          </Paragraph>
+          <Paragraph>
+            Grok is now available at {' '}
+            <TextLink to={links.out.grok}>
+              {links.out.grok}.
+            </TextLink>
+          </Paragraph>
+          <List marker="disc">
+            <ListItem>
+              <TextLink to={`${links.out.grok}/#pricing`}>
+                Sign Up
+              </TextLink>
+            </ListItem>
+            <ListItem>
+              <TextLink to={links.out.grok}>
+                More Information
+              </TextLink>
+            </ListItem>
+          </List>
         </div>
       </div>
 

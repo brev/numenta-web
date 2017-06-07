@@ -24,6 +24,7 @@ company = 'Numenta'
 [links]
   [links.out]  # external links
     # apps
+    apps = 'https://github.com/numenta/numenta-apps'
     grokGet = 'http://grokstream.com/#pricing'
     geo = 'https://github.com/numenta/nupic.geospatial'
     rogue = 'https://github.com/numenta/nupic.rogue'
@@ -65,7 +66,6 @@ company = 'Numenta'
     tm = '/temporal-memory-algorithm/'
     blog = '/blog/'
     events = '/events/'
-    htmstocks = '/htm-for-stocks/'
     htmstudio = '/htm-studio/'
     nab = '/numenta-anomaly-benchmark/'
     newsletter = '/newsletter/'
