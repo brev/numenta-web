@@ -223,7 +223,7 @@ const SectionApplications = (props, {config}) => {
       <SubTitle>HTM for Stocks</SubTitle>
       <div className={styles.columns}>
         <div className={styles.aside}>
-          <ImageLink to={links.out.htmstocks}>
+          <ImageLink to={links.out.apps}>
             <Image
               alt="HTM for Stocks screenshot"
               respond="mw"
