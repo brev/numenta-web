@@ -90,6 +90,8 @@
     "test:unit": "TZ=\"America/Los_Angeles\" jest --config .jestrc.json \"unit.test\"",
     "test:unit:cover": "npm run test:unit -- --coverage",
     "test:unit:update": "npm run test:unit -- -u",
-    "test:unit:watch": "npm run test:unit -- --watch"
+    "test:unit:watch": "npm run test:unit -- --watch",
+    "numenta.org:dev": "pushd packages/numenta.org; npm run dev; popd",
+    "numenta.com:dev": "pushd packages/numenta.com; npm run dev; popd"
   }
 }

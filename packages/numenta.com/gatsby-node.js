@@ -73,7 +73,7 @@ export function modifyWebpackConfig(webpack, env) {
   // dev source maps
   if (env === 'develop') {
     console.log(env, 'Enabling dev sourcemaps...')
-    webpack.merge({devtool: 'source-map'})
+    webpack.merge({devtool: 'cheap-module-source-map'})
   }
 
   // css modules
