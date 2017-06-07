@@ -238,8 +238,13 @@ const SectionApplications = (props, {config}) => {
             volume, and Twitter volume for publicly traded companies and alerts
             you in real time when something unusual is happening. You can
             experiment with this application by downloading our sample
-            application code below and connecting it to Twitter and stock m
-            etric collectors.
+            application code below and connecting it to Twitter and metric
+            collectors.
+          </Paragraph>
+          <Paragraph>
+            NOTE: As of June 2017, HTM for Stocks is no longer available for
+            download or supported on Apple or Android mobile phones. The source
+            code will remain available.
           </Paragraph>
           <List marker="disc">
             <ListItem>
