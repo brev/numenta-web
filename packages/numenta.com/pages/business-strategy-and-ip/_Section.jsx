@@ -162,7 +162,7 @@ const SectionBusiness = (props, {config}) => {
             terms of the AGPLv3 license.  For those who want to distribute
             derivative software and do not want to accept these terms, we
             have a {' '}
-            <TextLink to={links.out.license}>
+            <TextLink to={links.in.license}>
               commercial license available
             </TextLink>, which may change as we develop our business.
           </Paragraph>
