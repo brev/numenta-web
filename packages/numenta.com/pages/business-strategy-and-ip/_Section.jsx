@@ -56,18 +56,20 @@ const SectionBusiness = (props, {config}) => {
           <ListOrder marker="decimal">
             <ListItem>
               <Strong>Transparency</Strong>. We openly publish our scientific
-              findings, software, intellectual property, and business
-              strategy. There are no hidden agendas.
+                findings, software, intellectual property, and business
+                strategy. There are no hidden agendas.
             </ListItem>
             <ListItem>
               <Strong>Scientific Use</Strong>. Anyone can freely use our
-              software and intellectual property for non-commercial purposes.
+                software and intellectual property for non-commercial purposes.
             </ListItem>
             <ListItem>
-              <Strong>Commercial Deployment</Strong>. Our software can be
-              used for free under an AGPL license. If the AGPL license is not
-              a good fit, we offer low cost licenses that enable commercial
-              use and create a sustainable business opportunity for Numenta.
+              <Strong>Commercial Deployment</Strong>. We make reference software
+                available (including relevant patents) for free under an AGPL
+                license. If the AGPL license is not a good fit, or if you are
+                interested in using our intellectual property without our
+                software in a commercial application, we offer an IP license
+                that enables commercial use.
             </ListItem>
           </ListOrder>
         </div>
@@ -83,34 +85,33 @@ const SectionBusiness = (props, {config}) => {
         </div>
         <div className={styles.content}>
           <Paragraph>
-            We have enabled a community of researchers and developers working
-            on HTM technology in the NuPIC open source community at {' '}
-            <TextLink to={links.out.org}>{links.out.org}.</TextLink> {' '}
-            We post all of our application and algorithm code in NuPIC as
-            well as our research updates as they occur. We {' '}
-            <TextLink to={links.in.papers}>publish our work</TextLink> {' '}
-            in peer-reviewed journals and submit pre-publication manuscripts
-            to arXiv. We also speak at a variety of forums, such as machine
-            learning, data science, neuroscience, and application-specific
-            events. Other than confidential information relating to partner
-            relationships, products or data, we work as much in the open as
-            possible.
+            We have enabled a community of researchers and developers working on
+            HTM technology in the NuPIC open source community
+            at <TextLink to={links.out.org}>{links.out.org}.</TextLink> We post
+            all of our application and algorithm code in NuPIC as well as our
+            research updates as they occur. We <TextLink to={links.in.papers}>
+            publish our work</TextLink> in peer-reviewed journals and submit
+            pre-publication manuscripts to arXiv. We also speak at a variety of
+            forums, such as machine learning, data science, neuroscience, and
+            application-specific events. Other than confidential information
+            relating to partner relationships, products or data, we work as much
+            in the open as possible.
           </Paragraph>
           <Paragraph>
             Given the uniqueness of our work and our early focus on temporal
             data, we have been issued over thirty U.S. and international
-            patents. The list of issued U.S. patents can be {' '}
-            <TextLink to={links.out.patents}>found here.</TextLink> {' '}
-            In addition, we have international patents filed that are not
-            included in this list. We believe these patents cover some of the
-            foundational principles of machine intelligence.
+            patents. The list of issued U.S. patents can
+            be <TextLink to={links.out.patents}> found here.</TextLink> In
+            addition, we have pending U.S. and international patents that are
+            not included in this list. We believe these patents cover some of
+            the foundational principles of machine intelligence.
           </Paragraph>
         </div>
       </div>
 
       <Anchor name="science" />
       <SubTitle level={2}>
-        2. Scientific Use
+        2. Scientific, Research and Academic Use
       </SubTitle>
       <div className={styles.columns}>
         <div className={styles.aside}>
@@ -118,21 +119,21 @@ const SectionBusiness = (props, {config}) => {
         </div>
         <div className={styles.content}>
           <Paragraph>
-            Our software, along with its associated IP, is available at {' '}
-            <TextLink to={links.out.org}>{links.out.org}</TextLink> under the
-            AGPLv3 license at no cost. Scientists, researchers, and students
-            are able to use our technology by agreeing to the terms of this
-            open source license. For those researchers who are unable to use
-            the AGPLv3 license, we have created a separate, no-cost,
-            non-commercial, {' '}
-            <TextLink to={links.out.trial}>trial license.</TextLink>
+            Our reference software, along with its associated IP, is available
+            at <TextLink to={links.out.org}>{links.out.org}</TextLink> under the
+            AGPLv3 license at no cost. Scientists, researchers, and students are
+            able to use our technology by agreeing to the terms of this open
+            source license. For those researchers who are unable to use the
+            AGPLv3 license, we have created a separate, <nobr>no-cost</nobr>
+            , <nobr>non-commercial</nobr>, <TextLink to={links.out.trial}>
+            trial license.</TextLink>
           </Paragraph>
           <Paragraph>
             For those scientists and researchers who want to use our
             intellectual property without our software, or whose work may be
-            covered by our patents, we make a clear statement of
-            non-assertion: as long as your work is for non-commercial use, we
-            will not assert our patents.
+            covered by our patents, we make a clear statement of non-assertion:
+            as long as your work is for non-commercial use, we will not assert
+            our patents.
           </Paragraph>
         </div>
       </div>
@@ -153,30 +154,22 @@ const SectionBusiness = (props, {config}) => {
             functionality or as part of another product, whether for a fee or
             not. In addition, commercial use includes deploying the technology
             or patents internally to be used in any business process. For
-            example, if you use our technology or patents internally to
-            monitor performance of your IT servers, even if you don’t offer it
-            to others, we view this as commercial use.
+            example, if you use our technology or patents internally to monitor
+            performance of your IT servers, even if you don’t offer it to
+            others, we view this as commercial use
           </Paragraph>
           <Paragraph>
-            Commercial partners are welcome to use our software under the
-            terms of the AGPLv3 license.  For those who want to distribute
-            derivative software and do not want to accept these terms, we
-            have a {' '}
-            <TextLink to={links.in.license}>
-              commercial license available
-            </TextLink>, which may change as we develop our business.
-          </Paragraph>
-          <Paragraph>
-            For those who do not want to license our software but want to
-            license our patents, we will offer a patent-only license. Our
-            intention is to offer low-cost ways for partners to commercialize
-            this technology. We believe that a broad-based strategy is
-            compelling for a technology that is likely to be widely deployed
-            in time. Please contact us at {' '}
-            <TextLink to={`mailto:${contact.email.sales}`}>
-              {contact.email.sales}
-            </TextLink> {' '}
-            if you are interested in this license.
+            Commercial partners are welcome to use our software under the terms
+            of the AGPLv3 license, which includes releasing their own software
+            to the open source under the AGPLv3 license. For those who want to
+            distribute derivative software and do not want to accept these
+            terms, we have a <TextLink to={links.in.license}>commercial IP
+            license available,</TextLink> which includes a license to the
+            reference source code available in NuPIC. This custom license is
+            also appropriate for those who want to license our patents. Please
+            contact us at <TextLink to={`mailto:${contact.email.licenses}`}>
+              {contact.email.licenses}</TextLink> if you are interested in this
+            license.
           </Paragraph>
         </div>
       </div>
@@ -192,26 +185,46 @@ const SectionBusiness = (props, {config}) => {
               <TableHead>
                 <TableRow>
                   <TableTitle />
-                  <TableTitle colSpan={3}>
-                    Software (includes IP)
+                  <TableTitle>
+                    Scientific, Research, and Academic Use
                   </TableTitle>
                   <TableTitle>
-                    Patents Only
+                    Commercial Use
                   </TableTitle>
                 </TableRow>
               </TableHead>
               <TableBody>
                 <TableRow>
                   <TableCell>
-                    <Strong>
-                      Scientists, Researchers, or any Non-commercial use
-                    </Strong>
-                  </TableCell>
-                  <TableCell colSpan={3}>
-                    AGPLv3 or trial license (both no cost)
+                    <Strong> Open Source License (AGPLv3)</Strong>
                   </TableCell>
                   <TableCell>
-                    Non-assert statement for non-commercial purposes
+                    Includes reference software and associated intellectual
+                    property
+                    <br /> No cost
+                  </TableCell>
+                  <TableCell>
+                    Includes reference software and associated intellectual
+                    property Use internally – no cost
+                    <br />Distribute derivative software – no cost if released
+                    in accordance with the AGPLv3
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <Strong>Trial License</Strong>
+                  </TableCell>
+                  <TableCell>
+                    Includes reference software and associated intellectual
+                    property without AGPLv3 requirements
+                    <br />No commercial rights
+                    <br />No cost
+                  </TableCell>
+                  <TableCell>
+                    Includes reference software and associated intellectual
+                    property without AGPLv3 requirements
+                    <br />No commercial rights
+                    <br />No cost
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -219,17 +232,13 @@ const SectionBusiness = (props, {config}) => {
                     <Strong>Commercial use</Strong>
                   </TableCell>
                   <TableCell>
-                    Use internally only: AGPLv3 (no cost)
+                    We agree not to assert our IP for non-commercial uses
                   </TableCell>
                   <TableCell>
-                    Able to offer to others under the terms of the AGPLv3,
-                    including making source code available: AGPLv3 (no cost)
-                  </TableCell>
-                  <TableCell>
-                    Prefer to keep code proprietary: Commercial license (fee)
-                  </TableCell>
-                  <TableCell>
-                    Patent license (under development – fee TBD)
+                    Includes intellectual property and use of the reference
+                    software
+                    <br />Commercial rights
+                    <br />Fee
                   </TableCell>
                 </TableRow>
               </TableBody>
@@ -256,51 +265,63 @@ const SectionBusiness = (props, {config}) => {
               <DefineItem>
                 You are welcome to do so under the terms of that license. AGPL
                 is a “copyleft” license. It requires that if you distribute or
-                make available your software (either directly or through a
-                SaaS model), you must also distribute the source code under
-                the AGPL license. For some companies and some situations, that
-                is an acceptable requirement. However, companies who want to
-                keep the resulting code proprietary will prefer a commercial
-                license.
+                make available your software (either directly or through a SaaS
+                model), you also must distribute the source code under the AGPL
+                license. For some companies and some situations, that is an
+                acceptable requirement. However, companies who want to keep the
+                resulting code proprietary will prefer a commercial license.
               </DefineItem>
               <DefineTitle>
                 If I do not intend to distribute or make available as a SaaS
-                implementation any derivative software, then it seems to me
-                that I can use the AGPL version internally without any
-                additional license, even if it is for a commercial purpose.
-                For example, I run a hedge fund and I figured out how to use
-                NuPIC to advantage, but I don’t distribute the software or
-                results, nor do I make it available to others. Is this
-                correct?
+                implementation any derivative software, then it seems to me that
+                I can use the AGPL version internally without any additional
+                license, even if it is for a commercial purpose. For example, I
+                run a hedge fund and I figured out how to use NuPIC to
+                advantage, but I don’t distribute the software or results, nor
+                do I make it available to others. Is this correct?
               </DefineTitle>
               <DefineItem>
-                Generally you may use the software and patents for internal
-                use under the AGPL. Note, however, if you do not use our
-                open-source software (and thus do not fall under the AGPL),
-                you WOULD need a license for our IP. For example, say you do
-                your own, very specific version of HTM for your hedge fund.
-                Once you deploy that within your company for any productive
-                purpose (as opposed to research), you would need an IP license
-                from us because you are not under the AGPL.
+                Generally you may use the software and patents for internal use
+                under the AGPL. Note, however, if you do not use our open-source
+                software (and thus do not fall under the AGPL), you WOULD need a
+                license for our IP. For example, say you do your own, very
+                specific version of HTM for your hedge fund. Once you deploy
+                that within your company for any productive purpose (as opposed
+                  to research), you would need a commercial IP license from us
+                  because you are not under the AGPL.
               </DefineItem>
               <DefineTitle>
-                I’m a researcher who uses different machine learning
-                techniques. I’m trying to add capabilities that are similar to
-                Numenta, i.e. using temporal data streams in a hierarchy, but
-                I’m not using your software. What are my obligations relative
-                to Numenta?
+                I’m a researcher who uses different machine learning techniques.
+                I’m trying to add capabilities that are similar to Numenta, i.e.
+                using temporal data streams in a hierarchy, but I’m not using
+                your software. What are my obligations relative to Numenta?
               </DefineTitle>
               <DefineItem>
                 For researchers who are doing work that is covered by Numenta
-                patents, we have promised to not assert our patents for any
-                non-commercial use including publications, teaching, and
-                experimentation. We do ask that you provide appropriate
-                citations of our work. Make sure to visit our current repository
-                of <TextLink to={links.in.papers}>research papers.</TextLink>
-                {' '} If you are a corporate researcher who is applying this
-                technology to commercial use, then you will need to evaluate the
-                Numenta patent portfolio to see if our patents cover your work.
-                If so, you should contact us to explore a patent license.
+                patents, we have promised to not assert our patents for
+                any <nobr>non-commercial</nobr> use including publications,
+                teaching, and experimentation. We do ask that you provide
+                appropriate citations of our work. Make sure to visit our
+                current repository of <TextLink to={links.in.papers}>research
+                papers.</TextLink> If you are a corporate researcher who is
+                applying this technology to commercial use, then you will need
+                to evaluate the Numenta patent portfolio to see if our patents
+                cover your work. If so, you should contact us to explore a
+                patent license.
+              </DefineItem>
+              <DefineTitle>
+                Why do you call your software “reference code”?  Is it
+                deployable?
+              </DefineTitle>
+              <DefineItem>
+                In creating software, our principle mission is to enable the
+                advancement of our research through experimentation.  In the
+                past, we have created several sample applications and tools that
+                could be very helpful to licensees to create deployable
+                applications.  However, we are not adding certain functionality
+                to facilitate deployment and are not providing technical
+                support, so we offer the code as reference only and encourage
+                licensees to develop their own deployable code.
               </DefineItem>
             </DefineList>
           </div>
