@@ -63,7 +63,7 @@ const SectionMission = (props, {config}) => {
             research and software implementations into open source and encourage
             others to join us in building a community. From a commercial point
             of view, we {' '}
-            <TextLink to={links.out.license}>
+            <TextLink to={links.in.license}>
               license our technology and intellectual property.
             </TextLink>
           </Paragraph>
