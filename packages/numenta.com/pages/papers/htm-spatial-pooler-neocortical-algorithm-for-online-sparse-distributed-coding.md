@@ -6,7 +6,7 @@ date: 2017/02/16
 image:
 link: http://bit.ly/theHTMSP
 org: "Preprint of journal submission"
-sort: e
+sort: d
 title: "The HTM Spatial Pooler: A Neocortical Algorithm for Online Sparse Distributed Coding"
 type: link
 ---
