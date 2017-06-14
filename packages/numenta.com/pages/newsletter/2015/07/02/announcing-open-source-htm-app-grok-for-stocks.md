@@ -27,7 +27,7 @@ instance, or put in a reasonable amount of software development effort.
 So we have created a new example application, called HTM for Stocks, which
 makes it much easier for you to experience how HTM detects anomalies. HTM for
 Stocks is available for free here:
-[Download HTM for Stocks](/htm-for-stocks/#get). At this
+[Download HTM for Stocks](/htm-for-stocks). At this
 point, the application is available only for an Android mobile device.
 
 HTM for Stocks applies HTM modeling and anomaly detection to 200 large
