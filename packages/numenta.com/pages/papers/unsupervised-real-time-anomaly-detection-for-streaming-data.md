@@ -1,8 +1,9 @@
 ---
 author: "Subutai Ahmad, Alexander Lavin, Scott Purdy, Zuha Agha"
-brief: "This paper combines two of our existing papers, “Real-Time Anomaly Detection for Streaming Analytics” and “Evaluating Real-time Anomaly
-Detection Algorithms - the Numenta Anomaly Benchmark” for a version that appears in a special issue of Neurocomputing that focuses on
-anomaly detection."
+brief: "This paper, which appears in a special issue of Neurocomputing, demonstrates how Numenta's online sequence memory algorithm, Hierarchical Temporal Memory, meets the requirements
+necessary for real-time anomaly detection in streaming data. It also presents results using the
+Numenta Anomaly Benchmark (NAB), the first open-source
+benchmark designed for testing anomaly detection algorithms on streaming data."
 category: machine-learning
 date: 2017/06/02
 hideImage: true
@@ -46,18 +47,18 @@ designed for testing anomaly detection algorithms on streaming data.
 
 ### **Q. What was the purpose of this paper?**
 
-The purpose of this paper is to highlight the importance of anomaly
-detection for streaming applications and introduce two contributions
-within that field. The first is Hierarchical Temporal Memory (HTM), a
-theoretical framework for sequence learning in the cortex. The second is
-the Numenta Anomaly Benchmark (NAB), an open source tool that evaluates
-anomaly detectors on streaming data.
-
+The purpose of this paper is to highlight the importance of anomaly detection
+for streaming applications and introduce two contributions within that field.
+The first is a novel unsupervised anomaly detection technique using
+Hierarchical Temporal Memory (HTM), a theoretical framework for sequence
+learning in the cortex. The second is the Numenta Anomaly Benchmark (NAB).
+The benchmark, the first of its kind, provides a controlled open-source
+environment for testing anomaly detection algorithms on streaming data.
 We analyze the characteristics of an ideal detector and articulate how
-HTM displays those characteristics. We then demonstrate the performance
-of HTM with a comprehensive results on the Numenta Anomaly Benchmark
-(NAB), the first open source benchmark for testing anomaly detection
-algorithms on streaming data.
+HTM displays those characteristics. We then analyze the performance of
+ten algorithms (including HTM) on NAB. We discuss future challenges
+for the emerging field of streaming analytics.
+
 
 ### **Q. What are the key takeaways?**
 
@@ -93,20 +94,27 @@ algorithms on streaming data.
 
 ### **Q. How does this research differ from other studies?**
 
-Anomaly detection in time-series data has been actively studied for
-decades. The subject has generated much interest within the data science
-and machine learning communities. While there are many different anomaly
-detection approaches, most of them are designed to process data in
-batches, making them unsuitable for real-time streaming applications.
+Anomaly detection has been actively studied for decades. The subject
+has generated much interest within the data science and machine learning
+communities. While there are many different anomaly detection approaches,
+most of them are designed to process data in batches, making them unsuitable
+for real-time streaming applications.
+
+In addition, to date there has been no benchmark focused on streaming
+applications and the above set of requirements.  We hope NAB will encourage
+research that specifically addresses the challenges associated
+with streaming data.
+
 
 ### **Q. How were the algorithms evaluated?**
 
-Based on the criteria identified for the ideal anomaly detector, we
-selected 7 algorithms to run on NAB, including HTM, Twitter’s Anomaly
-Detection, Etsy’s Skyline, Multinomial Relative Entropy, EXPoSE,
-Bayesian Online Changepoint detection, and a simple sliding threshold.
-The source code and parameter settings are included in the NAB
-repository for each algorithm tested.
+Based on the criteria identified for the ideal anomaly detector,
+we selected 10 algorithms to run on NAB, including HTM, Twitter’s
+Anomaly Detection, Etsy’s Skyline, Multinomial Relative Entropy,
+EXPoSE, Bayesian Online Changepoint detection, and a simple sliding threshold.
+The source code and parameter settings are included in the NAB repository
+for each algorithm tested.
+
 
 ### **Q. Can I replicate these results?**
 
