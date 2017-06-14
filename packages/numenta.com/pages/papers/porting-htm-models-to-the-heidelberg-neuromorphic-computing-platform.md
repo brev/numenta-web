@@ -6,7 +6,7 @@ date: 2015/05/08
 image:
 link: http://arxiv.org/abs/1505.02142
 org: Research Paper
-sort: s
+sort: i
 title: "Porting HTM Models to the Heidelberg Neuromorphic Computing Platform"
 type: link
 ---
