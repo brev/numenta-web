@@ -156,7 +156,7 @@ const SectionBusiness = (props, {config}) => {
             or patents internally to be used in any business process. For
             example, if you use our technology or patents internally to monitor
             performance of your IT servers, even if you don’t offer it to
-            others, we view this as commercial use
+            others, we view this as commercial use.
           </Paragraph>
           <Paragraph>
             Commercial partners are welcome to use our software under the terms
@@ -229,7 +229,7 @@ const SectionBusiness = (props, {config}) => {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    <Strong>Commercial use</Strong>
+                    <Strong>Commercial IP License</Strong>
                   </TableCell>
                   <TableCell>
                     We agree not to assert our IP for non-commercial uses
