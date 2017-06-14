@@ -7,7 +7,7 @@ hideImage: true
 image: ../images/continuous-online-sequence-learning.png
 link: http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00893#.WCEj8uErI18
 org: Published in Neural Computation, November 2016, Vol 28. No. 11
-sort: d
+sort: b
 title: "Continuous Online Sequence Learning with an Unsupervised Neural Network Model"
 type: post
 ---
