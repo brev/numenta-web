@@ -12,7 +12,6 @@ company = 'Numenta'
     info = 'info@numenta.com'
     press = 'press@numenta.com'
     sales = 'sales@numenta.com'
-    licenses = 'licenses@numenta.com'
     support = 'support@numenta.com'
   [contact.phone]
     fax = '650-369-8283'
