@@ -47,7 +47,7 @@ const SectionOpensource = (props, {config}) => {
             {links.out.org}
           </TextLink>.
           Anyone is welcome to use our technology for free, under the {' '}
-          <TextLink to={links.in.license}>
+          <TextLink to={links.out.license}>
             AGPLv3 open source license.
           </TextLink> {' '}
           In addition, we have created a separate, {' '}
