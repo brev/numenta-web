@@ -45,7 +45,7 @@ const SectionPartners = (props, {config}) => {
             We are flexible in structuring these relationships in a way
             that works for both parties. If you are interested in becoming
             a partner, please {' '}
-            <TextLink to={links.in.license}>
+            <TextLink to={links.out.license}>
               review our license guide,
             </TextLink> {' '}
             and email us at {' '}
