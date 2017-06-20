@@ -99,8 +99,8 @@ const SectionHome = (props, {config}) => {
           </DefineTitle>
           <DefineItem>
             {/* eslint-disable max-len */}
-            <TextLink to="/blog/2017/06/IEEE-special-edition-article-by-Jeff/">
-              Jeff's IEEE Spectrum article on machine intelligence
+            <TextLink to="https://www.eurekalert.org/pub_releases/2017-06/kta-ndm061917.php">
+              New anomaly detection paper published in Neurocomputing
               {' '} <Tag>New</Tag>
             </TextLink>
             {/* eslint-enable max-len */}
