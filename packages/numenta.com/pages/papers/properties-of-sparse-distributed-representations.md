@@ -5,7 +5,7 @@ category: neuroscience
 date: 2015/03/25
 link: http://arxiv.org/abs/1503.07469
 org: Research Paper
-sort: m
+sort: f
 title: "Properties of Sparse Distributed Representations and their Application To Hierarchical Temporal Memory"
 type: link
 ---

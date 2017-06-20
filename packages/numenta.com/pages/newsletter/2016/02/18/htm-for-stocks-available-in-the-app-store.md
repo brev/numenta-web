@@ -12,11 +12,11 @@ type: post
 ### Numenta Newsletter &mdash; February 18, 2016
 
 I’m pleased to announce that we have released an iOS version of
-[HTM for Stocks](/htm-for-stocks/), a demonstration application that enables
+[HTM for Stocks](/htm-for-stocks), a demonstration application that enables
 anybody to experience HTM technology firsthand. Previously available for Android
 only, HTM for Stocks now can be found in the App Store.
 
-[HTM for Stocks](/htm-for-stocks/) continuously monitors stock price, stock
+[HTM for Stocks](/htm-for-stocks) continuously monitors stock price, stock
 volume and Twitter volume for roughly 200 publicly traded companies and alerts
 you in real time when something unusual is happening. Results are displayed from
 most to least anomalous, so you can determine what is important and where to
