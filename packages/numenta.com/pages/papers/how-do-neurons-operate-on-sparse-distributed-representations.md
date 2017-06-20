@@ -5,7 +5,7 @@ category: neuroscience
 date: 2016/01/05
 link: http://arxiv.org/abs/1601.00720
 org: Preprint of journal submission
-sort: j
+sort: e
 title: "How Do Neurons Operate on Sparse Distributed Representations? A Mathematical Theory of Sparsity, Neurons and Active Dendrites"
 type: link
 ---
