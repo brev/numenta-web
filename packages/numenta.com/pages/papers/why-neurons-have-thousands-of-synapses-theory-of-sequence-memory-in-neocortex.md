@@ -7,7 +7,6 @@ hideImage: true
 image: ../images/why-neurons-have-thousands.png
 link: http://journal.frontiersin.org/article/10.3389/fncir.2016.00023/abstract
 org: "Published in Frontiers in Neural Circuits Journal"
-remarks: "This is the most viewed paper in the history of Frontiers in Neural Circuits."
 sort: a
 title: "Why Neurons Have Thousands of Synapses, A Theory of Sequence Memory in Neocortex"
 type: post
@@ -127,7 +126,7 @@ HTM theory. The authors of this paper are active participants in the forum.
 
 ### Q. What is next for this research?
 
-This research forms the foundation to our overall goal of reverse-engineering
+This research forms the foundation for our overall goal of reverse-engineering
 the neocortex. Our current research builds on this theory and focuses on
 sensorimotor learning, how the neocortex learns and builds a model of the world
 through movement.
