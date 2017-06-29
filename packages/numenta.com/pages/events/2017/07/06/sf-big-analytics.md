@@ -15,7 +15,7 @@ event:
     web: https://www.meetup.com/SF-Big-Analytics/events/239926928/
   who: Yuwei Cui
   why: Speaking
-image: ../images/sf-big-analytics.svg
+image: ../images/sf-big-analytics.png
 org: Research Engineer
 tags: strong ai artificial intelligence biological htm hierarchical temporal memory computing like the brain
 title: "SF Big Analytics Meetup: Push the Limits of Kafka & Streaming Analytics with Hierarchal Temporal Memory"
