@@ -241,10 +241,6 @@ const SectionApplications = (props, {config}) => {
             application code below and connecting it to Twitter and metric
             collectors.
           </Paragraph>
-          <Paragraph>
-            NOTE: As of June 2017, HTM for Stocks is no longer published on the
-            App Store or Google Play Store. The source code will remain available.
-          </Paragraph>
           <List marker="disc">
             <ListItem>
               <TextLink to={`${links.out.apps}`}>
