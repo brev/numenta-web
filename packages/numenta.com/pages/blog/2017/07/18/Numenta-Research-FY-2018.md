@@ -3,7 +3,7 @@ author: Jeff Hawkins
 brief: "This time each year we create a plan for the coming fiscal year, ending each June. The plan includes how we allocate our time and budget. This year (fiscal year ending June 30, 2018) we are shifting our priorities more than most years, and I thought I would share those changes."
 date: 2017/07/18
 hideImage: false
-image: ../images/ep11.png
+image: ../images/neurons.jpeg
 org: Co-Founder
 tags: numenta hierarchical temporal memory htm blog
 title: "Numenta Research FY 2018"
@@ -11,6 +11,7 @@ type: post
 ---
 
 This time each year we create a plan for the coming fiscal year, ending each June. The plan includes how we allocate our time and budget. This year (fiscal year ending June 30, 2018) we are shifting our priorities more than most years, and I thought I would share those changes.
+
 As some of you know, in the beginning of 2016 we had a major insight/discovery related to brain theory. I sometimes say we discovered “the missing ingredient” of how the neocortex works. If our insight is correct, and I believe it is, it will have a major impact on how neuroscientists think about the neocortex. Briefly, the standard view of how the neocortex works is that sensory data is processed by a hierarchy of neocortical regions, each region extracting more complex features than the last region, until objects can be recognized. We discovered that the standard view is only half the story. The other half, the missing ingredient, is that each region also determines where sensed features are “relative to the object being sensed.” For example, when you touch the lip of a coffee cup, the neocortex knows both what the finger is feeling and where that sensed feature is located relative to the cup.
 
 The implications of this discovery are profound. It explains how the neocortex learns the 3D structure of the world, and it tells us that each neocortical region, indeed each cortical column, is far more powerful than is currently thought.  This understanding will also enable us to build machines that learn about their world the way our brains learn. The brain learns via movement; we move our fingers over objects and we move our eyes to look at different parts of an object. Our discovery tells us these movements are essential to learning, and they allow the brain to model the structure of objects in the world as they are in their entirety, not simply as they appear on our senses.
