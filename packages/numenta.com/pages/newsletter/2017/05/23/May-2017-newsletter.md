@@ -3,10 +3,7 @@ author: Christy Maver
 brief: "I’m pleased to share that several of our employees will be speaking at
 upcoming events across the country over the next couple of months. These
 events will target a broad range of audiences, from neuroscientists to
-data scientists to AI enthusiasts. On June 18, Senior Engineer Austin Marshall
-deliver a special session on “The importance of brain theory in creating
-intelligent systems” at the 2017 54th ACM/EDAC/IEEE Design Automation Conference
-(DAC) in Austin, TX"
+data scientists to AI enthusiasts."
 date: 2017/05/23
 hideImage: false
 image: ../images/may.jpg
@@ -23,12 +20,11 @@ events will target a broad range of audiences, from neuroscientists to
 data scientists to AI enthusiasts.
 
 
-On June 18, Senior Engineer [Austin Marshall](https://github.com/oxtopus) will
-deliver a special session on “The importance of brain theory in creating
-intelligent systems” at the [2017 54th ACM/EDAC/IEEE Design Automation Conference
-(DAC)](/events/2017/06/18/dac/) in Austin, TX. Austin will present details and
-working principles of HTMs before discussing how we can apply brain theory today
-and where it will take us tomorrow.
+On June 18, Senior Engineer Austin Marshall will deliver a special session
+on “The importance of brain theory in creating intelligent systems” at the 2017
+54th ACM/EDAC/IEEE Design Automation Conference (DAC) in Austin, TX. Austin
+will present details and working principles of HTMs before discussing how we
+can apply brain theory today and where it will take us tomorrow.
 
  
 On June 28, Open Source Community Manager [Matt Taylor](https://twitter.com/rhyolight)
