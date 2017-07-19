@@ -3,7 +3,7 @@ author: Jeff Hawkins
 brief: "This time each year we create a plan for the coming fiscal year, ending each June. The plan includes how we allocate our time and budget. This year (fiscal year ending June 30, 2018) we are shifting our priorities more than most years, and I thought I would share those changes."
 date: 2017/07/18
 hideImage: false
-image: ../images/neurons.jpg
+image: ../images/research.jpg
 org: Co-Founder
 tags: numenta hierarchical temporal memory htm blog
 title: "Numenta Research FY 2018"
