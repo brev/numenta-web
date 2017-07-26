@@ -2128,6 +2128,15 @@ exports[`Index Page React component Renders correctly 1`] = `
               </h2>
               <ol
                 className="ol" />
+              <span
+                className="anchor"
+                id="more" />
+              <h2
+                className="h2">
+                More
+              </h2>
+              <ol
+                className="ol" />
             </div>
             <div
               className="aside">
@@ -2137,18 +2146,6 @@ exports[`Index Page React component Renders correctly 1`] = `
               <h2
                 className="h2">
                 Posters
-              </h2>
-              <ol
-                className="ol" />
-            </div>
-            <div
-              className="aside">
-              <span
-                className="anchor"
-                id="more" />
-              <h2
-                className="h2">
-                More
               </h2>
               <ol
                 className="ol" />
